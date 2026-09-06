@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광국사 4단원 · 고대의 통치 조직과 신라의 시대 구분(골품제)</title>
+<style>
+
+@font-face{font-family:'Pretendard';src:url('../../fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.s5 .num{background:var(--pal)} .s5 .ttl{color:var(--pal)} .s5{border-top:3px solid var(--pal)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)} .s5 b.k{color:var(--pal)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q.hide{display:none}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.rank,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(2,1fr)}}
+.rank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0}
+.rank .r{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;box-shadow:var(--shadow)}
+.rank .r b{display:block;font-size:15px;color:var(--bro);margin-bottom:5px}
+.rank .r span{font-size:12px;color:var(--ink-2);display:block;line-height:1.5}
+.rank .r.top{border-color:var(--gold)}
+.rank .r.top b{color:var(--gold)}
+@media(max-width:560px){.rank{grid-template-columns:repeat(2,1fr)}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 4단원</div>
+<h1>고대의 통치 조직과 신라의 시대 구분
+<small>땅을 넓혔으니 이제 다스려야 합니다 · 왕도 마음대로 못 하던 귀족회의 · 태어날 때 정해진 천장, 골품제</small>
+</h1>
+<div class="meta">
+<span class="chip hot">발해 통치조직 = 국사 최다 빈출 주제</span>
+<span class="chip">기출 15문항 전부 실제 기출</span>
+<span class="chip">2013~2025년 215문항 실측</span>
+<span class="chip">시험 D-23</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 먼저 큰 그림 하나</h2>
+<p class="sub">3단원에서 삼국은 열심히 <b>땅을 넓혔습니다</b>. 4단원은 그 다음 이야기입니다 — <b>넓힌 땅을 어떻게 다스릴 것인가.</b></p>
+
+<div class="flow">
+<b>땅을 넓혔다</b><i>→</i><b>혼자 못 다스린다</b><i>→</i><b class="hi">귀족회의 + 지방관 + 관등</b><i>→</i><b>신분이 천장을 정한다(골품제)</b><i>→</i><b class="hi">통일 후 9주5소경·3성6부</b>
+</div>
+
+<p>이 단원은 외울 게 많아 보이지만, 사실 <b>질문은 네 개뿐</b>입니다. ① <b>누가 모여서 결정하는가</b>(귀족회의체) ② <b>지방은 누가 다스리는가</b>(지방관·지방행정) ③ <b>벼슬의 서열은 어떻게 매기는가</b>(관등) ④ <b>누가 어디까지 올라갈 수 있는가</b>(골품제). 이 네 질문을 <b>고구려·백제·신라·통일신라·발해</b> 다섯 나라에 각각 대입한 것이 이 단원 전체입니다. 표가 복잡해 보여도 결국 <b>4개 질문 × 5개 나라</b>의 빈칸 채우기예요.</p>
+
+<p>그리고 신라 한 나라만 따로 <b>시간 순서로 3등분</b>합니다 — <b>상대·중대·하대</b>. 이 구분은 고려의 김부식이 쓴 『삼국사기』가 기준이고, 나누는 기준은 <b>왕의 혈통이 어느 집안에서 나왔느냐</b>입니다. 시험에서는 "신라 하대에 관한 설명으로 옳지 않은 것은?" 같은 형태로 거의 매년 나옵니다.</p>
+
+<div class="tl">
+<div class="t1"><b>상대</b><span>통일 이전 · <b>성골</b> 왕<br>수상 = <b>상대등</b> (귀족의 시대)</span></div>
+<div class="t2"><b>중대</b><span>무열왕~혜공왕 · <b>무열계 진골</b><br>수상 = <b>시중</b> (왕권 전성기)</span></div>
+<div class="t3"><b>하대</b><span>선덕왕~경순왕 · <b>내물계 진골</b><br>수상 = 다시 <b>상대등</b> (왕위쟁탈전)</span></div>
+</div>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>이 단원을 푸는 열쇠 한 문장</b> — <b>상대등은 귀족 편, 시중은 왕 편.</b> 신라 정치사 문제의 절반은 "지금 누가 힘이 센가"만 알면 풀립니다. 상대등이 수상이면 귀족의 시대, 시중이 수상이면 왕의 시대입니다.</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-book"/></svg> 이야기로 먼저 이해하기</h2>
+<p class="sub">표를 외우기 전에, 왜 이런 제도가 생겼는지부터 읽어보세요. 이해하고 나면 표는 확인용이 됩니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">왕도 마음대로 못 했습니다 — 귀족들의 회의실</div><div class="era">삼국 공통</div></div>
+<div class="body">
+<p>우리는 흔히 왕이라 하면 "내 말이 곧 법이다"라고 외치는 절대 권력자를 떠올립니다. 그런데 삼국시대의 왕은 그렇지 못했습니다. 고구려도, 백제도, 신라도 모두 원래는 <b class="k">여러 부족이 연합해서 만든 나라</b>였기 때문입니다. 부족장들은 각자 자기 땅과 자기 군사를 갖고 있었고, 왕은 그들 중에서 가장 힘이 센 사람이었을 뿐입니다. 그러니 왕이 뭔가를 결정하려면 그들을 불러 모아 물어봐야 했습니다.</p>
+
+<div class="simile">
+<svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg>
+<div>회사로 치면 이렇습니다. 왕은 대표이사이지만, 지분을 나눠 가진 <b>대주주들이 이사회를 장악</b>하고 있습니다. 큰 결정은 이사회를 통과해야만 합니다. 이 이사회가 바로 귀족합의체입니다.</div>
+</div>
+
+<p>그래서 삼국에는 각각 이름은 다르지만 성격은 같은 <b class="k">귀족 회의체</b>가 있었습니다. 고구려는 <b class="k">제가회의</b>, 백제는 <b class="k">정사암회의</b>, 신라는 <b class="k">화백회의</b>입니다. 이 회의체는 중국이나 일본에는 없는, <b>우리나라만의 독자적인 정치 조직</b>이라는 점을 강사가 강조했습니다. 중국은 황제 한 사람에게 권력이 집중되는 구조였거든요.</p>
+
+<div class="term">
+<b>제가회의(諸加會議)</b> — 이게 뭐냐면, '가(加)'는 고구려에서 부족장을 부르던 호칭입니다(마가·우가·저가 할 때의 그 '가'예요). 그러니 '여러(諸) 부족장(加)들의 회의'라는 뜻 그대로입니다.<br>
+<b>정사암회의(政事巖會議)</b> — '정사(政事)를 논하던 바위(巖)'라는 뜻입니다. 백제에서는 실제로 재상을 뽑을 때 후보 이름을 적어 바위 위 상자에 넣어두고, 나중에 열어봐서 도장이 찍힌 사람을 뽑았다는 이야기가 전합니다.<br>
+<b>화백회의(和白會議)</b> — 신라의 회의체입니다. 가장 큰 특징은 <b>만장일치제</b>라는 점이에요. 한 사람이라도 반대하면 통과되지 않았습니다.
+</div>
+
+<p>신라의 화백회의는 그 <b>의장을 상대등</b>이라 불렀습니다. 지금으로 치면 국회의장 격입니다. 왕이 임명하기는 하지만, 실질적으로는 <b class="k">진골 귀족 전체를 대표해서 왕을 견제하는 자리</b>였습니다. 이 '상대등'이라는 이름은 뒤에서 계속 나오니 지금 확실히 붙잡아 두세요 — <b>상대등 = 귀족의 우두머리</b>입니다.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div><b>솔직하게 알려드립니다.</b> 화백회의·정사암회의는 교재가 ★★★로 강조하지만, <b>2013~2025년 13년간 문제·선지 원문에 단 한 번도 나오지 않았습니다</b>(제가회의는 2회 — 2022·2018). 이해는 하되 여기에 시간을 많이 쓰지는 마세요. 아래 <b>빈출 등급표</b>에 실측 결과를 전부 정리해 두었습니다.</div>
+</div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">지방은 누가 다스리나 — 욕살·방령·군주, 그리고 촌주</div><div class="era">삼국 공통</div></div>
+<div class="body">
+<p>땅을 넓혔으니 그 땅을 나눠서 관리할 사람을 보내야 합니다. 삼국은 각각 전국을 <b>다섯 덩어리</b>로 나눴습니다. 고구려는 <b class="k">5부</b>, 백제는 <b class="k">5방</b>, 신라는 <b class="k">5주</b>입니다. 지금의 '도(道)' 단위라고 생각하면 됩니다. 그 아래에 성·군(지금의 시·군), 다시 그 아래에 촌(지금의 면·읍·리)이 있었습니다.</p>
+
+<p>그리고 그 다섯 덩어리의 우두머리 이름이 나라마다 다릅니다. 이게 시험에 나오는 부분입니다. 고구려는 <b class="k">욕살</b>, 백제는 <b class="k">방령</b>, 신라는 <b class="k">군주</b>입니다.</p>
+
+<div class="simile">
+<svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg>
+<div><b>(강사 암기법)</b> 고구려의 <b>욕살</b> — "일을 못하면 <b>욕</b>을 뒤지게 먹어서 스스로 죽는다(<b>살</b>)"로 외우면 잊히지 않는다고 했습니다. 백제의 <b>방령</b>은 <b>방</b>의 우두머리(<b>령</b>)라는 뜻 그대로라 쉽습니다.</div>
+</div>
+
+<p>신라의 <b class="k">군주</b>는 조금 더 깊이 볼 필요가 있습니다. 여기서 '군주'는 우리가 아는 '나라의 임금'이 아니라, 한자 그대로 <b>군사(軍) + 우두머리(主)</b>, 즉 <b>군대의 대장</b>이라는 뜻입니다. 왜 지방관 이름이 군대 대장일까요? 삼국시대는 늘 전쟁 중이었기 때문입니다. 지방관은 백성을 다스리는 행정 업무만 하는 게 아니라, <b class="k">언제 쳐들어올지 모르는 적을 막는 군사령관 역할을 겸했습니다</b>.</p>
+
+<p>이 점이 통일 이후와 대비되어 시험에 나옵니다. 통일이 되어 전쟁이 끝나자, 9주의 지방관은 이름이 <b>총관 → 도독</b>으로 바뀌면서 <b class="k">군사적 성격에서 행정적 성격으로</b> 옮겨갑니다. 2016년 기출에 <b>"행정적 기능보다 군사적 기능을 강화하여 전국을 9주로 나누었다"</b>라는 선지가 나왔는데, 방향이 정반대라 틀린 문장이었습니다.</p>
+
+<div class="term">
+<b>촌주(村主)</b> — 이게 뭐냐면, 가장 작은 행정 단위인 '촌'의 우두머리입니다. 핵심은 <b>촌에는 중앙에서 지방관을 보내지 않았다</b>는 점입니다. 대신 그 지역에 원래 살던 토착 유력자를 촌주로 삼아 다스리게 했어요. 왕의 힘이 아직 마을 구석구석까지는 닿지 못했다는 뜻입니다. 신라를 공부할 때 계속 나오는 개념이니 꼭 기억하세요 — <b>"삼국시대에는 촌에도 지방관이 파견되었다"는 문장은 틀린 문장</b>입니다.
+</div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">벼슬에도 등수가 있습니다 — 관등 조직</div><div class="era">삼국 공통</div></div>
+<div class="body">
+<p><b class="k">관등(官等)</b>이란 관리들의 서열, 즉 등급입니다. 회사로 치면 사원–대리–과장–차장–부장 같은 직급 체계예요. 삼국은 각각 이 등급표를 만들었는데, 최고 등급(1관등)의 이름과 전체 등급 수가 나라마다 다릅니다.</p>
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>나라</th><th>최고 관등(1관등)</th><th>총 관등 수</th><th>이름에 들어가는 글자</th></tr></thead>
+<tbody>
+<tr><td class="nm">고구려</td><td><b>대대로</b></td><td>10여 관등</td><td><b>형(兄)</b> 계열 · <b>사자(使者)</b> 계열</td></tr>
+<tr><td class="nm">백제</td><td><b>좌평</b></td><td>16관등</td><td><b>솔(率)</b> 계열 · <b>덕(德)</b> 계열</td></tr>
+<tr><td class="nm">신라</td><td><b>이벌찬</b></td><td>17관등</td><td>관복 색으로 구분(자·비·청·황)</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>고구려의 관등 이름에는 <b class="k">'형(兄)'</b>이 들어갑니다(태대형·조의두대형 등). 형은 '형님'이라는 뜻이니, 원래 부족장이었던 사람들을 예우하는 호칭에서 출발했음을 짐작할 수 있습니다. <b class="k">'사자(使者)'</b>는 그 형들을 보좌하는 하급 행정관이었습니다. 백제는 <b class="k">'솔'</b>과 <b class="k">'덕'</b>이 들어갑니다(달솔·은솔·덕솔… 장덕·시덕 등). 백제도 16관품을 세 단계로 나눠 <b>공복(관복) 색깔로 구별</b>했습니다.</p>
+
+<p>그런데 여기서 가장 중요한 결론이 나옵니다. 삼국의 관등 조직은 <b class="k">능력이 아니라 신분에 의해 올라갈 수 있는 한계가 정해져 있었다</b>는 것입니다. 아무리 일을 잘해도 태어난 신분이 낮으면 어느 선에서 딱 멈춥니다. 그 대표적인 사례가 다음에 볼 신라의 골품제예요.</p>
+
+<div class="term">
+<b>득난(得難)</b> — 이게 뭐냐면, 신라에서 <b>6두품을 부르던 별칭</b>입니다. '얻기(得) 어렵다(難)', 즉 "6두품 되기도 어렵다"는 뜻이에요. 여기서 시험 함정이 나옵니다 — <b>득난은 '6두품'이라는 신분의 별명</b>이지, <b class="x">"골품에 따라 관등을 제한하는 제도" 자체를 가리키는 말이 아닙니다</b>. 2016년 기출에서 이 둘을 바꿔치기한 선지가 정답(틀린 것)이었습니다.
+</div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">태어날 때 이미 천장이 정해집니다 — 골품제</div><div class="era">신라</div></div>
+<div class="body">
+<p>신라에만 있던, 그리고 신라를 끝내 무너뜨린 제도가 바로 <b class="k">골품제</b>입니다. 골품제는 <b>타고난 혈통에 따라 평생의 관직·결혼 상대·집 크기·심지어 타고 다닐 수레 크기까지 정해버리는</b> 아주 폐쇄적인 신분제도입니다. '폐쇄적'이라는 말은 <b>한 번 정해지면 신분 사이를 이동할 수 없다</b>는 뜻이에요.</p>
+
+<p>왜 이런 제도가 생겼을까요? 신라는 원래 <b class="k">여섯 부족(6부)이 연합해서 세운 나라</b>였습니다. 왕이 중앙집권을 하려면 이 부족장들의 힘을 빼앗아야 하는데, 완전히 빼앗으면 반발이 너무 큽니다. 그래서 <b>"권력은 왕이 갖되, 너희의 특권적 지위는 신분으로 영원히 보장해 주겠다"</b>는 타협을 합니다. 그 타협의 결과물이 골품제예요.</p>
+
+<div class="simile">
+<svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg>
+<div>회사로 치면, 입사할 때 이미 <b>"당신은 최대 과장까지"</b>라고 도장이 찍혀 나오는 겁니다. 아무리 성과를 내도 그 위로는 못 갑니다. 그런데 그 도장은 실력이 아니라 <b>부모가 누구인가</b>로 찍힙니다.</div>
+</div>
+
+<div class="rank">
+<div class="r top"><b>성골</b><span>왕이 될 수 있는<br>최고 신분<br><b>무열왕 이전까지</b></span></div>
+<div class="r top"><b>진골</b><span>무열왕 이후 왕족<br>1관등까지<br>자색 관복 가능</span></div>
+<div class="r"><b>6두품</b><span>별칭 <b>득난</b><br>아찬(6관등)까지<br>비색까지</span></div>
+<div class="r"><b>5두품</b><span>10관등까지<br>청색까지</span></div>
+<div class="r"><b>4두품</b><span>12관등까지<br>황색만</span></div>
+</div>
+
+<p><b class="k">성골</b>은 왕이 될 수 있는 최고 신분이었지만, <b>진덕여왕이 자식 없이 세상을 떠나면서 대가 끊깁니다</b>. 그래서 그 다음 왕인 <b>무열왕(김춘추)부터는 진골이 왕</b>이 됩니다. 진골은 원래 부모 중 한쪽만 왕족인 '반쪽 왕족'이었는데, 성골이 사라지면서 유일한 왕족이 된 것이죠. 다만 진골이라고 다 왕이 되는 건 아니고, <b>무열왕 집안과 김유신 집안</b>만 왕족·왕비족이 되고 나머지 진골은 '특권 귀족'으로 남습니다.</p>
+
+<p>문제는 <b class="k">6두품</b>입니다. 이들은 학문이 뛰어나고 능력도 출중했지만, <b>아찬(6관등)까지가 끝</b>이었습니다. 장관급인 5관등 위로는 죽어도 못 올라갑니다. 최치원 같은 인물이 당나라에 유학까지 다녀와도 신라에서는 벽에 부딪혔어요. 이 좌절이 쌓이고 쌓여, 나중에 신라 하대가 되면 <b class="k">6두품 지식인들이 신라에 등을 돌리고 새 시대(고려)를 여는 데 힘을 보태게 됩니다</b>. 골품제가 신라를 지탱했다가 결국 신라를 무너뜨린 셈입니다.</p>
+
+<h3>관복 색깔 — 옷만 봐도 신분을 알 수 있었습니다</h3>
+<div class="color5">
+<div class="c5"><div class="sw" style="background:#6B3FA0"></div><div class="lb"><b>자색</b><span>1~5관등<br><b>진골 전용</b></span></div></div>
+<div class="c5"><div class="sw" style="background:#C0392B"></div><div class="lb"><b>비색</b><span>6~9관등<br>진골 + 6두품</span></div></div>
+<div class="c5"><div class="sw" style="background:#2E6DA4"></div><div class="lb"><b>청색</b><span>10~11관등<br>진골 + 6·5두품</span></div></div>
+<div class="c5"><div class="sw" style="background:#C9A227"></div><div class="lb"><b>황색</b><span>그 아래 전부<br>전 신분 가능</span></div></div>
+</div>
+<p style="font-size:14px;color:var(--ink-2);margin-top:-4px">위에서 아래로 갈수록 입을 수 있는 사람이 많아집니다. <b>자색은 진골만</b> — 6두품은 아무리 뛰어나도 자색 관복을 입을 수 없습니다(비색까지). 다만 이 관복 색 구분은 <b>기출 13년간 문제·선지 원문에 0회</b> 등장했습니다. 개념만 잡고 넘어가세요.</p>
+</div>
+</div>
+
+<div class="story s5">
+<div class="head"><div class="num">5</div><div class="ttl">상대·중대·하대 — 결국 "누가 힘이 센가"의 역사</div><div class="era">신라</div></div>
+<div class="body">
+<p>신라 900여 년의 역사를 셋으로 나눈 것이 <b class="k">상대·중대·하대</b>입니다. 기준은 <b>왕의 혈통</b>이고, 이렇게 나눈 책은 고려 김부식의 <b>『삼국사기』</b>입니다. 그런데 이 구분은 사실 <b>권력의 무게중심이 어디로 갔는가</b>의 이야기이기도 합니다.</p>
+
+<p>등장인물은 셋입니다. <b class="k">진골 귀족</b>(대주주들), <b class="k">왕</b>(대표이사), 그리고 <b class="k">6두품</b>(능력은 있는데 승진이 막힌 만년 과장). 그리고 자리가 둘 있습니다 — 귀족들의 회의(화백회의)를 이끄는 <b class="k">상대등</b>, 그리고 왕 직속 최고 행정기구인 집사부를 이끄는 <b class="k">시중</b>입니다.</p>
+
+<div class="vs">
+<div class="side a"><b>상대등</b>진골 귀족의 우두머리<br>화백회의 의장</div>
+<div class="mid">↔</div>
+<div class="side b"><b>시중</b>집사부의 장관<br>왕 직속</div>
+</div>
+
+<p><b class="k">상대</b>는 통일 이전, 성골이 왕이던 시기입니다. 아직 왕권이 약해 <b>귀족의 대표인 상대등이 수상</b> 역할을 했습니다. 대주주가 회사를 좌지우지하던 시기예요.</p>
+
+<p><b class="k">중대</b>는 무열왕부터 혜공왕까지, 무열계 진골이 왕위를 잇던 시기입니다. 삼국을 통일하면서 왕의 힘이 폭발적으로 커졌고, 수상 자리도 <b>상대등에서 시중으로 옮겨갑니다</b>. 이때 재미있는 동맹이 생깁니다 — <b>왕과 6두품이 손을 잡습니다</b>. 왜냐하면 둘 다 진골 귀족이라는 공통의 상대가 있었거든요. 왕은 귀족의 힘을 빼고 싶고, 6두품은 귀족 때문에 승진이 막혀 있으니 이해관계가 딱 맞습니다. 그래서 학문이 뛰어난 6두품들이 집사부에서 왕을 도와 활약합니다.</p>
+
+<div class="simile">
+<svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg>
+<div>대표이사(왕)가 대주주(진골)를 견제하려고, <b>실무 능력은 뛰어난데 임원은 못 다는 만년 과장들(6두품)</b>을 자기 직속 부서(집사부)로 데려와 힘을 실어준 겁니다.</div>
+</div>
+
+<p><b class="k">하대</b>는 선덕왕부터 마지막 경순왕까지, 내물계 진골로 왕통이 바뀐 시기입니다. 왕권이 무너지면서 <b>150년 동안 왕이 20번 바뀔 만큼</b> 진골끼리 왕위 쟁탈전을 벌입니다. 수상 자리도 <b>다시 상대등으로 돌아갑니다</b>. 그러자 왕에게 기대를 걸었던 6두품은 <b class="k">"이 나라는 더 이상 우리 편이 아니다"</b>라며 등을 돌리고 반신라적 성향을 갖게 됩니다. 동시에 지방에서는 <b class="k">호족</b>이라는 새로운 세력이 자라나고, 불교에서는 <b class="k">선종</b>이 유행하며, <b class="k">승탑</b>(승려의 사리를 모신 탑)이 곳곳에 세워집니다.</p>
+
+<div class="term">
+<b>호족(豪族)</b> — 이게 뭐냐면, 중앙 정부가 흔들리는 틈을 타 지방에서 스스로 힘을 키운 세력입니다. 성을 쌓고 군사를 거느리며 스스로를 <b>'성주'·'장군'</b>이라 불렀어요. <b>양길·견훤·궁예</b> 같은 인물들이 대표적입니다. 시험에서 <b>"군진 세력(장보고 등)은 중앙 귀족이다"</b>라고 나오면 틀린 문장입니다 — 이들은 <b>지방 세력</b>이에요.
+</div>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div><b>시험은 이 흐름을 뒤집어서 냅니다.</b> "하대에 시중의 권한이 강화되었다"처럼 상대등과 시중을 바꿔 끼우는 식이에요. <b>상대(상대등) → 중대(시중) → 하대(상대등)</b>, 이 세 글자만 순서대로 외워두면 이 유형은 전부 잡힙니다.</div>
+</div>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">6</div><div class="ttl">통일 이후 — 통일신라와 발해의 새 시스템</div><div class="era">남북국</div></div>
+<div class="body">
+<p>통일을 하고 나니 다스릴 땅이 훨씬 넓어졌습니다. 이제는 제대로 된 시스템이 필요합니다.</p>
+
+<p><b>통일신라</b>는 전국을 <b class="k">9주</b>로 나눴습니다. 그런데 문제가 하나 있었어요. 수도 <b>경주가 나라의 동남쪽 구석에 치우쳐</b> 있었던 겁니다. 서쪽·북쪽 사람들 입장에서는 수도가 너무 멀었죠. 그래서 지방의 요지에 <b class="k">5소경</b>('작은 서울'이라는 뜻)을 두어 보완했습니다. 이 소경에는 <b>정복한 나라의 귀족들을 옮겨 살게 해서 감시</b>하는 목적도 있었습니다.</p>
+
+<div class="term">
+<b>상수리 제도</b> — 이게 뭐냐면, 지방 세력가나 그 자제를 <b>수도에 인질처럼 머물게 하는</b> 제도입니다(고려의 기인 제도로 이어집니다). 여기서 시험 함정이 나옵니다 — 상수리는 <b>지방 세력을 통제·견제</b>하는 제도이지, <b class="x">지방관을 감찰하는 제도가 아닙니다</b>. 지방관 감찰은 <b class="o">외사정</b>이 담당했습니다. 2016년 기출에서 이 둘을 바꿔치기한 선지가 나왔습니다.
+</div>
+
+<p>군대도 새로 짰습니다. 중앙군은 <b class="k">9서당</b>, 지방군은 <b class="k">10정</b>입니다. 여기서 가장 중요한 포인트 — <b>9서당은 신라 사람만으로 만든 군대가 아닙니다</b>. <b class="k">고구려인·백제인, 심지어 말갈인까지 포함</b>시킨 <b>민족 융합군</b>이었어요. 방금 정복한 나라 사람들을 군대에 편입시켜 "이제 우리는 한 나라다"라는 메시지를 준 것입니다. 이건 거의 매년 나오는 단골 소재입니다.</p>
+
+<div class="simile">
+<svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg>
+<div><b>숫자가 엇갈려 있는 게 함정입니다.</b> 전국은 <b>9주</b>인데 지방군은 <b>10정</b>이고, 중앙군은 <b>9서당</b>입니다. "9주니까 9정이겠지"라고 생각하면 틀립니다. <b>"서당은 9=중앙, 정은 10=지방"</b>으로 짝을 통째로 외우세요.</div>
+</div>
+
+<p>그 밖에 통일신라는 감찰 기구로 <b class="k">사정부</b>, 교육기관으로 <b class="k">국학</b>(신문왕이 설치)을 두었고, 국왕 직속 최고 행정기구인 <b class="k">집사부</b>를 포함해 <b>13부</b>의 관청을 운영했습니다. 관리를 뽑을 때는 <b class="k">독서삼품과</b>라는 제도를 시행했는데, 이건 <b>원성왕</b> 때의 일입니다.</p>
+
+<p>한편 북쪽의 <b>발해</b>는 중앙 정치조직으로 <b class="k">3성 6부</b>를 두었습니다. 3성은 <b class="k">정당성·선조성·중대성</b>이고, 그 중심인 정당성의 장관 <b class="k">대내상</b>이 국정을 총괄했습니다. 6부는 정당성 아래에 <b>좌사정·우사정</b>으로 나뉘어 운영됐어요.</p>
+
+<div class="term">
+<b>"당의 제도를 그대로 모방했다"는 왜 틀린 말일까요?</b> — 3성 6부라는 <b>틀 자체는 당에서 받아들인 게 맞습니다</b>. 그래서 "당의 3성 6부제를 수용하여 마련하였다"는 선지는 <b class="o">옳은 문장</b>입니다. 하지만 <b>정당성·선조성·중대성</b>이라는 이름도, 6부의 유교식 이름(충·인·의·지·예·신)도, 정당성 중심으로 운영한 방식도 당에는 없는 <b class="k">발해만의 독자적인 것</b>입니다. 그래서 <b class="x">"그대로 모방"</b>이라고 못박으면 틀린 문장이 됩니다. 이 미묘한 차이가 시험 포인트예요.
+</div>
+
+<p>발해의 지방 행정은 <b class="k">5경 15부 62주</b>입니다. 전략적 요충지에 5경을 두고, 실제 지방 행정의 중심은 <b>15부</b>였습니다. 지방의 촌락은 대체로 말갈인으로 이루어졌는데, 그 우두머리(촌장)는 <b class="k">토인</b>이라 불린 <b>고구려 유민</b>이 맡았습니다 — 지배층은 고구려계, 피지배층은 말갈계라는 이원적 구조였어요. 군대는 중앙군 <b class="k">10위</b>, 감찰 기구는 <b class="k">중정대</b>, 교육기관은 <b class="k">주자감</b>(문왕이 설치)입니다.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div><b>10정과 10위 — 숫자가 같다고 같은 게 아닙니다.</b> <b>10정</b>은 통일신라의 <b>지방군</b>, <b>10위</b>는 발해의 <b>중앙군</b>입니다. 강사가 6/28 필기반 강의에서 특별히 짚은 부분입니다.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 4개 질문 × 5개 나라</h2>
+<p class="sub">앞의 이야기를 한 장으로 압축했습니다. 시험 전날에는 이 표만 보면 됩니다.</p>
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>삼국시대 공통</th><th>통일신라</th><th>발해</th></tr></thead>
+<tbody>
+<tr><td class="nm">귀족합의체</td><td><b>제가회의</b>(고구려) / <b>정사암회의</b>(백제) / <b>화백회의</b>(신라 — 만장일치제, <b>상대등</b>이 주관)</td><td>—</td><td>—</td></tr>
+<tr><td class="nm">지방관 명칭</td><td><b>욕살</b>(고구려) / <b>방령</b>(백제) / <b>군주</b>(신라 — 군사지휘관 성격)</td><td>총관 → <b>도독</b>(행정적 성격으로 변화)</td><td>—</td></tr>
+<tr><td class="nm">관등<br>(1관등·총수)</td><td><b>대대로</b>·10여관등(고구려 — '형'·'사자' 계열)<br><b>좌평</b>·16관등(백제 — '솔'·'덕' 계열, 공복 3색)<br><b>이벌찬</b>·17관등(신라 — 자·비·청·황 관복)</td><td>—</td><td>—</td></tr>
+<tr><td class="nm">중앙관제</td><td>통일 이전이라 정식 체계 미정비 — 백제 <b>6좌평</b>(고이왕)→<b>22부</b>(성왕), 신라 <b>상대등·병부</b>(법흥왕) 정도만 존재, 고구려는 관등체계가 겸함</td><td><b>집사부</b>(국왕 직속 최고 행정기구, 장관=<b>시중</b>) 등 <b>13부</b><br>※ 위화부(인사 담당)도 13부 중 하나</td><td><b>3성 6부</b><br>정당성(장관=<b>대내상</b>, 국정 총괄)·선조성·중대성<br>6부는 <b>좌사정·우사정</b>으로 2원 운영<br>당을 <b>수용</b>했으나 명칭·운영은 <b>독자적</b></td></tr>
+<tr><td class="nm">감찰기구</td><td>—</td><td><b>사정부</b> (지방관 감찰은 <b>외사정</b>)</td><td><b>중정대</b></td></tr>
+<tr><td class="nm">교육기관</td><td>—</td><td><b>국학</b> (신문왕)<br>※ 국자감은 <b>고려</b></td><td><b>주자감</b> (문왕)</td></tr>
+<tr><td class="nm">지방행정</td><td><b>5부</b>(고구려) · <b>5방</b>(백제) · <b>5주</b>(신라)<br>촌에는 지방관 없음 → <b>촌주</b>가 다스림</td><td><b>9주 5소경</b><br>+ <b>상수리 제도</b>(지방세력 통제)</td><td><b>5경 15부 62주</b><br>촌장 = <b>토인</b>(고구려 유민)</td></tr>
+<tr><td class="nm">군사조직</td><td>—</td><td><b>9서당</b>(중앙군 — 고구려·백제·<b>말갈인</b>까지 포함한 민족융합군)<br><b>10정</b>(지방군 — 9주에 배치)</td><td><b>10위</b>(중앙군)</td></tr>
+<tr><td class="nm">관리 선발</td><td>—</td><td><b>독서삼품과</b> (<b>원성왕</b>)</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>골품제 — 신분별 상한선</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>신분</th><th>관등 상한</th><th>관복 색</th><th>비고</th></tr></thead>
+<tbody>
+<tr><td class="nm">성골</td><td>—</td><td>—</td><td>왕이 될 수 있는 최고 신분. <b>무열왕 이전까지만</b> 존재(진덕여왕에서 대가 끊김)</td></tr>
+<tr><td class="nm">진골</td><td><b>1관등</b>(이벌찬)까지</td><td><b style="color:#6B3FA0">● 자색</b>부터 전부</td><td>무열왕 이후의 왕족. 무열왕·김유신 집안만 왕족·왕비족, 나머지는 특권 귀족</td></tr>
+<tr><td class="nm">6두품</td><td><b>6관등</b>(아찬)까지</td><td><b style="color:#C0392B">● 비색</b>까지</td><td>별칭 <b>득난</b>. 학자·승려 다수 배출. 자색 관복 <b class="x">불가</b></td></tr>
+<tr><td class="nm">5두품</td><td><b>10관등</b>까지</td><td><b style="color:#2E6DA4">● 청색</b>까지</td><td></td></tr>
+<tr><td class="nm">4두품</td><td><b>12관등</b>까지</td><td><b style="color:#C9A227">● 황색</b>만</td><td>그 아래는 일반 평민으로 추정</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>신라 시대 구분 — 『삼국사기』(김부식) 기준, 기준은 <b>왕의 혈통</b></h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>범위</th><th>왕의 혈통</th><th>수상</th><th>특징</th></tr></thead>
+<tbody>
+<tr><td class="nm">상대</td><td>통일 이전</td><td><b>성골</b></td><td><b>상대등</b></td><td>귀족(진골)의 힘이 강한 시기</td></tr>
+<tr><td class="nm">중대</td><td>무열왕~혜공왕</td><td><b>무열계 진골</b></td><td><b>시중</b></td><td>왕권 최전성기 · 집사부 강화 · <b>6두품이 왕과 협력</b></td></tr>
+<tr><td class="nm">하대</td><td>선덕왕~경순왕</td><td><b>내물계 진골</b></td><td>다시 <b>상대등</b></td><td>왕위쟁탈전(150년간 왕 20회 교체) · <b>호족</b> 성장 · <b>녹읍 부활</b> · <b>선종</b> 유행 · 승탑 · <b>6두품 이탈</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급표 — 감이 아니라 실측입니다</h2>
+<p class="sub">2013~2025년 관광국사 기출 <b>215문항</b>의 <b>문제·선택지 원문</b>에서 각 키워드가 몇 번 등장했는지 직접 세었습니다. 괄호 안은 등장 연도입니다.</p>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>발해 5경 15부 62주</b> — <b>6회</b> (2024·2023·2022·2018·2015·2013)<br><span style="font-size:13.5px;color:var(--ink-2)">이 단원 최다 빈출. 숫자를 정확히. "주·군·현"으로 바꿔 낸 오답도 있었습니다(그건 통일신라식).</span></div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>발해 정당성 · 대내상</b> — <b>5회</b> (2025·2024·2023·2022·2015)<br><span style="font-size:13.5px;color:var(--ink-2)">"정당성의 장관인 대내상이 국정을 총괄했다" = 거의 매년 나오는 옳은 문장. 반대로 "정당성에서 정책을 입안·심의"는 틀림(정당성=집행).</span></div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>골품제 · 두품 · 득난</b> — <b>4회</b> (2020·2016 2회·2013)</div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>통일신라 9주 5소경</b> — <b>4회</b> (2023·2017·2016·2014)</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>발해 3성 6부</b> — <b>3회</b> (2024·2022·2019) — "수용"은 옳고 "그대로 모방"은 틀림</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>9서당</b> — <b>3회</b> (2025·2018·2015) — <b>통일신라 중앙군</b>. 발해 것으로 바꿔 내는 함정이 반복</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>집사부 · 시중</b> — <b>3회</b> (2019·2016·2013)</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>국학 / 국자감</b> — <b>3회</b> (2025·2016·2014) — 국학=통일신라, 국자감=고려</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>관등 명칭</b>(대대로·좌평·이벌찬) — <b>3회</b> (2023·2019·2015) — 나라별 매칭형</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>김헌창의 난</b> — <b>3회</b> (2020·2018·2016) — 국호 <b>장안</b>, 연호 <b>경운</b>, 근거지 <b>웅주(공주)</b></div></div>
+<div class="row"><span class="gr gC">C · 확인용</span><div><b>독서삼품과</b> 2회(2023·2016, <b>원성왕</b>) · <b>사정부</b> 2회(2023·2016) · <b>제가회의</b> 2회(2022·2018) · <b>상대등</b> 2회(2023·2013) · <b>신라 하대</b> 2회(2020·2019)</div></div>
+<div class="row"><span class="gr gC">C · 확인용</span><div><b>10정</b> 1회 · <b>10위</b> 1회 (둘 다 2018년 같은 문항의 보기) · <b>상수리 제도</b> 1회(2016) · <b>촌주·토인</b> 1회(2017) · <b>위화부</b> 1회(2024)</div></div>
+<div class="row"><span class="gr gZ">0회</span><div><b>화백회의 · 정사암회의 · 관복 색(자·비·청·황) · 중정대 · 주자감 · 외사정</b><br><span style="font-size:13.5px;color:var(--ink-2)">13년간 문제·선지 원문에 <b>단 한 번도</b> 등장하지 않았습니다.</span></div></div>
+</div>
+
+<div class="zero">
+<b>버릴 것을 알려드립니다.</b> 교재가 ★★★로 강조하는 <b>화백회의</b>와 <b>관복 색 구분</b>은 실제 기출 13년간 <b>0회</b>입니다. 개념만 한 번 읽고 넘어가세요. 대신 그 시간을 <b>발해 통치조직</b>(5경15부62주·정당성·대내상·3성6부)에 쓰시면 됩니다 — 이 넷만으로 이 단원 관련 기출의 절반 가까이가 커버됩니다.<br><br>
+<b>집계 기준</b> — 215문항의 <b>문제 본문과 선택지 원문</b>만 대상으로 셌습니다(해설문은 제외). 오답 보기에 등장한 것도 <b>1회로 포함</b>했습니다 — 오답으로 나온 단어가 다음 해에 정답으로 나오는 경우가 많기 때문입니다. 한 문항 안에 같은 키워드가 여러 번 나와도 1회로 셌습니다.
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">이 단원에서 점수가 갈리는 지점은 거의 전부 아래 여섯 쌍입니다. 하나씩 따로 외우면 헷갈리고, <b>짝으로</b> 외우면 안 헷갈립니다.</p>
+
+<div class="cmp">
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 9서당 vs 10정 vs 10위</h4>
+<div class="vs">
+<div class="side n"><b>9서당</b>통일신라 <b>중앙군</b><br>고구려·백제·말갈인 포함</div>
+<div class="mid">≠</div>
+<div class="side a"><b>10정</b>통일신라 <b>지방군</b><br>9주에 배치</div>
+</div>
+<div class="vs">
+<div class="side b"><b>10위</b>발해 <b>중앙군</b></div>
+<div class="mid">≠</div>
+<div class="side x2"><b>2군 6위</b>고려의 중앙군</div>
+</div>
+<p class="why"><b>서당은 9=중앙, 정은 10=지방.</b> 숫자가 엇갈린 게 함정입니다. 10정과 10위는 숫자가 같지만 <b>나라도 성격도 다릅니다</b>. 발해 문제에 "9서당"이 나오면 무조건 오답 — 2015·2025년 두 번 이 함정이 나왔습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 상수리 vs 외사정</h4>
+<div class="vs">
+<div class="side a"><b>상수리 제도</b><b>지방 세력</b>을 통제·견제<br>(→ 고려의 기인 제도)</div>
+<div class="mid">≠</div>
+<div class="side b"><b>외사정</b><b>지방관</b>을 감찰</div>
+</div>
+<p class="why">둘 다 "지방"이 붙어서 헷갈리는데, <b>대상이 다릅니다</b>. 상수리는 <b>토착 세력가</b>를 묶어두는 것, 외사정은 <b>중앙이 보낸 지방관</b>이 딴짓 안 하는지 보는 것. 2016년에 "지방관 감찰을 위한 상수리 제도"라고 바꿔치기한 선지가 나왔습니다. 참고로 중앙의 감찰 기구는 <b>사정부</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 국학 vs 국자감 vs 주자감</h4>
+<div class="vs">
+<div class="side n"><b>국학</b>통일신라<br>(신문왕)</div>
+<div class="mid">≠</div>
+<div class="side b"><b>주자감</b>발해<br>(문왕)</div>
+</div>
+<div class="vs">
+<div class="side x2"><b>국자감</b>고려 — 시대가 다름</div>
+<div class="mid">함정</div>
+<div class="side g"><b>성균관</b>조선</div>
+</div>
+<p class="why"><b>국학과 국자감은 이름이 비슷해서 매년 바꿔 냅니다.</b> "통일신라는 국자감을 설치하였다" → 틀림(2016년 정답). 교육기관은 <b>국학(통신) – 주자감(발해) – 국자감(고려) – 성균관(조선)</b> 네 개를 시대순으로 한 줄에 꿰어두세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> "수용" vs "그대로 모방"</h4>
+<div class="vs">
+<div class="side n"><b>당의 3성6부제를<br>수용하여 마련</b><span style="display:block;margin-top:4px">옳은 문장 <span class="o">O</span></span></div>
+<div class="mid">↔</div>
+<div class="side x2"><b>당의 조직을<br>그대로 모방</b><span style="display:block;margin-top:4px">틀린 문장 <span class="x">X</span></span></div>
+</div>
+<p class="why">틀 자체는 당에서 가져온 게 맞으니 <b>"수용"은 인정</b>됩니다. 하지만 <b>정당성·선조성·중대성</b>이라는 명칭, 6부의 유교식 이름, 정당성 중심 운영은 발해 <b>독자적</b>인 것이라 <b>"그대로"</b>가 붙으면 틀립니다. 단어 하나로 정답이 갈립니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 신문왕 vs 원성왕 vs 성덕왕</h4>
+<div class="vs">
+<div class="side a"><b>신문왕</b>녹읍 혁파 · 관료전 지급<br>9주5소경 정비 · <b>국학</b> 설치<br>달구벌 천도 시도</div>
+<div class="mid">≠</div>
+<div class="side b"><b>원성왕</b><b>독서삼품과</b></div>
+</div>
+<div class="vs">
+<div class="side n"><b>성덕왕</b>백성에게 <b>정전</b> 지급</div>
+<div class="mid">≠</div>
+<div class="side g"><b>경덕왕</b>관료전 폐지 · <b>녹읍 부활</b></div>
+</div>
+<p class="why">중대 왕들의 업적을 서로 바꿔 끼우는 문제가 반복됩니다. <b>독서삼품과는 신문왕이 아니라 원성왕</b>이라는 것이 2023년 정답이었습니다. 왕 이름 넷을 <b>신문(제도 정비) → 성덕(정전) → 경덕(녹읍 부활) → 원성(독서삼품과)</b>으로 한 줄에 세워두세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 신라 하대에 <b>있었던 일</b> vs <b>없던 일</b></h4>
+<div class="vs">
+<div class="side n"><b>있었던 일</b>왕위 쟁탈전 · 호족 등장<br>김헌창의 난 · 선종 유행<br>승탑 · 6두품 불만</div>
+<div class="mid">↔</div>
+<div class="side x2"><b>없던 일</b>대야성 함락(642, 의자왕)<br>교종·선종 통합운동(고려)<br>군진 세력=중앙 귀족(X)</div>
+</div>
+<p class="why">하대 문제는 <b>"시대가 안 맞는 것"</b>을 골라내는 유형입니다. 대야성 함락은 하대보다 <b>200년쯤 앞선</b> 일이고(그때 백제는 아직 존재), 교종·선종 통합은 <b>고려</b>의 일이라 아직 배우지 않은 내용이 선지로 나온 겁니다. 장보고 같은 <b>군진 세력은 중앙 귀족이 아니라 지방 세력</b>입니다.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>욕살 암기법</b> — "일을 못하면 <b>욕</b>을 뒤지게 먹어서 스스로 죽는다(<b>살</b>)". 고구려 5부의 우두머리입니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>신라의 '군주'는 임금이 아니라 군대의 대장</b>(軍+主). 삼국시대 지방관이 <b>군사지휘관을 겸했다</b>는 증거입니다. 통일 후에는 <b>총관→도독</b>으로 바뀌며 행정적 성격으로 전환됩니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>10정(신라 지방군)과 10위(발해 중앙군)</b> — 숫자가 같다고 같은 조직으로 착각하지 마세요. <b>6/28 필기반 약 4시간 50분</b> 지점에서 특별히 짚은 내용입니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"위화부는 발해 것이 아니라 통일신라 13부 중 하나"</b> — 2024년 정답을 가른 결정적 포인트로 강사가 직접 짚었습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"감찰사는 고려 충렬왕 때 기구"</b> — 발해의 감찰기구는 <b>중정대</b>입니다. 2022년에 처음 나온 선지라고 강사가 언급했습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"국호를 장안, 연호를 경운으로 한 반란은 무조건 김헌창"</b> — 강사가 즉답형으로 못박았습니다. 근거지는 <b>웅주(공주)</b>, 아버지가 원성왕과의 왕위 다툼에서 패한 인물입니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>선종 9산문(구산선문)은 경상도 중심이 아니라 전국에 고루 분포</b> — 2016년 정답 포인트였습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>발해 5경의 위치 문제(2018년 남경남해부)는 다시 나올 가능성이 거의 없다</b>고 강사가 직접 말했습니다. 지리 세부는 과감히 넘기세요.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"득난은 6두품의 별칭"</b>이지, 골품에 따른 관등 제한 제도 자체를 가리키는 말이 아닙니다. 이 바꿔치기가 2016년 정답이었습니다.</div></li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 실전 테스트 — 15문항</h2>
+<p class="sub"><b>15문항 전부 실제 기출입니다.</b> 지어낸 예상문제는 한 문항도 없습니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>구성을 밝힙니다.</b> 2013~2025년 215문항 중 4단원에 직접 걸린 것은 <b>9문항</b>(Q90~99)입니다. 여기에 <b>내용이 4단원 통치조직 그 자체인 인접 기출 6문항</b>(삼국 관등제도 1 + 발해 통치조직 5)을 더해 15문항으로 구성했습니다. <b>보기 4개가 원문에 온전히 기록된 문항만</b> 사용했습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 15 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="wrongBtn" onclick="onlyWrong()" style="display:none">틀린 문제만 다시</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts">
+<button class="btn" onclick="onlyWrong()">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" onclick="reset()">전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>01_관광국사/04_최종교재/관광국사.md</code>(통합교재) 4단원 · <code>01_관광국사/03_작업자료/4단원_고대의통치조직과신라의시대구분.md</code> / 기출·빈도: <code>01_관광국사/03_작업자료/관광국사기출.md</code>(2013~2025년 215문항).</p>
+<p><b>실측 방법</b> — 215문항의 <b>문제·선택지 원문</b>만을 대상으로 키워드 등장 문항 수를 셌습니다(해설문 제외, 오답 보기 포함, 한 문항 내 중복은 1회). 4단원 직접 출제: <b>9문항</b>(2016×3·2018×2·2019·2020·2023·2024). 인접 통치조직 기출 6문항을 더해 테스트는 15문항입니다.</p>
+<p><b>강의 위치</b> — 관광국사자원 필기반 <b>6월 28일 영상, 약 4시간 24분 ~ 5시간 14분</b> 구간. 기출 풀이는 <b>7월 10일</b> 전사본.</p>
+<p><b>추측 금지</b> — 교재와 기출 원문에 없는 내용은 넣지 않았습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+
+<script>
+var QS=[
+{n:1,src:"기출 2016",q:"삼국의 관등제도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["고구려의 관등 조직은 '형' 계열과 '사자' 계열로 분화 편제되었다.","백제는 16관품을 세 단계로 구분하고 공복 색깔로 구별하였다.","신라는 골품에 따른 관등의 제한을 두었는데 이를 득난이라 한다.","삼국의 관등 정비는 중앙집권적인 국가를 형성하기 위한 조치였다."],a:2,c:"삼국 통치조직",e:"<b>득난</b>은 신라에서 <b>6두품을 가리키는 별칭</b>이지, '골품에 따른 관등 제한' 그 자체를 뜻하는 말이 아닙니다. 고구려의 <b>형·사자 계열</b>, 백제의 <b>16관품 3단계 공복 구분</b>, 관등 정비의 <b>중앙집권화 목적</b>은 모두 옳은 설명입니다."},
+{n:2,src:"기출 2016",q:"통일신라의 지방 행정에 관한 설명으로 옳은 것은?",o:["정복한 국가의 귀족들을 소경으로 이주시켜 감시하였다.","지방관 감찰을 위해 관리를 파견하는 상수리 제도를 실시하였다.","행정적 기능보다 군사적 기능을 강화하여 전국을 9주로 나누었다.","경주의 지역적 편협성을 보완하기 위해 고구려와 백제 지역에 5소경을 설치하였다."],a:0,c:"통일신라",e:"강사 해설 그대로 짚습니다 — ②<b>지방관을 감찰</b>하러 보낸 건 상수리가 아니라 <b>외사정</b>이고, 상수리 제도는 <b>지방 세력을 통제</b>하는 제도입니다. ③통일 이후 9주의 지방관은 군사지휘관에서 <b>행정 관리 성격으로 바뀌었는데</b> 선지는 반대로 써놨습니다. ④는 5소경 설치 지역 서술이 정확하지 않습니다. ①<b>정복국가의 귀족을 소경으로 옮겨 감시</b>한 것이 옳은 설명입니다."},
+{n:3,src:"기출 2016",q:"통일신라의 통치 제도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["감찰 기구인 사정부를 두었다.","국자감이라는 교육 기관을 설치하였다.","관리 채용을 위하여 독서삼품과를 실시하였다.","집사부에는 시중이라는 관직이 설치되어 있었다."],a:1,c:"통일신라",e:"통일신라의 교육기관은 <b>국학</b>이고, <b>국자감은 고려</b>입니다. 나머지는 모두 옳습니다 — <b>사정부</b>(감찰), <b>독서삼품과</b>(원성왕), <b>집사부의 시중</b>. 이름이 비슷한 <b>국학–주자감(발해)–국자감(고려)–성균관(조선)</b>을 시대순으로 한 줄에 꿰어두세요."},
+{n:4,src:"기출 2018",q:"다음은 무엇에 관한 설명인가?<br><span style=\"display:block;margin-top:8px;padding:9px 12px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-weight:500;font-size:14px;font-style:italic\">통일 신라의 중앙군으로 고구려와 백제인은 물론 말갈인까지 포함하여 편성하였다.</span>",o:["10위","10정","9서당","2군 6위"],a:2,c:"통일신라",e:"통일신라의 <b>중앙군은 9서당</b>이며, 고구려·백제·<b>말갈인</b>까지 포함한 <b>민족융합군</b>이라는 점이 핵심입니다. 나머지는 나라와 성격이 각각 다릅니다 — <b>10위=발해 중앙군</b>, <b>10정=통일신라 지방군</b>, <b>2군 6위=고려 중앙군</b>. 이 네 개가 한 문제의 보기로 함께 나옵니다."},
+{n:5,src:"기출 2023",q:"밑줄 친 '이 왕'에 관한 설명으로 옳지 <b>않은</b> 것은?<br><span style=\"display:block;margin-top:8px;padding:9px 12px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-weight:500;font-size:14px;font-style:italic\">이 왕은 문무왕의 뒤를 이어 귀족 세력을 억누르고 왕권을 강화하였으며, 무열왕계의 안정적인 왕위 계승 기틀을 닦았다.</span>",o:["녹읍을 혁파하였다.","독서삼품과를 시행하였다.","달구벌로 천도를 시도하였다.","9주 5소경 체제를 정비하였다."],a:1,c:"통일신라",e:"밑줄 친 '이 왕'은 <b>신문왕</b>입니다. <b>독서삼품과는 원성왕</b> 때 시행되어 신문왕과는 <b>무관</b>합니다. 녹읍 혁파·달구벌 천도 시도·9주 5소경 정비는 모두 신문왕의 업적이에요. 중대 왕들의 업적 바꿔치기는 반복 출제되니 <b>신문(제도 정비)→성덕(정전)→경덕(녹읍 부활)→원성(독서삼품과)</b>으로 세워두세요."},
+{n:6,src:"기출 2024",q:"신라 성덕왕의 재위 기간에 있었던 사실로 옳은 것은?",o:["촌민에게 정전을 지급하였다.","관료전을 지급하고 녹읍을 폐지하였다.","관료전을 폐지하고 녹읍을 부활하였다.","관료를 18과로 나누어 전지와 시지를 지급하였다."],a:0,c:"통일신라",e:"<b>정전 지급 = 성덕왕</b>입니다. ②는 <b>신문왕</b>, ③은 <b>경덕왕</b>의 정책이고, ④는 <b>고려 전시과</b>의 내용이라 시대 자체가 다릅니다. 강사도 <b>\"이 내용은 원래 경제 단원에 있어야 하는데 문제가 잘못 배치됐다\"</b>고 언급한 문항입니다."},
+{n:7,src:"기출 2019",q:"신라 하대에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["중앙 귀족들 사이에 권력 다툼이 빈번하였다.","지방에는 새로운 세력으로 호족이 등장하였다.","교종과 선종의 통합 운동이 활발하게 전개되었다.","승려의 사리를 봉안하는 승탑이 유행하였다."],a:2,c:"신라 하대",e:"<b>교종과 선종의 통합 운동은 고려시대</b> 이야기입니다(의천·지눌). 신라 하대는 150년간 왕이 20번 바뀔 만큼 <b>진골 간 왕위 쟁탈전</b>이 빈번했고, <b>호족</b>이 새 지방세력으로 등장했으며, <b>선종의 유행과 함께 승탑</b>이 널리 조성된 시기입니다."},
+{n:8,src:"기출 2020",q:"신라 하대의 정세에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["백제의 침탈로 대야성이 함락되었다.","왕위 계승 문제로 김헌창이 봉기를 일으켰다.","성주와 장군이라 칭하는 호족 세력이 늘어났다.","6두품 세력을 중심으로 골품제에 대한 불만이 높아졌다."],a:0,c:"신라 하대",e:"<b>대야성 함락은 642년 의자왕 때</b>의 일입니다. 신라 하대 시점에는 <b>백제라는 나라 자체가 이미 멸망하고 없어서</b> 시대가 맞지 않습니다. 김헌창의 난, <b>성주·장군을 자칭한 호족</b>의 성장, 6두품의 골품제 불만은 모두 하대의 옳은 특징입니다."},
+{n:9,src:"기출 2016",q:"통일 신라 시대 말기에 관한 설명으로 옳지 <b>않은</b> 것을 모두 고른 것은?<br><span style=\"display:block;margin-top:8px;padding:9px 12px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:14px\">ㄱ. 웅주 도독 김헌창이 반란을 일으켰다.<br>ㄴ. 군진 세력은 유력한 중앙 귀족 세력 중 하나이다.<br>ㄷ. 선종 9산문은 경상도를 중심으로 분포되었다.<br>ㄹ. 북원의 양길과 완산의 견훤 등이 대표적인 반란군이다.</span>",o:["ㄱ, ㄴ","ㄱ, ㄹ","ㄴ, ㄷ","ㄴ, ㄹ"],a:2,c:"신라 하대",e:"틀린 것을 고르는 문제입니다. <b>ㄴ</b> — 장보고 같은 <b>군진 세력은 중앙 귀족이 아니라 지방 세력</b>이라 틀렸습니다. <b>ㄷ</b> — <b>선종 9산문(구산선문)은 경상도뿐 아니라 충청·전라 등 전국에 고루 분포</b>했으므로 '경상도 중심'은 틀렸습니다. ㄱ(김헌창의 난)과 ㄹ(양길·견훤)은 실제로 있었던 옳은 내용입니다."},
+{n:10,src:"기출 2018",q:"밑줄 친 '그'에 해당하는 인물은?<br><span style=\"display:block;margin-top:8px;padding:9px 12px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-weight:500;font-size:14px;font-style:italic\">그의 아버지는 원성왕과의 왕위 다툼에서 패하였다. 그는 웅주(공주)를 근거로 반란을 일으켜 국호를 장안, 연호를 경운이라고 했다.</span>",o:["이자겸","김보당","김헌창","조위총"],a:2,c:"신라 하대",e:"강사가 즉답형으로 못박은 문항입니다 — <b>국호 장안, 연호 경운의 반란은 무조건 김헌창</b>. 나머지 셋은 모두 <b>고려시대</b> 인물이라 시대 자체가 다릅니다(이자겸의 난, 김보당의 난, 조위총의 난)."},
+{n:11,src:"기출 2015",q:"발해에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["중앙 정치 조직은 정당성, 선조성, 중대성으로 편성되었다.","중앙군인 9서당에는 고구려와 말갈 출신이 함께 편제되었다.","5경은 전략적 요충지에 설치되었고, 지방 행정의 중심에는 15부를 두었다.","무왕 때 영토 확장에 힘을 기울여 동북방의 여러 세력을 복속하고 북만주 일대를 장악하였다."],a:1,c:"발해",e:"<b>9서당은 발해가 아니라 통일신라의 중앙군</b>입니다. <b>발해의 중앙군은 10위</b>예요. 나머지는 모두 옳습니다 — 3성(정당성·선조성·중대성), <b>5경 15부</b>, 무왕의 영토 확장. 이 함정은 <b>2015년과 2025년 두 번</b> 나왔습니다."},
+{n:12,src:"기출 2024",q:"발해의 통치 제도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["정당성의 대내상이 국정을 총괄하였다.","관리 인사를 담당하는 위화부를 두었다.","전국을 5경 15부 62주로 나누어 다스렸다.","당의 3성 6부제를 수용하여 중앙 관제를 마련하였다."],a:1,c:"발해",e:"강사가 정확히 짚은 문항입니다 — <b>위화부는 통일신라 13부 중 하나</b>이지 발해의 관청이 아닙니다. 나머지는 모두 옳습니다. 특히 ④의 <b>\"수용하여\"</b>는 옳은 표현이라는 점에 주의하세요 — <b>\"그대로 모방\"</b>이라고 쓰면 그때는 틀린 문장이 됩니다."},
+{n:13,src:"기출 2022",q:"발해의 통치 제도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["당의 3성 6부제를 수용하여 정치 제도를 마련하였다.","전국을 5경 15부 62주로 나누어 다스렸다.","정당성의 대내상이 국정을 총괄하였다.","감찰사라는 감찰 기구를 두었다."],a:3,c:"발해",e:"발해의 감찰기구는 감찰사가 아니라 <b>중정대</b>입니다. <b>감찰사는 고려 원간섭기 충렬왕 때</b> 만들어진 기구라 시대 자체가 다릅니다 — 강사가 <b>\"우리 시험에서 처음 나온 선지\"</b>라고 언급했습니다. 감찰기구는 <b>사정부(통일신라) – 중정대(발해)</b> 짝으로 외우세요."},
+{n:14,src:"기출 2023",q:"발해에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["전국을 5경 15부 62주로 나누어 다스렸다.","정당성에서 정책을 입안하고 심의하였다.","인안, 대흥 등 독자적인 연호를 사용하였다.","당의 장안성을 본떠 상경성을 건설하였다."],a:1,c:"발해",e:"발해 3성의 역할 분담이 핵심입니다 — <b>정당성은 정책을 '집행'</b>하는 기구이고(장관이 대내상), <b>입안·심의는 중대성·선조성</b>의 역할입니다. 나머지는 옳습니다 — 5경 15부 62주, 독자 연호(<b>무왕=인안, 문왕=대흥</b>), 당 장안성을 본뜬 상경성."},
+{n:15,src:"기출 2017",q:"발해의 지방 통치에 관한 설명으로 옳은 것은?",o:["고구려 유민의 인구가 말갈족보다 많아 통치가 수월하였다.","토인이라고 불린 고구려 유민이 촌장을 맡았다.","9주 5소경의 지방 제도를 실시하였다.","2군 6위의 군대를 주둔시켜 지방을 통제하였다."],a:1,c:"발해",e:"발해는 지배층인 <b>고구려 유민</b>이 <b>'토인'</b>으로 불리며 촌장 등 지방 실무를 맡는 <b>이원적 지배 구조</b>였습니다. ①고구려 유민은 피지배층인 말갈족보다 <b>인구가 적었고</b>, ③<b>9주 5소경은 통일신라</b>, ④<b>2군 6위는 고려</b>의 제도라 모두 오답입니다."}
+];
+
+var sel={},graded=false,t0=null,tick=null;
+var live=null,lastWrong=[];
+function visible(){return live?QS.filter(function(q){return live.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=visible();var h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+visible().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=visible();var right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';
+lastWrong=wrong.map(function(q){return q.n});
+document.getElementById('wrongBtn').style.display='';
+}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';lastWrong=[];document.getElementById('wrongBtn').style.display='none';}
+var tx='[관광국사 4단원 — 고대의 통치 조직과 신라의 시대 구분(골품제)] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] ('+q.src+') '+q.q.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onlyWrong(){
+if(!lastWrong.length){return;}
+live=lastWrong.slice();
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function reset(){
+live=null;lastWrong=[];
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광국사 15단원 · 조선 후기의 경제</title>
+<style>
+
+@font-face{font-family:'Pretendard';src:url('../../fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.s5 .num{background:var(--pal)} .s5 .ttl{color:var(--pal)} .s5{border-top:3px solid var(--pal)}
+.s6 .num{background:var(--neo)} .s6 .ttl{color:var(--neo)} .s6{border-top:3px solid var(--neo)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)} .s5 b.k{color:var(--pal)} .s6 b.k{color:var(--neo)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q.hide{display:none}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.rank,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(2,1fr)}}
+.rank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0}
+.rank .r{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;box-shadow:var(--shadow)}
+.rank .r b{display:block;font-size:15px;color:var(--bro);margin-bottom:5px}
+.rank .r span{font-size:12px;color:var(--ink-2);display:block;line-height:1.5}
+.rank .r.top{border-color:var(--gold)}
+.rank .r.top b{color:var(--gold)}
+@media(max-width:560px){.rank{grid-template-columns:repeat(2,1fr)}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 15단원</div>
+<h1>조선 후기의 경제
+<small>영정법·대동법·균역법 → 이앙법·광작·농민층 분화 → 공인·도고·사상·상평통보</small>
+</h1>
+<div class="meta">
+<span class="chip hot">교재 해설집 실측 — 이 단원 문항 18개</span>
+<span class="chip">기출 215문항 중 이 단원 키워드가 등장한 6문항 원문 수록</span>
+<span class="chip">강의 근거: 7/26 핵심 · 7/31 문제풀이 · 8/9 핵심</span>
+<span class="chip">시험 D-13</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원을 관통하는 한 줄</h2>
+<p class="sub">이 단원을 관통하는 한 줄은 이것입니다 — <b>전쟁으로 나라가 거덜 나자 세금 걷는 방식을 바꿨고(영정법·대동법·균역법), 그 바뀐 세금이 시장에 쌀과 돈을 쏟아부으면서 농사법과 상업이 통째로 달라졌다</b>는 것입니다. 즉 <b>세금 개혁 → 농업 변화 → 상공업 폭발</b>. 이 세 박자 순서만 잡으면 이 단원은 절반이 끝납니다.</p>
+
+<div class="flow">
+<b>임진왜란·병자호란</b><i>→</i><b class="hi">세금 3종 개혁</b><i>→</i><b>공인 등장</b><i>→</i><b>이앙법 전국화</b><i>→</i><b>광작</b><i>→</i><b>농민층 분화</b><i>→</i><b>사상·도고 성장</b><i>→</i><b>상평통보·전황</b>
+</div>
+
+<div class="tl">
+<div class="t1"><b>① 세금 — 무엇으로, 무엇을 기준으로 걷느냐가 바뀐다</b><span>전세: <b>영정법</b>(인조) — 풍흉 무시, 1결당 쌀 <b>4~6두</b> 고정<br>공납: <b>대동법</b>(광해군 경기도 → <b>숙종</b> 전국) — 집(호) 기준 특산물 → <b>토지</b> 기준 쌀 12두·베·동전, <b>선혜청</b> 설치<br>역: <b>균역법</b>(영조) — 군포 2필 → <b>1필</b>, 부족분은 <b>결작</b>(1결당 2두)·선무군관포·어장세·선박세, <b>균역청</b> 징수</span></div>
+<div class="t2"><b>② 농업 — 일하는 방식이 바뀐다</b><span>논: <b>이앙법(모내기) 전국 실시</b> → 벼·보리 이모작 일반화 → 김매기 노동 절감 → <b>광작</b> 유행<br>밭: 농종법(이랑) → <b>견종법</b>(고랑) → 생산량 증가<br>결과: <b>농민층 분화</b>(부농층 ↔ 도시·광산·포구 임노동자) / 지대: <b>타조법</b>(정률 1/2, 일반적) → 일부 <b>도조법</b>(정액 1/3)</span></div>
+<div class="t3"><b>③ 상공업 — 돈이 돌기 시작한다</b><span>상인: <b>공인</b>(대동법이 낳음) → <b>도고</b>(독점 도매) / 사상: <b>송상</b>(개성·인삼)·<b>만상</b>(의주·청)·<b>내상</b>(동래·일본)·<b>경강상인</b>(한강·운송)<br>수공업 <b>선대제</b> / 광업 <b>설점수세제</b> → <b>덕대</b> 경영 / 장시 전국 1,000여 개 · 포구의 <b>객주·여각</b><br>화폐: <b>상평통보</b> 전국 유통 → <b>전황</b>(돈이 시중에 없는 현상) · 환·어음</span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>14단원과 헷갈리지 마세요.</b> 영조·정조라는 <b>왕</b> 이야기는 14단원(정치)이고, 여기 15단원은 그 왕들이 <b>무슨 경제 제도를 만들었나</b>입니다. 시험은 이 둘을 섞어서 냅니다 — 실제로 "규장각(정조) 문제인데 오답 선지에 균역법(영조)이 들어있는" 식입니다. 그래서 <b>제도 이름 ↔ 왕 이름</b> 짝을 외우는 것이 이 단원 최대의 득점처입니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 읽는 조선 후기의 경제</h2>
+<p class="sub">외우기 전에 먼저 이야기로 한 번 읽어 주세요. "왜 이런 일이 벌어졌는가"를 알면 제도 이름과 왕 이름은 저절로 붙습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">관리가 내 대신 세금을 내주겠다고 한다 — 방납의 폐단</div><div class="era">조선 전기 → 광해군</div></div>
+<div class="body">
+<p>조선의 세금은 세 가지였습니다. 땅에서 걷는 <b class="k">전세</b>, 그 지역 특산물을 바치는 <b class="k">공납</b>, 그리고 남자가 몸으로 때우는 <b class="k">역</b>. 이 중에서 백성을 가장 괴롭힌 것이 공납이었습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>공납(貢納)</b>은 "우리 고을에서 나는 특산물을 나라에 바쳐라"는 세금입니다. 문제는 <b>집집마다 똑같이</b> 걷었다는 것입니다. 부잣집이든 가난한 집이든 전복 한 마리씩. 애초에 불공평했습니다.</div>
+<p>그런데 여기에 더 악질적인 일이 붙습니다. 강사가 7/26 강의에서 이렇게 설명합니다 — <b>"나라에서 A라는 물건을 내라고 명령이 떨어지면 집집마다 이 A물건을 하나씩 내야 되는 거야. 그런데 그걸 거둬가는 관리가 와서, 여러분들이 준비를 다 해놨는데도 못 내게 막아. '내지 마 니들, 내가 대신 내줄게.' 그리고 대신 내고 나중에 너희들한테 걷어갈게 — 그때는 하나 내주고 백성들에게 두 개 세 개 삥 뜯는 거야."</b></p>
+<div class="term"><b>이게 뭐냐면 —</b> 이것이 <b>방납(防納)</b>입니다. <b>방(防)은 "막을 방"</b>입니다. 백성이 직접 내려는 걸 <b>막고</b>, 관리(또는 상인)가 대신 낸 뒤 두세 배로 뜯어가는 것 — 그래서 이름이 "막을 방, 바칠 납"입니다. 이 글자 뜻 하나만 알아도 시험에서 안 헷갈립니다.</div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>요즘으로 치면 회사가 "각자 노트북 한 대씩 사서 제출"이라고 했는데, 총무팀장이 "너희가 사면 안 돼, 내가 대신 사줄게" 하고 막은 뒤 나중에 노트북 값의 세 배를 청구하는 것입니다. 물건은 하나인데 돈은 세 배 나가는 구조죠.</div></div>
+<p>이 폐단을 고치자고 <b class="k">이이</b>와 <b class="k">유성룡</b>이 16세기에 <b class="k">수미법</b>을 주장합니다. "특산물 말고 <b>쌀(米)로 걷어서</b> 나라가 필요한 물건을 직접 사자"는 것입니다. 하지만 주장만 했을 뿐 실행되지 못했습니다. 강사는 <b>"이 수미법이 나중에 조선 후기의 대동법으로 발전해버리는 거예요"</b>라고 연결해 줍니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> <b>방납의 폐단 → 수미법 주장(조광조·이이·유성룡, 실패) → 대동법(광해군, 실행)</b>. 이 3단 계보가 그대로 문항으로 나옵니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">세금 셋을 뜯어고치다 — 영정법·대동법·균역법</div><div class="era">인조 · 광해군→숙종 · 영조</div></div>
+<div class="body">
+<p>임진왜란과 병자호란이 지나간 자리는 참혹했습니다. 농경지는 황폐해졌고, 세금 장부는 엉망이 되었습니다. 조선은 세금 세 가지를 하나씩 손봅니다.</p>
+<p><b class="k">① 전세 → 영정법(인조)</b>. 원래 세종이 만든 방식은 땅의 비옥도를 6등급(전분6등법), 그해 풍흉을 9등급(연분9등법)으로 나눠 20두~4두를 걷는 정교한 제도였습니다. 그런데 전쟁 후에는 이걸 따질 행정력 자체가 없었습니다. 그래서 <b>풍년이든 흉년이든 상관없이 토지 1결당 쌀 4~6두</b>로 고정해 버립니다. 이것이 <b>전세의 정액화</b>입니다. 강사는 7/26 인조 대목에서 <b>"영정법은 우리가 나중에 경제에서 따로 배울 내용이지만 세금 제도를 바꾼 거야. 이 영정법이란 세금 제도의 개편이 인조 대라는 거, 외워둘 것"</b>이라고 못박습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>함정 —</b> 영정법으로 세금이 줄어 <b>이득을 본 건 땅 많은 지주</b>입니다. 대다수 농민은 소작농이라 <b>혜택이 거의 없었고</b>, 오히려 지주가 각종 부가세를 소작농에게 떠넘겨 <b>부담이 늘었습니다</b>. "영정법으로 농민 부담이 크게 줄었다"는 문장은 틀립니다.</div></div>
+<p><b class="k">② 공납 → 대동법(광해군 → 숙종)</b>. 방납을 뿌리 뽑기 위해, 특산물 대신 <b>토지 크기에 따라</b> 쌀(<b>12두</b>)·삼베·무명·동전으로 걷기로 합니다. 담당 관청은 <b class="k">선혜청</b>입니다. 강사는 7/26에서 <b>"광해군이 대동법을 실험적으로 경기도만 먼저 테스트한 거야. 그리고 그 대동법이 숙종 때 전국적으로 실시된 거지"</b>라고 정리합니다. 교재 해설은 그 사이 간격을 이렇게 적습니다 — <b>양반 지주의 반대로 100년이 지나서야 전국 확대</b>. 땅 기준으로 걷으니 땅부자가 반대할 수밖에 없었던 것입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 핵심은 <b>"집(호) 기준 → 땅(토지) 기준"</b>으로 바뀐 것입니다. 이걸 <b>공납의 전세화</b>라고 부릅니다. 특산물이라는 '현물'이 쌀·돈이라는 '정해진 물건'으로 바뀌었으니, <b>조세의 금납화</b>(세금을 돈으로 내는 흐름)도 여기서 시작됩니다.</div>
+<p><b class="k">③ 역 → 균역법(영조)</b>. 16세기 후반부터 농민은 1년에 <b>군포 2필</b>을 내야 했습니다. 그런데 조선 후기에 <b>납속·공명첩</b>으로 돈 주고 양반이 되는 사람이 늘자, 군포를 낼 상민 숫자가 줄어듭니다. 남은 사람에게 몫이 몰리면서 <b class="k">백골징포</b>(죽은 사람에게 군포를 매김)·<b class="k">황구첨정</b>(어린아이를 장정으로 올려 군포를 매김) 같은 일이 벌어집니다. 영조는 <b>군포를 2필에서 1필로</b> 줄여 줍니다. 강사는 7/31 문제풀이에서 이 항목만 네 번 반복합니다 — <b>"균역법은 누구야? 영조예요."</b></p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>균역법의 진짜 시험 포인트는 "줄인 것"이 아니라 "메운 것"입니다.</b> 부족해진 재원을 ①<b>결작</b>(지주에게 토지 1결당 쌀 <b>2두</b>) ②<b>선무군관포</b>(일부 상류층에게 군포 1필) ③<b>어장세·선박세</b>로 메웠고, 이 징수를 <b>균역청</b>이 맡았습니다. 이 네 가지가 세트로 나옵니다.</div></div>
+<div class="quote">"균역법은 경제야" — 7/31 전사본. 영조의 업적 중 <b>속대전·대전통편·수원화성은 문화</b>, <b>균역법만 경제</b>라고 강사가 분류해 줍니다. 14단원(정치) 문제에서 균역법이 오답 선지로 튀어나오는 이유입니다.</div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">대동법이 낳은 새 직업 — 공인, 그리고 도고</div><div class="era">광해군 이후</div></div>
+<div class="body">
+<p>대동법에는 아무도 예상 못 한 부작용(정확히는 부산물)이 있었습니다. 나라가 특산물 대신 <b>쌀과 돈</b>을 받게 되자, 나라는 그 쌀과 돈으로 <b>필요한 물건을 시장에서 사와야</b> 했습니다. 그 구매를 대행하는 사람이 새로 생깁니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>공인(貢人)</b>은 선혜청에서 물품 대금을 미리 받아, 왕실과 관청에 필요한 물건을 사다 바치는 <b>국가 조달 상인</b>입니다. 나라가 고용한 상인이라고 생각하면 정확합니다.</div>
+<p>공인은 나라를 상대로 하니 거래 규모가 큽니다. 한 번에 수백 필, 수천 석을 사들입니다. 이런 대량 구매가 시장을 키우고, 상품과 화폐가 도는 속도를 끌어올립니다. 이것이 <b class="k">상품 화폐 경제의 발달</b>입니다.</p>
+<p>그리고 돈을 번 공인 중 일부는 한 단계 더 나아갑니다. <b>특정 물건을 싹 사재기해서 값을 올려 파는</b> 것입니다. 이것이 <b class="k">도고</b>(독점적 도매상인)입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>박지원의 소설 <b>「허생전」</b>에서 허생이 제사에 쓰는 과일을 몽땅 사들여 값을 열 배로 튀기는 장면 — 그게 바로 도고입니다. 오늘날로 치면 마스크 대란 때의 사재기 업자입니다.</div></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>최다 함정 —</b> "대동법으로 등장한 상인은 <b>보부상</b>이다" → <b class="x">틀림</b>. 정답은 <b>공인</b>입니다. 보부상은 조선 전기부터 지방 장시를 떠돌던 행상이라 대동법과 아무 관계가 없습니다. 이 함정은 교재 오답노트에 별도 문항으로 실려 있을 만큼 자주 나옵니다.</div></div>
+</div>
+</div>
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">모내기가 농촌을 두 쪽으로 갈랐다</div><div class="era">조선 후기 전반</div></div>
+<div class="body">
+<p>조선 전기에도 <b class="k">이앙법</b>(모내기)은 알고 있었습니다. 고려 말 남부 일부 지방에 이미 보급돼 있었죠. 그런데 정부가 <b>막았습니다</b>. 이유는 하나 — <b>가뭄</b>입니다. 모내기는 못자리에서 키운 모를 논에 옮겨 심는 방식이라, 옮겨 심을 시기에 물이 없으면 한 해 농사를 통째로 날립니다. 그래서 대부분 지역은 씨를 논에 바로 뿌리는 <b class="k">직파법</b>을 썼습니다.</p>
+<p>조선 후기에 들어 저수지·보 같은 수리 시설이 늘면서 이 규제가 풀리고, 이앙법이 <b>전국적으로</b> 실시됩니다. 그러자 놀라운 일이 벌어집니다.</p>
+<div class="quote">"모내기 이앙법의 가장 큰 장점이 <b>잡초를 뽑아내는 김매기를 안 하는 게 제일 큰 장점</b>이거든요" — 8/9 핵심강의. 강사가 민요(김매기 노동요)를 설명하다가 곁들인 말이지만, 이앙법의 핵심 원리를 한 문장으로 짚어 줍니다.</div>
+<div class="term"><b>왜 김매기가 줄어드냐면 —</b> 모내기는 <b>줄 맞춰</b> 심습니다. 줄 사이가 뚫려 있으니 잡초를 뽑기가 훨씬 쉽고, 못자리에서 모를 키우는 동안 본논은 물에 잠겨 있어 잡초가 애초에 덜 자랍니다. 김매기는 농사일 중 가장 사람 손이 많이 가는 작업이었으니, 이게 줄었다는 건 <b>같은 사람 수로 훨씬 넓은 땅을 지을 수 있게 됐다</b>는 뜻입니다.</div>
+<p>그 결과가 <b class="k">광작</b>입니다. 지주가 노비·머슴을 부려 넓은 땅을 <b>직접 경영</b>하고, 능력 있는 농민도 남의 땅까지 빌려 크게 짓습니다. 여기에 벼를 거두고 보리를 심는 <b>이모작</b>까지 일반화됩니다.</p>
+<p>그런데 광작에는 그늘이 있습니다. 한 사람이 넓게 지으면, <b>그만큼 다른 누군가는 부칠 땅을 잃습니다.</b> 지주 입장에서도 소작을 여럿에게 나눠 주느니 직접 크게 짓는 게 낫습니다. 그래서 농촌은 두 쪽으로 갈라집니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사에 자동화 설비가 들어온 것과 같습니다. 설비를 산 사장은 생산량이 몇 배로 뛰어 <b>부농</b>이 되고, 그 일을 하던 사람들은 자리를 잃고 <b>도시·광산·포구로 일자리를 찾아 떠납니다</b>. 이것이 <b class="k">농민층의 분화</b>입니다.</div></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>인과 사슬을 통째로 외우세요 —</b> <b>이앙법 전국화 → 김매기 노동 절감 → 경작지 확대 → 광작 유행 → 농민층 분화(부농층 vs 임노동자)</b>. 교재 해설집에서 이 사슬이 4문항에 걸쳐 반복됩니다. 참고로 이앙법 보급에 크게 기여한 농서가 <b>신속의 「농가집성」</b>입니다(8/9 강의에서 강조).</div></div>
+</div>
+</div>
+
+<div class="story s5">
+<div class="head"><div class="num">5</div><div class="ttl">밭이랑을 바꾸고, 돈 되는 작물을 심다</div><div class="era">조선 후기 전반</div></div>
+<div class="body">
+<p>논농사만 바뀐 게 아닙니다. 밭농사도 바뀝니다. 원래는 흙을 두둑하게 올린 <b>이랑</b>에 씨를 심는 <b class="k">농종법</b>이었는데, 조선 후기에는 <b>고랑</b>에 심는 <b class="k">견종법</b>으로 바뀝니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>이랑</b>은 볼록 올라온 두둑, <b>고랑</b>은 그 사이 파인 골입니다. 고랑에 심으면 ①물이 고여 <b>가뭄에 강하고</b> ②바람을 덜 타 <b>추위에 강하고</b> ③거름이 흘러들어 <b>양분이 모입니다</b>. 그래서 생산량이 늘었습니다. <b>견(畎)은 "밭도랑 견"</b>입니다 — 글자 자체가 고랑이라는 뜻입니다.</div>
+<p>먹을 것을 짓던 밭에 이제 <b>돈이 되는 작물</b>이 들어옵니다. <b class="k">상품 작물</b>입니다 — 쌀, 목화, <b>담배</b>, <b>인삼</b>, 채소(오이·고추·호박·마늘·생강), 약초. 특히 담배와 고추는 임진왜란 이후에 들어온 신작물이라, "조선 <b>전기</b>에 담배를 재배했다"는 문장은 무조건 틀립니다.</p>
+<p>동시에 흉년에 대비하는 <b class="k">구황작물</b>도 들어옵니다 — <b>감자·고구마</b>. 상품 작물은 "팔아서 돈 벌려고", 구황작물은 "굶어 죽지 않으려고" 심는 것이라 목적이 정반대입니다.</p>
+<p>땅 빌려 짓는 사람이 내는 소작료(지대)도 바뀝니다. 원래는 <b class="k">타조법</b> — 수확량의 <b>1/2</b>을 무조건 바치는 <b>정률지대</b>였습니다. 풍년이면 많이, 흉년이면 적게 내니 공평해 보이지만, <b>지주가 수확량을 계속 감시</b>하기 때문에 농민이 뭘 심을지 자유롭게 정할 수 없었습니다. 조선 후기에는 일부 지역에서 <b class="k">도조법</b> — 미리 정한 액수(대략 <b>1/3</b>)만 내면 되는 <b>정액지대</b>가 나타납니다. 더 거둔 만큼은 내 몫이니 농민이 열심히 하고, 무엇을 심을지도 자유로워집니다. 나아가 지대를 쌀 대신 <b>돈</b>으로 내는 <b>지대의 금납화</b>까지 이어집니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>함정 —</b> "조선 후기에는 소작료가 도조법으로 <b>통일</b>되었다" → <b class="x">틀림</b>. 조선 시대의 <b>일반적인 지대는 끝까지 타조법</b>이었고, 도조법은 <b>일부 지역</b>에서만 나타났습니다. "바뀌어 갔다"와 "바뀌었다"는 다릅니다.</div></div>
+</div>
+</div>
+
+<div class="story s6">
+<div class="head"><div class="num">6</div><div class="ttl">상인들의 지도, 광산의 덕대, 그리고 사라진 동전</div><div class="era">조선 후기 후반</div></div>
+<div class="body">
+<p>조선 전기의 상업은 단순했습니다. 한양 종로에는 나라가 허가한 <b class="k">시전 상인</b>이 있었고, 지방 장시에는 <b class="k">보부상</b>이 돌아다녔습니다. 둘 다 <b>관허(官許) 상인</b>, 즉 합법 상인입니다.</p>
+<p>이 시전 상인에게 나라가 준 특권이 있었습니다. 강사가 7/26에서 아주 힘주어 설명하는 대목입니다 — <b>"시전 상인들은 자기가 판매하는 물건을 국가·왕실이나 정부 관청에 공짜로 공급해줘요. 그리고 그 공급해준 대가로, 자기 상품은 아무도 못 팔게 하는 거죠. 그걸 뭐라고 한다? 금난전권."</b></p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>금난전권(禁亂廛權)</b> = <b>난전(허가 없는 가게)을 금지할 수 있는 권리</b>. 강사의 정의 그대로 <b>"특정 상품에 대한 독점 판매권"</b>입니다. 강사는 <b>"외워야 되는 굉장히 중요한 내용"</b>이라고 두 번 강조합니다.</div>
+<p>그런데 <b>정조</b>가 이 특권을 폐지해 버립니다. 1791년 신해년에 실시했다 해서 <b class="k">신해통공</b>(통공정책)입니다. 단, <b>육의전</b>(명주·모시·삼베·무명·종이·어물을 파는 여섯 점포)은 <b>제외</b>했습니다. 이 "육의전 제외"가 시험에 그대로 나옵니다.</p>
+<p>금난전권이 풀리자 그동안 눌려 있던 <b class="k">사상</b>(私商, 개인 상인)들이 폭발적으로 성장합니다. 지도로 외우면 편합니다.</p>
+<div class="term"><b>사상 4인방 —</b> <b>송상</b>(개성, 인삼 재배·판매, 전국에 <b>송방</b>이라는 지점망, 청·일본 중계 무역) / <b>만상</b>(의주, <b>청</b>과 무역) / <b>내상</b>(동래=부산, <b>일본</b>과 무역) / <b>경강상인</b>(한강, 선박 운송업). <b>의주는 압록강 국경 → 청</b>, <b>동래는 부산 항구 → 일본</b>. 지도상 위치로 외우면 안 헷갈립니다.</div>
+<p>장시는 전국에 <b>1,000여 개</b>로 늘어 상설 시장처럼 됩니다. 강가·바닷가 포구에서는 <b class="k">객주·여각</b>이 숙박·물품 보관·<b>금융업</b>까지 하는 중간 상인으로 활약합니다. 수공업에서는 상인이 원료와 비용을 <b>먼저</b> 대주고 물건을 받아가는 <b class="k">선대제</b>가 퍼지고, 18세기 후반부터는 자기 돈으로 만들어 파는 독립 수공업도 나옵니다.</p>
+<p>광산도 열립니다. 조선 전기에는 나라만 광산을 운영하고 민간 채굴은 <b>금지</b>였는데, 조선 후기에는 <b class="k">설점수세제</b> — <b>나라에 세금만 내면 개인도 캘 수 있게</b> 바뀝니다. 그러자 상인 물주가 돈을 대고, 현장 경영 전문가인 <b class="k">덕대</b>가 채굴업자와 노동자를 고용해 은광·금광을 굴립니다. 물론 세금 안 내고 몰래 캐는 <b class="k">잠채</b>도 성행했습니다.</p>
+<p>마지막은 돈 이야기입니다. <b class="k">상평통보</b>가 <b>숙종</b> 때 발행돼 전국적으로 유통됩니다(7/26 강의: <b>"숙종 때 발행한 화폐가 상평통보"</b>). 그런데 이상한 일이 벌어집니다. <b>동전을 아무리 찍어내도 시중에 동전이 없습니다.</b></p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>지주와 대상인들이 동전을 <b>고리대 밑천이나 재산 축적 수단</b>으로 항아리에 쌓아두고 안 풀었기 때문입니다. 요즘으로 치면 시중에 현금이 안 도는 "돈맥경화"입니다. 이것이 <b class="k">전황</b>(錢荒) — <b>"돈 전, 흉년 황"</b>, 말 그대로 <b>돈 흉년</b>입니다.</div></div>
+<p>동전이 부족하니 <b>환·어음</b> 같은 신용 화폐도 쓰이기 시작합니다. 조선 후기 경제 이야기는 여기서 끝납니다 — <b>세금을 바꾸니 시장이 커졌고, 시장이 커지니 돈이 필요해졌고, 그 돈마저 한쪽으로 쏠렸다</b>는 이야기입니다.</p>
+</div>
+</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빼지 않고</h2>
+
+<h3>① 수취 제도 — 조선 전기 vs 조선 후기</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>세금</th><th>조선 전기</th><th>조선 후기</th><th>시행 왕</th><th>반드시 외울 숫자</th></tr></thead>
+<tbody>
+<tr><td class="nm">전세<br>(토지세)</td><td>과전법 1/10(1결당 30두) → <b>전분6등법·연분9등법</b>(20두~4두, 비옥도·풍흉 기준)</td><td><b>영정법</b> — 풍흉 무관, 토지 1결당 고정 징수(<b>전세의 정액화</b>). 지주 유리, 부가세는 농민 전가</td><td class="yr"><b>인조</b></td><td><b>쌀 4~6두</b></td></tr>
+<tr><td class="nm">공납<br>(특산물)</td><td>호(집) 기준 토산물 징수 — 상공(정기)·별공/진상(부정기) → <b>방납의 폐단</b> → 수미법 주장(조광조·이이·유성룡, 실패)</td><td><b>대동법</b> — <b>토지 기준</b>으로 쌀·베·무명·동전 납부(<b>공납의 전세화</b>). <b>선혜청</b> 설치 → <b>공인</b> 등장 → 상품 화폐 경제 발달·조세의 금납화</td><td class="yr"><b>광해군</b>(경기도)<br>→ <b>숙종</b>(전국)</td><td><b>쌀 12두</b>(대동미)</td></tr>
+<tr><td class="nm">역<br>(군포)</td><td>16세 이상 남자 군역·요역. 양반·서리·향리 <b>면제</b>. 16세기 이후 1년 <b>군포 2필</b></td><td><b>균역법</b> — 군포 <b>2필 → 1필</b>. 부족분은 <b>결작</b>·<b>선무군관포</b>·어장세·선박세로 보충, <b>균역청</b>이 징수</td><td class="yr"><b>영조</b></td><td>2필→<b>1필</b> / 결작 <b>1결당 2두</b></td></tr>
+<tr><td class="nm">잉류<br>(예외 지역)</td><td>고려: 양계(북계·동계) — 국방비</td><td><b>평안도</b>(사신 접대비)·<b>함경도</b>(국방비)·<b>제주도</b>(조세 운송의 어려움)</td><td class="yr">—</td><td>3곳</td></tr>
+</tbody>
+</table>
+</div>
+<p class="sub"><b>잉류(仍留)란</b> — 거둔 세금을 중앙으로 올려보내지 않고 <b>그 지역에서 그대로 쓰는 것</b>입니다. 조선 후기 3곳(평안도·함경도·제주도)은 이유까지 짝지어 외우세요.</p>
+<p class="sub"><b>군역의 폐단 두 단어</b> — <b>백골징포</b>(이미 죽은 사람에게 군포를 매김) · <b>황구첨정</b>(어린아이를 장정 명단에 올려 군포를 매김). 배경에는 <b>납속·공명첩</b>으로 양반이 늘어 군포 낼 상민이 줄어든 사정이 있습니다.</p>
+
+<h3>② 농업의 변화</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>조선 전기</th><th>조선 후기</th><th>결과</th></tr></thead>
+<tbody>
+<tr><td class="nm">논농사</td><td><b>직파법</b> 중심. 이앙법은 가뭄 우려로 <b>정부가 규제</b> → 남부 일부만</td><td><b>이앙법(모내기) 전국적 실시</b> — 벼·보리 <b>이모작</b> 일반화</td><td>김매기 노동력 절감 → 경작지 확대 → <b>광작</b> 유행 → <b>농민층 분화</b></td></tr>
+<tr><td class="nm">밭농사</td><td><b>농종법</b>(이랑에 파종)</td><td><b>견종법</b>(고랑에 파종)</td><td>가뭄·추위에 강해 <b>생산량 증가</b></td></tr>
+<tr><td class="nm">작물</td><td>자급용 곡물 중심</td><td><b>상품 작물</b>(쌀·목화·<b>담배</b>·<b>인삼</b>·채소·약초) / <b>구황작물</b>(감자·고구마)</td><td>농민 <b>소득 증대</b>. 담배·고추는 <b>임진왜란 이후</b> 전래</td></tr>
+<tr><td class="nm">지대<br>(소작료)</td><td><b>타조법</b> — 정률지대 <b>1/2</b>. 조선의 <b>일반적</b> 지대. 영농 제약·종자·농기구 부담</td><td>일부 지역 <b>도조법</b> — 정액지대 <b>1/3</b>. 자유로운 영농 가능</td><td>소작농 지위 향상 → <b>지대의 금납화</b> → 일부 농민은 지주로 성장</td></tr>
+<tr><td class="nm">농서</td><td><b>농사직설</b>(세종, 최초의 농서) · 금양잡록(성종)</td><td><b>농가집성</b>(신속, <b>이앙법 보급</b> 기여) · 임원경제지(서유구) · 색경(박세당) · 산림경제(홍만선)</td><td>전기/후기 농서를 <b>바꿔 묻는 함정</b>이 잦음</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>③ 상공업·화폐의 발달</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>조선 전기</th><th>조선 후기</th></tr></thead>
+<tbody>
+<tr><td class="nm">수공업</td><td><b>관영 수공업</b> 중심 → 16세기 이후 쇠퇴</td><td><b>민영 수공업</b> 발달. <b>선대제</b>(상인 물주가 원료·비용을 <b>선지급</b> → 수공업자가 생산해 납품) → 18세기 후반 <b>독립 수공업</b> 등장</td></tr>
+<tr><td class="nm">광업</td><td>국가가 직접 운영, <b>민간 채굴 금지</b></td><td><b>설점수세제</b>(세금만 내면 <b>사채 허용</b>) → 은광·금광 개발 활발 → 상인 물주 자본 + <b>덕대</b>(경영 전문가)가 채굴업자·노동자 고용 / 불법 채굴 <b>잠채</b> 성행</td></tr>
+<tr><td class="nm">상인</td><td><b>시전 상인</b>(종로, 관허, <b>금난전권</b>=독점 판매권, <b>육의전</b>) · <b>보부상</b>(장시, 관허)</td><td><b>공인</b>(대동법이 낳음, 관수품 조달) → <b>도고</b>(독점적 도매상인, 허생전) / <b>사상</b>: <b>송상</b>(개성·인삼·송방·청일 중계) · <b>만상</b>(의주·청) · <b>내상</b>(동래·일본) · <b>경강상인</b>(한강·선박 운송)</td></tr>
+<tr><td class="nm">시장</td><td>장시 — <b>15세기 말</b> 등장 → 16세기 후반 전국 확대</td><td>전국 <b>1,000여 개</b>로 확대, <b>상설 시장</b>으로 발달 / 포구의 <b>객주·여각</b>(숙박·물품 보관·<b>금융업</b>) · 선상(경강상인)</td></tr>
+<tr><td class="nm">화폐</td><td><b>저화</b>(지폐)·<b>조선통보</b> — 유통 부진, 쌀·무명을 화폐로 사용</td><td><b>상평통보</b> 전국 유통(숙종 발행) → <b>전황</b>(화폐 유통량 부족) → <b>환·어음</b> 등 신용 화폐 사용</td></tr>
+<tr><td class="nm">대외 무역</td><td>—</td><td>청: 중강개시(관무역)·중강후시·책문후시(사무역) / 일본: 동래 왜관(내상)</td></tr>
+<tr><td class="nm">정책</td><td>—</td><td><b>신해통공</b>(정조, 1791) — <b>육의전을 제외한</b> 시전 상인의 금난전권 폐지</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 핵심 암기표 — 감이 아니라 실측입니다</h2>
+
+<div class="notice">
+<b>이번 단원은 집계 대상이 다릅니다 — 반드시 읽어 주세요.</b> 우리가 가진 <code>관광국사기출.pdf</code>(2013~2025년 <b>215문항</b>)는 <b>"정치" 단원만</b> 수록돼 있어, 조선 후기 경제를 <b>직접 묻는 문항은 0개</b>입니다. 그래서 이 단원은 <b>두 갈래로 따로 실측</b>했습니다 — ① <b>학원 교재(관광국사 핵심.pdf) 뒤쪽 해설집</b>의 조선 후기 경제 구간 <b>18문항</b>에서 항목별 등장 문항 수를 셌고, ② 별개로 <b>215문항 기출</b> 안에서 이 단원 키워드가 <b>선택지로</b> 등장한 <b>6문항</b>을 찾아냈습니다. 아래 등급은 ①의 18문항 기준이고, ②는 따로 표시했습니다.
+</div>
+
+<div class="freq">
+<div class="row"><span class="gr gA">S급</span><div><b>대동법 (18문항 중 6문항)</b> — 시행 왕(광해군)·확대 왕(숙종)·<b>토지 기준</b>·쌀 12두·선혜청·<b>공인</b> 등장·방납 해결까지 전부 물어봅니다. <b>이 단원 최다.</b> 여기 하나만 완벽히 잡아도 1/3을 가져갑니다.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>상품 작물 (6문항)</b> — 담배·인삼·고추·호박·오이·채소·약초. 거의 매 문항에 "상품 작물 재배로 농민 소득이 늘었다"가 <b>옳은 선지</b>로 깔립니다. <b>담배·고추 = 임진왜란 이후 전래</b>가 함정 포인트.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>이앙법·광작 (4문항)</b> — "이앙법 전국 실시 → 노동력 절감 → 광작 성행 → 일부 농민 부농 성장, 다수는 토지 상실" 이 문장이 통째로 반복됩니다. <b>이앙법 시작 시기는 고려 말</b>이라는 점도 함께.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>영정법 (4문항)</b> · <b>균역법 (4문항)</b> — 영정법=<b>인조</b>·1결당 4~6두, 균역법=<b>영조</b>·2필→1필. 기출 215문항에서도 <b>균역법이 4문항</b>으로 이 단원 키워드 중 최다 등장입니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>장시·포구 (4문항)</b> · <b>객주·여각 (3문항)</b> — 장시 1,000여 개, 객주·여각은 <b>포구</b>에서 숙박·물품 보관·<b>금융업</b>. "객주·여각이 시전에서 활동했다" 같은 장소 바꿔치기가 함정입니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>타조법·도조법 (2문항)</b> · <b>설점수세제 (2문항)</b> · <b>상평통보 (2문항)</b> · <b>사상 4인방 (2문항)</b> · <b>금난전권·신해통공 (2문항)</b> · <b>결작·선무군관포 (2문항)</b> · <b>저화·조선통보=조선 전기 (2문항)</b> — 딱 한 줄짜리 사실인데 반복 등장합니다. 가성비가 가장 좋은 구간입니다.</div></div>
+<div class="row"><span class="gr gC">B급</span><div><b>전황 (1)</b> · <b>덕대 (1)</b> · <b>선대제 (1)</b> · <b>견종법 (1)</b> · <b>공인·도고 (1)</b> · <b>수미법 (1)</b> — 등장은 적지만 <b>정답 선지</b>로 쓰인 적이 있는 항목들입니다. 이름과 한 줄 정의만 확실히 해두세요.</div></div>
+<div class="row"><span class="gr gZ">별도</span><div><b>215문항 기출에서 이 단원 키워드가 등장한 6문항</b> — <b>균역법 4문항</b>(Q195·Q197·Q198·Q208) · <b>대동법 1문항</b>(Q196) · <b>금난전권 폐지 1문항</b>(Q198) · <b>설점수세제 1문항</b>(Q190). 전부 <b>정치 문항의 선택지</b>로 나왔습니다 — 즉 <b>경제 제도를 몰라도 정치 문제를 틀리게 됩니다.</b> 아래 문제 섹션에 이 6문항을 <b>원문 그대로</b> 실었습니다.</div></div>
+</div>
+
+<div class="zero"><b>0회라고 버리지 마세요.</b> 이 단원이 "기출 0문항"인 것은 <b>출제가 안 된다</b>는 뜻이 아니라 <b>우리가 가진 기출 PDF가 정치 단원만 수록했다</b>는 뜻입니다. 실제로 학원 교재 해설집에는 이 단원 문항이 <b>18개</b> 실려 있고, 정치 기출의 선택지에도 계속 등장합니다. 학습 우선순위는 <b>①대동법 → ②균역법·영정법(왕 이름 짝) → ③이앙법·광작 사슬 → ④사상 4인방 지도 → ⑤설점수세제·덕대·전황</b> 순으로 잡으세요.</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<div class="cmp">
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 세금 3종 ↔ 왕 이름 — 최대 빈출</h4>
+<div class="vs">
+<div class="side a"><b>영정법 = 인조</b>전세 · 1결당 <b>4~6두</b> 고정</div>
+<div class="mid">/</div>
+<div class="side b"><b>대동법 = 광해군→숙종</b>공납 · 토지 기준 <b>쌀 12두</b></div>
+<div class="mid">/</div>
+<div class="side g"><b>균역법 = 영조</b>역 · 군포 2필→<b>1필</b></div>
+</div>
+<p class="why">외우는 순서 한 줄 — <b>"인(조)영·광(해군)대·영(조)균"</b>. 또는 <b>전세는 인조, 공납은 광해군, 군포는 영조</b>. 이 셋을 서로 바꿔 놓는 것이 이 단원 <b>1순위 함정</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 대동법이 낳은 상인 — 공인 vs 보부상</h4>
+<div class="vs">
+<div class="side n"><b>공인 ○</b>대동법으로 <b>새로</b> 등장<br>선혜청에서 대금 받아<br>왕실·관청에 물품 조달</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>보부상 ✕</b>조선 <b>전기부터</b> 있던 행상<br>지방 <b>장시</b>를 무대로 활동<br>대동법과 무관</div>
+</div>
+<p class="why">교재 오답노트에 <b>독립 문항</b>으로 실려 있을 만큼 반복되는 함정입니다. "대동법 → <b>공인</b>"만 반사적으로 나오게 만드세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 지대 — 타조법 vs 도조법</h4>
+<div class="vs">
+<div class="side a"><b>타조법 (정률)</b>수확량의 <b>1/2</b><br>조선의 <b>일반적</b> 지대<br>영농 제약 · 소작농 불리</div>
+<div class="mid">vs</div>
+<div class="side b"><b>도조법 (정액)</b>미리 정한 <b>1/3</b><br><b>일부 지역</b>에서만<br>자유로운 영농 · 지위 향상</div>
+</div>
+<p class="why">"조선 후기에 도조법으로 <b>통일</b>되었다"는 <b class="x">틀림</b>. <b>일반적 지대는 끝까지 타조법</b>이고 도조법은 일부입니다. <b>타=비율(정률), 도=액수(정액)</b>로 붙여 외우세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 광산 — 조선 전기 vs 조선 후기</h4>
+<div class="vs">
+<div class="side n"><b>조선 전기</b>국가가 직접 운영<br><b>민간 채굴 금지</b></div>
+<div class="mid">→</div>
+<div class="side g"><b>조선 후기</b><b>설점수세제</b> — 세금만 내면 <b>사채 허용</b><br>물주 자본 + <b>덕대</b> 경영 / 불법 <b>잠채</b></div>
+</div>
+<p class="why">2024년 기출(Q190)에서 <b>"설점수세제의 시행"이 조선 전기 사실이 아니다</b>라는 오답 선지로 실제 출제됐습니다. <b>설점수세제=후기</b>만 확실하면 정치 문제도 하나 건집니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 사상 4인방 — 근거지와 무역 상대</h4>
+<div class="vs">
+<div class="side a"><b>송상</b>개성 · <b>인삼</b> · 송방<br>청·일 <b>중계</b> 무역</div>
+<div class="mid">/</div>
+<div class="side b"><b>만상</b>의주 · <b>청</b></div>
+<div class="mid">/</div>
+<div class="side n"><b>내상</b>동래 · <b>일본</b></div>
+<div class="mid">/</div>
+<div class="side g"><b>경강상인</b>한강 · <b>선박 운송</b></div>
+</div>
+<p class="why">지도로 외우세요 — <b>의주는 압록강(청 국경) → 만상</b>, <b>동래는 부산항(일본) → 내상</b>. 근거지와 상대국을 서로 바꿔 묻는 문제가 잦습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 화폐 — 조선 전기 vs 조선 후기</h4>
+<div class="vs">
+<div class="side n"><b>조선 전기</b><b>저화</b>(지폐) · <b>조선통보</b><br>유통 부진, 쌀·무명이 화폐 역할</div>
+<div class="mid">vs</div>
+<div class="side g"><b>조선 후기</b><b>상평통보</b> 전국 유통(숙종)<br>→ <b>전황</b> · 환·어음</div>
+</div>
+<p class="why">고려 화폐(건원중보·삼한통보·해동통보·활구)까지 섞어서 오답 선지로 냅니다. <b>고려=보(寶) 돌림 / 조선 전기=저화·조선통보 / 조선 후기=상평통보</b>로 세 칸을 나눠 두세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 밭농사 — 농종법 vs 견종법</h4>
+<div class="vs">
+<div class="side a"><b>농종법</b><b>이랑</b>(두둑)에 파종<br>조선 전기</div>
+<div class="mid">→</div>
+<div class="side b"><b>견종법</b><b>고랑</b>에 파종<br>조선 후기 · 생산량 증가</div>
+</div>
+<p class="why"><b>견(畎)=밭도랑</b>. 글자 뜻이 곧 답입니다. 고랑에 심으면 물이 고여 <b>가뭄에 강하고</b> 바람을 덜 타 <b>추위에 강합니다</b>.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 상품 작물 vs 구황작물</h4>
+<div class="vs">
+<div class="side b"><b>상품 작물</b>팔아서 <b>돈 벌려고</b><br>쌀·목화·담배·인삼·채소·약초</div>
+<div class="mid">≠</div>
+<div class="side n"><b>구황작물</b>흉년에 <b>굶지 않으려고</b><br><b>감자·고구마</b></div>
+</div>
+<p class="why">목적이 정반대입니다. 그리고 <b>담배·고추는 임진왜란 이후 전래</b> — "조선 전기에 담배를 재배했다"는 무조건 틀립니다.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="notice">
+<b>이 단원은 전용 강의가 아직 진행되지 않았습니다.</b> 강사 본인이 두 번 그렇게 말합니다 — 7/26 신해통공 대목에서 <b>"우리가 아직 경제 부분을 안 배우다 보니까 그 내용이 굉장히 새로울 수 있습니다"</b>, 8/9 모내기 대목에서 <b>"모내기 이앙법, 우리가 아직 경제 부분을 안 했지만"</b>. 그래서 아래 ★ 항목은 <b>정치·문화 단원을 진행하면서 강사가 미리 흘려 설명한 경제 내용</b>만 모은 것입니다. 전사본 위치를 함께 적어 두었으니 직접 확인하실 수 있습니다.
+</div>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>금난전권 = 특정 상품에 대한 독점 판매권</b> — 7/26 핵심강의 5:02~5:04. <b>"외워야 되는 굉장히 중요한 내용이에요"</b>라고 두 번 강조하며, 시전 상인이 왕실·관청에 물건을 공짜로 대주는 대가로 받은 특권이라고 원리까지 설명합니다. 폐지한 왕은 <b>정조</b>, 정책명은 <b>신해통공(통공정책)</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>방납(防納)의 방은 "막을 방"</b> — 7/26 핵심강의 3:37~3:38. 관리가 백성이 내려는 걸 <b>막고</b> 대신 낸 뒤 두세 배를 뜯는 구조를 예시로 풀어 줍니다. 이어서 <b>수미법(이이·유성룡, 주장만 하고 실패) → 대동법으로 발전</b>이라고 계보를 잡아 줍니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>대동법 = 광해군이 경기도만 실험 → 숙종 때 전국</b> — 7/26 핵심강의 4:40. <b>"광해군이 대동법을 실험적으로 경기도만 먼저 테스트한 거야"</b>라고 짚고, 바로 이어서 <b>"숙종 때 발행한 화폐가 상평통보"</b>라고 숙종의 두 업적을 붙여 설명합니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>영정법 = 인조. "인조 대라는 거 외워둘 것"</b> — 7/26 핵심강의 4:23. 세종의 전분6등법·연분9등법을 바꾼 것이 영정법이며, <b>시행 시기가 인조 대</b>라는 점을 콕 집어 암기 지시를 내립니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>균역법 = 영조. 그리고 "균역법은 경제야"</b> — 7/31 문제풀이 1:58 · 2:32 · 2:33 · 3:01. 같은 회차에서 <b>네 번</b> 반복해 확인합니다. 특히 영조·정조 업적을 분류하면서 <b>속대전·대전통편·수원화성은 문화, 균역법만 경제</b>라고 갈라 줍니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>영조 = 균역법 / 정조 = 신해통공</b> — 7/31 문제풀이 1:58. <b>"경제적으로 균역법을 영조가 했다고 한다면, 정조는 경제적으로 실시한 정책이 신해통공(통공정책)"</b>이라며 두 왕의 경제 업적을 <b>한 쌍</b>으로 묶어 줍니다. 이 짝이 그대로 2014년 기출(Q198) 선택지가 됐습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>이앙법의 가장 큰 장점은 김매기를 안 하는 것</b> — 8/9 핵심강의. <b>"모내기 이앙법의 가장 큰 장점이 잡초를 뽑아내는 김매기를 안 하는 게 제일 큰 장점이거든요"</b>. 그리고 같은 강의 뒤쪽에서 <b>이앙법 보급에 크게 기여한 농서는 신속의 「농가집성」</b>이라고 확인해 줍니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>시전 상인 vs 보부상의 무대 구분</b> — 7/26 핵심강의 5:01. <b>"보부상은 지방의 장시를 무대로 장사하는 상인, 시전 상인은 서울 한양의 종로를 무대로 장사하는 상인. 둘 다 합법 상인"</b>이라고 정리합니다. 대동법이 낳은 <b>공인</b>과 헷갈리지 않게 해주는 구분입니다.</div></li>
+</ul>
+</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 20문항</h2>
+<p class="sub"><b>기출 원문 6문항 + 예상문제 14문항</b>입니다. 기출은 문제·보기 4개·정답·강사 해설을 <b>그대로</b> 실었고, 예상문제도 전부 관광국사.md 15단원과 학원 교재 해설집에서 확인된 사실로만 만들었습니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>구성을 밝힙니다.</b> 2013~2025년 기출 <b>215문항</b> 중 조선 후기 경제를 <b>직접 묻는 문항은 0개</b>입니다(기출 PDF가 정치 단원만 수록). 대신 <b>이 단원 키워드가 선택지로 등장한 6문항</b>을 찾아 <b>원문 그대로</b> 실었습니다 — 균역법 4문항·대동법 1문항·금난전권 폐지 1문항·설점수세제 1문항. 나머지 14문항은 학원 교재 해설집의 <b>조선 후기 경제 18문항</b>에서 확인된 사실만으로 만든 예상문제입니다. <b>추측으로 만든 선택지는 하나도 없습니다.</b>
+</div>
+
+<div class="quizbar">
+<svg class="ic" width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 20 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="wrongBtn" onclick="onlyWrong()" style="display:none">틀린 문제만 다시</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts">
+<button class="btn" onclick="onlyWrong()">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" onclick="reset()">전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>01_관광국사/04_최종교재/관광국사.md</code> 15단원(핵심.pdf 인쇄 22~24쪽〈수취제도 / 농업 / 상업·수공업·무역 "조선 후기" 행 / 상품 화폐경제 발달〉) · <code>01_원본자료/관광국사 핵심txt.txt</code> 원문(선혜청·균역청·백골징포·황구첨정·납속·공명첩·잉류·잠채·육의전) / 문항: <code>03_작업자료/관광국사기출.md</code> Q190·Q195·Q196·Q197·Q198·Q208 / 강의: 핵심 <b>7/26</b> 3시간37분·4시간23분·4시간40분·5시간1~4분경, 문제풀이 <b>7/31</b> 1시간58분·2시간32분·2시간33분·3시간1분경, 핵심 <b>8/9</b> 모내기·농가집성 대목.</p>
+<p><b>실측 방법</b> — ① 학원 교재 해설집(관광국사 핵심txt) 중 조선 후기 경제 구간 <b>18문항</b>을 문항 단위로 잘라, 항목별로 <b>몇 문항에 등장했는지</b>를 셌습니다(해설·오답풀이 본문 기준). ② 별개로 기출 <b>215문항</b>의 문제·선택지 원문에서 이 단원 키워드가 등장한 <b>6문항</b>을 셌습니다. 두 집계를 섞지 않고 따로 표기했습니다.</p>
+<p><b>강의 근거의 한계를 밝힙니다</b> — 이 단원 전용 강의는 아직 진행되지 않았습니다(강사 본인이 7/26·8/9에 "아직 경제 부분을 안 했다"고 말합니다). 「강사가 콕 집은 것」은 <b>정치·문화 단원 진행 중 미리 설명한 경제 내용</b>만 모은 것이며, 전사본 시각을 함께 적었습니다. 경제 전용 강의가 나오면 반드시 대조해 보완하세요.</p>
+<p><b>추측 금지</b> — 교재·기출 해설·확인한 강의 구간에 없는 내용은 넣지 않았습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+
+</div>
+
+<script>
+var QS=[
+{n:1,c:"상공업·화폐",src:"기출 2024년",q:"조선 전기에 있었던 사실로 옳은 것은?",o:["현량과의 실시","설점수세제의 시행","백두산정계비의 건립","비변사 폐지와 의정부의 기능 회복"],a:0,e:"강사 해설(7/31) — \"조선 전기에 있었던 사실을 물어봤거든. 우리가 공부한 건 있잖아, 뭐가 있어요? <b>현량과가 있잖아</b>\"라며 나머지를 소거했습니다. <b>설점수세제</b>는 민간 채굴을 허용한 <b>조선 후기</b> 제도, 백두산정계비는 <b>숙종</b>, 비변사 폐지·의정부 기능 회복은 <b>흥선대원군</b>입니다. 경제 제도를 몰랐다면 이 정치 문항을 틀리게 됩니다."},
+{n:2,c:"수취제도",src:"기출 2021년",q:"광해군 때의 역사적 사실에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["대동법이 시행되었다","북벌 운동이 전개되었다","북인 세력이 왕을 지지하였다","동의보감의 편찬이 완성되었다"],a:1,e:"강사 해설(7/31) — \"대동법, 북인 집권, 동의보감 편찬은 다 광해군 때 맞다. 그런데 <b>북벌 운동은 광해군이 아니라 효종</b> 때부터 시작된 것\"이라고 짚었습니다. <b>대동법=광해군(경기도 시범)</b>이 여기서 옳은 선지로 쓰였습니다."},
+{n:3,c:"수취제도",src:"기출 2016년",q:"다음의 업적과 관련된 왕으로 옳은 것은? — 속대전을 편찬하였다 / 지나친 형벌이나 악형을 금지하였다 / 백성의 부담을 줄여주기 위해 균역법을 시행하였다",o:["성종","숙종","영조","정조"],a:2,e:"강사 해설(7/31) — \"<b>속대전, 균역법 나오면 끝난 것이다</b>\"라며 즉답으로 영조를 골랐습니다. 이 두 단어는 영조의 상징입니다."},
+{n:4,c:"수취제도",src:"기출 2022년",q:"조선시대 균역법을 시행한 국왕은?",o:["태종","숙종","영조","정조"],a:2,e:"강사 해설(7/31) — \"<b>균역법은 영조</b>\". 군포를 1년에 2필에서 <b>1필로 줄여</b> 군역 부담을 덜어 준 제도입니다. 이 단원 키워드 중 기출에 가장 많이(4문항) 등장합니다."},
+{n:5,c:"상공업·화폐",src:"기출 2014년",q:"영조와 정조 시대의 사회상에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["초계문신제도를 시행하였다","시전 상인이 가지고 있던 금난전권이 폐지되었다","군역의 부담을 줄여주기 위하여 균역법을 시행하였다","주자소를 설치하고 처음으로 계미자를 주조하였다"],a:3,e:"강사 해설(7/31) — 초계문신제·<b>금난전권 폐지(신해통공)</b>는 정조, <b>균역법</b>은 영조로 모두 맞습니다. 그런데 주자소 설치와 계미자 주조는 <b>태종</b> 때 일이라 시대가 다릅니다. 한 문항 안에 이 단원의 두 키워드(금난전권·균역법)가 함께 들어온 대표 사례입니다."},
+{n:6,c:"수취제도",src:"기출 2013년",q:"밑줄 친 ㉠왕의 업적으로 옳은 것은? — 「규장각은 본래 역대 왕의 글과 책을 수집, 보관하기 위한 왕실 도서관의 기능을 수행하기 위해 설치되었다. ㉠왕은 비서실의 기능과 문한 기능을 통합적으로 부여하고, 과거시험의 주관과 문신 교육의 임무까지 부여하였다.」",o:["의정부와 삼군부의 기능을 회복하였다","군역의 부담을 줄여주기 위해 균역법을 시행하였다","왕조의 통치 규범을 재정리하기 위해 속대전을 편찬하였다","수령이 군현 단위 향약을 주관하여 지방 사림의 영향력을 줄였다"],a:3,e:"강사 해설(7/31) — \"규장각은 무조건 정조\"입니다. <b>균역법과 속대전은 영조</b>라 오답 선지가 되고, 의정부·삼군부 기능 회복은 흥선대원군입니다. 정답은 향약을 수령이 주관하게 한 정조의 정책입니다."},
+{n:7,c:"수취제도",src:"예상문제",q:"조선 후기 영정법에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["인조 때 실시되었다","풍흉에 관계없이 토지 1결당 쌀 4~6두를 징수하였다","전세의 정액화를 가져왔다","대다수 소작농의 부담이 크게 줄어드는 결과를 낳았다"],a:3,e:"영정법은 <b>인조</b> 때 전세를 <b>1결당 4~6두로 고정</b>한 제도(전세의 정액화)입니다. 그러나 혜택은 땅을 가진 <b>지주·자영농</b>에게 돌아갔고, 대다수 <b>소작농에게는 혜택이 없었으며</b> 지주가 각종 부가세를 전가해 오히려 부담이 늘었습니다."},
+{n:8,c:"수취제도",src:"예상문제",q:"대동법에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["광해군 때 경기도에서 시험적으로 실시한 후 숙종 때 전국으로 확대되었다","가호(집)를 기준으로 토산물을 징수하던 방식을 토지를 기준으로 바꾸었다","선혜청을 설치하여 운영하였고 쌀·삼베·무명·동전으로 납부하게 하였다","시행 직후 곧바로 전국에 확대되어 방납의 폐단이 즉시 사라졌다"],a:3,e:"대동법은 양반 지주의 반대로 <b>광해군 때 경기도 → 100년 뒤 숙종 때 전국</b>이라는 긴 시간이 걸렸습니다. 나머지는 모두 옳습니다 — <b>호 기준 → 토지 기준</b>(공납의 전세화), <b>선혜청</b> 설치, 쌀 <b>12두</b>·삼베·무명·동전 납부."},
+{n:9,c:"수취제도",src:"예상문제",q:"대동법 실시의 결과로 옳은 것은?",o:["보부상이 새로 등장하여 관청에 물품을 조달하였다","공인이 등장하여 상품 화폐 경제가 발달하였다","조세의 현물 납부가 강화되었다","지주의 부담이 줄고 농민의 부담이 늘었다"],a:1,e:"대동법으로 새로 등장한 상인은 <b>공인</b>입니다 — <b>보부상은 조선 전기부터 있던 행상</b>이라 대동법과 무관합니다(가장 자주 나오는 함정). 대동법은 현물 납부를 <b>쌀·동전</b>으로 바꿔 <b>조세의 금납화</b>를 촉진했고, <b>토지 기준</b>이라 <b>지주 부담은 늘고 농민 부담은 줄었습니다</b>."},
+{n:10,c:"수취제도",src:"예상문제",q:"균역법에서 줄어든 재정을 메우기 위한 방법으로 옳지 <b>않은</b> 것은?",o:["지주에게 결작이라는 이름으로 토지 1결당 쌀 2두를 징수","일부 상류층에게 선무군관이라는 칭호를 주고 군포 1필을 징수","어장세·선박세를 균역청에서 징수","양반에게도 일반 농민과 동일하게 군포 2필을 징수"],a:3,e:"균역법 이후에도 <b>양반은 군포를 내지 않았습니다</b>. 부족분은 <b>결작</b>(1결당 쌀 2두)·<b>선무군관포</b>(1필)·<b>어장세·선박세</b>로 메웠고 <b>균역청</b>이 징수했습니다. 이 세 가지가 세트로 출제됩니다."},
+{n:11,c:"수취제도",src:"예상문제",q:"조선 후기 잉류 지역과 그 이유의 연결이 옳지 <b>않은</b> 것은?",o:["평안도 — 사신 접대비","함경도 — 국방비","제주도 — 조세 운송의 어려움","경기도 — 대동법 시범 실시"],a:3,e:"<b>잉류</b>는 거둔 세금을 중앙으로 올려보내지 않고 그 지역 경비로 쓰는 것입니다. 조선 후기 잉류 지역은 <b>평안도·함경도·제주도</b> 세 곳입니다. 경기도는 대동법을 처음 실시한 곳일 뿐 잉류 지역이 아닙니다(고려의 잉류 지역은 양계=북계·동계)."},
+{n:12,c:"농업",src:"예상문제",q:"조선 후기 이앙법에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["고려 말 남부 일부 지방에 보급되었으나 조선 전기에는 정부가 규제하였다","김매기 노동력이 크게 줄어 한 사람이 넓은 땅을 경작할 수 있게 되었다","벼와 보리의 이모작이 일반화되는 바탕이 되었다","조선 후기에 처음으로 우리나라에 도입된 농법이다"],a:3,e:"이앙법(모내기)은 <b>고려 말</b>에 이미 시작되었고, 조선 전기에는 <b>가뭄 피해 우려로 정부가 규제</b>해 남부 일부에서만 쓰였습니다. 조선 후기에 <b>전국적으로 실시</b>된 것이지 새로 도입된 것이 아닙니다. 8/9 강의: \"모내기 이앙법의 가장 큰 장점이 <b>김매기를 안 하는 것</b>\"."},
+{n:13,c:"농업",src:"예상문제",q:"「이앙법이 전국적으로 실시되면서 노동력이 절감되어 넓은 땅을 경작하는 ( ㉠ )이 성행하였고, 그 결과 일부 농민은 부농으로 성장한 반면 다수는 토지를 잃고 도시·광산·포구의 임노동자가 되었다.」 ㉠에 들어갈 말은?",o:["광작","견종법","도조법","선대제"],a:0,e:"<b>광작</b>입니다. 지주가 노비·머슴을 부려 넓은 땅을 직접 경영하는 것을 말하며, 그 결과가 <b>농민층의 분화</b>(부농층 ↔ 임노동자)입니다. 견종법은 밭농사 파종법, 도조법은 정액지대, 선대제는 수공업 방식입니다."},
+{n:14,c:"농업",src:"예상문제",q:"조선 후기 밭농사와 소작료에 관한 설명으로 옳은 것은?",o:["고랑에 파종하는 농종법이 이랑에 파종하는 견종법으로 바뀌었다","고랑에 파종하는 견종법이 보급되어 생산량이 증가하였다","조선 시대의 일반적인 지대는 정액지대인 도조법이었다","도조법은 소작농에게 불리하여 점차 사라졌다"],a:1,e:"밭농사는 <b>농종법(이랑) → 견종법(고랑)</b>으로 바뀌었습니다(<b>견(畎)=밭도랑</b>). 지대는 <b>타조법(정률 1/2)이 조선의 일반적 지대</b>였고, <b>도조법(정액 1/3)은 일부 지역</b>에서만 나타났으며 소작농에게 <b>유리</b>해 지위 향상과 지대의 금납화로 이어졌습니다."},
+{n:15,c:"농업",src:"예상문제",q:"조선 후기 작물 재배에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["담배·인삼·채소·약초 등 상품 작물을 재배해 소득이 늘었다","흉년에 대비한 구황작물로 감자·고구마가 재배되었다","담배와 고추는 임진왜란 이후에 전래되었다","이앙법 보급에 크게 기여한 농서는 세종 때의 농사직설이다"],a:3,e:"이앙법 보급에 기여한 농서는 조선 후기 <b>신속의 「농가집성」</b>입니다(8/9 강의에서 강조). <b>농사직설(세종)</b>과 <b>금양잡록(성종)</b>은 조선 <b>전기</b> 농서입니다 — 전기/후기 농서를 바꿔 묻는 함정이 잦습니다."},
+{n:16,c:"상공업·화폐",src:"예상문제",q:"조선 후기 광업에 관한 설명으로 옳은 것은?",o:["국가가 광산을 직접 운영하고 민간 채굴을 금지하였다","설점수세제로 민간 채굴이 허용되고 덕대가 경영을 맡았다","덕대는 광산에 자본을 대는 상인 물주를 가리킨다","잠채는 국가가 공식적으로 허가한 채굴 방식이다"],a:1,e:"<b>설점수세제</b>는 세금만 내면 개인도 캘 수 있게 한 조선 <b>후기</b> 제도입니다(국가 직영·민간 금지는 조선 <b>전기</b>). <b>덕대</b>는 자본을 대는 물주가 아니라 <b>현장 경영 전문가</b>로, 채굴업자·노동자를 고용해 운영했습니다. <b>잠채</b>는 세금을 피해 몰래 캐는 <b>불법</b> 채굴입니다."},
+{n:17,c:"상공업·화폐",src:"예상문제",q:"조선 후기 사상(私商)과 그 근거지·활동의 연결이 옳지 <b>않은</b> 것은?",o:["송상 — 개성, 인삼 판매와 송방이라는 지점망, 청·일본 중계 무역","만상 — 의주, 청과의 무역","내상 — 동래, 청과의 무역","경강상인 — 한강, 선박 운송업"],a:2,e:"<b>내상은 동래(부산)에서 일본과 무역</b>했습니다. 청과 무역한 것은 <b>의주의 만상</b>입니다. 지도로 외우세요 — <b>의주=압록강 국경→청</b>, <b>동래=부산 항구→일본</b>. 근거지와 상대국을 바꿔 묻는 문제가 잦습니다."},
+{n:18,c:"상공업·화폐",src:"예상문제",q:"조선 후기 상업에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["장시가 전국 1,000여 개로 늘어 상설 시장처럼 발달하였다","객주·여각이 포구에서 숙박·물품 보관·금융업에 종사하였다","공인 중 일부가 독점적 도매상인인 도고로 성장하였다","금난전권은 보부상이 가지고 있던 독점 판매권이다"],a:3,e:"<b>금난전권</b>은 한양 종로의 <b>시전 상인</b>이 가진 <b>특정 상품에 대한 독점 판매권</b>입니다(7/26 강의에서 \"외워야 되는 굉장히 중요한 내용\"이라고 강조). 정조가 <b>신해통공</b>으로 <b>육의전을 제외하고</b> 폐지했습니다. 보부상은 지방 장시를 무대로 한 행상입니다."},
+{n:19,c:"상공업·화폐",src:"예상문제",q:"조선 후기 화폐 경제에 관한 설명으로 옳은 것은?",o:["저화와 조선통보가 전국적으로 유통되었다","상평통보가 전국적으로 유통되었으나 전황 현상이 나타났다","전황은 화폐가 지나치게 많이 풀려 물가가 오른 현상이다","환·어음 같은 신용 화폐는 고려 시대에 처음 사용되었다"],a:1,e:"조선 후기의 화폐는 <b>상평통보</b>(숙종 발행)입니다 — <b>저화·조선통보는 조선 전기</b>. <b>전황(錢荒)</b>은 지주·대상인이 동전을 고리대나 재산 축적용으로 <b>쌓아두어 시중에 동전이 부족해진</b> 현상으로, 돈이 많이 풀린 것과 정반대입니다. 부족을 메우려 <b>환·어음</b>이 쓰이기 시작했습니다."},
+{n:20,c:"상공업·화폐",src:"예상문제",q:"신해통공에 관한 설명으로 옳은 것은?",o:["영조가 시전 상인의 금난전권을 전면 폐지한 정책이다","정조가 육의전을 제외한 시전 상인의 금난전권을 폐지한 정책이다","광해군이 방납의 폐단을 없애기 위해 실시한 정책이다","인조가 전세를 정액화하기 위해 실시한 정책이다"],a:1,e:"<b>신해통공(1791)</b>은 <b>정조</b>가 <b>육의전을 제외하고</b> 시전 상인의 금난전권을 폐지한 정책입니다 — \"육의전 제외\"가 시험 포인트입니다. 7/31 강사: \"경제적으로 균역법을 <b>영조</b>가 했다면, <b>정조</b>는 경제적으로 실시한 정책이 신해통공\"."}
+];
+var sel={},graded=false,t0=null,tick=null;
+var live=null,lastWrong=[];
+function visible(){return live?QS.filter(function(q){return live.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=visible();var h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+visible().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=visible();var right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';
+lastWrong=wrong.map(function(q){return q.n});
+document.getElementById('wrongBtn').style.display='';
+}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';lastWrong=[];document.getElementById('wrongBtn').style.display='none';}
+var tx='[관광국사 15단원 — 조선 후기의 경제] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] ('+q.src+') '+q.q.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onlyWrong(){
+if(!lastWrong.length){return;}
+live=lastWrong.slice();
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function reset(){
+live=null;lastWrong=[];
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

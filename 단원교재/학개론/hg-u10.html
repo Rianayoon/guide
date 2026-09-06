@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광학개론 10단원 · 호텔업</title>
+<style>@page{size:A4;margin:0;}@font-face{font-family:'Pretendard';src:url('../../fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:45 920;font-style:normal;font-display:swap;}:root{--paper:#FAF5EA;--paper-2:#F3EBDA;--card:#FFFDF7;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--pal:#7A6A5A;--neo:#5F7F52;--bro:#A85436;--iro:#46525F;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--radius:14px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--pal:#B3A08B;--neo:#93B383;--bro:#DE8C6B;--iro:#93A6B8;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}section{margin:44px 0}h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}h2 .ic{color:var(--gold)}.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}.tl div:last-child{border-right:0}.tl>div>b{display:block;font-size:15px}.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}.tl span b{font-weight:800}.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}.tl .t1::before{background:var(--bro)} .tl .t2::before{background:var(--iro)}.tl .t3::before{background:var(--warn)} .tl .t4::before{background:var(--neo)}.tl .t1 b{color:var(--bro)} .tl .t2 b{color:var(--iro)} .tl .t3 b{color:var(--warn)} .tl .t4 b{color:var(--neo)}@media(max-width:640px){.tl{grid-template-columns:repeat(2,1fr)} .tl div{border-bottom:1px solid var(--line)}}.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}.story>.head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}.story .body{padding:18px 22px 22px}.story p{margin:0 0 13px}.s1 .num{background:var(--bro)} .s1 .ttl{color:var(--bro)} .s1{border-top:3px solid var(--bro)}.s2 .num{background:var(--iro)} .s2 .ttl{color:var(--iro)} .s2{border-top:3px solid var(--iro)}.s3 .num{background:var(--pal)} .s3 .ttl{color:var(--pal)} .s3{border-top:3px solid var(--pal)}.s4 .num{background:var(--neo)} .s4 .ttl{color:var(--neo)} .s4{border-top:3px solid var(--neo)}.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}.term b{color:var(--ink)}.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}b.k{color:var(--bro);font-weight:800}.s2 b.k{color:var(--iro)} .s3 b.k{color:var(--pal)} .s4 b.k{color:var(--neo)}.redo{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px;display:flex;gap:10px;align-items:flex-start}.redo .ic{flex:0 0 auto;color:var(--warn);margin-top:3px}.redo b{color:var(--warn)}.badge{display:inline-block;font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn);margin-left:6px;white-space:nowrap;vertical-align:2px}.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}table{border-collapse:collapse;width:100%;min-width:660px;font-size:14px}th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}tbody tr:last-child td{border-bottom:0}td.era{font-weight:800;white-space:nowrap}tr.r1 td.era{color:var(--bro)} tr.r2 td.era{color:var(--iro)}tr.r3 td.era{color:var(--pal)} tr.r4 td.era{color:var(--neo)}tr.r5 td.era{color:var(--ok)}  tr.r6 td.era{color:var(--gold)}tr.r7 td.era{color:var(--warn)}.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}.cmp .c.re{border-color:var(--warn);border-width:2px}.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.cmp h4 .ic{color:var(--warn)}.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5;min-width:0;overflow-wrap:break-word}.vs .side b{display:block;font-size:14.5px}.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}.side.p{background:rgba(122,106,90,.14);border:1px solid var(--pal);color:var(--pal)}.side.g{background:rgba(168,130,44,.14);border:1px solid var(--gold);color:var(--gold)}.side.o{background:rgba(62,122,78,.12);border:1px solid var(--ok);color:var(--ok)}.side.x{background:rgba(156,47,47,.12);border:1px solid var(--warn);color:var(--warn)}.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}.stars.red{border-color:var(--warn)}.stars ul{margin:0;padding:0;list-style:none}.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}.stars li:last-child{border-bottom:0}.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}.stars.red .ic{color:var(--warn)}.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}.btn.ghost{background:transparent;color:var(--ink)}.btn:disabled{opacity:.4;cursor:default}.prog{font-size:13.5px;color:var(--ink-2)}.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}.q .yr{font-size:12px;color:var(--ink-2);margin-left:auto;white-space:nowrap}.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}.q .stem{background:var(--paper-2);border-radius:9px;padding:11px 14px;margin:11px 0;font-size:14.5px;color:var(--ink-2)}.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}.opts li:hover{border-color:var(--gold)}.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}.graded .opts li{cursor:default}.graded .opts li:hover{border-color:var(--line)}.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}.graded .opts li.correct .no{color:var(--ok)}.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}.graded .opts li.wrong .no{color:var(--warn)}.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}.mark.o{color:var(--ok)} .mark.x{color:var(--warn)}.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}.graded .exp{display:block}.exp b{color:var(--ink)}.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}.score.on{display:block}.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px;color:var(--ink)}.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}.wronglist b{color:var(--warn)}.wronglist ul{margin:8px 0 0;padding-left:18px}.wronglist li{margin:4px 0}.freq{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}.freq table{min-width:700px}.freq td.era{width:92px}.grade{display:inline-block;font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:6px;white-space:nowrap}.g3{background:rgba(168,130,44,.18);color:var(--gold);border:1px solid var(--gold)}.g2{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}.item{display:inline-block;margin:0 10px 4px 0;white-space:nowrap}.item i{font-style:normal;font-size:11.5px;color:var(--ink-2);font-weight:700;margin-left:2px}.item.hi{font-weight:800}.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:var(--radius);padding:14px 18px;margin-top:14px;font-size:14px}.zero b{color:var(--warn)}.note{font-size:13px;color:var(--ink-2);margin-top:10px}footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}footer p{margin:5px 0}@media print{
+/*PRINTFIX*/:root{--paper:#FAF5EA;--paper-2:#F3EBDA;--card:#FFFDF7;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--pal:#7A6A5A;--neo:#5F7F52;--bro:#A85436;--iro:#46525F;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--radius:14px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+body{background:#fff!important;color:#2B2724!important}
+.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.tblwrap,.freq,.pick,.term,.simile,.redo,.zero{break-inside:avoid}.story,.stars{break-inside:auto}.story .head{break-after:avoid}h2,h3{break-after:avoid}.story .body>p{orphans:2;widows:2}table{font-size:12.5px}header.top{padding-top:0}}/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-redo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></symbol>
+</svg>
+<div class="wrap">
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광학개론 · 10단원</div>
+<h1>호텔업
+<small>호텔 발전 4단계(숙소·그랜드·상업·현대) · 세계와 한국의 호텔사 · 호텔경영의 5가지 특성 · 호텔의 분류 7가지(장소·기간·목적·요금지불형식·규모·경영방식) · 호텔 조직과 객실부문 3조직 · 객실의 종류와 객실요금 4분류 · 객실 부문 용어 · 식음료(식당 분류·서비스 형식·정식 코스·음료)</small>
+</h1>
+<div class="meta">
+<span class="chip hot">요금지불형식 EP·CP·MAP·AP = 교재 ★★★★★ · 강사 "면접에도 나온다"</span>
+<span class="chip hot">경영방식(위탁·프랜차이즈·리퍼럴) — 강사 "여기가 상당히 문제가 많이 나와요"</span>
+<span class="chip">원본 인쇄 105~122쪽</span>
+<span class="chip">예상문제 20문항</span>
+<span class="chip hot">8/16 핵심강의 · 8/19 문제풀이강의 반영</span>
+</div>
+</header>
+
+<!-- ================= 큰 그림 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원은 이 순서로 흘러갑니다</h2>
+<p class="sub">10단원은 <b>관광학개론에서 가장 분량이 많은 단원</b>입니다(원본 105~122쪽, 무려 18쪽). 그런데 흐름은 단순합니다. <b>①호텔은 어떻게 오늘날의 모습이 되었나(발전 4단계 + 세계·한국 호텔사) → ②호텔이라는 사업은 어떤 성질을 갖나(호텔경영의 5가지 특성) → ③호텔을 어떻게 나누나(분류 7가지) → ④호텔 안은 어떻게 조직되어 있나(4부문, 그중 객실부문 3조직) → ⑤파는 물건은 무엇인가(객실의 종류) → ⑥값은 어떻게 매기나(객실요금 4분류) → ⑦현장에서 쓰는 말(객실 용어) → ⑧객실 말고 또 파는 것(식음료 — 식당·서비스 형식·정식 코스·음료)</b> 순입니다.</p>
+<p class="sub">이 단원을 관통하는 인과는 한 줄입니다 — <b>"호텔은 방을 파는 게 아니라 '오늘 하루치 시간'을 파는 사업이다."</b> 오늘 안 판 객실은 내일 팔 수 없습니다(비보관성). 그래서 처음에 땅·건물에 큰돈을 넣고도(초기 투자 큼·고정비 높음) <b>자본회전율은 낮고</b>, 상황마다 요금 이름이 달라지며(공표·특별·추가·분할), 로비처럼 <b>돈을 받지 않는 공간</b>까지 갖춰야 합니다. 9단원의 항공과 똑같은 논리입니다.</p>
+<div class="tl">
+<div class="t1"><b>① 역사</b><span>숙소(Inn) → 그랜드(리츠)<br>→ 상업(스타틀러) → 현대(체인)</span></div>
+<div class="t2"><b>② 성질과 분류</b><span>경영 5특성(시설·회계·상품·영업·조직)<br>분류 7가지 — <b>요금지불형식·경영방식이 1순위</b></span></div>
+<div class="t3"><b>③ 조직과 객실</b><span>객실 · 식음료 · 오락연회 · 관리<br>객실부문 = 프런트오피스·유니폼서비스·하우스키핑</span></div>
+<div class="t4"><b>④ 요금과 식음료</b><span>공표·특별·추가·분할 요금<br>정식/일품 · 서비스 4형식 · 음료</span></div>
+</div>
+<div class="zero"><b>먼저 알아 두면 편한 것</b> — 강사는 8월 16일 핵심강의에서 이 단원을 교재 순서대로 강의하면서 <b>"여기가 시험 문제가 상당히 많이 출제된다"</b>고 짚은 자리가 셋 있습니다. <b>①호텔의 분류(특히 요금지불형식과 경영방식) ②객실요금과 객실 용어 ③호텔 식당 서비스 형식</b>입니다. 시간이 없으면 이 셋부터 보세요.</div>
+</section>
+
+<!-- ================= 이야기 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 먼저 이해하기</h2>
+<p class="sub">이 단원은 <b>사람 이름·호텔 이름·연도·영어 용어</b>가 한꺼번에 쏟아집니다. 그냥 외우면 <b>트레몬트와 스타틀러</b>, <b>대불과 손탁</b>, <b>위탁경영과 프랜차이즈</b>가 며칠 안에 뒤섞입니다. 각 항목이 <b>"왜 그때 그것이 필요했는가"</b>라는 이야기로 한 번 통과하면 연도와 이름이 저절로 자리를 잡습니다.</p>
+
+<article class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">여관에서 호텔로 — 네 단계로 갈라지는 숙박의 역사</div><div class="era">호텔 발전 4단계 (★★★★★)</div></div>
+<div class="body">
+<p>강사는 이 단원을 열면서 <b>"호텔의 시작은 당연히 유럽에서 먼저 시작이 됩니다"</b>라고 말한 뒤 발전 과정을 <b>네 단계</b>로 끊어 설명했습니다. 이 네 단계의 <b>순서 자체가 그대로 문제</b>가 되기 때문에, 다른 것을 다 잊더라도 이 순서만은 남겨야 합니다.</p>
+<p>첫 단계는 <b class="k">숙소(Inn) 시대</b>, 즉 중세입니다. 강사는 <b>"이 Inn이라는 것은 우리말로 바꾸면 여관·여인숙 정도로 생각하시면 됩니다"</b>라고 풀어 주었습니다. 이 시대의 숙소는 <b>수면·음식·생명과 재산의 보호</b>라는 <b>최저한도의 시설</b>만 갖췄고, 손님은 <b>순례자와 상인</b>이었습니다. 놀러 다니는 사람이 아니라 <b>어쩔 수 없이 길 위에 있는 사람</b>들이 손님이었다는 뜻입니다.</p>
+<div class="term"><b>이게 뭐냐면 — 「최저한도의 시설」</b>이란 잠자리와 끼니, 그리고 도둑에게 당하지 않을 정도의 안전, 딱 그만큼만 제공했다는 뜻입니다. 오늘날 호텔의 로비·레스토랑·연회장 같은 것은 아직 없습니다.</div>
+<p>두 번째가 <b class="k">그랜드호텔 시대(19세기 중엽)</b>입니다. 드디어 "호텔"이 등장하는데, 강사의 표현대로 <b>"호텔이 처음 나왔을 때는 일반 계층이 이용할 수 있는 게 아니라 특권 계층이 주로 이용했습니다. 사교의 장이라든가 이런 쪽으로"</b> 쓰였습니다. 호화·사치가 특징이고, 대표 호텔이 <b class="k">리츠(Ritz) 호텔</b>입니다. 리츠라는 사람이 자기 이름을 붙여 만든 호텔이고, 그의 경영철학이 그 유명한 <b class="k">"고객은 항상 정당하다"</b>입니다. 그리고 리츠 호텔은 <b class="k">체인호텔 시스템의 효시</b>이기도 합니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 강사가 정리해 준 「리츠에서 나올 문제는 딱 두 가지」</b> — <b>"하나는 고객은 항상 정당하다, 또 하나는 체인호텔의 효시가 어떤 호텔이냐. 이 두 가지였던 거예요."</b> 리츠 호텔에서 더 외울 것은 없습니다.</div></div>
+<p>세 번째가 <b class="k">상업호텔(Commercial hotel) 시대, 20세기 초</b>입니다. 여기서 호텔이 <b>일반 대중</b>에게 열립니다. 손님은 상용여행자와 일반 대중이고, 목적은 <b>영리 추구</b>입니다. 대표 호텔이 <b class="k">스타틀러(Statler) 호텔(1908)</b>이고, 스타틀러라는 사람이 <b class="k">근대호텔의 혁명왕</b>이라 불립니다. 강사는 <b>"호텔을 일반 대중화시킨 바로 이분이 스타틀러라는 사람입니다. 저렴한 비용으로 호텔을 이용할 수 있게끔"</b>이라고 설명했습니다.</p>
+<p>네 번째가 <b class="k">현대의 호텔(2차대전 후)</b>입니다. <b>모터리제이션(자동차 대중화)</b>과 <b>제트항공기</b>가 여행 패턴을 바꾸면서 휴양지호텔·컨벤션호텔·모텔이 나타나고, <b>힐튼·홀리데이 인</b> 같은 대규모 체인이 등장합니다. 강사도 <b>"본격적으로 체인 호텔이 등장한다든가 또 다양한 목적의 숙박시설이 나오게 됩니다"</b>라고 이 시대의 두 가지 특징을 짚었습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>순서 외우는 법</b> — <b>"길 위의 여관(숙소) → 귀족의 궁전(그랜드) → 장사꾼의 호텔(상업) → 전 세계 체인(현대)"</b>. 손님이 <b>순례자 → 귀족 → 대중 → 전 세계</b>로 넓어지는 순서라고 보면 절대 뒤집히지 않습니다.</div></div>
+</div>
+</article>
+
+<article class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">미국의 두 호텔 — 1829년 「원조」와 1908년 「혁명왕」</div><div class="era">트레몬트 하우스 ↔ 스타틀러 호텔 (기출 단골 함정)</div></div>
+<div class="body">
+<p>미국 최초의 호텔은 <b class="k">1794년 시티 호텔(City Hotel)</b>입니다. 다만 강사는 <b>"미국 최초의 호텔은 시티 호텔인데 이건 그렇게 신경 쓰지 마시고"</b>라며 가볍게 넘겼습니다. 정말 중요한 것은 그 다음 두 호텔입니다.</p>
+<p><b class="k">1829년 트레몬트 하우스(Tremont House)</b>는 <b>근대 호텔산업의 원조</b>라고 불립니다. 왜 원조냐면, <b>오늘날 호텔에서 당연하게 쓰는 제도들이 여기서 처음 시작</b>됐기 때문입니다. 강사는 <b>"이 호텔에서 사용했던 경영 방식들이 오늘날까지도 이어지고 있단 말이에요"</b>라고 설명하며 다음을 꼽았습니다 — <b class="k">싱글룸과 더블룸의 구분</b>, <b class="k">객실 열쇠(Lock)</b>, <b class="k">지배인 제도와 자본·경영의 분리</b>, <b>프랑스 요리 제공</b>, <b class="k">벨보이와 호출기(모닝콜)</b>, 그리고 <b class="k">호텔 로비의 최초 설치</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 — 벨보이(Bell boy)</b>는 오늘날의 <b>벨맨(Bellman)</b>입니다. 강사의 설명 그대로 옮기면 <b>"손님이 호텔에 도착했을 때 짐을 가지고 프런트까지 가서, 손님이 체크인을 하면 손님과 같이 객실까지 올라가서 문 열어 주고 안내해 주는 종사원"</b>입니다. 이 제도를 처음 만든 곳이 트레몬트 하우스이고, <b>호텔 로비를 처음 설치한 것도 트레몬트</b>입니다.</div>
+<p>그리고 <b class="k">1908년 스타틀러 호텔</b>은 앞에서 본 대로 <b>근대호텔의 혁명왕</b>입니다. 스타틀러가 도입한 여섯 가지는 <b>①계단의 방화문 ②어두운 곳에서도 찾을 수 있는 방 안의 스위치 ③개인용 목욕탕 ④전신 크기 거울 ⑤객실마다 얼음물 ⑥조간신문 무료</b>입니다. 하나같이 <b>"보통 사람이 싸고 편하게 묵게 하는 장치"</b>라는 공통점이 있습니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 예전에 실제로 나왔던 함정</b> — 강사: <b>"지금 트레몬트 하우스의 특징이 몇 가지 있죠. 바로 앞에 스타틀러 호텔의 특징이 있죠. 이걸 섞어서 문제가 나오게 됐어요."</b> 즉 <b>두 호텔의 특징을 서로 바꿔 놓는</b> 형태입니다. 다만 강사는 <b>"지금은 그런 문제는 안 나와요"</b>라고 덧붙이며, <b>"스타틀러 = 근대호텔의 혁명왕 / 트레몬트 = 근대호텔의 원조"</b> 이 두 칭호만 확실히 하라고 했습니다.</div></div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>안 헷갈리는 법</b> — <b>「원조는 먼저(1829), 혁명은 나중(1908)」</b>. 그리고 <b>트레몬트에서 나온 것은 전부 「호텔의 뼈대」</b>(방 구분·열쇠·지배인·벨보이·로비)이고, <b>스타틀러에서 나온 것은 전부 「객실 안의 편의」</b>(스위치·욕실·거울·얼음물·신문)입니다. <b>뼈대는 원조, 편의는 혁명왕</b>.</div></div>
+</div>
+</article>
+
+<article class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">대불에서 반도까지 — 작년에 「순서 나열」로 나온 한국 호텔사</div><div class="era">1889 대불 · 1902 손탁 · 1914 조선 · 1936 반도 (★★★★, 강사 "작년에 나왔다")</div></div>
+<div class="body">
+<p>강사는 이 대목에서 중요한 정보를 하나 주었습니다. <b>"작년에는 호텔 역사 쪽이 거의 문제가 나오지 않았는데, 예외적으로 작년도에는 인천 대불호텔과 손탁호텔과 조선호텔 세 가지를 박스에 담아 놓고 설립 순서가 올바르게 나열된 것을 고르라는 문제가 나왔어요."</b> 8월 19일 문제풀이강의에서도 같은 유형(대불→손탁→조선→반도 순서)이 다시 풀렸습니다.</p>
+<p><b class="k">1889년 인천 대불호텔 — 우리나라 최초의 호텔</b>입니다. 일본인이 지었고, 인천에 처음 생긴 이유를 강사는 <b>"바다 항구와 가깝다는 거죠"</b>라고 설명했습니다(1876년 강화도조약의 삼포 개항과 이어집니다). 연도는 교재에 <b>1889년(1888년 표기도 있음)</b>으로 되어 있는데, 강사는 <b>"연도는 6월 측마다 약간 달라요. 88년으로 하는 데도 있고 89년으로 하는 데도 있습니다. 연도는 별로 중요하지 않아요"</b>라고 했습니다. <b>중요한 것은 「최초의 호텔 = 인천 대불호텔」</b>입니다.</p>
+<p><b class="k">1902년 서울 손탁호텔 — 최초의 서양식(근대) 호텔</b>입니다. 독일인 <b>손탁</b>이 고종의 신임을 받아 땅을 하사받고 자기 이름을 붙여 세웠습니다. 그런데 대불호텔도 호텔인데 왜 손탁을 굳이 "최초의 서양식"이라 부를까요? 강사의 설명이 명쾌합니다 — <b>"대불호텔은 그냥 잠만 자는, 객실만 있는 게 아니라… 손탁호텔 같은 경우는 커피숍도 있었고 레스토랑도 있었고 연회장도 있었답니다. 그런 시스템을 갖추다 보니까 서양식 호텔의 최초라고 표현하는 거죠."</b> 교재는 손탁호텔이 <b>불란서(프랑스) 요리</b>를 제공한 최초의 서양식 호텔이라고 적고 있습니다.</p>
+<p><b class="k">1914년 조선호텔 — 69실, 한국 최초의 디럭스(Deluxe) 호텔</b>입니다. 역시 일본인이 지었고, 강사는 <b>"현존하는 우리 호텔 중에 경영사가 가장 오래됐다"</b>고 했습니다. <b class="k">1936년 반도호텔 — 111실, 비즈니스 호텔의 효시</b>이고 <b>우리나라 최초로 엘리베이터가 설치된 호텔</b>입니다. 강사가 들려준 뒷이야기가 재미있습니다 — <b>"반도호텔을 지었던 분이 일본 분인데, 조선호텔에 들어가려는데 못 들어가게 막았답니다. 열받아서 세운 호텔이 반도호텔이고, 지금 소공동 롯데호텔 자리입니다."</b></p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 강사가 알려준 「서양 ↔ 한국」 매칭 문제</b> — <b>"서양에 리츠 호텔이 있었다면 우리나라에는 조선호텔이 있었고, 서양에 스타틀러 호텔이 있었다면 우리나라에는 반도호텔이 있었다. 이걸 갖고도 문제가 나왔어요."</b> 즉 <b>고급호텔의 효시 = 리츠 ↔ 조선호텔</b>, <b>대중·상용호텔의 효시 = 스타틀러 ↔ 반도호텔</b>입니다.</div></div>
+<p>마지막으로 <b class="k">1963년 워커힐</b>입니다. 미8군 <b>워커(Walker) 장군</b>의 이름에 <b>힐(hill, 언덕)</b>을 붙인 이름이고, 나라가 지어 <b>국제관광공사</b>가 운영하다가 1970년대에 민영화되어 선경(현 SK)이 인수했습니다. 세계적인 호텔이 되기 위해 <b>셰라톤(Sheraton)이라는 이름을 빌려온 것</b>이 바로 뒤에 나올 <b>프랜차이즈</b>의 실제 사례입니다.</p>
+</div>
+</article>
+
+<article class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">호텔은 왜 「자본회전율만 낮은」 사업인가</div><div class="era">호텔경영의 5가지 특성 (★★★★★, 8/19 기출 2문항)</div></div>
+<div class="body">
+<p>교재는 호텔경영의 특성을 <b>시설상·회계상·상품상·영업상·조직상</b> 다섯 갈래로 나눠 놓았습니다. 항목이 열 몇 개라 외우기 벅차 보이지만, 8월 19일 강의에서 강사가 <b>기가 막힌 요령</b>을 하나 줬습니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>★ 이 단원 최고의 암기 요령</b> — 강사(8/19): <b>"우리가 호텔 기업의 특성이라면 열 몇 가지가 있습니다. 거기서 요것만 정리할게요. 자본회전율만 낮다. 나머지는 끝에 「높다·빠르다」가 들어갑니다."</b><br>즉 <b>초기 투자 높다 · 고정자산 비율 높다 · 인적서비스 의존도 높다 · 시설 노후화 빠르다 · 손익분기점 높다</b> — 전부 "높다/빠르다"이고, <b>오직 「자본회전율」 하나만 「낮다」</b>입니다. 보기에서 <b>"자본회전율이 높다"</b>거나 <b>"고정비 비중이 낮다"</b>가 보이면 그게 틀린 답입니다. 실제 8/19 기출도 <b>"낮은 고정비의 비중"</b>이 정답(틀린 보기)이었습니다.</div></div>
+<p><b class="k">시설상</b> 특성 세 가지부터 봅니다. ①<b class="k">기계화의 한계성</b> — 강사는 <b>"관광산업 중에서도 호텔 쪽이 가장 인적 서비스가 필요하다"</b>고 했습니다. 기계가 대신할 수 없는 부분이 크다는 뜻입니다. ②<b class="k">비생산적인 공공장소의 확보</b> — 강사의 설명이 곧 정답입니다. <b>"비생산적인 공공장소라는 얘기는 호텔 로비죠. 로비 공간은 우리가 돈을 내지 않지 않습니까?"</b> ③<b class="k">시설의 조기 노후화</b> — 많은 사람이 쓰고 유행도 바뀌기 때문입니다.</p>
+<div class="term"><b>이게 뭐냐면 — 「비생산적인 공공장소」</b>는 <b>돈을 직접 벌어들이지 않는데도 반드시 갖춰야 하는 공간</b>이라는 뜻입니다. 로비가 대표입니다. 넓고 좋을수록 호텔 값어치는 올라가는데, 정작 로비 자체로는 수입이 한 푼도 없습니다. 이 한 가지 개념이 <b>"왜 호텔은 초기 투자가 큰가"</b>까지 설명해 줍니다.</div>
+<p><b class="k">회계상</b>은 ①<b>최초의 일시적 투자가 크다</b> ②<b>고정자산 구성 비율이 높다</b>(고정경비 = 인건비·수도광열비·시설유지관리비·감가상각비·급식비·세금·수선비 / 변동경비 = 홍보비·재료비) ③<b>수입의 불안정성</b> ④<b class="k">자본 회전율이 낮다</b>입니다. 강사는 교재에 없는 항목도 하나 덧붙였습니다 — <b>"손익분기점이 낮게 형성되는 게 아니라 높게 형성돼요. 초기 투자 비용이 크다 보니까."</b></p>
+<p><b class="k">상품상</b>은 ①<b>비신축성</b>(수요가 늘어도 객실을 갑자기 못 늘림) ②<b>비보관성</b>(재고 개념이 없음) ③<b>계절성</b> ④<b class="k">비전매성</b> ⑤<b class="k">다인자성</b>입니다. 뒤의 두 개가 어려운 말인데, 강사가 쉽게 풀어 줬습니다 — <b>비전매성</b>은 <b>"손님이 호텔까지 와야죠. 이 상품이 이동할 수 있는 개념이 아니라는 얘기"</b>이고, <b>다인자성</b>은 <b>"여러 가지 요소로 구성되었다는 얘기 — 객실, 식음료, 인적 서비스, 부대시설이 다 같이 구성된 것"</b>입니다.</p>
+<p><b class="k">영업상</b>은 인적자원 의존성·종사원 협동성·종사원에 유리한 작업조건·<b>연중무휴</b>이고, <b class="k">조직상</b>은 조직의 전문화·<b>지배인 제도</b>·작업의 표준화·업무분장(책임제와 보고제도)입니다. 강사는 <b>"호텔이 쉰다? 큰 문제가 생긴 거예요"</b>라며 연중무휴를 강조했습니다.</p>
+</div>
+</article>
+
+<article class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">내 돈, 내 경영, 내 이름 — 셋 중 무엇을 남에게 맡기는가</div><div class="era">호텔 경영방식 (강사 "여기가 상당히 문제가 많이 나와요")</div></div>
+<div class="body">
+<p>호텔 경영방식은 크게 <b class="k">단독경영</b>과 <b class="k">연쇄경영(체인)</b>으로 나뉩니다. 강사가 먼저 확인해 준 기준이 있습니다 — <b>"호텔 쪽에서 체인이라면 두 개 이상의 호텔을 가지고 있을 때 체인인 거죠."</b> 호텔이 하나면 단독경영, 둘 이상이면 체인입니다.</p>
+<p>연쇄경영은 다시 여섯 가지로 갈라지는데, 앞의 세 가지는 이름만 알면 됩니다. <b class="k">공동소유방식(Co-owner chain)</b>은 자본을 여럿이 함께 대는 것, <b class="k">소유직영방식</b>은 <b>내 돈으로 짓고 내가 경영</b>하는 것(강사: <b>"우리나라 소유직영방식의 대표가 롯데호텔, 신라호텔"</b>), <b class="k">임차운영방식</b>은 <b>건물을 빌려서</b> 호텔로 꾸미는 것(리스)입니다. 강사는 <b>"이 세 개는 거의 문제가 안 나와요"</b>라고 했습니다. <b>문제가 나오는 것은 뒤의 셋</b>입니다.</p>
+<p><b class="k">① 관리운영위탁방식(Management Contract)</b> — <b>내 돈으로 짓되, 경영은 전문 체인에게 맡기는</b> 방식입니다. 강사의 설명 그대로: <b>"자본은 내가 댈 테니 경영은 너희가 와서 좀 해달라, 이러는 말이에요. 이걸 자본과 경영의 분리 방식이라고 하는 거죠."</b> 이 방식을 세계적으로 퍼뜨린 곳이 힐튼이라 <b class="k">「힐튼 방식」</b>이라고도 부릅니다. 강사는 실제 출제 형태까지 알려 줬습니다 — <b>"「힐튼 방식이라고도 불리며 자본과 경영의 분리 방식을 무엇이라 하느냐」 이렇게 문제가 나오게 됐어요."</b></p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 여기서 갈리는 포인트 — 손실은 누가 지는가</b><br>강사: <b>"손실이 발생할 수도 있죠. 이 손실은 여러분이 감당해야 될까요, 체인 본부가 책임져야 될까요? 이때는 여러분(소유주)이 감당해야 되는 거예요. 체인 본부가 하는 게 아닌 거예요."</b> 8/19 강의에서도 <b>"본사나 전문경영인은 적자를 전혀 안 맡게 돼요. 재보전 책임을 전혀 안 지는 겁니다"</b>라고 같은 말을 했습니다. <b>대외적인 책임도 소유주</b>가 집니다. 소유주가 얻는 것은 <b>브랜드와 전문 경영</b>, 잃는 것은 <b>과다한 로열티와 경영에 참여할 수 없다는 점</b>입니다.</div></div>
+<p><b class="k">② 프랜차이즈(Franchise)</b> — <b>돈도 내가, 경영도 내가 하고, 「이름만」 빌려오는</b> 방식입니다. 강사가 든 예가 바로 <b>셰라톤 워커힐</b>입니다. <b>"자본도 내가 대고 경영도 내가 합니다. 다만 이름만 빌려오는 거야."</b> 치킨집 비유도 함께 주었습니다 — BBQ 간판을 달면 자본은 내 돈, 가게 운영도 내가 하고, 본사에는 <b>로열티</b>를 냅니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 실제 기출 함정 — 「경영 참여」</b><br>강사: <b>"실제로 기출문제에 프랜차이즈 설명이 잘못된 것을 고르라 했는데, 보기 중 하나가 「경영 참여」였어요."</b> 프랜차이즈에서 체인 본부는 <b>경영에 참여할 수 없고</b>, <b>지도와 자문만</b> 가능합니다. 8/19 기출 지문도 <b>"가맹점의 경영권은 독립성이 유지된다"</b>였습니다. <b>「독립성 유지 = 프랜차이즈」</b>로 붙여 두세요.</div></div>
+<p><b class="k">③ 리퍼럴 그룹(Referral group)</b> — <b>단독 호텔들끼리 뭉치는</b> 방식입니다. 강사의 그림이 가장 쉽습니다. <b>"여기 앉아 계신 한 분 한 분이 다 개인 단독 호텔을 운영하고 있어요. 단독 호텔이 체인 호텔과 경쟁하면 어디가 이길까요? 당연히 체인 쪽이죠. 안 되겠다, 단독 호텔들도 뭉치자 해서…"</b> 호텔 이름·자본·경영은 <b>하나도 바뀌지 않고</b>, 이름 앞에 <b>공동 브랜드</b>만 붙입니다. 8/19 강의에서는 이것을 <b class="k">볼런터리 체인(자발적 체인)</b>이라고도 부르며 <b>"여기는 본사가 없습니다"</b>라고 정리했습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>리퍼럴의 실제 사례 두 개</b> — 세계적으로는 <b>베스트 웨스턴(Best Western)</b>, 우리나라에는 <b class="k">베니키아(BENIKEA)</b>가 있습니다. 강사가 알려준 이름의 뜻이 외우기 좋습니다 — <b>"베니키아가 뭐예요? 앞 자예요. Best Night in Korea. 그래서 베니키아."</b> 한국관광공사가 관리하는 브랜드입니다.</div></div>
+<p>강사는 이 대목을 이렇게 닫았습니다 — <b>"연쇄경영에서 여러분은 관리운영위탁, 프랜차이즈, 리퍼럴 이 세 가지는 꼭 챙기셔야 돼요. 많이 나옵니다."</b></p>
+</div>
+</article>
+
+<article class="story s2">
+<div class="head"><div class="num">6</div><div class="ttl">호텔 문 앞에서 객실까지 — 걸어 들어가며 외우는 조직도</div><div class="era">호텔 조직 4부문 · 객실부문 3조직</div></div>
+<div class="body">
+<p>호텔 조직은 크게 <b class="k">객실부문 · 식음료부문(F&amp;B) · 오락연회부문 · 관리부문</b> 넷으로 나눕니다. 강사는 <b>"이 네 가지를 세 가지로 줄이면 오락연회 파트가 식음료 안으로 들어가는 게 일반적"</b>이라고 했고, 중요한 힌트를 하나 덧붙였습니다 — <b>"관통사 시험에서는 관리 부문 쪽은 문제가 안 나와요. 우리 쪽에서는 객실·식음료 파트가 출제되는 겁니다."</b></p>
+<p>객실부문은 다시 세 조직으로 갈라지는데, 강사는 이것을 <b>호텔에 도착해서 객실에 들어가기까지의 순서</b>로 설명했습니다. 이 순서대로 따라가면 저절로 외워집니다.</p>
+<div class="tl">
+<div class="t1"><b>현관 앞</b><span><b>프런트 서비스</b><br>(=유니폼 서비스)<br>도어맨이 차 문을 열어줌</span></div>
+<div class="t2"><b>데스크</b><span><b>프런트 오피스</b><br>체크인·체크아웃<br>등록·배정·판매·통제</span></div>
+<div class="t3"><b>객실까지</b><span><b>프런트 서비스</b><br>벨맨이 객실로 안내</span></div>
+<div class="t4"><b>퇴숙 후</b><span><b>하우스키핑</b><br>청소·비품·미니바<br>= 호텔 상품의 생산</span></div>
+</div>
+<p><b class="k">프런트 오피스(Front office)</b>의 업무는 <b>객실 예약·등록·퇴숙, 객실 판매·배정·통제, 우편물·현금 출납·정보 제공</b>입니다. 그런데 여기서 <b>가장 잘 나오는 함정</b>이 하나 있습니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 「객실의 생산」은 프런트가 아니라 하우스키핑</b><br>강사: <b>"가장 많이 나오는 것 중 하나가 「객실을 생산한다」예요. 객실을 생산한다는 건 뭘까요? 손님이 체크아웃하면 객실을 청소해서 다시 판매할 수 있게끔 준비하잖아요. 그럼 이건 어디서 하겠어요? 하우스키핑이죠. 이렇게 문제가 나오는 거죠."</b><br>즉 <b>프런트 오피스의 업무 네 가지에 「객실 생산」을 슬쩍 끼워 넣는</b> 형태입니다. 교재도 하우스키핑을 <b>"호텔 상품의 생산 부서"</b>라고 적어 두었습니다.</div></div>
+<p><b class="k">프런트 서비스(= 유니폼 서비스)</b>는 <b>공항 데스크 · 도어 데스크 · 벨 데스크 · 컨시어지</b>로 이루어집니다. 종사원별 업무 구분이 그대로 문제가 됩니다.</p>
+<div class="term"><b>이게 뭐냐면 — 벨맨과 포터, 뭐가 다른가</b><br>강사가 실제 기출을 놓고 물었습니다. <b>"벨맨의 주 업무가 뭘까요? 객실을 안내하는 게 주업무일까요, 짐을 운반하는 게 주업무일까요? — 이때는 「객실을 안내하는 것」이 주업무입니다."</b> 짐을 들고 올라가긴 하지만 <b>벨맨의 본업은 객실 안내</b>이고, <b>포터(Porter)</b>가 <b>짐 운반</b> 담당입니다(공항에서 호텔까지, 셔틀버스의 짐을 나르는 일). <b>도어맨</b>은 <b>최초 영접과 최후 환송</b>, 현관 교통정리, 차량 수배를 맡습니다.</div>
+<p><b class="k">컨시어지(Concierge)</b>는 최근에 출제된 자리입니다. 강사: <b>"로비라든가 중간에 부스 안에 계셔서 각종 정보도 제공해 주고 호텔 안내해 주고… 이 종사원을 컨시어지라고 합니다. 「문지기」라는 의미예요."</b> 영접·교통·관광·쇼핑·음식점 추천과 예약 정보를 담당합니다. 출제 형태는 <b>"업무를 설명해 놓고 이 업무를 하는 종사원이 누구냐"</b>입니다.</p>
+<p><b class="k">하우스키핑(Housekeeping)</b>은 객실 청소·관리, 소모품·비품·린넨류 관리, <b>미니바</b>와 <b>유실물</b>, 세탁 서비스를 맡습니다. 종사원은 <b>하우스키퍼</b>(관리자) · <b>룸메이드</b>(객실 청소) · <b>하우스맨</b>(룸메이드 보조) · <b>린넨우먼</b>(린넨 보관 담당)입니다.</p>
+</div>
+</article>
+
+<article class="story s3">
+<div class="head"><div class="num">7</div><div class="ttl">같은 방인데 요금 이름은 왜 이렇게 많은가</div><div class="era">요금지불형식 · 객실요금 4분류 (교재 ★★★★★ · 강사 "면접에도 나온다")</div></div>
+<div class="body">
+<p>먼저 <b class="k">요금지불형식</b>입니다. 강사가 <b>"이건 상당히 쉬운 문제가 많이 출제된다"</b>며 시간을 들여 설명한 자리입니다. 기준은 딱 하나 — <b>객실료에 식사가 몇 끼 붙어 있는가</b>입니다.</p>
+<div class="term"><b>한 줄로 정리하면</b><br><b>EP(European plan)</b> = 객실료만, 식사 <b>0끼</b> · <b>CP(Continental plan)</b> = 객실료 + <b>조식 1끼</b> · <b>MAP(Modified American plan)</b> = 객실료 + <b>2끼</b>(보통 조식·석식) · <b>AP(American plan)</b> = 객실료 + <b>3끼</b> · <b>Dual plan</b> = 손님이 원하는 대로 <b>혼합</b>.<br>강사가 알려준 면접 답변: <b>"EP는 따로따로고, CP는 1박 1식이고, AP는 1박 3식입니다."</b></div>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>★ 교재에 없는 보강 — 「같은 뜻인데 이름만 다른」 용어들</b> (8/16 강의)<br>강사가 칠판에 따로 적어 준 내용입니다. <b>AP(1박 3식) = Full pension = American plan</b> / <b>MAP(1박 2식) = Half pension = Semi-pension = Demi-pension</b>.<br>그리고 출제 형태까지 알려 줬습니다 — <b>"문제가 어떻게 나오냐? 「같은 것이 아닌 것」 또는 「관계가 없는 것」을 고르라고 나와요. 1·2·3번은 같은 거고 4번이 틀린 거예요."</b> 즉 <b>Full pension을 MAP 자리에 끼워 넣거나, Demi-pension을 AP 자리에 끼워 넣는</b> 방식입니다.</div></div>
+<p>다음은 <b class="k">객실요금 4분류</b> — <b>공표요금 · 특별요금 · 추가요금 · 분할요금</b>입니다.</p>
+<p><b class="k">공표요금(Published rate = Rack rate)</b>은 <b>호텔이 정해 놓은, 할인되지 않은 정상 기본요금</b>입니다. 강사는 <b>"인쇄 매체에 나와 있는 요금을 퍼블리시드 레이트라고 하고, 또 랙 레이트라고도 합니다. 「랙 레이트란?」이라는 기출문제가 아주 간단하게 나온 적이 있어요"</b>라고 했습니다.</p>
+<p><b class="k">특별요금</b>은 <b>무료요금</b>과 <b>할인요금</b>으로 나뉩니다. 무료요금은 <b class="k">Complimentary</b>(객실 + 부대시설까지 <b>전부 무료</b>)와 <b class="k">Complimentary on room</b>(<b>객실료만</b> 무료, 부대시설 비용은 본인 부담) 둘입니다. 강사가 든 예가 우리 이야기입니다 — <b>"여러분이 가이드로 제주도 출장을 가면 호텔 측으로부터 보통 「Comp. on room」을 제공받죠."</b></p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 교재에 없는 보강 — 싱글 레이트 ↔ 싱글 유즈</b> (8/16 강의)<br><b>싱글 레이트(Single rate)</b>: <b>예약을 한 손님</b>이 싱글룸을 예약했는데 호텔 사정으로 싱글이 없어 <b>트윈을 제공하고 싱글 요금만</b> 받는 것.<br><b>싱글 유즈(Single use)</b>: <b>예약을 하지 않은 손님</b>(워크인)이 왔는데 싱글이 없어 <b>트윈을 제공하고 트윈 요금에서 약 10%를 할인</b>해 주는 것.<br>강사: <b>"예약한 손님이냐 아니냐, 그리고 싱글 요금을 받느냐 10% 할인이냐 — 이걸로 구분하시면 됩니다."</b> 함께 나온 용어가 <b>Walk a guest(예약을 한 손님)</b>와 <b>Walk-in guest(예약을 안 한 손님)</b>이고, 강사는 <b>"실제로 워크인 게스트라는 용어가 기출에 나왔었어요"</b>라고 했습니다.</div></div>
+<p>나머지 할인요금은 <b>비수기요금(Season off rate)</b>, <b class="k">상용요금(Commercial rate)</b>(특정 기업과 계약해 할인 — 강사: <b>"이건 자주 나와요"</b>), <b>단체요금</b>, <b class="k">가이드 요금(Guide rate)</b>(호텔과 <b>여행업자</b> 사이의 할인), <b class="k">가족요금(Family plan)</b>(부모 동반 <b>14세 미만</b> 어린이에게 <b>추가 베드 요금을 받지 않음</b>)입니다.</p>
+<p><b class="k">추가요금</b>은 셋입니다. <b class="k">Midnight charge</b>는 예약 손님이 <b>당일 영업 마감 후 한밤중·다음날 새벽에 도착</b>했을 때, 전날부터 객실을 비워 둔 대가로 받는 요금입니다. <b class="k">Hold room charge</b>는 두 가지 경우인데, 강사가 나눠 설명했습니다 — <b>①투숙객이 단기 여행을 가면서 짐을 객실에 두고 간 경우 ②예약 후 도착하지 않았지만 손님 요청으로 객실을 팔지 않고 보류해 둔 경우</b>. <b>Cancellation charge</b>는 일방적 예약 취소 요금입니다. 마지막 <b class="k">분할요금(Part day use)</b>은 <b>주간에만 잠깐 쓰는 요금을 할인</b>하는 것으로, 강사는 <b>"주로 공항 주변 호텔들이 많이 해요. 트랜스퍼(환승)할 때 시간이 남으면 잠깐 자고 갈 수 있잖아요"</b>라고 설명했습니다.</p>
+</div>
+</article>
+
+<article class="story s4">
+<div class="head"><div class="num">8</div><div class="ttl">식당에서 벌어지는 일 — 누가 음식을 덜어 주는가</div><div class="era">식음료(F&amp;B) — 식당 분류 · 서비스 형식 · 정식 코스 (강사 "요거 정말 많이 나와요")</div></div>
+<div class="body">
+<p>식당을 뜻하는 <b>restaurant</b>는 라틴어 <b class="k">restaurer(restore)</b> = <b>"회복한다·재충전한다"</b>에서 왔습니다. 그리고 교재는 오늘날 식당이 파는 것을 <b class="k">EAST</b> 네 글자로 정리합니다 — <b>E</b>ntertainment(접대·인적서비스), <b>A</b>tmosphere(분위기·물적서비스), <b>S</b>anitation(위생·청결), <b>T</b>aste(맛·요리). 강사는 <b>"이 용어 자체가 일단 기출 문제예요. EAST와 관계가 없는 용어를 골라내는 거예요"</b>라고 했습니다.</p>
+<p>식당 명칭별 분류에서 강사가 <b>꼭 챙기라</b>고 한 것은 셋입니다. <b class="k">다이닝 룸(Dining room)</b>은 <b>이용 시간이 제한</b>되어 점심·저녁만 정해진 시간에 제공하고 <b>정식(코스요리)</b>을 냅니다(아침은 제공하지 않음). <b class="k">그릴(Grill)</b>은 <b>일품요리</b>를 내며 <b>아침·점심·저녁 모두</b> 제공합니다. <b class="k">런치 카운터(Lunch counter)</b>는 <b>조리 과정을 직접 볼 수 있는</b> 카운터테이블에서 음식을 받는 식당입니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 최근 필기에 나온 자리 — 런치 카운터</b><br>강사: <b>"최근에 필기시험에 나왔던 게 바로 런치 카운터 레스토랑이에요. 「조리 과정을 직접 볼 수 있도록 카운터를 만들어 놓고 이곳에서 음식을 제공받는 레스토랑을 무엇이라 하느냐」 이게 기출 문제야."</b> 8/19 강의에서도 같은 문항이 <b>"카운터 서비스"</b>로 다시 나왔습니다. <b>「조리 과정을 본다 = 카운터」</b>로 붙이세요.</div></div>
+<p>경영형태별로는 <b>테이블 서비스 · 셀프서비스 · 카운터 서비스</b> 셋입니다. 셀프서비스는 <b>인건비 절감·가격 저렴·팁 불필요·회전이 빠름</b>이 특징입니다.</p>
+<p>그리고 이 단원 식음료 파트에서 <b>가장 많이 나오는 자리</b>가 <b class="k">호텔 식당 서비스 형식</b>입니다. 강사가 <b>"요거 정말 많이 나와요. 보통 정의를 문제에 끼워 놓고 「이 방식이 어떤 방식이냐」 이렇게 냅니다"</b>라고 했습니다. 다섯 가지 중 <b>네 가지</b>가 핵심입니다.</p>
+<div class="term"><b>강사가 준 「한 방에 갈리는」 기준</b><br><b>프렌치 서비스</b> — <b>고객 앞에서 직접 조리</b>해서 준다(게리동과 르샤를 사용하는 최상급 서비스). 강사: <b>"조리하시는 분이 손님 옆에서 음식을 만들어서 제공해 줍니다."</b><br><b>아메리칸 서비스</b> — <b>주방에서 접시에 담아</b> 그대로 내온다. 강사: <b>"이게 가장 일반적인 거예요."</b><br>그리고 <b>러시안</b>과 <b>잉글리시</b>의 차이는 딱 한 가지입니다 — <b class="k">"큰 쟁반에 음식이 나왔을 때, 누가 덜어 주느냐."</b> <b>러시안 = 종사원이 덜어 준다</b>(연회행사·은쟁반), <b>잉글리시 = 고객이 스스로 덜어 먹는다</b>(가족 서비스, 추수감사절·크리스마스 만찬). 강사는 <b>"오늘 중식당에 가서 직접 덜어 먹어 보세요. 절대 안 까먹어요"</b>라고 했습니다.</div>
+<p>마지막은 <b class="k">정식(Table d'hôte)과 일품요리(À la carte)</b>입니다. 강사는 <b>"이 두 용어는 반드시 기억해 주셔야 돼요. 시험에 많이 나와요"</b>라고 못 박았습니다. <b>정식</b>은 <b>코스로 제공되는 요리</b>(영어로 Set menu, Full course)이고, <b>일품요리</b>는 <b>품목별로 값이 따로 정해져 주문에 따라 개별 조리</b>되는 요리입니다. 강사의 비유: <b>"중식당에서 짜장면 8천 원, 이렇게 하나하나 품목별로 가격이 정해져 있는 요리를 일품요리라고 하는 거죠."</b></p>
+<p>정식의 코스 순서는 <b class="k">전채 → 수프 → 생선 → 앙트레(메인) → 로스트(가금류) → 샐러드 → 후식 → 음료</b> 여덟 단계입니다. 전채는 영어로 <b>Appetizer</b>, 프랑스어로 <b class="k">오르되브르(Hors d'oeuvre)</b>이고, 강사가 <b>"세계 3대 에피타이저"</b>라 부른 <b class="k">카나페 · 캐비아 · 푸아그라</b>가 대표입니다(출제 형태: <b>"에피타이저가 아닌 것을 고르라"</b>).</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>★ 강사가 웃으며 알려준 면접 함정 — 샤토브리앙</b><br><b>"면접에서 「샤토브리앙이 뭡니까?」 하면 100이면 100 다 「와인」이라고 답해요. 와인이 아니라 안심 부위의 명칭입니다."</b> 소 <b>안심(Fillet)</b> 가운데를 4~5cm 두께로 잘라 베이컨을 감아 석쇠에 구운 것이 <b>샤토브리앙</b>입니다. 이름이 프랑스 사람 이름 같아서 술로 착각하기 딱 좋은 자리입니다.</div></div>
+</div>
+</article>
+</section>
+
+<!-- ================= 총정리표 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빠짐없이</h2>
+<p class="sub">아래 표는 통합교재 제10장(원본 인쇄 <b>105~122쪽</b>)과 <b>2026-08-11 원본 재대조 보강분 10개 항목</b>을 <b>표 안의 항목까지 빠짐없이</b> 옮긴 것입니다. <b>(보강)</b> 표시가 붙은 표는 <b>교재에는 없고 8/16·8/19 강의에서만 나온 내용</b>입니다.</p>
+
+<h3>① 호텔 발전 4단계 (★★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>단계</th><th>시기</th><th>손님·목적</th><th>대표 호텔·특징</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>숙소(Inn) 시대</b></td><td>중세</td><td><b>순례자와 상인</b></td><td>수면·음식·생명·재산 보호의 <b>최저한도 시설</b></td></tr>
+<tr class="r2"><td class="era"><b>그랜드호텔 시대</b></td><td><b>19세기 중엽</b></td><td><b>상류계층</b>·사교</td><td><b>리츠 호텔</b> = <b>체인호텔 시스템의 효시</b> · 경영철학 <b>"고객은 항상 정당하다"</b></td></tr>
+<tr class="r3"><td class="era"><b>상업호텔 시대</b></td><td><b>20세기 초</b></td><td>일반 대중·상용여행자 / <b>영리 추구</b></td><td><b>스타틀러 호텔(1908)</b> = <b>근대호텔의 혁명왕</b></td></tr>
+<tr class="r4"><td class="era"><b>현대의 호텔</b></td><td>2차대전 후</td><td>대중 관광</td><td><b>모터리제이션</b>·<b>제트항공기</b>로 여행패턴 변화 → 휴양지호텔·컨벤션호텔·모텔 출현, 대규모 체인(<b>힐튼·홀리데이 인</b>)</td></tr>
+</tbody>
+</table></div>
+
+<h3>② 세계 호텔사 — 연도와 칭호 (★★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>연도</th><th>호텔</th><th>칭호·내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>1794</b></td><td>City Hotel</td><td><b>미국 최초의 호텔</b> (강사: 크게 신경 쓰지 않아도 됨)</td></tr>
+<tr class="r1"><td class="era"><b>1829</b></td><td><b>트레몬트 하우스</b></td><td><b>근대 호텔산업의 원조</b> — 싱글룸·더블룸 구분, <b>객실 열쇠(Lock)</b>, <b>지배인제도 및 자본과 경영의 분리</b>, 프랑스 요리 제공, <b>벨보이</b>와 호출기(모닝콜), <b>로비를 최초로 설치</b></td></tr>
+<tr class="r2"><td class="era"><b>1880</b></td><td>리츠 호텔</td><td><b>체인호텔 시스템의 효시</b> · "고객은 항상 정당하다"</td></tr>
+<tr class="r3"><td class="era"><b>1908</b></td><td><b>스타틀러 호텔</b></td><td><b>근대호텔의 혁명왕</b> — ①계단에 <b>방화문</b> ②어두운 곳에서도 찾는 <b>방 안의 스위치</b> ③<b>개인용 목욕탕</b> ④<b>전신 크기 거울</b> ⑤객실마다 <b>얼음물</b> ⑥<b>조간신문 무료</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>③ 한국 호텔사 — 작년에 「순서 나열」로 출제 (★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>연도</th><th>호텔</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>1889</b><br><span style="font-size:12px">(1888 표기도 있음)</span></td><td><b>인천 대불호텔</b></td><td><b>우리나라 최초의 호텔</b> · 일본인이 건립 · 개항장 인천에 위치</td></tr>
+<tr class="r1"><td class="era"><b>1902</b></td><td><b>서울 손탁호텔</b></td><td><b>최초의 서양식(근대) 호텔</b> · 독일인 손탁이 고종에게 땅을 받아 건립 · 커피숍·레스토랑·연회장을 갖춤 · <b>불란서(프랑스) 요리</b> 제공</td></tr>
+<tr class="r2"><td class="era">1909</td><td>하남호텔</td><td>—</td></tr>
+<tr class="r2"><td class="era">1912</td><td>부산·신의주 철도호텔</td><td>—</td></tr>
+<tr class="r2"><td class="era"><b>1914</b></td><td><b>조선호텔</b></td><td><b>69실 · 한국 최초의 Deluxe 호텔</b> (서양의 <b>리츠</b>에 대응)</td></tr>
+<tr class="r3"><td class="era">1915</td><td>금강산·장안사호텔</td><td>—</td></tr>
+<tr class="r3"><td class="era">1925</td><td>평양 철도호텔</td><td>—</td></tr>
+<tr class="r3"><td class="era"><b>1936</b></td><td><b>반도호텔</b></td><td><b>111실 · Business Hotel의 효시</b> (서양의 <b>스타틀러</b>에 대응) · <b>우리나라 최초로 엘리베이터 설치</b> · 현 소공동 롯데호텔 자리</td></tr>
+<tr class="r4"><td class="era">1945</td><td>조선·반도·온양·부산 철도호텔</td><td><b>국영화</b></td></tr>
+<tr class="r4"><td class="era">1962</td><td>국제관광공사 운영 호텔 <b>10곳</b></td><td>온양·서귀포·무등산·불국사·해운대·대구·설악산·화진포·반도·조선 / 같은 해 <b>최초의 민영호텔</b> 등장(메트로·아스토리아·뉴코리아·사보이·그랜드호텔)</td></tr>
+<tr class="r4"><td class="era"><b>1963</b></td><td><b>워커힐</b></td><td>미8군 <b>워커 장군</b> + hill · 국가가 건립해 <b>국제관광공사</b>가 운영 → 1970년대 민영화(선경, 현 SK) · <b>셰라톤과 franchise 체인계약</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>④ 호텔경영의 5가지 특성 (★★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>시설상</b></td><td>① <b>기계화의 한계성</b> ② <b>비생산적인 공공장소</b>의 확보(= 로비) ③ <b>시설의 조기 노후화</b></td></tr>
+<tr class="r2"><td class="era"><b>회계상</b></td><td>① 최초의 <b>일시적 투자가 크다</b> ② <b>고정자산 구성 비율이 높다</b>(고정경비 = 인건비·수도광열비·시설유지관리비·감가상각비·급식비·세금·수선비 / 변동경비 = 홍보비·재료비) ③ <b>수입의 불안정성</b> ④ <b>자본 회전율이 낮다</b> <span style="font-size:12px">· (강사 보강) <b>손익분기점은 높게 형성된다</b></span></td></tr>
+<tr class="r3"><td class="era"><b>상품상</b></td><td>① <b>비신축성</b> ② <b>비보관성</b> ③ <b>계절성</b> ④ <b>비전매성</b>(장소를 옮겨 팔 수 없음) ⑤ <b>다인자성</b>(인적·물적·시스템적·정보적·금융적 서비스 결합)</td></tr>
+<tr class="r4"><td class="era"><b>영업상</b></td><td>① 인적자원 의존성 ② 종사원 협동성 ③ 종사원에 유리한 작업조건 ④ <b>연중무휴</b></td></tr>
+<tr class="r4"><td class="era"><b>조직상</b></td><td>① 조직의 전문화 ② <b>지배인제도</b> ③ 작업의 표준화 ④ 업무분장(책임제와 보고제도)</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑤ 호텔의 분류 — 장소별 (★★★★, 강사 "작년부터 다시 나오기 시작")</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>명칭</th><th>위치</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>Metropolitan hotel</b></td><td>대도시에 <b>수천 실</b>을 보유한 호텔군 (강사: <b>우리나라에는 해당 호텔이 없다</b>)</td></tr>
+<tr class="r1"><td class="era"><b>City hotel</b></td><td>도시 중심지 (강사: <b>우리나라 관광호텔은 주로 여기</b>)</td></tr>
+<tr class="r2"><td class="era">Country hotel</td><td>교외·산간</td></tr>
+<tr class="r2"><td class="era"><b>Airport hotel</b></td><td>공항 주변</td></tr>
+<tr class="r3"><td class="era">Seaport hotel</td><td>항구 주변</td></tr>
+<tr class="r3"><td class="era"><b>Terminal hotel</b></td><td>철도역·공항빌딩</td></tr>
+<tr class="r4"><td class="era">Suburban hotel</td><td>교외</td></tr>
+<tr class="r4"><td class="era">Beach hotel</td><td>해변</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑥ 숙박기간별 분류 — 가장 잘 틀리는 자리 (★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>명칭</th><th>기간</th><th>성격</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>Transient hotel</b></td><td><b>1주일 미만</b></td><td>단기 체재 — 일반 관광호텔이 여기</td></tr>
+<tr class="r2"><td class="era"><b>Residential hotel</b></td><td><b>1주일 이상 1개월 이내</b></td><td>주거용 (취사 가능)</td></tr>
+<tr class="r3"><td class="era"><b>Permanent hotel</b></td><td><b>1개월 이상 6개월 이내</b></td><td>아파트식 장기 체재</td></tr>
+</tbody>
+</table></div>
+<div class="zero"><b>출제 형태 두 가지</b> (강사 8/16) — ① <b>"숙박기간에 따른 분류가 아닌 것"</b>을 고르기 ② <b>정의를 제시하고 해당 호텔을 고르기</b>("일주일 이상 한 달 이내 체재 → ?"). <b>1주 / 1개월 / 6개월</b> 세 숫자만 순서대로 잡아 두면 됩니다.</div>
+
+<h3>⑦ 숙박목적별 · ⑧ 규모별 분류</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>기준</th><th>분류</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>숙박목적별</b></td><td><b>Conventional hotel</b>(회의 유치 — 대회의장·연회실·전시장) / <b>Commercial hotel</b>(전형적 상용 = 비즈니스 호텔) / <b>Resort hotel</b>(휴양·레크리에이션) / <b>Apartment hotel</b>(정년 퇴직 노인 전문 수용)</td></tr>
+<tr class="r2"><td class="era"><b>규모별</b></td><td>소규모 <b>150실 이하</b> / 중규모 <b>150~299실</b> / 대규모 <b>300~600실</b> / 특대규모 <b>600실 이상</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑨ 요금지불형식 — 교재 ★★★★★ · 강사 "면접에도 나온다"</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>형식</th><th>약자</th><th>식사</th><th>같은 뜻의 다른 이름 <b>(보강)</b></th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>European plan</b></td><td><b>EP</b></td><td><b>0끼</b> — 객실료와 식사비 완전 분리</td><td>—</td></tr>
+<tr class="r2"><td class="era"><b>Continental plan</b></td><td><b>CP</b></td><td><b>1끼</b> — 객실료 + 조식</td><td>—</td></tr>
+<tr class="r3"><td class="era"><b>Modified American plan</b></td><td><b>MAP</b></td><td><b>2끼</b> — 객실료 + 조식·석식</td><td><b>Half pension · Semi-pension · Demi-pension</b></td></tr>
+<tr class="r4"><td class="era"><b>American plan</b></td><td><b>AP</b></td><td><b>3끼</b> — 객실료 + 조·중·석식</td><td><b>Full pension</b></td></tr>
+<tr class="r4"><td class="era"><b>Dual plan</b></td><td>—</td><td>손님이 원하는 대로 <b>혼합</b></td><td>—</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑩ 호텔 경영방식 — 강사 "여기가 상당히 문제가 많이 나와요"</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>방식</th><th>자본</th><th>경영</th><th>핵심</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>단독경영</b></td><td>본인</td><td>본인</td><td>호텔이 <b>하나</b> (체인 = 2개 이상)</td></tr>
+<tr class="r2"><td class="era">공동소유방식<br>(Co-owner chain)</td><td>공동</td><td>공동</td><td>자본을 여럿이 함께 댐</td></tr>
+<tr class="r2"><td class="era"><b>소유직영방식</b></td><td>본인</td><td>본인</td><td>대표 사례 <b>롯데호텔·신라호텔</b></td></tr>
+<tr class="r2"><td class="era">임차운영방식</td><td>건물 임차</td><td>본인</td><td>건물 소유자가 따로 있음(리스)</td></tr>
+<tr class="r3"><td class="era"><b>관리운영위탁방식</b><br>(Management Contract)<br><b>= 힐튼 방식</b></td><td><b>소유주</b></td><td><b>체인 본부</b></td><td><b>자본과 경영의 분리</b> · <b>손실은 소유주가 부담</b>(본부는 적자 책임 없음) · <b>대외적 책임도 소유주</b> · 소유주는 <b>경영에 참여 불가</b>, 로열티 부담</td></tr>
+<tr class="r3"><td class="era"><b>프랜차이즈 방식</b></td><td><b>소유주</b></td><td><b>소유주</b></td><td><b>상표(이름)만 빌림</b> · 가맹점의 <b>경영권 독립성 유지</b> · 본부는 <b>경영 참여 불가, 지도·자문만</b> 가능 · 사례 <b>셰라톤 워커힐</b></td></tr>
+<tr class="r4"><td class="era"><b>리퍼럴 그룹</b><br><b>= 볼런터리(자발적) 체인</b></td><td>각자</td><td>각자</td><td><b>단독호텔들끼리 결합</b> · <b>본사가 없음</b> · 호텔명 앞에 공동 브랜드만 붙임 · 사례 <b>베스트 웨스턴</b>, 국내 <b>베니키아(BENIKEA = Best Night in Korea)</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑪ 특별목적 숙박시설</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>시설</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>모텔(Motel)</b></td><td><b>Motor + Hotel</b> · <b>1908년 미국 아리조나주</b> 교외에서 시작 · 자동차 여행객 대상 · 숙박비 저렴, 주차 편리, 옥외 부대시설 활용 용이, <b>노 팁(no-tip) 제도</b>, <b>객실 예약 불필요</b>, 이용·행동이 자유로움</td></tr>
+<tr class="r2"><td class="era"><b>유스호스텔</b><br>(Youth hostel, ★★)</td><td>"젊음의 숙소" · <b>1909년 독일 루르 알테나</b> 지역 교사 <b>리하르트 쉬르만(Richard Schirrmann)</b> 박사가 창시 → 자신이 근무한 넷터 초등학교를 개방한 뒤 정부 지원으로 <b>알테나 성</b>으로 이전 = <b>최초의 유스호스텔</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑫ 호텔 조직 — 4부문과 객실부문 3조직</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>조직</th><th>주요 업무</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>호텔 전체 4부문</b></td><td><b>객실부문</b> / <b>식음료부문(F&amp;B)</b> / 오락·연회부문 / 관리부문 <span style="font-size:12px">(3부문으로 줄이면 오락·연회가 식음료로 흡수 · 강사: <b>관통사 시험에 관리부문은 나오지 않는다</b>)</span></td></tr>
+<tr class="r2"><td class="era"><b>프런트 오피스</b><br>(Front office)</td><td>객실 <b>예약·등록·퇴숙</b>, 객실 <b>판매·배정·통제</b>, 우편물·현금 출납·정보 제공 <span style="font-size:12px">(<b>객실의 「생산」은 여기가 아니라 하우스키핑</b>)</span></td></tr>
+<tr class="r3"><td class="era"><b>프런트 서비스</b><br>(= Uniformed Service)</td><td><b>공항 데스크 · 도어 데스크 · 벨 데스크 · 컨시어지</b> · <b>포터</b>(짐 운반) / <b>도어맨</b>(최초 영접·최후 환송, 현관 교통정리, 차량수배) / <b>벨맨</b>(등록한 고객을 <b>객실로 안내</b>) / <b>컨시어지</b>(영접·교통·관광·쇼핑·음식점 추천·예약 정보)</td></tr>
+<tr class="r4"><td class="era"><b>하우스 키핑</b><br>(Housekeeping)</td><td>객실 청소·관리, 소모품·비품·린넨류 관리, <b>미니바·유실물</b>, 세탁 서비스 · <b>호텔 상품의 생산 부서</b> · 하우스키퍼 / <b>룸메이드</b>(청소) / <b>하우스맨</b>(룸메이드 보조) / <b>린넨우먼</b>(린넨 보관)</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑬ 객실의 종류 (★★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>종류</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>싱글룸</b></td><td>싱글베드 1개 · <b>13㎡ 이상</b></td></tr>
+<tr class="r1"><td class="era"><b>더블룸</b></td><td>더블베드 1개 · <b>19㎡ 이상</b></td></tr>
+<tr class="r1"><td class="era"><b>트윈룸</b></td><td><b>싱글베드 2개</b> · <b>19㎡ 이상</b></td></tr>
+<tr class="r2"><td class="era">트리플룸</td><td>싱글베드 3개</td></tr>
+<tr class="r2"><td class="era"><b>스튜디오룸</b></td><td><b>주간에는 소파, 야간에는 침대</b>로 쓰는 <b>스튜디오 베드</b>가 설치된 객실 <span style="font-size:12px">(강사: <b>최근 기출</b>)</span></td></tr>
+<tr class="r2"><td class="era"><b>스위트룸</b></td><td>침실 외에 <b>거실·응접실이 따로 있는</b> 고급 객실의 총칭</td></tr>
+<tr class="r3"><td class="era"><b>커넥팅룸</b></td><td>객실과 객실 사이에 <b>통로문이 있음</b> → <b>가족용</b></td></tr>
+<tr class="r3"><td class="era"><b>어드조이닝룸</b></td><td>나란히 붙어 있으나 <b>통로문이 없음</b> → <b>단체용</b>(같은 쪽으로 몰아서 배정)</td></tr>
+<tr class="r3"><td class="era">인사이드룸 / 아웃사이드룸</td><td><b>외부 경치를 볼 수 있느냐</b>로 갈림 (아웃사이드 = 볼 수 있음)</td></tr>
+<tr class="r4"><td class="era">레지덴셜룸</td><td>장기 체류객용 <b>주거형 객실</b> — <b>취사 가능</b></td></tr>
+<tr class="r4"><td class="era">이그제큐티브룸</td><td><b>비즈니스 고객</b>을 위한 객실(전용 층으로 운영하기도 함)</td></tr>
+<tr class="r4"><td class="era"><b>하우스 유즈 룸</b></td><td><b>호텔 직원이 쓰는 객실</b> — 임원 숙소·사무실용·린넨룸·스토어룸 <span style="font-size:12px">(강사: <b>최근 기출</b>)</span></td></tr>
+<tr class="r4"><td class="era">장애인 객실</td><td>미닫이문, 화장실·욕실 손잡이</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑭ 객실요금의 종류 (★★★★, 매우 자주 출제)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>종류</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>공표요금</b></td><td><b>Published rate<br>= Rack rate</b></td><td>호텔이 책정한 <b>할인되지 않은 정상 기본요금</b></td></tr>
+<tr class="r2"><td class="era" rowspan="2"><b>무료요금</b></td><td><b>Complimentary</b></td><td><b>모든 것</b>(객실 + 부대시설)이 무료</td></tr>
+<tr class="r2"><td><b>Complimentary on room</b></td><td><b>객실요금만</b> 무료</td></tr>
+<tr class="r3"><td class="era" rowspan="6"><b>특별요금<br>(할인요금)</b></td><td><b>싱글 레이트</b></td><td>싱글을 <b>예약</b>했는데 호텔 사정으로 <b>트윈을 제공</b>하고 <b>싱글요금</b>만 받는 것</td></tr>
+<tr class="r3"><td>비수기요금(Season off rate)</td><td>비수기 할인</td></tr>
+<tr class="r3"><td><b>상용요금(Commercial rate)</b></td><td>특정 <b>기업</b>과의 계약에 의한 할인 <span style="font-size:12px">(강사: 자주 나옴)</span></td></tr>
+<tr class="r3"><td>단체요금(Group rate)</td><td>단체고객 할인</td></tr>
+<tr class="r3"><td><b>가이드 요금(Guide rate)</b></td><td>호텔과 <b>여행업자</b> 사이에 적용되는 할인</td></tr>
+<tr class="r3"><td><b>가족요금(Family plan)</b></td><td>부모 동반 <b>14세 미만</b> 어린이에게 <b>추가 베드 요금을 받지 않음</b></td></tr>
+<tr class="r4"><td class="era" rowspan="3"><b>추가요금</b></td><td><b>Midnight charge</b></td><td>예약 고객이 <b>당일 영업 마감 후 한밤중·다음날 새벽 도착</b> 시, 전날부터 객실을 비워둔 대가로 징수</td></tr>
+<tr class="r4"><td><b>Hold room charge</b></td><td>①투숙객이 단기 여행 시 <b>짐을 두고 간 경우</b> ②예약 후 도착하지 않았으나 <b>객실을 보류</b>시킨 경우</td></tr>
+<tr class="r4"><td>Cancellation charge</td><td>일방적 <b>예약 취소</b> 요금</td></tr>
+<tr class="r4"><td class="era"><b>분할요금</b></td><td><b>Part day use</b></td><td>객실점유율을 높이려고 <b>주간 이용 요금을 할인</b> <span style="font-size:12px">(강사: 공항 주변 호텔의 환승 손님)</span></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑮ 객실 부문 관련 용어 (★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>용어</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>Occupied</b></td><td>고객이 <b>현재 사용 중인</b> 객실</td></tr>
+<tr class="r1"><td class="era"><b>On-change</b></td><td>퇴숙했으나 <b>아직 청소가 완료되지 않은</b> 객실</td></tr>
+<tr class="r1"><td class="era"><b>Vacant and Ready</b></td><td>퇴숙 후 <b>청소가 완료된</b> 객실</td></tr>
+<tr class="r2"><td class="era"><b>Sleep-out</b></td><td>요금은 지불했으나 <b>전혀 객실을 사용하지 않은</b> 경우</td></tr>
+<tr class="r2"><td class="era"><b>Skipper</b></td><td>요금을 지불하지 않고 <b>몰래 빠져나간</b> 도망 고객</td></tr>
+<tr class="r3"><td class="era"><b>Make-up</b></td><td>투숙 중 린넨 교환·청소·정비 정돈 <span style="font-size:12px">(강사: <b>오전 11시경</b>)</span></td></tr>
+<tr class="r3"><td class="era"><b>Turn down Service</b></td><td><b>이브닝 서비스</b> — 취침 직전 간단한 청소·정리와 <b>잠자리 돌보기</b>(이불을 반쯤 접어 둠) <span style="font-size:12px">(강사: 이 용어들 중 <b>가장 많이 출제됨</b>)</span></td></tr>
+<tr class="r3"><td class="era">Valet Service</td><td>호텔 주차장·세탁소에서 고객을 위해 하는 서비스</td></tr>
+<tr class="r4"><td class="era">Guest Charge</td><td>고객 청구서에 기재된 <b>모든 청구액</b></td></tr>
+<tr class="r4"><td class="era">Trunk Room</td><td>장기체류자의 큰 가방·짐을 보관하는 방</td></tr>
+<tr class="r4"><td class="era"><b>Lost and Found</b></td><td><b>유실물</b> 습득신고·보관센터</td></tr>
+<tr class="r4"><td class="era"><b>Walk a Guest</b></td><td>호텔 <b>예약을 한</b> 손님 <span style="font-size:12px">(↔ <b>Walk-in guest</b> = 예약을 안 한 손님, 기출)</span></td></tr>
+<tr class="r4"><td class="era">Room Service</td><td>객실에서 하는 식사 서비스 · 보통 메뉴 요금보다 <b>10~15% 높은 요금</b></td></tr>
+<tr class="r4"><td class="era">B &amp; B</td><td>Bed and Breakfast — 아침식사를 <b>지역 전통음식</b>으로 제공하고 가정적 분위기를 내는 숙박형태</td></tr>
+<tr class="r4"><td class="era"><b>객실점유율</b></td><td><b>(판매객실수 ÷ 판매가능객실수) × 100</b> <span style="font-size:12px">— 분모가 <b>「총 객실수」가 아니라 「판매가능 객실수」</b>인 점이 함정</span></td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- ================= 식음료 총정리표 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 식음료(F&amp;B) 부문</h2>
+<p class="sub">원본 제4절(인쇄 <b>116~122쪽</b>)입니다. 강사는 8월 16일 강의에서 <b>식당·서비스 형식·정식 코스까지</b> 설명한 뒤 <b>"음료부터 마지막에 나와 있는 부분은 2주 후에 마무리 짓기로 하고"</b> 하며 <b>음료(술) 부분은 뒤로 미뤘습니다.</b> 그래서 아래 ⑲ <b>음료</b> 표는 <b>강의 근거 없이 교재만으로</b> 정리한 것입니다(하단 「근거」 참조).</p>
+
+<h3>⑯ 식당의 어원과 분류</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>어원</b></td><td>라틴어 <b>restaurer(restore)</b> = <b>"회복한다·재충전한다"</b></td></tr>
+<tr class="r1"><td class="era"><b>오늘날의 식당 = EAST</b></td><td><b>E</b>ntertainment(접대·인적서비스) · <b>A</b>tmosphere(분위기·물적서비스) · <b>S</b>anitation(위생·청결) · <b>T</b>aste(맛·요리) <span style="font-size:12px">— 기출: <b>"EAST와 관계없는 것 고르기"</b></span></td></tr>
+<tr class="r2"><td class="era">레스토랑(Restaurant)</td><td>웨이터가 음식을 날라주는 고급 식사·서비스 식당</td></tr>
+<tr class="r2"><td class="era"><b>다이닝 룸(Dining Room)</b></td><td><b>이용 시간이 제한</b>되어 점심·저녁이 정해진 시간에 제공 · <b>정식(table d'hôte)</b> 제공 <span style="font-size:12px">(강사: 아침은 제공하지 않음)</span></td></tr>
+<tr class="r2"><td class="era"><b>그릴(Grill)</b></td><td><b>일품요리(à la carte)</b>와 특별요리 제공 · <b>아침·점심·저녁 모두</b> 제공</td></tr>
+<tr class="r3"><td class="era"><b>런치 카운터(Lunch Counter)</b></td><td><b>조리과정을 직접 볼 수 있는</b> 카운터테이블에서 제공 <span style="font-size:12px">(강사: <b>최근 필기 출제</b>)</span></td></tr>
+<tr class="r3"><td class="era">다이닝 카(Dining Car)</td><td><b>기차</b> 식당차</td></tr>
+<tr class="r3"><td class="era">드라이브 인(Drive-in)</td><td>고속도로변 등에서 <b>자동차 이용객</b> 대상, 넓은 주차장 필요</td></tr>
+<tr class="r4"><td class="era"><b>경영형태별</b></td><td><b>테이블 서비스</b> / <b>셀프서비스</b>(인건비 절감·가격 저렴·팁 불필요·회전 빠름) / <b>카운터 서비스</b>(주방 개방, 신속·위생적·저렴)</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑰ 호텔 식당 서비스 형식 — 강사 "요거 정말 많이 나와요" (★★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>형식</th><th>다른 이름</th><th>핵심</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>프렌치 서비스</b></td><td>—</td><td><b>고객 앞에서 직접 조리</b>하기도 하며 <b>게리동(gueridon)</b>과 <b>르샤(rechaud, hot plate)</b>를 이용해 1인분씩 담아 제공하는 <b>최상급 서비스</b></td></tr>
+<tr class="r2"><td class="era"><b>러시안 서비스</b></td><td>플래터 서비스</td><td><b>은쟁반</b>에 담아 <b>종사원이 덜어 줌</b> · <b>연회행사</b>에 많이 이용 · 일정 시간에 많은 인원에게 원하는 만큼 제공</td></tr>
+<tr class="r3"><td class="era"><b>아메리칸 서비스</b></td><td>플레이트 서비스</td><td>프랑스식과 러시안의 <b>절충형</b> · 주방에서 만든 음식을 <b>접시에 담아</b> 제공 · <b>가장 일반적</b></td></tr>
+<tr class="r4"><td class="era"><b>잉글리시 서비스</b></td><td>패밀리 서비스</td><td>큰 접시·보울을 테이블에 놓고 <b>고객이 스스로 돌려가며</b> 먹음 · 추수감사절·크리스마스 만찬 · <b>호텔 식당에서는 별로 이용되지 않음</b></td></tr>
+<tr class="r4"><td class="era">트레이 서비스</td><td>—</td><td>트레이에 담아 제공 · <b>룸서비스·기내식</b></td></tr>
+</tbody>
+</table></div>
+<div class="zero"><b>강사가 준 한 방 구분법</b> — <b>"러시안과 잉글리시의 차이는 딱 하나, 큰 쟁반에 음식이 나왔을 때 누가 덜어 먹느냐입니다."</b> <b>러시안 = 종사원이 덜어 준다 / 잉글리시 = 내가 덜어 먹는다.</b> 그리고 이 넷은 전부 <b>「테이블 서비스」 식당</b>에서 이루어집니다(셀프서비스·카운터 서비스가 아닙니다).</div>
+
+<h3>⑱ 정식(Table d'hôte) 코스와 요리 (★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>순서</th><th>코스</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">1</td><td><b>전채</b> (Appetizer)</td><td>프랑스어 <b>오르되브르(Hors d'oeuvre)</b> · 조건 = 분량이 적어 <b>한 입에</b>, 주요리와 균형, <b>짠맛·신맛</b>으로 침 분비 촉진, 계절감·지방색 · 대표 <b>카나페 · 캐비아(철갑상어 알) · 푸아그라(거위 간)</b></td></tr>
+<tr class="r2"><td class="era">2</td><td><b>수프</b> (Soup)</td><td><b>맑은 수프 = 콘소메(Consommé)</b> / <b>진한 수프 = 포타지(Potage)</b> · 비스크, 어니언 그라탱, 클램 차우더</td></tr>
+<tr class="r2"><td class="era">3</td><td><b>생선</b> (Fish)</td><td>대표 소스 = <b>타르타르 소스</b></td></tr>
+<tr class="r3"><td class="era">4</td><td><b>메인·앙트레</b> (Entrée)</td><td>스테이크가 나오는 자리</td></tr>
+<tr class="r3"><td class="era">5</td><td>로스트 (Roast)</td><td><b>가금류</b></td></tr>
+<tr class="r3"><td class="era">6</td><td>샐러드 (Salad)</td><td>야채 요리</td></tr>
+<tr class="r4"><td class="era">7~8</td><td>후식 · 음료</td><td>Dessert → Beverage</td></tr>
+<tr class="r4"><td class="era">—</td><td><b>일품요리</b> (À la carte)</td><td><b>품목별로 가격이 정해져</b> 주문에 따라 개별 조리 <span style="font-size:12px">(강사: <b>정식 = table d'hôte</b>, <b>일품 = à la carte</b> 두 용어는 반드시 기억)</span></td></tr>
+</tbody>
+</table></div>
+<div class="tblwrap"><table>
+<thead><tr><th>소 부위</th><th>스테이크 명칭</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>안심</b></td><td><b>Fillet Steak</b> / <b>샤토브리앙</b>(Fillet 가운데를 4~5cm 잘라 베이컨을 감아 석쇠구이) / <b>투르느도</b>(Fillet 세모꼴 부분을 베이컨으로 감아 구움)</td></tr>
+<tr class="r2"><td class="era"><b>허리등심</b></td><td><b>Sirloin Steak</b></td></tr>
+<tr class="r3"><td class="era"><b>갈비등심</b></td><td><b>T-bone Steak · Rib Steak · Club Steak</b></td></tr>
+<tr class="r4"><td class="era">허벅지 / 궁둥이 / 배고기</td><td>Round Steak / Rump Steak / Flank Steak</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑲ 음료(Beverage)의 분류 (★★★★★) <span style="font-size:13px;font-weight:600">— 이 표만 강의 근거 없음(교재 근거)</span></h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>발효주(양조주)</b></td><td><b>포도주(와인) · 맥주</b> 등</td></tr>
+<tr class="r2"><td class="era"><b>증류주</b></td><td><b>위스키 · 브랜디 · 럼 · 보드카 · 데킬라 · 진 · 소주 · 고량주</b></td></tr>
+<tr class="r3"><td class="era"><b>혼성주(리큐어)</b></td><td>증류주에 향미를 가한 것 = <b>코디얼(cordial)</b> · <b>식후주(after dinner drink)</b> · 프루트 리큐어 / 플랜츠 리큐어</td></tr>
+</tbody>
+</table></div>
+<div class="tblwrap"><table>
+<thead><tr><th>주종</th><th>핵심</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>와인 분류</b></td><td>색(레드/화이트/옐로/로제) · 맛(<b>감미 Sweet / 산미 Dry</b>) · 알코올 첨가(<b>강화 Fortified / 비강화</b>) · 탄산가스(<b>발포성 Sparkling / 비발포성 Still</b>) · <b>용도(식전 Aperitif / 식탁용 Table / 후식 Dessert)</b></td></tr>
+<tr class="r1"><td class="era"><b>국가별 대표 와인</b></td><td>프랑스(보르도·메독·루아르·<b>샹파뉴</b>·버건디·알자스·론·부르고뉴) / 독일(카비네트·슈페트레제·아우스레제·<b>아이스바인</b>·젝트) / 스페인(<b>셰리</b>·리오하) / 이탈리아(바르바레스코·브루넬로 디 몬탈치노) / <b>포르투갈(포트 와인)</b></td></tr>
+<tr class="r2"><td class="era"><b>와인 보관</b></td><td><b>눕혀서</b> 코르크가 젖도록 · <b>14℃ 정도·습도 80%</b> · <b>적포도주는 실온(17~18℃), 백포도주는 5~10℃로 차게</b></td></tr>
+<tr class="r2"><td class="era"><b>맥주</b></td><td>주원료 <b>맥아 + 호프(Hop)</b> + 효모 · <b>라거 비어 = 살균맥주 / 드래프트 비어 = 생맥주</b></td></tr>
+<tr class="r3"><td class="era"><b>위스키</b></td><td><b>12세기경 아일랜드</b>에서 시작 → 17세기 스코틀랜드 전파 · 원료 밀·보리·옥수수 · 산지별 <b>스카치·아메리칸·캐나디안·아이리시</b> · 도수 80~86.8 proof(<b>1 proof = 0.5도</b>)</td></tr>
+<tr class="r3"><td class="era"><b>브랜디</b></td><td>좁게는 <b>포도</b>를 발효·증류한 술 · 사과 = 애플 브랜디, 체리 = 체리 브랜디</td></tr>
+<tr class="r4"><td class="era"><b>럼</b></td><td><b>"해적의 술, 남국의 화주"</b> · 원료 <b>사탕수수·당밀</b> · <b>콜럼버스</b>가 서인도에서 스페인으로 전달</td></tr>
+<tr class="r4"><td class="era"><b>진</b></td><td>곡물 + <b>노간주나무 열매(juniper berry)</b> 향 · 네덜란드산(향 강해 스트레이트) / 영국산(<b>런던 드라이 진</b>, 올드 톰 진, 플레이버드 진)</td></tr>
+<tr class="r4"><td class="era"><b>보드카</b></td><td><b>"북극의 화주, 신비의 술, 칵테일의 마술사"</b> · 원료 호밀·감자·옥수수</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑳ 8/19 기출풀이에만 나온 호텔 용어 <b>(보강 — 교재에 없음)</b></h3>
+<div class="tblwrap"><table>
+<thead><tr><th>용어</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>휴버트(Hubbart) 방식</b></td><td><b>연간 총 경비</b>를 기준으로 <b>객실 가격을 산출</b>하는 방법 — 휴버트라는 사람이 연구 <span style="font-size:12px">(8/19 기출 정답 자리)</span></td></tr>
+<tr class="r2"><td class="era"><b>MIS</b></td><td>Management <b>Information</b> System = <b>경영정보시스템</b> <span style="font-size:12px">(기출 함정: Management Intelligence로 바꿔 냄)</span></td></tr>
+<tr class="r2"><td class="era"><b>FIFO</b></td><td>First In First Out = <b>선입선출</b> — 먼저 들어온 물건을 먼저 내보냄</td></tr>
+<tr class="r3"><td class="era"><b>GOP</b></td><td><b>G</b>ross <b>O</b>perating <b>P</b>rofit = <b>총 운영이익</b> <span style="font-size:12px">(기출 함정: G를 다른 단어로 바꿔 냄)</span></td></tr>
+<tr class="r3"><td class="era"><b>POS</b></td><td>Point <b>Of Sales</b> = 판매시점 관리 시스템(편의점 계산대) <span style="font-size:12px">(기출 함정: Point of System으로 바꿔 냄)</span></td></tr>
+<tr class="r4"><td class="era"><b>턴 어웨이 서비스</b><br>(Turn away service)</td><td>우리 호텔에 온 손님을 <b>받을 수 없을 때 다른 호텔로 안내해 주는</b> 서비스 <span style="font-size:12px">— <b>턴 다운 서비스</b>(룸메이드의 잠자리 정돈)와 <b>짝으로 출제</b></span></td></tr>
+<tr class="r4"><td class="era"><b>초과예약(Overbooking) 비율</b></td><td>노쇼 피해를 줄이려고 평균 <b>5~10%</b> 정도 객실 예약을 초과해서 받는 것</td></tr>
+<tr class="r4"><td class="era"><b>백 오브 하우스 / 프런트 오브 하우스</b></td><td>고객에게 <b>보이는 곳</b>(프런트 데스크·식당 홀) = <b>Front of house</b> / <b>보이지 않는 곳</b>(주방·구매·총무·인사) = <b>Back of house · Back office</b></td></tr>
+<tr class="r4"><td class="era"><b>데미타세(Demitasse)</b></td><td><b>식후에 마시는 반 컵짜리 커피</b> — demi(반) + tasse(컵)</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- ================= 빈출 등급표 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 빈출 등급표 — 시간이 없으면 위에서부터</h2>
+<p class="sub"><b>이 등급은 기출 실측 카운트가 아닙니다.</b> 관광학개론은 원본 PDF가 스캔 이미지라 기출 원문을 확보하지 못했습니다. 따라서 아래 등급은 <b>①통합교재에 표시된 ★ 등급</b>, <b>②강사가 강의에서 직접 말한 발언</b>, <b>③8월 19일 문제풀이강의에서 실제로 다뤄진 문항 수</b> 세 가지만을 근거로 매겼고, <b>각 줄에 그 근거를 그대로 적어 두었습니다.</b> 근거가 없는 항목은 등급을 올리지 않았습니다.</p>
+<div class="freq"><table>
+<thead><tr><th>등급</th><th>항목</th><th>근거(교재 ★ / 강사 발언 / 기출풀이)</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">요금지불형식 EP · CP · MAP · AP · Dual</span></td><td>교재 <b>★★★★★</b> + 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"이 요금지불형식은 상당히 쉬운 문제가 많이 출제가 된다"</span> · <span class="quote" style="display:inline;border:0;padding:0">"한때는 면접에서도 EP·CP·AP의 차이를 말해 보라고 했어요"</span> · 8/19 기출풀이 <b>2문항</b></td></tr>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">경영방식 — 위탁경영 · 프랜차이즈 · 리퍼럴</span></td><td>강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"여기가 상당히 문제가 많이 나와요"</span> · <span class="quote" style="display:inline;border:0;padding:0">"이 세 가지는 꼭 챙기셔야 돼요. 많이 나옵니다"</span> · 8/19 기출풀이 <b>3문항</b>(위탁 특징, 프랜차이즈 정의, 리퍼럴)</td></tr>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">호텔 식당 서비스 형식 4가지(프렌치·러시안·아메리칸·잉글리시)</span></td><td>교재 <b>★★★★★</b> + 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"요거 정말 많이 나와요. 보통 정의를 문제에 끼워 놓고 이 방식이 어떤 방식이냐 이렇게 냅니다"</span></td></tr>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">객실요금 — 공표(랙 레이트) · 무료(컴플리멘터리) · 특별 · 추가 · 분할</span></td><td>교재 <b>★★★★</b> "매우 자주 출제" + 강사(8/16)가 항목마다 기출 사례를 붙여 설명 · 8/19 기출풀이 <b>2문항</b>(컴플리멘터리 2회)</td></tr>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">객실의 종류 — 특히 커넥팅룸 ↔ 어드조이닝룸</span></td><td>교재 <b>★★★★★</b> + 교재가 「함정」으로 직접 지목 + 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"객실 쪽에서 가장 많이 나왔던 게 커넥팅·어드조이닝 이 두 가지"</span> · 8/19 기출풀이 <b>2문항</b></td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item hi">호텔경영의 5가지 특성 — "자본회전율만 낮다"</span></td><td>교재 <b>★★★★★</b> + 강사(8/19)가 <b>암기 요령을 직접 제시</b> · 8/19 기출풀이 <b>2문항</b>(고정비 비중, 시설 노후화)</td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item hi">호텔 발전 4단계와 리츠·스타틀러·트레몬트</span></td><td>교재 <b>★★★★★</b> + 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"과거에는 순서가 올바르게 나열된 것을 고르라고 나왔어요"</span> · 다만 <span class="quote" style="display:inline;border:0;padding:0">"최근에는 그렇게 많이 나오진 않지만"</span>이라고 덧붙임</td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item hi">한국 호텔사 — 대불 → 손탁 → 조선 → 반도 순서</span></td><td>강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"예외적으로 작년도에는 인천 대불호텔과 손탁호텔과 조선호텔 세 가지를 박스에 담아 놓고 설립 순서를 고르라는 문제가 나왔어요"</span> — <b>작년 실제 출제</b> · 8/19 기출풀이 <b>1문항</b></td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item hi">호텔 조직 — 객실부문 3조직과 종사원별 업무</span></td><td>강사(8/16)가 <b>"객실을 생산한다 = 하우스키핑"</b> 함정과 <b>벨맨 ↔ 포터</b> 기출을 직접 제시 · <b>컨시어지는 최근 출제</b>라고 명시</td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item hi">숙박기간별 분류(Transient·Residential·Permanent)</span></td><td>강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"이거는 시험에 잘 나와요"</span> + <b>출제 형태 2가지</b>를 직접 설명</td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">객실 부문 용어 — 특히 Turn down / Make-up / Skipper</span></td><td>교재 <b>★★★</b> + 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"이 용어들 중에서는 턴다운 서비스가 가장 많이 문제가 출제됐다"</span> · 8/19 기출풀이 <b>2문항</b></td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">정식(table d'hôte) ↔ 일품(à la carte) · 코스 순서 · 전채 3가지</span></td><td>교재 <b>★★★</b> + 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"이 두 용어는 반드시 기억해 주셔야 돼요. 시험에 많이 나와요"</span></td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">식당 명칭별 분류 — 다이닝룸 · 그릴 · 런치 카운터</span></td><td>강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"최근에 필기시험에 나왔던 게 바로 런치 카운터 레스토랑이에요"</span> · 8/19 기출풀이 <b>1문항</b>(카운터 서비스)</td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">음료(Beverage) 분류 · 와인 · 위스키 · 럼 · 진 · 보드카</span></td><td>교재 <b>★★★★★</b> — 다만 <b>강의 근거 없음</b>(8/16 강의에서 <span class="quote" style="display:inline;border:0;padding:0">"음료 부분은 2주 후에 마무리 짓기로 하고"</span> 하며 미룸). <b>교재 별 다섯을 존중해 C로 두되, 강의 확인 전까지는 위 항목들보다 뒤에 보세요.</b></td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">호텔의 분류 — 장소별 · 목적별</span></td><td>강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"한 10년 정도 안 나오다가 작년부터 다시 나오기 시작했어요 — 장소에 따른 분류와 관계없는 호텔을 고르라고"</span></td></tr>
+<tr class="r4"><td class="era"><span class="grade g2">C</span></td><td><span class="item">8/19 기출 전용 용어 — 휴버트 방식 · MIS · FIFO · GOP · POS · 턴어웨이</span></td><td><b>교재에 없음</b> · 8/19 기출풀이에서 <b>2문항</b>으로 확인. 강사도 <span class="quote" style="display:inline;border:0;padding:0">"호텔 관리사 시험에서나 나올 엉뚱한 문제"</span>라고 했으나 <b>실제로 출제된 이력이 있음</b></td></tr>
+<tr class="r4"><td class="era"><span class="grade g2">D</span></td><td><span class="item">모텔 · 유스호스텔의 세부 특징</span></td><td>교재 <b>★★</b>(유스호스텔) · 강사(8/16) <span class="quote" style="display:inline;border:0;padding:0">"예전에는 모텔 특징으로 문제가 났는데 지금은 거의 이런 문제 안 나와요"</span> — <b>「모텔=미국 시작」, 「유스호스텔=독일 시작」 두 가지만</b></td></tr>
+<tr class="r4"><td class="era"><span class="grade g2">D</span></td><td><span class="item">규모별 분류 · 스테이크 부위 명칭 · 수프 종류</span></td><td>교재 나열만 있음 · 강사(8/16) 스테이크 부위에 대해 <span class="quote" style="display:inline;border:0;padding:0">"한 30년 전에 한 번 나오고 다시 나온 적이 없어요. 안 봐도 돼요"</span> — <b>단, 샤토브리앙(안심)만은 예외로 챙길 것</b></td></tr>
+</tbody>
+</table></div>
+<div class="zero"><b>확실히 챙길 것 vs 시간 없으면 뒤로 미룰 것</b> — 이 단원은 분량이 가장 많지만, <b>강사가 "많이 나온다"고 직접 말한 자리는 다섯 곳</b>뿐입니다. <b>①요금지불형식(EP/CP/MAP/AP) ②경영방식 3가지(위탁·프랜차이즈·리퍼럴) ③식당 서비스 형식 4가지 ④객실요금 ⑤커넥팅↔어드조이닝</b>. 이 다섯이 이 단원 점수의 대부분입니다. 반대로 <b>스테이크 부위·수프 종류·규모별 실수·모텔의 세부 특징</b>은 강사가 직접 "안 봐도 된다"고 한 자리이니 <b>가장 나중에</b> 보세요. <b>음료(술) 파트</b>는 교재 별이 다섯이지만 <b>강의가 아직 안 나갔으므로</b>, 강의를 들은 뒤에 다시 등급을 조정할 자리입니다.</div>
+</section>
+
+<!-- ================= 비교카드 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">하나씩 외우면 헷갈리고, <b>짝으로 붙여 놓으면 안 헷갈립니다.</b> 이 단원에서 실제로 답이 갈리는 자리는 아래 <b>여덟 개</b>입니다.</p>
+<div class="cmp">
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 트레몬트 하우스 ↔ 스타틀러 호텔</h4>
+<div class="vs">
+<div class="side a"><b>1829 트레몬트</b>근대호텔의 <b>원조</b><br>싱글·더블 구분, 열쇠<br>지배인제도, 벨보이, <b>로비</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>1908 스타틀러</b>근대호텔의 <b>혁명왕</b><br>방화문, 방 안 스위치<br>개인욕실, 거울, 얼음물, 신문</div>
+</div>
+<p class="why">강사가 <b>"이걸 섞어서 문제가 나오게 됐어요"</b>라고 직접 지목한 자리입니다. <b>트레몬트에서 나온 것은 전부 「호텔의 뼈대」</b>(방 구분·열쇠·지배인·벨보이·로비), <b>스타틀러에서 나온 것은 전부 「객실 안의 편의」</b>(스위치·욕실·거울·얼음물·신문)로 갈라 두세요. 연도도 <b>원조가 먼저(1829), 혁명이 나중(1908)</b>입니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 인천 대불호텔 ↔ 서울 손탁호텔</h4>
+<div class="vs">
+<div class="side a"><b>1889 대불</b>우리나라 <b>최초의 호텔</b><br>일본인 건립 · 인천(개항장)<br><b>객실 위주</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>1902 손탁</b>최초의 <b>서양식</b> 호텔<br>독일인 손탁 · 고종이 땅 하사<br><b>커피숍·레스토랑·연회장</b></div>
+</div>
+<p class="why">둘 다 "최초"라 헷갈립니다. 강사의 설명이 기준입니다 — <b>"대불호텔은 그냥 잠만 자는 곳, 손탁호텔은 커피숍도 레스토랑도 연회장도 있었다. 그래서 서양식 호텔의 최초라고 표현하는 거죠."</b> <b>「그냥 최초 = 대불 / 서양식 최초 = 손탁」</b>. 여기에 <b>조선(1914, 최초 디럭스) → 반도(1936, 비즈니스 효시·최초 엘리베이터)</b>까지 붙이면 <b>작년에 나온 순서 나열 문제</b>가 그대로 풀립니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 관리운영위탁 ↔ 프랜차이즈</h4>
+<div class="vs">
+<div class="side a"><b>위탁경영</b>= <b>힐튼 방식</b><br>자본 = 소유주 / <b>경영 = 체인본부</b><br><b>자본과 경영의 분리</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>프랜차이즈</b>= 셰라톤 워커힐<br>자본·경영 <b>모두 소유주</b><br><b>이름(상표)만</b> 빌림</div>
+</div>
+<p class="why">교재가 「함정」으로 직접 지목한 자리입니다. 갈림길은 <b>"경영을 누가 하느냐"</b> 하나입니다. 실제 기출 함정은 프랜차이즈 설명에 <b>「본부가 경영에 참여한다」</b>를 끼워 넣는 것 — 프랜차이즈에서 본부는 <b>지도·자문만</b> 할 수 있고 <b>경영 참여는 불가</b>, 가맹점의 <b>경영권 독립성이 유지</b>됩니다. 그리고 <b>위탁경영에서도 손실은 소유주가 부담</b>합니다(본부는 적자 책임 없음).</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 커넥팅룸 ↔ 어드조이닝룸</h4>
+<div class="vs">
+<div class="side a"><b>커넥팅룸</b>객실 사이에<br><b>통로문이 있다</b><br>→ <b>가족용</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>어드조이닝룸</b>나란히 붙어 있지만<br><b>통로문이 없다</b><br>→ <b>단체용</b></div>
+</div>
+<p class="why">이 단원에서 <b>가장 많이 나온 자리</b>입니다(8/19 기출풀이에서만 2문항). 갈림길은 <b>"복도로 나가지 않고 옆방에 갈 수 있느냐"</b> 딱 하나입니다. <b>Connect(연결) = 문이 있다</b>로 단어 뜻 그대로 붙이세요. 지문에 <b>"객실 간 내부 연결통로가 없다"</b>가 보이면 답은 어드조이닝입니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 싱글 레이트 ↔ 싱글 유즈</h4>
+<div class="vs">
+<div class="side a"><b>싱글 레이트</b><b>예약을 한</b> 손님<br>트윈 제공<br>→ <b>싱글 요금</b>을 받음</div>
+<div class="mid">vs</div>
+<div class="side b"><b>싱글 유즈</b><b>예약을 안 한</b> 손님<br>트윈 제공<br>→ 트윈 요금 <b>약 10% 할인</b></div>
+</div>
+<p class="why">교재에는 싱글 레이트만 있는데, 강사가 <b>짝을 만들어 설명</b>해 준 자리입니다. 갈림길은 <b>"예약을 했느냐"</b>입니다. 함께 나오는 용어가 <b>Walk a guest(예약한 손님)</b> ↔ <b>Walk-in guest(예약 안 한 손님)</b>이고, 강사는 <b>"워크인 게스트라는 용어가 실제로 기출에 나왔다"</b>고 했습니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 메이크업 ↔ 턴다운 ↔ 턴어웨이</h4>
+<div class="vs">
+<div class="side a"><b>Make-up</b><b>오전</b>(11시경)<br>린넨 교환·청소·정돈</div>
+<div class="mid">vs</div>
+<div class="side b"><b>Turn down</b><b>저녁</b> 취침 직전<br>잠자리 돌보기(이불 반 접기)<br>= <b>이브닝 서비스</b> · 룸메이드</div>
+</div>
+<p class="why">둘 다 하우스키핑(룸메이드)이 하는 일이라 <b>시간대</b>로 갈라야 합니다 — <b>메이크업은 낮, 턴다운은 밤</b>. 여기에 이름이 비슷한 <b>턴 어웨이 서비스(Turn away)</b>가 하나 더 있는데, 이것은 <b>손님을 받을 수 없을 때 다른 호텔로 안내해 주는</b> 전혀 다른 서비스입니다(8/19 기출에서 두 개를 나란히 놓고 물었습니다). <b>down은 이불을 내리는 것, away는 손님을 보내는 것</b>으로 외우세요.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 러시안 서비스 ↔ 잉글리시 서비스</h4>
+<div class="vs">
+<div class="side a"><b>러시안</b>= 플래터 서비스<br><b>종사원이 덜어 준다</b><br>은쟁반 · <b>연회행사</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>잉글리시</b>= 패밀리 서비스<br><b>고객이 스스로 덜어 먹는다</b><br>추수감사절·크리스마스</div>
+</div>
+<p class="why">강사가 준 기준 한 줄이면 끝납니다 — <b>"큰 쟁반에 음식이 나왔을 때 누가 덜어 먹느냐."</b> 여기에 <b>프렌치 = 고객 앞에서 직접 조리(게리동·르샤)</b>, <b>아메리칸 = 주방에서 접시에 담아 내옴(가장 일반적)</b>을 붙이면 네 가지가 완성됩니다. 넷 모두 <b>테이블 서비스 식당</b>에서 이루어진다는 점도 함께 기억하세요.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> Transient ↔ Residential ↔ Permanent</h4>
+<div class="vs">
+<div class="side a"><b>Transient</b><b>1주일 미만</b><br>일반 관광호텔</div>
+<div class="mid">vs</div>
+<div class="side b"><b>Residential</b> <b>1주~1개월</b> · 주거용<br><b>Permanent</b> <b>1개월~6개월</b> · 아파트식</div>
+</div>
+<p class="why">교재가 <b>★로 직접 표시</b>한 자리입니다. 숫자 세 개 <b>1주 → 1개월 → 6개월</b>이 순서대로 커지므로, <b>「짧은 게 트랜지언트, 가운데가 레지덴셜, 제일 긴 게 퍼머넌트」</b>로 길이 순서만 잡으면 됩니다. 영어 뜻도 그대로입니다 — transient(일시적) · residential(거주) · permanent(영구).</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= 강사 강조 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"우리가 호텔 기업의 특성이라면 열 몇 가지가 있습니다. 자본회전율만 낮다. 나머지는 끝에 「높다·빠르다」가 들어갑니다."</b> (8/19 문제풀이강의) — <b>이 단원 최고의 암기 요령</b>입니다. 보기에서 <b>"자본회전율이 높다"</b>나 <b>"고정비 비중이 낮다"</b>가 보이면 그게 틀린 답입니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"여기가 상당히 문제가 많이 나와요."</b> (8/16, <b>경영방식</b> 대목) — 이어서 <b>"연쇄경영에서 관리운영위탁, 프랜차이즈, 리퍼럴 이 세 가지는 꼭 챙기셔야 돼요. 많이 나옵니다."</b> 앞의 세 가지(공동소유·소유직영·임차)에 대해서는 <b>"거의 문제가 안 나와요"</b>라고 했습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"「힐튼 방식이라고도 불리며 자본과 경영의 분리 방식을 무엇이라 하느냐」 이렇게 문제가 나오게 됐어요."</b> (8/16) — <b>관리운영위탁방식(Management Contract) = 힐튼 방식 = 자본과 경영의 분리</b>. 세 표현을 한 덩어리로 외우세요.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"실제로 기출문제에 프랜차이즈 설명이 잘못된 것을 고르라 했는데, 보기 중 하나가 「경영 참여」였어요."</b> (8/16) — 프랜차이즈 본부는 <b>경영에 참여할 수 없고 지도·자문만</b> 가능합니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"가장 많이 나오는 것 중 하나가 「객실을 생산한다」예요. 객실을 생산한다는 건 하우스키핑이죠."</b> (8/16) — 프런트 오피스의 업무 목록에 <b>「객실 생산」</b>이 끼어 있으면 그게 틀린 보기입니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"벨맨의 주 업무는 객실을 안내하는 것입니다. 짐을 운반하는 건 포터예요."</b> (8/16) — 벨맨도 짐을 들고 올라가지만 <b>본업은 객실 안내</b>입니다. 그리고 <b>컨시어지</b>에 대해서는 <b>"최근에 문제가 나왔던 종사원"</b>이라고 짚었습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"예외적으로 작년도에는 인천 대불호텔과 손탁호텔과 조선호텔 세 가지를 박스에 담아 놓고 설립 순서가 올바르게 나열된 것을 고르라는 문제가 나왔어요."</b> (8/16) — <b>작년 실제 출제</b>. 이어서 <b>"올해 또 같은 문제는 나오진 않겠지만, 대불·손탁·조선·반도 이 4가지는 체크해 두시기 바랍니다."</b></div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"서양에 리츠 호텔이 있었다면 우리나라에는 조선호텔, 서양에 스타틀러 호텔이 있었다면 우리나라에는 반도호텔. 이걸 갖고도 문제가 나왔어요."</b> (8/16) — <b>고급의 효시 = 리츠 ↔ 조선</b>, <b>대중·상용의 효시 = 스타틀러 ↔ 반도</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"요거 정말 많이 나와요. 보통 정의를 문제에 끼워 놓고 이 방식이 어떤 방식이냐 이렇게 냅니다."</b> (8/16, <b>호텔 식당 서비스 형식</b> 대목) — 그리고 <b>"러시안과 잉글리시의 차이는 누가 덜어 먹느냐, 이 하나입니다."</b></div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"최근에 필기시험에 나왔던 게 바로 런치 카운터 레스토랑이에요."</b> (8/16) — <b>「조리 과정을 직접 볼 수 있다」 = 런치 카운터 / 카운터 서비스</b>. 8/19 기출풀이에서도 같은 개념이 다시 나왔습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"면접에서 「샤토브리앙이 뭡니까?」 하면 100이면 100 다 「와인」이라고 답해요. 와인이 아니라 안심 부위의 명칭입니다."</b> (8/16) — 필기에서도 면접에서도 걸리기 쉬운 자리입니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"최근에 나왔던 것은 스튜디오 룸이었고, 그다음에 나왔던 게 하우스 유즈 룸입니다."</b> (8/16) — 커넥팅·어드조이닝 외에 <b>최근 새로 출제된 객실 두 가지</b>입니다. <b>스튜디오룸 = 낮에는 소파, 밤에는 침대 / 하우스 유즈 룸 = 호텔 직원이 쓰는 객실</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>[강의가 아직 안 나간 부분]</b> 강사는 8월 16일 강의를 <b>"음료부터 마지막에 나와 있는 부분은 2주 후에 마무리 짓기로 하고"</b> 하며 닫았습니다. 즉 <b>음료(와인·맥주·위스키·브랜디·럼·진·보드카) 파트는 아직 강의가 없습니다.</b> 이 페이지의 ⑲ 표는 <b>교재만을 근거로</b> 정리했고, 강의가 나가면 그때 등급과 강조점을 다시 조정해야 합니다.</div></li>
+</ul>
+</div>
+</section>
+<!-- ================= 문제 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 예상문제 20문항 — 레벨 테스트</h2>
+<p class="sub"><b>진짜 기출이 아니라 예상문제입니다</b>(관광학개론은 기출 원문 미확보 — 원본 PDF가 스캔 이미지). 다만 이번 10단원 문항은 <b>8월 16일 핵심강의와 8월 19일 문제풀이강의에서 강사가 실제로 다룬 출제 지점</b>만 골라 만들었습니다. 빈출 등급대로 <b>호텔사 5 · 경영특성 2 · 분류 2 · 요금지불형식 2 · 경영방식 3 · 조직 2 · 객실 1 · 객실요금 1 · 객실용어 1 · 식음료 1</b>로 구성했습니다. 보기를 눌러 답을 고르고, 다 풀면 <b>채점하기</b>를 누르세요. <b>권장 시간 16분</b>.</p>
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="timer">00:00</span>
+<span class="prog" id="prog">0 / 20 선택</span>
+<button class="btn" id="grade">채점하기</button>
+<button class="btn ghost" id="reset">다시 풀기</button>
+</div>
+<div id="quiz"></div>
+<div class="score" id="score">
+<div class="big" id="scoreNum">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongList"></div>
+<div class="acts">
+<button class="btn" id="retryWrong">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" id="retryAll">20문항 전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb"><svg width="16" height="16" style="color:var(--gold)"><use href="#i-book"/></svg> 오답노트용 기록 — 이걸 복사해서 채팅에 붙여넣으면 오답노트 파일로 저장해 드립니다</div>
+<textarea id="exportTxt" readonly></textarea>
+<div class="acts" style="margin-top:10px;justify-content:flex-start">
+<button class="btn" id="copyBtn">복사하기</button>
+<span class="hint" id="copyMsg"></span>
+</div>
+<p class="hint">※ 이 페이지는 결과를 저장하지 않습니다(새로고침하면 사라짐). 위 기록을 채팅에 붙여넣어 주시면 <code>04_관광학개론/03_작업자료/오답노트/</code>에 파일로 남기고 7일 뒤 복습 일정까지 잡아 둡니다.</p>
+</div>
+</div>
+</section>
+<footer>
+<p><b>근거</b> — 본문: <code>04_관광학개론/04_최종교재/관광학개론.md</code> 제10장 「호텔업」(원본 인쇄 <b>105~122쪽</b>). 2026-08-11 원본 재대조 보강분 10개 항목(호텔 발전 4단계와 대표 호텔, 트레몬트 하우스의 최초 기록들, 스타틀러 호텔의 6가지 특징, 한국 호텔사 추가 연도, 호텔경영의 5가지 특성, 호텔의 분류 4기준, 특별목적 숙박시설, 호텔 조직 — 객실부문 3개 조직, 객실요금의 종류, 객실 부문 관련 용어, 객실 종류 보충, 호텔 식음료 제4절 전체)을 <b>표에 있는 항목까지 빠짐없이</b> 옮겼습니다.</p>
+<p><b>강의 근거</b> — <code>강의전사본/핵심강의/8월16일 관광개론_관광법규.srt</code>: 교재 <b>105~119쪽을 순서대로</b> 강의한 구간(호텔 발전 4단계, 리츠·스타틀러·트레몬트, 한국 호텔사와 <b>작년 출제 사실</b>, 호텔경영의 5가지 특성, 호텔의 분류 7가지, 요금지불형식과 <b>Full/Half/Semi/Demi-pension 보강</b>, 모텔·유스호스텔, 경영방식 6가지와 <b>힐튼 방식·프랜차이즈·리퍼럴</b>, 호텔 조직 4부문과 객실부문 3조직, 종사원별 업무, 객실의 종류, 객실요금 4분류와 <b>싱글 레이트 ↔ 싱글 유즈 보강</b>, 객실 용어, 객실점유율 공식, 식당의 어원과 EAST, 식당 명칭별·경영형태별 분류, <b>호텔 식당 서비스 형식 5가지</b>, 정식과 일품요리, 코스 8단계, 전채 3가지, 샤토브리앙). <code>강의전사본/문제풀이강의/8월19일 관광법규개론-수정.srt</code>: 호텔 기출 <b>15문항 이상</b> 풀이(경영방식 3, 객실 2, 요금지불형식 2, 컴플리멘터리 2, 턴다운↔턴어웨이, 호텔경영 특성 2, 한국 호텔사 순서, <b>휴버트 방식·MIS·FIFO·GOP·POS</b>, 오버부킹 5~10%, 백오피스). <code>강의전사본/문제풀이강의/8월12일 관광법규개론.txt</code>: 호텔업 등급결정·등록기준 등 <b>법규 쪽</b> 문항(이 페이지에는 반영하지 않고 법규 단원 자료에서 다룹니다).</p>
+<p><b>강의에서 확인하지 못한 부분</b> — <b>⑲ 음료(Beverage)의 분류</b> 전체(와인·맥주·위스키·브랜디·럼·진·보드카)와 <b>⑱의 수프 종류·스테이크 부위 세부 명칭</b>은 강의 근거가 없습니다. 강사가 8월 16일 강의를 <b>"음료부터 마지막에 나와 있는 부분은 저희가 다음 2주 후에 마무리를 짓기로 하고"</b>라며 닫았기 때문입니다. 이 부분은 <b>강의 인용 없이 통합교재 본문과 2026-08-11 재대조 보강분만을 근거로</b> 정리했습니다(없는 강의 발언을 지어내지 않았습니다). <b>해당 강의가 올라오면 이 페이지의 ⑲ 표와 빈출 등급을 다시 조정해야 합니다.</b></p>
+<p><b>전사본 품질 주의</b> — 8월 16·19일 전사본은 <b>자동 받아쓰기 품질이 고르지 않습니다</b>(예: "트레몬트"가 "트래몬/트렘웅"으로, "리츠"가 "니츠/리치"로, "스타틀러"가 "스타트툴로"로 적힌 곳이 많습니다). 이 페이지에 실은 강사 인용문은 <b>앞뒤 맥락으로 뜻이 분명한 대목만</b> 다듬어 옮겼고, <b>받아쓰기가 흔들려 뜻이 불확실한 수치·고유명사는 옮기지 않았습니다.</b></p>
+<p><b>빈출 등급의 근거</b> — 관광학개론은 기출 원문을 확보하지 못해 <b>실측 카운트를 하지 않았습니다.</b> 등급은 <b>교재의 ★ 표시</b>, <b>강사의 직접 발언</b>, <b>8월 19일 문제풀이강의에서 실제로 다뤄진 문항 수</b> 세 가지만을 근거로 매겼고, 각 줄에 그 근거를 그대로 적었습니다(추측 금지 원칙).</p>
+<p><b>이해가 안 되면 → 강의 위치</b>: 이 단원 전체가 <b>8월 16일 핵심강의</b>에 교재 순서 그대로 담겨 있습니다. 헷갈리면 <b>8월 16일 강의를 처음부터</b> 보는 것이 가장 빠릅니다. <b>기출로 어떻게 나오는지</b>는 <b>8월 19일 문제풀이강의</b>를 보세요. 다만 <b>음료 파트는 아직 강의가 없습니다.</b></p>
+<p>2026-08-23 제작 · 시험일 2026-09-05 (D-13) · 사용자 검토 대기</p>
+</footer>
+
+</div>
+<script>
+const QS = [
+{n:1, yr:"예상", era:"호텔사",
+q:"호텔의 역사적 발전 단계를 순서대로 바르게 나열한 것은?",
+o:["숙소(Inn) 시대 → 그랜드호텔 시대 → 상업호텔 시대 → 현대의 호텔","숙소(Inn) 시대 → 상업호텔 시대 → 그랜드호텔 시대 → 현대의 호텔","그랜드호텔 시대 → 숙소(Inn) 시대 → 상업호텔 시대 → 현대의 호텔","숙소(Inn) 시대 → 그랜드호텔 시대 → 현대의 호텔 → 상업호텔 시대"],
+a:0, e:"손님이 <b>순례자·상인 → 상류계층 → 일반 대중 → 전 세계</b>로 넓어지는 순서입니다. 강사는 8/16 강의에서 <b>「과거에는 순서가 올바르게 나열된 것을 고르라고 나왔다」</b>고 했습니다. <b>숙소 → 그랜드 → 상업 → 현대</b>."},
+
+{n:2, yr:"예상", era:"호텔사",
+q:"다음 설명에 해당하는 호텔로 옳은 것은?<br><span style='display:block;margin-top:8px;padding:10px 12px;background:var(--paper-2);border-radius:8px;font-weight:500'>· 그랜드호텔 시대의 대표 호텔 · 체인호텔 시스템의 효시 · 경영철학 「고객은 항상 정당하다」</span>",
+o:["트레몬트 하우스","리츠 호텔","스타틀러 호텔","시티 호텔"],
+a:1, e:"<b>리츠(Ritz) 호텔</b>입니다. 강사는 <b>「리츠에서 나올 문제는 딱 두 가지 — 고객은 항상 정당하다, 그리고 체인호텔의 효시」</b>라고 정리해 주었습니다. 트레몬트(1829)는 근대 호텔산업의 <b>원조</b>, 스타틀러(1908)는 근대호텔의 <b>혁명왕</b>, 시티 호텔(1794)은 미국 최초의 호텔입니다."},
+
+{n:3, yr:"예상", era:"호텔사",
+q:"1829년 트레몬트 하우스에서 처음 시작된 것으로 옳지 <u>않은</u> 것은?",
+o:["싱글룸과 더블룸의 구분","지배인 제도와 자본·경영의 분리","호텔 로비의 최초 설치","각 객실에 얼음물 제공"],
+a:3, e:"<b>객실마다 얼음물 제공</b>은 <b>스타틀러 호텔(1908)</b>의 여섯 가지 특징에 들어갑니다. 강사가 <b>「트레몬트의 특징과 스타틀러의 특징을 섞어서 문제가 나온 적이 있다」</b>고 지목한 바로 그 함정입니다. <b>트레몬트 = 호텔의 뼈대</b>(방 구분·열쇠·지배인·벨보이·로비), <b>스타틀러 = 객실 안의 편의</b>(방화문·스위치·개인욕실·전신거울·얼음물·조간신문)."},
+
+{n:4, yr:"예상", era:"호텔사",
+q:"우리나라 호텔을 설립 연도가 빠른 것부터 순서대로 나열한 것은?",
+o:["대불호텔 → 손탁호텔 → 조선호텔 → 반도호텔","손탁호텔 → 대불호텔 → 반도호텔 → 조선호텔","대불호텔 → 조선호텔 → 손탁호텔 → 반도호텔","손탁호텔 → 조선호텔 → 대불호텔 → 반도호텔"],
+a:0, e:"<b>대불(1889) → 손탁(1902) → 조선(1914) → 반도(1936)</b>입니다. 강사에 따르면 <b>작년 시험에 대불·손탁·조선 세 개를 놓고 순서를 묻는 문제가 실제로 출제</b>됐고, 8/19 문제풀이강의에서도 같은 유형이 다시 다뤄졌습니다."},
+
+{n:5, yr:"예상", era:"호텔사",
+q:"우리나라 호텔에 관한 설명으로 옳지 <u>않은</u> 것은?",
+o:["인천 대불호텔은 우리나라 최초의 호텔이다","손탁호텔은 최초의 서양식(근대) 호텔이다","조선호텔은 Business Hotel의 효시이다","반도호텔은 우리나라 최초로 엘리베이터가 설치된 호텔이다"],
+a:2, e:"<b>Business Hotel의 효시는 조선호텔이 아니라 「반도호텔(1936, 111실)」</b>입니다. <b>조선호텔(1914, 69실)</b>은 <b>한국 최초의 Deluxe 호텔</b>입니다. 강사의 매칭 요령대로 <b>서양의 리츠 ↔ 조선호텔(고급의 효시)</b>, <b>서양의 스타틀러 ↔ 반도호텔(대중·상용의 효시)</b>로 붙여 두면 바뀌지 않습니다."},
+
+{n:6, yr:"예상", era:"경영특성",
+q:"호텔경영의 특성에 관한 설명으로 옳은 것은?",
+o:["자본 회전율이 높다","고정자산 구성 비율이 낮다","시설의 노후화가 느리게 진행된다","비생산적인 공공장소를 확보해야 한다"],
+a:3, e:"<b>비생산적인 공공장소</b>는 <b>로비</b>처럼 돈을 직접 벌지 않는데도 반드시 갖춰야 하는 공간을 말합니다. 나머지는 전부 방향이 뒤집혀 있습니다. 강사(8/19)의 요령을 그대로 쓰면 됩니다 — <b>「자본회전율만 낮다. 나머지는 끝에 높다·빠르다가 들어간다」</b>. 즉 자본회전율은 <b>낮고</b>, 고정자산 비율은 <b>높고</b>, 노후화는 <b>빠릅니다</b>."},
+
+{n:7, yr:"예상", era:"경영특성",
+q:"호텔경영의 「상품상 특성」에 해당하지 <u>않는</u> 것은?",
+o:["비신축성","비보관성","비전매성","연중무휴"],
+a:3, e:"<b>연중무휴</b>는 <b>영업상 특성</b>입니다. 상품상 특성은 <b>비신축성·비보관성·계절성·비전매성·다인자성</b> 다섯입니다. <b>비전매성</b>은 강사 설명대로 <b>「손님이 호텔까지 와야 한다 — 상품이 이동할 수 없다」</b>는 뜻이고, <b>다인자성</b>은 객실·식음료·인적서비스·부대시설이 함께 묶여 있다는 뜻입니다."},
+
+{n:8, yr:"예상", era:"분류",
+q:"호텔의 숙박기간별 분류에 관한 설명으로 옳은 것은?",
+o:["Transient hotel — 1주일 이상 1개월 이내","Residential hotel — 1주일 이상 1개월 이내","Permanent hotel — 1주일 미만","Commercial hotel — 1개월 이상 6개월 이내"],
+a:1, e:"<b>Transient = 1주일 미만 / Residential = 1주일 이상 1개월 이내 / Permanent = 1개월 이상 6개월 이내</b>입니다. <b>1주 → 1개월 → 6개월</b> 순서로 길어집니다. <b>Commercial hotel은 기간이 아니라 「숙박목적별」 분류</b>(비즈니스 호텔)라 애초에 자리가 다릅니다. 강사는 이 표에 대해 <b>「이거는 시험에 잘 나와요」</b>라고 했습니다."},
+
+{n:9, yr:"예상", era:"분류",
+q:"호텔의 「장소에 따른 분류」에 해당하지 <u>않는</u> 것은?",
+o:["Airport hotel","Terminal hotel","Metropolitan hotel","Conventional hotel"],
+a:3, e:"<b>Conventional hotel</b>(회의 유치 목적)은 <b>숙박목적별</b> 분류입니다. 장소별 분류는 <b>Metropolitan · City · Country · Airport · Seaport · Terminal · Suburban · Beach</b>입니다. 강사는 <b>「10년 정도 안 나오다가 작년부터 다시 나오기 시작했어요 — 장소에 따른 분류와 관계없는 호텔을 고르라고」</b>라며 바로 이 형태를 예고했습니다."},
+
+{n:10, yr:"예상", era:"요금지불형식",
+q:"호텔 요금지불형식에 관한 설명으로 옳은 것은?",
+o:["European plan — 객실료에 조식이 포함된다","Continental plan — 객실료에 조식과 석식이 포함된다","Modified American plan — 객실료에 2식이 포함된다","American plan — 객실료와 식사비가 완전히 분리된다"],
+a:2, e:"식사 끼니 수로 갈립니다. <b>EP = 0끼</b>(완전 분리), <b>CP = 1끼</b>(조식), <b>MAP = 2끼</b>, <b>AP = 3끼</b>, <b>Dual plan = 혼합</b>. 강사가 준 면접용 한 줄 — <b>「EP는 따로따로, CP는 1박 1식, AP는 1박 3식입니다」</b>."},
+
+{n:11, yr:"예상", era:"요금지불형식",
+q:"다음 중 나머지 셋과 <u>다른</u> 요금지불형식을 가리키는 것은?",
+o:["American plan","Full pension","Demi-pension","1박 3식"],
+a:2, e:"<b>Demi-pension</b>은 <b>MAP(1박 2식)</b>과 같은 말입니다. 나머지 셋은 모두 <b>AP(1박 3식)</b>입니다. 강사(8/16)가 칠판에 따로 적어 준 보강 내용으로, <b>AP = Full pension</b>, <b>MAP = Half pension = Semi-pension = Demi-pension</b>입니다. 강사는 <b>「같은 것이 아닌 것을 고르라고 나온다」</b>며 바로 이 형태를 예고했습니다."},
+
+{n:12, yr:"예상", era:"경영방식",
+q:"다음 설명에 해당하는 호텔 경영방식은?<br><span style='display:block;margin-top:8px;padding:10px 12px;background:var(--paper-2);border-radius:8px;font-weight:500'>· 「힐튼 방식」이라고도 불린다 · 자본과 경영이 분리된다 · 소유주는 경영에 참여할 수 없고, 영업 손실은 소유주가 부담한다</span>",
+o:["프랜차이즈 방식","관리운영위탁방식(Management Contract)","리퍼럴 그룹 방식","임차운영방식"],
+a:1, e:"<b>관리운영위탁방식</b>입니다. 강사는 출제 형태까지 알려 주었습니다 — <b>「힐튼 방식이라고도 불리며 자본과 경영의 분리 방식을 무엇이라 하느냐, 이렇게 문제가 나오게 됐어요」</b>. 소유주가 얻는 것은 <b>브랜드와 전문 경영</b>, 부담하는 것은 <b>로열티·손실·대외적 책임</b>입니다."},
+
+{n:13, yr:"예상", era:"경영방식",
+q:"호텔의 프랜차이즈 방식에 관한 설명으로 옳지 <u>않은</u> 것은?",
+o:["가맹점은 본사의 상호와 브랜드를 사용하고 로열티를 지불한다","가맹점의 경영권은 독립성이 유지된다","체인 본부가 가맹 호텔의 경영에 직접 참여한다","셰라톤 워커힐이 대표적인 사례이다"],
+a:2, e:"프랜차이즈에서 체인 본부는 <b>경영에 참여할 수 없고 지도·자문만</b> 가능합니다. 강사: <b>「실제로 기출문제에 프랜차이즈 설명이 잘못된 것을 고르라 했는데, 보기 중 하나가 「경영 참여」였어요.」</b> 경영에까지 들어오는 것은 <b>관리운영위탁방식</b>입니다."},
+
+{n:14, yr:"예상", era:"경영방식",
+q:"다음 설명에 해당하는 호텔 경영방식과 그 사례로 옳은 것은?<br><span style='display:block;margin-top:8px;padding:10px 12px;background:var(--paper-2);border-radius:8px;font-weight:500'>· 단독경영 호텔들이 체인호텔에 대항하기 위해 자발적으로 결합한다 · 호텔명·자본·경영은 그대로 두고 공동 브랜드만 붙인다 · 본사가 없다</span>",
+o:["리퍼럴 그룹 — 베니키아(BENIKEA)","소유직영방식 — 롯데호텔","관리운영위탁방식 — 힐튼","공동소유방식 — 신라호텔"],
+a:0, e:"<b>리퍼럴 그룹(= 볼런터리 체인, 자발적 체인)</b>이고, 국내 사례가 <b>베니키아</b>입니다. 강사가 알려준 이름의 뜻이 <b>Best Night in Korea</b>이고 한국관광공사가 관리하는 브랜드입니다. 세계적으로는 <b>베스트 웨스턴</b>이 대표입니다."},
+
+{n:15, yr:"예상", era:"조직",
+q:"호텔 객실부문의 「프런트 오피스」 업무에 해당하지 <u>않는</u> 것은?",
+o:["객실의 예약·등록·퇴숙","객실의 판매·배정·통제","객실의 생산","현금 출납과 정보 제공"],
+a:2, e:"<b>객실의 「생산」은 하우스키핑</b>의 일입니다. 강사: <b>「손님이 체크아웃하면 객실을 청소해서 다시 판매할 수 있게끔 준비하잖아요. 그럼 이건 하우스키핑이죠. 이렇게 문제가 나오는 거죠.」</b> 교재도 하우스키핑을 <b>「호텔 상품의 생산 부서」</b>라고 적고 있습니다."},
+
+{n:16, yr:"예상", era:"조직",
+q:"호텔 종사원의 업무 연결로 옳지 <u>않은</u> 것은?",
+o:["도어맨 — 고객의 최초 영접과 최후 환송, 현관 교통정리","벨맨 — 공항에서 호텔까지 고객의 짐을 운반","컨시어지 — 관광·쇼핑·음식점 추천 등 각종 정보 제공","룸메이드 — 객실 청소"],
+a:1, e:"공항에서 호텔까지 <b>짐을 운반하는 종사원은 「포터(Porter)」</b>입니다. 강사가 실제 기출을 놓고 물은 대목입니다 — <b>「벨맨의 주 업무는 객실을 안내하는 것일까요, 짐을 운반하는 것일까요? 이때는 「객실 안내」가 주업무입니다.」</b> 벨맨도 짐을 들고 올라가지만 <b>본업은 등록한 고객을 객실로 안내</b>하는 것입니다."},
+
+{n:17, yr:"예상", era:"객실",
+q:"호텔 객실에 관한 설명으로 옳은 것은?",
+o:["커넥팅룸은 나란히 붙어 있으나 객실 간 내부 통로문이 없다","어드조이닝룸은 객실 사이에 통로문이 있어 가족용으로 이용된다","스튜디오룸은 주간에는 소파, 야간에는 침대로 사용하는 객실이다","하우스 유즈 룸은 장기 체류 고객이 취사할 수 있는 객실이다"],
+a:2, e:"<b>스튜디오 베드</b>가 설치된 객실이 <b>스튜디오룸</b>이고, 강사는 <b>「최근에 나왔던 것」</b>이라고 짚었습니다. ①②는 <b>커넥팅(통로문 O, 가족용)</b>과 <b>어드조이닝(통로문 X, 단체용)</b>이 서로 바뀌었습니다. ④의 <b>하우스 유즈 룸</b>은 <b>호텔 직원이 쓰는 객실</b>(임원 숙소·사무실용·린넨룸)이고, 취사 가능한 주거형 객실은 <b>레지덴셜룸</b>입니다."},
+
+{n:18, yr:"예상", era:"객실요금",
+q:"호텔 객실요금에 관한 설명으로 옳지 <u>않은</u> 것은?",
+o:["Rack rate는 할인되지 않은 공표요금을 말한다","Complimentary on room은 객실요금만 무료인 것이다","Hold room charge는 예약을 일방적으로 취소한 고객에게 받는 요금이다","Family plan은 부모 동반 14세 미만 어린이에게 추가 베드 요금을 받지 않는 것이다"],
+a:2, e:"예약을 취소한 고객에게 받는 것은 <b>Cancellation charge</b>입니다. <b>Hold room charge</b>는 ①투숙객이 단기 여행을 가며 <b>짐을 객실에 두고 간 경우</b>, ②예약 후 도착하지 않았으나 <b>객실을 팔지 않고 보류</b>해 둔 경우에 받는 요금입니다. 이름 그대로 <b>「객실을 잡아 두는(hold) 값」</b>으로 외우세요."},
+
+{n:19, yr:"예상", era:"객실용어",
+q:"호텔 객실 관련 용어에 관한 설명으로 옳은 것은?",
+o:["Skipper — 요금을 지불했으나 객실을 전혀 사용하지 않은 고객","Turn down service — 취침 직전 잠자리를 돌봐 주는 이브닝 서비스","On-change — 퇴숙 후 청소가 완료된 객실","객실점유율 — (판매객실수 ÷ 총 객실수) × 100"],
+a:1, e:"<b>Turn down service</b>는 저녁에 룸메이드가 이불을 반쯤 접어 두는 <b>이브닝 서비스</b>이고, 강사는 <b>「이 용어들 중에서 가장 많이 출제됐다」</b>고 했습니다. ①은 <b>Sleep-out</b>의 설명입니다(Skipper는 요금을 안 내고 몰래 빠져나간 고객). ③은 <b>Vacant and Ready</b>의 설명입니다(On-change는 청소가 <b>아직 안 된</b> 객실). ④의 분모는 <b>「총 객실수」가 아니라 「판매가능 객실수」</b>입니다."},
+
+{n:20, yr:"예상", era:"식음료",
+q:"호텔 식당 서비스 형식에 관한 설명으로 옳은 것은?",
+o:["러시안 서비스 — 고객이 큰 접시에서 스스로 덜어 먹는다","잉글리시 서비스 — 종사원이 은쟁반에서 고객의 접시로 덜어 준다","아메리칸 서비스 — 고객 앞에서 게리동과 르샤를 이용해 직접 조리한다","트레이 서비스 — 룸서비스와 기내식에서 이용된다"],
+a:3, e:"①②가 서로 바뀌었습니다. 강사가 준 기준 한 줄 — <b>「큰 쟁반에 음식이 나왔을 때 누가 덜어 먹느냐」</b>. <b>러시안 = 종사원이 덜어 준다</b>(연회행사), <b>잉글리시 = 고객이 스스로 덜어 먹는다</b>(패밀리 서비스). ③은 <b>프렌치 서비스</b>의 설명이고, 아메리칸 서비스는 <b>주방에서 접시에 담아 내오는 가장 일반적인 방식</b>입니다."}
+];
+
+const NUMS = ["①","②","③","④"];
+let ACTIVE = QS.slice();
+let picked = {};
+let graded = false, t0 = null, tick = null, elapsed = 0;
+let lastWrong = [];
+function render(){
+const box = document.getElementById('quiz');
+box.innerHTML = ACTIVE.map((q,i)=>`
+<div class="q" id="q${i}">
+<div class="qh">
+<span class="qn">Q${q.n}</span>
+<span class="qt">${q.q}</span>
+<span class="yr">${q.yr} · ${q.era}</span>
+</div>
+${q.stem?`<div class="stem">${q.stem}</div>`:''}
+<ul class="opts">
+${q.o.map((o,j)=>`<li data-q="${i}" data-o="${j}"><span class="no">${NUMS[j]}</span><span>${o}</span></li>`).join('')}
+</ul>
+<div class="exp"><b>왜 그런가 —</b> ${q.e}</div>
+</div>`).join('');
+box.querySelectorAll('.opts li').forEach(li=>{
+li.addEventListener('click',()=>{
+if(graded) return;
+startTimer();
+const qi = +li.dataset.q, oi = +li.dataset.o;
+picked[qi] = oi;
+li.parentNode.querySelectorAll('li').forEach(x=>x.classList.remove('sel'));
+li.classList.add('sel');
+updateProg();
+});
+});
+updateProg();
+}
+function updateProg(){
+document.getElementById('prog').textContent = `${Object.keys(picked).length} / ${ACTIVE.length} 선택`;
+}
+function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }
+function startTimer(){
+if(t0) return;
+t0 = performance.now();
+tick = setInterval(()=>{
+elapsed = Math.floor((performance.now()-t0)/1000);
+document.getElementById('timer').textContent = fmt(elapsed);
+},500);
+}
+function grade(){
+if(graded) return;
+graded = true;
+if(tick) clearInterval(tick);
+if(t0) elapsed = Math.floor((performance.now()-t0)/1000);
+let right = 0;
+const byEra = {};
+lastWrong = [];
+ACTIVE.forEach((q,i)=>{
+const el = document.getElementById('q'+i);
+el.classList.add('graded');
+const lis = el.querySelectorAll('.opts li');
+const sel = picked[i];
+const ok = sel === q.a;
+if(ok) right++; else lastWrong.push({q:q, mine:sel});
+byEra[q.era] = byEra[q.era] || [0,0];
+byEra[q.era][1]++; if(ok) byEra[q.era][0]++;
+lis.forEach((li,j)=>{
+li.classList.remove('sel');
+if(j===q.a){ li.classList.add('correct');
+li.insertAdjacentHTML('beforeend','<span class="mark o">정답</span>'); }
+if(j===sel && !ok){ li.classList.add('wrong');
+li.insertAdjacentHTML('beforeend','<span class="mark x">내가 고른 답</span>'); }
+});
+if(sel===undefined){
+el.querySelector('.opts').insertAdjacentHTML('beforebegin','<div class="stem" style="color:var(--warn)">답을 고르지 않았습니다.</div>');
+}
+});
+const pct = Math.round(right/ACTIVE.length*100);
+const sc = document.getElementById('score');
+sc.classList.add('on');
+document.getElementById('scoreNum').textContent = pct + '점';
+let msg;
+if(pct>=80) msg = '8단원은 잡혔습니다. 총정리표 ⑤번(형태별 분류)과 ⑥번(3분류축) 표만 한 번 더 훑고 9단원(관광교통업)으로 넘어가세요.';
+else if(pct>=60) msg = '합격선은 넘겼지만 안전권은 아닙니다. 틀린 문항이 「형태별 분류」 쪽인지 「IIT·ICT/FIT·FCT」 쪽인지부터 확인하세요.';
+else if(pct>=40) msg = '여행 형태별 분류와 안내조건·인솔자 구분에서 흔들립니다. 비교카드 8개를 다시 보세요.';
+else msg = '괜찮습니다 — 8단원은 「비슷한 약자」 싸움입니다. 이야기 4편(IIT·ICT/FIT·FCT)을 다시 읽고 내일 재도전하세요.';
+document.getElementById('scoreLab').innerHTML = `${ACTIVE.length}문항 중 <b>${right}문항</b> 정답 · 소요 ${fmt(elapsed)} · ${msg}`;
+document.getElementById('scoreBrk').innerHTML =
+Object.entries(byEra).map(([k,v])=>`<span>${k} ${v[0]}/${v[1]}</span>`).join('');
+const wl = document.getElementById('wrongList');
+if(lastWrong.length===0){
+wl.innerHTML = '<b>틀린 문항 없음</b> — 전부 맞히셨습니다.';
+} else {
+wl.innerHTML = `<b>틀린 문항 ${lastWrong.length}개</b>` +
+'<ul>' + lastWrong.map(w=>{
+const mine = (w.mine===undefined) ? '무응답' : `${NUMS[w.mine]} ${w.q.o[w.mine]}`;
+return `<li><b>Q${w.q.n}</b> (${w.q.era}) — 내 답 <b>${mine}</b> / 정답 <b>${NUMS[w.q.a]} ${w.q.o[w.q.a]}</b></li>`;
+}).join('') + '</ul>';
+}
+document.getElementById('retryWrong').disabled = (lastWrong.length===0);
+let txt = `[오답노트 기록] 관광학개론 8단원 여행업\n`;
+txt += `점수: ${right}/${ACTIVE.length} (${pct}점) · 소요시간 ${fmt(elapsed)}\n`;
+txt += `주제별: ` + Object.entries(byEra).map(([k,v])=>`${k} ${v[0]}/${v[1]}`).join(' / ') + `\n`;
+txt += `틀린 문항 ${lastWrong.length}개\n`;
+lastWrong.forEach(w=>{
+const mine = (w.mine===undefined) ? '무응답' : NUMS[w.mine];
+txt += `- Q${w.q.n} (${w.q.era}) ${w.q.q}\n`;
+txt += `   내 답 ${mine}${w.mine!==undefined?' '+w.q.o[w.mine]:''} / 정답 ${NUMS[w.q.a]} ${w.q.o[w.q.a]}\n`;
+});
+document.getElementById('exportTxt').value = txt;
+window.scrollTo({top: sc.offsetTop - 90, behavior:'smooth'});
+}
+function resetQuiz(set){
+ACTIVE = set;
+graded=false; t0=null; elapsed=0; if(tick) clearInterval(tick);
+picked = {};
+document.getElementById('timer').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('copyMsg').textContent='';
+render();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-140, behavior:'smooth'});
+}
+document.getElementById('grade').addEventListener('click', grade);
+document.getElementById('reset').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryAll').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryWrong').addEventListener('click', ()=>{
+if(!lastWrong.length) return;
+resetQuiz(lastWrong.map(w=>w.q));
+});
+document.getElementById('copyBtn').addEventListener('click', async ()=>{
+const ta = document.getElementById('exportTxt');
+const msg = document.getElementById('copyMsg');
+try{
+await navigator.clipboard.writeText(ta.value);
+msg.textContent = '복사됐습니다. 채팅에 붙여넣어 주세요.';
+}catch(e){
+ta.removeAttribute('readonly'); ta.select(); ta.setSelectionRange(0, 99999);
+try{ document.execCommand('copy'); msg.textContent='복사됐습니다.'; }
+catch(_){ msg.textContent='길게 눌러서 직접 복사해 주세요.'; }
+ta.setAttribute('readonly','');
+}
+});
+render();
+</script>
+</body>
+</html>

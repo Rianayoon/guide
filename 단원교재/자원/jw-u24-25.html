@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 24·25단원 · 하천 관광자원 &amp; 해안 관광자원</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('../../fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65;white-space:pre-line}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.stack,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.stack .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.stack .p b{display:block;font-size:15px;margin-bottom:6px;color:var(--bro)}
+.stack .p span{font-size:12.5px;color:var(--ink-2);display:block}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 24·25단원</div>
+<h1>하천 관광자원 &amp; 해안 관광자원
+<small>물이 <b>깎으면 침식 지형</b>, <b>쌓으면 퇴적 지형</b>입니다. 강에서도 바다에서도 원리는 똑같고, 이름만 달라집니다. 그리고 시험은 <b>해수욕장이 어느 도(道)에 있는지</b>를 지금도 계속 묻습니다</small>
+</h1>
+<div class="meta">
+<span class="chip hot">해수욕장 ★★★ — "지금도 나와요"</span>
+<span class="chip hot">석호 ★★★ — 교재에서 유일하게 붉은 표시</span>
+<span class="chip">예상문제 14문항</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 물살이 빠르면 깎이고, 느려지면 쌓입니다</h2>
+<p class="sub">이 두 단원은 딱 하나의 원리로 전부 설명됩니다. <b>물이 빠르면 깎고(침식), 느려지면 쌓습니다(퇴적).</b> 그 다음은 "어디에서 그런 일이 일어나는가"만 붙이면 됩니다.</p>
+
+<div class="flow">
+<b class="hi">하천 상·중류</b><i>산을 끼고 경사가 급함 → 물살 빠름 →</i><b>침식</b><i>감입곡류하천 · 하안단구 · 하식애</i>
+</div>
+<div class="flow">
+<b class="hi">하천 하류</b><i>평지를 만나 물살 느려짐 →</i><b>퇴적</b><i>선상지 · 범람원 · 삼각주 · 하중도</i>
+</div>
+<div class="flow">
+<b class="hi">해안 곶(튀어나온 곳)</b><i>파도를 정면으로 맞음 →</i><b>침식</b><i>해식애 · 파식대 · 해식동 · 시스택 · 해안단구</i>
+</div>
+<div class="flow">
+<b class="hi">해안 만(들어간 곳)</b><i>파도가 약해짐 →</i><b>퇴적</b><i>사빈 · 해안사구 · 사주 · 석호 · 갯벌</i>
+</div>
+
+<div class="tl">
+<div class="t1"><b>① 원리는 하나</b><span><b>빠르면 깎고, 느려지면 쌓는다.</b> 강이든 바다든 똑같습니다. 지형 이름을 외울 때 "여기는 빠른 곳인가 느린 곳인가"만 물어보세요</span></div>
+<div class="t2"><b>② 위치가 정해져 있다</b><span>침식은 <b>상·중류</b>와 <b>곶</b>, 퇴적은 <b>하류</b>와 <b>만</b>. 이 위치 정보가 문제에서 그대로 정답 단서가 됩니다</span></div>
+<div class="t3"><b>③ 시험은 "어디에 있나"</b><span>해수욕장은 <b>특정 해수욕장의 특징이 아니라 행정구역</b>을 묻습니다. 강사: <b>"행정구역을 이용한 문제만 계속 나와요"</b></span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>먼저 솔직하게 밝힙니다.</b> 이 두 단원도 <b>기출 원문 정리본(2013~2025년 136문항)에 해당 문항이 없습니다.</b> 원본 기출 PDF의 수록 범위가 유교 건축까지이기 때문입니다. 그래서 빈출 등급은 <b>기출 실측이 아니라 교재의 별표 표시와 강의 발언</b>을 근거로 했고, 문제도 <b>기출이 아니라 예상문제</b>입니다. 다만 이 단원은 강사가 <b>"지금도 나와요"</b>, <b>"계속해서 나와요"</b>처럼 현재형으로 강조한 항목이 유난히 많아, 실제 출제 가능성은 오히려 높은 구간입니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 이해하기</h2>
+<p class="sub">지형 이름은 한자만 풀면 절반이 해결됩니다. 하나씩 풀어드리겠습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">강물은 산에서 시작해 평지에서 느려집니다</div><div class="era">24단원 · 기초</div></div>
+<div class="body">
+<p>앞 단원에서 본 대로 우리나라는 <b class="k">동고서저의 경동지형</b>입니다. 동쪽이 높으니 큰 강은 대부분 <b>서쪽·남쪽</b>으로 흐릅니다.</p>
+<p>강물은 산에서 시작합니다. 산의 작은 물줄기가 모이고 모여 강이 되는데, <b>상류와 중류는 산을 끼고 있어 경사가 급합니다.</b> 경사가 급하면 물살이 빠르고, 물살이 빠르면 바닥과 옆면을 <b class="k">깎습니다(침식)</b>.</p>
+<p>그러다 강물이 <b>평지를 만나면 속도가 뚝 떨어집니다.</b> 속도가 느려지면 물이 싣고 온 모래·자갈을 더 이상 밀지 못하고 <b class="k">내려놓습니다(퇴적)</b>. 비가 많이 오면 물이 주변으로 넘치면서 그 자리에 쌓이기도 합니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>배달 오토바이를 떠올려 보세요. <b>빠르게 달릴 때는 짐이 흔들려 떨어지지 않지만</b>, <b>속도를 줄이고 멈추면 짐을 내려놓습니다.</b> 강물도 똑같습니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">하천 침식 지형 셋 — 감입곡류하천 · 하안단구 · 하식애</div><div class="era">24단원</div></div>
+<div class="body">
+<p><b class="k">감입곡류하천</b>은 <b>산간 지역을 굽이굽이 휘돌아 흐르는 하천</b>입니다. 대표적인 곳이 <b>강원도 영월 동강</b>인데, 물길이 한반도 모양처럼 크게 휘어 도는 지형으로 유명합니다. 그래서 <b>래프팅</b> 같은 레포츠 장소로 활용됩니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>곡류(曲流)</b>"는 <b>굽이쳐 흐른다</b>는 뜻이고, "<b>감입(嵌入)</b>"은 <b>깊이 파고들었다</b>는 뜻입니다. 즉 <b>산을 깊이 파고들며 굽이쳐 흐르는 강</b>입니다.</p></div>
+<p><b class="k">하안단구</b>는 <b>강가에 생긴 계단 모양의 언덕</b>입니다. 땅이 <b>융기</b>하는 힘과 강물의 <b>침식</b>이 함께 작용해 만들어집니다. 산간 지역이지만 <b>상대적으로 평탄</b>해서, 이 자리에 <b>산간 마을</b>이 가장 많이 생깁니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>하(河)=강, 안(岸)=강가, 단(段)=계단, 구(丘)=언덕.</b> 글자 그대로 <b>"강가의 계단 모양 언덕"</b>입니다.</p></div>
+<p><b class="k">하식애</b>는 <b>강물의 침식으로 만들어진 절벽</b>입니다. <b>애(崖)가 절벽</b>이라는 뜻입니다. 가장 높은 곳에 있고 경치가 뛰어나기 때문에, 예로부터 이런 자리에 <b>정자</b>를 많이 지었습니다 — 안동의 <b>부용대</b>와 진주의 <b>촉석루</b>가 대표적입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>하안단구와 하식애를 구분하는 법</b> — <b>단구는 계단(사람이 살 수 있는 평평한 땅)</b>, <b>하식애는 절벽(정자가 서 있는 벼랑)</b>. "마을이 생겼다"면 단구, "정자가 있다"면 하식애입니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">하천 퇴적 지형 넷 — 그런데 시험에 나온 건 하나뿐입니다</div><div class="era">24단원 · 강사 지목</div></div>
+<div class="body">
+<div class="quote">"요거는 제가 설명드리지만 <b>시험에 나온 적은 없어요.</b> 나온 건 딱 하나 한다면 <b>하중도</b>, 그 정도만 우리가 봐줄 수 있지만..." — 강사, 7/26 핵심강의 6:15경</div>
+<p>그러니 나머지 셋은 <b>개념만 이해</b>하고 넘어가고, <b>하중도만 확실히</b> 잡으면 됩니다.</p>
+<p><b class="k">선상지</b>는 계곡 입구에서 물살이 느려지며 <b>부채 모양</b>으로 넓게 퍼져 쌓인 지형입니다(선(扇)=부채).</p>
+<p><b class="k">범람원</b>은 강물이 오랜 기간 <b>넘치면서(범람)</b> 만들어진 지형입니다. 두 부분으로 나뉘는데, 물가 바로 옆에 자연스럽게 높게 쌓인 둑이 <b class="k">자연제방</b>, 그 뒤쪽 낮은 곳에 물이 고여 생긴 것이 <b class="k">배후습지</b>입니다. 대표적인 배후습지가 <b>창녕 우포늪</b>입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>함정 —</b> "배후습지가 자연제방보다 지대가 높다"는 문장은 <b class="x">틀립니다.</b> <b>자연제방이 물가 쪽에 높게</b> 쌓이고, <b>배후습지는 그 뒤 낮은 곳</b>에 물이 고여 생깁니다.</div></div>
+<p><b class="k">삼각주</b>는 강이 바다와 만나는 하구에서 물살이 느려지며 <b>삼각형</b>으로 쌓인 지형입니다. 오랜 세월 고운 흙이 쌓여 <b>토질이 가장 좋습니다.</b> 우리나라 대표는 <b>낙동강 하구의 김해평야</b>로, 주요 쌀 생산지입니다.</p>
+<p>마지막이 <b class="k">하중도</b>입니다. <b>하(河)=강, 중(中)=가운데, 도(島)=섬</b> — <b>강 가운데 있는 섬</b>입니다. 강이 흐르다가 새 물길을 만들면 옛 물길과의 사이에 남은 땅이 섬이 되는 것입니다. 우리가 아는 곳이 전부 하중도입니다 — <b>여의도·밤섬</b>(한강), <b>남이섬</b>(가평 북한강), <b>을숙도</b>(낙동강 하구, 철새 도래지).</p>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">가장 긴 강과 가장 넓은 강은 다릅니다</div><div class="era">24단원 · 함정 1순위</div></div>
+<div class="body">
+<p>이 단원에서 가장 확실하게 나오는 함정입니다. 강사의 말이 아주 짧고 명확했습니다.</p>
+<div class="quote">"여러분들은 <b>뭐만 기억하시면 돼요 — 가장 긴 강은 낙동강, 강의 면적이 가장 넓은 건 한강.</b>" — 강사, 7/26 핵심강의 20:08경</div>
+<div class="vs"><div class="side a"><b>유로 길이 1위</b><b>낙동강</b> 506km<br>(한강 494km는 2위)</div><div class="mid">VS</div><div class="side b"><b>유역 면적 1위</b><b>한강</b><br>(낙동강이 2위)</div></div>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>유로 길이</b>"는 강이 흐르는 <b>길이</b>이고, "<b>유역 면적</b>"은 그 강으로 물이 모여드는 <b>땅의 넓이</b>(강사의 표현으로는 "그 강에 있는 물의 양")입니다. 길이와 넓이는 다른 이야기입니다.</p></div>
+<p>그리고 <b>길이 순서에는 함정이 하나 더</b> 있습니다. 자세히 배우는 "5대 강"은 한강·낙동강·금강·섬진강·영산강인데, <b>길이 순위에는 임진강이 끼어 있습니다.</b></p>
+<p>정확한 순서는 <b class="k">낙동강(506) &gt; 한강(494) &gt; 금강(395) &gt; 임진강(254) &gt; 섬진강(224) &gt; 영산강(138)</b>입니다. "낙동강–한강–금강–섬진강–영산강"으로만 외우면 <b>임진강을 빠뜨리는 함정</b>에 걸립니다.</p>
+<p>이제 강별로 봅니다. <b class="k">한강</b>은 <b>북한강과 남한강</b>이 <b>경기도 양평 양수리</b>에서 만나 이루어집니다. <b>남한강의 발원지는 태백 대덕산 검룡소</b>, <b>북한강의 발원지는 북한 금강산</b>입니다. 본류에는 <b>팔당댐</b> 하나, 남한강에는 충주댐·괴산댐, 그리고 <b>북한강에 댐이 유독 많습니다</b> — 위에서부터 <b>화천 → 소양강 → 춘천 → 의암 → 청평</b>.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 콕 집은 것 —</b> "이 <b>북한강에 있는 댐들을 한 번쯤은 생각해볼 필요는 있다</b>. 한동안 안 나오긴 했지만." 예전에 자주 출제되던 부분이라는 뜻입니다. 다만 <b>위치 순서까지 묻는 문제는 나오지 않는다</b>고 했습니다.</div></div>
+<p><b class="k">낙동강</b>은 <b>태백 함백산 황지못</b>에서 시작해 영남 지방을 관통합니다. 그래서 강줄기가 가장 깁니다. 댐은 안동·임하·남강·합천댐 등이 있고, 하구에 <b>김해평야(삼각주)</b>와 <b>을숙도(하중도)</b>가 있습니다.</p>
+<p><b class="k">금강</b>은 <b>충청남도와 전라북도의 경계(도계)</b>를 흐릅니다. 발원지는 전북 장수 신무산 뜬봉샘, 댐은 <b>대청댐·용담댐</b>입니다.</p>
+<p><b class="k">섬진강</b>은 <b>전라남도와 경상남도의 경계</b>를 흐릅니다(그 언저리에 화개장터가 있습니다). 발원지는 전북 진안 팔공산 데미샘이고, <b>섬진강댐이 우리나라 최초의 다목적댐</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 댐의 목적은 여러 가지입니다 — <b>홍수 방지 · 전력 공급 · 농업용수(관개) 공급 · 공업용수 공급</b>. 이 중 <b>여러 목적을 함께 가진 댐</b>이 <b>다목적댐</b>입니다. "<b>관개</b>"란 강물을 끌어다 농경지에 대는 것을 말합니다.</p></div>
+<p><b class="k">영산강</b>은 <b>가장 짧은 강(138km)</b>이고, 전라도 평야에 물을 대는 <b>관개용 댐</b>이 모여 있습니다 — 장성·광주·담양·<b>나주댐</b>이며, 이 중 <b>나주댐이 국내 최대 관개용 댐</b>입니다.</p>
+<p>마지막으로 <b class="k">하굿둑</b>입니다. 금강과 영산강에 있는데, 만든 목적이 시험 포인트입니다. 바닷물이 강 쪽으로 거슬러 올라오면 <b>소금기가 땅에 스며들어 토질이 나빠집니다(염해)</b>. 이를 막기 위해 하구를 가로질러 쌓은 둑이 하굿둑이며, 부수적으로 <b>양쪽을 잇는 교통로</b> 역할도 합니다.</p>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">동해안과 서·남해안은 성격이 정반대입니다</div><div class="era">25단원 · 기초</div></div>
+<div class="body">
+<p>바다도 원리는 같지만, 우리나라는 동쪽과 서쪽 바다의 성격이 완전히 다릅니다.</p>
+<div class="vs"><div class="side b"><b>동해안</b><b>융기</b> 해안<br>해안선 단조로움<br>수심 깊음<br>→ <b>암석 해안 · 석호</b></div><div class="mid">VS</div><div class="side a"><b>서·남해안</b>해안선 복잡, 섬 많음<br><b>조수 간만의 차 큼</b><br>→ <b>갯벌 · 간척지</b></div></div>
+<p>그래서 <b>석호는 동해안에</b>, <b>갯벌은 서·남해안에</b> 발달합니다. 이 한 줄이 25단원의 뼈대입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>조수 간만의 차</b>"는 <b>밀물과 썰물의 높이 차이</b>입니다. 서해는 이 차이가 커서 썰물 때 바닥이 넓게 드러나고, 그 자리가 <b>갯벌</b>이 됩니다.</p></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">6</div><div class="ttl">해안 침식 지형 — 파도가 깎아낸 절벽과 돌기둥</div><div class="era">25단원</div></div>
+<div class="body">
+<p>바다 쪽으로 <b>튀어나온 부분(곶)</b>은 파도를 정면으로 맞기 때문에 깎입니다.</p>
+<p><b class="k">해식애</b>는 <b>파도가 깎아 만든 해안 절벽</b>입니다(애=절벽, 하식애와 같은 글자). 그리고 그 절벽 앞의 <b>평탄한 지형</b>이 <b class="k">파식대</b>입니다. 이 둘은 나란히 붙어 있어서 함께 관광지가 되는 경우가 많습니다 — <b>부안 채석강</b>, <b>부산 태종대</b>, <b>양양 낙산사</b> 일대가 그렇습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>해식애와 파식대</b>는 세트로 기억하세요 — <b>"절벽(애) + 그 앞의 평평한 바닥(대)"</b>. 애(崖)는 서 있고, 대(臺)는 누워 있습니다.</div></div>
+<p><b class="k">해식동</b>은 해식애의 약한 부분이 뚫려 생긴 <b>동굴</b>입니다 — 제주 산방굴·정방굴, 여수 오동도굴, 남해 금산굴.</p>
+<p><b class="k">시스택</b>은 해식애 주변이 깎이고 남은 <b>돌기둥이나 작은 바위섬</b>입니다 — 제주 <b>외돌개</b>, 삼척 <b>촛대바위</b>, 백령도 <b>두무진</b>.</p>
+<p><b class="k">해안단구</b>는 <b>파식대나 해안 퇴적 지형이 융기해 계단 모양</b>이 된 것으로, <b>동해안에 발달</b>합니다. 대표가 <b>정동진</b>입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>하천의 <b>하안단구</b>와 해안의 <b>해안단구</b>는 이름도 원리도 짝입니다 — 둘 다 <b>융기 + 깎임 → 계단 모양</b>. 앞 글자만 강(河)이냐 바다(海)냐가 다릅니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">7</div><div class="ttl">해안 퇴적 지형과 석호 — 교재에서 유일하게 붉게 칠한 항목</div><div class="era">25단원 · ★★★</div></div>
+<div class="body">
+<p>바다 쪽으로 <b>들어간 부분(만)</b>은 파도가 약해지므로 모래가 쌓입니다.</p>
+<p><b class="k">사빈</b>은 파도가 모래를 쌓아 만든 지형으로, 우리가 <b>해수욕장</b>으로 이용하는 바로 그 모래사장입니다(사=모래 사).</p>
+<p><b class="k">해안사구</b>는 <b>사빈의 모래가 바람에 날려 뒤쪽에 쌓인 모래 언덕</b>입니다. 대표가 <b>태안 신두리 사구</b>인데, 강사는 "생각하는 것보다 엄청나게 크다"고 했습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>사빈과 해안사구의 위치 관계</b> — <b>바다 쪽이 사빈(해수욕장), 그 뒤 육지 쪽이 해안사구(모래 언덕)</b>. 해수욕장에서 돗자리 깔고 뒤를 돌아보면 보이는 모래 언덕이 사구입니다.</div></div>
+<p><b class="k">사주</b>는 <b>모래가 길게 기둥처럼 쌓인 지형</b>입니다. 이 사주가 점점 길어져 <b>만의 입구를 막아버리면</b> 어떻게 될까요? 안쪽에 바닷물이 들어오지 못하고, 대신 뒤편 산에서 민물이 계속 흘러들어옵니다. 오랜 시간이 지나면 원래 소금물이던 곳이 <b>민물 호수</b>로 바뀝니다. 이것이 <b class="k">석호</b>입니다.</p>
+<div class="quote">"제가 거기 <b>석호만 유일하게 빨간색으로 해놨죠? 시험에 잘 나와요. 계속해서 나와요.</b> 근데 석호는 <b>동해안에서 발달</b>합니다." — 강사, 7/26 핵심강의 50:02경</div>
+<p>동해안의 석호는 이렇습니다 — <b class="k">경포호</b>(강릉), <b class="k">청초호·영랑호</b>(속초), <b class="k">송지호·화진포</b>(고성). 이 중 <b>화진포에는 이승만 별장</b>이 있습니다.</p>
+<p>사주가 더 길어져 <b>육지와 섬을 연결하면</b>, 그 사주를 <b class="k">육계사주</b>, 연결된 섬을 <b class="k">육계도</b>라고 합니다. 대표가 <b>제주 성산일출봉 일대(성산포)</b>이고, 강원 동해의 <b>갈마반도</b>도 여기에 해당합니다.</p>
+<p>마지막이 <b class="k">갯벌(간석지)</b>입니다. <b>서·남해안</b>에 발달하며, <b>간척사업</b>이 이루어지고 <b>다양한 생물의 생태계</b>가 존재합니다. 앞 단원에서 본 <b>세계자연유산 "한국의 갯벌"</b> 4개 지역(서천·고창·신안·순천보성)과 이어집니다.</p>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">8</div><div class="ttl">해수욕장 — 특징이 아니라 "어느 도(道)에 있나"를 묻습니다</div><div class="era">25단원 · ★★★</div></div>
+<div class="body">
+<div class="quote">"해수욕장 <b>별표 3개</b> 되어 있죠? <b>지금도 나와요.</b> 근데 해수욕장은 주로 <b>행정구역 문제</b>예요. 그 특정한 해수욕장의 특징을 묻는 문제가 아니라 <b>행정구역을 이용한 문제만 계속 나옵니다.</b>" — 강사, 7/26 핵심강의 52:06경</div>
+<p>그리고 결정적인 힌트가 하나 더 있습니다.</p>
+<div class="quote">"우리나라 해수욕장은 동해안에 많다고 그랬죠? 그런데 <b>시험은 동해안보다 서해안이 더 많이 나와.</b>" — 같은 강의 52:15경</div>
+<p>서해안부터 봅니다. <b class="k">충청남도</b>에는 해수욕장이 아주 많은데, <b>이름이 대부분 "~포"로 끝납니다</b> — 무창포·학암포·연포·천리포·만리포·몽산포. 강사의 요령은 이렇습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>"포(浦)"자가 들어간 해수욕장은 10개 중 8개가 충남</b>이라고 생각하고, <b>충남이 아닌 "포"만 따로 외우세요</b> — <b>구룡포(경북 포항)</b>, <b>율포(전남 보성)</b>, <b>격포(전북 부안)</b>.</div></div>
+<p>충남에서 "포"가 아닌 해수욕장이 <b class="k">대천</b>(보령)입니다. <b>서해안 최대 규모</b>이고, <b>패사 해변</b>이며, <b>보령 머드축제</b>가 열리는 곳입니다. 그리고 <b class="k">춘장대</b>는 <b>충남 서천</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>패사(貝砂) 해변</b>"은 일반 모래가 아니라 <b>조개껍데기가 오랜 세월 잘게 부서져 만들어진 모래</b>로 이루어진 해변입니다. 일반 모래보다 단단합니다.</p></div>
+<p>인천에는 <b>을왕리</b>(영종도), <b>덕적도 서포리</b>, <b>무의도 하나개</b>가 있고, <b class="k">백령도 사곶 해수욕장</b>이 특별합니다 — <b>패사 해변</b>이라 바닥이 아주 단단해서 <b>천연 비행장</b>으로 쓸 수 있습니다. 백령도는 <b>우리나라 최북단 섬</b>입니다.</p>
+<p>전라북도에는 <b class="k">격포</b>(부안 변산반도)와 <b class="k">선유도</b>(군산)가 있습니다 — 선유도는 강사가 7/31 문제풀이에서 <b>"자주 헷갈리는 지역 매칭"</b>으로 짚은 항목입니다.</p>
+<p>동해안으로 갑니다. 강원도는 북쪽부터 <b>고성(송지호·화진포 — 석호이자 해수욕장)</b>, <b>속초</b>, <b>양양(낙산·조<span></span></b>대)<b></b>, <b>강릉(경포)</b> 순입니다. 강사가 따로 밑줄을 그으라고 한 두 곳은 <b class="k">동해 망상</b>과 <b class="k">삼척 맹방</b>입니다 — 지명이 아니라서 낯설기 때문입니다.</p>
+<p>경상북도 동해안에는 <b>영덕</b>, <b class="k">포항 구룡포</b>, <b class="k">울진 망양정</b>(관동팔경이자 해수욕장), <b class="k">경주 감포</b>가 있습니다. 감포 앞바다에는 <b>문무왕의 해중릉(대왕암)</b>이 있습니다 — 삼국통일을 완성한 문무왕이 "죽어서도 신라를 지키는 용이 되겠다"며 바다에 장사 지내달라 유언한 곳입니다.</p>
+<p>남해안은 부산의 <b>해운대·광안리</b>(너무 유명해서 따로 외울 필요가 없다고 했습니다), 전남 여수의 <b class="k">만성리 검은모래 해변</b>, <b class="k">보성 율포</b>가 있습니다.</p>
+<p>제주도에서 시험에 나오는 것은 <b class="k">중문</b>입니다 — <b>활 모양</b>의 해안이고 <b>흑색을 비롯한 여러 색깔의 모래</b>가 섞여 있는 독특한 해수욕장이며, 카지노가 모여 있는 <b>중문관광단지</b>가 여기입니다. 그리고 <b class="k">협재</b>가 <b>패사 해변</b>입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 세 번 강조한 세트 —</b> <b>패사 해변 세 곳</b>은 반드시 묶어서 외우세요. <b>①백령도 사곶(인천) ②대천(충남 보령) ③협재(제주)</b>. 강사: "이 3개는 우리는 항상 고민해야 된다고 그랬죠."</div></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>7/31 문제풀이강의에서 짚은 헷갈리는 지역 매칭 —</b> <b>풍기온천 = 경북 영주</b>, <b>무창포 = 충남</b>, <b>선유도 = 전북 군산</b>. 그리고 <b>송도해수욕장은 현재 부산에만</b> 있습니다 — 과거 인천 송도에도 있었으나 매립되어 송도국제도시가 되면서 사라졌습니다.</div></div>
+<p>마지막으로 <b>해안형 국립공원</b> 네 곳을 정리하고 마칩니다 — <b class="k">한려해상</b>(1968, <b>최초의 해상국립공원</b>, 통영~여수), <b class="k">태안해안</b>(1978, <b>국내 유일의 해안 국립공원</b>), <b class="k">다도해상</b>(1981, <b>전체 최대 면적</b>), <b class="k">변산반도</b>(1988, <b>유일한 반도형</b>).</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표</h2>
+<p class="sub">교재와 강의에 나온 사실을 빠짐없이 담았습니다.</p>
+
+<h3>① 하천 지형</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>지형</th><th>설명 · 대표 예</th></tr></thead>
+<tbody>
+<tr><td class="nm" rowspan="3">침식<br>(중·상류)</td><td class="nm">감입곡류하천</td><td>산간을 굽이쳐 흐름 → 강원 <b>영월 동강</b>(래프팅)</td></tr>
+<tr><td class="nm">하안단구</td><td>융기 + 하천 침식 → <b>계단 모양 언덕</b>, <b>산간 마을</b>이 형성되는 자리</td></tr>
+<tr><td class="nm">하식애</td><td>하천 침식으로 생긴 <b>절벽</b> → 안동 <b>부용대</b>, 진주 <b>촉석루</b>(정자가 많음)</td></tr>
+<tr><td class="nm" rowspan="4">퇴적<br>(하류)</td><td class="nm">선상지</td><td>계곡 입구, <b>부채 모양</b>(선=부채 선)</td></tr>
+<tr><td class="nm">범람원</td><td><b>자연제방</b>(물가 쪽, 높음) + <b>배후습지</b>(뒤쪽, 낮음 — 창녕 <b>우포늪</b>)</td></tr>
+<tr><td class="nm">삼각주</td><td>하구에 삼각형으로 퇴적, <b>토질 최고</b> → <b>낙동강 하구 김해평야</b></td></tr>
+<tr><td class="nm">하중도 ★</td><td><b>강 가운데의 섬</b> → 여의도·밤섬(한강)·남이섬(북한강)·<b>을숙도</b>(낙동강, 철새 도래지)<br><b>강사: 퇴적 지형 중 시험에 나온 건 하중도뿐</b></td></tr>
+</tbody></table></div>
+
+<h3>② 하천 유로 길이 · 유역 면적</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>순위</th><th>유로 길이</th><th>유역 면적</th></tr></thead>
+<tbody>
+<tr><td class="nm">1위</td><td><b>낙동강 506km</b></td><td><b>한강</b></td></tr>
+<tr><td class="nm">2위</td><td>한강 494km</td><td>낙동강</td></tr>
+<tr><td class="nm">3위 이하</td><td>금강 395 &gt; <b>임진강 254</b> &gt; 섬진강 224 &gt; 영산강 138(가장 짧음)</td><td>이하는 길이 순위와 대체로 같음</td></tr>
+</tbody></table></div>
+<div class="zero"><b>주의 —</b> 발원지·댐까지 자세히 배우는 <b>"5대 강"에는 임진강이 없지만</b>, <b>길이 순위에는 임진강이 금강과 섬진강 사이에 끼어 있습니다.</b> 이것을 빠뜨리는 것이 대표적인 함정입니다.</div>
+
+<h3>③ 5대 강 — 발원지 · 댐 · 특징</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>하천</th><th>발원지 · 흐르는 곳</th><th>주요 댐 · 특징</th></tr></thead>
+<tbody>
+<tr><td class="nm">한강<br><span class="yr">유역면적 1위</span></td><td>남한강=<b>태백 대덕산 검룡소</b><br>북한강=<b>북한 금강산</b><br>→ <b>경기 양평 양수리</b>에서 합류</td><td>본류 <b>팔당댐</b> / 남한강: 충주·괴산댐 / <b>북한강: 화천·소양강·춘천·의암·청평댐</b>(강사: 예전에 자주 출제) / 하중도 여의도·밤섬</td></tr>
+<tr><td class="nm">낙동강<br><span class="yr">길이 1위 506km</span></td><td><b>태백 함백산 황지못</b><br>→ 영남 지방 관통</td><td>안동·임하·남강·<b>합천댐</b> / 하구: <b>김해평야</b>(삼각주)·<b>을숙도</b>(하중도)</td></tr>
+<tr><td class="nm">금강<br><span class="yr">395km</span></td><td>전북 장수 신무산 뜬봉샘<br><b>충남·전북의 경계(도계)</b></td><td><b>대청댐·용담댐</b> / <b>금강 하굿둑</b>(염해 방지 + 교통로)</td></tr>
+<tr><td class="nm">섬진강<br><span class="yr">224km</span></td><td>전북 진안 팔공산 데미샘<br><b>전남·경남의 경계</b>(화개장터)</td><td><b>섬진강댐 = 우리나라 최초의 다목적댐</b> / 동복·주암·운암댐</td></tr>
+<tr><td class="nm">영산강<br><span class="yr">138km, 가장 짧음</span></td><td>전남 담양 용추산 용소<br>광주·전남</td><td>장성·광주·담양·<b>나주댐</b> — 전부 <b>관개(농업용수) 목적</b>, <b>나주댐이 국내 최대 관개용 댐</b> / 영산강 하굿둑</td></tr>
+</tbody></table></div>
+
+<h3>④ 해안 지형</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>지형</th><th>설명 · 대표 예</th></tr></thead>
+<tbody>
+<tr><td class="nm" rowspan="5">침식<br>(곶)</td><td class="nm">해식애</td><td>파도가 깎아 만든 <b>해안 절벽</b> → 부안 <b>채석강</b>, 부산 <b>태종대</b>, 양양 낙산사</td></tr>
+<tr><td class="nm">파식대</td><td>해식애 <b>앞의 평탄한 지형</b>(해식애와 세트)</td></tr>
+<tr><td class="nm">해식동</td><td>해식애의 약한 부분이 뚫린 <b>동굴</b> → 제주 산방굴·정방굴, 여수 오동도굴, 남해 금산굴</td></tr>
+<tr><td class="nm">시스택</td><td>깎이고 남은 <b>돌기둥·작은 바위섬</b> → 제주 <b>외돌개</b>, 삼척 <b>촛대바위</b>, 백령도 <b>두무진</b></td></tr>
+<tr><td class="nm">해안단구</td><td>파식대·퇴적지형이 <b>융기</b>해 계단 모양 → <b>동해안 발달, 정동진</b></td></tr>
+<tr><td class="nm" rowspan="6">퇴적<br>(만)</td><td class="nm">사빈</td><td><b>해수욕장</b>으로 이용되는 모래사장</td></tr>
+<tr><td class="nm">해안사구</td><td>사빈의 모래가 <b>바람에 날려 쌓인 언덕</b> → <b>태안 신두리 사구</b></td></tr>
+<tr><td class="nm">사주</td><td>모래가 <b>길게 기둥처럼</b> 쌓인 지형. 만 입구를 가로지름</td></tr>
+<tr><td class="nm">석호 ★★★</td><td><b>사주가 만 입구를 막아 생긴 호수</b> · <b>동해안 발달</b> → <b>경포호</b>(강릉), <b>청초호·영랑호</b>(속초), <b>송지호·화진포</b>(고성, 이승만 별장)</td></tr>
+<tr><td class="nm">갯벌(간석지)</td><td><b>서·남해안 발달</b> · 조차가 큼 · 간척사업 · 다양한 생태계 → 순천만·보성 등</td></tr>
+<tr><td class="nm">육계도 · 육계사주</td><td>사주가 <b>육지와 섬을 연결</b> → 제주 <b>성산포(성산일출봉)</b>, 강원 동해 갈마반도</td></tr>
+</tbody></table></div>
+
+<h3>⑤ 해안형 국립공원</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>국립공원</th><th>지정</th><th>핵심</th></tr></thead>
+<tbody>
+<tr><td class="nm">한려해상</td><td class="yr">1968</td><td><b>최초의 해상 국립공원</b> · 통영~여수</td></tr>
+<tr><td class="nm">태안해안</td><td class="yr">1978</td><td><b>국내 유일의 "해안" 국립공원</b> · 신두리 사구</td></tr>
+<tr><td class="nm">다도해상</td><td class="yr">1981</td><td><b>국립공원 전체 최대 면적</b> · 주로 전라남도</td></tr>
+<tr><td class="nm">변산반도</td><td class="yr">1988</td><td><b>유일한 반도형</b> · 채석강 · 격포 · 도립공원에서 승격</td></tr>
+</tbody></table></div>
+
+<h3>⑥ 해수욕장 — 지역별 (★★★ 행정구역 문제)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>권역</th><th>지역</th><th>해수욕장</th></tr></thead>
+<tbody>
+<tr><td class="nm" rowspan="4">서해안<br><span class="yr">시험에 가장 많이</span></td><td>인천</td><td><b>을왕리</b>(영종도) · 덕적도 서포리 · 무의도 <b>하나개</b> · <b>백령도 사곶</b>(<b>패사 해변 · 천연 비행장</b>, 최북단 섬)</td></tr>
+<tr><td>충남</td><td><b>"~포"가 대부분</b> — 무창포·학암포·연포·천리포·만리포·몽산포 / <b>대천</b>(보령, <b>서해안 최대 규모 · 패사 해변 · 머드축제</b>) / <b>춘장대</b>(서천)</td></tr>
+<tr><td>전북</td><td><b>격포</b>(부안 변산반도) · <b>선유도</b>(군산)</td></tr>
+<tr><td>전남</td><td>확인 수준</td></tr>
+<tr><td class="nm" rowspan="2">동해안</td><td>강원</td><td>고성 <b>송지호·화진포</b>(석호 겸용) · 속초 · 양양 <b>낙산·하조대</b> · 강릉 <b>경포</b> · <b>동해 망상</b> · <b>삼척 맹방</b>(뒤 둘은 강사가 밑줄)</td></tr>
+<tr><td>경북</td><td>영덕 · <b>포항 구룡포</b> · <b>울진 망양정</b>(관동팔경) · <b>경주 감포</b>(문무왕 해중릉=대왕암)</td></tr>
+<tr><td class="nm">남해안</td><td>부산 · 전남</td><td>부산 <b>해운대·광안리</b> / 여수 <b>만성리 검은모래 해변</b> / <b>보성 율포</b></td></tr>
+<tr><td class="nm">제주</td><td>제주</td><td><b>중문</b>(활 모양 · 여러 색 모래 · 중문관광단지) · <b>협재</b>(<b>패사 해변</b>) · 함덕(관광객 최다)</td></tr>
+</tbody></table></div>
+<div class="zero"><b>세트로 외울 것 —</b> <b>패사 해변 3곳</b>: <b>백령도 사곶(인천) · 대천(충남 보령) · 협재(제주)</b>. <b>충남이 아닌 "~포"</b>: <b>구룡포(경북 포항) · 율포(전남 보성) · 격포(전북 부안)</b>. <b>송도해수욕장은 현재 부산에만</b> 있습니다.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급표 — 무엇부터 외울 것인가</h2>
+<p class="sub">아래 등급은 <b>기출 실측이 아닙니다.</b> 이 단원은 기출 원문 정리본에 문항이 없어 실측이 불가능하므로, <b>교재의 별표 개수와 강의 중 발언</b>을 근거로 매기고 그 근거를 그대로 적었습니다.</p>
+<div class="freq">
+<div class="row"><span class="gr gA">최우선</span><div><b>해수욕장의 행정구역</b> — 교재 <b>★★★</b>, 강사: <b>"지금도 나와요"</b>, <b>"행정구역을 이용한 문제만 계속 나옵니다"</b>, <b>"시험은 동해안보다 서해안이 더 많이 나와"</b></div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>석호</b> — 교재에서 <b>유일하게 붉은색</b>으로 표시. 강사: <b>"시험에 잘 나와요. 계속해서 나와요."</b> <b>동해안</b>에 발달 · 경포호·청초호·영랑호·송지호·화진포</div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>가장 긴 강 = 낙동강 / 유역 면적 1위 = 한강</b> — 강사: <b>"여러분들은 뭐만 기억하시면 돼요"</b>라며 이 한 줄만 강조. 교재 <b>별표 3개 중 2개</b> 항목</div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>패사 해변 3곳</b>(백령도 사곶 · 대천 · 협재) — 강사: <b>"이 3개는 항상 고민해야 된다"</b></div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>하중도</b> — 퇴적 지형 중 <b>유일하게 출제된 항목</b>. 여의도·밤섬·남이섬·을숙도</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>침식·퇴적 지형 이름과 위치 매칭</b> — 하안단구 vs 하식애, 해식애 vs 파식대, 사빈 vs 해안사구</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>섬진강댐 = 최초의 다목적댐</b> — 강사가 실제 출제 사례를 언급(<b>"다목적댐이 아닌 것을 고르시오"</b>)</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>해안형 국립공원 4곳</b>(한려해상=최초 해상, 태안해안=유일 해안, 다도해상=최대 면적, 변산반도=유일 반도형)</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>지역 매칭 함정</b>(7/31 문제풀이강의) — <b>풍기온천=경북 영주 · 무창포=충남 · 선유도=전북 군산 · 송도해수욕장=현재 부산에만</b></div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>북한강 댐 5개</b>(화천·소양강·춘천·의암·청평) — 강사: <b>"예전에 징그럽게 나왔다. 한동안 안 나오긴 했지만 한 번쯤 봐둘 필요는 있다."</b> 단, <b>위치 순서는 묻지 않음</b></div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>임진강(254km)</b>이 길이 순위에 끼어 있다는 점 / <b>영산강 = 가장 짧은 강</b> · 나주댐 = 최대 관개용 댐</div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>하굿둑의 목적 = 염해 방지</b>(+교통로) · 금강·영산강에 설치</div></div>
+<div class="row"><span class="gr gZ">가볍게</span><div><b>선상지 · 범람원 · 삼각주</b> — 강사: <b>"시험에 나온 적은 없어요."</b> 개념만 이해하면 충분(단, <b>김해평야=삼각주</b>, <b>우포늪=배후습지</b>는 알아둘 것)</div></div>
+<div class="row"><span class="gr gZ">가볍게</span><div>충남의 "~포" 해수욕장 개별 이름 — 강사: <b>"이거 어떻게 다 외워? 그냥 천리포·만리포 정도로 느낌만 잡고, 다른 지역의 '포'를 챙기는 게 낫다"</b></div></div>
+</div>
+<div class="zero"><b>0회 확인 —</b> 이 두 단원은 기출 원문 정리본(2013~2025년 <b>136문항</b>)에 <b>단 한 문항도 없습니다.</b> 원본 기출 PDF가 유교 건축(Q136)까지만 수록되어 있기 때문이며, 실제로 출제되지 않았다는 뜻이 <b>아닙니다.</b> 오히려 강사가 <b>"지금도 나와요"</b>(해수욕장), <b>"계속해서 나와요"</b>(석호)라고 <b>현재형</b>으로 말한 구간입니다.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">시험은 이 짝들을 서로 바꿔치기해서 냅니다.</p>
+<div class="cmp">
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 낙동강 · 한강</h4>
+<div class="vs"><div class="side a"><b>낙동강</b><b>유로 길이 1위</b><br>506km</div><div class="mid">VS</div><div class="side b"><b>한강</b><b>유역 면적 1위</b><br>(길이는 2위 494km)</div></div>
+<p class="why">"우리나라에서 가장 긴 강은 한강"은 <b class="x">틀립니다.</b> 길이는 낙동강, 넓이는 한강.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 하안단구 · 하식애</h4>
+<div class="vs"><div class="side n"><b>하안단구</b><b>계단</b> 모양 평탄지<br>→ <b>산간 마을</b></div><div class="mid">VS</div><div class="side a"><b>하식애</b><b>절벽</b><br>→ <b>정자</b>(부용대·촉석루)</div></div>
+<p class="why"><b>애(崖)=절벽</b>입니다. 사람이 살면 단구, 정자가 서 있으면 하식애.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 자연제방 · 배후습지</h4>
+<div class="vs"><div class="side g"><b>자연제방</b>물가 쪽 · <b>높음</b></div><div class="mid">VS</div><div class="side b"><b>배후습지</b>뒤쪽 · <b>낮음</b><br>(창녕 우포늪)</div></div>
+<p class="why">"배후습지가 자연제방보다 높다"는 문장은 <b class="x">틀립니다.</b> 낮으니까 물이 고이는 것입니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 해식애 · 파식대</h4>
+<div class="vs"><div class="side a"><b>해식애</b>급경사 <b>절벽</b><br>(서 있음)</div><div class="mid">VS</div><div class="side n"><b>파식대</b><b>평탄한</b> 지형<br>(누워 있음)</div></div>
+<p class="why">둘은 붙어 있어 함께 관광지가 됩니다 — 채석강·태종대.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 사빈 · 해안사구</h4>
+<div class="vs"><div class="side g"><b>사빈</b>파도가 쌓은 모래<br>→ <b>해수욕장</b></div><div class="mid">VS</div><div class="side b"><b>해안사구</b><b>바람</b>이 날린 모래<br>→ <b>모래 언덕</b>(태안 신두리)</div></div>
+<p class="why">바다 쪽이 사빈, 그 <b>뒤쪽</b>이 사구입니다. 만든 힘이 <b>파도냐 바람이냐</b>가 다릅니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 석호 · 갯벌</h4>
+<div class="vs"><div class="side b"><b>석호</b><b>동해안</b><br>사주가 만을 막아 생긴 호수</div><div class="mid">VS</div><div class="side a"><b>갯벌</b><b>서·남해안</b><br>조차가 커서 발달</div></div>
+<p class="why">"석호는 서해안에 발달한다"는 문장은 <b class="x">틀립니다.</b> 정반대입니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 대천 · 경포 — 어느 바다인가</h4>
+<div class="vs"><div class="side a"><b>대천</b><b>충남 보령 · 서해안</b><br>서해안 최대 · 머드축제</div><div class="mid">VS</div><div class="side b"><b>경포</b><b>강원 강릉 · 동해안</b><br>석호(경포호)와 세트</div></div>
+<p class="why">"대천 해수욕장은 동해안에 있다"는 문장은 <b class="x">틀립니다.</b> 행정구역 문제의 단골입니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> "~포"의 함정</h4>
+<div class="vs"><div class="side g"><b>충남의 포</b>무창포 · 학암포<br>천리포 · 만리포<br>몽산포 · 연포</div><div class="mid">VS</div><div class="side x2"><b>충남이 아닌 포</b><b>구룡포</b>(경북 포항)<br><b>율포</b>(전남 보성)<br><b>격포</b>(전북 부안)</div></div>
+<p class="why">"포"는 대부분 충남입니다. <b>예외 세 개만</b> 따로 외우면 끝납니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 해안형 국립공원의 "유일·최초"</h4>
+<div class="vs"><div class="side n"><b>한려해상</b>최초의 <b>해상</b></div><div class="mid">·</div><div class="side g"><b>태안해안</b>유일한 <b>해안</b></div></div>
+<div class="vs"><div class="side b"><b>다도해상</b>전체 <b>최대 면적</b></div><div class="mid">·</div><div class="side a"><b>변산반도</b>유일한 <b>반도형</b></div></div>
+<p class="why">네 곳 모두 "유일" 또는 "최초"가 붙어 있어 그대로 문제가 됩니다.</p></div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars"><ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"해수욕장 별표 3개 되어 있죠? 지금도 나와요. 근데 해수욕장은 주로 행정구역 문제예요."</b> 특정 해수욕장의 특징이 아니라 <b>어느 도(道)에 있는지</b>만 묻습니다. — 7/26 핵심강의 52:06경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"우리나라 해수욕장은 동해안에 많지만, 시험은 동해안보다 서해안이 더 많이 나와."</b> 공부 시간을 서해안(인천·충남·전북)에 더 배분하라는 뜻입니다. — 52:15경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"석호만 유일하게 빨간색으로 해놨죠? 시험에 잘 나와요. 계속해서 나와요. 석호는 동해안에서 발달합니다."</b> — 50:02경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"여러분들은 뭐만 기억하시면 돼요 — 가장 긴 강은 낙동강, 강의 면적이 가장 넓은 건 한강."</b> 이 한 줄이 5대 강 파트의 결론입니다. — 20:08경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"(퇴적 지형은) 시험에 나온 적은 없어요. 나온 건 딱 하나 한다면 하중도."</b> 선상지·범람원·삼각주는 개념만. — 6:15경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"패사 해변 3개 — 백령도 사곶, 충남 대천, 제주 협재. 이 3개는 항상 고민해야 된다고 그랬죠."</b> — 1:01:25경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"섬진강댐이 우리나라 최초의 다목적댐이야."</b> 그리고 실제로 <b>"다목적댐이 아닌 것을 고르시오"</b> 문제가 몇 년 전에 출제되었다고 언급했습니다. — 30:16 / 33:28경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"북한강에 있는 댐들을 한 번쯤은 생각해볼 필요는 있다. 다만 위치 순서까지 문제되지는 않습니다."</b> 화천·소양강·춘천·의암·청평. — 24:04경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>자주 헷갈리는 지역 매칭(7/31 문제풀이강의 31~33분경)</b> — <b>풍기온천=경북 영주 / 무창포=충남 / 선유도=전북 군산 / 송도해수욕장=현재 부산에만</b>(인천 송도는 매립되어 사라짐)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"자원은 국사처럼 뭔가 연결되고 흐름이 있는 게 아니라 단답적으로 외우는 거예요. 특별한 방법이 없어요."</b> 이 단원만큼은 반복 암기가 정답이라는 강사의 조언입니다. — 1:01:44경</div></li>
+</ul></div>
+</section>
+
+<section id="quizsec">
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 예상문제 14문항</h2>
+<p class="sub">보기를 눌러 고르고, 다 풀면 <b>채점하기</b>를 누르세요. 채점 후 <b>틀린 문제만 다시 풀기</b>와 <b>오답노트용 기록</b>이 나옵니다.</p>
+
+<div class="notice">
+<b>이 문제들은 기출이 아니라 예상문제입니다.</b> 이 두 단원은 기출 원문 정리본(136문항)에 해당 문항이 없어 기출을 그대로 실을 수 없었습니다. 대신 강사가 지목한 출제 유형(<b>해수욕장의 행정구역 매칭 · 석호 · 지형 명칭 매칭 · 강의 길이와 면적 · 다목적댐</b>)에 맞춰, <b>교재와 강의에 실제로 있는 사실만</b>으로 만들었습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 14 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/04_최종교재/관광자원.md</code>의 24단원(하천 관광자원)·25단원(해안 관광자원) + <b>강의전사본/핵심강의/7월26일.txt</b> 00:20~1:01:44 구간(하천 침식·퇴적 지형, 5대 강과 댐, 해안 침식·퇴적 지형, 석호, 해수욕장 지역별) + <b>강의전사본/문제풀이강의/7월31일.txt</b> 31~33분경(지역 매칭 함정).</p>
+<p><b>기출 실측 불가 사유</b> — <code>02_관광자원해설/03_작업자료/관광자원기출.md</code>(2013~2025년 136문항)의 수록 범위가 유교 건축(Q136)까지여서, 하천·해안 단원의 기출 원문이 존재하지 않습니다. 따라서 <b>빈도를 감으로 매기지 않고 교재의 별표와 강사의 발언을 근거로 표기</b>했습니다.</p>
+<p><b>추측 금지</b> — 교재·강의에 없는 내용은 넣지 않았습니다. 교재의 해수욕장 항목에 "경포대〈X, 동해임〉·왜곡주의"처럼 편집 중 메모로 보이는 표기가 있어, 지역 구분은 <b>강의 전사본에서 강사가 실제로 지역별로 호명한 목록</b>을 기준으로 정리했습니다. 전남 서해안 해수욕장은 강의에서 "확인 정도만"이라고 하여 개별 이름을 넣지 않았습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var UNIT='[관광자원해설 24·25단원 — 하천 관광자원 · 해안 관광자원]';
+var QS=[
+{n:1,src:"예상 · 강사 지목형(★★★)",q:"우리나라의 하천에 관한 설명으로 옳은 것은?",o:["유로 길이가 가장 긴 강은 한강이고, 유역 면적이 가장 넓은 강은 낙동강이다.","유로 길이가 가장 긴 강은 낙동강이고, 유역 면적이 가장 넓은 강은 한강이다.","유로 길이와 유역 면적 모두 한강이 1위이다.","유로 길이와 유역 면적 모두 낙동강이 1위이다."],a:1,c:"하천",e:"<b>유로 길이 1위는 낙동강(506km)</b>, <b>유역 면적 1위는 한강</b>입니다. 한강은 길이로는 494km로 2위입니다. 강사가 “여러분들은 이것만 기억하시면 된다”며 이 한 줄만 반복해 강조한 항목입니다."},
+{n:2,src:"예상 · 순위 함정형",q:"우리나라 하천의 유로 길이를 긴 것부터 바르게 나열한 것은?",o:["낙동강 > 한강 > 금강 > 임진강 > 섬진강 > 영산강","낙동강 > 한강 > 금강 > 섬진강 > 영산강 > 임진강","한강 > 낙동강 > 금강 > 임진강 > 섬진강 > 영산강","낙동강 > 금강 > 한강 > 임진강 > 섬진강 > 영산강"],a:0,c:"하천",e:"순서는 <b>낙동강(506) > 한강(494) > 금강(395) > 임진강(254) > 섬진강(224) > 영산강(138)</b>입니다. 발원지·댐까지 자세히 배우는 “5대 강”에는 임진강이 없지만, <b>길이 순위에는 임진강이 금강과 섬진강 사이에 끼어 있습니다.</b> 이것을 빠뜨리는 것이 대표적인 함정입니다."},
+{n:3,src:"예상 · 지형 매칭형",q:"다음 설명에 해당하는 하천 지형은?\n“융기 작용과 하천의 침식 작용이 함께 만들어낸 계단 모양의 지형으로, 산간 지역에서 마을이 가장 많이 형성되는 자리이다.”",o:["감입곡류하천","하안단구","하식애","선상지"],a:1,c:"하천",e:"<b>하안단구</b>입니다(하=강, 안=강가, 단=계단, 구=언덕). <b>감입곡류하천</b>은 산간을 굽이쳐 흐르는 하천(영월 동강), <b>하식애</b>는 강물의 침식으로 생긴 절벽(안동 부용대·진주 촉석루), <b>선상지</b>는 계곡 입구의 부채 모양 퇴적 지형입니다."},
+{n:4,src:"예상 · 강사 지목형(하중도)",q:"다음 중 하중도(河中島)에 해당하지 않는 것은?",o:["여의도","밤섬","을숙도","신두리"],a:3,c:"하천",e:"<b>신두리는 충남 태안의 해안사구</b>(바람에 날린 모래가 쌓인 언덕)이지 하중도가 아닙니다. <b>하중도는 강 가운데 있는 섬</b>으로, 여의도·밤섬(한강), 남이섬(북한강), 을숙도(낙동강 하구)가 대표적입니다. 강사는 하천 퇴적 지형 중 <b>시험에 나온 것은 하중도뿐</b>이라고 했습니다."},
+{n:5,src:"예상 · 함정형",q:"범람원에 관한 설명으로 옳지 않은 것은?",o:["하천이 오랜 기간 범람하면서 형성된 퇴적 지형이다.","물가 쪽에 자연스럽게 높게 쌓인 둑을 자연제방이라 한다.","배후습지는 자연제방보다 지대가 높은 곳에 형성된다.","대표적인 배후습지로 창녕 우포늪이 있다."],a:2,c:"하천",e:"<b>배후습지는 자연제방보다 지대가 낮은 뒤쪽</b>에 형성됩니다. 낮기 때문에 물이 고여 습지가 되는 것입니다. 창녕 우포늪은 대표적인 배후습지이자 <b>람사르 습지·생물권보전지역·천연보호구역</b>을 겸합니다."},
+{n:6,src:"예상 · 최초형",q:"우리나라 최초의 다목적댐은?",o:["섬진강댐","소양강댐","나주댐","대청댐"],a:0,c:"하천",e:"<b>섬진강댐</b>이 우리나라 최초의 다목적댐입니다. <b>다목적댐</b>이란 홍수 방지·전력 공급·농업용수(관개)·공업용수 공급 등 <b>여러 목적을 함께 가진 댐</b>을 말합니다. <b>나주댐</b>은 영산강 유역의 <b>국내 최대 관개용 댐</b>입니다. 강사는 “다목적댐이 아닌 것을 고르시오”라는 문제가 실제로 출제된 적이 있다고 언급했습니다."},
+{n:7,src:"예상 · 발원지/유역형",q:"우리나라 하천과 그 특징의 연결이 옳지 않은 것은?",o:["한강 — 남한강은 태백 대덕산 검룡소, 북한강은 북한 금강산에서 발원하며 경기 양평 양수리에서 합류한다.","낙동강 — 태백 함백산 황지못에서 시작해 영남 지방을 관통한다.","금강 — 충청남도와 전라북도의 경계를 흐르며 대청댐·용담댐이 있다.","영산강 — 우리나라에서 가장 긴 강이며 섬진강댐이 있다."],a:3,c:"하천",e:"<b>영산강은 138km로 5대 강 중 가장 짧은 강</b>이며, 댐은 장성·광주·담양·나주댐으로 모두 <b>관개(농업용수) 목적</b>입니다. 섬진강댐은 섬진강에 있습니다. 섬진강은 <b>전라남도와 경상남도의 경계</b>를 흐릅니다."},
+{n:8,src:"예상 · 강사 지목형(★★★ 석호)",q:"석호에 관한 설명으로 옳은 것은?",o:["조수 간만의 차가 커서 서해안에 주로 발달한다.","사주가 만의 입구를 막아 형성된 호수로, 동해안에 주로 발달한다.","화산 분화구에 물이 고여 형성된 호수이다.","하천의 유로 변경으로 강 가운데 생긴 섬을 말한다."],a:1,c:"해안",e:"<b>석호</b>는 <b>사주가 만의 입구를 막아 바닷물이 갇힌 뒤 민물이 흘러들어 만들어진 호수</b>로, <b>동해안에 발달</b>합니다 — 경포호(강릉), 청초호·영랑호(속초), 송지호·화진포(고성). 서해안은 조차가 커서 <b>갯벌</b>이 발달합니다. ④는 하중도의 설명입니다. 교재에서 <b>유일하게 붉은색</b>으로 표시된 항목입니다."},
+{n:9,src:"예상 · 지형 매칭형",q:"해안 지형과 그 설명의 연결이 옳지 않은 것은?",o:["해식애 — 파도의 침식으로 만들어진 급경사의 해안 절벽","파식대 — 해식애 앞에 발달한 평탄한 지형","시스택 — 파도가 깎고 남긴 돌기둥이나 작은 바위섬","해안사구 — 파도가 모래를 쌓아 만든 지형으로 해수욕장으로 이용된다"],a:3,c:"해안",e:"④는 <b>사빈</b>에 대한 설명입니다. <b>해안사구</b>는 <b>사빈의 모래가 바람에 날려 뒤쪽에 쌓인 모래 언덕</b>으로, 대표적인 곳이 <b>태안 신두리 사구</b>입니다. 만든 힘이 <b>파도(사빈)냐 바람(사구)이냐</b>가 구분 기준입니다."},
+{n:10,src:"예상 · 지역 매칭형(★★★)",q:"해수욕장과 소재지의 연결이 옳지 않은 것은?",o:["대천 해수욕장 — 충청남도 보령","경포 해수욕장 — 강원도 강릉","선유도 해수욕장 — 전라북도 군산","구룡포 해수욕장 — 충청남도 태안"],a:3,c:"해수욕장",e:"<b>구룡포는 경상북도 포항</b>에 있는 동해안 해수욕장입니다. “~포”가 붙은 해수욕장은 대부분 충남이지만 <b>예외 세 곳</b>이 있습니다 — <b>구룡포(경북 포항)·율포(전남 보성)·격포(전북 부안)</b>. 강사가 7/31 문제풀이에서 <b>선유도=전북 군산</b>을 “자주 헷갈리는 매칭”으로 짚었습니다."},
+{n:11,src:"예상 · 강사 지목형(패사 해변)",q:"조개껍데기가 잘게 부서져 형성된 패사(貝砂) 해변에 해당하는 것을 모두 고른 것은?\nㄱ. 백령도 사곶  ㄴ. 대천  ㄷ. 협재  ㄹ. 해운대",o:["ㄱ, ㄴ","ㄱ, ㄴ, ㄷ","ㄴ, ㄷ, ㄹ","ㄱ, ㄷ, ㄹ"],a:1,c:"해수욕장",e:"패사 해변은 <b>백령도 사곶(인천)·대천(충남 보령)·협재(제주)</b> 세 곳입니다. 강사가 <b>“이 3개는 항상 고민해야 된다”</b>고 세트로 묶어 강조했습니다. 특히 <b>백령도 사곶</b>은 바닥이 단단해 <b>천연 비행장</b>으로 쓸 수 있습니다."},
+{n:12,src:"예상 · 동/서해안 구분형",q:"우리나라 해안에 관한 설명으로 옳지 않은 것은?",o:["동해안은 융기 해안으로 해안선이 단조롭고 수심이 깊다.","서·남해안은 해안선이 복잡하고 조수 간만의 차가 커서 갯벌이 발달한다.","동해안에는 해안단구가 발달하며 대표적인 곳이 정동진이다.","대천 해수욕장은 동해안을 대표하는 해수욕장이다."],a:3,c:"해안",e:"<b>대천 해수욕장은 충남 보령의 서해안</b> 해수욕장으로, <b>서해안 최대 규모</b>이며 <b>보령 머드축제</b>가 열리는 곳입니다. 동해안을 대표하는 해수욕장은 강릉 경포·속초·낙산 등입니다."},
+{n:13,src:"예상 · 유일/최초형",q:"해안형 국립공원에 관한 설명으로 옳지 않은 것은?",o:["한려해상 국립공원은 최초의 해상 국립공원이다.","태안해안 국립공원은 국내 유일의 해안 국립공원이다.","다도해상 국립공원은 국립공원 중 면적이 가장 넓다.","변산반도 국립공원은 최초의 도심형 국립공원이다."],a:3,c:"해안",e:"<b>변산반도는 우리나라 유일의 반도형 국립공원</b>입니다. <b>최초의 도심형 국립공원은 부산 금정산(2025)</b>입니다. 나머지는 모두 맞습니다 — 한려해상(1968, 최초의 해상), 태안해안(1978, 유일한 해안), 다도해상(1981, 전체 최대 면적)."},
+{n:14,src:"예상 · 하굿둑/육계도형",q:"다음 설명 중 옳은 것을 모두 고른 것은?\nㄱ. 하굿둑은 바닷물이 거슬러 올라와 생기는 염해를 막기 위해 만들었다.\nㄴ. 사주가 육지와 섬을 연결하면 그 섬을 육계도라 하며, 제주 성산포가 대표적이다.\nㄷ. 삼각주는 토질이 나빠 농경지로 쓰기 어렵다.\nㄹ. 감입곡류하천의 대표적인 곳은 강원 영월 동강이다.",o:["ㄱ, ㄴ, ㄷ","ㄱ, ㄴ, ㄹ","ㄱ, ㄷ, ㄹ","ㄴ, ㄷ, ㄹ"],a:1,c:"종합",e:"ㄱ·ㄴ·ㄹ이 옳습니다. <b>ㄷ이 틀립니다</b> — <b>삼각주는 토질이 가장 좋은 땅</b>이며, 낙동강 하구의 <b>김해평야</b>가 대표적인 쌀 생산지입니다. 하굿둑은 <b>염해 방지</b>가 주목적이고 <b>교통로</b> 역할도 하며, 금강·영산강에 있습니다."}
+];
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx=''+UNIT+' 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\n/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>
