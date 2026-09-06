@@ -1,0 +1,100 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>통치조직 · 남북국 — 순서 나열 대비 타임라인</title>
+<style>
+*{box-sizing:border-box}
+:root{--z:1.08;--paper:#FDFBF6;--card:#fff;--ink:#232019;--ink2:#5A5145;--line:#DCD3C1;--line2:#B0A28A;
+ --ax:#9B8A64;--gold:#A8822C;--hot:#C8452F;--key:#3E7A4E;--hl:#FDEFAE}
+@media(prefers-color-scheme:dark){:root{--paper:#16140F;--card:#1F1C15;--ink:#EDE6D8;--ink2:#A99C88;
+ --line:#39332A;--line2:#544B3B;--hl:#5A4A14}}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;word-break:keep-all}
+.zbar{position:sticky;top:0;z-index:80;display:flex;gap:7px;align-items:center;flex-wrap:wrap;
+ padding:7px 14px;background:var(--paper);border-bottom:1.5px solid var(--line2)}
+.zbar button{border:1.5px solid var(--line2);background:var(--card);color:var(--ink);border-radius:9px;
+ padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.zbar b{font-size:12.5px;color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:14px 16px 70px}
+.kick{font-size:11px;font-weight:800;color:var(--gold)}
+h1{font-size:21px;margin:2px 0 4px}
+.lead{font-size:12.2px;color:var(--ink2);line-height:1.75;margin:0 0 14px}
+.h{background:var(--hl);border-radius:2px;padding:0 1px;font-weight:800}
+.d{color:var(--ink2)}
+
+.rail{position:relative;padding:4px 0}
+.rail::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:2.5px;
+ background:var(--ax);transform:translateX(-50%);border-radius:3px}
+.nd{display:flex;align-items:center;margin:0 0 calc(11px*var(--z));position:relative}
+.nd.d{flex-direction:row-reverse}
+.side{width:calc(50% - 80px*var(--z));display:flex}
+.nd.u .side{justify-content:flex-end;padding-right:calc(11px*var(--z))}
+.nd.d .side{justify-content:flex-start;padding-left:calc(11px*var(--z))}
+.gap{width:calc(50% - 80px*var(--z))}
+.mid{width:calc(160px*var(--z));flex:0 0 auto;display:flex;justify-content:center;position:relative}
+.mid::before{content:"";position:absolute;top:50%;height:2.2px;background:var(--ax);width:16px}
+.nd.u .mid::before{left:-16px}.nd.d .mid::before{right:-16px}
+.pill{background:var(--card);border:2.6px solid var(--gold);border-radius:999px;
+ padding:calc(6px*var(--z)) calc(16px*var(--z));font-size:calc(18px*var(--z));font-weight:800;
+ box-shadow:0 1px 4px rgba(80,60,20,.10);
+ color:var(--gold);white-space:nowrap;z-index:2;line-height:1.35;letter-spacing:.2px}
+.nd.hot .pill{border-color:var(--hot);color:var(--hot)}
+.nd.key .pill{border-color:var(--key);color:var(--key)}
+.nd.hot .mid::before{background:var(--hot)}.nd.key .mid::before{background:var(--key)}
+.cd{background:var(--card);border:1.5px solid var(--line2);border-radius:11px;overflow:hidden;
+ box-shadow:0 2px 6px rgba(80,60,20,.06);max-width:100%}
+.nd.hot .cd{border-color:#D08878}.nd.key .cd{border-color:#7FAF8C}
+.cd h3{margin:0;padding:calc(6px*var(--z)) calc(11px*var(--z));font-size:calc(14px*var(--z));font-weight:800;
+ background:#F2EFE7;border-bottom:1.2px solid var(--line);line-height:1.4}
+.hy{font-size:calc(11.5px*var(--z));font-weight:800;color:var(--ink2);opacity:.85;margin-right:6px;
+ letter-spacing:.2px}
+.nd.hot .hy{color:#B4695C}.nd.key .hy{color:#5E8E6C}
+.nd.d .cd h3{text-align:left}.nd.u .cd h3{text-align:right}
+.nd.hot .cd h3{background:#FBEAEA;color:#9C2F2F}
+.nd.key .cd h3{background:#E9F3EC;color:#2F6B3E}
+@media(prefers-color-scheme:dark){.cd h3{background:#2A251C}
+ .nd.hot .cd h3{background:#3A211E;color:#F0B0A4}.nd.key .cd h3{background:#1E2E22;color:#9FD3AF}}
+.cd ul{margin:0;padding:calc(7px*var(--z)) calc(12px*var(--z));list-style:none;
+ font-size:calc(12.4px*var(--z));line-height:1.78}
+.cd li{margin:2px 0}
+.nd.u .cd ul{text-align:right}
+@media(max-width:620px){
+ .rail::before{left:48px;transform:none}
+ .nd,.nd.d{flex-direction:row;align-items:flex-start;margin-bottom:14px}
+ .gap{display:none}
+ .mid{width:auto;min-width:96px;order:-1;justify-content:flex-start;padding-top:4px;flex:0 0 auto}
+ .mid::before{display:none}
+ .side{width:auto;flex:1;min-width:0;order:0;padding:0 0 0 9px!important;justify-content:flex-start!important}
+ .cd{width:100%}
+ .pill{font-size:calc(15.5px*var(--z));padding:4px 11px}
+ .nd.u .cd h3,.nd.u .cd ul{text-align:left}
+ .pill{margin-left:2px}
+}
+@media print{@page{size:A4;margin:11mm}.zbar{display:none!important}
+ .nd{break-inside:avoid;page-break-inside:avoid}}
+</style><style>
+.cd table{border-collapse:collapse;width:100%;font-size:calc(12.3px*var(--z))}
+.cd th,.cd td{border:1px solid var(--line);padding:calc(5px*var(--z)) calc(8px*var(--z));
+ vertical-align:top;line-height:1.7;text-align:left}
+.cd th{background:#F5F2EA;font-weight:800;white-space:nowrap;width:1%;color:var(--ink2)}
+@media(prefers-color-scheme:dark){.cd th{background:#241F18}}
+.cd tr:first-child th,.cd tr:first-child td{border-top:0}
+.cd tr:last-child th,.cd tr:last-child td{border-bottom:0}
+.cd th:first-child{border-left:0}.cd td:last-child{border-right:0}
+.fq{padding:calc(5px*var(--z)) calc(11px*var(--z));font-size:calc(11.4px*var(--z));
+ color:var(--ink2);border-top:1px dashed var(--line2);line-height:1.6;text-align:left}
+.fq b{color:var(--hot)}
+.fq .tg{display:block;margin-top:calc(2px*var(--z));opacity:.62;font-size:.92em;letter-spacing:.2px}
+.pill{box-sizing:border-box;width:calc(136px*var(--z));height:calc(88px*var(--z));
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ border-radius:calc(13px*var(--z))!important;padding:calc(7px*var(--z)) calc(8px*var(--z))!important;
+ font-size:calc(15px*var(--z))!important;white-space:normal!important;
+ line-height:1.32;letter-spacing:0;text-align:center;word-break:keep-all}
+.pill i{display:block;font-style:normal;font-size:1em;font-weight:800;width:100%;
+ margin-top:calc(4px*var(--z));padding-top:calc(4px*var(--z));
+ border-top:1.4px solid currentColor;line-height:1.32;text-align:center}
+@media(max-width:620px){
+ .pill{width:calc(112px*var(--z));height:calc(74px*var(--z));
+  font-size:calc(13.5px*var(--z))!important;padding:calc(5px*var(--z)) calc(6px*var(--z))!important}
+}
+.nd.u .cd h3,.nd.u .cd .fq{text-align:right}
+</style><div class="zbar"><b>크기</b><button onclick="zm(-.1)">가−</button><button onclick="zm(.1)">가+</button><b id="zv">108%</b><button onclick="window.print()">인쇄 / PDF</button></div><div class="wrap"><div class="kick">2026 관광통역안내사 필기 · 관광국사</div><h1>통치조직 · 남북국 — 순서 나열 대비 타임라인</h1><p class="lead">삼국의 통치조직에서 시작해 통일신라와 발해를 한 줄로 세웠습니다. 통일신라와 발해는 같은 시기를 나란히 살았으니 연도로 위아래를 맞춰 읽으세요.<br>붉은 칸은 13개년 순서 · 연표 문제에 실제로 나온 사건입니다. 이 시대의 순서 문제는 후삼국 구간에 몰려 있습니다.</p><div class="rail"><div class="nd key u"><div class="side"><div class="cd"><h3><span class="hy">3세기</span>백제 고이왕 — 6좌평 · 16관등</h3><table><tr><th>왕</th><td><b class="h">고이왕</b></td></tr><tr><th>제도</th><td><b class="h">6좌평</b> · 공복 색으로 관리를 세 부류로 구별</td></tr><tr><th>관등 · 관직</th><td><b class="h">16관등</b> — 솔 · 덕 계열 · <b>방령</b> · <b>상좌평</b></td></tr><tr><th>다른 나라</th><td>고구려 대대로 · 10여 관등 / 신라 이벌찬 · 17관등 · 관복 4색</td></tr></table><div class="fq">키워드 등장 기출 <b>3문항</b> · 최근5년 3 · 오답 선지 3 · <span class="tg">2021-04 2023-07 2025-05</span></div></div></div><div class="mid"><span class="pill">3세기<i>백제 고이왕</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">6세기 초</span>신라 — 화백회의 · 골품제</h3><table><tr><th>나라</th><td>신라</td></tr><tr><th>회의 기구</th><td><b class="h">화백회의</b> — 의장 <b>상대등</b> · 국가 중대사 결정 · 왕권 견제</td></tr><tr><th>제도</th><td><b class="h">골품제</b> — 관등 상한선 · 가옥 규모 · 수레 크기 제한 · 신분 간 이동 불가</td></tr><tr><th>관등 상한</th><td>진골 이벌찬 · <b class="h">6두품 아찬</b>(득난) · 5두품 10관등 · 4두품 12관등</td></tr><tr><th>다른 나라</th><td>고구려 <b>제가회의</b> / 백제 <b>정사암 회의</b></td></tr></table><div class="fq">키워드 등장 기출 <b>8문항</b> · 최근5년 4 · 발문 1 · 정답 선지 1 · 오답 선지 6 · <span class="tg">2020-21 2022-03 2022-06 2023-07 2025-05</span></div></div></div><div class="mid"><span class="pill">6세기 초<i>신라</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">6세기 중반</span>백제 성왕 — 22부 정비</h3><table><tr><th>왕</th><td><b class="h">성왕</b></td></tr><tr><th>제도</th><td>중앙 <b class="h">22부</b> 실무 관청</td></tr><tr><th>관등 · 관직</th><td>5방 — <b>방령</b> · 성 · 군 · <b>군장</b></td></tr><tr><th>다른 나라</th><td>고구려 5부(욕살) / 신라 5주(군주)</td></tr></table><div class="fq">키워드 등장 기출 <b>9문항</b> · 최근5년 5 · 발문 3 · 정답 선지 1 · 오답 선지 5 · <span class="tg">2021-04 2021-07 2023-07 2024-09 2025-05</span></div></div></div><div class="mid"><span class="pill">6세기 중반<i>백제 성왕</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">654</span>신라 무열왕 — 중대 시작</h3><table><tr><th>왕</th><td><b class="h">무열왕</b> — 첫 진골 출신</td></tr><tr><th>한 일</th><td>진골 왕위 세습 · <b class="h">신라 중대</b> 시작</td></tr><tr><th>제도</th><td><b class="h">집사부</b> — 국왕 직속 최고 기구 · 장관 <b>시중</b> · 위화부 등 13부 · 사정부(감찰)</td></tr><tr><th>시대 구분</th><td>상대 성골 박혁거세~진덕여왕 / 중대 무열계 / 하대 내물계 선덕왕~경순왕</td></tr></table><div class="fq">키워드 등장 기출 <b>6문항</b> · 최근5년 2 · 발문 1 · 정답 선지 2 · 오답 선지 3 · <span class="tg">2018-14 2019-09 2020-15 2023-06 2025-05</span></div></div></div><div class="mid"><span class="pill">654<i>신라 무열왕</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">681</span>신라 신문왕 — 왕권 강화</h3><table><tr><th>왕</th><td><b class="h">신문왕</b></td></tr><tr><th>한 일</th><td><b class="h">김흠돌의 난</b> 진압 · 달구벌(대구) 천도 시도 · 만파식적</td></tr><tr><th>제도</th><td><b class="h">9주 5소경</b> · <b class="h">9서당</b>(중앙군) · 10정(지방군) · 국학 설립</td></tr><tr><th>토지</th><td><b>관료전</b> 지급 → <b>녹읍 폐지</b></td></tr><tr><th>다른 왕</th><td>독서삼품과 — 원성왕 / 정전 — 성덕왕</td></tr></table><div class="fq">키워드 등장 기출 <b>7문항</b> · 최근5년 3 · 정답 선지 2 · 오답 선지 5 · <span class="tg">2017-09 2018-02 2023-06 2024-04 2025-09</span></div></div></div><div class="mid"><span class="pill">681<i>신라 신문왕</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">698</span>발해 대조영 — 동모산 건국</h3><table><tr><th>왕</th><td><b class="h">대조영</b>(고왕)</td></tr><tr><th>한 일</th><td>지린성 <b class="h">동모산</b> 건국(698) · 고구려 유민 + 말갈 · <b>고구려 계승 의식</b></td></tr><tr><th>영토 · 대외</th><td><b class="h">5경 15부 62주</b> — 15부 도독 · 62주 자사 · 촌장 <b>토인</b>(고구려인) · 일본 국서 「고려국왕」</td></tr><tr><th>유적 · 유물</th><td>정혜공주묘 · 영안현 동경성 · 온돌 · 굴식 돌방무덤 모임 천장</td></tr></table><div class="fq">키워드 등장 기출 <b>7문항</b> · 최근5년 3 · 정답 선지 3 · 오답 선지 4 · <span class="tg">2017-09 2020-16 2022-07 2023-09 2024-05</span></div></div></div><div class="mid"><span class="pill">698<i>발해 대조영</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">722</span>신라 성덕왕 — 정전 지급</h3><table><tr><th>왕</th><td><b class="h">성덕왕</b></td></tr><tr><th>한 일</th><td>백성에게 <b class="h">정전</b> 지급 · 조세 징수 · 농민 지배력 강화</td></tr><tr><th>토지</th><td>녹읍 — 조세 ○ · 노동력 ○ / 관료전 — 조세 ○ · 노동력 ✕</td></tr><tr><th>다른 왕</th><td>관료전 지급 · 녹읍 폐지 — 신문왕(689) / 녹읍 부활 — 경덕왕(757)</td></tr></table><div class="fq">키워드 등장 기출 <b>6문항</b> · 최근5년 2 · 발문 1 · 정답 선지 1 · 오답 선지 4 · <span class="tg">2016-05 2017-08 2019-22 2022-08 2024-04</span></div></div></div><div class="mid"><span class="pill">722<i>신라 성덕왕</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">8세기 전반</span>발해 무왕 — 산둥 공격</h3><table><tr><th>왕</th><td><b class="h">무왕</b> — 연호 <b class="h">인안</b></td></tr><tr><th>한 일</th><td><b>장문휴</b>의 <b>산둥반도</b> 공격 · 요서 침략 · 북만주 장악</td></tr><tr><th>영토 · 대외</th><td>당과 대립 · 돌궐 · 일본과 친선 → 당 · 신라 견제</td></tr><tr><th>다른 왕</th><td>대흥 · 상경 천도 · 3성 6부 — 문왕 / 해동성국 · 요동 진출 — 선왕</td></tr></table><div class="fq">키워드 등장 기출 <b>6문항</b> · 최근5년 4 · 발문 2 · 정답 선지 1 · 오답 선지 3 · <span class="tg">2019-06 2021-07 2023-06 2023-09 2025-09</span></div></div></div><div class="mid"><span class="pill">8세기 전반<i>발해 무왕</i></span></div><div class="gap"></div></div><div class="nd  u"><div class="side"><div class="cd"><h3><span class="hy">757</span>신라 경덕왕 — 녹읍 부활</h3><table><tr><th>왕</th><td><b class="h">경덕왕</b></td></tr><tr><th>한 일</th><td><b class="h">녹읍 부활</b> · 사원 면세지 증가 · 국가 재정 악화</td></tr><tr><th>배경</th><td>왕권 약화 · 진골 귀족 반발</td></tr><tr><th>다른 왕</th><td>정전 — 성덕왕 / 관료전 지급 · 녹읍 폐지 — 신문왕</td></tr></table><div class="fq">키워드 등장 기출 <b>0문항</b></div></div></div><div class="mid"><span class="pill">757<i>신라 경덕왕</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">8세기 후반</span>발해 문왕 — 상경 천도</h3><table><tr><th>왕</th><td><b class="h">문왕</b> — 연호 <b>대흥</b> · 전륜성왕 자처</td></tr><tr><th>한 일</th><td><b class="h">상경 천도</b> · 주자감 설치 · 당과 친선 · <b>신라도</b> 개설</td></tr><tr><th>제도</th><td><b class="h">3성 6부</b> — 정당성 · 선조성 · 중대성 · 장관 <b class="h">대내상</b>이 국정 총괄 · 중정대(감찰)</td></tr><tr><th>유적 · 유물</th><td>상경성 — 당 <b>장안성</b> 모방 · 주작대로</td></tr><tr><th>다른 나라</th><td><b>위화부</b> · 사정부 — 신라 관청</td></tr></table><div class="fq">키워드 등장 기출 <b>7문항</b> · 최근5년 5 · 발문 1 · 정답 선지 1 · 오답 선지 5 · <span class="tg">2021-07 2022-07 2023-09 2024-05 2025-09</span></div></div></div><div class="mid"><span class="pill">8세기 후반<i>발해 문왕</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">788</span>신라 원성왕 — 독서삼품과</h3><table><tr><th>왕</th><td><b class="h">원성왕</b></td></tr><tr><th>한 일</th><td><b class="h">독서삼품과</b> — 유교 경전 이해로 관리 선발</td></tr><tr><th>제도</th><td>국학 — 공자와 제자들의 화상 안치 / 발해 주자감 / 고구려 태학</td></tr><tr><th>다른 나라</th><td><b>국자감</b> — 고려의 교육 기관</td></tr></table><div class="fq">키워드 등장 기출 <b>5문항</b> · 최근5년 3 · 발문 1 · 정답 선지 2 · 오답 선지 2 · <span class="tg">2016-13 2018-07 2023-06 2024-06 2025-11</span></div></div></div><div class="mid"><span class="pill">788<i>신라 원성왕</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">822 · 828</span>신라 하대 — 김헌창의 난 · 청해진</h3><table><tr><th>사건</th><td><b class="h">김헌창의 난</b>(822) · 김범문의 난 · <b class="h">장보고의 난</b>(846)</td></tr><tr><th>인물</th><td>김헌창 — 원성왕과의 왕위 다툼에 패한 아버지 / 장보고 — 해상 세력</td></tr><tr><th>한 일</th><td>웅주(공주) 근거 · 국호 <b>장안</b> · 연호 <b>경운</b></td></tr><tr><th>유적 · 유물</th><td>청해진 — 완도</td></tr></table><div class="fq">키워드 등장 기출 <b>5문항</b> · 최근5년 1 · 발문 2 · 오답 선지 3 · <span class="tg">2013-19 2013-21 2017-07 2018-07 2023-09</span></div></div></div><div class="mid"><span class="pill">822 · 828<i>신라 하대</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">9세기 말</span>신라 하대 — 호족 · 선종 · 풍수지리</h3><table><tr><th>세력</th><td><b class="h">호족</b> — 성주 · 장군 자처 · 촌주 · 해상(장보고) · 군진(견훤) · 초적(양길) 출신</td></tr><tr><th>배경</th><td>진골의 <b>왕위 쟁탈전</b> · 상대등 강화 · 집사부 시중 약화 · 지방 통제력 약화</td></tr><tr><th>사상</th><td><b class="h">선종</b> 9산선문 → <b>승탑</b> · 탑비 유행 · <b class="h">풍수지리설</b> · 도교 · 노장사상</td></tr><tr><th>인물</th><td>6두품 <b>최치원</b> 시무 10조 · 최승우 · 최언위 → 골품제 비판</td></tr><tr><th>결과</th><td>원종 · 애노의 난 · 적고적의 난(진성여왕)</td></tr></table><div class="fq">키워드 등장 기출 <b>9문항</b> · 최근5년 3 · 발문 3 · 정답 선지 1 · 오답 선지 5 · <span class="tg">2019-07 2020-21 2022-09 2024-08 2025-04</span></div></div></div><div class="mid"><span class="pill">9세기 말<i>신라 하대</i></span></div><div class="gap"></div></div><div class="nd key d"><div class="side"><div class="cd"><h3><span class="hy">900 · 901</span>후백제 · 후고구려 건국</h3><table><tr><th>나라</th><td><b class="h">후백제</b>(900) · <b class="h">후고구려</b>(901)</td></tr><tr><th>인물</th><td>견훤 — 군진 세력 / 궁예 — 미륵불 자처</td></tr><tr><th>도읍</th><td>후백제 <b class="h">완산주(전주)</b> / 후고구려 <b>송악(개성)</b> → 철원</td></tr><tr><th>제도</th><td>광평성 설치 · 국호 마진 → 태봉</td></tr></table><div class="fq">키워드 등장 기출 <b>3문항</b> · 최근5년 1 · 정답 선지 1 · 오답 선지 2 · 순서 문제 2016-11 · <span class="tg">2013-06 2016-11 2025-08</span></div></div></div><div class="mid"><span class="pill">900 · 901<i>후삼국</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">918</span>고려 — 왕건 건국</h3><table><tr><th>나라</th><td><b class="h">고려</b>(918)</td></tr><tr><th>인물</th><td><b>왕건</b> — 궁예를 몰아냄</td></tr><tr><th>도읍</th><td><b class="h">송악(개성)</b></td></tr><tr><th>결과</th><td>후백제(900) → 후고구려(901) → 고려(918)</td></tr></table><div class="fq">키워드 등장 기출 <b>40문항</b> · 최근5년 12 · 발문 34 · 정답 선지 2 · 오답 선지 4 · 순서 문제 2016-11 · <span class="tg">2023-11 2023-20 2024-12 2025-11 2025-12</span></div></div></div><div class="mid"><span class="pill">918<i>고려</i></span></div><div class="gap"></div></div><div class="nd  d"><div class="side"><div class="cd"><h3><span class="hy">926 · 935</span>발해 멸망 · 신라 멸망</h3><table><tr><th>사건</th><td><b class="h">발해 멸망</b>(926) · <b class="h">신라 멸망</b>(935) · 후백제 멸망(936)</td></tr><tr><th>상대</th><td>발해 — 거란족 침입</td></tr><tr><th>인물</th><td><b>경순왕</b> — 고려 귀순 / <b>대광현</b> — 발해 유민, 고려에 흡수</td></tr><tr><th>결과</th><td><b>후삼국 통일</b>(936)</td></tr></table><div class="fq">키워드 등장 기출 <b>1문항</b> · 최근5년 0 · 오답 선지 1 · 순서 문제 2016-11 · <span class="tg">2016-11</span></div></div></div><div class="mid"><span class="pill">926 · 935<i>발해 · 신라 멸망</i></span></div><div class="gap"></div></div></div></div><script>var Z=1.08;function zm(a){Z=Math.min(1.6,Math.max(.8,Math.round((Z+a)*10)/10));document.documentElement.style.setProperty('--z',Z);document.getElementById('zv').textContent=Math.round(Z*100)+'%';}</script>
+</body></html>

@@ -1,0 +1,125 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>순서 나열 문제 22문항 — 13개년 전부</title>
+<style>
+*{box-sizing:border-box}
+:root{--z:1.08;--paper:#FDFBF6;--card:#fff;--ink:#232019;--ink2:#5A5145;--line:#DCD3C1;--line2:#B0A28A;
+ --ax:#9B8A64;--gold:#A8822C;--hot:#C8452F;--key:#3E7A4E;--hl:#FDEFAE}
+@media(prefers-color-scheme:dark){:root{--paper:#16140F;--card:#1F1C15;--ink:#EDE6D8;--ink2:#A99C88;
+ --line:#39332A;--line2:#544B3B;--hl:#5A4A14}}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;word-break:keep-all}
+.zbar{position:sticky;top:0;z-index:80;display:flex;gap:7px;align-items:center;flex-wrap:wrap;
+ padding:7px 14px;background:var(--paper);border-bottom:1.5px solid var(--line2)}
+.zbar button{border:1.5px solid var(--line2);background:var(--card);color:var(--ink);border-radius:9px;
+ padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.zbar b{font-size:12.5px;color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:14px 16px 70px}
+.kick{font-size:11px;font-weight:800;color:var(--gold)}
+h1{font-size:21px;margin:2px 0 4px}
+.lead{font-size:12.2px;color:var(--ink2);line-height:1.75;margin:0 0 14px}
+.h{background:var(--hl);border-radius:2px;padding:0 1px;font-weight:800}
+.d{color:var(--ink2)}
+
+.rail{position:relative;padding:4px 0}
+.rail::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:2.5px;
+ background:var(--ax);transform:translateX(-50%);border-radius:3px}
+.nd{display:flex;align-items:center;margin:0 0 calc(11px*var(--z));position:relative}
+.nd.d{flex-direction:row-reverse}
+.side{width:calc(50% - 71px);display:flex}
+.nd.u .side{justify-content:flex-end;padding-right:calc(11px*var(--z))}
+.nd.d .side{justify-content:flex-start;padding-left:calc(11px*var(--z))}
+.gap{width:calc(50% - 71px)}
+.mid{width:142px;flex:0 0 auto;display:flex;justify-content:center;position:relative}
+.mid::before{content:"";position:absolute;top:50%;height:2.2px;background:var(--ax);width:16px}
+.nd.u .mid::before{left:-16px}.nd.d .mid::before{right:-16px}
+.pill{background:var(--card);border:2.6px solid var(--gold);border-radius:999px;
+ padding:calc(6px*var(--z)) calc(16px*var(--z));font-size:calc(18px*var(--z));font-weight:800;
+ box-shadow:0 1px 4px rgba(80,60,20,.10);
+ color:var(--gold);white-space:nowrap;z-index:2;line-height:1.35;letter-spacing:.2px}
+.nd.hot .pill{border-color:var(--hot);color:var(--hot)}
+.nd.key .pill{border-color:var(--key);color:var(--key)}
+.nd.hot .mid::before{background:var(--hot)}.nd.key .mid::before{background:var(--key)}
+.cd{background:var(--card);border:1.5px solid var(--line2);border-radius:11px;overflow:hidden;
+ box-shadow:0 2px 6px rgba(80,60,20,.06);max-width:100%}
+.nd.hot .cd{border-color:#D08878}.nd.key .cd{border-color:#7FAF8C}
+.cd h3{margin:0;padding:calc(6px*var(--z)) calc(11px*var(--z));font-size:calc(14px*var(--z));font-weight:800;
+ background:#F2EFE7;border-bottom:1.2px solid var(--line);line-height:1.4}
+.hy{font-size:calc(11.5px*var(--z));font-weight:800;color:var(--ink2);opacity:.85;margin-right:6px;
+ letter-spacing:.2px}
+.nd.hot .hy{color:#B4695C}.nd.key .hy{color:#5E8E6C}
+.nd.d .cd h3{text-align:left}.nd.u .cd h3{text-align:right}
+.nd.hot .cd h3{background:#FBEAEA;color:#9C2F2F}
+.nd.key .cd h3{background:#E9F3EC;color:#2F6B3E}
+@media(prefers-color-scheme:dark){.cd h3{background:#2A251C}
+ .nd.hot .cd h3{background:#3A211E;color:#F0B0A4}.nd.key .cd h3{background:#1E2E22;color:#9FD3AF}}
+.cd ul{margin:0;padding:calc(7px*var(--z)) calc(12px*var(--z));list-style:none;
+ font-size:calc(12.4px*var(--z));line-height:1.78}
+.cd li{margin:2px 0}
+.nd.u .cd ul{text-align:right}
+@media(max-width:620px){
+ .rail::before{left:48px;transform:none}
+ .nd,.nd.d{flex-direction:row;align-items:flex-start;margin-bottom:14px}
+ .gap{display:none}
+ .mid{width:auto;min-width:96px;order:-1;justify-content:flex-start;padding-top:4px;flex:0 0 auto}
+ .mid::before{display:none}
+ .side{width:auto;flex:1;min-width:0;order:0;padding:0 0 0 9px!important;justify-content:flex-start!important}
+ .cd{width:100%}
+ .pill{font-size:calc(15.5px*var(--z));padding:4px 11px}
+ .nd.u .cd h3,.nd.u .cd ul{text-align:left}
+ .pill{margin-left:2px}
+}
+@media print{@page{size:A4;margin:11mm}.zbar{display:none!important}
+ .nd{break-inside:avoid;page-break-inside:avoid}}
+</style><style>
+.wrap{max-width:900px}
+.stat{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.st{background:var(--card);border:1.6px solid var(--line2);border-radius:11px;padding:8px 14px;
+ font-size:calc(12.5px*var(--z));line-height:1.5}
+.st b{display:block;font-size:calc(19px*var(--z));color:var(--gold)}
+.qc{background:var(--card);border:1.6px solid var(--line2);border-radius:12px;margin:0 0 13px;overflow:hidden}
+.qh{display:flex;align-items:center;gap:8px;padding:7px 13px;background:#F2EFE7;
+ border-bottom:1.3px solid var(--line);font-size:calc(12px*var(--z));font-weight:800;flex-wrap:wrap}
+@media(prefers-color-scheme:dark){.qh{background:#2A251C}}
+.qh .no{background:var(--gold);color:#fff;border-radius:7px;padding:2px 9px}
+.qh .yr{color:var(--hot)} .qh .un{color:var(--ink2);font-weight:700}
+.qb{padding:11px 14px}
+.qs{font-size:calc(13.6px*var(--z));font-weight:700;line-height:1.7;margin:0 0 9px}
+.bg{border:1.4px dashed var(--line2);border-radius:9px;padding:8px 12px;margin:0 0 10px;
+ font-size:calc(13px*var(--z));line-height:1.85}
+.bg div{margin:2px 0}
+.ops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+@media(max-width:560px){.ops{grid-template-columns:1fr}}
+.ops li{border:1.4px solid var(--line);border-radius:9px;padding:7px 11px;cursor:pointer;
+ font-size:calc(13.2px*var(--z));line-height:1.6;display:flex;gap:8px;user-select:none}
+.ops li:hover{border-color:var(--line2)}
+.ops li i{font-style:normal;color:var(--ink2);font-weight:800}
+.qc.done .ops li{cursor:default}
+.ops li.ok{border-color:var(--key);background:rgba(62,122,78,.10);font-weight:700}
+.ops li.no{border-color:var(--hot);background:rgba(200,69,47,.08)}
+.ans{display:none;margin-top:9px;padding:8px 12px;border-left:4px solid var(--gold);
+ background:#FBF6E8;border-radius:0 8px 8px 0;font-size:calc(12.6px*var(--z));line-height:1.75}
+@media(prefers-color-scheme:dark){.ans{background:#2C2618}}
+.qc.done .ans{display:block}
+.sc{position:sticky;bottom:12px;margin:16px 0 0;background:var(--gold);color:#fff;border-radius:11px;
+ padding:10px 16px;font-size:calc(14px*var(--z));font-weight:800;text-align:center;
+ box-shadow:0 3px 10px rgba(0,0,0,.15)}
+</style><div class="zbar"><b>크기</b><button onclick="zm(-.1)">가−</button><button onclick="zm(.1)">가+</button><b id="zv">108%</b><button onclick="reset()">다시 풀기</button><button onclick="window.print()">인쇄 / PDF</button></div><div class="wrap"><div class="kick">2026 관광통역안내사 필기 · 관광국사</div><h1>순서 나열 문제 — 13개년 전부 모은 22문항</h1><p class="lead">「다음 사건을 시기 순으로 바르게 나열한 것은?」 유형만 골라 연도 순으로 모았습니다.<br>선지를 누르면 바로 채점됩니다. 틀린 문제의 사건은 시대별 타임라인에서 찾아보세요.</p><div class="stat"><div class="st"><b>22</b>13개년 순서 문제</div><div class="st"><b>2.2</b>최근 5년 매년</div><div class="st"><b>삼국</b>가장 많이 나온 시대</div><div class="st"><b>5</b>개항기 · 근대사</div></div><div class="qc" data-a="3"><div class="qh"><span class="no">1</span><span class="yr">2013년 9번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">다음에 제시된 (가) ∼ (다) 불상의 제작 시기를 순서대로 바르게 나열한 것은? (가) (나) (다)</div><ul class="ops"><li data-v="1"><i>①</i><span>(가) - (나) - (다)</span></li><li data-v="2"><i>②</i><span>(나) - (가) - (다)</span></li><li data-v="3"><i>③</i><span>(나) - (다) - (가)</span></li><li data-v="4"><i>④</i><span>(다) - (나) - (가)</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">2</span><span class="yr">2015년 2번</span><span class="un">선사 · 고조선 · 여러 나라</span></div><div class="qb"><div class="qs">( )에 들어갈 내용을 옳게 나열한 것은?</div><div class="bg"><div><b>·</b> 신석기 시대에는 대자연의 모든 만물에 영혼이 있다고 믿는 ( 가 )이 등장하였다.</div><div><b>·</b> 청동기 시대의 ( 나 )은 중국 요령성 지역에서 집중적으로 출토되고 있지만, 한반도 남부에서도 많이 확인되었다.</div></div><ul class="ops"><li data-v="1"><i>①</i><span>가 - 토테미즘, 나 - 세형 동검</span></li><li data-v="2"><i>②</i><span>가 - 애니미즘, 나 - 비파형 동검</span></li><li data-v="3"><i>③</i><span>가 - 샤머니즘, 나 - 반달돌칼</span></li><li data-v="4"><i>④</i><span>가 - 토테미즘, 나 - 명도전</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">3</span><span class="yr">2016년 3번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">신라에 있었던 사건을 시기순으로 바르게 나열한 것은?<br>ㄱ. 율령의 반포<br>ㄴ. 국호를 ‘신라’로 변경<br>ㄷ. 고령의 대가야 정복<br>ㄹ. 황룡사 9층탑 건립</div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄷ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄴ → ㄱ → ㄷ → ㄹ</span></li><li data-v="3"><i>③</i><span>ㄷ → ㄹ → ㄱ → ㄴ</span></li><li data-v="4"><i>④</i><span>ㄹ → ㄷ → ㄴ → ㄱ</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">4</span><span class="yr">2016년 11번</span><span class="un">통치조직 · 남북국</span></div><div class="qb"><div class="qs">다음 사건을 시기순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 고려의 건국</div><div><b>ㄴ.</b> 발해의 멸망</div><div><b>ㄷ.</b> 후백제의 건국</div><div><b>ㄹ.</b> 경순왕의 고려 귀순</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄷ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄴ → ㄷ → ㄱ → ㄹ</span></li><li data-v="3"><i>③</i><span>ㄷ → ㄱ → ㄴ → ㄹ</span></li><li data-v="4"><i>④</i><span>ㄹ → ㄷ → ㄱ → ㄴ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">5</span><span class="yr">2016년 16번</span><span class="un">개항기 (1863~1910)</span></div><div class="qb"><div class="qs">다음 사건을 시기순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 만민공동회 개최</div><div><b>ㄴ.</b> 임오군란</div><div><b>ㄷ.</b> 우정국 신설</div><div><b>ㄹ.</b> 아관파천</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄹ → ㄷ → ㄴ</span></li><li data-v="2"><i>②</i><span>ㄴ → ㄷ → ㄹ → ㄱ</span></li><li data-v="3"><i>③</i><span>ㄷ → ㄴ → ㄱ → ㄹ</span></li><li data-v="4"><i>④</i><span>ㄹ → ㄱ → ㄴ → ㄷ</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">6</span><span class="yr">2017년 4번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">다음 사건을 시기 순으로 바르게 나열한 것은?<br>ㄱ. 진흥왕이 대가야를 병합하였다.<br>ㄴ. 김춘추가 당 태종과 군사동맹을 맺었다.<br>ㄷ. 장수왕의 군대가 백제의 한성을 함락하였다.<br>ㄹ. 성왕이 신라와 연합하여 한강 하류 지역을 차지하였다.</div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄷ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄴ → ㄷ → ㄹ → ㄱ</span></li><li data-v="3"><i>③</i><span>ㄷ → ㄹ → ㄱ → ㄴ</span></li><li data-v="4"><i>④</i><span>ㄹ → ㄱ → ㄴ → ㄷ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">7</span><span class="yr">2018년 11번</span><span class="un">고려</span></div><div class="qb"><div class="qs">다음 사건을 발생시기가 앞선 순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 경대승 도방정치</div><div><b>ㄴ.</b> 묘청 서경천도 운동</div><div><b>ㄷ.</b> 최충헌 교정도감 설치</div><div><b>ㄹ.</b> 삼별초 대몽항쟁</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄹ → ㄷ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄷ → ㄴ → ㄹ</span></li><li data-v="3"><i>③</i><span>ㄴ → ㄱ → ㄷ → ㄹ</span></li><li data-v="4"><i>④</i><span>ㄴ → ㄷ → ㄹ → ㄱ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="1"><div class="qh"><span class="no">8</span><span class="yr">2018년 13번</span><span class="un">고려</span></div><div class="qb"><div class="qs">다음 사건을 발생시기가 앞선 순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 건원중보(철전) 주조</div><div><b>ㄴ.</b> 삼국사기 편찬</div><div><b>ㄷ.</b> 상정고금예문 인쇄</div><div><b>ㄹ.</b> 직지심체요절 간행</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄷ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄷ → ㄹ → ㄴ</span></li><li data-v="3"><i>③</i><span>ㄴ → ㄱ → ㄹ → ㄷ</span></li><li data-v="4"><i>④</i><span>ㄷ → ㄴ → ㄱ → ㄹ</span></li></ul><div class="ans">정답 <b>①</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">9</span><span class="yr">2019년 8번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">다음 사건을 발생 시기가 앞선 순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 관산성전투</div><div><b>ㄴ.</b> 매소성전투</div><div><b>ㄷ.</b> 황산벌전투</div><div><b>ㄹ.</b> 안시성전투</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄷ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄹ → ㄷ → ㄴ</span></li><li data-v="3"><i>③</i><span>ㄴ → ㄱ → ㄹ → ㄷ</span></li><li data-v="4"><i>④</i><span>ㄴ → ㄷ → ㄱ → ㄹ</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">10</span><span class="yr">2019년 17번</span><span class="un">고려</span></div><div class="qb"><div class="qs">다음 도자기를 유행 시기가 앞선 순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 순청자</div><div><b>ㄴ.</b> 청화백자</div><div><b>ㄷ.</b> 분청사기</div><div><b>ㄹ.</b> 상감청자</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄷ → ㄹ → ㄴ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄹ → ㄴ → ㄷ</span></li><li data-v="3"><i>③</i><span>ㄱ → ㄹ → ㄷ → ㄴ</span></li><li data-v="4"><i>④</i><span>ㄴ → ㄷ → ㄹ → ㄱ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">11</span><span class="yr">2020년 18번</span><span class="un">현대사 (1945~)</span></div><div class="qb"><div class="qs">해방 전후 국제 회담을 시대 순으로 올바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 얄타 회담</div><div><b>ㄴ.</b> 카이로 회담</div><div><b>ㄷ.</b> 포츠담 회담</div><div><b>ㄹ.</b> 모스크바 삼국 외상회의</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄹ → ㄷ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄷ → ㄴ → ㄹ</span></li><li data-v="3"><i>③</i><span>ㄴ → ㄱ → ㄷ → ㄹ</span></li><li data-v="4"><i>④</i><span>ㄴ → ㄹ → ㄱ → ㄷ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="4"><div class="qh"><span class="no">12</span><span class="yr">2021년 6번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">다음 연표에서 (가), (나)에 들어갈 역사적 사건으로 옳지 않은 것은?<br>백제, 평양성 공격<br>      ↓ (가)<br>백제, 웅진 천도<br>      ↓ (나)<br>백제, 국호 남부여로 변경</div><ul class="ops"><li data-v="1"><i>①</i><span>(가) - 고구려가 신라를 침략한 왜를 격퇴하였다.</span></li><li data-v="2"><i>②</i><span>(가) - 백제가 신라와 동맹을 맺었다.</span></li><li data-v="3"><i>③</i><span>(나) - 신라가 불교를 공인하였다.</span></li><li data-v="4"><i>④</i><span>(나) - 대가야가 신라에 병합되었다.</span></li></ul><div class="ans">정답 <b>④</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">13</span><span class="yr">2021년 19번</span><span class="un">조선 전기</span></div><div class="qb"><div class="qs">다음과 같은 사건이 일어난 시기를 연표에서 옳게 고른 것은?<br>명종 즉위 후, 윤원형 등 중신들의 부패가 극심하여 도적떼들이 많이 나타났다. 이 가운데 임꺽정 무리는 황해도 구월산에 본거지를 두고 활동하다가 관군에 토벌당하였다.<br>&nbsp;<br>경국대전 완성<br>      ↓ (가)<br>무오사화<br>      ↓ (나)<br>중종반정<br>      ↓ (다)<br>임진왜란<br>      ↓ (라)<br>인조반정</div><ul class="ops"><li data-v="1"><i>①</i><span>(가)</span></li><li data-v="2"><i>②</i><span>(나)</span></li><li data-v="3"><i>③</i><span>(다)</span></li><li data-v="4"><i>④</i><span>(라)</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="1"><div class="qh"><span class="no">14</span><span class="yr">2021년 23번</span><span class="un">개항기 (1863~1910)</span></div><div class="qb"><div class="qs">다음 사건을 발생시기가 앞선 순으로 바르게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 한성근 부대가 문수산성에서 프랑스군을 격퇴하였다.</div><div><b>ㄴ.</b> 거중조정 조항이 포함된 조 · 미 수호통상조약이 체결되었다.</div><div><b>ㄷ.</b> 운요호 사건을 계기로 일본과 조선 사이에 강화도 조약이 체결되었다.</div><div><b>ㄹ.</b> 영국은 러시아의 남하정책을 저지하기 위해 거문도를 점령하였다.</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄷ → ㄴ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄹ → ㄷ → ㄴ</span></li><li data-v="3"><i>③</i><span>ㄹ → ㄱ → ㄴ → ㄷ</span></li><li data-v="4"><i>④</i><span>ㄹ → ㄱ → ㄷ → ㄴ</span></li></ul><div class="ans">정답 <b>①</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">15</span><span class="yr">2022년 10번</span><span class="un">고려</span></div><div class="qb"><div class="qs">고려시대 주요 승려들의 활동 시기가 앞선 순으로 옳게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 의천</div><div><b>ㄴ.</b> 보우</div><div><b>ㄷ.</b> 지눌</div><div><b>ㄹ.</b> 균여</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄷ → ㄹ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄹ → ㄷ → ㄴ</span></li><li data-v="3"><i>③</i><span>ㄹ → ㄱ → ㄷ → ㄴ</span></li><li data-v="4"><i>④</i><span>ㄹ → ㄴ → ㄱ → ㄷ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">16</span><span class="yr">2022년 25번</span><span class="un">현대사 (1945~)</span></div><div class="qb"><div class="qs">다음 사건을 발생시기가 앞선 순으로 옳게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 5 · 18 민주화 운동</div><div><b>ㄴ.</b> 남북한 유엔 동시 가입</div><div><b>ㄷ.</b> 6월 민주 항쟁</div><div><b>ㄹ.</b> 6 · 15 남북 공동 선언</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ → ㄴ → ㄹ → ㄷ</span></li><li data-v="2"><i>②</i><span>ㄱ → ㄷ → ㄴ → ㄹ</span></li><li data-v="3"><i>③</i><span>ㄴ → ㄱ → ㄷ → ㄹ</span></li><li data-v="4"><i>④</i><span>ㄴ → ㄱ → ㄹ → ㄷ 관광자원해설</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="1"><div class="qh"><span class="no">17</span><span class="yr">2023년 4번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">신라 왕호의 변천을 순서대로 옳게 나열한 것은?</div><ul class="ops"><li data-v="1"><i>①</i><span>거서간 - 차차웅 - 이사금 - 마립간</span></li><li data-v="2"><i>②</i><span>거서간 - 마립간 - 차차웅 - 이사금</span></li><li data-v="3"><i>③</i><span>이사금 - 거서간 - 차차웅 - 마립간</span></li><li data-v="4"><i>④</i><span>마립간 - 거서간 - 이사금 - 차차웅</span></li></ul><div class="ans">정답 <b>①</b></div></div></div><div class="qc" data-a="3"><div class="qh"><span class="no">18</span><span class="yr">2023년 5번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">삼국시대에 있었던 사건을 앞선 시기순으로 옳게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 신라의 율령 반포</div><div><b>ㄴ.</b> 대가야의 멸망</div><div><b>ㄷ.</b> 백제의 서기 편찬</div><div><b>ㄹ.</b> 고구려의 평양 천도</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ - ㄴ - ㄷ - ㄹ</span></li><li data-v="2"><i>②</i><span>ㄴ - ㄱ - ㄷ - ㄹ</span></li><li data-v="3"><i>③</i><span>ㄷ - ㄹ - ㄱ - ㄴ</span></li><li data-v="4"><i>④</i><span>ㄹ - ㄷ - ㄴ - ㄱ</span></li></ul><div class="ans">정답 <b>③</b></div></div></div><div class="qc" data-a="1"><div class="qh"><span class="no">19</span><span class="yr">2025년 6번</span><span class="un">삼국 시대</span></div><div class="qb"><div class="qs">다음 연표에서 (가), (나)에 들어갈 역사적 사실로 옳지 않은 것은?<br>고구려, 태학 설립<br>      ↓ (가)<br>신라, 율령 반포<br>      ↓ (나)<br>나당동맹 체결</div><ul class="ops"><li data-v="1"><i>①</i><span>(가) - 신라가 대가야를 병합하였다.</span></li><li data-v="2"><i>②</i><span>(가) - 신라와 백제가 나제동맹을 체결하였다.</span></li><li data-v="3"><i>③</i><span>(나) - 백제가 사비로 천도하였다.</span></li><li data-v="4"><i>④</i><span>(나) - 고구려가 살수에서 수나라 군대를 격파하였다.</span></li></ul><div class="ans">정답 <b>①</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">20</span><span class="yr">2025년 10번</span><span class="un">고려</span></div><div class="qb"><div class="qs">다음 제도를 제정 시기가 앞선 순으로 옳게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 역분전</div><div><b>ㄴ.</b> 과전법</div><div><b>ㄷ.</b> 전시과</div><div><b>ㄹ.</b> 영정법</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄱ - ㄴ - ㄹ - ㄷ</span></li><li data-v="2"><i>②</i><span>ㄱ - ㄷ - ㄴ - ㄹ</span></li><li data-v="3"><i>③</i><span>ㄴ - ㄱ - ㄷ - ㄹ</span></li><li data-v="4"><i>④</i><span>ㄴ - ㄷ - ㄹ - ㄱ</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">21</span><span class="yr">2025년 16번</span><span class="un">조선 전기</span></div><div class="qb"><div class="qs">다음 연표에서 (가), (나)에 들어갈 역사적 사실로 옳지 않은 것은?<br>조선 건국<br>      ↓ (가)<br>중종 반정<br>      ↓ (나)<br>정조 즉위</div><ul class="ops"><li data-v="1"><i>①</i><span>(가) - 4군 6진을 설치하였다.</span></li><li data-v="2"><i>②</i><span>(가) - 임진왜란이 일어났다.</span></li><li data-v="3"><i>③</i><span>(나) - 백두산 정계비를 세웠다.</span></li><li data-v="4"><i>④</i><span>(나) - 송시열 등이 북벌론을 주장하였다.</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="qc" data-a="2"><div class="qh"><span class="no">22</span><span class="yr">2025년 25번</span><span class="un">현대사 (1945~)</span></div><div class="qb"><div class="qs">다음 사건을 발생 시기가 앞선 순으로 옳게 나열한 것은?</div><div class="bg"><div><b>ㄱ.</b> 4 · 19 혁명이 일어났다.</div><div><b>ㄴ.</b> 6 · 25 전쟁이 발발하였다.</div><div><b>ㄷ.</b> 조선 건국 준비 위원회가 결성되었다.</div><div><b>ㄹ.</b> 5 · 10 총선거가 실시되었다.</div></div><ul class="ops"><li data-v="1"><i>①</i><span>ㄷ - ㄱ - ㄹ - ㄴ</span></li><li data-v="2"><i>②</i><span>ㄷ - ㄹ - ㄴ - ㄱ</span></li><li data-v="3"><i>③</i><span>ㄹ - ㄷ - ㄱ - ㄴ</span></li><li data-v="4"><i>④</i><span>ㄹ - ㄷ - ㄴ - ㄱ 관광자원해설</span></li></ul><div class="ans">정답 <b>②</b></div></div></div><div class="sc" id="sc">선지를 누르면 바로 채점됩니다</div></div><script>
+var Z=1.08,DONE=0,OK=0;
+function zm(a){Z=Math.min(1.6,Math.max(.8,Math.round((Z+a)*10)/10));
+ document.documentElement.style.setProperty('--z',Z);
+ document.getElementById('zv').textContent=Math.round(Z*100)+'%';}
+document.addEventListener('click',function(e){
+ var li=e.target.closest('.ops li'); if(!li)return;
+ var c=li.closest('.qc'); if(c.classList.contains('done'))return;
+ var a=+c.dataset.a;
+ [].forEach.call(c.querySelectorAll('.ops li'),function(x){
+  if(+x.dataset.v===a)x.classList.add('ok'); else if(x===li)x.classList.add('no');});
+ c.classList.add('done'); DONE++; if(+li.dataset.v===a)OK++;
+ document.getElementById('sc').textContent=DONE+'문제 푼 중 '+OK+'개 정답 ('+Math.round(OK/DONE*100)+'점)';
+});
+function reset(){DONE=0;OK=0;
+ [].forEach.call(document.querySelectorAll('.qc'),function(c){c.classList.remove('done');
+  [].forEach.call(c.querySelectorAll('.ops li'),function(x){x.classList.remove('ok','no')});});
+ document.getElementById('sc').textContent='선지를 누르면 바로 채점됩니다';}
+</script>
+</body></html>

@@ -1,0 +1,100 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>선사 · 고조선 · 여러 나라 — 순서 나열 대비 타임라인</title>
+<style>
+*{box-sizing:border-box}
+:root{--z:1.08;--paper:#FDFBF6;--card:#fff;--ink:#232019;--ink2:#5A5145;--line:#DCD3C1;--line2:#B0A28A;
+ --ax:#9B8A64;--gold:#A8822C;--hot:#C8452F;--key:#3E7A4E;--hl:#FDEFAE}
+@media(prefers-color-scheme:dark){:root{--paper:#16140F;--card:#1F1C15;--ink:#EDE6D8;--ink2:#A99C88;
+ --line:#39332A;--line2:#544B3B;--hl:#5A4A14}}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;word-break:keep-all}
+.zbar{position:sticky;top:0;z-index:80;display:flex;gap:7px;align-items:center;flex-wrap:wrap;
+ padding:7px 14px;background:var(--paper);border-bottom:1.5px solid var(--line2)}
+.zbar button{border:1.5px solid var(--line2);background:var(--card);color:var(--ink);border-radius:9px;
+ padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.zbar b{font-size:12.5px;color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:14px 16px 70px}
+.kick{font-size:11px;font-weight:800;color:var(--gold)}
+h1{font-size:21px;margin:2px 0 4px}
+.lead{font-size:12.2px;color:var(--ink2);line-height:1.75;margin:0 0 14px}
+.h{background:var(--hl);border-radius:2px;padding:0 1px;font-weight:800}
+.d{color:var(--ink2)}
+
+.rail{position:relative;padding:4px 0}
+.rail::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:2.5px;
+ background:var(--ax);transform:translateX(-50%);border-radius:3px}
+.nd{display:flex;align-items:center;margin:0 0 calc(11px*var(--z));position:relative}
+.nd.d{flex-direction:row-reverse}
+.side{width:calc(50% - 80px*var(--z));display:flex}
+.nd.u .side{justify-content:flex-end;padding-right:calc(11px*var(--z))}
+.nd.d .side{justify-content:flex-start;padding-left:calc(11px*var(--z))}
+.gap{width:calc(50% - 80px*var(--z))}
+.mid{width:calc(160px*var(--z));flex:0 0 auto;display:flex;justify-content:center;position:relative}
+.mid::before{content:"";position:absolute;top:50%;height:2.2px;background:var(--ax);width:16px}
+.nd.u .mid::before{left:-16px}.nd.d .mid::before{right:-16px}
+.pill{background:var(--card);border:2.6px solid var(--gold);border-radius:999px;
+ padding:calc(6px*var(--z)) calc(16px*var(--z));font-size:calc(18px*var(--z));font-weight:800;
+ box-shadow:0 1px 4px rgba(80,60,20,.10);
+ color:var(--gold);white-space:nowrap;z-index:2;line-height:1.35;letter-spacing:.2px}
+.nd.hot .pill{border-color:var(--hot);color:var(--hot)}
+.nd.key .pill{border-color:var(--key);color:var(--key)}
+.nd.hot .mid::before{background:var(--hot)}.nd.key .mid::before{background:var(--key)}
+.cd{background:var(--card);border:1.5px solid var(--line2);border-radius:11px;overflow:hidden;
+ box-shadow:0 2px 6px rgba(80,60,20,.06);max-width:100%}
+.nd.hot .cd{border-color:#D08878}.nd.key .cd{border-color:#7FAF8C}
+.cd h3{margin:0;padding:calc(6px*var(--z)) calc(11px*var(--z));font-size:calc(14px*var(--z));font-weight:800;
+ background:#F2EFE7;border-bottom:1.2px solid var(--line);line-height:1.4}
+.hy{font-size:calc(11.5px*var(--z));font-weight:800;color:var(--ink2);opacity:.85;margin-right:6px;
+ letter-spacing:.2px}
+.nd.hot .hy{color:#B4695C}.nd.key .hy{color:#5E8E6C}
+.nd.d .cd h3{text-align:left}.nd.u .cd h3{text-align:right}
+.nd.hot .cd h3{background:#FBEAEA;color:#9C2F2F}
+.nd.key .cd h3{background:#E9F3EC;color:#2F6B3E}
+@media(prefers-color-scheme:dark){.cd h3{background:#2A251C}
+ .nd.hot .cd h3{background:#3A211E;color:#F0B0A4}.nd.key .cd h3{background:#1E2E22;color:#9FD3AF}}
+.cd ul{margin:0;padding:calc(7px*var(--z)) calc(12px*var(--z));list-style:none;
+ font-size:calc(12.4px*var(--z));line-height:1.78}
+.cd li{margin:2px 0}
+.nd.u .cd ul{text-align:right}
+@media(max-width:620px){
+ .rail::before{left:48px;transform:none}
+ .nd,.nd.d{flex-direction:row;align-items:flex-start;margin-bottom:14px}
+ .gap{display:none}
+ .mid{width:auto;min-width:96px;order:-1;justify-content:flex-start;padding-top:4px;flex:0 0 auto}
+ .mid::before{display:none}
+ .side{width:auto;flex:1;min-width:0;order:0;padding:0 0 0 9px!important;justify-content:flex-start!important}
+ .cd{width:100%}
+ .pill{font-size:calc(15.5px*var(--z));padding:4px 11px}
+ .nd.u .cd h3,.nd.u .cd ul{text-align:left}
+ .pill{margin-left:2px}
+}
+@media print{@page{size:A4;margin:11mm}.zbar{display:none!important}
+ .nd{break-inside:avoid;page-break-inside:avoid}}
+</style><style>
+.cd table{border-collapse:collapse;width:100%;font-size:calc(12.3px*var(--z))}
+.cd th,.cd td{border:1px solid var(--line);padding:calc(5px*var(--z)) calc(8px*var(--z));
+ vertical-align:top;line-height:1.7;text-align:left}
+.cd th{background:#F5F2EA;font-weight:800;white-space:nowrap;width:1%;color:var(--ink2)}
+@media(prefers-color-scheme:dark){.cd th{background:#241F18}}
+.cd tr:first-child th,.cd tr:first-child td{border-top:0}
+.cd tr:last-child th,.cd tr:last-child td{border-bottom:0}
+.cd th:first-child{border-left:0}.cd td:last-child{border-right:0}
+.fq{padding:calc(5px*var(--z)) calc(11px*var(--z));font-size:calc(11.4px*var(--z));
+ color:var(--ink2);border-top:1px dashed var(--line2);line-height:1.6;text-align:left}
+.fq b{color:var(--hot)}
+.fq .tg{display:block;margin-top:calc(2px*var(--z));opacity:.62;font-size:.92em;letter-spacing:.2px}
+.pill{box-sizing:border-box;width:calc(136px*var(--z));height:calc(88px*var(--z));
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ border-radius:calc(13px*var(--z))!important;padding:calc(7px*var(--z)) calc(8px*var(--z))!important;
+ font-size:calc(15px*var(--z))!important;white-space:normal!important;
+ line-height:1.32;letter-spacing:0;text-align:center;word-break:keep-all}
+.pill i{display:block;font-style:normal;font-size:1em;font-weight:800;width:100%;
+ margin-top:calc(4px*var(--z));padding-top:calc(4px*var(--z));
+ border-top:1.4px solid currentColor;line-height:1.32;text-align:center}
+@media(max-width:620px){
+ .pill{width:calc(112px*var(--z));height:calc(74px*var(--z));
+  font-size:calc(13.5px*var(--z))!important;padding:calc(5px*var(--z)) calc(6px*var(--z))!important}
+}
+.nd.u .cd h3,.nd.u .cd .fq{text-align:right}
+</style><div class="zbar"><b>크기</b><button onclick="zm(-.1)">가−</button><button onclick="zm(.1)">가+</button><b id="zv">108%</b><button onclick="window.print()">인쇄 / PDF</button></div><div class="wrap"><div class="kick">2026 관광통역안내사 필기 · 관광국사</div><h1>선사 · 고조선 · 여러 나라 — 순서 나열 대비 타임라인</h1><p class="lead">구석기 → 신석기 → 청동기 → 초기 철기 → 고조선 → 여러 나라 차례로 정리했습니다.<br>여러 나라는 철기 시대에 함께 있던 나라들이라 교재 차례(부여 · 고구려 · 옥저 · 동예 · 삼한)대로 놓았습니다. 빨간 칸은 나열 문제에 실제 나온 시대입니다.</p><div class="rail"><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">약 70만 년 전</span>구석기 시대</h3><table><tr><th>도구</th><td><b class="h">뗀석기</b> · <b class="h">주먹도끼</b> · 슴베찌르개 · 찍개 · 긁개 · 밀개</td></tr><tr><th>경제 · 사회</th><td><b class="h">이동생활</b> · 무리사회(평등) · 사냥 · 어로 · 채집</td></tr><tr><th>주거</th><td><b>동굴 · 바위그늘 · 막집</b></td></tr><tr><th>유적</th><td><b class="h">연천 전곡리</b> · 상원 검은모루동굴 · 공주 석장리 · 청원 두루봉동굴</td></tr></table><div class="fq">키워드 등장 기출 <b>6문항</b> · 최근5년 2 · 발문 3 · 오답 선지 3 · <span class="tg">2017-01 2017-02 2019-01 2022-02 2023-01</span></div></div></div><div class="mid"><span class="pill">약 70만 년 전<i>구석기</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">약 8000년 전</span>신석기 시대</h3><table><tr><th>도구</th><td><b class="h">간석기</b> · 돌괭이 · 돌삽 · 돌낫 · 갈돌 · 갈판 · 가락바퀴 · 뼈바늘</td></tr><tr><th>경제 · 사회</th><td><b class="h">농경</b>(조 · 피 · 수수) · 목축 시작 · 씨족사회(족외혼) · <b class="h">애니미즘</b> · 토테미즘 · 샤머니즘</td></tr><tr><th>주거</th><td><b>정착생활</b> · 움집(화덕 중앙)</td></tr><tr><th>유물</th><td><b class="h">빗살무늬토기</b> · <b class="h">덧무늬토기</b> · 이른민무늬토기</td></tr><tr><th>유적</th><td><b class="h">서울 암사동</b> · <b class="h">양양 오산리</b> · 봉산 지탑리 · 부산 동삼동</td></tr></table><div class="fq">키워드 등장 기출 <b>11문항</b> · 최근5년 4 · 발문 5 · 정답 선지 3 · 오답 선지 3 · 순서 문제 2015-02 · <span class="tg">2019-03 2021-01 2022-01 2024-02 2025-01</span></div></div></div><div class="mid"><span class="pill">약 8000년 전<i>신석기</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">기원전 2000년경</span>청동기 시대</h3><table><tr><th>도구</th><td><b class="h">반달돌칼</b> · 홈자귀 · 바퀴날도끼 · 청동은 무기 · 제사용 · 농기구는 돌 · 나무</td></tr><tr><th>경제 · 사회</th><td><b class="h">계급 발생</b> · 사유재산 · 군장국가 · 선민사상 · <b>벼농사 시작</b></td></tr><tr><th>주거</th><td>움집(화덕 벽 쪽) · <b>목책 · 환호</b> · 암각화</td></tr><tr><th>유물</th><td><b class="h">비파형동검</b> · <b class="h">거친무늬거울</b> · 민무늬토기 · 미송리식토기 · 붉은간토기</td></tr><tr><th>유적</th><td><b class="h">고인돌</b> · 돌널무덤 · 부여 송국리 · 의주 미송리 · 화순 대곡리</td></tr></table><div class="fq">키워드 등장 기출 <b>9문항</b> · 최근5년 6 · 발문 4 · 오답 선지 5 · 순서 문제 2015-02 · <span class="tg">2022-02 2023-01 2023-02 2024-02 2025-02</span></div></div></div><div class="mid"><span class="pill">기원전 2000년경<i>청동기</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">기원전 2333</span>고조선 건국</h3><table><tr><th>시기</th><td><b class="h">청동기 시대</b> · BC 2333 · <b class="h">단군왕검</b></td></tr><tr><th>정치</th><td><b>제정일치</b> · 하늘의 자손 · 선민사상</td></tr><tr><th>풍습</th><td><b class="h">8조법</b>(3개 조) · 살인 = 사형 · 상해 = 곡물 배상 · <b class="h">절도 = 노비</b>(50만 전) · 순장</td></tr><tr><th>유물 · 기록</th><td><b class="h">삼국유사</b> · 제왕운기 · 동국통감 · 세종실록지리지 · <b>삼국사기 제외</b></td></tr></table><div class="fq">키워드 등장 기출 <b>9문항</b> · 최근5년 4 · 발문 2 · 정답 선지 1 · 오답 선지 6 · <span class="tg">2020-04 2022-02 2024-02 2024-03 2025-02</span></div></div></div><div class="mid"><span class="pill">기원전 2333<i>고조선</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">기원전 5세기</span>초기 철기 시대</h3><table><tr><th>도구</th><td><b>철제 농기구 · 철제 무기</b> · 청동기는 의식용</td></tr><tr><th>경제 · 사회</th><td><b class="h">중국과 교류</b> · 생산력 급증 · 화폐 · 문자</td></tr><tr><th>유물</th><td><b class="h">세형동검</b> · <b class="h">잔무늬거울</b> · 검은간토기 · 널무덤 · 독무덤</td></tr><tr><th>화폐</th><td><b class="h">명도전</b> · 반량전 · 오수전</td></tr><tr><th>유적</th><td>창원 다호리(붓 출토)</td></tr></table><div class="fq">키워드 등장 기출 <b>5문항</b> · 최근5년 1 · 정답 선지 1 · 오답 선지 4 · <span class="tg">2013-03 2015-02 2016-12 2018-01 2021-01</span></div></div></div><div class="mid"><span class="pill">기원전 5세기<i>초기 철기</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">기원전 3세기경</span>고조선의 성장</h3><table><tr><th>시기</th><td>BC 3세기경 · 요령 지방 중심 → 한반도 확장</td></tr><tr><th>정치</th><td><b class="h">상 · 대부 · 장군</b> · 지배자 칭호 <b>「왕」</b></td></tr><tr><th>대외</th><td><b class="h">연나라와 충돌</b> · 제나라와 교역</td></tr><tr><th>유물 · 기록</th><td>세력범위 3대 유물 — <b>비파형동검 · 미송리식토기 · 탁자식 고인돌</b></td></tr></table><div class="fq">키워드 등장 기출 <b>9문항</b> · 최근5년 3 · 발문 2 · 정답 선지 1 · 오답 선지 6 · <span class="tg">2020-01 2020-21 2023-02 2025-02 2025-13</span></div></div></div><div class="mid"><span class="pill">기원전 3세기경<i>고조선</i></span></div><div class="gap"></div></div><div class="nd  u"><div class="side"><div class="cd"><h3><span class="hy">기원전 194</span>위만조선</h3><table><tr><th>시기</th><td>BC 194 · <b class="h">위만</b> · 1천여 명 무리 · 진 · 한 교체기</td></tr><tr><th>정치</th><td><b class="h">준왕을 몰아냄</b> · 국호는 그대로 조선 · 손자 <b>우거왕</b></td></tr><tr><th>대외</th><td><b>철기 문화 본격 수용</b> · 중계무역(한 ↔ 한반도 남부)</td></tr></table><div class="fq">키워드 등장 기출 <b>1문항</b> · 최근5년 0 · 정답 선지 1 · <span class="tg">2020-01</span></div></div></div><div class="mid"><span class="pill">기원전 194<i>위만조선</i></span></div><div class="gap"></div></div><div class="nd  d"><div class="side"><div class="cd"><h3><span class="hy">기원전 108</span>고조선 멸망</h3><table><tr><th>시기</th><td>BC 108 · 우거왕 · <b>한 무제 침략</b></td></tr><tr><th>정치</th><td><b class="h">왕검성 함락</b> · <b class="h">한사군</b>(낙랑군) 설치</td></tr><tr><th>대외</th><td>중계무역 독점 · 한의 침략을 부름</td></tr></table><div class="fq">키워드 등장 기출 <b>0문항</b></div></div></div><div class="mid"><span class="pill">기원전 108<i>고조선 멸망</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">여러 나라 ①</span>부여 — 만주 평야</h3><table><tr><th>위치 · 정치</th><td>만주 평야 · 5부족 연맹 · 왕 + <b class="h">마가 · 우가 · 저가 · 구가</b> = <b class="h">사출도</b> · <b>흉년에 왕을 폐위</b></td></tr><tr><th>제천행사</th><td><b class="h">영고</b>(12월)</td></tr><tr><th>풍습</th><td><b class="h">1책 12법</b>(절도 = 12배) · 살인 = 사형 + 가족 노비 · 간음 = 사형 · 순장 · 형사취수제</td></tr><tr><th>경제 · 특산</th><td><b>가장 넓고 평탄한 평야</b> · 농경 · 목축</td></tr></table><div class="fq">키워드 등장 기출 <b>11문항</b> · 최근5년 4 · 발문 1 · 정답 선지 3 · 오답 선지 7 · <span class="tg">2020-11 2023-02 2023-03 2024-01 2024-15</span></div></div></div><div class="mid"><span class="pill">여러 나라 ①<i>부여</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">여러 나라 ②</span>고구려 — 압록강 유역</h3><table><tr><th>위치 · 정치</th><td>압록강 유역 · 5부족 연맹 · <b class="h">제가회의</b> · 관직 사자 · 조의 · 선인 · <b>상가 · 고추가</b></td></tr><tr><th>제천행사</th><td><b class="h">동맹</b>(10월)</td></tr><tr><th>풍습</th><td><b class="h">서옥제</b>(데릴사위제) · 형사취수제</td></tr><tr><th>경제 · 특산</th><td>산악 지대 · 좋은 밭 없음 · 약탈 경제 · <b>부경</b>(창고)</td></tr></table><div class="fq">키워드 등장 기출 <b>9문항</b> · 최근5년 5 · 발문 2 · 정답 선지 1 · 오답 선지 6 · <span class="tg">2021-03 2021-06 2022-03 2025-05 2025-06</span></div></div></div><div class="mid"><span class="pill">여러 나라 ②<i>고구려</i></span></div><div class="gap"></div></div><div class="nd key u"><div class="side"><div class="cd"><h3><span class="hy">여러 나라 ③</span>옥저 — 함경도 해안</h3><table><tr><th>위치 · 정치</th><td>함경도 해안 · 왕 없음 · 읍군 · 삼로 · <b class="h">낙랑군과 고구려의 지배</b></td></tr><tr><th>제천행사</th><td>없음</td></tr><tr><th>풍습</th><td><b class="h">민며느리제</b> · <b>가족공동무덤</b>(골장제) · 가매장 후 뼈만 추려 큰 목관</td></tr><tr><th>경제 · 특산</th><td>소금 · 해산물 · 고구려에 공납</td></tr></table><div class="fq">키워드 등장 기출 <b>2문항</b> · 최근5년 2 · 정답 선지 1 · 오답 선지 1 · <span class="tg">2021-03 2022-03</span></div></div></div><div class="mid"><span class="pill">여러 나라 ③<i>옥저</i></span></div><div class="gap"></div></div><div class="nd hot d"><div class="side"><div class="cd"><h3><span class="hy">여러 나라 ④</span>동예 — 강원도 북부</h3><table><tr><th>위치 · 정치</th><td>강원도 북부 · 왕 없음 · <b>읍군 · 삼로</b> · 옥저보다 폐쇄적</td></tr><tr><th>제천행사</th><td><b class="h">무천</b>(10월)</td></tr><tr><th>풍습</th><td><b class="h">책화</b>(구역 침범 시 노비 · 소 · 말로 배상) · <b>족외혼</b></td></tr><tr><th>경제 · 특산</th><td><b class="h">단궁 · 과하마 · 반어피</b></td></tr></table><div class="fq">키워드 등장 기출 <b>6문항</b> · 최근5년 5 · 발문 1 · 정답 선지 3 · 오답 선지 2 · <span class="tg">2021-02 2022-03 2023-03 2024-01 2025-03</span></div></div></div><div class="mid"><span class="pill">여러 나라 ④<i>동예</i></span></div><div class="gap"></div></div><div class="nd hot u"><div class="side"><div class="cd"><h3><span class="hy">여러 나라 ⑤</span>삼한 — 한반도 남부</h3><table><tr><th>위치 · 정치</th><td>마한 · 진한 · 변한 · <b class="h">제정분리</b> · 정치 = <b>신지 · 읍차</b> · 마한 목지국 진왕</td></tr><tr><th>제천행사</th><td>계절제(5월 · 10월)</td></tr><tr><th>풍습</th><td>제사 = <b class="h">천군</b> · 신성지역 <b class="h">소도</b> · 진한 편두</td></tr><tr><th>경제 · 특산</th><td>벼농사 · 저수지 · 변한의 철 — <b class="h">덩이쇠를 화폐처럼</b> · 낙랑 · 왜에 수출</td></tr></table><div class="fq">키워드 등장 기출 <b>6문항</b> · 최근5년 3 · 발문 1 · 오답 선지 5 · <span class="tg">2016-08 2020-02 2021-02 2022-03 2025-03</span></div></div></div><div class="mid"><span class="pill">여러 나라 ⑤<i>삼한</i></span></div><div class="gap"></div></div></div></div><script>var Z=1.08;function zm(a){Z=Math.min(1.6,Math.max(.8,Math.round((Z+a)*10)/10));document.documentElement.style.setProperty('--z',Z);document.getElementById('zv').textContent=Math.round(Z*100)+'%';}</script>
+</body></html>

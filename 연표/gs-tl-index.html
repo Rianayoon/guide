@@ -1,0 +1,101 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>관광국사 타임라인 모음 — 순서 문제 대비</title>
+<style>
+*{box-sizing:border-box}
+:root{--z:1.08;--paper:#FDFBF6;--card:#fff;--ink:#232019;--ink2:#5A5145;--line:#DCD3C1;--line2:#B0A28A;
+ --ax:#9B8A64;--gold:#A8822C;--hot:#C8452F;--key:#3E7A4E;--hl:#FDEFAE}
+@media(prefers-color-scheme:dark){:root{--paper:#16140F;--card:#1F1C15;--ink:#EDE6D8;--ink2:#A99C88;
+ --line:#39332A;--line2:#544B3B;--hl:#5A4A14}}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;word-break:keep-all}
+.zbar{position:sticky;top:0;z-index:80;display:flex;gap:7px;align-items:center;flex-wrap:wrap;
+ padding:7px 14px;background:var(--paper);border-bottom:1.5px solid var(--line2)}
+.zbar button{border:1.5px solid var(--line2);background:var(--card);color:var(--ink);border-radius:9px;
+ padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.zbar b{font-size:12.5px;color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:14px 16px 70px}
+.kick{font-size:11px;font-weight:800;color:var(--gold)}
+h1{font-size:21px;margin:2px 0 4px}
+.lead{font-size:12.2px;color:var(--ink2);line-height:1.75;margin:0 0 14px}
+.h{background:var(--hl);border-radius:2px;padding:0 1px;font-weight:800}
+.d{color:var(--ink2)}
+
+.rail{position:relative;padding:4px 0}
+.rail::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:2.5px;
+ background:var(--ax);transform:translateX(-50%);border-radius:3px}
+.nd{display:flex;align-items:center;margin:0 0 calc(11px*var(--z));position:relative}
+.nd.d{flex-direction:row-reverse}
+.side{width:calc(50% - 80px*var(--z));display:flex}
+.nd.u .side{justify-content:flex-end;padding-right:calc(11px*var(--z))}
+.nd.d .side{justify-content:flex-start;padding-left:calc(11px*var(--z))}
+.gap{width:calc(50% - 80px*var(--z))}
+.mid{width:calc(160px*var(--z));flex:0 0 auto;display:flex;justify-content:center;position:relative}
+.mid::before{content:"";position:absolute;top:50%;height:2.2px;background:var(--ax);width:16px}
+.nd.u .mid::before{left:-16px}.nd.d .mid::before{right:-16px}
+.pill{background:var(--card);border:2.6px solid var(--gold);border-radius:999px;
+ padding:calc(6px*var(--z)) calc(16px*var(--z));font-size:calc(18px*var(--z));font-weight:800;
+ box-shadow:0 1px 4px rgba(80,60,20,.10);
+ color:var(--gold);white-space:nowrap;z-index:2;line-height:1.35;letter-spacing:.2px}
+.nd.hot .pill{border-color:var(--hot);color:var(--hot)}
+.nd.key .pill{border-color:var(--key);color:var(--key)}
+.nd.hot .mid::before{background:var(--hot)}.nd.key .mid::before{background:var(--key)}
+.cd{background:var(--card);border:1.5px solid var(--line2);border-radius:11px;overflow:hidden;
+ box-shadow:0 2px 6px rgba(80,60,20,.06);max-width:100%}
+.nd.hot .cd{border-color:#D08878}.nd.key .cd{border-color:#7FAF8C}
+.cd h3{margin:0;padding:calc(6px*var(--z)) calc(11px*var(--z));font-size:calc(14px*var(--z));font-weight:800;
+ background:#F2EFE7;border-bottom:1.2px solid var(--line);line-height:1.4}
+.hy{font-size:calc(11.5px*var(--z));font-weight:800;color:var(--ink2);opacity:.85;margin-right:6px;
+ letter-spacing:.2px}
+.nd.hot .hy{color:#B4695C}.nd.key .hy{color:#5E8E6C}
+.nd.d .cd h3{text-align:left}.nd.u .cd h3{text-align:right}
+.nd.hot .cd h3{background:#FBEAEA;color:#9C2F2F}
+.nd.key .cd h3{background:#E9F3EC;color:#2F6B3E}
+@media(prefers-color-scheme:dark){.cd h3{background:#2A251C}
+ .nd.hot .cd h3{background:#3A211E;color:#F0B0A4}.nd.key .cd h3{background:#1E2E22;color:#9FD3AF}}
+.cd ul{margin:0;padding:calc(7px*var(--z)) calc(12px*var(--z));list-style:none;
+ font-size:calc(12.4px*var(--z));line-height:1.78}
+.cd li{margin:2px 0}
+.nd.u .cd ul{text-align:right}
+@media(max-width:620px){
+ .rail::before{left:48px;transform:none}
+ .nd,.nd.d{flex-direction:row;align-items:flex-start;margin-bottom:14px}
+ .gap{display:none}
+ .mid{width:auto;min-width:96px;order:-1;justify-content:flex-start;padding-top:4px;flex:0 0 auto}
+ .mid::before{display:none}
+ .side{width:auto;flex:1;min-width:0;order:0;padding:0 0 0 9px!important;justify-content:flex-start!important}
+ .cd{width:100%}
+ .pill{font-size:calc(15.5px*var(--z));padding:4px 11px}
+ .nd.u .cd h3,.nd.u .cd ul{text-align:left}
+ .pill{margin-left:2px}
+}
+@media print{@page{size:A4;margin:11mm}.zbar{display:none!important}
+ .nd{break-inside:avoid;page-break-inside:avoid}}
+</style><style>
+.wrap{max-width:980px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.c{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--card);
+ border:1.7px solid var(--line2);border-radius:13px;overflow:hidden}
+.c:hover{border-color:var(--gold)}
+.c.hot{border-color:#D08878}.c.key{border-color:#7FAF8C}
+.ch{display:flex;align-items:stretch;gap:0;border-bottom:1.3px solid var(--line)}
+.cf{flex:0 0 auto;width:calc(94px*var(--z));display:flex;flex-direction:column;align-items:center;
+ justify-content:center;background:#F5F2EA;border-right:1.3px solid var(--line);padding:calc(9px*var(--z)) 4px}
+.c.hot .cf{background:#FBEAEA}.c.key .cf{background:#E9F3EC}
+@media(prefers-color-scheme:dark){.cf{background:#241F18}.c.hot .cf{background:#3A211E}.c.key .cf{background:#1E2E22}}
+.cf b{font-size:calc(24px*var(--z));font-weight:800;line-height:1.05;color:var(--gold)}
+.c.hot .cf b{color:var(--hot)}.c.key .cf b{color:var(--key)}
+.cf span{font-size:calc(10.8px*var(--z));font-weight:800;color:var(--ink2);margin-top:2px}
+.ct{flex:1;min-width:0;padding:calc(10px*var(--z)) calc(12px*var(--z))}
+.ct .n{font-size:calc(11.2px*var(--z));font-weight:800;color:var(--gold)}
+.c.hot .ct .n{color:var(--hot)}.c.key .ct .n{color:var(--key)}
+.ct .t{font-size:calc(16px*var(--z));font-weight:800;margin:2px 0 0;line-height:1.35}
+.cb{padding:calc(9px*var(--z)) calc(12px*var(--z));font-size:calc(12.4px*var(--z));
+ color:var(--ink2);line-height:1.7;flex:1}
+.cg{padding:calc(7px*var(--z)) calc(12px*var(--z));border-top:1px dashed var(--line2);
+ display:flex;gap:5px;flex-wrap:wrap}
+.cg span{font-size:calc(11.2px*var(--z));background:#F2EFE7;border-radius:6px;padding:2px 8px;font-weight:700}
+.cg span.o{background:#FBEAEA;color:#9C2F2F}
+@media(prefers-color-scheme:dark){.cg span{background:#2A251C}.cg span.o{background:#3A211E;color:#F0B0A4}}
+.big{grid-column:1/-1}
+</style><div class="zbar"><b>크기</b><button onclick="zm(-.1)">가−</button><button onclick="zm(.1)">가+</button><b id="zv">108%</b></div><div class="wrap"><div class="kick">2026 관광통역안내사 필기 · 관광국사</div><h1>타임라인 모음 — 기출 빈도 순</h1><p class="lead">왼쪽 큰 숫자가 <b>국사 25문항 중 매년 몇 문항</b>인지입니다. 위에서부터 보세요.<br>12개년 300문항 중 <b>22문항(7.3%)</b>이 순서 나열 · 연표 끼워넣기 문제이고, 최근 5년은 <b>매년 2.2문항</b>입니다.<br>2014년은 자료에 없어 <b>2013 · 2015~2025 = 12개년 300문항</b> 기준입니다.<br><b style="color:#C8452F">붉은 테두리</b> = 매년 3문항 이상 · <b style="color:#3E7A4E">초록 테두리</b> = 매년 1.5~3문항<br><span style="font-size:.94em">숫자 근거 — 단원별 문항 수는 <b>1,192문항에 붙은 단원 태그를 전수 집계</b>한 것이고, 단체별 횟수는 <b>문항 본문을 단어로 직접 검색</b>해 센 것입니다.</span></p><div class="grid"><a class="c hot big" href="https://claude.ai/code/artifact/40cfe662-1a15-4a63-be9e-89d288ef661a"><div class="ch"><div class="cf"><b>141</b><span>사건</span></div><div class="ct"><div class="n">핵심 연표</div><div class="t">핵심 정리 연표 <b>조선 ~ 현대</b></div></div></div><div class="cb">1392 조선 건국 → 2000 6·15 남북 공동 선언까지 <b>연도와 사건만</b> 순서대로. 설명 없이 앞뒤 순서만 훑는 용도입니다.</div><div class="cg"><span class="">조선 전기 24</span><span class="">조선 후기 24</span><span class="">개항기 20</span><span class="o">일제 43</span><span class="o">현대사 30</span></div></a><a class="c hot big" href="https://claude.ai/code/artifact/0942df62-6fd7-47f8-b915-646890ea262c"><div class="ch"><div class="cf"><b>1.8</b><span>매년</span></div><div class="ct"><div class="n">순서 문제</div><div class="t">순서 나열 문제 <b>22문항</b> — 12개년 전부</div></div></div><div class="cb">「시기 순으로 바르게 나열한 것은?」 유형만 모아 바로 풀고 채점합니다.</div><div class="cg"><span class="o">삼국 8</span><span class="o">고려 5</span><span class="o">현대사 3</span><span class="o">개항기 2</span></div></a><a class="c hot " href="https://claude.ai/code/artifact/205251e5-f3e8-42de-8b98-7a5ba31f069e"><div class="ch"><div class="cf"><b>4.5</b><span>매년</span></div><div class="ct"><div class="n">조선 전기</div><div class="t">조선 전기</div></div></div><div class="cb">태조 → 태종 → 세종 → 세조 → 성종 → 연산군 → 중종 → 명종 → 선조 · 사화 4개 순서</div><div class="cg"><span class="">12개년 54문항</span><span class="">최근5년 23</span><span class="">사건 24개</span><span class="o">순서 2문항</span></div></a><a class="c hot " href="https://claude.ai/code/artifact/77988263-2aa7-41bd-9eff-dff7e47871e9"><div class="ch"><div class="cf"><b>4.3</b><span>매년</span></div><div class="ct"><div class="n">고려</div><div class="t">고려</div></div></div><div class="cb">태조 → 광종 → 성종 → 무신정변 → 최씨 정권 → 원 간섭기 → 공민왕 · 거란 1·2·3차</div><div class="cg"><span class="">12개년 51문항</span><span class="">최근5년 20</span><span class="">사건 26개</span><span class="o">순서 5문항</span></div></a><a class="c hot " href="https://claude.ai/code/artifact/fdddc082-f976-4063-afe9-51778e91be20"><div class="ch"><div class="cf"><b>4.0</b><span>매년</span></div><div class="ct"><div class="n">조선 후기</div><div class="t">조선 후기</div></div></div><div class="cb">광해군 → 인조 → 효종 → 숙종 → 영조 → 정조 → 순조 → 철종 · 법전 · 수취제도 순서</div><div class="cg"><span class="">12개년 48문항</span><span class="">최근5년 20</span><span class="">사건 24개</span></div></a><a class="c hot " href="https://claude.ai/code/artifact/c5779f1a-b971-4b48-b8aa-085cb335f3e0"><div class="ch"><div class="cf"><b>3.4</b><span>매년</span></div><div class="ct"><div class="n">근현대 통합</div><div class="t">근현대사 <b>1863~1991</b></div></div></div><div class="cb">흥선대원군 → 강화도 조약 → 갑신정변 → 동학 → 갑오개혁 → 을사늑약 → 3·1 운동 → 광복 → 6월 민주 항쟁</div><div class="cg"><span class="">12개년 41문항</span><span class="">최근5년 19</span><span class="">사건 38개</span><span class="o">순서 5문항</span></div></a><a class="c hot " href="https://claude.ai/code/artifact/72327eb7-bd2a-4ad8-a570-adfd4224548e"><div class="ch"><div class="cf"><b>3.3</b><span>매년</span></div><div class="ct"><div class="n">삼국</div><div class="t">삼국 시대</div></div></div><div class="cb">백제 근초고왕(4세기) → 고구려 광개토 · 장수왕(5세기) → 신라 진흥왕(6세기) 전성기 순서</div><div class="cg"><span class="">12개년 39문항</span><span class="">최근5년 10</span><span class="">사건 24개</span><span class="o">순서 8문항 — 최다</span></div></a><a class="c hot " href="https://claude.ai/code/artifact/d46262ed-b3df-4e9d-9085-178c104a3a19"><div class="ch"><div class="cf"><b>3.0</b><span>매년</span></div><div class="ct"><div class="n">남북국</div><div class="t">통치조직 · 남북국</div></div></div><div class="cb">통일신라와 발해를 연도로 교차 배치 · 후삼국 성립까지</div><div class="cg"><span class="">12개년 36문항</span><span class="">최근5년 19</span><span class="">사건 16개</span><span class="o">순서 1문항</span></div></a><a class="c key " href="https://claude.ai/code/artifact/6f9f7a14-38f1-40ab-8562-af9bce519e39"><div class="ch"><div class="cf"><b>2.6</b><span>매년</span></div><div class="ct"><div class="n">선사</div><div class="t">선사 · 고조선 · 여러 나라</div></div></div><div class="cb">구석기 → 신석기 → 청동기 → 철기 → 고조선 → 부여 · 고구려 · 옥저 · 동예 · 삼한</div><div class="cg"><span class="">12개년 31문항</span><span class="">최근5년 14</span><span class="">사건 13개</span><span class="">암기량 최소</span></div></a><a class="c key " href="https://claude.ai/code/artifact/0d77cd66-4122-46d4-88b6-522ecc14f0b7"><div class="ch"><div class="cf"><b>1.8</b><span>매년</span></div><div class="ct"><div class="n">개항기</div><div class="t">근대 사회의 전개 1863~1910</div></div></div><div class="cb">흥선대원군 → 강화도 조약 → 임오군란 → 갑신정변 → 동학 → 갑오개혁 → 아관파천 → 을사늑약</div><div class="cg"><span class="">12개년 22문항</span><span class="">최근5년 11</span><span class="">사건 21개</span><span class="o">순서 2문항</span></div></a><a class="c key " href="https://claude.ai/code/artifact/f026fb20-6079-4f48-ae5f-0038b9d48e43"><div class="ch"><div class="cf"><b>1.6</b><span>매년</span></div><div class="ct"><div class="n">일제 · 현대</div><div class="t">일제 강점기 · 현대사</div></div></div><div class="cb">무단 · 문화 · 민족 말살 통치 + 대한민국 임시정부 · 국내 / 국외 구분</div><div class="cg"><span class="">12개년 19문항</span><span class="">최근5년 8</span><span class="o">현대사 매년 1문항</span></div></a><a class="c  " href="https://claude.ai/code/artifact/6a3706f4-871a-4d0e-91b6-15ce98ba3cba"><div class="ch"><div class="cf"><b>—</b><span>창립 순</span></div><div class="ct"><div class="n">단체</div><div class="t">독립운동 단체 <b>20개</b></div></div></div><div class="cb">독립협회(1896) · 신민회(1907) · 신간회(1927)를 같은 표로 나란히 · 대표 인물 · 활동 · 해산<br>세 단체가 걸린 문항 합계 <b>8문항</b> · 최근 5년 3문항 — 서로의 오답 선지로 계속 쓰입니다</div><div class="cg"><span class="o">신간회 5회</span><span class="o">신민회 3회</span><span class="o">임시정부 3회</span><span class="o">독립협회 2회</span><span class="">사건 20개</span></div></a></div></div><script>var Z=1.08;function zm(a){Z=Math.min(1.6,Math.max(.8,Math.round((Z+a)*10)/10));document.documentElement.style.setProperty('--z',Z);document.getElementById('zv').textContent=Math.round(Z*100)+'%';}</script>
+</body></html>

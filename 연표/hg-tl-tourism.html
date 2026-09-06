@@ -1,0 +1,101 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<style>
+*{box-sizing:border-box}
+:root{--z:1.06;--paper:#FDFBF6;--card:#fff;--ink:#232019;--ink2:#5A5145;--line:#DCD3C1;--line2:#B0A28A;
+ --ax:#9B8A64;--gold:#A8822C;--hot:#C8452F;--key:#3E7A4E;--blue:#2B5A8A;--hl:#FDEFAE}
+@media(prefers-color-scheme:dark){:root{--paper:#16140F;--card:#1F1C15;--ink:#EDE6D8;--ink2:#A99C88;
+ --line:#39332A;--line2:#544B3B;--hl:#5A4A14}}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;word-break:keep-all}
+.zbar{position:sticky;top:0;z-index:80;display:flex;gap:7px;align-items:center;flex-wrap:wrap;
+ padding:7px 14px;background:var(--paper);border-bottom:1.5px solid var(--line2)}
+.zbar button{border:1.5px solid var(--line2);background:var(--card);color:var(--ink);border-radius:9px;
+ padding:6px 12px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.zbar b{font-size:12.5px;color:var(--gold)}
+.wrap{max-width:1080px;margin:0 auto;padding:14px 16px 70px}
+.kick{font-size:11px;font-weight:800;color:var(--gold)}
+h1{font-size:21px;margin:2px 0 4px}
+.lead{font-size:12.2px;color:var(--ink2);line-height:1.75;margin:0 0 12px}
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.nav a{font-size:calc(12px*var(--z));font-weight:800;text-decoration:none;color:var(--ink);
+ border:1.6px solid var(--line2);background:var(--card);border-radius:999px;padding:4px 13px}
+.axw{position:relative;margin:0 0 20px;padding:16px 4px 4px}
+.axw::before{content:"";position:absolute;left:10px;right:10px;top:24px;height:3px;
+ background:var(--ax);border-radius:3px}
+.axr{display:flex;justify-content:space-between;position:relative}
+.axn{flex:1;text-align:center;position:relative;padding-top:16px}
+.axd{position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:13px;height:13px;
+ border-radius:50%;background:var(--gold);border:2.4px solid var(--paper);box-shadow:0 0 0 1.4px var(--ax)}
+.axn b{display:block;font-size:calc(13.5px*var(--z));font-weight:800;color:var(--gold);line-height:1.3}
+.axn span{display:block;font-size:calc(10.8px*var(--z));color:var(--ink2);line-height:1.4}
+
+section{margin:0 0 20px;border:2px solid var(--line2);border-radius:14px;overflow:hidden;background:var(--card)}
+.sh{display:flex;align-items:baseline;gap:9px;padding:8px 15px;border-bottom:2px solid var(--line2);
+ background:#F2EFE7;flex-wrap:wrap}
+.sh h2{margin:0;font-size:calc(17px*var(--z));font-weight:800}
+.sh .per{font-size:calc(12.5px*var(--z));font-weight:800;background:var(--card);border:1.8px solid var(--line2);
+ border-radius:999px;padding:3px 12px;white-space:nowrap}
+.sh .cnt{margin-left:auto;font-size:calc(11.5px*var(--z));font-weight:800;color:var(--ink2)}
+.b1 .sh{background:#E9F3EC}.b1 .sh h2,.b1 .sh .per{color:var(--key);border-color:#7FAF8C}
+.b2 .sh{background:#EEF3F8}.b2 .sh h2,.b2 .sh .per{color:var(--blue);border-color:#8FAFCC}
+.b3 .sh{background:#F4EFE4}.b3 .sh h2,.b3 .sh .per{color:#8A6A18;border-color:#C9AE73}
+.b4 .sh{background:#FBEAEA}.b4 .sh h2,.b4 .sh .per{color:#9C2F2F;border-color:#D08878}
+.b5 .sh{background:#F0EBF6}.b5 .sh h2,.b5 .sh .per{color:#5B4291;border-color:#A794CE}
+.b6 .sh,.b6x .sh{background:#F7EEE7}.b6 .sh h2,.b6 .sh .per,.b6x .sh h2,.b6x .sh .per{color:#A0522D;border-color:#D0A98C}
+@media(prefers-color-scheme:dark){.sh,.b1 .sh,.b2 .sh,.b3 .sh,.b4 .sh,.b5 .sh,.b6 .sh{background:#2A251C}}
+
+.lst{padding:14px 10px 12px;display:grid;
+ grid-template-columns:repeat(auto-fill,minmax(calc(126px*var(--z)),1fr))}
+.ax{position:relative;padding:calc(20px*var(--z)) calc(5px*var(--z)) calc(13px*var(--z));
+ text-align:center;min-width:0}
+.ax::after{content:"";position:absolute;left:0;right:0;top:calc(7px*var(--z));
+ height:calc(3px*var(--z));background:var(--ax);z-index:0}
+.dot{position:absolute;top:0;left:50%;transform:translateX(-50%);
+ width:calc(13px*var(--z));height:calc(13px*var(--z));border-radius:50%;
+ background:var(--gold);border:calc(2.4px*var(--z)) solid var(--card);
+ box-shadow:0 0 0 calc(1.4px*var(--z)) var(--ax);z-index:2}
+.ax b{display:block;font-size:calc(15.5px*var(--z));font-weight:800;color:var(--gold);
+ line-height:1.28;font-variant-numeric:tabular-nums}
+.ax b s{display:block;text-decoration:none;font-size:calc(10.6px*var(--z));font-weight:700;
+ opacity:.78;line-height:1.35;margin-top:calc(1px*var(--z))}
+.tt{display:block;font-size:calc(11.8px*var(--z));font-weight:700;color:var(--ink);
+ line-height:1.42;margin-top:calc(2px*var(--z));word-break:keep-all}
+.ax em{display:block;font-style:normal;font-size:calc(10.4px*var(--z));font-weight:600;
+ color:var(--ink2);line-height:1.4;margin-top:calc(1px*var(--z));word-break:keep-all}
+.ax em b{font-size:1.06em;font-weight:800;color:var(--ink)}
+.ax.mul{text-align:center}
+.ax.fk{grid-column:span 2}
+.brk{position:relative;height:calc(17px*var(--z));margin:calc(6px*var(--z)) 0 0}
+.brk i{position:absolute;top:0;left:50%;width:2.2px;height:calc(9px*var(--z));background:var(--hot);transform:translateX(-50%)}
+.brk u{position:absolute;top:calc(9px*var(--z));left:16%;right:16%;height:2.2px;background:var(--hot);text-decoration:none}
+.brk u::before,.brk u::after{content:"";position:absolute;top:0;width:2.2px;height:calc(8px*var(--z));background:var(--hot)}
+.brk u::before{left:0}.brk u::after{right:0}
+.kids{display:flex;gap:calc(6px*var(--z));justify-content:center;padding:calc(7px*var(--z)) 2px 0}
+.kid{flex:1 1 0;min-width:0;border:1.7px solid var(--hot);border-radius:8px;background:#FBEAEA;color:#9C2F2F;
+ padding:calc(6px*var(--z)) calc(5px*var(--z));font-size:calc(11.6px*var(--z));font-weight:800;line-height:1.35}
+.kid u{display:block;text-decoration:none;font-size:calc(9.8px*var(--z));font-weight:700;opacity:.85;
+ margin-top:calc(2px*var(--z))}
+@media(prefers-color-scheme:dark){.kid{background:#3A211E;color:#F0B0A4}}
+.ol{margin:calc(5px*var(--z)) 0 0;padding:0;list-style:none;display:inline-block;text-align:left}
+.ol li{display:flex;gap:calc(5px*var(--z));align-items:flex-start;margin:calc(2px*var(--z)) 0}
+.ol li span{flex:0 0 auto;width:calc(14px*var(--z));height:calc(14px*var(--z));border-radius:4px;
+ background:var(--gold);color:var(--card);font-size:calc(9.2px*var(--z));font-weight:800;
+ display:flex;align-items:center;justify-content:center;margin-top:calc(2px*var(--z))}
+.ol li u{text-decoration:none;font-size:calc(11.6px*var(--z));font-weight:700;line-height:1.42}
+.ol li u i{font-style:normal;font-weight:600;color:var(--ink2);font-size:.9em;margin-left:calc(4px*var(--z));
+ display:block;line-height:1.4}
+.b1 .ol li span{background:var(--key)}.b2 .ol li span{background:var(--blue)}
+.b3 .ol li span{background:#8A6A18}.b4 .ol li span{background:var(--hot)}
+.b5 .ol li span{background:#5B4291}.b6 .ol li span{background:#A0522D}
+.b1 .dot{background:var(--key)}.b1 .ax b{color:var(--key)}
+.b2 .dot{background:var(--blue)}.b2 .ax b{color:var(--blue)}
+.b3 .dot{background:#8A6A18}.b3 .ax b{color:#8A6A18}
+.b4 .dot{background:var(--hot)}.b4 .ax b{color:var(--hot)}
+.b5 .dot{background:#5B4291}.b5 .ax b{color:#5B4291}
+.b6 .dot,.b6x .dot{background:#A0522D}.b6 .ax b,.b6x .ax b{color:#A0522D}
+@media(max-width:700px){.lst{grid-template-columns:repeat(auto-fill,minmax(calc(104px*var(--z)),1fr));padding:12px 6px 10px}.axn b{font-size:calc(11.5px*var(--z))}
+ .axn span{font-size:calc(9.6px*var(--z))}.yy{min-width:calc(66px*var(--z))}}
+@media print{@page{size:A4;margin:9mm}.zbar,.nav{display:none!important}
+ section{break-inside:auto}.ax{break-inside:avoid}}
+</style><title>한국 관광의 역사 타임라인</title><div class="zbar"><button onclick="zm(-.1)">글자 －</button><button onclick="zm(.1)">글자 ＋</button><b id="zv">106%</b><button onclick="window.print()">인쇄 / PDF</button></div><div class="wrap"><div class="kick">2026 관광통역안내사 필기 · 관광학개론</div><h1>한국 관광의 역사</h1><p class="lead">학원교재 1편 <b>표 ⑫ · ⑬ 한국 관광의 역사</b>를 연도 순으로 폈습니다.<br>「최초」가 붙은 것 — 최초의 호텔 · 최초의 서양식 호텔 · 최초의 관광법률 · 최초의 국립공원 — 이 계속 나옵니다.<br><b>2016~2025는 교재 표에 없는 구간</b>이라, 기출 문항에 실제로 나온 것과 확인된 제도 변경만 따로 모았습니다.</p><div class="axw"><div class="axr"><div class="axn"><span class="axd"></span><b>1888</b><span>대불호텔</span></div><div class="axn"><span class="axd"></span><b>1902</b><span>손탁호텔</span></div><div class="axn"><span class="axd"></span><b>1954</b><span>관광행정 시작</span></div><div class="axn"><span class="axd"></span><b>1961</b><span>최초 관광법률</span></div><div class="axn"><span class="axd"></span><b>1967</b><span>최초 국립공원</span></div><div class="axn"><span class="axd"></span><b>1989</b><span>해외여행 자유화</span></div></div></div><div class="nav"><a href="#b1">삼국 ~ 1950년 이전</a><a href="#b5">1950년대 ~ 2015</a><a href="#b4">2016 ~ 2025</a></div><section id="b1" class="b1"><div class="sh"><span class="per">교재 표 ⑫</span><h2>삼국 ~ 1950년 이전</h2><span class="cnt">16개</span></div><div class="lst"><div class="ax"><span class="dot"></span><b>삼국 ~ 통일신라</b><span class="tt">승려의 중국 여행 · 화랑도 심신 수련</span></div><div class="ax mul"><span class="dot"></span><b>통일신라</b><ol class="ol"><li><span>1</span><u>사절유택(四節遊宅)<i>봄 부여 · 여름 서경 · 겨울 탐라 — 귀족관광시대</i></u></li><li><span>2</span><u>「왕오천축국전」<i>흥덕왕 때 고승 혜초 — 최초 국외여행기</i></u></li><li><span>3</span><u>신라방 · 신라원 · 청해진<i>당나라 · 완도 무역</i></u></li></ol></div><div class="ax mul"><span class="dot"></span><b>고려</b><ol class="ol"><li><span>1</span><u>사라센 상인의 왕래<i>한국이 서방세계에 알려지는 계기</i></u></li><li><span>2</span><u>팔관회 · 연등회<i>사신 접대 · 상인</i></u></li></ol></div><div class="ax mul"><span class="dot"></span><b>조선</b><ol class="ol"><li><span>1</span><u>양반<i>시와 풍류 · 서민 — 세시풍속</i></u></li><li><span>2</span><u>태평관 · 북평관 · 왜관<i>국내 외국인 사절</i></u></li><li><span>3</span><u>원(院) · 주막 · 객주<i>사리원 · 조치원 — 관리용 숙박시설</i></u></li></ol></div><div class="ax"><span class="dot"></span><b>1876</b><span class="tt">강화도 조약</span><em>개항</em></div><div class="ax"><span class="dot"></span><b>1888</b><span class="tt">인천 대불호텔</span><em>우리나라 최초의 호텔 · 일본인</em></div><div class="ax"><span class="dot"></span><b>1902</b><span class="tt">서울 손탁호텔</span><em>우리나라 최초의 서양식 호텔 · 손탁 · 고종</em></div><div class="ax"><span class="dot"></span><b>1914</b><span class="tt">조선호텔</span></div><div class="ax"><span class="dot"></span><b>1915</b><span class="tt">일본교통공사(JTB) 조선지부</span><em>경성사무소</em></div><div class="ax"><span class="dot"></span><b>1947</b><span class="tt">해방 이후 최초 단체관광객</span><em>RAS 70명 · 경주 2박 3일</em></div><div class="ax"><span class="dot"></span><b>1949</b><span class="tt">팬암 항공(Pan-Am) 취항</span><em>시애틀 / 도쿄 / 서울</em></div></div></section><section id="b5" class="b5"><div class="sh"><span class="per">교재 표 ⑬</span><h2>1950년대 ~ 2015</h2><span class="cnt">39개</span></div><div class="lst"><div class="ax"><span class="dot"></span><b>1953</b><span class="tt">근로기준법 제정</span><em>연간 12일 유급휴가 보장</em></div><div class="ax"><span class="dot"></span><b>1954</b><span class="tt">교통부 육운국 관광과 설치</span><em>관광행정의 시작</em></div><div class="ax"><span class="dot"></span><b>1957</b><span class="tt">IOUTO 정회원 가입</span><em>WTO의 전신</em></div><div class="ax"><span class="dot"></span><b>1961</b><span class="tt">관광사업진흥법 제정</span><em>우리나라 최초의 관광법률</em></div><div class="ax"><span class="dot"></span><b>1962</b><span class="tt">통역안내원 자격시험 실시</span><em>국제관광공사 설립 → 82년 한국관광공사</em></div><div class="ax"><span class="dot"></span><b>1963</b><span class="tt">교통부 관광국 승격</span><em>워커힐 호텔 개관</em></div><div class="ax"><span class="dot"></span><b>1965</b><span class="tt">한 · 일 국교 정상화</span></div><div class="ax"><span class="dot"></span><b>1966</b><span class="tt">쿠프만 리포트</span><em>최초의 외국인 전문가 관광지 진단</em></div><div class="ax"><span class="dot"></span><b>1967</b><span class="tt">최초의 국립공원 지리산 지정</span><em>UN 「국제관광의 해」</em></div><div class="ax"><span class="dot"></span><b>1970</b><span class="tt">최초의 도립공원 금오산 지정</span><em>경부고속도로 개통(71년)</em></div><div class="ax"><span class="dot"></span><b>1972</b><span class="tt">관광진흥개발기금법 제정</span></div><div class="ax"><span class="dot"></span><b>1974</b><span class="tt">보잉 리포트</span><em>「한국관광개발 조사보고서」</em></div><div class="ax"><span class="dot"></span><b>1975</b><span class="tt">관광산업 국가전략산업 지정</span><em>관광단지개발촉진법 · 관광기본법 · 관광사업법</em></div><div class="ax"><span class="dot"></span><b>1978</b><span class="tt">외래관광객 100만 명 돌파</span><em>자연보호헌장 선포</em></div><div class="ax"><span class="dot"></span><b>1979</b><span class="tt">PATA 총회 개최</span><em>WTO 세계관광의 날 제정 9. 27.</em></div><div class="ax"><span class="dot"></span><b>1980</b><span class="tt">제주도 입국사증 면제 지역 지정</span></div><div class="ax"><span class="dot"></span><b>1982</b><span class="tt">한국관광공사법으로 명칭 개정</span></div><div class="ax"><span class="dot"></span><b>1983</b><span class="tt">50세 이상 해외여행 자유화</span></div><div class="ax"><span class="dot"></span><b>1986</b><span class="tt">관광진흥법 제정 · 공포</span><em>관광사업법 폐지</em></div><div class="ax"><span class="dot"></span><b>1988</b><span class="tt">서울올림픽 개최</span><em>외래관광객 200만 명 돌파</em></div><div class="ax"><span class="dot"></span><b>1989</b><span class="tt">해외여행 완전 자유화</span></div><div class="ax"><span class="dot"></span><b>1990</b><span class="tt">5대 관광권으로 분류</span><em>중부 · 충청 · 서남 · 동남 · 제주</em></div><div class="ax"><span class="dot"></span><b>1991</b><span class="tt">외래관광객 300만 명</span></div><div class="ax"><span class="dot"></span><b>1993</b><span class="tt">대전 EXPO 개최</span></div><div class="ax"><span class="dot"></span><b>1994</b><span class="tt">우리나라 최초 한국방문의 해</span><em>한양 천도 600주년 · 관광특구 5군데 지정</em></div><div class="ax"><span class="dot"></span><b>1998</b><span class="tt">금강산 관광 시작</span><em>외래관광객 400만 돌파 — 2008년 중단</em></div><div class="ax"><span class="dot"></span><b>1999</b><span class="tt">1330 관광안내전화 개통</span></div><div class="ax"><span class="dot"></span><b>2000</b><span class="tt">ASEM 회의 개최</span><em>외국인관광객 532만 명</em></div><div class="ax"><span class="dot"></span><b>2001</b><span class="tt">한국방문의 해</span></div><div class="ax"><span class="dot"></span><b>2002</b><span class="tt">한 · 일 공동개최 월드컵</span><em>부산 아시안게임 · 16대 관광권 설정</em></div><div class="ax"><span class="dot"></span><b>2003</b><span class="tt">금강산 육로관광 개시</span></div><div class="ax"><span class="dot"></span><b>2005</b><span class="tt">한 · 일 방문의 해</span><em>국교정상화 40주년</em></div><div class="ax"><span class="dot"></span><b>2006</b><span class="tt">굿스테이(Goodstay) 인증 제도</span></div><div class="ax"><span class="dot"></span><b>2008</b><span class="tt">금강산 관광 중단</span><em>문화관광부 → 문화체육관광부</em></div><div class="ax"><span class="dot"></span><b>2010</b><span class="tt">한국 방문의 해 2010–2012</span><em>G20 정상회의(서울)</em></div><div class="ax"><span class="dot"></span><b>2011</b><span class="tt">외국인관광도시민박업</span><em>Koreastay</em></div><div class="ax"><span class="dot"></span><b>2013</b><span class="tt">관광경찰제도 도입</span></div><div class="ax"><span class="dot"></span><b>2014</b><span class="tt">관광주간 제도 실시</span><em>2016년부터 여행주간</em></div><div class="ax"><span class="dot"></span><b>2015</b><span class="tt">메르스(MERS) 발생</span><em>외국인관광객 감소</em></div></div></section><section id="b4" class="b4"><div class="sh"><span class="per">교재에 없는 구간</span><h2>2016 ~ 2025</h2><span class="cnt">11개</span></div><div class="lst"><div class="ax"><span class="dot"></span><b>2016</b><span class="tt">관광주간 → 여행주간으로 변경</span><em>교재 표 ⑬ — 2014년 관광주간 제도 시작</em></div><div class="ax"><span class="dot"></span><b>2018</b><span class="tt">평창 동계올림픽 개최</span><em>기출 CH 2016-38</em></div><div class="ax"><span class="dot"></span><b>2020</b><span class="tt">코로나19</span><em>관광산업 침체</em></div><div class="ax"><span class="dot"></span><b>2022 ~ 2031</b><span class="tt">제4차 관광개발기본계획</span><em>교재 4장 — 제3차는 2012~2021</em></div><div class="ax"><span class="dot"></span><b>2024. 5</b><span class="tt">문화재청 → <b>국가유산청</b></span><em>문화재 → 국가유산 체제로 개편</em></div><div class="ax"><span class="dot"></span><b>최근</b><span class="tt">유원시설업 → <b>테마파크업</b></span><em>관광진흥법 사업 종류 명칭 변경</em></div><div class="ax"><span class="dot"></span><b>기출 2022 · 2023</b><span class="tt">관광거점도시 · 국제관광도시</span><em>CH 2022-38 · 2023-94 · 2023-95</em></div><div class="ax"><span class="dot"></span><b>기출 2023</b><span class="tt">웰니스 관광도시 · K-관광마켓 10선</span><em>CH 2023-88 · 2023-90</em></div><div class="ax"><span class="dot"></span><b>기출 2022 · 2023 · 2025</b><span class="tt">한국관광 100선 · 한국관광의 별</span><em>CH 2022-32 · 2023-99 · 2025-81</em></div><div class="ax mul"><span class="dot"></span><b>기출 2024</b><ol class="ol"><li><span>1</span><u>코리아 둘레길 · 관광두레<i>CH 2024-88</i></u></li><li><span>2</span><u>1330 관광통역안내전화<i>CH 2024-83 — 1999년 개통</i></u></li></ol></div></div></section></div><script>var Z=1.06;function zm(a){Z=Math.min(1.6,Math.max(.8,Math.round((Z+a)*10)/10));document.documentElement.style.setProperty('--z',Z);document.getElementById('zv').textContent=Math.round(Z*100)+'%';}</script>
+</body></html>
