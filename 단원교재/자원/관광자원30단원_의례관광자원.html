@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 30단원 · 의례 관광자원 — 전통 의례와 무속 의식</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65;white-space:pre-line}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.stack,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.stack .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.stack .p b{display:block;font-size:15px;margin-bottom:6px;color:var(--bro)}
+.stack .p span{font-size:12.5px;color:var(--ink-2);display:block}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">&larr; 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 30단원</div>
+<h1>의례 관광자원 — 전통 의례와 무속 의식
+<small>의례는 <b>누가 지내느냐</b>로 갈립니다. <b>개인</b>은 관혼상제, <b>나라</b>는 국가 의례, <b>마을과 무당</b>은 굿입니다</small>
+</h1>
+<div class="meta"><span class="chip hot">은산별신제 ★★★</span><span class="chip hot">강릉단오제 ★★</span><span class="chip">국가 의례 6가지</span><span class="chip">예상문제 12문항</span></div>
+</header>
+
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 한 사람의 일생, 나라의 제사, 그리고 마을의 굿</h2>
+<p class="sub">30단원의 의례는 <b>누가 지내느냐</b>로 딱 세 갈래입니다. <b>개인</b>이 일생 동안 거치는 것이 <b>통과의례(관혼상제)</b>, <b>나라</b>가 주관하는 것이 <b>국가 의례</b>, <b>마을과 무당</b>이 이어온 것이 <b>무속 의식</b>입니다.</p>
+
+<div class="flow">
+<b class="hi">개인</b><i>태어나서 죽을 때까지 →</i><b>통과의례 = 관혼상제</b><i>관례·계례 → 혼례 → 상례 → 제례</i>
+</div>
+<div class="flow">
+<b class="hi">나라</b><i>왕이 주관하는 제사 →</i><b>국가 의례</b><i>종묘대제 · 사직대제 · 문묘대제 · 환구대제 · 선농제 · 선잠제</i>
+</div>
+<div class="flow">
+<b class="hi">마을·무당</b><i>민간 신앙 →</i><b>무속 의식</b><i>강릉단오제 · 영등굿 · 은산별신제 · 씻김굿</i>
+</div>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>이 단원의 공부 전략은 다른 단원과 다릅니다.</b> 강사가 통과의례 절차를 설명하면서 <b>"이 자세한 내용은 우리 시험에 아직 나오지는 않았지만, 그래도 용어는 확인 정도 하고 가야 됩니다"</b>라고 분명히 말했습니다. 즉 <b>①국가 의례 6개와 ②무속 의식 4개</b>를 먼저 확실히 잡고, <b>③관혼상제의 세부 용어는 "읽어서 알아두는 수준"</b>으로 두는 것이 효율적입니다. (8/7 문제풀이 1:32:30)</div>
+</div>
+
+<div class="tl">
+<div class="t1"><b>관례 · 계례</b><span>성년식<br>남자=<b>상투</b> / 여자=<b>비녀</b></span></div>
+<div class="t2"><b>혼례</b><span>의혼 → 납채 → 연길 → 납폐<br>→ 전안 → 초례 → 신행 → 현구고례</span></div>
+<div class="t3"><b>상례 · 제례</b><span>초혼(고복) → 발상 → 염 → 발인 → 우제<br>기제사 · 차례</span></div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-book"/></svg> 이야기로 읽기</h2>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">태어나서 죽을 때까지 — 통과의례</div><div class="era">관혼상제</div></div>
+<div class="body">
+<p><b class="k">통과의례</b>란 <b>태어나서 죽을 때까지 사람이 반드시 지나가는 의례 전체</b>를 말합니다. 한자로 <b class="k">관혼상제(冠婚喪祭)</b>라고 하지요.</p>
+
+<p>강사는 이렇게 설명했습니다. 아들이 태어나면 대문에 <b>고추를 걸었고</b>, 백일과 돌에는 <b>잔치</b>를 했습니다. 이것들도 전부 통과의례입니다. 다만 시험에 나오는 것은 <b>관·혼·상·제</b> 네 글자로 정리되는 부분입니다.</p>
+
+<p>먼저 <b class="k">관례</b>. 이게 <b>성년식</b>입니다. 그런데 여기에도 조선의 질서가 그대로 드러납니다 — <b>관례는 남자의 성년식</b>이고, <b>여자의 성년식은 따로 계례</b>라고 불렀습니다.</p>
+
+<div class="term"><b>왜 "계혼상제"가 아니라 "관혼상제"일까요?</b> 강사의 설명 그대로입니다 — <b>"누가 우선이니까? 남자가 우선이니까 그냥 관혼상제로 가버린 거예요. 기분 나빠하지 마시고, 우리 조상님들이 만들어놓은 용어니까 우리는 그냥 따를 뿐이고."</b> 이 단원 전체를 관통하는 것은 <b>성리학의 가부장적 가족관</b>입니다.</div>
+
+<p>상징물은 딱 두 개만 외우면 됩니다 — <b class="k">남자는 상투</b>(머리를 올려 틀고), <b class="k">여자는 비녀</b>(머리를 올려 비녀를 꽂고).</p>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">중매에서 폐백까지 — 혼례</div><div class="era">의혼 → 현구고례</div></div>
+<div class="body">
+<p>조선의 혼인은 자유연애가 아니었습니다. 강사의 표현대로 <b>"100% 중매"</b>입니다. <b>"내가 결혼하고 싶은 여인이 있어도 부모님이, 특히 아버지가 허락하지 않는 한 결혼 못 해."</b> 그래서 양쪽을 연결하는 <b class="k">매파</b>(중매인)를 먼저 정합니다.</p>
+
+<p>절차는 이렇게 흘러갑니다.</p>
+
+<p>① <b class="k">의혼(議婚)</b> — 두 집안이 <b>결혼을 할지 말지 논의</b>하는 단계입니다. 매파의 역할이 가장 중요한 때이지요.</p>
+
+<p>② <b class="k">납채(納采)</b> — 합의가 되면 <b>남자 쪽이 여자 쪽에 청혼서를 보냅니다.</b> 이때 함께 보내는 것이 <b>신랑의 사주</b>입니다.</p>
+
+<div class="term"><b>사주(四柱)</b> — 이게 뭐냐면 <b>태어난 연·월·일·시</b> 네 가지입니다. 이걸 받아서 여자 쪽에서 궁합을 봤습니다.</div>
+
+<p>③ <b class="k">연길(涓吉)</b> — 궁합이 맞으면 이번엔 <b>여자 쪽이 혼례 날짜를 정해 남자 쪽에 통보</b>합니다. 이때 보내는 문서를 <b>택일단자</b>라고 합니다.</p>
+
+<p>④ <b class="k">납폐(納幣)</b> — 이제 <b>남자 쪽이 여자 쪽에 혼수품을 보냅니다.</b> 이 과정에서 흔히 말하는 <b>함을 지는</b> 일이 벌어지지요.</p>
+
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div><b>납채와 납폐</b>는 이 단원 최대의 함정입니다. 강사가 직접 경고했습니다 — <b>"우리 시험 출제위원들의 성향을 보면, 이런 거 갖고 장난치면 우리 골치 아파진다니까."</b> 둘 다 <b>남자 쪽 → 여자 쪽</b>으로 가는 것은 같은데, <b>납채는 청혼서와 사주(종이)</b>, <b>납폐는 혼수품(물건)</b>입니다.</div>
+</div>
+
+<p>⑤ <b class="k">전안(奠雁)</b> — 신랑이 신부 집에 <b>기러기를 전달</b>합니다. 물론 살아 있는 기러기가 아니라 <b>나무로 조각한 기러기</b>입니다. '안(雁)'이 <b>기러기</b>라는 한자이지요. 기러기는 짝을 평생 바꾸지 않는다고 하여 <b>백년해로의 상징</b>으로 썼습니다.</p>
+
+<p>⑥ <b class="k">초례(醮禮) = 대례(大禮)</b> — 드디어 정식 혼례, 일종의 <b>혼인 서약식</b>입니다. 이때 신랑신부가 <b>맞절을 하고 술을 나누어 마시는</b> 절차를 <b>교배례·근배례</b>라고 합니다.</p>
+
+<p>⑦ <b class="k">친영(親迎)</b> — 신부가 <b>신랑 집으로 가는 절차의 시작</b>입니다.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>강사의 비유가 제일 잘 붙습니다 — "친영은 한마디로 시월드의 시작이야."</b> 그리고 여기서 국사와 연결됩니다. <b>친영은 조선 후기의 것</b>입니다. <b>조선 전기에는 남자가 여자 집에 가서 사는 것이 일반적</b>이었고 가족 안에서 남녀의 위치가 거의 같았는데, <b>후기에 성리학이 강해지면서 여자가 남자 집으로 가는 친영이 자리 잡았습니다.</b></div>
+</div>
+
+<p>⑧ <b class="k">우귀(于歸) = 신행(新行)</b> — <b>신랑은 말을 타고 신부는 가마를 타고</b> 신랑 집으로 들어가는 입주식입니다.</p>
+
+<p>⑨ <b class="k">현구고례(見舅姑禮)</b> — 신랑 집에 들어가 <b>시부모와 시댁 어른들께 절을 올리는</b> 마지막 절차, 우리가 흔히 <b>폐백</b>이라 부르는 것입니다.</p>
+
+<p>그 밖에 혼례가 끝난 뒤 <b>신부 어머니가 신랑 집에 보내는 음식</b>을 <b class="k">이바지 음식</b>이라 하고, <b>사돈끼리 주고받는 편지</b>도 오갔습니다.</p>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">지붕에 올라가 이름을 부르다 — 상례</div><div class="era">초혼 → 우제</div></div>
+<div class="body">
+<p><b class="k">상례</b>는 <b>부모님이 돌아가셨을 때 예를 갖추는 절차</b>입니다. 흔히 "상을 치른다"고 하지요.</p>
+
+<p>① <b class="k">초혼(招魂) = 고복(皐復)</b> — 가장 먼저 하는 일입니다. <b>돌아가신 분이 평소 입던 옷을 들고 지붕 위로 올라가, 그분의 혼을 부릅니다.</b> 혹시라도 돌아올까 하는 마음이지요. 이 절차를 <b>초혼</b> 또는 <b>고복</b>이라 합니다.</p>
+
+<p>② <b class="k">발상(發喪)</b> — 이제 <b>동네 사람들에게 부고를 알립니다.</b> 이때 <b>큰아들이 상투 튼 머리를 풀어헤치고 소리 내어 우는데</b>, 이것을 <b>곡(哭)한다</b>고 합니다.</p>
+
+<div class="term"><b>상주(喪主)</b> — 이게 뭐냐면 <b>상을 치르는 주인</b>, 즉 원칙적으로 <b>그 집안의 큰아들</b>입니다. 아버지가 돌아가시면 큰아들이, 할아버지가 돌아가시면 큰아버지가 상주가 됩니다.</div>
+
+<p>③ <b class="k">염(殮)</b> — 시신을 씻기고 수의를 입혀 정돈하는 절차입니다.</p>
+
+<p>④ <b class="k">발인(發靷)</b> — 장례를 마치고 <b>묘자리(장지)로 이동</b>하는 절차입니다. 옛날에는 <b>상여</b>를 메고 올라갔고, 산에서 간단한 <b>산신제</b>를 지내기도 했습니다.</p>
+
+<p>⑤ <b class="k">우제(虞祭)</b> — 장사를 지낸 뒤 <b>망자(돌아가신 분)의 혼을 위로하는 제사</b>입니다. 보통 <b>삼우제</b>라고 하며 <b>3일간</b> 지냅니다.</p>
+
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div>강사가 최근 장례 문화 이야기를 곁들였습니다. 밤늦게 돌아가시면 병원과 협의해 다음 날 아침부터 시작해 <b>사실상 2일장</b>으로 치르는 경우가 늘었다고 합니다. 후배가 <b>"어머님이 돌아가시면서 자식들한테 하루를 줄여주고 가셨다"</b>고 말하더라는 대목입니다. 시험 내용은 아니지만, <b>3일장이 원형</b>이라는 것을 기억하는 데 도움이 됩니다.</div>
+</div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">기일에는 제사, 명절에는 차례 — 제례</div><div class="era">진설 4원칙</div></div>
+<div class="body">
+<p><b class="k">제례</b>는 제사를 지내는 의례입니다. 여기서 <b>용어 구분</b>이 하나 나옵니다.</p>
+
+<div class="term"><b>제사 vs 차례</b> — 이게 뭐냐면, <b>돌아가신 날(기일)에 지내는 것이 제사(기제사)</b>이고, <b>설날·추석 같은 명절에 지내는 것은 차례</b>입니다. 강사가 <b>"그때는 '제사'란 말을 쓰지 않죠. 뭘 지낸다고 해요? 차례를 지낸다고 합니다"</b>라고 짚은 부분입니다. 명절 제사를 한자로는 <b>절사(節祀)</b>라고 합니다.</div>
+
+<p>제례의 종류는 넷입니다 — <b class="k">사당제</b>(조상 위패를 모신 사당에서), <b class="k">시제</b>(시조신에게), <b class="k">절사</b>(명절 = 차례), <b class="k">기제사</b>(돌아가신 날 매년).</p>
+
+<p>이 모든 절차의 뿌리는 <b class="k">《주자가례》</b>입니다. 성리학을 세운 중국의 <b>주희(주자)</b>가 쓴 책으로, 우리나라의 관혼상제는 이 책을 바탕으로 자리 잡았습니다. 다만 강사는 <b>"제례의 순서와 형식은 지역마다 다 달라요. 그래서 딱 원칙을 정해놓지는 않습니다"</b>라고 하며, <b>기본 원칙만</b> 정리했습니다.</p>
+
+<p>그 기본 원칙이 <b class="k">진설(陳設)</b> — 제사상에 음식을 놓는 방식입니다. 네 개만 외우면 됩니다.</p>
+
+<div class="tblwrap"><table>
+<thead><tr><th>원칙</th><th>뜻</th><th>풀이</th></tr></thead>
+<tbody>
+<tr><td class="nm">반서갱동<br>(飯西羹東)</td><td><b>밥은 서쪽, 국은 동쪽</b></td><td><b>반(飯)=밥</b>, <b>갱(羹)=국</b>. 강사가 <b>"밑줄 쫙"</b> 하며 가장 강조한 원칙</td></tr>
+<tr><td class="nm">홍동백서<br>(紅東白西)</td><td><b>붉은 과일은 동쪽, 흰 과일은 서쪽</b></td><td>과일의 색으로 자리를 정함</td></tr>
+<tr><td class="nm">조율이시<br>(棗栗梨柿)</td><td><b>대추 · 밤 · 배 · 곶감</b> 순</td><td>조=대추, 율=밤, 이=배, 시=곶감</td></tr>
+<tr><td class="nm">어동육서<br>(魚東肉西)</td><td><b>생선은 동쪽, 고기는 서쪽</b></td><td>—</td></tr>
+<tr><td class="nm">두동미서<br>(頭東尾西)</td><td><b>생선 머리는 동쪽, 꼬리는 서쪽</b></td><td>두(頭)=머리, 미(尾)=꼬리</td></tr>
+<tr><td class="nm">좌포우혜<br>(左脯右醯)</td><td><b>포는 왼쪽, 식혜는 오른쪽</b></td><td>포=북어포 등</td></tr>
+</tbody>
+</table></div>
+
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div>한자를 몰라도 됩니다. <b>동(東)이 붙은 쪽에 무엇이 오는지</b>만 짝지어 외우세요 — <b>국(갱)·붉은 과일·생선·머리는 동쪽</b>, <b>밥(반)·흰 과일·고기·꼬리는 서쪽</b>입니다.</div>
+</div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">5</div><div class="ttl">왕이 지내는 여섯 가지 제사 — 국가 의례</div><div class="era">종묘 · 사직 · 문묘 · 환구 · 선농 · 선잠</div></div>
+<div class="body">
+<p>개인의 제사가 관혼상제라면, <b>나라가 지내는 제사</b>가 국가 의례입니다. 여섯 가지를 <b>"누구에게, 무엇을 비는가"</b>로 묶으면 정리가 끝납니다.</p>
+
+<p><b class="k">종묘대제(종묘제례)</b>는 <b>조선 역대 왕과 왕비의 신위</b>에 지내는 제사로, 19단원에서 배운 종묘에서 지냅니다. <b>2001년 인류무형문화유산 최초 등재</b> 항목이기도 하지요.</p>
+
+<p><b class="k">사직대제</b>는 <b>토지신과 곡식신</b>에게 국토의 평안과 풍년을 비는 제사입니다. 종묘가 왕실 조상이라면 <b>사직은 땅과 곡식</b>입니다.</p>
+
+<p><b class="k">문묘대제(석전대제)</b>는 <b>공자와 여러 성현</b>에게 지내는 제사로, 성균관과 각 지방 향교에서 지냅니다.</p>
+
+<p><b class="k">환구대제</b>는 <b>왕이 환구단에서 하늘에 지내는 제사</b>입니다. 하늘에 제사를 지내는 것은 원래 황제만 할 수 있는 일이라, 대한제국 선포와 함께 환구단이 세워진 배경을 함께 기억하면 좋습니다.</p>
+
+<p><b class="k">선농제</b>는 <b>농사의 신(신농씨·후직씨)</b>에게 풍년을 비는 제사이고, <b class="k">선잠제</b>는 <b>왕비가 직접 누에를 쳐서 양잠을 장려하는</b> 의례입니다.</p>
+
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>선농 vs 선잠</b>은 짝으로 외우세요. <b>선농 = 농사 = 왕</b>, <b>선잠 = 누에(양잠) = 왕비</b>입니다. 남자는 밭을 갈고 여자는 누에를 치는, 당시의 역할 관념이 그대로 제도가 된 것입니다.</div>
+</div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">6</div><div class="ttl">마을을 위한 굿 — 무속 의식</div><div class="era">28단원 무형유산과 겹침</div></div>
+<div class="body">
+<p>마지막은 <b>무당</b>을 중심으로 이어져 온 <b class="k">무속 의식</b>입니다.</p>
+
+<div class="term"><b>강신무 vs 세습무</b> — 이게 뭐냐면 무당이 되는 <b>경로</b>의 차이입니다. <b>강신무</b>는 <b>신내림을 받아</b> 무당이 된 사람이고, <b>세습무</b>는 <b>집안의 혈통을 따라</b> 대대로 무당이 되는 사람으로 <b>주로 남부 지방</b>에 있었습니다.</div>
+
+<p>굿도 <b>누구를 위한 것이냐</b>로 나뉩니다 — <b class="k">무신제</b>(무당 자신을 위한 굿), <b class="k">가제</b>(개인·가족을 위한 재수굿·병굿 등), <b class="k">동제(마을굿)</b>(마을 공동체를 위한 굿).</p>
+
+<p>시험에 나오는 대표 의식은 넷입니다.</p>
+
+<p><b class="k">강릉 단오제</b>는 <b>유교·무속·불교가 함께 공존</b>하는 축제로, <b>단오굿</b>과 <b>관노가면극</b>이 함께 열립니다(2005년 인류무형문화유산). <b class="k">제주 칠머리당 영등굿</b>은 <b>해녀의 안전과 풍어</b>를 비는, <b>우리나라 유일의 해녀 관련 굿</b>입니다(2009년). <b class="k">은산 별신제</b>는 <b>충남 부여</b>에서 <b>백제 장군 복신</b>을 위로하는 데서 유래했고, <b class="k">진도 씻김굿</b>은 <b>죽은 이의 영혼을 씻어 극락으로 인도</b>하는 굿입니다. 불교 쪽으로는 49재의 일종인 <b>영산재</b>가 있습니다(28단원과 연결).</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div><b>교재의 별표 표시</b>로 볼 때 이 단원에서 가장 강조된 것은 <b>은산 별신제(★★★)</b>와 <b>강릉 단오제(★★)</b>입니다. 두 의식의 <b>유래</b>와 <b>세계무형유산 등재 여부</b>가 함께 묻힐 가능성이 높습니다. (은산별신제는 국가무형유산이지만 <b>인류무형문화유산 23개 목록에는 없습니다</b> — 이 점이 함정입니다)</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표</h2>
+
+<h3>① 통과의례(관혼상제) 절차 전체</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>절차</th><th>뜻</th></tr></thead>
+<tbody>
+<tr><td class="nm">관례</td><td>—</td><td><b>남자의 성년식</b> · 상징물 <b>상투</b></td></tr>
+<tr><td class="nm">계례</td><td>—</td><td><b>여자의 성년식</b> · 상징물 <b>비녀</b></td></tr>
+<tr><td class="nm" rowspan="1">혼례 ①</td><td><b>의혼</b></td><td>두 집안이 혼인 여부를 <b>논의</b> (매파의 역할)</td></tr>
+<tr><td class="nm">혼례 ②</td><td><b>납채</b></td><td>남자 쪽 → 여자 쪽에 <b>청혼서 + 신랑의 사주</b></td></tr>
+<tr><td class="nm">혼례 ③</td><td><b>연길</b></td><td>여자 쪽 → 남자 쪽에 <b>혼례 날짜 통보</b>(택일단자)</td></tr>
+<tr><td class="nm">혼례 ④</td><td><b>납폐</b></td><td>남자 쪽 → 여자 쪽에 <b>혼수품</b>(함을 지는 절차)</td></tr>
+<tr><td class="nm">혼례 ⑤</td><td><b>전안</b></td><td>신랑이 신부 집에 <b>나무 기러기</b>를 전달(안=기러기)</td></tr>
+<tr><td class="nm">혼례 ⑥</td><td><b>초례(대례)</b></td><td>정식 혼례 = 혼인 서약식 · 맞절과 술은 <b>교배례·근배례</b></td></tr>
+<tr><td class="nm">혼례 ⑦</td><td><b>친영</b></td><td>신부가 <b>신랑 집으로 가는 절차의 시작</b> (조선 후기의 산물)</td></tr>
+<tr><td class="nm">혼례 ⑧</td><td><b>우귀 = 신행</b></td><td>신랑 집으로 들어가는 <b>입주식</b>(신랑은 말, 신부는 가마)</td></tr>
+<tr><td class="nm">혼례 ⑨</td><td><b>현구고례</b></td><td>시부모께 <b>폐백</b>을 올리는 마지막 절차</td></tr>
+<tr><td class="nm">상례 ①</td><td><b>초혼 = 고복</b></td><td>평소 입던 옷을 들고 <b>지붕에 올라가 혼을 부름</b></td></tr>
+<tr><td class="nm">상례 ②</td><td><b>발상</b></td><td>부고를 알리고 <b>곡</b>함 · <b>상주는 원칙적으로 큰아들</b></td></tr>
+<tr><td class="nm">상례 ③</td><td><b>염(염습)</b></td><td>시신을 씻기고 수의를 입힘</td></tr>
+<tr><td class="nm">상례 ④</td><td><b>발인</b></td><td><b>장지(묘자리)로 이동</b> · 상여 · 산신제</td></tr>
+<tr><td class="nm">상례 ⑤</td><td><b>우제(삼우제)</b></td><td>망자의 혼을 위로하는 제사 · <b>3일</b></td></tr>
+<tr><td class="nm">제례</td><td><b>기제사 / 절사(차례)</b></td><td><b>기일에는 제사, 명절에는 차례</b> · 그 외 사당제 · 시제</td></tr>
+</tbody>
+</table></div>
+
+<h3>② 진설(제사상 차리기) 원칙</h3>
+<div class="stack">
+<div class="p"><b>반서갱동</b><span>밥=서 · 국=동</span></div>
+<div class="p"><b>홍동백서</b><span>붉은 과일=동 · 흰 과일=서</span></div>
+<div class="p"><b>조율이시</b><span>대추·밤·배·곶감</span></div>
+<div class="p"><b>어동육서</b><span>생선=동 · 고기=서</span></div>
+<div class="p"><b>두동미서</b><span>머리=동 · 꼬리=서</span></div>
+<div class="p"><b>좌포우혜</b><span>포=왼쪽 · 식혜=오른쪽</span></div>
+</div>
+
+<h3>③ 국가 의례 6가지</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>의례</th><th>누구에게</th><th>함께 기억할 것</th></tr></thead>
+<tbody>
+<tr><td class="nm">종묘대제<br>(종묘제례)</td><td>조선 역대 <b>왕과 왕비</b>의 신위</td><td>19단원 종묘 · <b>2001년 인류무형문화유산 최초 등재</b></td></tr>
+<tr><td class="nm">사직대제</td><td><b>토지신 · 곡식신</b></td><td>국토 평안과 풍년 기원 · 사직단은 <b>지방에도</b> 설치</td></tr>
+<tr><td class="nm">문묘대제<br>(석전대제)</td><td><b>공자와 선성·선현</b></td><td>성균관 · 지방 향교</td></tr>
+<tr><td class="nm">환구대제</td><td><b>하늘(황천상제)</b></td><td>왕이 <b>환구단</b>에서 지냄</td></tr>
+<tr><td class="nm">선농제</td><td><b>신농씨 · 후직씨</b>(농사의 신)</td><td>풍년 기원 · <b>왕</b>이 주관</td></tr>
+<tr><td class="nm">선잠제</td><td><b>누에(양잠)</b></td><td><b>왕비</b>가 직접 누에를 쳐 양잠 장려</td></tr>
+</tbody>
+</table></div>
+
+<h3>④ 무속 의식</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">무당의 종류</td><td><b>강신무</b>(신내림) / <b>세습무</b>(혈통 세습, 주로 <b>남부 지방</b>)</td></tr>
+<tr><td class="nm">굿의 종류</td><td><b>무신제</b>(무당 자신) / <b>가제</b>(개인·가족 — 재수굿·병굿) / <b>동제(마을굿)</b>(마을 공동체)</td></tr>
+<tr><td class="nm">강릉 단오제</td><td>단오굿 · <b>관노가면극</b> · <b>유교·무속·불교 공존</b> · <b class="o">인류무형문화유산 2005</b></td></tr>
+<tr><td class="nm">제주 칠머리당<br>영등굿</td><td><b>해녀</b>의 안전과 풍어 기원 · <b>우리나라 유일의 해녀 굿</b> · <b class="o">인류무형문화유산 2009</b></td></tr>
+<tr><td class="nm">은산 별신제</td><td><b>충남 부여</b> · <b>백제 장군 복신</b>을 위로하는 데서 유래 · <b class="x">인류무형문화유산 23개 목록에는 없음</b></td></tr>
+<tr><td class="nm">진도 씻김굿</td><td>죽은 이의 영혼을 <b>씻어 극락으로 인도</b>(천도)</td></tr>
+<tr><td class="nm">영산재</td><td>불교 의식 · <b>49재</b> · 봉원사 · <b class="o">인류무형문화유산 2009</b></td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급 — 이 단원은 근거가 약합니다. 그대로 밝힙니다</h2>
+<p class="sub">30단원은 기출 원문 실측도 불가능하고, <b>강의 근거도 절반뿐</b>입니다. 그래서 등급을 감으로 매기지 않고, 확보된 근거(교재의 별표 표기 + 강사가 직접 한 말)만으로 표시하고 <b>근거가 없는 항목은 "근거 없음"이라고 적었습니다.</b></p>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>은산 별신제</b> — 교재 <b>★★★</b> · 충남 부여 · 백제 장군 복신 유래. 이 단원에서 교재가 가장 강하게 표시한 항목</div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>국가 의례 6가지의 대상 매칭</b> — 종묘(왕·왕비) / 사직(토지·곡식) / 문묘(공자) / 환구(하늘) / 선농(농사) / 선잠(양잠). <b>서로 바꿔놓기</b>가 가장 쉬운 출제 방식이며, 종묘·문묘는 19단원과 교차 출제됩니다</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>강릉 단오제</b> — 교재 <b>★★</b> · <b>유교·무속·불교 공존</b>이라는 표현이 그대로 보기로 쓰입니다 · 2005년 인류무형문화유산</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>제주 칠머리당 영등굿 = 해녀의 굿</b> — "남자 어부를 위한 굿"으로 바꿔놓는 것이 교재가 명시한 함정</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>28단원과 겹치는 항목</b> — 강릉단오제·영등굿·영산재는 <b>인류무형문화유산 목록에 있고</b>, <b>은산별신제·진도씻김굿은 없습니다.</b> 이 차이가 문제로 만들기 가장 쉬운 지점입니다</div></div>
+<div class="row"><span class="gr gC">C · 확인</span><div><b>강신무 vs 세습무</b> — 신내림 / 혈통(남부 지방). 짧고 명확해 보기 한 줄로 나오기 좋습니다</div></div>
+<div class="row"><span class="gr gC">C · 확인</span><div><b>관례(남·상투) vs 계례(여·비녀)</b> — 강사가 상징물 두 개만은 확실히 정리해 주었습니다</div></div>
+<div class="row"><span class="gr gZ">근거 없음</span><div><b>혼례·상례의 세부 절차 용어</b>(납채·연길·납폐·전안·친영·우귀·현구고례·초혼·발상·발인·우제) — 강사가 직접 <b>"이 자세한 내용은 우리 시험에 <span style="color:#9C2F2F">아직 나오지는 않았지만</span>, 그래도 용어는 확인 정도 하고 가야 됩니다"</b>라고 했습니다. 그리고 <b>교배례·근배례에 대해서는 "필기하지 마시라"</b>고까지 했습니다. <b>여기에 시간을 많이 쓰지 마세요.</b></div></div>
+<div class="row"><span class="gr gZ">근거 없음</span><div><b>진설 원칙</b>(반서갱동·홍동백서·조율이시 등) — 강사가 <b>"반서갱동만 밑줄"</b>이라고 했을 뿐 출제 언급은 없었습니다. <b>반서갱동 하나만</b> 확실히 해두면 충분합니다</div></div>
+</div>
+
+<div class="zero">
+<b>버릴 것을 알려드립니다.</b> 제례의 <b>세부 홀기 절차</b>(강신·참신·초헌·아헌·종헌·유식·사신·철상·음복)는 강사가 <b>"지역마다 다 달라서 원칙을 정해놓지 않는다"</b>며 의도적으로 생략했습니다. <b>관례의 세부 절차</b>(삼가례 등)도 다루지 않았습니다. 이 단원에서는 <b>국가 의례 6개와 무속 의식 4개</b>에 시간을 쓰는 것이 맞습니다.
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+
+<div class="cmp">
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 종묘 vs 사직</h4>
+<div class="vs">
+<div class="side a"><b>종묘대제</b>역대 <b>왕과 왕비</b></div><div class="mid">VS</div><div class="side n"><b>사직대제</b><b>토지신·곡식신</b></div>
+</div>
+<p class="why">교재가 직접 지목한 함정입니다 — <b>둘을 서로 바꿔 설명하는 문장</b>에 주의하세요. <b>종묘 = 조상, 사직 = 땅과 곡식</b>. "종묘사직"이라는 말이 곧 <b>왕실 + 국토</b>를 뜻합니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 선농 vs 선잠</h4>
+<div class="vs">
+<div class="side b"><b>선농제</b>농사 · <b>왕</b>이 주관</div><div class="mid">VS</div><div class="side g"><b>선잠제</b>양잠 · <b>왕비</b>가 주관</div>
+</div>
+<p class="why"><b>농사는 왕, 누에는 왕비</b>. 이 한 줄만 외우면 뒤집힌 보기를 바로 잡아낼 수 있습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 납채 vs 납폐</h4>
+<div class="vs">
+<div class="side a"><b>납채</b>청혼서 + <b>신랑의 사주</b></div><div class="mid">VS</div><div class="side b"><b>납폐</b><b>혼수품</b>(함)</div>
+</div>
+<p class="why">둘 다 <b>남자 쪽 → 여자 쪽</b>이라 헷갈립니다. 강사가 <b>"이런 거 갖고 장난치면 우리 골치 아파진다니까"</b>라고 경고한 짝입니다. <b>채(采)는 종이, 폐(幣)는 물건</b>으로 붙여 외우세요. 그 사이에 여자 쪽이 날짜를 정해 보내는 <b>연길</b>이 끼어 있습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 제사 vs 차례</h4>
+<div class="vs">
+<div class="side n"><b>기제사</b>기일(돌아가신 날)</div><div class="mid">VS</div><div class="side g"><b>차례 = 절사</b>설날 · 추석</div>
+</div>
+<p class="why">명절에 지내는 것은 <b>제사가 아니라 차례</b>입니다. 강사가 명칭을 혼동하지 말라고 짚은 부분입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 강신무 vs 세습무</h4>
+<div class="vs">
+<div class="side b"><b>강신무</b><b>신내림</b>을 받아 무당이 됨</div><div class="mid">VS</div><div class="side a"><b>세습무</b><b>혈통</b>으로 이어짐 · 남부 지방</div>
+</div>
+<p class="why"><b>"강신"은 신이 내려온다</b>는 뜻, <b>"세습"은 대물림</b>이라는 뜻입니다. 단어 자체에 답이 들어 있습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 영등굿은 해녀의 굿</h4>
+<div class="vs">
+<div class="side n"><b>맞음</b>해녀의 안전·풍어</div><div class="mid">↔</div><div class="side x2"><b>틀림</b>"남자 어부를 위한 굿"</div>
+</div>
+<p class="why">교재가 명시한 오답 문장입니다. <b>제주 칠머리당 영등굿은 우리나라 유일의 해녀 관련 굿</b>이고, 28단원 제주 해녀 문화(2016)와 함께 묶어 기억하세요.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars"><ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>공부 배분을 알려준 한 마디</b> — "이 자세한 내용(혼례·상례 절차)은 우리 시험에 <b>아직 나오지는 않았지만</b>, 그래도 용어는 <b>확인 정도</b> 하고 가야 됩니다." (1:32:30)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>납채와 납폐만은 경고</b> — "우리 시험 출제위원들의 성향을 보면, <b>이런 거 갖고 장난치면 우리 골치 아파진다니까.</b>" (1:35:09)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>필기하지 말라고 한 것</b> — <b>교배례·근배례</b>. "필기한다, 또 쓴다. <b>말라니까.</b> 중요하지 않은 것은 말만 꺼내가지고" (1:37:12) → 우선순위가 낮다는 뜻입니다</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>밑줄 지시가 나온 유일한 진설 원칙</b> — <b>반서갱동</b>. "첫 번째, 반서갱동. <b>밑줄 쫙.</b>" (1:46:27)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>국사와 이어지는 지점</b> — <b>친영 = 시월드의 시작</b>이고, 이것은 <b>조선 후기</b>의 것입니다. <b>"조선 전기는 남자와 여자가 가족 내에서 위치가 거의 동일하다고 했잖아. 그런데 조선 후기에 성리학에 의해서 남자가 위인 가족제도가 보편화된 거죠."</b> (1:38:21)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>제례는 원칙을 외우지 말 것</b> — "제례를 지내는 순서와 형식은 <b>지역마다 다 달라요.</b> 그렇기 때문에 딱 원칙을 정해놓지는 않습니다." → 세부 홀기 절차는 버려도 됩니다 (1:44:24)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>관혼상제의 뿌리는 《주자가례》</b> — 성리학을 세운 <b>주희(주자)</b>가 쓴 책. 국사의 성리학 단원과 함께 기억하면 한 번에 정리됩니다</div></li>
+</ul></div>
+</section>
+
+
+<section id="quizsec">
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 예상문제 12문항</h2>
+<p class="sub">보기를 눌러 고르고, 다 풀면 <b>채점하기</b>를 누르세요. 채점 후 <b>틀린 문제만 다시 풀기</b>와 <b>오답노트용 기록</b>이 나옵니다.</p>
+
+<div class="notice">
+<b>이 문제들은 기출이 아니라 예상문제이며, 이 단원은 근거가 특히 제한적입니다.</b> 30단원은 기출 원문 정리본(136문항)의 수록 범위 밖이고, <b>강의 전사본에도 통과의례(관혼상제) 부분만 있습니다.</b> 그래서 문제는 <b>교재가 직접 함정으로 지목한 문장</b>과 <b>강사가 확실히 정리해 준 항목</b>만으로 만들었고, 강사가 "아직 시험에 나오지 않았다"고 한 세부 절차는 <b>1~2문항으로만</b> 담았습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 12 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/04_최종교재/관광자원.md</code>의 30단원(의례 관광자원) + <b>강의전사본/문제풀이강의/8월7일.txt</b> 1:27:01~1:48:31 구간(통과의례 = 관혼상제).</p>
+<p><b class="x">강의 인용을 찾지 못한 부분 — 국가 의례와 무속 의식 전체</b>. 8/7 강의에서 강사는 "의례는 통과의례와 국가의례 2개로 나눠져 있는데"라고 분류만 소개한 뒤 <b>통과의례만 설명하고 "국가의례는 일요일날 이어서 나갈 겁니다"라며 끝냈습니다.</b> 보유한 전사본 전체를 <code>사직대제·문묘대제·석전·환구·선농·선잠·강신무·세습무·별신제·씻김굿·영등굿·단오제·영산재</code> 키워드로 검색해도 <b>0건</b>입니다. 따라서 <b>국가 의례 6가지와 무속 의식 부분은 원본 교재만 근거로</b> 작성했습니다. 해당 회차 강의가 전사되면 이 부분만 보완하면 됩니다.</p>
+<p><b>기출 실측 불가 사유</b> — <code>관광자원기출.md</code>(2013~2025년 136문항)의 수록 범위가 유교 건축(Q136)까지여서 이 단원의 기출 원문이 없습니다. 또한 8/7 강의의 이 구간은 <b>문제풀이가 아니라 교재 정리 파트</b>여서 <b>관혼상제 관련 기출문제 풀이가 한 문항도 없습니다.</b> 그래서 빈출 등급은 <b>교재의 별표 표기와 강사의 발언만</b>을 근거로 매기고, 근거가 없는 항목은 <b>"근거 없음"이라고 표시</b>했습니다.</p>
+<p><b>추측 금지</b> — 음성 판독이 불확실한 항목(이바지 음식을 보내는 절차의 명칭, 사돈 간 편지의 명칭, 1년·3년 뒤 제사의 명칭)은 <b>용어를 확정하지 않고 설명만</b> 남겼습니다. 강사도 이 부분에 대해 "확인만 하고 외우지 마시라"고 했습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var UNIT='[관광자원해설 30단원 — 의례 관광자원]';
+var QS=[
+{n:1,src:"예상 · 국가 의례 매칭(최우선)",q:"국가 의례와 그 대상의 연결이 옳지 <b>않은</b> 것은?",o:["종묘대제 — 조선 역대 왕과 왕비의 신위","사직대제 — 토지신과 곡식신","문묘대제 — 신농씨와 후직씨","환구대제 — 하늘(황천상제)"],a:2,c:"국가의례",e:"<b>신농씨·후직씨는 농사의 신</b>이므로 <b>선농제</b>의 대상입니다. <b>문묘대제(석전대제)는 공자와 여러 성현</b>에게 지내는 제사로 성균관과 지방 향교에서 지냅니다. 국가 의례는 <b>\"누구에게 무엇을 비는가\"</b>를 서로 바꿔놓는 방식으로 나옵니다."},
+{n:2,src:"예상 · 교재 지목 함정",q:"다음 설명 중 옳은 것은?",o:["종묘대제는 토지신과 곡식신에게 풍년을 기원하는 제사이다.","사직대제는 조선 역대 왕과 왕비에게 올리는 제사이다.","선잠제는 왕비가 직접 누에를 쳐 양잠을 장려하는 의례이다.","선농제는 왕비가 주관하여 누에를 치는 의례이다."],a:2,c:"국가의례",e:"<b>선잠제 = 왕비 = 누에(양잠)</b>, <b>선농제 = 왕 = 농사</b>입니다. ①②는 <b>종묘와 사직을 서로 바꿔놓은</b> 문장으로, 교재가 직접 \"주의하라\"고 지목한 함정입니다. <b>종묘 = 왕실 조상 / 사직 = 토지·곡식</b>입니다."},
+{n:3,src:"예상 · 28단원 교차형",q:"다음 중 유네스코 인류무형문화유산으로 등재된 것을 모두 고른 것은?\nㄱ. 강릉 단오제  ㄴ. 은산 별신제  ㄷ. 제주 칠머리당 영등굿  ㄹ. 영산재",o:["ㄱ, ㄴ, ㄷ","ㄱ, ㄷ, ㄹ","ㄴ, ㄷ, ㄹ","ㄱ, ㄴ, ㄹ"],a:1,c:"무속",e:"<b>강릉 단오제(2005)·제주 칠머리당 영등굿(2009)·영산재(2009)</b>는 인류무형문화유산 23개 목록에 있습니다. <b>은산 별신제는 이 목록에 없습니다</b> — 교재에서 ★★★로 가장 강조된 항목이면서 <b>세계유산은 아니라는</b> 점이 그대로 함정이 됩니다."},
+{n:4,src:"예상 · 교재 지목 함정",q:"제주 칠머리당 영등굿에 관한 설명으로 옳은 것은?",o:["남자 어부들의 안전과 풍어를 기원하는 굿이다.","해녀의 안전과 풍어를 기원하는, 우리나라 유일의 해녀 관련 굿이다.","죽은 이의 영혼을 극락으로 인도하는 굿이다.","백제 장군 복신을 위로하는 데서 유래한 굿이다."],a:1,c:"무속",e:"<b>영등굿은 해녀</b>의 굿입니다. 교재가 \"남자 어부들을 위한 굿이다 → 틀림\"이라고 직접 지목한 문장이 ①입니다. ③은 <b>진도 씻김굿</b>, ④는 <b>은산 별신제</b>(충남 부여)의 설명입니다."},
+{n:5,src:"예상 · 무당 구분형",q:"무속에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["강신무는 신내림을 체험하여 무당이 된 사람이다.","세습무는 혈통에 따라 대대로 이어지며 주로 남부 지방에 분포하였다.","동제(마을굿)는 개인과 가족의 재수를 비는 굿이다.","무신제는 무당 자신을 위한 굿이다."],a:2,c:"무속",e:"<b>동제(마을굿)는 마을 공동체를 위한 굿</b>입니다. <b>개인·가족을 위한 굿은 가제</b>로, 재수굿·병굿 등이 여기에 속합니다. 무당은 <b>강신무(신내림) / 세습무(혈통, 남부)</b>로 나뉩니다."},
+{n:6,src:"예상 · 강릉단오제형",q:"강릉 단오제에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["단오굿과 관노가면극이 함께 열린다.","유교·무속·불교의 요소가 함께 나타난다.","2005년 유네스코 인류무형문화유산으로 등재되었다.","추석에 열리는 전라남도의 대표적인 축제이다."],a:3,c:"무속",e:"강릉 단오제는 <b>단오(음력 5월 5일)</b>에 <b>강원도 강릉</b>에서 열립니다. 추석·전남과 연결되는 것은 <b>강강술래</b>입니다. 강릉 단오제의 핵심 표현은 <b>\"유교·무속·불교가 함께 공존한다\"</b>로, 이 문장이 그대로 보기로 쓰입니다."},
+{n:7,src:"예상 · 관례/계례형",q:"통과의례에 관한 설명으로 옳은 것은?",o:["관례는 여자의 성년식으로 비녀를 꽂는다.","계례는 남자의 성년식으로 상투를 튼다.","관례는 남자의 성년식으로 상투를 틀고, 계례는 여자의 성년식으로 비녀를 꽂는다.","관례와 계례는 모두 혼례의 세부 절차이다."],a:2,c:"통과의례",e:"<b>관례 = 남자 = 상투</b>, <b>계례 = 여자 = 비녀</b>입니다. 관혼상제의 \"관\"이 성년식이고, 여자의 성년식인 계례가 따로 있었지만 <b>남자를 앞세우는 성리학적 질서 때문에</b> 명칭이 \"관혼상제\"로 굳었습니다."},
+{n:8,src:"예상 · 납채/납폐 함정(강사 경고)",q:"혼례 절차에 관한 설명으로 옳은 것은?",o:["납채는 남자 쪽에서 여자 쪽으로 혼수품을 보내는 절차이다.","납폐는 남자 쪽에서 여자 쪽으로 청혼서와 신랑의 사주를 보내는 절차이다.","연길은 여자 쪽에서 혼례 날짜를 정해 남자 쪽에 알리는 절차이다.","의혼은 신랑이 신부 집에 기러기를 전달하는 절차이다."],a:2,c:"통과의례",e:"<b>연길</b>이 맞습니다(이때 보내는 문서가 <b>택일단자</b>). ①②는 <b>납채와 납폐가 서로 바뀐</b> 것으로, 강사가 <b>\"이런 거 갖고 장난치면 골치 아파진다\"</b>고 경고한 짝입니다 — <b>납채는 청혼서+사주, 납폐는 혼수품</b>입니다. ④는 <b>전안</b>의 설명이고, <b>의혼</b>은 두 집안이 혼인을 논의하는 첫 단계입니다."},
+{n:9,src:"예상 · 상례형",q:"상례의 절차에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["초혼(고복)은 돌아가신 분의 옷을 들고 지붕에 올라가 혼을 부르는 절차이다.","발상은 상을 알리며 곡하는 절차로, 상주는 원칙적으로 큰아들이 맡는다.","발인은 장지로 이동하는 절차이다.","우제는 혼례를 마친 신부가 신랑 집으로 들어가는 절차이다."],a:3,c:"통과의례",e:"신부가 신랑 집으로 들어가는 절차는 <b>우귀(신행)</b>입니다. <b>우제</b>는 장사를 지낸 뒤 <b>망자의 혼을 위로하는 제사</b>로, 보통 <b>삼우제</b>라 하여 <b>3일간</b> 지냅니다. 이름이 비슷한 <b>우제 ↔ 우귀</b>를 구분하세요."},
+{n:10,src:"예상 · 제사/차례 구분",q:"제례에 관한 설명으로 옳은 것은?",o:["설날과 추석에 지내는 것을 기제사라고 한다.","돌아가신 날에 매년 지내는 것을 차례라고 한다.","명절에 지내는 제사는 절사이며 흔히 차례라고 부른다.","사당제는 명절에 조상의 묘소에서 지내는 제사이다."],a:2,c:"통과의례",e:"<b>기일(돌아가신 날)에 지내는 것이 기제사</b>, <b>설날·추석 등 명절에 지내는 것이 절사, 곧 차례</b>입니다. 강사가 <b>\"그때는 '제사'란 말을 쓰지 않죠. 차례를 지낸다고 합니다\"</b>라고 짚은 구분입니다. <b>사당제</b>는 조상의 위패를 모신 <b>사당</b>에서 지내는 제사입니다."},
+{n:11,src:"예상 · 진설형(반서갱동)",q:"제사상을 차리는 진설의 원칙으로 옳은 것은?",o:["반서갱동 — 밥은 서쪽, 국은 동쪽에 놓는다.","홍동백서 — 흰 과일은 동쪽, 붉은 과일은 서쪽에 놓는다.","두동미서 — 생선의 꼬리는 동쪽, 머리는 서쪽에 놓는다.","좌포우혜 — 식혜는 왼쪽, 포는 오른쪽에 놓는다."],a:0,c:"통과의례",e:"<b>반서갱동 = 반(밥)은 서쪽, 갱(국)은 동쪽</b>입니다. 강사가 진설 원칙 중 <b>유일하게 \"밑줄 쫙\"</b>이라고 한 항목입니다. 나머지는 모두 방향이 뒤집혀 있습니다 — <b>홍동백서</b>(붉은 과일=동), <b>두동미서</b>(머리=동), <b>좌포우혜</b>(포=왼쪽, 식혜=오른쪽)."},
+{n:12,src:"예상 · 국사 교차형",q:"조선 시대 통과의례에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["관혼상제의 절차는 주희(주자)가 쓴 《주자가례》를 바탕으로 정착되었다.","혼례에서 신부가 신랑 집으로 가는 친영은 조선 후기에 보편화되었다.","조선 전기에는 가족 내에서 남녀의 위치가 거의 대등한 편이었다.","친영은 조선 전기부터 일반화되어 있었으며 성리학과는 관련이 없다."],a:3,c:"통과의례",e:"<b>친영은 조선 후기</b>에 <b>성리학적·가부장적 가족 질서</b>가 강해지면서 보편화되었습니다. 강사의 설명 그대로 — <b>\"조선 전기는 남자와 여자가 가족 내에서 위치가 거의 동일하다고 했잖아. 그런데 조선 후기에 성리학에 의해서 남자가 위인 가족제도가 보편화된 거죠.\"</b> 국사의 조선 후기 사회사와 함께 나오는 지점입니다."}
+];
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx=''+UNIT+' 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\n/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+
+</body>
+</html>

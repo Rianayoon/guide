@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>관통사 물어보기 — 2026 필기</title>
+<style>
+:root{
+  --bg:#f7f8fa; --card:#fff; --line:#e3e6ea; --tx:#1c1f23; --dim:#6b7280;
+  --ac:#2563eb; --ac-bg:#eff4ff; --hl:#fff3a3;
+  --guksa:#c2410c; --jawon:#047857; --beopgyu:#1d4ed8; --hakgaeron:#7c3aed;
+  --r:14px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--tx);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",sans-serif;
+  font-size:16px; line-height:1.65; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:920px;margin:0 auto;padding:0 16px 80px}
+
+/* ── 헤더 ── */
+header{position:sticky;top:0;z-index:20;background:rgba(247,248,250,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);padding:12px 0 10px}
+.hd{max-width:920px;margin:0 auto;padding:0 16px}
+.brand{display:flex;align-items:baseline;gap:8px;margin-bottom:9px}
+.brand b{font-size:17px;letter-spacing:-.3px}
+.brand span{font-size:12px;color:var(--dim)}
+.brand .ver{margin-left:auto;font-weight:700;color:#0f766e;background:#ecfdf5;border:1px solid #6ee7b7;border-radius:999px;padding:2px 9px}
+.sbox{display:flex;gap:8px;align-items:stretch}
+#q{flex:1;min-width:0;font:inherit;font-size:17px;padding:13px 15px;border:1.5px solid var(--line);
+  border-radius:12px;background:#fff;outline:none}
+#q:focus{border-color:var(--ac);box-shadow:0 0 0 3px var(--ac-bg)}
+#go{flex:0 0 auto;font:inherit;font-size:16px;font-weight:600;padding:0 20px;border:0;border-radius:12px;
+  background:var(--ac);color:#fff;cursor:pointer}
+.chips{display:flex;gap:6px;overflow-x:auto;margin-top:9px;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;font-size:13px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;
+  background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap}
+.chip:active{background:var(--ac-bg)}
+.subs{display:flex;gap:6px;overflow-x:auto;margin-top:9px;scrollbar-width:none}
+.subs::-webkit-scrollbar{display:none}
+.sub{flex:0 0 auto;font-size:13.5px;font-weight:600;padding:6px 14px;border:1px solid var(--line);
+  border-radius:999px;background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap}
+.sub.on{background:var(--tx);border-color:var(--tx);color:#fff}
+.sub.cam{background:#0f766e;border-color:#0f766e;color:#fff}
+#recent .chip{border-style:dashed}
+.drop{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+  background:rgba(15,118,110,.9);color:#fff;font-size:22px;font-weight:800}
+.drop.on{display:flex}
+.drop div{border:3px dashed #fff;border-radius:20px;padding:44px 60px}
+.camst{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:14px;color:#065f46}
+.camst .bar{height:5px;background:#d1fae5;border-radius:3px;margin-top:7px;overflow:hidden}
+.camst .bar i{display:block;height:100%;background:#0f766e;transition:width .2s}
+.camh{font-size:15px;font-weight:800;margin-bottom:6px}
+.camq{font-size:13px;color:var(--dim);background:#f3f5f7;border-radius:8px;padding:8px 11px;margin-bottom:14px;line-height:1.6}
+#recent .chip b{font-weight:400;color:#9ca3af;margin-left:5px}
+
+/* ── 탭 ── */
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:20px 0 8px;padding:8px 12px;background:#eef2f7;border-radius:10px;font-weight:800;font-size:15px;color:#1f3550}
+.sec-h b{color:#dc2626}
+.lfbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+.lfl{font-size:13px;color:#64748b;font-weight:700;margin-right:2px}
+.lfbar .chip{cursor:pointer}
+.lfbar .chip.on{background:#0f766e;color:#fff;border-color:#0f766e}
+.lfs{padding:6px 10px;border:1px solid #cbd5e1;border-radius:999px;font-size:14px;background:#fff}
+.tabs{display:flex;gap:6px;margin:14px 0 12px}
+.tab{flex:1;text-align:center;font-size:14px;font-weight:600;padding:10px 4px;border:1px solid var(--line);
+  border-radius:10px;background:#fff;color:var(--dim);cursor:pointer}
+.tab.on{background:var(--tx);border-color:var(--tx);color:#fff}
+.tab i{font-style:normal;font-weight:500;opacity:.65;font-size:12px;margin-left:3px}
+
+/* ── 결과 카드 ── */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-bottom:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-bottom:6px}
+.badge{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff;line-height:1.5}
+.b-국사{background:var(--guksa)} .b-자원{background:var(--jawon)}
+.b-법규{background:var(--beopgyu)} .b-학개론{background:var(--hakgaeron)}
+.b-기타{background:#6b7280}
+.unit{font-size:13px;color:var(--dim)}
+.h{font-size:16.5px;font-weight:700;letter-spacing:-.2px;margin:2px 0 7px}
+.snip{font-size:14.5px;color:#374151;line-height:1.7}
+.snip mark,mark{background:var(--hl);color:inherit;border-radius:3px;padding:0 2px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
+.btn{font:inherit;font-size:13.5px;font-weight:600;padding:7px 14px;border:1px solid var(--line);
+  border-radius:9px;background:#fff;color:var(--tx);cursor:pointer;text-decoration:none;display:inline-block}
+.btn.p{background:var(--ac-bg);border-color:#c7d8ff;color:var(--ac)}
+.btn.play{background:#dc2626;border-color:#dc2626;color:#fff;font-weight:700}
+.btn.scan{background:#1f2937;border-color:#1f2937;color:#fff;font-weight:700}
+.ovl{position:fixed;inset:0;z-index:100;background:rgba(15,20,28,.92);display:flex;flex-direction:column}
+.ovbar{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  padding:10px 14px;background:#111827;color:#fff;font-size:15px}
+.ovbar span{display:flex;gap:6px}
+.btn.ovb{background:#374151;border-color:#4b5563;color:#fff;padding:6px 12px;font-size:13.5px}
+.ovimg{flex:1 1 auto;overflow:auto;-webkit-overflow-scrolling:touch;padding:10px;text-align:center}
+.ovimg img{max-width:100%;height:auto;background:#fff;border-radius:6px;box-shadow:0 6px 30px rgba(0,0,0,.5)}
+.full{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);display:none}
+.full.on{display:block}
+
+/* ── 본문(마크다운) 렌더 ── */
+.md{font-size:15px;line-height:1.75}
+.md h3{font-size:15.5px;margin:16px 0 7px;padding-left:9px;border-left:3px solid var(--ac)}
+.md h4{font-size:14.5px;margin:13px 0 5px;color:#374151}
+.md p{margin:8px 0}
+.md ul,.md ol{margin:8px 0;padding-left:22px}
+.md li{margin:3px 0}
+.md hr{border:0;border-top:1px solid var(--line);margin:14px 0}
+.md blockquote{margin:10px 0;padding:9px 13px;background:#fffbea;border-left:3px solid #f0c14b;border-radius:0 8px 8px 0}
+.md strong{font-weight:700}
+.hitnav{position:sticky;top:104px;z-index:5;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  background:var(--ac-bg);border:1px solid #c7d8ff;border-radius:10px;padding:8px 12px;margin:0 0 12px;font-size:13.5px;color:var(--ac)}
+.hitnav b{font-variant-numeric:tabular-nums}
+.btn.nb{padding:5px 11px;font-size:13px}
+mark.hit{background:var(--hl)}
+mark.hit.now{background:#ff9f43;color:#111;box-shadow:0 0 0 3px rgba(255,159,67,.3);border-radius:3px}
+.warn{background:#fff8e1;border:1px solid #f0c14b;border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:14px;color:#7a5b00}
+pre.raw{white-space:pre-wrap;word-break:break-word;font:inherit;font-size:14.5px;line-height:1.75;margin:0;color:#374151}
+.md code{background:#f1f3f5;padding:1px 5px;border-radius:4px;font-size:13.5px}
+.tw{overflow-x:auto;margin:11px 0;border:1px solid var(--line);border-radius:10px}
+.md table{border-collapse:collapse;width:100%;font-size:14px;background:#fff}
+.md th,.md td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;white-space:nowrap}
+.md th{background:#f3f5f7;font-weight:700}
+.md tr:nth-child(even) td{background:#fbfcfd}
+
+/* ── 영상 결과 ── */
+.tline{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.tstamp{font-variant-numeric:tabular-nums;font-weight:700;font-size:15px;color:#fff;background:var(--tx);
+  padding:4px 11px;border-radius:8px;letter-spacing:.4px}
+.tstamp.no{background:#9ca3af;font-size:12.5px;font-weight:600;letter-spacing:0}
+.ctx{font-size:13.5px;color:#9ca3af;line-height:1.65;margin:4px 0}
+.ctx.now{color:#374151;font-size:14.5px}
+.lline{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:#9ca3af;line-height:1.6;padding:3px 0}
+.lline.now{color:#1c1f23;font-size:15px;font-weight:500;background:#fffdf0;border-radius:8px;padding:7px 9px;margin:3px -9px}
+.lt{flex:0 0 auto;font-variant-numeric:tabular-nums;font-size:12.5px;font-weight:700;color:#fff;background:#9ca3af;
+  border-radius:6px;padding:2px 7px;text-decoration:none;white-space:nowrap}
+a.lt{background:#dc2626}
+.lline.now a.lt{background:#b91c1c}
+
+/* ── 목록/기타 ── */
+.sec-t{font-size:13px;font-weight:700;color:var(--dim);margin:18px 0 8px;letter-spacing:.3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+a.tile{display:block;background:#fff;border:1px solid var(--line);border-radius:11px;padding:11px 13px;
+  text-decoration:none;color:var(--tx)}
+a.tile .t1{font-size:14.5px;font-weight:700;margin-bottom:2px}
+a.tile .t2{font-size:12.5px;color:var(--dim);line-height:1.5;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.empty{text-align:center;color:var(--dim);padding:44px 20px;font-size:15px;line-height:1.9}
+.loading{text-align:center;color:var(--dim);padding:34px;font-size:14px}
+.tab u{text-decoration:none}
+@media(max-width:520px){ .md th,.md td{white-space:normal} .tab u{display:none} .tab{font-size:13.5px;padding:11px 2px} }
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <div class="brand"><b>관통사 물어보기</b><span>2026 필기 · 내 자료 전용</span><span class="ver">v16</span></div>
+    <div class="sbox">
+      <input id="q" placeholder="예) 주심포 양식 특징" enterkeyhint="search" autocomplete="off">
+      <button id="go">찾기</button>
+    </div>
+    <div class="subs" id="subs">
+      <span class="sub on" data-s="">전체</span>
+      <span class="sub" data-s="국사">국사</span>
+      <span class="sub" data-s="자원">자원</span>
+      <span class="sub" data-s="법규">법규</span>
+      <span class="sub" data-s="학개론">학개론</span>
+      <span class="sub cam" id="cam" title="사진 고르기 · ⌘V 붙여넣기 · 끌어다 놓기">📷 캡처로 찾기</span>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="chips" id="recent"></div>
+    <div style="margin-top:6px"><span class="chip" id="hardreload" style="color:#0f766e;border-color:#6ee7b7">🔄 최신으로 새로고침</span></div>
+    <input type="file" id="camf" accept="image/*" style="display:none">
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="tabs" id="tabs">
+    <div class="tab on" data-t="all">🔎 한번에<u>&nbsp;보기</u><i id="ca"></i></div>
+    <div class="tab" data-t="book">📕 학원교재<i id="cb"></i></div>
+    <div class="tab" data-t="vid">🎬 강의<u>&nbsp;시점</u><i id="cv"></i></div>
+    <div class="tab" data-t="page">📄 쪽수<u>&nbsp;찾기</u><i id="cp"></i></div>
+    <div class="tab" data-t="unit">📖 내<u>&nbsp;자료</u><i id="cu"></i></div>
+    <div class="tab" data-t="card">🗂 암기카드<i id="cc"></i></div>
+    <div class="tab" data-t="link">🔗 링크<i id="cl"></i></div>
+  </div>
+  <div id="out"></div>
+</div>
+
+<script>
+/* ══════════ 데이터 ══════════ */
+var UNITS=null, LECS=null, LINKS=null, PAGES=null, BOOKS=null, CARDS=null, VIDS={}, SCANS={}, TAB='all', Q='';
+var out=document.getElementById('out');
+
+function load(u){ return fetch(u).then(function(r){return r.json()}); }
+load('data/videos.json').then(function(v){ VIDS=v||{}; render(); }).catch(function(){});
+load('data/scans.json').then(function(v){ SCANS=v||{}; if(Q) render(); }).catch(function(){});
+Promise.all([load('data/books.json'), load('data/links.json'), load('data/pages.json')]).then(function(a){
+  BOOKS=a[0]; LINKS=a[1]; PAGES=a[2]; render();
+  load('data/lectures.json').then(function(l){ LECS=l; render(); });
+  load('data/units.json').then(function(u){ UNITS=u; if(Q) render(); });
+  load('data/cards.json').then(function(c){ CARDS=c; if(Q) render(); }).catch(function(){});
+});
+
+/* ══════════ 검색어 처리 ══════════ */
+var STOP=['에 대해','에대해','에 대한','대해서','설명해줘','설명해','설명','알려줘','알려주','보여줘','보여',
+          '뭐야','뭔가요','무엇','머야','해줘','해 줘','좀','만들어줘','만들어','정리해줘','정리해','정리',
+          '표로','표','는','은','이','가','을','를','의','와','과','에','도','랑','및','что'];
+function terms(q){
+  var s=' '+q.trim()+' ';
+  STOP.forEach(function(w){ if(w.length>1) s=s.split(w).join(' '); });
+  var t=s.split(/[\s,./?!·「」"'()\[\]]+/).filter(function(w){ return w.length>=2; });
+  // 조사 꼬리 제거 (2글자 이상 유지)
+  t=t.map(function(w){ return w.replace(/(은|는|이|가|을|를|의|와|과|에|도|랑|이란|란|에서|부터|까지|처럼)$/,'')||w; })
+     .filter(function(w){ return w.length>=2; });
+  t=t.map(function(w){ return (w.length>=3 && /표$/.test(w)) ? w.slice(0,-1) : w; });
+  var seen={},o=[]; t.forEach(function(w){ if(!seen[w]){seen[w]=1;o.push(w);} });
+  o = o.length?o:[q.trim()].filter(Boolean);
+  o.forEach(function(w,i){ o[i]=w; });
+  o.ns = o.map(nsp);
+  return o;
+}
+var PGWORD=/(\d{1,3})\s*(쪽|페이지|페)(?![0-9])/;
+function searchPages(){
+  var m=Q.match(PGWORD); if(!m||!PAGES) return [];
+  var want=parseInt(m[1],10);
+  var g=SUBJ?((SUBJ==='국사'||SUBJ==='자원')?'국사·자원':'법규·학개론') : (/국사|자원|한국사/.test(Q)?'국사·자원' : (/법규|개론|학개론|진흥법/.test(Q)?'법규·학개론':''));
+  var k=/문제|기출|풀이/.test(Q)?'문제풀이' : (/핵심|이론|요약/.test(Q)?'핵심':'');
+  return PAGES.filter(function(r){
+    if(g && r.g.indexOf(g)!==0) return false;
+    if(k && r.g.indexOf(k)<0) return false;
+    return Math.abs(r.p-want)<=3;
+  }).map(function(r){ return {r:r, d:Math.abs(r.p-want), want:want}; })
+   .sort(function(a,b){ return a.d-b.d || a.r.t-b.r.t; }).slice(0,40);
+}
+var VIDWORD=/몇\s*시|몇\s*분|몇시|몇분|몇\s*번째|어디\s*(쯤|즈음|부분|서|에서|에\s*나|나와|나오|있|였|더라|말했|설명|얘기|나옴)|어느\s*(쯤|부분|즈음|대목)|타임|시점|시간대|대목|영상|동영상|강의\s*(어디|어느|언제)|언제\s*(나와|나오|했|나옴)|나와\?|나오나|나왔(어|나|지)/;
+
+/* ══════════ 유틸 ══════════ */
+function nsp(s){ return s.replace(/\s+/g,''); }
+function nOf(o,k){ if(o['_n_'+k]===undefined) o['_n_'+k]=nsp(o[k]||''); return o['_n_'+k]; }
+function looseRe(t){ return new RegExp(t.split('').map(reEsc).join('\\s*'),'g'); }
+function countLoose(hayNoSpace, termNoSpace){
+  if(!termNoSpace) return 0;
+  var n=0, i=0;
+  while((i=hayNoSpace.indexOf(termNoSpace,i))>=0){ n++; i+=termNoSpace.length; }
+  return n;
+}
+function esc(s){ return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]}); }
+function hl(s,ts){
+  s=esc(s);
+  ts.forEach(function(t){
+    if(t.length<2) return;
+    s=s.replace(new RegExp(nsp(t).split('').map(function(c){return c.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}).join('\\s*'),'g'),'\u0001$&\u0002');
+  });
+  return s.split('\u0001').join('<mark>').split('\u0002').join('</mark>');
+}
+function fmt(sec){
+  if(sec<0) return '시간정보 없음';
+  var h=Math.floor(sec/3600), m=Math.floor(sec%3600/60), s=sec%60;
+  var p=function(n){return n<10?'0'+n:''+n};
+  return (h?h+':'+p(m):m+'')+':'+p(s);
+}
+function reEsc(t){ return t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+function markInEl(el, ts){
+  if(!ts||!ts.length) return 0;
+  var re=new RegExp('('+ts.map(function(t){ return nsp(t).split('').map(reEsc).join('\\s*'); }).join('|')+')','g');
+  var w=document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false), nodes=[], n;
+  while((n=w.nextNode())){ re.lastIndex=0; if(n.nodeValue && re.test(n.nodeValue)) nodes.push(n); }
+  var count=0;
+  nodes.forEach(function(node){
+    var frag=document.createDocumentFragment(), last=0, s=node.nodeValue, m; re.lastIndex=0;
+    while((m=re.exec(s))){
+      if(m.index>last) frag.appendChild(document.createTextNode(s.slice(last,m.index)));
+      var mk=document.createElement('mark'); mk.className='hit'; mk.textContent=m[0];
+      frag.appendChild(mk); last=m.index+m[0].length; count++;
+      if(m[0].length===0) re.lastIndex++;
+    }
+    if(last<s.length) frag.appendChild(document.createTextNode(s.slice(last)));
+    node.parentNode.replaceChild(frag,node);
+  });
+  return count;
+}
+function jumpTo(box, idx, quiet){
+  var hits=box.querySelectorAll('mark.hit');
+  if(!hits.length) return;
+  idx=(idx+hits.length)%hits.length;
+  box._i=idx;
+  hits.forEach(function(h){ h.classList.remove('now'); });
+  hits[idx].classList.add('now');
+  if(!quiet) hits[idx].scrollIntoView({block:'center', behavior:'smooth'});
+  var lbl=box.querySelector('.hitnav b'); if(lbl) lbl.textContent=(idx+1)+' / '+hits.length;
+}
+var AUTOKEY='';
+function autoOpen(sel, pfx, label){
+  var key=Q+'|'+TAB+'|'+SUBJ;
+  if(AUTOKEY===key) return;
+  AUTOKEY=key;
+  var btn=out.querySelector(sel);
+  if(!btn) return;
+  var id=pfx+(btn.dataset.x||btn.dataset.bx||btn.dataset.cx);
+  var box=document.getElementById(id);
+  if(box && !box.classList.contains('on')) openBox(btn, box, label, true);
+}
+function openBox(btn, box, closedLabel, quiet){
+  var on=box.classList.toggle('on');
+  btn.textContent = on ? '접기 ▴' : closedLabel;
+  if(!on) return;
+  if(!box.dataset.marked){
+    box.dataset.marked='1';
+    var c=markInEl(box, (CACHE&&CACHE.ts)||[]);
+    if(c>1){
+      var nav=document.createElement('div');
+      nav.className='hitnav';
+      nav.innerHTML='<span>찾은 곳 <b>1 / '+c+'</b></span><button class="btn nb" data-d="-1">◀ 이전</button><button class="btn nb" data-d="1">다음 ▶</button>';
+      box.insertBefore(nav, box.firstChild);
+      nav.querySelectorAll('.nb').forEach(function(b){
+        b.onclick=function(e){ e.stopPropagation(); jumpTo(box, (box._i||0)+parseInt(b.dataset.d,10)); };
+      });
+    }
+  }
+  setTimeout(function(){ jumpTo(box, 0, quiet); }, 60);
+}
+function scanBtn(book, page){
+  var sc=SCANS[book]; if(!sc) return '';
+  if(sc.pages.indexOf(page)<0) return '';
+  return '<button class="btn scan" data-sc="'+sc.slug+'|'+page+'|'+esc(book)+'">📕 교재 원본 보기</button>';
+}
+function openScan(slug, page, book){
+  var ov=document.createElement('div'); ov.className='ovl';
+  ov.innerHTML='<div class="ovbar"><b>'+esc(book)+' '+page+'쪽</b>'
+    +'<span><button class="btn ovb" data-pg="-1">◀ 앞쪽</button>'
+    +'<button class="btn ovb" data-pg="1">뒤쪽 ▶</button>'
+    +'<button class="btn ovb close">닫기 ✕</button></span></div>'
+    +'<div class="ovimg"><img src="pages/'+slug+'/'+page+'.jpg" alt=""></div>';
+  document.body.appendChild(ov);
+  document.body.style.overflow='hidden';
+  history.pushState({ovl:1}, '', location.hash);
+  function close(){ ov.remove(); document.body.style.overflow=''; if(history.state&&history.state.ovl) history.back(); }
+  ov.querySelector('.close').onclick=close;
+  ov.onclick=function(e){ if(e.target===ov) close(); };
+  ov.querySelectorAll('[data-pg]').forEach(function(b){
+    if(b.classList.contains('close')) return;
+    b.onclick=function(){
+      var d=parseInt(b.dataset.pg,10), sc=SCANS[book], i=sc.pages.indexOf(page);
+      var np=sc.pages[i+d]; if(np===undefined) return;
+      page=np; ov.querySelector('.ovbar b').textContent=book+' '+page+'쪽';
+      ov.querySelector('.ovimg img').src='pages/'+slug+'/'+page+'.jpg';
+      ov.querySelector('.ovimg').scrollTop=0;
+    };
+  });
+}
+document.addEventListener('click', function(e){
+  var b=e.target.closest('[data-sc]'); if(!b) return;
+  var p=b.dataset.sc.split('|'); openScan(p[0], parseInt(p[1],10), p[2]);
+});
+/* 앞뒤 줄까지 보여주고, 줄마다 그 시점으로 갈 수 있게 */
+function lecLines(l, i, ts){
+  var vid=VIDS[l.name], out='';
+  for(var k=Math.max(0,i-2); k<=Math.min(l.tx.length-1, i+2); k++){
+    var t=l.ts[k], cur=(k===i);
+    var time=(t>=0? fmt(t) : '');
+    var body=cur?hl(l.tx[k],ts):esc(l.tx[k]);
+    var href=(vid && t>=0)? 'https://youtu.be/'+vid+'?t='+Math.max(0,t-2) : '';
+    out+='<div class="lline'+(cur?' now':'')+'">'
+      + (time? (href? '<a class="lt" href="'+href+'" target="_blank" rel="noopener">'+time+' ▶</a>'
+                    : '<span class="lt">'+time+'</span>') : '')
+      + '<span>'+body+'</span></div>';
+  }
+  return out;
+}
+function ytBtn(lecName, sec){
+  var id=VIDS[lecName];
+  if(!id) return '';
+  var t=(sec&&sec>0)?Math.max(0,sec-3):0;
+  return '<a class="btn play" target="_blank" rel="noopener" href="https://youtu.be/'+id+'?t='+t+'">▶ '
+    + (sec>=0? fmt(sec)+'부터 보기' : '영상 열기') + '</a>';
+}
+function snippet(text,ts,len){
+  len=len||190;
+  var plain=text.replace(/<br\s*\/?>/gi,' · ').replace(/<[^>]+>/g,' ')
+                .replace(/\|/g,' ').replace(/[#*`>-]{1,}/g,' ').replace(/\s+/g,' ').trim();
+  var i=-1;
+  for(var k=0;k<ts.length;k++){
+    var m=plain.match(looseRe(nsp(ts[k])));
+    if(m){ i=plain.indexOf(m[0]); break; }
+  }
+  if(i<0) i=0;
+  var st=Math.max(0,i-60);
+  return (st>0?'… ':'')+plain.slice(st,st+len)+(st+len<plain.length?' …':'');
+}
+
+/* ══════════ 아주 작은 마크다운 렌더러 (표 지원) ══════════ */
+function inline(s){
+  s=esc(s).replace(/&lt;br\s*\/?&gt;/gi,'<br>');
+  s=s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  s=s.replace(/`([^`]+)`/g,'<code>$1</code>');
+  s=s.replace(/\[(.+?)\]\((https?:[^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  return s;
+}
+function md(src){
+  var L=src.split('\n'), o=[], i=0;
+  function flush(tag){ if(tag) o.push('</'+tag+'>'); }
+  while(i<L.length){
+    var ln=L[i];
+    // 표
+    if(/^\s*\|/.test(ln) && i+1<L.length && /^\s*\|[\s:|-]+\|?\s*$/.test(L[i+1])){
+      var rows=[]; 
+      while(i<L.length && /^\s*\|/.test(L[i])){ rows.push(L[i]); i++; }
+      var cells=function(r){ return r.trim().replace(/^\||\|$/g,'').split('|').map(function(c){return c.trim()}); };
+      var head=cells(rows[0]);
+      var body=rows.slice(2).map(cells);
+      var h='<div class="tw"><table><thead><tr>'+head.map(function(c){return '<th>'+inline(c)+'</th>'}).join('')+'</tr></thead><tbody>';
+      body.forEach(function(r){ h+='<tr>'+r.map(function(c){return '<td>'+inline(c)+'</td>'}).join('')+'</tr>'; });
+      o.push(h+'</tbody></table></div>'); continue;
+    }
+    if(/^\s*(---|===|\*\*\*)\s*$/.test(ln)){ o.push('<hr>'); i++; continue; }
+    var m;
+    if((m=ln.match(/^####\s+(.*)/))){ o.push('<h4>'+inline(m[1])+'</h4>'); i++; continue; }
+    if((m=ln.match(/^###\s+(.*)/))){ o.push('<h3>'+inline(m[1])+'</h3>'); i++; continue; }
+    if((m=ln.match(/^##?\s+(.*)/))){ o.push('<h3>'+inline(m[1])+'</h3>'); i++; continue; }
+    if(/^\s*>\s?/.test(ln)){
+      var q=[]; while(i<L.length && /^\s*>\s?/.test(L[i])){ q.push(L[i].replace(/^\s*>\s?/,'')); i++; }
+      o.push('<blockquote>'+q.map(inline).join('<br>')+'</blockquote>'); continue;
+    }
+    if(/^\s*([-*+]|\d+\.)\s+/.test(ln)){
+      var ord=/^\s*\d+\./.test(ln), items=[];
+      while(i<L.length && /^\s*([-*+]|\d+\.)\s+/.test(L[i])){
+        items.push(L[i].replace(/^\s*([-*+]|\d+\.)\s+/,'')); i++;
+      }
+      o.push('<'+(ord?'ol':'ul')+'>'+items.map(function(t){return '<li>'+inline(t)+'</li>'}).join('')+'</'+(ord?'ol':'ul')+'>');
+      continue;
+    }
+    if(!ln.trim()){ i++; continue; }
+    var par=[]; while(i<L.length && L[i].trim() && !/^\s*[|>#]|^\s*([-*+]|\d+\.)\s+|^\s*(---)/.test(L[i])){ par.push(L[i]); i++; }
+    if(!par.length){ par.push(L[i]); i++; }   // 무한루프 방지
+    o.push('<p>'+par.map(inline).join('<br>')+'</p>');
+  }
+  return o.join('');
+}
+
+/* ══════════ 검색 ══════════ */
+var LFK='', LFD='';
+var PARTIAL=false, WANTTABLE=false, WANTQ=false, SUBJ='';
+var PHRASE='';
+/* 문서들을 훑어 낱말별 등장 문서수를 세고, 흔한 낱말은 점수를 깎는다 */
+/* 낱말들이 서로 가까이 붙어 있으면 크게 가산 */
+function proximity(hay, tns){
+  if(tns.length<2) return 0;
+  var posList=tns.map(function(t){
+    var arr=[], i=0, c=0;
+    while((i=hay.indexOf(t,i))>=0 && c<40){ arr.push(i); i+=t.length; c++; }
+    return arr;
+  });
+  if(posList.some(function(a){return !a.length;})) return 0;
+  var best=1e9;
+  posList[0].forEach(function(p0){
+    var lo=p0, hi=p0+tns[0].length;
+    for(var k=1;k<posList.length;k++){
+      var bestp=null, bd=1e9;
+      posList[k].forEach(function(p){ var d=Math.abs(p-p0); if(d<bd){bd=d;bestp=p;} });
+      if(bestp===null) return;
+      lo=Math.min(lo,bestp); hi=Math.max(hi,bestp+tns[k].length);
+    }
+    if(hi-lo<best) best=hi-lo;
+  });
+  if(best<=18) return 350;
+  if(best<=50) return 180;
+  if(best<=150) return 70;
+  if(best<=400) return 20;
+  return 0;
+}
+function scoreSet(docs, tns){
+  var N=docs.length||1, df=tns.map(function(){return 0;});
+  // 1차: 원문 그대로(띄어쓰기 지킴) 세기
+  var raw=docs.map(function(d){
+    return tns.map(function(t,i){
+      var n=countLoose(d.hayx!==undefined?d.hayx:d.hay, t);
+      if(n>0) df[i]++;
+      return n;
+    });
+  });
+  // 그 낱말이 원문에 아예 없으면 그때만 띄어쓰기 무시로 다시
+  tns.forEach(function(t,i){
+    if(df[i]>0) return;
+    docs.forEach(function(d,k){
+      var n=countLoose(d.hay,t);
+      raw[k][i]=n; if(n>0) df[i]++;
+    });
+  });
+  var idf=df.map(function(d){ return Math.log((N+1)/(d+1))+0.4; });
+  return raw.map(function(c,k){
+    var sc=0, hit=0;
+    c.forEach(function(n,i){
+      if(n>0){ hit++; sc += Math.min(n,6) * idf[i] * 10; }
+    });
+    // 검색어가 통째로 붙어 나오면 최우선
+    if(PHRASE && PHRASE.length>=3 && countLoose(docs[k].hay, PHRASE)>0) sc += 600;
+    if(hit===tns.length) sc += proximity(docs[k].hayx!==undefined?docs[k].hayx:docs[k].hay, tns);
+    return {i:k, score:sc, hit:hit};
+  });
+}
+var TBLWORD=/(^|[\s가-힣])표($|[\s로만도])|[가-힣]표(?![가-힣])|계보|일람|한눈|도표|차트|정리해|비교/;
+function hasTable(t){
+  // 마크다운 표 | OCR 교재의 표 형태(같은 줄에 구분선·다열)
+  if(/^\s*\|.*\|/m.test(t)) return true;
+  var rows=t.split('\n').filter(function(l){ return (l.match(/\s{2,}/g)||[]).length>=2 && l.trim().length>8; });
+  return rows.length>=4;
+}
+var FULL={}, PART={};
+function andFilter(res, need, cap, key){
+  cap = cap || 40;
+  res.sort(function(a,b){return b.score-a.score});
+  var all = need>1 ? res.filter(function(r){return r.hit>=need}) : res;
+  FULL[key]=all.length; PART[key]=(need>1 && all.length===0 && res.length>0);
+  return (all.length?all:res).slice(0,cap);
+}
+function searchBooks(ts){
+  WANTQ=/문제|기출|테스트|퀴즈|풀이|OX|정답/.test(Q);
+  if(!BOOKS) return [];
+  var g=SUBJ||(/국사|한국사/.test(Q)?'국사':(/자원/.test(Q)?'자원':(/법규|진흥법/.test(Q)?'법규':(/개론|학개론/.test(Q)?'학개론':''))));
+  var res=[], qonly=[], tns=ts.ns||ts.map(nsp);
+  var pool=BOOKS.filter(function(b){ return !SUBJ || b.s===SUBJ; });
+  pool.forEach(function(b){ b.hay=nOf(b,'t'); if(b.hayx===undefined) b.hayx=b.t.replace(/\s+/g,' '); });
+  scoreSet(pool, tns).forEach(function(x){
+    if(!x.hit) return;
+    var b=pool[x.i], score=x.score + x.hit*40;
+    if(g && b.s===g) score+=60;
+    var tb=hasTable(b.t);
+    if(WANTTABLE && !tb) return;
+    if(WANTTABLE && tb) score+=80;
+    var isQ=/기출|문제/.test(b.b) || /\[정답\]|\[해설\]|오답 ?풀이|옳은 것은|옮은 것은/.test(b.t);
+    if(isQ && !WANTQ){ qonly.push({b:b,score:Math.round(score*0.3),hit:x.hit}); return; }
+    res.push({b:b, score:score, hit:x.hit});
+  });
+  return andFilter(res.length?res:qonly, ts.length, 40, 'book');
+}
+function searchUnits(ts){
+  if(!UNITS) return [];
+  var res=[], pool=[], tns=ts.ns||ts.map(nsp);
+  UNITS.forEach(function(u,ui){
+    if(SUBJ && u.s!==SUBJ) return;
+    u.secs.forEach(function(sc,si){
+      pool.push({u:u,ui:ui,si:si,sc:sc,hay:nOf(sc,'h')+nOf(sc,'t'),hayx:(sc.h+' '+sc.t).replace(/\s+/g,' ')});
+    });
+  });
+  scoreSet(pool, tns).forEach(function(x){
+    if(!x.hit) return;
+    var it=pool[x.i], u=it.u, sc=it.sc, score=x.score + x.hit*40;
+    if(nOf(sc,'h').indexOf(tns[0])>=0) score+=60;
+    if(nOf(u,'title').indexOf(tns[0])>=0) score+=40;
+    var isQ2=/문제|기출|테스트|정답|해설/.test(sc.h);
+    if(isQ2 && !WANTQ) score=Math.round(score*0.3);
+    if(!isQ2 && WANTQ) score=Math.round(score*0.6);
+    if(/총정리|정리표|빈출|핵심|개요|비교/.test(sc.h) && !WANTQ) score+=40;
+    var _tb=/^\s*\|.*\|/m.test(sc.t);
+    if(WANTTABLE && !_tb) return;
+    if(WANTTABLE && _tb) score+=80;
+    res.push({u:u,ui:it.ui,si:it.si,sc:sc,score:score,hit:x.hit});
+  });
+  return andFilter(res, ts.length, 40, 'unit');
+}
+function lecDate(name){
+  var m=String(name).match(/(\d{1,2})월\s*(\d{1,2})일/);
+  return m ? parseInt(m[1],10)*100+parseInt(m[2],10) : 9999;
+}
+function searchCards(ts){
+  if(!CARDS) return [];
+  var res=[], tns=ts.ns||ts.map(nsp);
+  var pool=CARDS.filter(function(c){ return !SUBJ || c.s===SUBJ; });
+  pool.forEach(function(c){ c.hay=nOf(c,'t'); if(c.hayx===undefined) c.hayx=c.t.replace(/\s+/g,' '); });
+  scoreSet(pool, tns).forEach(function(x){
+    if(!x.hit) return;
+    var c=pool[x.i], score=x.score + x.hit*40;
+    if(nOf(c,'title').indexOf(tns[0])>=0) score+=70;
+    res.push({c:c, score:score, hit:x.hit});
+  });
+  return andFilter(res, ts.length, 30, 'card');
+}
+function searchLecs(ts){
+  if(!LECS) return null;
+  var res=[];
+  var pairWant = SUBJ? ((SUBJ==='국사'||SUBJ==='자원')?'관광국사':'관광법규') : '';
+  LECS.forEach(function(l,li){
+    if(pairWant && l.pair.indexOf(pairWant)!==0) return;
+    if(!l._ntx) l._ntx=l.tx.map(nsp);
+    l.tx.forEach(function(t,i){
+      var score=0,hit=0, tn=l._ntx[i];
+      (ts.ns||ts.map(nsp)).forEach(function(w){ var n=countLoose(tn,w); if(n>0){hit++;score+=Math.min(n,5);} });
+      if(!hit) return;
+      score+=hit*15;
+      res.push({l:l,li:li,i:i,score:score});
+    });
+  });
+  res=andFilter(res, ts.length, 999, 'vid');
+  // 같은 강의에서 인접 결과 중복 제거 (점수 높은 것부터)
+  var kept=[];
+  res.forEach(function(r){
+    for(var k=0;k<kept.length;k++){ if(kept[k].li===r.li && Math.abs(kept[k].i-r.i)<3) return; }
+    if(kept.length<40) kept.push(r);
+  });
+  // 보기 순서: 핵심강의 먼저 → 날짜 빠른 순 → 시간 빠른 순
+  kept.sort(function(a,b){
+    var ka=a.l.kind.indexOf('핵심')>=0?0:1, kb=b.l.kind.indexOf('핵심')>=0?0:1;
+    if(ka!==kb) return ka-kb;
+    var da=lecDate(a.l.name), db=lecDate(b.l.name);
+    if(da!==db) return da-db;
+    return (a.l.ts[a.i]||0)-(b.l.ts[b.i]||0);
+  });
+  return kept;
+}
+function searchLinks(ts){
+  return LINKS.filter(function(l){ return !SUBJ || !l.s || l.s===SUBJ; }).map(function(l){
+    var score=0;
+    var ln=nOf(l,'txt');
+    (ts.ns||ts.map(nsp)).forEach(function(t){ if(ln.indexOf(t)>=0) score+=10; });
+    ts.forEach(function(t){ if(l.s===t) score+=6; });
+    if(l.k==='법령' && /전문|조문|법령|원문|몇\s*조|제\d+조/.test(Q)) score+=40;
+    return {l:l,score:score};
+  }).filter(function(x){return x.score>0}).sort(function(a,b){return b.score-a.score});
+}
+
+/* ══════════ 렌더 ══════════ */
+var CACHE={q:null,lecsReady:false,ts:[],u:[],v:null,l:[]};
+var TRIMMED='', VOCAB=null;
+function buildVocab(){
+  if(VOCAB) return VOCAB;
+  VOCAB=Object.create(null);
+  function add(t){
+    (t.match(/[가-힣]{2,12}/g)||[]).forEach(function(w){ VOCAB[w]=1; });
+  }
+  (BOOKS||[]).forEach(function(b){ add(b.t); });
+  (UNITS||[]).forEach(function(u){ add(u.title); u.secs.forEach(function(x){ add(x.h); }); });
+  return VOCAB;
+}
+/* 한 덩어리 낱말을 사전에 있는 두세 조각으로 나눈다 */
+function splitWord(w){
+  var V=buildVocab(), best=null;
+  for(var i=2;i<=w.length-2;i++){
+    var a=w.slice(0,i), b=w.slice(i);
+    if(V[a]&&V[b]){ var sc=Math.min(a.length,b.length); if(!best||sc>best.sc) best={p:[a,b],sc:sc}; }
+  }
+  if(best) return best.p;
+  for(var i=2;i<=w.length-4;i++) for(var j=i+2;j<=w.length-2;j++){
+    var a=w.slice(0,i), b=w.slice(i,j), c=w.slice(j);
+    if(V[a]&&V[b]&&V[c]) return [a,b,c];
+  }
+  return null;
+}
+function compute(){
+  var ts=terms(Q); FULL={}; PART={}; WANTTABLE=TBLWORD.test(Q); TRIMMED=''; PHRASE=nsp(Q.replace(/[?!.]/g,''));
+  if(CACHE.q===Q+'|'+SUBJ && CACHE.lecsReady===!!LECS) return CACHE;
+  var c={q:Q+'|'+SUBJ, lecsReady:!!LECS, ts:ts, b:searchBooks(ts), u:UNITS?searchUnits(ts):[], v:searchLecs(ts), l:searchLinks(ts), p:searchPages(), c2:searchCards(ts)};
+  // 다 붙여 쓴 긴 낱말이 안 잡히면 뒤에서부터 한 글자씩 줄여가며 다시
+  // 붙여 쓴 낱말이면 먼저 쪼개서 다시 (결과가 있어도 놓친 게 있을 수 있으므로)
+  if(ts.length===1 && nsp(ts[0]).length>=4 && BOOKS){
+    var sp=splitWord(nsp(ts[0]));
+    if(sp){
+      var t3=sp.slice(); t3.ns=sp.map(nsp);
+      var b3=searchBooks(t3), u3=UNITS?searchUnits(t3):[], v3=searchLecs(t3);
+      if(b3.length+u3.length > 0){
+        TRIMMED=sp.join(' ');
+        c={q:Q+'|'+SUBJ, lecsReady:!!LECS, ts:t3, b:b3, u:u3, v:v3, l:searchLinks(t3), p:searchPages(), c2:searchCards(t3)};
+      }
+    }
+  }
+  if(!c.b.length && !c.u.length && !(c.v&&c.v.length) && !c.p.length && ts.length===1 && ts[0].length>=4){
+    var base=nsp(ts[0]);
+    for(var L=base.length-1; L>=2; L--){
+      var t2=[base.slice(0,L)]; t2.ns=[base.slice(0,L)];
+      var b2=searchBooks(t2), u2=UNITS?searchUnits(t2):[], v2=searchLecs(t2);
+      if(b2.length||u2.length||(v2&&v2.length)){
+        TRIMMED=base.slice(0,L);
+        c={q:Q+'|'+SUBJ, lecsReady:!!LECS, ts:t2, b:b2, u:u2, v:v2, l:searchLinks(t2), p:searchPages(), c2:searchCards(t2)};
+        break;
+      }
+    }
+  }
+  CACHE=c;
+  return CACHE;
+}
+function render(){
+  if(!BOOKS){ out.innerHTML='<div class="loading">자료 불러오는 중…</div>'; return; }
+  if(!Q){ out.innerHTML=browse(); setCount(); return; }
+  var c=compute();
+  document.getElementById('cu').textContent=c.u.length?' '+c.u.length:'';
+  document.getElementById('cv').textContent=c.v?(c.v.length?' '+c.v.length:''):' …';
+  document.getElementById('cl').textContent=c.l.length?' '+c.l.length:'';
+  document.getElementById('cp').textContent=c.p.length?' '+c.p.length:'';
+  document.getElementById('cb').textContent=c.b.length?' '+c.b.length:'';
+  document.getElementById('cc').textContent=(c.c2&&c.c2.length)?' '+c.c2.length:'';
+  var warn='';
+  if(WANTTABLE){
+    var lk=c.l.slice(0,2).map(function(x){ return '<a href="'+x.l.url+'" target="_blank" rel="noopener" style="color:#14538a;font-weight:700">'+esc(x.l.txt.split(' ').slice(0,5).join(' '))+' ↗</a>'; }).join(' · ');
+    warn+='<div class="warn" style="background:#eef7ff;border-color:#9cc6f5;color:#14538a">📊 <b>표가 들어 있는 자료만</b> 보여줍니다.'+(lk?'<br>표 전용 페이지: '+lk:'')+'</div>';
+  }
+  if(TRIMMED) warn+='<div class="warn"><b>「'+esc(TRIMMED)+'」</b>로 나눠서 찾았습니다.</div>';
+  if(PART[TAB] && c.ts.length>1){
+    var other=['book','unit','card','vid'].filter(function(k){return k!==TAB && FULL[k]>0;});
+    var nm={book:'학원교재',unit:'내 자료',card:'암기카드',vid:'강의 시점'};
+    warn+='<div class="warn">이 탭에는 「'+esc(Q)+'」가 <b>모두</b> 들어간 자료가 없어서 일부만 맞는 것을 보여줍니다.'
+      + (other.length?' → <b>'+nm[other[0]]+'</b> 탭에는 '+FULL[other[0]]+'건 있습니다.':'')+'</div>';
+  }
+  document.getElementById('ca').textContent='';
+  out.innerHTML = warn + (TAB==='all'?viewAll(c) : TAB==='card'?viewCards(c.c2||[],c.ts) : TAB==='book'?viewBooks(c.b,c.ts) : TAB==='unit'?viewUnits(c.u,c.ts)
+                : TAB==='vid'?viewLecs(c.v,c.ts) : TAB==='page'?viewPages(c.p) : viewLinks(c.l,c.ts));
+}
+function setCount(){ ['ca','cu','cv','cl','cp','cb','cc'].forEach(function(id){document.getElementById(id).textContent=''}); }
+
+function unitLink(u){
+  var c=LINKS.filter(function(l){ return l.k==='단원' && l.s===u.s && l.n===u.n; });
+  return c.length?c[0].url:null;
+}
+function viewUnits(res,ts){
+  if(!res.length) return noRes();
+  var h='';
+  res.forEach(function(r,idx){
+    var url=unitLink(r.u);
+    h+='<div class="card">'
+     + '<div class="meta"><span class="badge b-'+r.u.s+'">'+r.u.s+'</span>'
+     + '<span class="unit">'+esc(r.u.label)+' · '+esc(r.u.title)+'</span></div>'
+     + '<div class="h">'+hl(r.sc.h,ts)+'</div>'
+     + '<div class="snip">'+hl(snippet(r.sc.t,ts),ts)+'</div>'
+     + '<div class="acts"><button class="btn p" data-x="'+idx+'">전체 보기 ▾</button>'
+     + (url?'<a class="btn" href="'+url+'" target="_blank" rel="noopener">단원 페이지 열기 ↗</a>':'')
+     + '</div>'
+     + '<div class="full" id="f'+idx+'"><div class="md">'+md(r.sc.t)+'</div></div>'
+     + '</div>';
+  });
+  setTimeout(function(){
+    out.querySelectorAll('[data-x]').forEach(function(b){
+      b.onclick=function(){ openBox(b, document.getElementById('f'+b.dataset.x), '전체 보기 ▾'); };
+    });
+    autoOpen('[data-x]','f','전체 보기 ▾');
+  },0);
+  return h;
+}
+function lfBar(res){
+  var ds=[], seen={};
+  res.forEach(function(r){ var n=r.l.name; if(!seen[n]){ seen[n]=1; ds.push(n); } });
+  ds.sort(function(a,b){ return lecDate(a)-lecDate(b); });
+  var h='<div class="lfbar"><span class="lfl">강의 골라보기</span>'
+    + '<span class="chip'+(LFK===''?' on':'')+'" onclick="setLF(\'k\',\'\')">전체</span>'
+    + '<span class="chip'+(LFK==='핵심'?' on':'')+'" onclick="setLF(\'k\',\'핵심\')">★ 핵심강의</span>'
+    + '<span class="chip'+(LFK==='문제'?' on':'')+'" onclick="setLF(\'k\',\'문제\')">문제풀이</span>'
+    + '</div><div class="lfbar"><span class="lfl">날짜</span>'
+    + '<span class="chip'+(LFD===''?' on':'')+'" onclick="setLF(\'d\',\'\')">전체</span>';
+  ds.forEach(function(n){ h+='<span class="chip'+(LFD===n?' on':'')+'" onclick="setLF(\'d\',\''+n+'\')">'+n+'</span>'; });
+  return h+'</div>';
+}
+function setLF(t,v){ if(t==='k') LFK=v; else LFD=v; render(); }
+function viewLecs(res,ts,mini){
+  if(res===null) return '<div class="loading">강의 전사본을 불러오는 중입니다… (처음 한 번만 조금 걸려요)</div>';
+  var bar = mini?'':lfBar(res);
+  if(!mini && (LFK||LFD)) res=res.filter(function(r){
+      if(LFK && (LFK==='핵심') !== (r.l.kind.indexOf('핵심')>=0)) return false;
+      if(LFD && r.l.name!==LFD) return false; return true; });
+  if(!res.length) return bar+noRes('그 조건에 맞는 강의 부분이 없어요. 필터를 「전체」로 바꿔보세요.');
+  var h=bar+(mini?'':'<div class="warn" style="background:#f3f5f7;border-color:#dcdfe3;color:#4b5563">핵심강의 먼저 · 날짜 빠른 순 · 강의 안에서는 시간 순으로 보여줍니다.</div>');
+  var lastKind='';
+  res.forEach(function(r){
+    var kd=r.l.kind.indexOf('핵심')>=0?'핵심강의':'문제풀이강의';
+    if(kd!==lastKind){ h+='<div class="sec-t">'+(kd==='핵심강의'?'★ 핵심강의':'문제풀이강의')+'</div>'; lastKind=kd; }
+    var l=r.l, i=r.i, sec=l.ts[i];
+    h+='<div class="card">'
+     + '<div class="meta"><span class="badge b-'+(l.pair.indexOf('국사')>=0?'국사':'법규')+'">'+esc(l.kind)+'</span>'
+     + '<span class="unit">'+esc(l.name)+' · '+esc(l.pair.split('_').join(' / '))+'</span></div>'
+     + '<div class="tline"><span class="tstamp'+(sec<0?' no':'')+'">'+fmt(sec)+'</span>'
+     + '<span class="unit">'+(sec<0?'이 파일엔 시간표시가 없어요':'이 시점부터 나옵니다')+'</span></div>'
+     + lecLines(l, i, ts)
+     + (ytBtn(l.name, sec)?'<div class="acts">'+ytBtn(l.name, sec)+'</div>':'')
+     + '</div>';
+  });
+  return h;
+}
+function secHead(t,tab,n){
+  return '<div class="sec-h"><span>'+t+' <b>'+n+'</b>건</span>'
+   + '<button class="btn" onclick="setTab(\''+tab+'\');render();pushState();window.scrollTo(0,0)">모두 보기 →</button></div>';
+}
+function viewAll(c){
+  var h='', any=false;
+  if(c.b && c.b.length){ any=true; h+=secHead('📕 학원교재','book',c.b.length)+viewBooks(c.b.slice(0,3),c.ts); }
+  if(c.v===null){ h+=secHead('🎬 강의 시점','vid',0)+'<div class="loading">강의 전사본 불러오는 중…</div>'; }
+  else if(c.v.length){ any=true; h+=secHead('🎬 강의 시점','vid',c.v.length)+viewLecs(c.v.slice(0,3),c.ts,true); }
+  if(c.u && c.u.length){ any=true; h+=secHead('📖 내 자료','unit',c.u.length)+viewUnits(c.u.slice(0,2),c.ts); }
+  if(c.c2 && c.c2.length){ any=true; h+=secHead('🗂 암기카드','card',c.c2.length)+viewCards(c.c2.slice(0,2),c.ts); }
+  if(c.p && c.p.length){ h+=secHead('📄 쪽수 찾기','page',c.p.length); }
+  if(!any && c.v!==null) return noRes('아무 자료에서도 못 찾았어요.');
+  return h;
+}
+function viewLinks(res,ts){
+  if(!res.length) return noRes('연결된 자료 페이지를 못 찾았어요.');
+  return '<div class="grid">'+res.map(function(r){
+    return '<a class="tile" href="'+r.l.url+'" target="_blank" rel="noopener">'
+      + '<div class="t1">'+hl(r.l.k==='법령'?r.l.txt.replace('법령 전문 ','').split(' —')[0]:r.l.txt.split(' ').slice(0,4).join(' '),ts)+'</div>'
+      + '<div class="t2">'+esc(r.l.txt)+'</div></a>';
+  }).join('')+'</div>';
+}
+function viewBooks(res,ts){
+  if(!BOOKS) return '<div class="loading">교재 원문 불러오는 중…</div>';
+  if(!res.length) return noRes('학원 교재 원문에서 못 찾았어요.');
+  var h='';
+  res.forEach(function(x,idx){
+    var b=x.b;
+    h+='<div class="card">'
+     + '<div class="meta"><span class="badge b-'+b.s+'">'+b.s+'</span>'
+     + '<span class="unit">'+esc(b.b)+' · <b>'+b.p+'쪽</b></span></div>'
+     + '<div class="snip">'+hl(snippet(b.t,ts,240),ts)+'</div>'
+     + '<div class="acts"><button class="btn p" data-bx="'+idx+'">이 쪽 전체 보기 ▾</button>'+scanBtn(b.b,b.p)+'</div>'
+     + '<div class="full" id="bf'+idx+'"><pre class="raw">'+esc(b.t)+'</pre></div>'
+     + '</div>';
+  });
+  setTimeout(function(){
+    out.querySelectorAll('[data-bx]').forEach(function(btn){
+      btn.onclick=function(){ openBox(btn, document.getElementById('bf'+btn.dataset.bx), '이 쪽 전체 보기 ▾'); };
+    });
+    autoOpen('[data-bx]','bf','이 쪽 전체 보기 ▾');
+  },0);
+  return h;
+}
+function viewCards(res,ts){
+  if(!CARDS) return '<div class="loading">암기카드 불러오는 중…</div>';
+  if(!res.length) return noRes('암기카드에서 못 찾았어요.');
+  var h='';
+  res.forEach(function(x,idx){
+    var c=x.c;
+    h+='<div class="card">'
+     + '<div class="meta"><span class="badge b-'+(c.s==='기타'?'기타':c.s)+'">'+esc(c.s)+'</span>'
+     + '<span class="unit">'+esc(c.title)+(c.n>1?' ('+c.part+'/'+c.n+')':'')+'</span></div>'
+     + '<div class="snip">'+hl(snippet(c.t,ts,220),ts)+'</div>'
+     + '<div class="acts"><button class="btn p" data-cx="'+idx+'">이 부분 전체 보기 ▾</button>'
+     + (c.url?'<a class="btn" href="'+c.url+'" target="_blank" rel="noopener">카드 페이지 열기 ↗</a>':'')
+     + '</div><div class="full" id="cf'+idx+'"><pre class="raw">'+esc(c.t)+'</pre></div></div>';
+  });
+  setTimeout(function(){
+    out.querySelectorAll('[data-cx]').forEach(function(btn){
+      btn.onclick=function(){ openBox(btn, document.getElementById('cf'+btn.dataset.cx), '이 부분 전체 보기 ▾'); };
+    });
+    autoOpen('[data-cx]','cf','이 부분 전체 보기 ▾');
+  },0);
+  return h;
+}
+function viewPages(res){
+  if(!PAGES) return '<div class="loading">불러오는 중…</div>';
+  if(!res.length) return '<div class="empty">그 쪽수를 짚어 말한 강의를 못 찾았어요.<br>'
+    +'강사가 모든 쪽을 소리내어 말하진 않아서 빈 구간이 있습니다.<br>'
+    +'앞뒤 쪽수(예: <b>27쪽</b> → <b>25쪽</b>)로도 찾아보세요.</div>';
+  var want=res[0].want, h='';
+  if(BOOKS){
+    var pg=BOOKS.filter(function(b){ return b.p===want; });
+    var g=/국사|한국사/.test(Q)?'국사':(/자원/.test(Q)?'자원':(/법규|진흥법/.test(Q)?'법규':(/개론|학개론/.test(Q)?'학개론':'')));
+    if(g) pg=pg.filter(function(b){return b.s===g}).concat(pg.filter(function(b){return b.s!==g}));
+    pg.slice(0,4).forEach(function(b,i){
+      h+='<div class="card" style="border-color:#c7d8ff">'
+       + '<div class="meta"><span class="badge b-'+b.s+'">'+b.s+'</span>'
+       + '<span class="unit">'+esc(b.b)+' <b>'+b.p+'쪽</b> — 교재 원문</span></div>'
+       + '<div class="acts"><button class="btn p" data-bx="pp'+i+'">이 쪽 펼치기 ▾</button>'+scanBtn(b.b,b.p)+'</div>'
+       + '<div class="full" id="bfpp'+i+'"><pre class="raw">'+esc(b.t)+'</pre></div></div>';
+    });
+    setTimeout(function(){
+      out.querySelectorAll('[data-bx]').forEach(function(btn){
+        btn.onclick=function(){ openBox(btn, document.getElementById('bf'+btn.dataset.bx), '이 쪽 펼치기 ▾'); };
+      });
+    },0);
+  }
+  h+='<div class="empty" style="padding:6px 0 12px;text-align:left;font-size:14px">'
+       +'강사가 <b>'+want+'쪽</b> 근처를 짚은 지점입니다.</div>';
+  res.forEach(function(x){
+    var r=x.r, guk=r.g.indexOf('국사')===0;
+    h+='<div class="card">'
+     + '<div class="meta"><span class="badge b-'+(guk?'국사':'법규')+'">'+esc(r.g)+'</span>'
+     + '<span class="unit">'+esc(r.lec)+' 강의</span></div>'
+     + '<div class="tline"><span class="tstamp'+(r.t<0?' no':'')+'">'+fmt(r.t)+'</span>'
+     + '<span class="unit"><b>'+r.p+'쪽</b>'+(x.d?' (찾으신 쪽에서 '+x.d+'쪽 차이)':'')+'</span></div>'
+     + '<div class="ctx now">'+esc(r.ctx)+'</div>'
+     + (ytBtn(r.lec, r.t)?'<div class="acts">'+ytBtn(r.lec, r.t)+'</div>':'')
+     + '</div>';
+  });
+  return h;
+}
+function noRes(msg){
+  return '<div class="empty">'+(msg||'교재에서 못 찾았어요.')+'<br>'
+    +'다른 탭도 눌러보시고, 단어를 짧게 (예: <b>주심포</b>) 넣어보세요.</div>';
+}
+function lecDir(){
+  if(!LECS) return '<div class="loading">강의 목록 불러오는 중…</div>';
+  var h='';
+  [['관광법규_관광학개론','법규 · 학개론','법규'],['관광국사_관광자원','국사 · 자원','국사']].forEach(function(g){
+    var ls=LECS.filter(function(l){return l.pair===g[0];});
+    if(!ls.length) return;
+    [['핵심','★ 핵심강의'],['문제','문제풀이강의']].forEach(function(k){
+      var sub=ls.filter(function(l){ return (l.kind.indexOf('핵심')>=0)===(k[0]==='핵심'); });
+      if(!sub.length) return;
+      sub.sort(function(a,b){ return lecDate(a.name)-lecDate(b.name); });
+      h+='<div class="sec-t" style="margin-top:14px"><span class="badge b-'+g[2]+'">'+g[1]+'</span> '+k[1]+' '+sub.length+'개</div><div class="grid">';
+      sub.forEach(function(l){
+        var id=VIDS[l.name];
+        h+='<div class="tile"><div class="t1">'+esc(l.name)+'</div>'
+         + '<div class="t2">'+esc(g[1])+' · '+esc(l.kind)+'</div>'
+         + '<div class="acts" style="margin-top:8px">'
+         + (id?'<a class="btn play" target="_blank" rel="noopener" href="https://youtu.be/'+id+'">▶ 영상 열기</a>':'<span class="unit">영상 링크 없음</span>')
+         + '<button class="btn" onclick="pickLec(\''+l.name+'\')">🔍 이 강의에서 찾기</button>'
+         + '</div></div>';
+      });
+      h+='</div>';
+    });
+  });
+  return h;
+}
+function pickLec(n){
+  LFD=n; LFK=''; setTab('vid');
+  var q=document.getElementById('q');
+  if(!Q){ q.focus(); out.innerHTML='<div class="warn"><b>'+esc(n)+'</b> 강의를 골랐어요. 이제 위 검색창에 찾을 낱말을 넣고 <b>찾기</b>를 누르세요.</div>'; return; }
+  render(); pushState(); window.scrollTo(0,0);
+}
+function browse(){
+  var h='<div class="sec-t">🎬 강의 목록 — 과목 · 날짜별 (누르면 영상으로 이동)</div>'+lecDir();
+  if(BOOKS){
+    var bk={}; BOOKS.forEach(function(b){ bk[b.b]=(bk[b.b]||0)+1; });
+    h+='<div class="sec-t">학원 교재 원문 — 검색창에 단어를 넣으면 이 안에서 먼저 찾습니다</div><div class="grid">';
+    Object.keys(bk).forEach(function(k){
+      h+='<div class="tile"><div class="t1">'+esc(k)+'</div><div class="t2">'+bk[k]+'쪽 수록 · OCR 원문</div></div>';
+    });
+    h+='</div>';
+  }
+  h+='<div class="sec-t" style="margin-top:22px">내가 만든 자료 — 과목별 단원</div>';
+  ['국사','자원','법규','학개론'].forEach(function(s){
+    var us=(UNITS||[]).filter(function(u){return u.s===s});
+    if(!us.length) return;
+    h+='<div class="sec-t" style="margin-top:14px"><span class="badge b-'+s+'">'+s+'</span> '+us.length+'개 단원</div><div class="grid">';
+    us.forEach(function(u){
+      var url=unitLink(u);
+      h+= url?('<a class="tile" href="'+url+'" target="_blank" rel="noopener"><div class="t1">'+esc(u.label)+'</div><div class="t2">'+esc(u.title)+'</div></a>')
+            :('<a class="tile" href="#" onclick="document.getElementById(\'q\').value=\''+esc(u.title).slice(0,20)+'\';go();return false"><div class="t1">'+esc(u.label)+'</div><div class="t2">'+esc(u.title)+'</div></a>');
+    });
+    h+='</div>';
+  });
+  var etc=LINKS.filter(function(l){return l.k!=='단원' && l.k!=='법령'});
+  var law=LINKS.filter(function(l){return l.k==='법령'});
+  h+='<div class="sec-t" style="margin-top:22px">법령 전문 (국가법령정보센터 · 항상 최신)</div><div class="grid">';
+  law.forEach(function(l){
+    h+='<a class="tile" href="'+l.url+'" target="_blank" rel="noopener"><div class="t1">'
+      +esc(l.txt.replace('법령 전문 ','').split(' —')[0])+'</div><div class="t2">'+esc(l.txt)+'</div></a>';
+  });
+  h+='</div>';
+  h+='<div class="sec-t" style="margin-top:22px">암기카드 · 이야기 · 기타</div><div class="grid">';
+  etc.forEach(function(l){
+    h+='<a class="tile" href="'+l.url+'" target="_blank" rel="noopener"><div class="t1">'
+      +esc(l.txt.split(' ').slice(0,3).join(' '))+'</div><div class="t2">'+esc(l.txt)+'</div></a>';
+  });
+  return h+'</div>';
+}
+
+/* ══════════ 이벤트 ══════════ */
+var qi=document.getElementById('q');
+function go(push){
+  Q=qi.value.trim();
+  recentAdd(Q);
+  if(!Q){ setTab('book'); }
+  else if(PGWORD.test(Q)){ setTab('page'); }
+  else {
+    compute();
+    var order = /카드|암기/.test(Q) ? ['card','book','unit','vid'] : (VIDWORD.test(Q) ? ['vid','book','unit','card'] : (TBLWORD.test(Q) ? ['unit','card','book','vid'] : ['book','unit','card','vid']));
+    var pick = order.filter(function(k){ return FULL[k]>0; })[0] || order[0];
+    setTab(pick);
+  }
+  render(); window.scrollTo(0,0);
+  if(push!==false) pushState();
+}
+function pushState(){
+  var st={q:Q,tab:TAB,subj:SUBJ};
+  if(history.state && history.state.q===Q && history.state.tab===TAB && history.state.subj===SUBJ) return;
+  history.pushState(st, '', '#'+encodeURIComponent(Q||'')+(TAB?'/'+TAB:'')+(SUBJ?'/'+SUBJ:''));
+}
+window.addEventListener('popstate', function(ev){
+  var ov=document.querySelector('.ovl');
+  if(ov){ ov.remove(); document.body.style.overflow=''; return; }
+  var st=ev.state||{q:'',tab:'all',subj:''};
+  Q=st.q||''; SUBJ=st.subj||''; qi.value=Q;
+  document.querySelectorAll('.sub').forEach(function(x){ if(x.id!=='cam') x.classList.toggle('on', (x.dataset.s||'')===SUBJ); });
+  setTab(st.tab||'all'); render(); window.scrollTo(0,0);
+});
+function setTab(t){
+  TAB=t;
+  document.querySelectorAll('.tab').forEach(function(e){ e.classList.toggle('on', e.dataset.t===t); });
+}
+document.getElementById('go').onclick=go;
+qi.addEventListener('keydown',function(e){ if(e.key==='Enter'){ qi.blur(); go(); } });
+document.getElementById('subs').onclick=function(e){
+  var t=e.target.closest('.sub'); if(!t || t.id==='cam') return;
+  SUBJ=t.dataset.s||'';
+  document.querySelectorAll('.sub').forEach(function(x){ if(x.id!=='cam') x.classList.toggle('on', x===t); });
+  try{ localStorage.setItem('gt_subj', SUBJ); }catch(e){}
+  if(Q) go(); else render();
+};
+document.getElementById('tabs').onclick=function(e){
+  var t=e.target.closest('.tab'); if(!t) return; setTab(t.dataset.t); render(); pushState();
+};
+function recentGet(){ try{ return JSON.parse(localStorage.getItem('gt_recent')||'[]'); }catch(e){ return []; } }
+function recentAdd(q){
+  if(!q) return;
+  var r=recentGet().filter(function(x){return x!==q;});
+  r.unshift(q); r=r.slice(0,12);
+  try{ localStorage.setItem('gt_recent', JSON.stringify(r)); }catch(e){}
+  recentDraw();
+}
+function recentDraw(){
+  var r=recentGet(), el=document.getElementById('recent');
+  if(!r.length){ el.innerHTML=''; return; }
+  el.innerHTML='<span class="chip" data-clr="1" style="color:#dc2626">기록 지우기 ✕</span>'
+    + r.map(function(x){ return '<span class="chip" data-r="'+esc(x)+'">🕘 '+esc(x)+'</span>'; }).join('');
+}
+document.addEventListener('click', function(e){
+  var c=e.target.closest('#recent .chip'); if(!c) return;
+  if(c.dataset.clr){ try{ localStorage.removeItem('gt_recent'); }catch(e){} recentDraw(); return; }
+  document.getElementById('q').value=c.dataset.r; go();
+});
+/* ══════ 📷 캡처로 찾기 ══════ */
+var TESS=null;
+function camStatus(msg, pct){
+  var el=document.getElementById('camst');
+  if(!el){ el=document.createElement('div'); el.id='camst'; el.className='camst';
+    document.querySelector('.wrap').insertBefore(el, out); }
+  el.innerHTML='📷 '+esc(msg)+(pct!=null?' <b>'+Math.round(pct*100)+'%</b>':'')
+    +'<div class="bar"><i style="width:'+Math.round((pct||0)*100)+'%"></i></div>';
+}
+function camDone(){ var el=document.getElementById('camst'); if(el) el.remove(); }
+function loadScript(src){
+  return new Promise(function(res,rej){
+    var sc=document.createElement('script'); sc.src=src; sc.onload=res; sc.onerror=rej;
+    document.head.appendChild(sc);
+  });
+}
+async function camRun(file){
+  try{
+    camStatus('글자 읽을 준비 중… (처음 한 번만 10초쯤)', 0.05);
+    if(!window.Tesseract) await loadScript('ocr/tesseract.min.js');
+    if(!TESS){
+      TESS = await Tesseract.createWorker('kor', 1, {
+        workerPath:'ocr/worker.min.js',
+        corePath:'ocr/',
+        langPath:'ocr/',
+        logger:function(m){ if(m.status==='recognizing text') camStatus('글자 읽는 중…', m.progress); }
+      });
+    }
+    camStatus('글자 읽는 중…', 0.1);
+    var r = await TESS.recognize(file);
+    var txt=(r.data.text||'').replace(/\s+/g,' ').trim();
+    camDone();
+    if(txt.length<6){ alert('글자를 못 읽었어요. 더 크게 잘라서 다시 찍어보세요.'); return; }
+    camSearch(txt);
+  }catch(e){ camDone(); alert('캡처 읽기에 실패했습니다: '+e.message); }
+}
+/* 읽어낸 글에서 특징적인 낱말을 뽑아 어느 자료·쪽·강의인지 찾는다 */
+function camSearch(txt){
+  var words=txt.split(/[^가-힣A-Za-z0-9]+/).filter(function(w){ return w.length>=2 && /[가-힣]/.test(w); });
+  var freq={}; words.forEach(function(w){ freq[w]=(freq[w]||0)+1; });
+  var uniq=Object.keys(freq);
+  function scoreAll(items, getText){
+    return items.map(function(it){
+      var t=getText(it), n=0;
+      uniq.forEach(function(w){ if(t.indexOf(w)>=0) n+=Math.min(freq[w],3); });
+      return {it:it, n:n};
+    }).filter(function(x){return x.n>0}).sort(function(a,b){return b.n-a.n});
+  }
+  var bk = BOOKS? scoreAll(BOOKS, function(b){return b.t}).slice(0,5) : [];
+  var un = UNITS? scoreAll(UNITS, function(u){return u.title+' '+u.secs.map(function(s){return s.t}).join(' ')}).slice(0,3) : [];
+  var lc = [];
+  if(LECS){
+    var per={};
+    LECS.forEach(function(l){
+      l.tx.forEach(function(t,i){
+        var n=0; uniq.forEach(function(w){ if(t.indexOf(w)>=0) n+=Math.min(freq[w],3); });
+        if(n>0){ var k=l.name; if(!per[k]||per[k].n<n) per[k]={n:n, l:l, i:i}; if(per[k]) per[k].tot=(per[k].tot||0)+n; }
+      });
+    });
+    lc=Object.keys(per).map(function(k){return per[k]}).sort(function(a,b){return b.tot-a.tot}).slice(0,3);
+  }
+  var h='<div class="camres"><div class="camh">📷 캡처에서 읽은 내용으로 찾은 결과</div>';
+  h+='<div class="camq">'+esc(txt.slice(0,110))+(txt.length>110?' …':'')+'</div>';
+  if(bk.length){
+    h+='<div class="sec-t">📕 학원교재 — 이 내용이 있는 쪽</div>';
+    bk.forEach(function(x,i){
+      var b=x.it;
+      h+='<div class="card"><div class="meta"><span class="badge b-'+b.s+'">'+b.s+'</span>'
+       +'<span class="unit">'+esc(b.b)+' · <b>'+b.p+'쪽</b>'+(i===0?' &nbsp;← 가장 유력':'')+'</span></div>'
+       +'<div class="snip">'+esc(b.t.slice(0,150))+' …</div>'
+       +'<div class="acts">'+scanBtn(b.b,b.p)+'<button class="btn p" data-goq="'+esc(b.b)+' '+b.p+'쪽">이 쪽 자세히 ▾</button></div></div>';
+    });
+  }
+  if(un.length){
+    h+='<div class="sec-t">📖 내 자료 — 관련 단원</div>';
+    un.forEach(function(x){ var u=x.it;
+      var url=unitLink(u);
+      h+='<div class="card"><div class="meta"><span class="badge b-'+u.s+'">'+u.s+'</span>'
+       +'<span class="unit">'+esc(u.label)+' · '+esc(u.title)+'</span></div>'
+       +(url?'<div class="acts"><a class="btn" href="'+url+'" target="_blank" rel="noopener">단원 페이지 열기 ↗</a></div>':'')
+       +'</div>';
+    });
+  }
+  if(lc.length){
+    h+='<div class="sec-t">🎬 이 내용을 공부할 때 들으면 좋은 강의</div>';
+    lc.forEach(function(x,i){
+      var l=x.l, sec=l.ts[x.i];
+      h+='<div class="card"><div class="meta"><span class="badge b-'+(l.pair.indexOf("국사")>=0?"국사":"법규")+'">'+esc(l.kind)+'</span>'
+       +'<span class="unit">'+esc(l.name)+(i===0?' &nbsp;← 가장 많이 다룸':'')+'</span></div>'
+       +'<div class="tline"><span class="tstamp">'+fmt(sec)+'</span><span class="unit">여기부터 이 내용이 나옵니다</span></div>'
+       +'<div class="ctx now">'+esc(l.tx[x.i])+'</div>'
+       +(ytBtn(l.name,sec)?'<div class="acts">'+ytBtn(l.name,sec)+'</div>':'')+'</div>';
+    });
+  }
+  if(!bk.length && !un.length && !lc.length) h+='<div class="empty">비슷한 내용을 못 찾았어요.</div>';
+  h+='</div>';
+  out.innerHTML=h; window.scrollTo(0,0);
+}
+document.addEventListener('click', function(e){
+  var g=e.target.closest('[data-goq]'); if(!g) return;
+  document.getElementById('q').value=g.dataset.goq; go();
+});
+document.getElementById('hardreload').onclick=function(){
+  try{ if(window.caches) caches.keys().then(function(ks){ ks.forEach(function(k){caches.delete(k);}); }); }catch(e){}
+  location.replace(location.pathname+'?v='+Date.now());
+};
+document.getElementById('cam').onclick=function(){ document.getElementById('camf').click(); };
+/* 끌어다 놓기 */
+(function(){
+  var z=document.createElement('div'); z.className='drop'; z.innerHTML='<div>📷 여기에 놓으면 찾아드립니다</div>';
+  document.body.appendChild(z);
+  var cnt=0;
+  window.addEventListener('dragenter', function(e){ e.preventDefault(); cnt++; z.classList.add('on'); });
+  window.addEventListener('dragover', function(e){ e.preventDefault(); });
+  window.addEventListener('dragleave', function(e){ if(--cnt<=0){ cnt=0; z.classList.remove('on'); } });
+  window.addEventListener('drop', function(e){
+    e.preventDefault(); cnt=0; z.classList.remove('on');
+    var f=(e.dataTransfer.files||[])[0];
+    if(f && f.type.indexOf('image')===0) camRun(f);
+    else if(f) alert('이미지 파일만 됩니다.');
+  });
+})();
+document.getElementById('camf').onchange=function(){ if(this.files[0]) camRun(this.files[0]); this.value=''; };
+window.addEventListener('paste', function(e){
+  var it=(e.clipboardData||{}).items||[];
+  for(var i=0;i<it.length;i++) if(it[i].type.indexOf('image')===0){ camRun(it[i].getAsFile()); break; }
+});
+
+var EX=['주심포 양식 특징','유네스코 세계문화유산 영상 몇 시 몇 분?','광개토대왕 업적','삼국 왕 계보 표',
+        '관광진흥법 카지노','국사 핵심 27쪽부터','법규 교재 68페이지','석호','골품제','카지노 허가요건'];
+try{ SUBJ=localStorage.getItem('gt_subj')||''; }catch(e){}
+document.querySelectorAll('.sub').forEach(function(x){ if(x.id!=='cam') x.classList.toggle('on',(x.dataset.s||'')===SUBJ); });
+recentDraw();
+document.getElementById('chips').innerHTML=EX.map(function(x){return '<span class="chip">'+x+'</span>'}).join('');
+document.getElementById('chips').onclick=function(e){
+  if(!e.target.classList.contains('chip')) return;
+  qi.value=e.target.textContent; go();
+};
+</script>
+</body>
+</html>

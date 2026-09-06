@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광자원해설 표 모음 — 2편 유네스코 세계유산</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광자원해설 · 표 모음</div>
+<h1>관광자원해설 표 모음 — 2편 유네스코 지정 세계유산
+<small>교재 진도 순서대로 · 표 2개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">II. 문화 관광 자원 — 1. 유네스코 지정 세계유산</span>
+<span class="chip">11개년 기출 31문항 · 자원해설 최다</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>유네스코 지정 세계유산</b>
+<a href="#t1">표 ① 세계 문화유산 (15개) 선정 기준 — 완전성 · 진정성 · 탁월한 보편적 가치</a><a href="#t2">표 ② 세계 기록 유산 (20개)</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 2개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (2개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n5">★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<section id="t1" data-imp="1">
+<h2><span class="no">표 ①</span> 세계 문화유산 (15개) <span class="sm">선정 기준 — 완전성 · 진정성 · 탁월한 보편적 가치</span> <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:190px">명칭</th><th style="width:70px">연도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b><span class="hl">석굴암 · 불국사</span></b></td><td><b><span class="hl">1995</span></b></td><td>① 신라 <b><span class="hl">경덕왕</span></b> 때 <b><span class="hl">토함산</span></b>에 <b><span class="hl">김대성</span></b>이 축조 시작 → <b>혜공왕 때 완공</b><br>② <b>석굴암</b>(인공 석굴 사원) : <b>본존 불상, 인왕상, 사천왕상</b> 등 / <b>불국사</b> : <b><span class="hl">석가탑·다보탑, 백운교·청운교</span></b> 등</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">해인사 장경판전</span></b></td><td><b><span class="hl">1995</span></b></td><td><b><span class="hl">팔만대장경을 보관한 건축물</span></b></td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">종묘</span></b></td><td><b><span class="hl">1995</span></b></td><td><b>조선 시대 왕·왕비의 신주를 모신 사당</b> → <b><span class="hl">유교의 전통 제례 문화</span></b>를 보여주는 대표적인 <b>유교 건축물</b></td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">창덕궁</span></b></td><td><b><span class="hl">1997</span></b></td><td><b><span class="hl">태종</span></b> 때 <b>경복궁의 이궁</b>으로 건립 → <b>임진왜란 때 소실</b> → <b>광해군 때 재건축</b> → <b><span class="hl">자연과의 조화 탁월</span></b></td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">수원 화성</span></b></td><td><b><span class="hl">1997</span></b></td><td>조선 <b><span class="hl">정조</span></b> 때 <b><span class="hl">정약용이 거중기</span></b>를 이용하여 축조(1796)</td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">경주 역사 유적 지구</span></b></td><td><b><span class="hl">2000</span></b></td><td>① <b><span class="hl">남산 지구</span></b>(불교 유적지), <b><span class="hl">월성 지구</span></b>(첨성대·계림·동궁과 월지), <b><span class="hl">대릉원 지구</span></b>(고분)<br>② <b><span class="hl">황룡사 지구</span></b>(황룡사지·분황사), <b><span class="hl">산성 지구</span></b>(명활산성) → <b>사적형 국립공원</b></td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">고창·화순·강화<br>고인돌 유적</span></b></td><td><b><span class="hl">2000</span></b></td><td><b><span class="hl">청동기 시대 유물</span></b> → <b>장례 및 제례를 위한 거석문화 유산</b></td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">조선 왕릉</span></b></td><td><b><span class="hl">2009</span></b></td><td>조선 왕릉은 <b>왕과 왕비의 무덤</b> → <b><span class="hl">총 42기의 왕릉 중 40기 등록</span></b></td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">한국의 역사 마을 :<br>하회와 양동</span></b></td><td><b><span class="hl">2010</span></b></td><td>① 조선 시대의 <b>유교적 양반 문화 반영</b> → <b><span class="hl">14~15세기에 조성</span></b>된 한국을 대표하는 역사적인 <b>씨족 마을</b><br>② 양반들의 <b>목조 가옥, 정자·서원·사당</b>, 평민들이 살던 <b>초가집</b> 등 분포</td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">남한산성</span></b></td><td><b><span class="hl">2014</span></b></td><td>조선 시대에 <b>유사시를 대비하여 <span class="hl">임시 수도</span>로서 역할을 담당한 산성</b> → <b>사적형 도립공원</b></td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">백제 역사 유적 지구</span></b></td><td><b><span class="hl">2015</span></b></td><td>① <b><span class="hl">공주</span></b> 공산성·송산리 고분군, <b><span class="hl">익산</span></b> 왕궁리 유적·미륵사지<br>② <b><span class="hl">부여</span></b> : 관북리 왕궁지·부소산성·정림사지·능산리 고분군·부여 나성</td></tr>
+<tr class="rose"><td class="biz"><b><span class="hl">산사, 한국의<br>산지 승원</span></b></td><td><b><span class="hl">2018</span></b></td><td><b><span class="hl">보은 법주사 · 공주 마곡사 · 영주 부석사 · 안동 봉정사 · 양산 통도사 · 순천 선암사 · 해남 대흥사</span></b></td></tr>
+<tr class="rose"><td class="biz"><b><span class="hl">한국의 서원</span></b></td><td><b><span class="hl">2019</span></b></td><td>조선 시대의 이념인 <b>성리학을 보급하고 구현한 장소</b> → <b><span class="hl">9개 지정</span></b><br><b><span class="hl">영주 소수서원 · 안동 도산서원 · 안동 병산서원 · 경주 옥산서원 · 달성 도동서원 · 함양 남계서원 · 정읍 무성서원 · 장성 필암서원 · 논산 돈암서원</span></b></td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">가야 고분군</span></b></td><td><b><span class="hl">2023</span></b></td><td><b><span class="hl">고령 지산동 · 김해 대성동 · 남원 유곡리와 두락리 · 함안 말이산 · 창녕 교동과 송현동 · 고성 송학동 · 합천 옥전</span></b> 고분군</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">울주 반구천 암각화</span></b></td><td><b><span class="hl">2025</span></b></td><td>· <b><span class="hl">울주 대곡리 반구대 암각화</span></b>(바위그림) → <b>호랑이·멧돼지·사슴 등 동물들과 사냥 장면</b>을 선과 점으로 묘사<br>· <b><span class="hl">울주 천전리 명문과 암각화</span></b> : 각종 <b>기하 도형과 문자·그림</b>이 새겨진 암석 → <b>신라 법흥왕 시기로 추정</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2" data-imp="1">
+<h2><span class="no">표 ②</span> 세계 기록 유산 (20개) <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:190px">명칭</th><th style="width:70px">연도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b><span class="hl">훈민정음(해례본)</span></b></td><td><b><span class="hl">1997</span></b></td><td><b><span class="hl">세종</span></b> 때(1446) 「훈민정음」의 <b>창제 목적과 해설·용례를 붙인 책</b> <span class="dash">(국보 제70호)</span></td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">조선왕조실록</span></b></td><td><b><span class="hl">1997</span></b></td><td>조선왕조 <b><span class="hl">태조~철종까지 25대 472년간</span></b>(1392~1863)의 역사를 <b><span class="hl">편년체</span></b>로 기록</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">불조직지심체요절</span></b></td><td><b><span class="hl">2001</span></b></td><td>· 고려 <b><span class="hl">공민왕</span></b> 때 저술한 <b>불교 서적</b> → <b><span class="hl">프랑스 국립도서관에 보관</span></b><br>· <b><span class="hl">청주 흥덕사</span></b>에서 인쇄 → <b><span class="hl">현존 세계에서 가장 오래된 금속 활자 인쇄물</span></b></td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">승정원 일기</span></b></td><td><b><span class="hl">2001</span></b></td><td>국보 제303호 · 조선 시대의 <b><span class="hl">승정원(국왕 비서실)</span></b>에서 처리한 <b>국정 기록</b> 등 정리</td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">조선왕조 의궤</span></b></td><td><b><span class="hl">2007</span></b></td><td>조선 시대 <b>왕실 주요 행사</b>(결혼식·연회·사신 영접), <b>건축물·왕릉의 조성과 왕실 문화 활동</b> 등을 <b><span class="hl">기록으로 남긴 그림</span></b> → <b>화성성역의궤</b> 등 총 3,895여 권</td></tr>
+<tr class="not"><td class="biz"><b>해인사 대장경판 및<br>제경판</b></td><td><b>2007</b></td><td>해인사 <b>고려 대장경판 81,258판</b>과 그 외 1098년~1958년까지 <b>불교 경전과 불교 관련 역사 연구논문·고승의 문집·불교 판화</b> 등 <b>5,987판</b></td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">동의보감</span></b></td><td><b><span class="hl">2009</span></b></td><td><b><span class="hl">광해군</span></b> 때 <b><span class="hl">허준</span></b>이 편찬한 <b>의학 서적</b> → 중국·일본에도 전래된 <b>최고의 한방서</b></td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">일성록</span></b></td><td><b><span class="hl">2011</span></b></td><td><b><span class="hl">영조</span></b>부터 1910년까지의 국정 운영 내용을 <b>매일 정리한 <span class="hl">국왕의 일기</span></b> → 국보 제153호</td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">5·18 민주화운동<br>기록물</span></b></td><td><b><span class="hl">2011</span></b></td><td><b>1980년 5월 18일부터 광주를 중심으로 전개된 민주화 운동</b>과 이후 이 사건의 <b>책임자 처벌·피해자 보상</b>과 관련된 문건·사진·영상 등의 자료</td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">난중일기</span></b></td><td><b><span class="hl">2013</span></b></td><td><b><span class="hl">이순신</span></b> 장군이 <b>임진왜란 중 직접 쓴 친필 일기</b> · 국보 제76호</td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">새마을운동 기록물</span></b></td><td><b><span class="hl">2013</span></b></td><td><b><span class="hl">박정희 정부</span></b> 때 전개된 <b>새마을 운동(1970~1979)</b>과 관련된 자료</td></tr>
+<tr class="rose"><td class="biz"><b><span class="hl">한국의 유교책판</span></b></td><td><b><span class="hl">2015</span></b></td><td>조선 시대 <b>유학자들의 저작물을 간행하기 위해 판각한 책판</b> → 718종 64,226장</td></tr>
+<tr class="rose"><td class="biz"><b><span class="hl">KBS 특별 생방송<br>「이산가족을 찾습니다」<br>기록물</span></b></td><td><b><span class="hl">2015</span></b></td><td>· <b><span class="hl">전두환 정부</span></b> 때(1983) <b>KBS가 전개한 이산가족 찾기 운동</b>과 관련된 기록물<br>· 이산가족의 아픔을 통해 <b>6·25 전쟁과 분단의 참상</b>을 전 세계에 알려줌</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">조선왕실 어보와 어책</span></b></td><td><b><span class="hl">2017</span></b></td><td>조선 왕실에서 <b>왕과 왕비, 세자와 세자빈 등을 책봉</b>하거나 <b>존호·시호·휘호 등을 수여할 때 만든 <span class="hl">의례용 인장과 책</span></b> → 어보 331점, 어책 338점</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">국채보상운동 기록물</span></b></td><td><b><span class="hl">2017</span></b></td><td><b>일본에 진 나라 빚을 갚기 위해</b> 전개되었던 <b><span class="hl">국채보상운동(1907년)</span></b>의 전 과정을 보여주는 기록물</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">조선통신사 기록물</span></b></td><td><b><span class="hl">2017</span></b></td><td><b>임진왜란 이후 1607년~1811년까지 일본에 <span class="hl">12차례 파견</span>한 조선통신사</b>의 <b>외교·여정·문화 교류</b>에 관한 기록</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">동학농민혁명 기록물</span></b></td><td><b><span class="hl">2023</span></b></td><td><b>동학농민혁명(1894~1895)</b>은 <b>지배층의 탄압과 외세의 침략에 저항</b>하며 평등하고 공정한 사회를 건설하기 위해 민중이 봉기 → <b>반제국주의·민족주의·근대주의 운동</b></td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">4·19 혁명 기록물</span></b></td><td><b><span class="hl">2023</span></b></td><td><b>1960년 2·28 대구 학생 시위</b>부터 <b>3·15 부정선거에 항의하여 독재 정권을 무너뜨린 4·19혁명</b>까지의 전후 과정과 관련된 <b>1,019점의 기록물</b> → 1960년대 세계 학생운동에 큰 영향</td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">제주 4·3 기록물</span></b></td><td><b><span class="hl">2025</span></b></td><td><b>1948년 4월 3일부터 1950년대 초까지 전개되었던 제주 4·3 사건</b>과 관련된 사건의 진실을 담고 있는 <b>희생자와 유족의 피해 신고서와 구술증언</b>, 그리고 <b>민간과 정부 기관의 진상 규명 과정 기록</b> 등 포함</td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">산림 녹화 기록물</span></b></td><td><b><span class="hl">2025</span></b></td><td>· <b>6·25 전쟁 이후 폐허가 된 국토 복구를 위해 정부와 국민이 함께 추진한 <span class="hl">산림 녹화</span></b> 전 과정을 담은 자료<br>· 1960년대 5.6㎥/ha 면적이 2020년까지 165㎥/ha로 증가 → <b>개발도상국의 국토 복구 모델로서의 가치 인정</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 관광자원해설 원본교재 「관광자원 해설 핵심 요약 정리」 II. 문화 관광 자원 — 1. 유네스코 지정 세계유산 (2~3쪽).</p>
+<p>「최빈출」 배지와 노랑 표시는 산업인력공단·학원 기출 관광자원해설 11개년 273문항을 세어 붙였습니다. 유네스코 관련 문항은 31문항으로 관광자원해설 중 가장 많습니다.</p>
+</footer>
+
+</div>
+<script>
+function flt(m){
+  var secs=document.querySelectorAll('section');
+  for(var i=0;i<secs.length;i++){ secs[i].hidden=(m!=='all')&&!secs[i].dataset[m]; }
+  var bs=document.querySelectorAll('.tabbtn');
+  for(var k=0;k<bs.length;k++){ bs[k].classList.toggle('on', bs[k].dataset.f===m); }
+  var toc=document.querySelector('nav.toc'); if(toc) toc.hidden=(m!=='all');
+}
+</script>
+</body></html>

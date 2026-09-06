@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광학개론 표 모음 제6장 — 관광사업론</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광학개론 · 표 모음</div>
+<h1>관광학개론 표 모음 — 제6장 관광사업론
+<small>교재 단원 순서대로 3개 부 · 표 14개 + 보충 1개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">제6장 관광사업론 (교재 60~67쪽)</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>1부 &nbsp;제1절 관광사업 개념과 종류 &nbsp;(교재 60~64쪽)</b>
+<a href="#t1">표 ① 관광사업의 분류 — 사업 주체별</a><a href="#t2">표 ② 관광진흥법상의 관광사업 종류</a><a href="#t3">표 ③ 여행업</a><a href="#t4">표 ④ 관광숙박업</a><a href="#t5">표 ⑤ 테마파크업</a><a href="#t6">표 ⑥ 국제회의업</a><a href="#t7">표 ⑦ 카지노</a><a href="#t8">표 ⑧ 우리나라 카지노산업 발전과정</a><a href="#t9">표 ⑨ 카지노 현황</a><a href="#tx1">보충 카지노 게임의 종류와 방법</a><a href="#t10">표 ⑩ 관광객이용시설업</a><a href="#t11">표 ⑪ 관광편의시설업 지정기준</a>
+<b>2부 &nbsp;제2절 관광사업의 특성 &nbsp;(교재 65쪽)</b>
+<a href="#t12">표 ⑫ 관광사업의 특성 6가지</a>
+<b>3부 &nbsp;제3절 관광상품 정의 및 구성 &nbsp;(교재 66~67쪽)</b>
+<a href="#t13">표 ⑬ 관광상품의 정의</a><a href="#t14">표 ⑭ 관광상품의 특성 12가지</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 14개 + 보충 1개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (11개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n5">★★★★★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<div class="part"><span class="pn">1부</span><span class="pt">제1절 관광사업 개념과 종류</span><span class="pj">교재 60~64쪽</span></div>
+
+<section id="t1">
+<h2><span class="no">표 ①</span> 관광사업의 분류 — 사업 주체에 의한 분류</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th style="width:150px">종류</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz" rowspan="2">공적관광사업<br><span class="dash">(관광행정)</span></td><td class="kind">관광행정기관</td><td>· 국가, 정부, 지방자치단체의 관광관계 행정기관</td></tr>
+<tr class="reg"><td class="kind">관광공익단체</td><td>· 한국관광공사, 한국관광협회중앙회, 업종별관광협회, 지역별 관광협회</td></tr>
+<tr class="per"><td class="biz" rowspan="2">사적관광사업<br><span class="dash">(관광경영)</span></td><td class="kind">1차관광사업</td><td>· 여행업, 관광숙박업, 관광객이용시설업, 카지노, 테마파크업, 국제회의업, 관광편의시설업</td></tr>
+<tr class="per"><td class="kind">2차관광사업</td><td>· 세탁업, 식품제조업자, 음식제공업자 등</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2">
+<h2><span class="no">표 ②</span> 관광진흥법상의 관광사업 종류 <span class="sm">(관광진흥법 제3조)</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>종류</th></tr></thead>
+<tbody>
+<tr class="not"><td class="biz">관광진흥법상의 분류</td><td>여행업, 관광숙박업, 관광객이용시설업, 국제회의업, 카지노, 테마파크업, 관광편의시설업</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t3" data-imp="1">
+<h2><span class="no">표 ③</span> 여행업 <span class="sm"><b class="n5">★★★★★</b></span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:130px">종류</th><th>정 의</th><th style="width:120px">자본금</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">종합여행업</span></td><td><b>국내 또는 국외</b>를 여행하는 <b>내국인 및 외국인</b>을 대상으로 하는 여행업 (사증을 받는 절차를 대행하는 행위를 포함)<br><span class="dash">(Inbound tour, Outbound tour, Domestic tour)</span></td><td class="mid"><span class="hl">5천만원 이상</span></td></tr>
+<tr class="per"><td class="biz"><span class="hl">국내외여행업</span></td><td><b>국내외</b>를 여행하는 <b>내국인</b>을 대상으로 하는 여행업<br>(사증을 받는 절차를 대행하는 행위를 포함)<br><span class="dash">(Outbound tour, (Domestic tour))</span></td><td class="mid"><span class="hl">3천만원 이상</span></td></tr>
+<tr class="not"><td class="biz"><span class="hl">국내여행업</span></td><td><b>국내</b>를 여행하는 <b>내국인</b>을 대상으로 하는 여행업<br><span class="dash">(Domestic tour)</span></td><td class="mid"><span class="hl">1천500만원 이상</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t4" data-imp="1">
+<h2><span class="no">표 ④</span> 관광숙박업 <span class="sm"><b class="n5">★★★★★</b></span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:180px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">관광숙박업</td><td><b>호텔업 (7개)</b> 과 <b>휴양콘도미니엄업</b></td></tr>
+<tr class="per"><td class="biz">① 호텔업</td><td><span class="hl">관광호텔업</span>, <span class="hl">가족호텔업</span>, <span class="hl">소형호텔업</span>, <span class="hl">한국전통호텔업</span>, <span class="hl">호스텔업</span>, <span class="hl">의료관광호텔업</span></td></tr>
+<tr class="not"><td class="biz">② 휴양콘도미니엄업</td><td class="dash">—</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t5" data-imp="1">
+<h2><span class="no">표 ⑤</span> 테마파크업 <span class="sm"><b class="n5">★★★★★</b></span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:140px">종류</th><th>정 의</th><th style="width:120px">기타</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">종합테마파크업</td><td>테마파크시설을 갖추어 관광객에게 이용하게 하는 업으로서 <b>대규모의 대지 또는 실내</b>에서 <b>안전성검사 대상 테마파크시설 여섯 종류 이상</b>을 설치하여 운영하는 업</td><td class="mid"><span class="hl">1만제곱미터 이상</span></td></tr>
+<tr class="per"><td class="biz">일반테마파크업</td><td>테마파크시설을 갖추어 관광객에게 이용하게 하는 업으로서 <b>안전성검사 대상 테마파크시설 한 종류 이상</b>을 설치하여 운영하는 업</td><td class="mid dash">—</td></tr>
+<tr class="not"><td class="biz">기타테마파크업</td><td>테마파크시설을 갖추어 관광객에게 이용하게 하는 업으로서 <b>안전성검사 대상이 아닌</b> 테마파크시설을 설치하여 운영하는 업</td><td class="mid"><span class="hl">40제곱미터 이상</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t6" data-imp="1">
+<h2><span class="no">표 ⑥</span> 국제회의업 <span class="sm"><b class="n5">★★★★★</b></span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:140px">종류</th><th>정 의</th><th style="width:140px">기타</th></tr></thead>
+<tbody>
+<tr class="des"><td class="biz">국제회의업</td><td colspan="2">대규모 관광수요를 유발하는 국제회의를 개최할 수 있는 시설을 <b>설치·운영</b>하거나 국제회의의 <b>계획·준비·진행</b> 등의 업무를 위탁받아 대행하는 업</td></tr>
+<tr class="reg"><td class="biz">국제회의시설업</td><td>대규모 관광수요를 유발하는 국제회의를 개최할 수 있는 <b>시설을 설치·운영</b>하는 업</td><td class="mid">회의시설 및 전시시설<br>부대시설</td></tr>
+<tr class="per"><td class="biz">국제회의기획업</td><td>대규모 관광수요를 유발하는 국제회의의 <b>계획·준비·진행</b> 등의 업무를 <b>위탁받아 대행</b>하는 업</td><td class="mid">자본금<br><span class="hl">5천만원 이상</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t7" data-imp="1">
+<h2><span class="no">표 ⑦</span> 카지노 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:110px">종류</th><th>정 의</th><th style="width:330px">시 설 기 준</th></tr></thead>
+<tbody>
+<tr class="rose"><td class="biz">카지노</td><td><b>전용영업장</b>을 갖추고 <b>주사위·트럼프·슬로트머신</b> 등 특정한 기구 등을 이용하여 <b>우연의 결과</b>에 따라 특정인에게 재산상의 이익을 주고 다른 참가자에게 손실을 주는 행위 등을 하는 업</td><td class="std">· <span class="hl">330제곱미터 이상</span> 전용영업장<br>· <span class="hl">1개소 이상</span>의 외국환 환전소<br>· 카지노 영업종류 중 <span class="hl">4종류 이상</span> 게임기구 및 시설<br>· 카지노 전산시설</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t8" data-imp="1">
+<h2><span class="no">표 ⑧</span> 우리나라 카지노산업 발전과정 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:130px">연도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">1961년</span></td><td>카지노 설립의 법적 근거가 된 <b>최초 법률 제정</b> (복표발행현상기타사행행위단속법)</td></tr>
+<tr class="reg"><td class="biz"><span class="hl">1967년</span></td><td><b>최초로 인천 올림포스호텔 카지노 개설</b></td></tr>
+<tr class="per"><td class="biz">1968년</td><td>주한 외국인 및 외국인 관광객 전용인 <b>워커힐호텔 카지노 개장</b></td></tr>
+<tr class="per"><td class="biz">1994년</td><td>「관광진흥법」 개정 (카지노산업을 <b>관광산업으로 규정</b>함으로써 위상변화)</td></tr>
+<tr class="not"><td class="biz"><span class="hl">2000년</span></td><td>최초의 <b>내국인 출입허용</b> 카지노인 <b>강원랜드의 스몰카지노 개장</b></td></tr>
+<tr class="not"><td class="biz">2003년</td><td>강원랜드의 스몰카지노 폐장 및 강원랜드 <b>메인 카지노 개장</b></td></tr>
+<tr class="des"><td class="biz">2005년 1월</td><td>한국관광공사 자회사에 <b>3개 카지노 신규허가</b> (서울 2, 부산 1)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t9" data-imp="1">
+<h2><span class="no">표 ⑨</span> 카지노 현황 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:70px">시·도</th><th>업 체 명 (법 인 명)</th><th style="width:100px">허가일</th><th style="width:120px">운영형태(등급)</th><th style="width:110px">허가면적(㎡)</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="gu" rowspan="3">서울</td><td>파라다이스카지노 워커힐점 &nbsp;(주)파라다이스</td><td class="org">'68.03.05</td><td class="org">임대(5성)</td><td class="org">2,694.23</td></tr>
+<tr class="reg"><td>세븐럭카지노 강남코엑스점 &nbsp;[그랜드코리아레저(주)]</td><td class="org">'05.01.28</td><td class="org">임대(컨벤션)</td><td class="org">2,158.32</td></tr>
+<tr class="reg"><td>세븐럭카지노 서울드래곤시티점 &nbsp;[그랜드코리아레저(주)]</td><td class="org">'05.01.28</td><td class="org">임대(5성)</td><td class="org">2,137.20</td></tr>
+<tr class="per"><td class="gu" rowspan="2">부산</td><td>세븐럭카지노 부산롯데점 &nbsp;[그랜드코리아레저(주)]</td><td class="org">'05.01.28</td><td class="org">임대(5성)</td><td class="org">1,583.73</td></tr>
+<tr class="per"><td>파라다이스카지노 부산지점 &nbsp;(주)파라다이스</td><td class="org">'78.10.29</td><td class="org">임대(5성)</td><td class="org">1,485.24</td></tr>
+<tr class="not"><td class="gu" rowspan="2">인천</td><td>파라다이스카지노 &nbsp;(주)파라다이스세가사미</td><td class="org">'67.08.10</td><td class="org">직영(5성)</td><td class="org">8,726.80</td></tr>
+<tr class="not"><td><span class="hl">인스파이어 카지노</span> &nbsp;[(주)인스파이어 인티그레이티드 리조트]</td><td class="org"><span class="hl">24.01.23</span></td><td class="org">직영(5성)</td><td class="org">14,372.00</td></tr>
+<tr class="des"><td class="gu">강원</td><td>알펜시아카지노 &nbsp;(주)지바스</td><td class="org">'80.12.09</td><td class="org">임대(5성)</td><td class="org">632.69</td></tr>
+<tr class="mint"><td class="gu">대구</td><td>호텔인터불고대구카지노 &nbsp;(주)골든크라운</td><td class="org">'79.04.11</td><td class="org">임대(5성)</td><td class="org">1,485.24</td></tr>
+<tr class="rose"><td class="gu" rowspan="8">제주</td><td>공즈카지노 &nbsp;[길상창휘(유)]</td><td class="org">'75.10.15</td><td class="org">임대(5성)</td><td class="org">1,604.84</td></tr>
+<tr class="rose"><td>파라다이스카지노 제주지점 &nbsp;(주)파라다이스</td><td class="org">'90.09.01</td><td class="org">임대(5성)</td><td class="org">1,195.92</td></tr>
+<tr class="rose"><td>세븐스타카지노 &nbsp;(주)청해</td><td class="org">'91.07.31</td><td class="org">임대(5성)</td><td class="org">1,175.85</td></tr>
+<tr class="rose"><td>제주오리엔탈카지노 &nbsp;(주)건하</td><td class="org">'90.11.06</td><td class="org">임대(5성)</td><td class="org">865.25</td></tr>
+<tr class="rose"><td>드림타워카지노(제주드림타워) &nbsp;(주)엘티엔터테인먼트</td><td class="org">'85.04.11</td><td class="org">임대(5성)</td><td class="org">5,367.67</td></tr>
+<tr class="rose"><td>제주썬카지노 &nbsp;(주)지앤엘</td><td class="org">'90.09.01</td><td class="org">직영(5성)</td><td class="org">1,509.12</td></tr>
+<tr class="rose"><td>랜딩카지노 &nbsp;[람정엔터테인먼트코리아(주)]</td><td class="org">'90.09.01</td><td class="org">임대(5성)</td><td class="org">5,646.10</td></tr>
+<tr class="rose"><td>메가럭카지노 &nbsp;(주)메가럭</td><td class="org">'95.12.28</td><td class="org">임대(5성)</td><td class="org">1,347.72</td></tr>
+<tr class="per"><td class="h" colspan="3"><span class="hl">13개 법인, 17개 영업장 (외국인 전용)</span></td><td class="org">직영2<br>임대14</td><td class="org">39,615.92</td></tr>
+<tr class="des"><td class="gu">강원</td><td><span class="hl">강원랜드카지노</span> &nbsp;(주)강원랜드</td><td class="org">'00.10.12</td><td class="org">직영(5성)</td><td class="org">15,485.99</td></tr>
+<tr class="reg"><td class="h" colspan="3"><span class="hl">14개 법인, 18개 영업장 (내·외국인)</span></td><td class="org">직영3<br>임대14</td><td class="org">55,101.91</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="tx1" data-imp="1">
+<h2><span class="no">보충</span> 카지노 게임의 종류와 방법 <span class="sm">— 교재에 없고 기출 대비로 새로 만든 표</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:130px">게임</th><th style="width:90px">도구</th><th>방 법</th><th style="width:120px">기출</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">바카라</span><br><span class="dash">Baccarat</span></td><td class="mid">카드</td><td><b>플레이어(Player)</b>와 <b>뱅커(Banker)</b> 두 자리에 카드를 나눠주고, <b>카드 합이 9에 가까운 쪽</b>에 베팅한 사람이 이긴다. 카드는 각 2장씩 받고 필요하면 1장 더 받는다</td><td class="org"><b class="n5">정답 3회</b></td></tr>
+<tr class="per"><td class="biz"><span class="hl">룰렛</span><br><span class="dash">Roulette</span></td><td class="mid">휠 · 볼</td><td>딜러가 <b>회전하는 휠(wheel)</b> 위로 <b>볼(ball)</b>을 굴리고, 볼이 멈춰 들어간 <b>포켓(pocket)의 번호</b>가 위닝넘버(winning number)가 된다. 그 번호에 베팅한 사람이 이긴다</td><td class="org"><b class="n5">정답 2회</b></td></tr>
+<tr class="not"><td class="biz">블랙잭<br><span class="dash">Blackjack</span></td><td class="mid">카드</td><td>딜러와 겨루어 <b>카드 합이 21을 넘지 않으면서 21에 가장 가까운 쪽</b>이 이긴다. 21을 넘으면 진다</td><td class="org dash">보기로 등장</td></tr>
+<tr class="des"><td class="biz">다이사이<br><span class="dash">Tai Sai</span></td><td class="mid">주사위 3개</td><td><b>주사위 3개</b>를 용기에 넣고 흔든 뒤, 나온 <b>눈의 합이나 조합</b>을 맞히는 게임</td><td class="org dash">보기로 등장</td></tr>
+<tr class="mint"><td class="biz">빅휠<br><span class="dash">Big Wheel</span></td><td class="mid">큰 바퀴</td><td><b>큰 바퀴를 돌려</b> 멈췄을 때 <b>화살표가 가리키는 구획</b>에 베팅한 사람이 이긴다</td><td class="org dash">보기로 등장</td></tr>
+<tr class="rose"><td class="biz">키노<br><span class="dash">Keno</span></td><td class="mid">번호표</td><td>번호가 적힌 표에서 <b>숫자를 미리 고르고</b>, 추첨된 번호와 <b>몇 개나 일치하는지</b>로 당첨금을 받는다</td><td class="org dash">보기로 등장</td></tr>
+<tr class="reg"><td class="biz">다이스(크랩스)<br><span class="dash">Dice · Craps</span></td><td class="mid">주사위 2개</td><td><b>주사위 2개</b>를 던져 나온 <b>눈의 합</b>을 맞히는 게임</td><td class="org dash">보기로 등장</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note"><b>이 표는 교재에 없습니다.</b> 게임 이름은 「관광진흥법 시행규칙 별표8 — 카지노업의 영업 종류」에 있는 것이고, 「방법」 칸의 바카라·룰렛 설명은 기출 문제의 발문 문장을 그대로 옮겼습니다. 나머지 게임은 기출에 보기로만 나왔습니다.</p>
+</section>
+
+<section id="t10">
+<h2><span class="no">표 ⑩</span> 관광객이용시설업</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:70px">종 류</th><th style="width:90px"></th><th>정 의</th><th style="width:140px">기타</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz" colspan="2">전문휴양업</td><td>숙박업시설 이나 음식점 시설 (휴게음식점영업·일반음식점영업·제과점영업) + 전문휴양시설 1종류</td><td class="mid dash">—</td></tr>
+<tr class="per"><td class="biz" rowspan="2">종합<br>휴양업</td><td class="kind">제1종</td><td>· 숙박시설 또는 음식점시설 + 전문휴양시설 중 <b>2종류 이상</b>의 시설<br>· 숙박시설 또는 음식점시설 + 전문휴양시설 중 <b>1종류 이상</b>의 시설 + 종합테마파크업의 시설</td><td class="mid dash">—</td></tr>
+<tr class="per"><td class="kind">제2종</td><td>· 관광숙박업 등록에 필요한 시설 + 전문휴양시설 중 <b>2종류 이상</b> 시설<br>· 관광숙박업 등록에 필요한 시설 + 전문휴양시설 중 <b>1종류 이상</b>의 시설 + 종합테마파크업의 시설</td><td class="mid">단일 부지<br>500,000제곱미터 이상</td></tr>
+<tr class="not"><td class="biz" rowspan="2">야영장업</td><td class="kind">일반야영장업</td><td>야영장비 등을 설치할 수 있는 공간을 갖추고 야영에 적합한 시설</td><td class="mid">천막 1개당 15제곱미터 이상</td></tr>
+<tr class="not"><td class="kind">자동차야영장업</td><td>자동차를 주차하고 그 옆에 야영장비 등을 설치</td><td class="mid">차량 1대당 50제곱미터</td></tr>
+<tr class="des"><td class="biz" rowspan="2">관광<br>유람<br>선업</td><td class="kind">일반관광<br>유람선업</td><td>선박을 이용하여 관광객에게 관광을 할 수 있도록 하는 업</td><td class="mid dash">—</td></tr>
+<tr class="des"><td class="kind">크루즈업</td><td>선박 안에 숙박시설, 위락시설 등 편의시설을 갖춘 선박을 이용하여 관광객에게 관광을 할 수 있도록 하는 업</td><td class="mid">객실 20실</td></tr>
+<tr class="mint"><td class="biz" colspan="2">관광공연장업</td><td>관광객을 위하여 공연시설을 갖추고 한국전통 가무가 포함된 공연물을 공연하면서 관광객에게 식사와 주류를 판매하는 업</td><td class="mid">실내 100제곱미터<br>실외 70제곱미터</td></tr>
+<tr class="rose"><td class="biz" colspan="2">외국인관광<br>도시민박업</td><td>도시지역 (「농어촌정비법」에 따른 농어촌지역 및 준농어촌지역을 제외한다)의 주민이 거주하고 있는 주택을 이용하여 외국인 관광객에게 한국의 가정문화를 체험할 수 있도록 숙식 등을 제공 하는 업</td><td class="mid dash">—</td></tr>
+<tr class="reg"><td class="biz" colspan="2">한옥체험업</td><td>가. 한 종류 이상의 <b>전통문화 체험</b>에 적합한 시설을 갖추고 있을 것<br>나. 이용자의 불편이 없도록 욕실이나 샤워시설 등 편의시설을 갖출 것</td><td class="mid dash">—</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t11" data-imp="1">
+<h2><span class="no">표 ⑪</span> 관광편의시설업 지정기준 <span class="sm"><b class="n5">★★★★★</b></span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:170px">업 종</th><th>지 정 기 준</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">1. 관광유흥음식점업</td><td>가. 건물은 연면적이 <b>특별시의 경우에는 330제곱미터 이상</b>, 그 밖의 지역은 <b>200제곱미터 이상</b>으로 한국적 분위기를 풍기는 아담하고 우아한 건물일 것<br>나. 관광객의 수용에 적합한 다양한 규모의 방을 두고 실내는 고유의 한국적 분위기를 풍길 수 있도록 서화·문갑·병풍 및 나전칠기 등으로 장식할 것<br>다. 영업장 내부의 노랫소리 등이 외부에 들리지 아니하도록 할 것</td></tr>
+<tr class="per"><td class="biz">2. 관광극장유흥업</td><td>가. 건물 연면적은 <b>1,000제곱미터 이상</b>으로 하고, 홀면적(무대면적을 포함한다)은 <b>500제곱미터 이상</b>으로 할 것<br>나. 관광객에게 민속과 가무를 감상하게 할 수 있도록 특수조명장치 및 배경을 설치한 <b>50제곱미터 이상의 무대</b>가 있을 것<br>다. 영업장 내부의 노랫소리 등이 외부에 들리지 아니하도록 할 것</td></tr>
+<tr class="not"><td class="biz">3. 외국인전용<br>유흥음식점업</td><td>가. 홀면적(무대면적을 포함한다)은 <b>100제곱미터 이상</b>으로 할 것<br>나. 홀에는 노래와 춤 공연을 할 수 있도록 <b>20제곱미터 이상</b>의 무대를 설치하고, 특수조명 시설을 갖출 것<br>다. 영업장 내부의 노랫소리 등이 외부에 들리지 아니하도록 할 것<br>라. 외국인을 대상으로 영업할 것</td></tr>
+<tr class="des"><td class="biz">4. 관광식당업</td><td>가. 인적요건<br>&nbsp;1) 한국 전통음식을 제공하는 경우에는 「국가기술자격법」에 따른 해당 <b>조리사 자격증 소지자</b>를 둘 것<br>&nbsp;2) 특정 외국의 전문음식을 제공하는 경우에는 다음의 요건 중 <b>1개 이상</b>의 요건을 갖춘 자를 둘 것<br>&nbsp;&nbsp;가) 해당 외국에서 <b>전문조리사 자격</b>을 취득한 자<br>&nbsp;&nbsp;나) 「국가기술자격법」에 따른 해당 조리사 자격증을 취득한 후 해당 분야에서의 <b>조리경력이 2년 이상</b>인 자<br>&nbsp;&nbsp;다) 해당 외국에서 <b>6개월 이상의 조리교육</b>을 이수한 자<br>나. 삭제 &lt;2014.9.16.&gt;<br>다. 최소 한 개 이상의 외국어로 음식의 이름과 관련 정보가 병기된 메뉴판을 갖추고 있을 것<br>라. 출입구가 각각 구분된 남·녀 화장실을 갖출 것</td></tr>
+<tr class="mint"><td class="biz">5. 관광순환버스업</td><td>○ 안내방송 등 <b>외국어 안내서비스</b>가 가능한 체제를 갖출 것</td></tr>
+<tr class="mint"><td class="biz">6. 관광사진업</td><td>○ <b>사진촬영기술이 풍부한 자</b> 및 <b>외국어 안내서비스</b>가 가능한 체제를 갖출 것</td></tr>
+<tr class="mint"><td class="biz">7. 여객자동차터미널<br>시설업</td><td>○ 인근 관광지역 등의 안내서 등을 비치하고, 인근 관광자원 및 명소 등을 소개하는 <b>관광안내판을 설치</b>할 것</td></tr>
+<tr class="rose"><td class="biz">8. 관광펜션업</td><td>가. 자연 및 주변환경과 조화를 이루는 <b>4층 이하</b>의 건축물일 것<br>나. <b>객실이 30실 이하</b>일 것<br>다. 취사 및 숙박에 필요한 실비를 갖출 것<br>라. 바비큐장, 캠프파이어장 등 주인의 <b>환대가 가능한 1종류 이상의 이용시설</b>을 갖추고 있을 것 (다만, 관광펜션이 수개의 건물 동으로 이루어진 경우에는 그 시설을 공동으로 설치할 수 있다)<br>마. 숙박시설 및 이용시설에 대하여 외국어 안내 표기를 할 것</td></tr>
+<tr class="reg"><td class="biz">9. 관광궤도업</td><td>가. 자연 또는 주변 경관을 관람할 수 있도록 <b>개방되어 있거나 밖이 보이는 창</b>을 가진 구조일 것<br>나. 안내방송 등 외국어 안내서비스가 가능한 체제를 갖출 것</td></tr>
+<tr class="per"><td class="biz">10. 관광면세업</td><td>가. 외국어 안내 서비스가 가능한 체제를 갖출 것<br>나. 한 개 이상의 외국어로 상품명 및 가격 등 관련 정보가 명시된 전체 또는 개별 안내판을 갖출 것<br>다. 주변 교통의 원활한 소통에 지장을 초래하지 않을 것</td></tr>
+<tr class="not"><td class="biz">11. 관광지원서비스업</td><td>가. 다음의 어느 하나에 해당 할 것<br>&nbsp;1) 해당 사업의 평균매출액 중 관광객 또는 관광사업자와의 거래로 인한 매출액의 비율이 <b>100분의 50 이상</b>일 것<br>&nbsp;2) 법 제52조에 따라 <b>관광지 또는 관광단지</b>로 지정된 지역에서 사업장을 운영할 것<br>&nbsp;3) 법 제48조의10 제1항에 따라 <b>한국관광 품질인증</b>을 받았을 것<br>&nbsp;4) 중앙행정기관의 장 또는 지방자치단체의 장이 공모 등의 방법을 통해 <b>우수 관광사업으로 선정</b>한 사업일 것<br>나. 시설 등을 이용하는 관광객의 <b>안전을 확보</b>할 것</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="part"><span class="pn">2부</span><span class="pt">제2절 관광사업의 특성</span><span class="pj">교재 65쪽</span></div>
+
+<section id="t12" data-imp="1">
+<h2><span class="no">표 ⑫</span> 관광사업의 특성 6가지 <span class="sm"><b class="n5">★★★★★</b></span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">특성</th><th style="width:180px">세부</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz" rowspan="4">1) 서비스성<br>상품생산</td><td class="kind">—</td><td>관광사업이 생산하여 판매하는 상품은 본질적으로 <b>서비스가 근본을 형성</b></td></tr>
+<tr class="reg"><td class="kind">① 서비스 과정에 <b>고객참여</b><br>(service encounter)</td><td>관광사업에서의 서비스란 지원설비 및 시설, 제공되는 물품, 서비스 제공자 및 서비스 시스템 내의 다른 고객으로 이루어진 실체적 환경에서 얻어진 경험 → 고객의 만족</td></tr>
+<tr class="reg"><td class="kind">② 서비스의 <b>생산과 소비의 동시성</b></td><td>서비스의 생산에서는 생산과 소비의 동시성과 서비스의 무형성으로 <b>재고를 가질 수 없다</b></td></tr>
+<tr class="reg"><td class="kind">③ 서비스의 <b>불연속활동성</b></td><td>관광행동은 기후, 경기변동 그리고 국민생활의 안정여하에도 크게 영향을 받으므로 관광사업의 서비스를 구매하는데 있어 정도의 차이가 발생함에 따라 관광사업자의 서비스 생산활동은 불연속적이 될 수 밖에 없다</td></tr>
+<tr class="per"><td class="biz" rowspan="2">2) 사업주체와<br>내용의 복합성</td><td class="kind">① 사업주체의 복합성</td><td>사업주체란 사업을 주관하는 소기의 목적을 달성하는 조직을 말하며, <b>공적기관과 민간기업의 역할 분담</b>을 의미함</td></tr>
+<tr class="per"><td class="kind">② 관광사업내용의 복합성</td><td>관광여행을 출발부터 도착까지 여행이 완결되는 전과정에서 관광사업의 개입을 생각해보면 <b>여러 업종이 모여서 하나의 통합된 사업활동</b>으로 관광사업을 성립시키고 있다</td></tr>
+<tr class="not"><td class="biz">3) 입지의존성</td><td class="kind">—</td><td>관광사업의 특성 및 경영적·산업적 성격이 <b>불연속 생산활동형, 생산·소비의 동시완결성, 노동장비율의 상승</b>이라는 특성을 가지고 있기 때문에 입지의존성이 높아지고 있다</td></tr>
+<tr class="des"><td class="biz">4) 영리성과<br>공익성의 공동추구</td><td class="kind">—</td><td>관광소비에 따르는 영리추구에만 둘 것이 아니라 <b>사회·문화·경제적인 파급효과</b>에도 관심을 두는 공익적인 차원에서 가치설정이 요망된다</td></tr>
+<tr class="mint"><td class="biz">5) 변동성</td><td class="kind">—</td><td>관광은 <b>외부적인 환경의 변화와 사정에 매우 민감한 영향</b>을 받는다</td></tr>
+<tr class="rose"><td class="biz">6) 경합·공존 관계성</td><td class="kind">—</td><td>같은 지역의 관광지와 <b>경합성</b> 과 <b>독립성·공존성</b> 유지</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="part"><span class="pn">3부</span><span class="pt">제3절 관광상품 정의 및 구성</span><span class="pj">교재 66~67쪽</span></div>
+
+<section id="t13">
+<h2><span class="no">표 ⑬</span> 관광상품의 정의</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">1) 일반적 정의</td><td>관광기업이 관광자의 욕구를 유발시키고 충족시켜줄 <b>관광대상</b>을 바탕으로 각종 서비스를 제공하여 생산한 <b>유·무형의 상품</b>을 말한다</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t14" data-imp="1">
+<h2><span class="no">표 ⑭</span> 관광상품의 특성 12가지 <span class="sm"><b class="n5">★★★★★</b></span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:190px">특성</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="des"><td class="biz">관광상품의 특성</td><td>관광대상으로서 <b>가치</b>를 가지므로 <b>매력성과 유인성</b>을 보유하고 있으며 이러한 관광대상은 인간의 관광욕구를 충족시키고 관광행동을 위한 목적물이 된다</td></tr>
+<tr class="reg"><td class="biz">1) <span class="hl">무형성</span></td><td>관광사업의 상품에 포함되어 있는 서비스는 무형적으로 나타나며, <b>견본과 사전에 사용 할 수 없어</b> 정신적으로 이해 할 수 밖에 없다</td></tr>
+<tr class="reg"><td class="biz">2) <span class="hl">비저장성</span></td><td>관광상품을 구성하는 각종의 부품은 생산된 장소에서 동시에 소비되지 않으면 안되는 비저장성, 즉 <b>즉시성</b>을 갖는다</td></tr>
+<tr class="per"><td class="biz">3) <span class="hl">수요불균형성</span></td><td><b>계절성, 요일, 시간</b>에 따라서도 수요를 크게 변동</td></tr>
+<tr class="per"><td class="biz">4) 비가격경쟁</td><td>관광상품의 가격결정과 만족은 상품의 품질과 가격에 대한 이용자의 <b>지각수준</b>을 기초로 이루어 진다 → 상품의 정서적 특성으로 인해 이용자의 <b>직관</b>이 크게 작용</td></tr>
+<tr class="not"><td class="biz">5) 상품모방 용이성</td><td>신상품이 관광시장에 도입된다 해도 동일지역과 시기의 시·공간적인 한계를 공유할 경우 그 상품은 내용과 형태에 있어 <b>유사성</b>을 띄게 된다</td></tr>
+<tr class="not"><td class="biz">6) 한계효용체감의<br>법칙 부적용</td><td>동일 제품을 반복해서 구입 할 때 구매자의 만족은 추가되는 단위량의 구입에 따라 감소 되는 것을 말한다. 그러나 관광상품은 그 효용이 <b>경험이나 추억</b>으로 이루어지기 때문에 감소하기 보다는 <b>증가하는 현상</b>이 나타난다</td></tr>
+<tr class="des"><td class="biz">7) 가치상품</td><td>관광여행을 통하여 어떤 가치를 형성하고 그에 따라 <b>신분과 지위를 확인</b>하고 이를 상승시키려는 태도를 보이고 있다</td></tr>
+<tr class="des"><td class="biz">8) 배송이 간편하다</td><td>관광상품은 생산자로부터 소비자에게 배달되는 경우, 무형의 상품이기 때문에 배송이 간편하다 → 여행상품의 실질적인 내용은 <b>정보</b>이기 때문에 배달은 <b>정보 제공</b>으로 끝나게 된다</td></tr>
+<tr class="mint"><td class="biz">9) 복수의 동시<br>소비 불가능성</td><td>관광상품은 타 상품처럼 일단 구입해 놓았다가 필요할 때 사용할 수 있는 상품이 아니며, <b>소비자가 직접 참여함으로써 상품화</b>되는 것이다. 따라서 여러 여행상품을 동시에 소비한다는 것은 소비자에게 불가능한 일이다</td></tr>
+<tr class="mint"><td class="biz">10) 비객관성</td><td>관광상품은 여행자에 따라 관광상품에 대해 느끼는 가치나 만족감은 각기 다르기 때문에 관광상품의 가치와 효용은 지극히 <b>주관적인 기준</b>에 의해 결정된다</td></tr>
+<tr class="rose"><td class="biz">11) 비교환성</td><td>관광상품이 불량품이라고 판명되더라도 <b>교환이 불가능</b>하다. 왜냐하면 한 번 구입한 상품은 <b>경험의 축적</b>이라는 무형이고 생산과 소비가 동시에 이루어지기 때문이다</td></tr>
+<tr class="rose"><td class="biz">12) 지각의 위험성이<br>높은 상품</td><td>관광상품은 <b>경험을 통해서 상품의 질</b>을 알 수 있기 때문에 기대에 따른 <b>지각이 위험성</b>을 내포하고 있다</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 관광학개론 원본교재 제6장 관광사업론 (교재 60~67쪽), 제1절 관광사업 개념과 종류 · 제2절 관광사업의 특성 · 제3절 관광상품 정의 및 구성.</p>
+<p>★는 교재에 인쇄되어 있는 별표를 그대로 옮긴 것입니다. 「최빈출」 배지와 노랑 표시는 산업인력공단·학원 기출 관광학개론 문항을 세어 붙였습니다.</p>
+<p>「유원시설업」은 「테마파크업」으로 명칭이 바뀐 것을 반영했습니다.</p>
+</footer>
+
+</div>
+<script>
+function flt(m){
+  var secs=document.querySelectorAll('section');
+  for(var i=0;i<secs.length;i++){ secs[i].hidden=(m!=='all')&&!secs[i].dataset[m]; }
+  var parts=document.querySelectorAll('.part');
+  for(var j=0;j<parts.length;j++){
+    var n=parts[j].nextElementSibling, vis=false;
+    while(n&&!n.classList.contains('part')){ if(n.tagName==='SECTION'&&!n.hidden){vis=true;break;} n=n.nextElementSibling; }
+    parts[j].hidden=!vis;
+  }
+  var bs=document.querySelectorAll('.tabbtn');
+  for(var k=0;k<bs.length;k++){ bs[k].classList.toggle('on', bs[k].dataset.f===m); }
+  var toc=document.querySelector('nav.toc'); if(toc) toc.hidden=(m!=='all');
+}
+</script>
+</body></html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광법규 표 모음</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+
+.card{display:block;background:var(--card);border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px 18px;margin:12px 0;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--gold)}
+.ct{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.cs{font-size:13px;color:var(--ink-2);margin-top:6px;line-height:1.55}
+.cm{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+</style>
+</head><body>
+<div class="wrap">
+
+
+<header class="top">
+<div class="kicker">2026 관광통역안내사 필기</div>
+<h1>관광법규 표 모음 — 전 15편
+<small>원본교재 진도 순서대로 · 표 175개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">관광기본법 · 관광진흥법 · 관광진흥개발기금법 · 국제회의산업 육성에 관한 법률</span>
+<span class="chip">2026-08-30</span>
+</div>
+</header>
+
+<a class="card" href="https://claude.ai/code/artifact/c7c09ce2-704c-45af-9810-0dab8d4e7442" target="_blank"><div class="ct">1편 관광법 개요 · 관광기본법</div>
+<div class="cs">관광법규의 체계 · 관광기본법의 목적 · 국가와 지방자치단체의 책무 · 연차보고 · 기본계획 · 국가관광전략회의 · 조문 골라 뽑기 7줄</div>
+<div class="cm"><span class="chip">관광기본법 전체</span><span class="chip">표 8개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/17996144-08a8-45a7-8135-a112186e7a41" target="_blank"><div class="ct">2편 관광진흥법 제1조 ~ 제3조</div>
+<div class="cs">목적 · 정의 · 관광사업의 종류(여행업 3종 · 관광숙박업 · 관광객이용시설업 · 국제회의업 · 카지노업 · 테마파크업 · 관광편의시설업)</div>
+<div class="cm"><span class="chip">제1조~제3조</span><span class="chip">표 11개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/3f0b8746-a44e-4979-af06-b4382bdd0bf2" target="_blank"><div class="ct">3편 제4조 등록기준</div>
+<div class="cs">등록·허가·신고·지정의 행정관청 · 업종별 자본금과 시설 요건 · 등록 절차 · 변경등록 · 등록증 · 관광표지</div>
+<div class="cm"><span class="chip">제4조</span><span class="chip">표 10개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/f8a3b310-52df-47eb-902d-737a102e70fc" target="_blank"><div class="ct">4편 제5조 ~ 제11조의2</div>
+<div class="cs">허가와 신고 · 지정 · 결격사유 · 사업의 양수 · 관광사업시설의 타인 경영 · 보험 가입 · 관광표지 부착</div>
+<div class="cm"><span class="chip">제5조~제11조의2</span><span class="chip">표 14개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/1463144b-42a3-4590-a698-1498f6b6882d" target="_blank"><div class="ct">5편 여행업 (제12조 ~ 제14조의2)</div>
+<div class="cs">기획여행의 실시와 광고 표시사항 · 의료관광 활성화 · 전담여행사 · 국외여행인솔자 · 여행계약 · 결격사유</div>
+<div class="cm"><span class="chip">제12조~제14조의2</span><span class="chip">표 6개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/7c51a719-7abf-4f31-9d55-7d3ec626c3dd" target="_blank"><div class="ct">6편 관광숙박업 · 관광객이용시설업</div>
+<div class="cs">사업계획의 승인 · 관광숙박시설 건축지역 · 인·허가 의제 · 등록심의위원회 · 호텔업 등급결정(신청 기간·평가요소·유효기간·평가요원) · 분양 및 회원 모집 · 회원증 · 야영장 안전·위생기준</div>
+<div class="cm"><span class="chip">제15조~제20조의4</span><span class="chip">표 18개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/1d770b4c-f01f-4b4b-a296-6fe9dbf319a6" target="_blank"><div class="ct">7편 카지노업 (제21조 ~ 제30조)</div>
+<div class="cs">허가 요건과 허가 제한 · 결격사유 · 시설기준(330㎡·환전소·4종류) · 전산시설 검사 · 조건부 영업허가 · 카지노기구 검사 · 영업 종류 · 준수사항 · 영업준칙 · 폐광지역 영업준칙 · 기금 납부금 징수 비율</div>
+<div class="cm"><span class="chip">제21조~제30조</span><span class="chip">표 17개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/831912d0-4ad3-4673-9155-8f5f27da26db" target="_blank"><div class="ct">8편 테마파크업 (제31조 ~ 제34조의3)</div>
+<div class="cs">조건부 영업허가(종합 5년·일반 3년) · 물놀이형 안전·위생기준 · 안전성 검사와 재검사 · 안전성검사 대상/비대상 시설 · 안전관리자 배치기준 · 중대한 사고 보고와 조사 · 영업질서 준수사항 · 안전정보시스템</div>
+<div class="cm"><span class="chip">제31조~제34조의3</span><span class="chip">표 14개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/685b2d12-e2a1-4875-b709-754ff5904769" target="_blank"><div class="ct">9편 영업에 대한 지도·감독</div>
+<div class="cs">등록취소 등 · 행정처분 일반기준과 개별기준(1~4차) · 카지노 준수사항 위반 처분 · 기금 납부 지연 처분 · 폐쇄조치 · 과징금 2천만원 · 여행업 과징금 부과기준</div>
+<div class="cm"><span class="chip">제35조~제37조</span><span class="chip">표 8개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/86f79593-2b02-45e5-8953-2ee10aae6547" target="_blank"><div class="ct">10편 관광종사원 · 관광사업자단체</div>
+<div class="cs">관광 업무별 자격 기준 · 결격사유 · 필기시험 과목과 배점 · 외국어시험 · 면접시험 평가기준 · 시험 면제 기준 · 등록기관(한국관광공사/중앙회) · 자격취소 · 한국관광협회중앙회 · 공제사업 · 지역별·업종별 관광협회</div>
+<div class="cm"><span class="chip">제38조~제46조</span><span class="chip">표 11개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/1f3f606f-0261-4515-b503-f43f88076cfd" target="_blank"><div class="ct">11편 관광의 진흥과 홍보</div>
+<div class="cs">관광통계 · 여행이용권 · 국제협력 · 스마트관광산업 · 관광홍보와 관광자원 개발 · 지역축제와 문화관광축제 · 특별관리지역 · 문화관광해설사(양성교육 100시간·평가 기준) · 지역관광협의회 · 한국관광 품질인증</div>
+<div class="cm"><span class="chip">제47조~제48조의13</span><span class="chip">표 18개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/d5815f9a-45da-497d-b506-b5f4acad58f4" target="_blank"><div class="ct">12편 관광지 · 관광단지 개발</div>
+<div class="cs">관광개발 기본계획(10년) · 권역별 관광개발계획(5년) · 관광지와 관광단지의 정의·지정·구분기준 · 행위 제한 · 조성계획 수립과 승인 · 지정 실효 · 인·허가 의제 · 수용 및 사용 · 분담금 · 이주대책 · 입장료</div>
+<div class="cm"><span class="chip">제49조~제69조의2</span><span class="chip">표 13개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/06642bd6-403d-4592-b959-0002fcd9a2bc" target="_blank"><div class="ct">13편 관광특구 · 보칙 · 벌칙</div>
+<div class="cs">관광특구 지정 요건(10만명·서울 50만명·10퍼센트) · 진흥계획 · 평가(연 1회·3년마다) · 다른 법률에 대한 특례 · 재정지원 · 수수료 · 권한의 위임·위탁 · 벌칙 7년/5년/3년/2년/1년 · 양벌규정 · 과태료</div>
+<div class="cm"><span class="chip">제70조~제86조</span><span class="chip">표 10개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/21f33078-834c-4a4d-b98d-f831990799c1" target="_blank"><div class="ct">14편 관광진흥개발기금법</div>
+<div class="cs">기금의 재원 5가지 · 출국납부금(공항 7천원·선박 1천원)과 제외대상 · 민간전문가 10명 · 기금의 용도(대여·보조·출자) · 기금운용위원회 · 기금 계정(한국은행)과 대여업무(한국산업은행) · 결산보고 2월 말일 · 목적 외 사용 금지</div>
+<div class="cm"><span class="chip">제1조~제13조</span><span class="chip">표 8개</span><span class="chip">기출 31문항</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/25a3c575-7d32-4569-bb5b-1cc0cf02065e" target="_blank"><div class="ct">15편 국제회의산업 육성에 관한 법률</div>
+<div class="cs">국제회의의 종류·규모(3개국·100명·50명·2일) · 국제회의시설 요건(전문/준/전시/지원/부대) · 전담조직 · 육성기본계획 5년 · 육성기반 조성사업과 사업시행기관 · 국제회의도시 · 국제회의복합지구 · 국제회의집적시설 · 재정 지원 100분의 10</div>
+<div class="cm"><span class="chip">제1조~제18조</span><span class="chip">표 12개</span><span class="chip">기출 30문항</span></div></a>
+
+<footer>
+<p><b>표 읽는 법</b> — <span class="hl">노랑 형광펜</span>은 기출(2013·2016·2018~2025년)에 실제로 정답이나 보기로 나온 단어입니다. <b class="n5">★</b>은 교재에 인쇄된 별을 그대로 옮긴 것이고, <b class="n5">★★★★★</b>짜리 표는 빨간 테두리를 둘렀습니다. 기출에 나온 표에는 <span class="badge">최빈출</span> 배지가 붙습니다.</p>
+<p>각 페이지 맨 위 <b>「중요」 탭</b>을 누르면 별표·최빈출 표만 남습니다. <b>인쇄 버튼</b>은 화면에 보이는 것만 A4 가로로 뽑습니다.</p>
+<p>근거 — 관광법규 원본교재 「6. 관광진흥법 / 7. 관광진흥개발기금법 / 8. 국제회의산업 육성에 관한 법률」 · 기출 11개년 250문항 실측(관광진흥법 179 · 기금법 31 · 국제회의법 30 · 관광기본법 10)</p>
+<p>제77조 [청문]은 최근 10년간 기출 0회로 표 모음에서 뺐습니다.</p>
+</footer>
+
+</div></body></html>

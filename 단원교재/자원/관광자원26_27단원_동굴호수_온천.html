@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 26·27단원 · 동굴·호수 관광자원 &amp; 온천 관광자원</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65;white-space:pre-line}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.stack,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.stack .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.stack .p b{display:block;font-size:15px;margin-bottom:6px;color:var(--bro)}
+.stack .p span{font-size:12.5px;color:var(--ink-2);display:block}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">&larr; 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 26·27단원</div>
+<h1>동굴·호수 관광자원 &amp; 온천 관광자원
+<small>동굴은 <b>무엇이 뚫었나</b>, 호수는 <b>누가 만들었나</b>, 온천은 <b>어디에 있나</b>. 세 단원 모두 마지막에는 <b>행정구역</b>을 묻습니다</small>
+</h1>
+<div class="meta"><span class="chip hot">동굴 ★★★</span><span class="chip hot">온천 ★★★ — "얘마저도 행정구역이에요"</span><span class="chip">석호 ★ · 교재 유일 별표</span><span class="chip">예상문제 14문항</span></div>
+</header>
+
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 뚫은 것은 무엇인가, 만든 것은 누구인가, 그리고 어디인가</h2>
+<p class="sub">이 두 단원은 외울 게 많아 보이지만 질문은 딱 세 개뿐입니다. <b>동굴은 "무엇이 뚫었나"</b>, <b>호수는 "누가 만들었나"</b>, <b>온천은 "어디에 있나"</b>. 그리고 셋 다 결국 마지막에는 <b>행정구역</b>을 묻습니다.</p>
+
+<div class="flow">
+<b class="hi">동굴</b><i>무엇이 뚫었나 →</i><b>물이 녹였다</b><i>석회동굴 (강원·충북 단양)</i><b>용암이 흘렀다</b><i>용암동굴 (제주도만)</i><b>파도가 때렸다</b><i>해식동굴 (바닷가)</i>
+</div>
+<div class="flow">
+<b class="hi">호수</b><i>누가 만들었나 →</i><b>자연</b><i>화구호 · 석호 · 우각호</i><b>사람</b><i>댐 · 저수지 · 방조제</i>
+</div>
+<div class="flow">
+<b class="hi">온천</b><i>어디에 있나 →</i><b>충남 아산에 몰려 있다</b><i>+ 관광특구 5곳</i>
+</div>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div>강사가 이 단원을 시작하면서 한 말입니다 — <b>"국사는 외울 것 많지만 뭔가 연결되고 연결되고 특징이 있는데, 얘는 그냥 단순해. 단도직입적으로 외우는 거에는 특별한 방법이 없어요."</b> 이 단원만큼은 <b>표를 반복해서 보는 것</b>이 정답이라는 뜻입니다. 그래서 이 페이지도 이야기보다 <b>표와 짝 카드</b>에 무게를 뒀습니다. (7/26 핵심강의 1:02:32)</div>
+</div>
+
+<div class="tl">
+<div class="t1"><b>석회동굴</b><span>물이 <b>녹여서</b> 뚫음(용식작용)<br>강원도 · 충북 단양</span></div>
+<div class="t2"><b>용암동굴</b><span>용암이 흘러가며 뚫음<br><b>제주도에만</b> 존재</span></div>
+<div class="t3"><b>해식동굴</b><span>파도가 때려서 뚫음<br>바닷가 절벽</span></div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-book"/></svg> 이야기로 읽기</h2>
+<p class="sub">읽고 나면 표가 저절로 외워지도록, 강의에서 강사가 실제로 한 설명과 비유를 그대로 살렸습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">시멘트가 물에 녹듯이 — 석회동굴</div><div class="era">강원도 · 충북 단양</div></div>
+<div class="body">
+<p>석회동굴이 왜 생기는지는, 강사가 든 비유 하나로 끝납니다. <b class="k">석회암은 시멘트의 원료</b>입니다. 시멘트로 뭔가를 만들려면 반드시 <b>물</b>을 섞어야 하지요. 즉 <b>석회암은 물과 만나면 녹는 돌</b>입니다. 그래서 석회암 지대에 <b class="k">빗물과 지하수</b>가 계속 스며들면, 돌이 조금씩 녹아내리면서 땅속에 커다란 구멍이 뚫립니다. 그 구멍이 바로 석회동굴입니다.</p>
+
+<div class="term"><b>용식작용(溶蝕作用)</b> — 이게 뭐냐면, "녹여서(溶) 깎아낸다(蝕)"는 뜻입니다. 파도가 때려서 깎는 것도 아니고, 바람이 날려서 깎는 것도 아니고, <b>물이 돌을 화학적으로 녹여버리는 것</b>이 용식작용입니다. 석회동굴 문제에서 형성 원인을 물으면 답은 언제나 이 단어입니다.</div>
+
+<p>이렇게 만들어진 지형 전체를 <b class="k">카르스트 지형</b>이라고 부릅니다. 베트남의 하롱베이가 바로 이 카르스트 지형이 바다에 잠긴 모습이지요. 동굴 안에는 천장에서 자라 내려오는 <b>종유석</b>과 바닥에서 자라 올라오는 <b>석순</b>이 생깁니다.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>그런데 강사는 여기서 딱 잘라 말합니다.</b> <b>"우리는 (종유석·석순이) 크게 중요한 게 아니라, 석회동굴이 있는 행정구역의 구분이 중요한 겁니다."</b> 시험은 동굴 내부 구조를 묻지 않고 <b>"이 동굴이 어느 도(道)에 있느냐"</b>만 묻는다는 뜻입니다. (1:04:55)</div>
+</div>
+
+<p>석회동굴은 딱 두 지역에 몰려 있습니다 — <b class="k">강원도</b>와 <b class="k">충청북도 단양</b>. 단양은 석회암이 워낙 많아서 <b>세계지질공원</b>으로도 지정되었습니다. 강원도 쪽에는 삼척의 <b>대이리 동굴지대</b>(그 안에 아시아 최대 규모라는 <b>환선굴</b>이 있습니다), 영월의 <b>고씨굴</b>, 태백의 <b>용연동굴</b>, 정선의 <b>화암동굴</b>, 동해의 <b>천곡 황금박쥐동굴</b>이 있고, 충북 단양에는 <b>고수동굴·온달동굴·노동동굴</b>이 있습니다.</p>
+
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div>이름이 너무 비슷해서 강사가 두 번이나 강조한 짝이 있습니다. <b>강원도 영월은 "고씨", 충북 단양은 "고수"</b>입니다. 강사의 말 그대로 — <b>"헷갈리게 해서 시험에 낼 거 같애 안 낼 거 같아요? 여러분 같애도 내겠죠?"</b></div>
+</div>
+
+<p>동해의 <b class="k">천곡 황금박쥐동굴</b>은 원래 이름이 그냥 "천곡동굴"이었는데, 세계적 희귀종인 <b>황금박쥐</b>가 발견되면서 이름이 길어졌습니다. 이 동굴의 진짜 특징은 따로 있습니다 — <b>석회동굴 중 유일하게 도시 한가운데(도심)에 있는 동굴</b>입니다. 강사는 이걸 <b>"도심형 국립공원이 부산 금정산 하나뿐인 것과 똑같은 구조"</b>라고 묶어서 외우라고 했습니다.</p>
+
+<p>그리고 예외 두 곳. 석회동굴은 <b>강원도 아니면 충북 단양</b>인데, 딱 두 개만 그 밖에 있습니다 — <b class="k">경북 울진 성류굴</b>(우리나라 <b>최초의 관광동굴</b>)과 <b class="k">전북 익산 천호동굴</b>입니다.</p>
+
+<div class="quote">"울진이 왜 그렇게 많이 나오는지, 여기서 한 번 나오는 게 아니야. 징글징글하게 나와요, 울진이. 저는 장난해요 — <b>100% 울진 출신의 출제위원장이 있는 것 같아요.</b>" — 강사, 1:07:56</div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">제주도에만 있는 이유 — 용암동굴</div><div class="era">제주도 · 전부 천연기념물</div></div>
+<div class="body">
+<p>용암동굴은 이유가 간단합니다. <b class="k">화산이 있어야 용암이 흐르고, 용암이 흘러야 그 속에 구멍이 남습니다.</b> 우리나라에서 그런 곳은 제주도뿐이지요. 그래서 <b>용암동굴 = 제주도</b>는 예외가 없습니다. 문제에서 동굴 이름이 나왔을 때 "이게 제주에 있나?"만 판단하면 절반은 풀립니다.</p>
+
+<p>제주의 용암동굴은 크게 두 덩어리로 나뉩니다. 하나는 한림 협재리 일대의 <b>제주 용암동굴지대</b>(협재굴·쌍룡굴 등, 협재해수욕장 근처), 다른 하나가 <b class="k">거문오름 용암동굴계</b>입니다. 그런데 이 둘의 가치는 완전히 다릅니다.</p>
+
+<div class="term"><b>제주도 전체가 세계자연유산인 게 아닙니다.</b> 이게 함정입니다. 유네스코 세계자연유산으로 등재된 것은 <b>①성산일출봉 ②한라산 ③거문오름 용암동굴계</b> 이 세 곳입니다. 협재리 쪽 <b>제주 용암동굴지대는 세계자연유산에 포함되지 않습니다.</b> 강사의 표현 그대로 — <b>"거문오름 용암동굴계가 짱이야."</b></div>
+
+<p>거문오름 용암동굴계에 속한 동굴은 <b>만장굴 · 김녕굴 · 당처물동굴 · 벵뒤굴 · 용천동굴</b> 다섯 개입니다. 그중 <b class="k">만장굴과 김녕굴</b>(김녕사굴이라고도 부릅니다) 두 개는 <b>우리나라에서 처음으로 천연기념물로 지정된 동굴</b>이라 따로 외워야 합니다.</p>
+
+<p>또 하나 꼭 기억할 동굴이 <b class="k">빌레못굴</b>입니다. 이 굴은 세 가지를 한꺼번에 가지고 있습니다 — <b>우리나라에서 가장 긴 동굴</b>이고, 안에서 <b>구석기 유적</b>이 나왔으며, <b>제주 4·3 사건</b> 당시 주민들이 숨어 있던 아픈 역사의 장소입니다. 다만 보존을 위해 <b>일반에는 공개하지 않습니다(미공개)</b>.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div><b>석회동굴에는 천연기념물이 아닌 것이 있지만, 제주도의 용암동굴은 예외 없이 전부 천연기념물입니다.</b> 그래서 "천연기념물이 아닌 동굴을 고르시오"라는 문제에서 <b>제주도 동굴은 절대 정답이 될 수 없습니다.</b> (1:09:32)</div>
+</div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">파도가 때려서 뚫은 구멍 — 해식동굴</div><div class="era">25단원의 해식동과 같은 것</div></div>
+<div class="body">
+<p>해식동굴은 앞 단원(25단원 해안 관광자원)에서 이미 배운 <b>해식동</b>과 같은 것입니다. 바닷가 절벽(해식애)에서 <b class="k">암석이 약한 부분이 파도의 침식을 집중적으로 받아</b> 구멍이 뻥 뚫린 것이지요. 그래서 형성 원인을 물으면 답은 <b>파랑(파도)의 침식작용</b>입니다.</p>
+
+<p>대표적인 곳은 제주의 <b class="k">산방굴</b>과 <b class="k">정방굴</b>입니다. 산방굴은 제주 산방산 중턱에 있는데, <b>굴 안에 절(산방굴사)과 불상이 있어서</b> 걸어 올라가야 볼 수 있습니다. 정방굴은 정방폭포 쪽에 있습니다. 제주 밖에서는 <b>여수 오동도</b>, <b>남해 금산굴</b> 등이 있습니다.</p>
+
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>제주도에는 용암동굴만 있는 게 아닙니다.</b> 제주의 해식동굴 두 개 — <b>산방굴·정방굴</b> — 를 놓치면 "다음 중 용암동굴인 것"류 문제에서 그대로 걸립니다. 실제로 강사가 "제주도에 있는 동굴이 아닌 것" 문제를 풀며 짚은 부분입니다.</div>
+</div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">자연이 만들었나, 사람이 만들었나 — 호수</div><div class="era">석호 ★ · 화구호 · 우각호</div></div>
+<div class="body">
+<p>호수는 <b class="k">자연호</b>와 <b class="k">인공호</b>로 나뉩니다. 강사는 <b>"어떤 게 시험에 나올까요? 당연히 자연이죠. 사람이 만든 호수가 뭐 이쁘다고"</b>라고 했습니다. 실제로 자연호 세 개 — <b>석호 · 화구호 · 우각호</b> — 에 문제가 몰려 있습니다.</p>
+
+<p>먼저 <b class="k">화구호</b>는 화산이 폭발하면서 생긴 <b>분화구</b>에 물이 고인 호수입니다. 우리나라 대표가 <b>한라산 백록담</b>이지요. 그런데 화산이 <b>두 번 이상 폭발</b>해서 꼭대기가 아예 주저앉아버리면 분화구가 훨씬 넓어지는데, 여기 물이 고인 것이 <b class="k">칼데라호</b>입니다. <b>백두산 천지</b>가 여기에 해당합니다.</p>
+
+<div class="term"><b>화구호 vs 칼데라호</b> — 이게 뭐냐면, 크기와 만들어진 횟수의 차이입니다. 한 번 터져서 생긴 작은 구멍이 <b>화구</b>(→ 백록담), 여러 번 터져 주저앉아 커진 구멍이 <b>칼데라</b>(→ 천지)입니다. <b>남한 땅에는 칼데라호가 없습니다.</b> 강사의 촌평 — "백록담은요, 천지에 비하면… 봐도 관광의 값어치가 떨어져. 사실은."</div>
+
+<p>여기서 하나 더. <b class="k">울릉도 나리분지</b>는 칼데라이긴 한데 <b>물이 고이지 않은 맨땅</b>입니다. 그래서 칼데라"호"가 아니라 <b>칼데라 분지</b>라고 부릅니다.</p>
+
+<div class="term"><b>분지(盆地)</b> — 이게 뭐냐면, 주변이 산으로 빙 둘러싸인 안쪽의 낮은 땅입니다. 열이 산에 막혀 빠져나가지 못해 굉장히 덥습니다. 우리나라 대표 분지가 <b>대구</b>이고, 대구가 가장 더운 이유가 바로 이것입니다.</div>
+
+<p>다음은 <b class="k">석호</b>. 24단원에서 배운 대로 <b>사주가 만의 입구를 막아 바닷물이 갇혀 생긴 호수</b>이고, <b>동해안(강원도)</b>에 몰려 있습니다. 행정구역까지 외워야 합니다 — <b>고성(광포호·화진포·송지호) · 속초(청초호·영랑호) · 강릉(경포호)</b>. 강사는 <b>"우리 시험 문제가 행정구역 문제도 나왔어요. 이 석호 하나만 가지고"</b>라고 했습니다.</p>
+
+<p>그중 <b class="k">화진포</b>는 문제로 직접 나온 적이 있습니다. 강원도 고성에 있는 이 석호에는 <b>이승만 별장</b>이 있는데, 사실 그 건물은 <b>원래 김일성 별장</b>이었습니다. 6·25 이전에는 38선 기준으로 고성이 북한 땅이었기 때문입니다. 전쟁 뒤 고성이 둘로 갈리면서 <b>삼일포는 북한, 화진포는 남한</b>에 남았습니다.</p>
+
+<p>마지막으로 <b class="k">우각호</b>. 이것만은 <b>바다가 아니라 강(하천)</b>에 생기는 호수입니다. 강물이 굽이쳐 흐르다가 물길이 새로 나면서, 옛 물길이 뚝 떨어져 <b>쇠뿔 또는 초승달 모양</b>으로 남은 것이지요.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div>강사가 <b>실제 출제 방식</b>을 그대로 알려준 부분입니다 — <b>"시험문제에서 우각호를 어떻게 냈냐고요? 바닷가로 낸 거야. 이건 바닷가가 아니라 강에 만들어진 호수예요."</b> 즉 <b>석호=바닷가 / 우각호=강</b>을 바꿔치기하는 것이 출제 패턴입니다. (1:22:05)</div>
+</div>
+
+<p>인공호는 <b>댐 · 저수지 · 방조제</b> 세 가지입니다. 댐형은 <b>북한강</b>에 제일 많은데, 특이하게 <b class="k">화천댐만 호수 이름이 파로호</b>이고 나머지는 댐 이름을 그대로 씁니다(소양강댐-소양호, 의암-의암호, 청평-청평호, 팔당-팔당호). 저수지형은 역사에 나오는 <b>제천 의림지 · 밀양 수산제 · 김제 벽골제</b>가 대표이고, 방조제형은 <b>아산호 · 삽교호 · 시화호</b>, 여가형으로는 <b>석촌호수 · 일산 호수공원 · 경주 보문호</b>가 있습니다.</p>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">왕들이 아프면 찾아간 물 — 온천</div><div class="era">자연관광자원의 마지막 · ★★★</div></div>
+<div class="body">
+<p>온천 단원은 강사가 <b>"별 3개인데, 얘마저도 뭐예요? 행정구역이에요"</b>라고 말한 단원입니다. 다른 요령이 없고, <b>어느 온천이 어느 시·도에 있는지</b>만 외우면 되는 대신 그것만은 확실히 외워야 합니다.</p>
+
+<p>먼저 기준. 온천은 <b class="k">수온·수량·성분</b> 세 가지로 판단하는데 가장 중요한 것이 <b>수온</b>입니다. 기준은 <b class="k">35℃~42℃</b>. 이보다 훨씬 낮으면 <b>냉천</b>, 조금 낮으면 <b>미온천</b>, <b>42℃를 넘으면 고온천</b>입니다. 성분으로는 유황천·탄산천·염류천 등으로 나뉩니다.</p>
+
+<div class="term"><b>염류천(鹽類泉)</b> — 이게 뭐냐면, '염(鹽)'이 소금 염 자입니다. 즉 <b>소금 성분이 녹아 있는 온천</b>입니다. 부산 동래·해운대 온천, 경남 창원 마금산온천이 여기 해당하며 <b>식염천</b>이라고도 부릅니다.</div>
+
+<p>온천이 가장 많은 곳은 <b class="k">충청남도</b>, 그중에서도 <b class="k">아산</b>에 몰려 있습니다. 아산에만 <b>온양온천 · 아산온천 · 도고온천</b> 세 개가 있고, 바로 옆 <b>예산</b>에 덕산온천이 있습니다.</p>
+
+<p>그중 <b class="k">온양온천</b>이 주인공입니다. <b>우리나라에서 역사적으로 가장 오래된 온천</b>이고, <b>조선의 왕들이 몸이 아프면 찾아가던 곳</b>이라 아예 <b>행궁</b>이 지어져 있었습니다. 세종·세조·영조 같은 왕들이 다녀갔지요. "가장 오래된 온천"과 "왕들이 이용한 온천"이라는 두 포인트가 한 문제 안에 함께 나옵니다.</p>
+
+<p>두 번째 축은 <b class="k">경북 울진</b>입니다. <b>백암온천</b>(유황)과 <b>덕구온천</b>(노천탕) 두 개가 모두 울진에 있습니다. 앞서 성류굴에서도 울진이 나왔던 그 울진입니다.</p>
+
+<p>세 번째로 <b class="k">경남 창녕 부곡온천</b>. 별명이 "부곡하와이"였던 이곳은 <b>우리나라 온천 중 수온이 가장 높고</b>, <b>국민관광지로 지정</b>되어 있으며, 물론 <b>관광특구</b>이기도 합니다. 실제 문제에서 "1977년 국민관광지 지정 + 고온천 + 경상남도"라는 세 조건으로 이 온천을 물은 적이 있습니다.</p>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div><b>온천 관광특구 5곳은 무조건 암기입니다.</b> <b>유성(대전) · 아산(충남) · 수안보(충북 충주) · 백암(경북 울진) · 부곡(경남 창녕)</b>. 강사가 <b>"여러분들 다 외워놓으셔야 됩니다"</b>라고 못박은 항목입니다. 특히 <b>유성온천은 충청남도가 아니라 대전광역시</b>입니다 — <b>"대전과 충청남도는 완전히 구분하셔야 됩니다."</b></div>
+</div>
+
+<div class="term"><b>관광특구</b> — 이게 뭐냐면, 외국인 관광객이 많이 찾는 지역을 따로 지정해 규제를 풀어주는 제도입니다. <b>국가가 아니라 시장·군수·구청장이 신청해 시·도지사가 지정</b>하며, 외국인 관광객이 <b>서울은 연 50만 명 이상, 서울 외 지역은 연 10만 명 이상</b>이어야 합니다.</div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 이 표가 곧 시험 범위입니다</h2>
+<p class="sub">교재와 강의에 나온 이름을 하나도 빼지 않고 담았습니다. 문제는 여기 있는 이름들끼리 서로 자리를 바꿔서 나옵니다.</p>
+
+<h3>① 동굴 3분류</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>유형</th><th>형성 원인</th><th>분포</th><th>천연기념물</th></tr></thead>
+<tbody>
+<tr><td class="nm">석회동굴<br>(카르스트)</td><td><b>용식작용</b> — 빗물·지하수가 석회암을 <b>녹임</b></td><td><b>강원도 · 충북 단양</b><br>(예외 2곳: 경북 울진, 전북 익산)</td><td>대부분 지정<br><b class="x">2곳 예외</b></td></tr>
+<tr><td class="nm">용암동굴</td><td>화산 <b>용암류</b> 속에 빈 공간이 남음</td><td><b>제주도에만</b> 존재</td><td><b class="o">예외 없이 전부</b></td></tr>
+<tr><td class="nm">해식동굴</td><td><b>파랑(파도)의 침식작용</b></td><td>바닷가 절벽(해식애)</td><td>—</td></tr>
+</tbody>
+</table></div>
+
+<h3>② 석회동굴 — 행정구역 매칭 (여기가 출제 지점)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>동굴</th><th>행정구역</th><th>기억할 것</th></tr></thead>
+<tbody>
+<tr><td class="nm">환선굴</td><td>강원 <b>삼척</b></td><td>대이리 동굴지대 안에 있음 · <b>아시아 최대 석회동굴</b>이라 불림</td></tr>
+<tr><td class="nm">고씨굴</td><td>강원 <b>영월</b></td><td><b class="x">"고씨"는 영월</b> — 단양 고수동굴과 최대 혼동 짝</td></tr>
+<tr><td class="nm">용연동굴</td><td>강원 <b>태백</b></td><td><b class="x">천연기념물이 아닌 동굴 ①</b></td></tr>
+<tr><td class="nm">화암동굴</td><td>강원 <b>정선</b></td><td>예전엔 천연기념물이 아니었으나 <b>2019년에 지정됨</b> — 옛 교재 해설 주의</td></tr>
+<tr><td class="nm">천곡 황금박쥐동굴</td><td>강원 <b>동해</b></td><td><b class="x">천연기념물이 아닌 동굴 ②</b> · <b>유일하게 도심에 있는 석회동굴</b> · 황금박쥐 발견으로 개명</td></tr>
+<tr><td class="nm">고수동굴</td><td>충북 <b>단양</b></td><td><b class="x">"고수"는 단양</b></td></tr>
+<tr><td class="nm">온달동굴</td><td>충북 <b>단양</b></td><td>—</td></tr>
+<tr><td class="nm">노동동굴</td><td>충북 <b>단양</b></td><td><b>동양 최대의 수직동굴</b> — 들어가는 순간 아래로 내려감</td></tr>
+<tr><td class="nm">성류굴</td><td>경북 <b>울진</b></td><td><b>우리나라 최초의 관광동굴</b> · 강원·단양이 아닌 예외 ①</td></tr>
+<tr><td class="nm">천호동굴</td><td>전북 <b>익산</b></td><td>강원·단양이 아닌 예외 ②</td></tr>
+</tbody>
+</table></div>
+
+<h3>③ 제주 용암동굴</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>속한 동굴</th><th>가치</th></tr></thead>
+<tbody>
+<tr><td class="nm">거문오름<br>용암동굴계</td><td><b>만장굴 · 김녕굴(김녕사굴) · 당처물동굴 · 벵뒤굴 · 용천동굴</b> (5개)</td><td><b class="o">세계자연유산</b>(성산일출봉·한라산과 함께 3곳)<br>만장굴·김녕굴 = <b>우리나라 최초로 천연기념물 지정</b></td></tr>
+<tr><td class="nm">제주<br>용암동굴지대</td><td>협재굴 · 쌍룡굴 등 (한림 협재리 일대)</td><td><b class="x">세계자연유산에 포함되지 않음</b></td></tr>
+<tr><td class="nm">빌레못굴</td><td>—</td><td><b>우리나라 최장 길이 동굴</b> · <b>구석기 유적</b> · <b>제주 4·3</b>의 현장 · <b>미공개</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>④ 해식동굴</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>동굴</th><th>위치</th><th>기억할 것</th></tr></thead>
+<tbody>
+<tr><td class="nm">산방굴</td><td>제주 산방산</td><td>굴 안에 절(<b>산방굴사</b>)과 불상이 있음</td></tr>
+<tr><td class="nm">정방굴</td><td>제주 정방폭포</td><td>제주의 해식동굴 두 번째</td></tr>
+<tr><td class="nm">오동도굴</td><td>전남 여수</td><td>—</td></tr>
+<tr><td class="nm">금산굴</td><td>경남 남해</td><td>—</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑤ 호수</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>유형</th><th>형성 원인</th><th>대표 예 · 행정구역</th></tr></thead>
+<tbody>
+<tr><td class="nm">화구호</td><td>화산 <b>분화구</b>에 물이 고임</td><td><b>한라산 백록담</b></td></tr>
+<tr><td class="nm">칼데라호</td><td>화산이 <b>여러 번 폭발</b>해 주저앉으며 넓어진 화구에 물이 고임</td><td><b>백두산 천지</b> (남한에는 없음)<br>※ <b>울릉도 나리분지</b>는 물이 없어 <b>칼데라 분지</b></td></tr>
+<tr><td class="nm">석호 ★</td><td><b>사주</b>가 만의 입구를 막음 (동해안)</td><td><b>고성</b> — 광포호·<b>화진포</b>·송지호<br><b>속초</b> — 청초호·영랑호<br><b>강릉</b> — 경포호</td></tr>
+<tr><td class="nm">우각호</td><td><b>하천</b>의 유로 변경 (강! 바다 아님)</td><td>쇠뿔·초승달 모양</td></tr>
+<tr><td class="nm">인공호(댐형)</td><td>전력·용수</td><td><b>화천댐 = 파로호</b>(유일하게 이름이 다름) · 소양호 · 의암호 · 청평호 · 팔당호 · 충주호 · 대청호</td></tr>
+<tr><td class="nm">인공호(저수지형)</td><td>농업용수</td><td><b>제천 의림지 · 밀양 수산제 · 김제 벽골제</b> · 정읍 만석보 · 포천 산정호수</td></tr>
+<tr><td class="nm">인공호(방조제형)</td><td>바닷물 차단</td><td>아산호 · 삽교호 · 시화호</td></tr>
+<tr><td class="nm">인공호(여가형)</td><td>조경·휴양</td><td>서울 석촌호수 · 일산 호수공원 · 경주 보문호<br>(역사적으로는 신라 <b>동궁과 월지(안압지)</b>, 백제 <b>궁남지</b>)</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑥ 온천 — 행정구역 매칭</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>행정구역</th><th>온천</th><th>기억할 것</th></tr></thead>
+<tbody>
+<tr><td class="nm">대전광역시</td><td><b>유성온천</b></td><td><b class="o">관광특구</b> · <b class="x">충남 아님!</b></td></tr>
+<tr><td class="nm">충남 아산</td><td><b>온양온천</b></td><td><b>가장 오래된 온천</b> · 조선 왕들의 <b>행궁</b>(세종·세조·영조 등)</td></tr>
+<tr><td class="nm">충남 아산</td><td><b>아산온천</b></td><td><b class="o">관광특구</b></td></tr>
+<tr><td class="nm">충남 아산</td><td>도고온천</td><td>유황 성분</td></tr>
+<tr><td class="nm">충남 예산</td><td>덕산온천</td><td>아산이 아니라 <b>예산</b></td></tr>
+<tr><td class="nm">충북 충주</td><td><b>수안보온천</b></td><td><b class="o">관광특구</b></td></tr>
+<tr><td class="nm">경북 울진</td><td><b>백암온천</b></td><td><b class="o">관광특구</b> · 유황</td></tr>
+<tr><td class="nm">경북 울진</td><td>덕구온천</td><td><b>노천탕</b></td></tr>
+<tr><td class="nm">경북 영주</td><td>풍기온천</td><td>행정구역 문제로 <b>실제 출제된 적 있음</b></td></tr>
+<tr><td class="nm">경남 창녕</td><td><b>부곡온천</b></td><td><b class="o">관광특구</b> · <b>최고 수온</b> · <b>국민관광지</b>(1977) · 옛 부곡하와이</td></tr>
+<tr><td class="nm">경남 창원</td><td>마금산온천</td><td><b>식염천</b></td></tr>
+<tr><td class="nm">강원 속초</td><td>척산온천</td><td>강원도 온천 중 가장 중요</td></tr>
+<tr><td class="nm">강원 양양</td><td>오색온천</td><td>설악산 <b>오색약수터</b> 근처</td></tr>
+<tr><td class="nm">경기</td><td>이천온천 · 신북온천</td><td>이천은 <b>관광특구가 아님</b>(실제 오답 보기로 출제)</td></tr>
+<tr><td class="nm">부산</td><td>동래온천 · 해운대온천</td><td>식염천</td></tr>
+</tbody>
+</table></div>
+
+<div class="stack">
+<div class="p"><b>유성</b><span>대전광역시</span></div>
+<div class="p"><b>아산</b><span>충청남도</span></div>
+<div class="p"><b>수안보</b><span>충청북도 충주</span></div>
+<div class="p"><b>백암</b><span>경상북도 울진</span></div>
+<div class="p"><b>부곡</b><span>경상남도 창녕</span></div>
+<div class="p"><b>= 관광특구 5</b><span>이 다섯 개만 특구</span></div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급 — 무엇을 근거로 매겼는지 밝힙니다</h2>
+<p class="sub">이 단원은 <b>기출 원문으로 실측이 불가능</b>합니다(아래 각주 참조). 그래서 <b>감으로 매기지 않고</b>, ①교재의 별표 개수 ②강사가 직접 말한 출제 유형 ③문제풀이강의에서 실제로 다룬 문항 수(223~242번, <b>20문항</b>)를 근거로 표시했습니다.</p>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>석회동굴·용암동굴·해식동굴 짝짓기</b> — 문제풀이강의에서 <b>같은 유형이 4번 반복</b>(223·224·228·230번). 강사: <b>"얘는 계속 나오고 있으니까 우리가 외워야 되는 거예요."</b></div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>온천의 행정구역</b> — 온천 6문항(237~242번) 중 <b>5문항이 행정구역 매칭</b>. 강사: <b>"온천은 공부할 때 제일 중요한 게 행정구역이에요."</b> 교재 ★★★</div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>온천 관광특구 5곳</b> — 239번으로 직접 출제(정답: 특구가 아닌 이천온천). 강사: <b>"여러분들 다 외워놓으셔야 됩니다."</b></div></div>
+<div class="row"><span class="gr gA">A · 최우선</span><div><b>석호의 행정구역</b>(고성·속초·강릉) — 235·236번 연속 출제. 강사: <b>"6년 만에 비슷하게 낸 거예요."</b> 교재에서 석호는 이 단원 유일한 별표 항목</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>천연기념물로 지정되지 않은 동굴</b>(태백 용연동굴 · 동해 천곡 황금박쥐동굴) — 226·229번 출제. 강사가 출제 문장까지 예고: <b>"다음 중 천연기념물로 지정되지 않은 동굴을 고르시오, 이렇게 문제가 나오겠죠."</b></div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>고씨굴(영월) vs 고수동굴(단양)</b> — 227번에서 강사가 "다시 한번 강조"하며 두 번 반복</div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>자연호 vs 인공호 구분</b> — 232·233번 연속 출제(정답: 시화호 · 충주호). 강사: <b>"정말 서비스 문제"</b></div></div>
+<div class="row"><span class="gr gB">B · 중요</span><div><b>우각호는 강, 석호는 바다</b> — 231번 오답 보기로 실제 출제됨</div></div>
+<div class="row"><span class="gr gC">C · 확인</span><div><b>화구호(백록담) vs 칼데라호(천지)</b> — 231번 4번 보기로 출제. 단독 문제는 아직 없음</div></div>
+<div class="row"><span class="gr gC">C · 확인</span><div><b>이승만 별장 = 화진포</b> — 234번으로 단독 출제된 적 있음(강원 고성)</div></div>
+<div class="row"><span class="gr gC">C · 확인</span><div><b>최초·최대·최장 항목</b> — 성류굴(최초 관광동굴) · 노동동굴(동양 최대 수직동굴) · 빌레못굴(최장) · 만장굴·김녕굴(최초 천연기념물). 보기 안에서 섞여 나옴</div></div>
+<div class="row"><span class="gr gZ">참고</span><div><b>온천의 수온 분류</b>(냉천/미온천/온천/고온천) — 단독 출제는 없었고, 241번에서 "고온천"이라는 <b>조건의 일부</b>로 등장</div></div>
+</div>
+
+<div class="zero">
+<b>0회 항목 — 버릴 것을 알려드립니다.</b> 종유석·석순 같은 <b>동굴 내부 구조 용어</b>, <b>카르스트</b>라는 용어 자체, 인공호의 <b>세부 분류 명칭</b>은 강의에서 다룬 20문항 안에 <b>한 번도 나오지 않았습니다</b>. 강사도 "우리는 (내부 구조가) 크게 중요한 게 아니라 행정구역이 중요하다"고 했습니다. <b>이름과 행정구역에 시간을 쓰세요.</b>
+</div>
+
+<div class="notice">
+<b>집계 기준</b> — 여기서 말하는 "출제"는 <b>학원 기출문제집 223~242번(20문항)에 대한 7/31 문제풀이강의</b>를 근거로 한 것입니다. <code>관광자원기출.md</code>(2013~2025년 136문항)는 수록 범위가 <b>유교 건축(Q136)까지</b>여서 26·27단원의 기출 원문 대조는 불가능합니다. 따라서 <b>"몇 년도 몇 번"까지는 특정하지 않았습니다.</b>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">시험은 이 짝들을 서로 바꿔서 냅니다. 카드 한 장이 곧 한 문제입니다.</p>
+
+<div class="cmp">
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 고씨 vs 고수</h4>
+<div class="vs">
+<div class="side a"><b>고씨굴</b>강원 영월</div><div class="mid">VS</div><div class="side b"><b>고수동굴</b>충북 단양</div>
+</div>
+<p class="why">강사가 "헷갈리게 해서 시험에 낼 것 같지 않냐"고 두 번 강조한 짝. <b>"씨"는 강원도, "수"는 충북</b>으로 붙여 외우세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 천연기념물이 아닌 동굴</h4>
+<div class="vs">
+<div class="side x2"><b>용연동굴 · 천곡 황금박쥐동굴</b>지정 안 됨 (태백 · 동해)</div><div class="mid">↔</div><div class="side n"><b>화암동굴</b>2019년에 지정됨</div>
+</div>
+<p class="why">정선 화암동굴은 예전에는 "천연기념물 아님"이었지만 <b>2019년에 지정</b>되었습니다. 강사가 직접 <b>"뒤에 해설에 정선 화암동굴도 아닌 걸로 써놨는데 그거 좀 지워주시기 바랍니다"</b>라고 교재 오류를 정정했습니다. 지금 기준 <b>정답은 딱 2개</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 제주라고 다 세계자연유산이 아니다</h4>
+<div class="vs">
+<div class="side n"><b>거문오름 용암동굴계</b>세계자연유산 ○</div><div class="mid">≠</div><div class="side x2"><b>제주 용암동굴지대</b>(협재굴 등) 포함 안 됨</div>
+</div>
+<p class="why">제주에서 세계자연유산은 <b>성산일출봉 · 한라산 · 거문오름 용암동굴계</b> 세 곳뿐입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 석호 vs 우각호</h4>
+<div class="vs">
+<div class="side b"><b>석호</b>바닷가 · 사주가 막음</div><div class="mid">VS</div><div class="side n"><b>우각호</b>강 · 유로 변경</div>
+</div>
+<p class="why">강사가 <b>실제 출제 방식</b>을 알려준 부분 — "우각호를 <b>바닷가로</b> 낸 거야." 우각호에 '해안'이라는 단어가 붙어 있으면 그 보기는 <b>틀린 것</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 백록담 vs 천지</h4>
+<div class="vs">
+<div class="side g"><b>백록담</b>화구호(한 번 폭발)</div><div class="mid">VS</div><div class="side b"><b>백두산 천지</b>칼데라호(여러 번)</div>
+</div>
+<p class="why">"둘 다 칼데라호"라고 묶어놓은 보기가 실제 오답으로 출제되었습니다. <b>남한에는 칼데라호가 없습니다.</b> 울릉도 나리분지는 물이 없어 <b>칼데라 분지</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 유성은 충남이 아닙니다</h4>
+<div class="vs">
+<div class="side x2"><b>유성온천</b>대전광역시</div><div class="mid">↔</div><div class="side a"><b>온양·아산·도고</b>충남 아산</div>
+</div>
+<p class="why">"충청남도에 있는 온천"을 묻는 보기에 <b>유성</b>이 끼어 있으면 그 보기는 틀린 것입니다. 강사의 마무리 한 마디 — <b>"대전과 충청남도는 완전히 구분하셔야 됩니다."</b></p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars"><ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>출제 문장까지 예고</b> — "다음 중 <b>천연기념물로 지정되지 않은 동굴</b>을 고르시오, 이렇게 문제가 나오겠죠." → 정답 후보는 <b>태백 용연동굴 · 동해 천곡 황금박쥐동굴</b> 둘뿐 (1:08:51)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>교재 정답 오류 2건 정정</b> — ①해설에 "정선 화암동굴도 천연기념물이 아니다"라고 쓴 부분은 <b>지울 것</b>(2019년 지정) ②"천연기념물로 지정된 동굴을 모두 고르시오" 문항은 <b>교재의 정답 자체가 틀렸고</b>, 현재 기준 정답은 <b>만장굴·천호동굴·화암동굴 모두 포함</b>입니다 (7/31 문제풀이 5:43~9:19)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>동굴 짝짓기가 계속 나온다</b> — "석회동굴·용암동굴·해식동굴, 다음 중 바르게 연결된 것… 이렇게 문제가 나온다. <b>얘는 계속 나오고 있으니까 우리가 외워야 되는 거예요.</b>" (1:13:52)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>우각호는 강</b> — "시험문제에서 우각호를 어떻게 냈냐고요? <b>바닷가로 낸 거야.</b> 이건 바닷가가 아니라 강에 만들어진 호수예요." (1:22:05)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>석호는 행정구역까지</b> — "우리 시험 문제가 행정구역 문제도 나왔어요. <b>이 석호 하나만 가지고.</b>" → 고성 2개(송지호·화진포)는 반드시 (7/31 11:42)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>온천은 행정구역이 전부</b> — "온천은 공부할 때 제일 중요한 게 뭐라고 그랬어요? <b>제일 중요한 건 행정구역이에요.</b>" 그 다음 순서가 ②관광특구 ③충남 ④경북 울진 (7/31 16:59)</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>울진이 유난히 많이 나온다</b> — 성류굴(최초 관광동굴) · 백암온천(특구) · 덕구온천(노천탕) · 망양정까지. 강사의 농담 — <b>"100% 울진 출신의 출제위원장이 있는 것 같아요."</b></div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>이 단원의 공부법</b> — "얘는 그냥 단순해. 단도직입적으로 외우는 거에는 <b>특별한 방법이 없어요.</b> 자꾸 보고 익히는 것 외에는." → 표를 여러 번 보는 것이 최선입니다</div></li>
+</ul></div>
+</section>
+
+
+<section id="quizsec">
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 예상문제 14문항</h2>
+<p class="sub">보기를 눌러 고르고, 다 풀면 <b>채점하기</b>를 누르세요. 채점 후 <b>틀린 문제만 다시 풀기</b>와 <b>오답노트용 기록</b>이 나옵니다.</p>
+
+<div class="notice">
+<b>이 문제들은 기출 원문이 아니라 예상문제입니다.</b> 26·27단원은 기출 원문 정리본(136문항)의 수록 범위 밖이라 기출을 그대로 실을 수 없습니다. 대신 <b>7/31 문제풀이강의에서 실제로 다룬 20문항(223~242번)의 출제 형태</b>를 그대로 따르고, <b>교재와 강의에 실제로 있는 사실만</b>으로 만들었습니다. 강의에서 정정된 최신 사실(화암동굴 2019년 천연기념물 지정)도 반영했습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 14 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/04_최종교재/관광자원.md</code>의 26단원(동굴·호수 관광자원)·27단원(온천 관광자원) + <b>강의전사본/핵심강의/7월26일.txt</b> 1:02:32~1:34:39 구간(동굴 3분류·행정구역, 호수, 온천) + <b>강의전사본/문제풀이강의/7월31일.txt</b> 1:39~26:20 구간(223~242번 문제풀이).</p>
+<p><b>기출 실측 불가 사유</b> — <code>02_관광자원해설/03_작업자료/관광자원기출.md</code>(2013~2025년 136문항)의 수록 범위가 유교 건축(Q136)까지여서, 동굴·호수·온천 단원의 기출 원문이 존재하지 않습니다. 따라서 <b>빈도를 감으로 매기지 않고, 교재의 별표·강사의 발언·문제풀이강의에서 다룬 문항 수를 근거로</b> 표기하고 그 근거를 각 항목에 함께 적었습니다.</p>
+<p><b>강의에서 정정된 사실</b> — 정선 화암동굴은 <b>2019년에 천연기념물로 지정</b>되었으므로, 옛 해설의 "천연기념물이 아닌 동굴 3곳"은 현재 기준 <b>2곳(태백 용연동굴·동해 천곡 황금박쥐동굴)</b>이 맞습니다(7/31 문제풀이 5:43~6:53 강사 직접 정정).</p>
+<p><b>추측 금지</b> — 음성 판독이 불확실한 항목(거문오름 용암동굴계 5개 중 당처물·벵뒤·용천동굴의 개별 표기 등)은 교재의 표기를 따랐고, 강의에만 있고 교재에 없는 미확인 항목은 넣지 않았습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var UNIT='[관광자원해설 26·27단원 — 동굴·호수 관광자원 · 온천 관광자원]';
+var QS=[
+{n:1,src:"예상 · 짝짓기형(최빈출)",q:"석회동굴 — 용암동굴 — 해식동굴의 순서로 바르게 연결한 것은?",o:["영월 고씨굴 — 제주 만장굴 — 제주 협재굴","제주 김녕사굴 — 제주 만장굴 — 제주 산방굴","단양 고수동굴 — 제주 협재굴 — 제주 산방굴","삼척 환선굴 — 단양 온달동굴 — 제주 정방굴"],a:2,c:"동굴",e:"①은 <b>협재굴이 용암동굴</b>이라 해식동굴 자리에 올 수 없습니다. ②는 첫 자리의 <b>김녕사굴이 용암동굴</b>이라 석회동굴이 아닙니다. ④는 <b>환선굴과 온달동굴이 둘 다 석회동굴</b>입니다. 강사가 <b>\"이 문제 나올 때 계속 이렇게 자꾸 맞춰보셔야지, 살짝 잘못 보면 엉뚱한 답을 쓸 수 있다\"</b>고 경고한 유형입니다."},
+{n:2,src:"예상 · 모두 고르기형",q:"생성 원인이 용암동굴에 해당하는 것을 모두 고른 것은?\nㄱ. 만장굴  ㄴ. 고수동굴  ㄷ. 산방굴  ㄹ. 빌레못굴  ㅁ. 협재굴",o:["ㄱ, ㄴ, ㄷ","ㄱ, ㄹ, ㅁ","ㄴ, ㄷ, ㅁ","ㄱ, ㄷ, ㄹ"],a:1,c:"동굴",e:"판단 기준은 하나입니다 — <b>용암동굴은 무조건 제주도에만 있습니다.</b> <b>고수동굴은 충북 단양의 석회동굴</b>이고, <b>산방굴은 제주에 있지만 해식동굴</b>입니다. 제주에 있다고 전부 용암동굴이 아니라는 점이 이 문제의 함정입니다."},
+{n:3,src:"예상 · 강사 예고형",q:"우리나라 동굴 중 천연기념물로 지정되지 <b>않은</b> 것은?",o:["영월 고씨굴","울진 성류굴","단양 노동동굴","태백 용연동굴"],a:3,c:"동굴",e:"<b>태백 용연동굴</b>입니다. 현재 기준 천연기념물이 아닌 동굴은 <b>태백 용연동굴</b>과 <b>동해 천곡 황금박쥐동굴</b> 딱 두 곳입니다. <b>정선 화암동굴은 2019년에 천연기념물로 지정</b>되었으므로 이제 정답이 될 수 없습니다(강사가 교재 해설의 오류를 직접 정정한 부분). 참고로 <b>제주도의 용암동굴은 전부 천연기념물</b>이라 절대 정답이 되지 않습니다."},
+{n:4,src:"예상 · 행정구역형(강사 2회 강조)",q:"동굴과 소재지의 연결이 옳지 <b>않은</b> 것은?",o:["고씨굴 — 강원도 영월","고수동굴 — 충청북도 단양","성류굴 — 경상북도 울진","천호동굴 — 충청북도 단양"],a:3,c:"동굴",e:"<b>천호동굴은 전라북도 익산</b>에 있습니다. 석회동굴은 <b>강원도 아니면 충북 단양</b>에 몰려 있고, 그 두 지역이 아닌 예외가 <b>경북 울진 성류굴</b>과 <b>전북 익산 천호동굴</b> 둘뿐입니다. 그리고 <b>\"씨\"는 영월, \"수\"는 단양</b> — 강사가 두 번 반복해 강조한 짝입니다."},
+{n:5,src:"예상 · 최초/최대형",q:"동굴에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["울진 성류굴은 우리나라 최초의 관광동굴이다.","단양 노동동굴은 동양 최대의 수직동굴이다.","제주 빌레못굴은 우리나라에서 가장 긴 동굴이며 일반에 공개되고 있다.","만장굴과 김녕굴은 우리나라에서 처음으로 천연기념물로 지정된 동굴이다."],a:2,c:"동굴",e:"<b>빌레못굴은 우리나라 최장 길이의 동굴이 맞지만 미공개</b>입니다. 이 굴은 <b>구석기 유적</b>이 발견된 곳이자 <b>제주 4·3 사건</b> 때 주민들이 피신했던 역사의 현장이기도 합니다."},
+{n:6,src:"예상 · 세계유산 함정형",q:"제주도의 동굴에 관한 설명으로 옳은 것은?",o:["제주도 전역이 유네스코 세계자연유산으로 등재되어 있다.","한림 협재리 일대의 제주 용암동굴지대가 세계자연유산에 포함된다.","거문오름 용암동굴계가 성산일출봉·한라산과 함께 세계자연유산으로 등재되어 있다.","제주도의 용암동굴 중 일부는 천연기념물로 지정되어 있지 않다."],a:2,c:"동굴",e:"제주에서 세계자연유산으로 등재된 것은 <b>성산일출봉 · 한라산 · 거문오름 용암동굴계</b> 세 곳입니다. <b>협재리 쪽 제주 용암동굴지대는 포함되지 않습니다.</b> 또 <b>제주도의 용암동굴은 예외 없이 전부 천연기념물</b>이므로 ④도 틀립니다. 거문오름 용암동굴계에는 만장굴·김녕굴·당처물동굴·벵뒤굴·용천동굴 5개가 속합니다."},
+{n:7,src:"예상 · 종합 판단형",q:"호수 관광자원에 관한 설명으로 옳은 것은?",o:["우각호는 해안 지역에 토사가 퇴적되어 형성된 호수이다.","석호는 하천의 상류에 이어져 형성된 호수이다.","충주호와 소양호는 전형적인 댐형 인공호이다.","백두산 천지와 한라산 백록담은 모두 칼데라호이다."],a:2,c:"호수",e:"<b>우각호는 해안이 아니라 하천(강)</b>에 생깁니다 — 강사가 \"시험에서 우각호를 <b>바닷가로</b> 냈다\"고 짚은 바로 그 함정입니다. <b>석호는 반대로 해안</b>에 생기고요. <b>백록담은 화구호, 백두산 천지가 칼데라호</b>로 서로 다른 유형입니다."},
+{n:8,src:"예상 · 구분형",q:"다음 중 인공호에 해당하는 것은?",o:["경포호","영랑호","시화호","송지호"],a:2,c:"호수",e:"<b>시화호는 방조제형 인공호</b>입니다. 나머지 <b>경포호(강릉)·영랑호(속초)·송지호(고성)</b>는 전부 동해안의 <b>석호</b>입니다. 강사가 <b>\"정말 서비스 문제\"</b>라고 부른 유형이니 절대 놓치면 안 됩니다."},
+{n:9,src:"예상 · 행정구역형",q:"석호와 소재지의 연결이 옳지 <b>않은</b> 것은?",o:["영랑호 — 강원도 속초","화진포 — 강원도 고성","경포호 — 강원도 원주","송지호 — 강원도 고성"],a:2,c:"호수",e:"<b>경포호는 강원도 강릉</b>입니다. <b>원주는 치악산이 있는 내륙 지역</b>이라 바다가 없고, 따라서 석호가 있을 수 없습니다 — 강사가 \"원주를 또 내버렸어\"라며 반복 출제되는 함정으로 지적한 지명입니다. 석호의 행정구역은 <b>고성(광포호·화진포·송지호) · 속초(청초호·영랑호) · 강릉(경포호)</b> 세 곳입니다."},
+{n:10,src:"예상 · 단독 출제형",q:"이승만 전 대통령의 별장이 있는 것으로 유명하며, 강원도 고성에 위치한 석호는?",o:["화진포","청초호","경포호","의림지"],a:0,c:"호수",e:"<b>화진포</b>입니다. 이 별장은 사실 <b>원래 김일성 별장</b>이었는데, 6·25 이전에는 38선을 기준으로 고성이 북한 땅이었기 때문입니다. 전쟁 뒤 고성이 갈라지면서 <b>삼일포는 북한, 화진포는 남한</b>에 남았습니다. <b>의림지는 제천의 저수지</b>로 석호가 아닙니다."},
+{n:11,src:"예상 · 관광특구형(실제 출제 유형)",q:"온천 관광특구로 지정된 곳이 <b>아닌</b> 것은?",o:["유성온천","수안보온천","이천온천","부곡온천"],a:2,c:"온천",e:"온천 관광특구는 <b>유성(대전) · 아산(충남) · 수안보(충북 충주) · 백암(경북 울진) · 부곡(경남 창녕)</b> 다섯 곳뿐입니다. <b>경기도 이천온천</b>은 특구가 아닙니다. 관광특구는 <b>국가가 아니라 시·도지사가 지정</b>하며, 외국인 관광객이 <b>서울 연 50만 명, 서울 외 지역 연 10만 명 이상</b>이어야 합니다."},
+{n:12,src:"예상 · 행정구역 연결형",q:"충청남도에 소재한 온천으로 바르게 짝지어진 것은?",o:["온양온천 — 수안보온천","도고온천 — 덕산온천","백암온천 — 덕구온천","유성온천 — 온양온천"],a:1,c:"온천",e:"<b>도고온천은 충남 아산, 덕산온천은 충남 예산</b>으로 둘 다 충청남도입니다. <b>수안보는 충북 충주</b>, <b>백암·덕구는 경북 울진</b>, <b>유성은 대전광역시</b>입니다. 강사의 마무리 한 마디 — <b>\"대전과 충청남도는 완전히 구분하셔야 됩니다.\"</b>"},
+{n:13,src:"예상 · 조건 매칭형(실제 출제)",q:"다음 설명에 해당하는 온천은?\n\"1977년 국민관광지로 지정되었고, 일반 온천에 비해 수온이 높은 고온천이며, 경상남도에 위치한다.\"",o:["마금산온천","척산온천","백암온천","부곡온천"],a:3,c:"온천",e:"<b>경남 창녕 부곡온천</b>입니다. <b>우리나라 온천 중 수온이 가장 높고</b>, <b>국민관광지</b>로 지정되었으며, 물론 <b>관광특구</b>이기도 합니다. 옛 \"부곡하와이\"가 있던 곳이지요. <b>마금산온천은 경남 창원의 식염천</b>, <b>척산온천은 강원 속초</b>, <b>백암온천은 경북 울진</b>입니다."},
+{n:14,src:"예상 · 종합 매칭형",q:"온천과 소재지의 연결이 옳은 것은?",o:["오색온천 — 충청남도","풍기온천 — 경상북도 영주","척산온천 — 경상남도","마금산온천 — 강원도"],a:1,c:"온천",e:"<b>풍기온천은 경북 영주</b>가 맞습니다 — 강사가 \"얘가 시험에 한번 나온 적이 있어서 말씀드린다\"고 콕 집은 항목입니다. <b>오색온천은 강원 양양</b>(설악산 오색약수터 근처), <b>척산온천은 강원 속초</b>, <b>마금산온천은 경남 창원</b>입니다."}
+];
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx=''+UNIT+' 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\n/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+
+</body>
+</html>

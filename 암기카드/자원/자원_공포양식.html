@@ -1,0 +1,336 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>관광자원 암기카드 — 공포 양식</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#C6871A;--w:#C4272B;--neo:#2E8B4F;--bro:#C2491E;--iro:#1F4E70;--pal:#6B5738;--gL:#8F6510;--iroL:#1B3A52;--broL:#963012;--neoL:#1F6B34;--palL:#4A3B26;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#F0C040;--w:#F0524F;--neo:#5FCB7E;--bro:#E8703D;--iro:#4A8FC2;--gL:#F5C93A;--iroL:#6FA8D0;--broL:#F08050;--neoL:#7ED98F;--palL:#B08A5C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px;margin-bottom:14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r3b{grid-template-columns:1fr 1fr 1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.bt{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--i2);font-weight:800;margin:0 7px}
+.big+.big{margin-top:5px}
+.big small,ul.rel small{font-size:.7em;font-weight:600;color:var(--i2)}
+ul.rel small{margin-left:9px}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.trap{background:var(--p2);border:1px solid var(--l);border-left:3px solid var(--w);border-radius:11px;padding:10px 12px;font-size:15px;font-weight:700;line-height:1.55;margin-bottom:9px}
+.trap .tl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--w);margin-right:9px}
+.trap b{color:var(--w);font-weight:800}
+.trap .sep{color:var(--l);font-weight:400;margin:0 4px}
+@media (max-width:960px){
+ .r3,.r3b,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .chip{font-size:15px}
+ .trap{font-size:17px}
+ .eq{font-size:15px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:10mm}.card{break-inside:auto;page-break-inside:auto}.row,.box,.hd,tr,td,th{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<!--
+==================================================================
+  암기카드 공통 템플릿  (4과목 공용)
+  이 파일의 [style] 과 [script] 는 한 글자도 바꾸지 않고 그대로 복사해서 쓴다.
+  아래 [body] 안의 카드 구조만 과목·주제에 맞게 채운다.
+------------------------------------------------------------------
+[구조]  주제 1개 = <div class="card"> 1개
+
+  <div class="card">
+    <div class="hd">
+      <h1>제 목</h1>                    글자 사이에 공백
+      <span class="tag">태그1</span>     시대 / 분류 / 연도
+      <span class="tag">태그2</span>     성격 / 구분
+      <div class="sub"><em>붉은 글씨</em></div>   있을 때만
+    </div>
+
+    <div class="row r3">               3칸 — 항상 1fr 1fr 1fr
+      <div class="box">   <div class="bt">항목</div><div class="big">값</div></div>
+      <div class="box b2"><div class="bt">항목</div><div class="big">값</div></div>
+      <div class="box b3"><div class="bt">항목</div><div class="big">값</div></div>
+    </div>
+
+    <div class="row r2">               2칸 — 항상 1fr 1fr
+      <div class="box b4">...</div>
+      <div class="box b5">...</div>
+    </div>
+
+    <div class="row" style="grid-template-columns:1fr">   1칸
+      <div class="box b3">...</div>
+    </div>
+  </div>
+
+[색 띠]  .box=금 / .b2=남 / .b3=갈 / .b4=녹 / .b5=회   — 왼쪽부터 이 순서 고정
+
+[표기]
+  값        <div class="big">...</div>
+  구분      " · "  또는  <span class="sep">/</span>
+  괄호부연  <small>(...)</small>
+  강조      <b>...</b>
+  번호나열  <ul class="rel"><li><span class="n">1</span>내용</li>...</ul>
+  긴 서술   <div class="myth">...</div>   (.myth b / .myth u 사용 가능)
+  보조설명  <div class="eq">...</div>
+
+[금지]
+  .chip / .chips (말풍선) 사용 금지 — .big 안에 " · " 로 나열한다
+  .trap (붉은 함정박스) 사용 금지
+  1.15fr / 1.5fr 같은 비대칭 grid 값 금지
+  한 줄에 박스 4개 이상 금지
+==================================================================
+-->
+
+<!-- ↓ 여기부터 카드 -->
+<div class="card">
+<div class="hd">
+  <h1>주 심 포 양 식</h1>
+  <span class="tag">★★★ 최빈출</span>
+  <span class="tag">고려</span>
+  <div class="sub"><em>강사 "특히 뭐가 짱이다? 주심포!" — 다포보다 더 많이 나옵니다</em></div>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">이름 풀이 · 위치</div>
+    <div class="big">柱(기둥 주) 心(중심 심) 包(포)</div>
+    <div class="big">공포가 <b>기둥 위에만</b> 놓임</div>
+  </div>
+  <div class="box b2">
+    <div class="bt">시대 · 성격</div>
+    <div class="big"><b>고려</b>시대 유행 <small>(조선에도 일부)</small></div>
+    <div class="big">우리나라 전통 양식</div>
+    <div class="big">검소하고 화려하지 않음</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">세트로 외우는 3종</div>
+    <div class="big">지붕 <span class="sep">/</span> <b>맞배지붕</b></div>
+    <div class="big">기둥 <span class="sep">/</span> <b>배흘림기둥</b></div>
+    <div class="big">천장 <span class="sep">/</span> <b>연등(삿갓)천장</b> <small>서까래 노출</small></div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b2">
+    <div class="bt">주심포 건물의 생김새</div>
+    <svg viewBox="0 0 340 220" style="width:100%;height:auto;display:block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 112 C56 105 112 84 170 44 C228 84 284 105 326 112" stroke-width="2.6"/>
+      <path d="M14 112 C10 108 10 104 16 102 M326 112 C330 108 330 104 324 102" stroke-width="2.6"/>
+      <rect x="152" y="38" width="36" height="9" rx="2.5" fill="currentColor" fill-opacity=".18" stroke-width="2.2"/>
+      <path d="M26 118 L314 118" stroke-width="2.4"/>
+      <path d="M36 124 L304 124" opacity=".45"/>
+      <g stroke="#C6871A" stroke-width="2.4">
+        <rect x="66" y="128" width="52" height="9" rx="2" fill="#C6871A" fill-opacity=".14"/>
+        <rect x="76" y="139" width="32" height="9" rx="2" fill="#C6871A" fill-opacity=".14"/>
+        <path d="M82 150 L102 150 L99 158 L85 158 Z" fill="#C6871A" fill-opacity=".14"/>
+        <rect x="222" y="128" width="52" height="9" rx="2" fill="#C6871A" fill-opacity=".14"/>
+        <rect x="232" y="139" width="32" height="9" rx="2" fill="#C6871A" fill-opacity=".14"/>
+        <path d="M238 150 L258 150 L255 158 L241 158 Z" fill="#C6871A" fill-opacity=".14"/>
+      </g>
+      <path d="M84 158 C78 172 78 182 84 196 M100 158 C106 172 106 182 100 196" stroke-width="2.4"/>
+      <path d="M240 158 C234 172 234 182 240 196 M256 158 C262 172 262 182 256 196" stroke-width="2.4"/>
+      <path d="M74 196 C74 202 78 204 92 204 C106 204 110 202 110 196 Z" fill="currentColor" fill-opacity=".12" stroke-width="2.2"/>
+      <path d="M230 196 C230 202 234 204 248 204 C262 204 266 202 266 196 Z" fill="currentColor" fill-opacity=".12" stroke-width="2.2"/>
+      <path d="M18 206 L322 206" stroke-width="2.6"/>
+      <path d="M18 206 L18 215 L322 215 L322 206" opacity=".5"/>
+    </svg>
+    <div class="eq"><b>ㅅ자 맞배지붕</b> · 기둥 가운데가 볼록한 <b>배흘림기둥</b> · 금색 공포가 <b>기둥 머리 위에만</b> 얹혀 있고 기둥 사이는 비어 있습니다.</div>
+  </div>
+  <div class="box b4">
+    <div class="bt">대표 건축물 — 필수암기</div>
+    <ul class="rel">
+      <li><span class="n">1</span>봉정사 극락전 <small>안동 · 현존 최고(最古) 목조건축물</small></li>
+      <li><span class="n">2</span>부석사 무량수전 <small>영주</small></li>
+      <li><span class="n">3</span>수덕사 대웅전 <small>예산</small></li>
+      <li><span class="n">4</span>강릉 객사문 <small>임영관 삼문</small></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>공 포 (拱包)</h1>
+  <span class="tag">★★★</span>
+  <span class="tag">전통건축 6단원</span>
+  <div class="sub"><em>지붕(처마) 끝의 무게를 기둥으로 전달하는 나무 구조물</em></div>
+</div>
+
+<div class="row r2">
+  <div class="box">
+    <div class="bt">공포의 두 가지 목적</div>
+    <div class="big">① <b>지붕 무게의 분산·감소</b> <small>실용적 목적</small></div>
+    <div class="big">② <b>장식</b> <small>의장적 목적</small></div>
+    <div class="eq"><b>출제</b> — 원본 교재에서 공포 항목은 <b>★★★</b>(별 3개)로 표시된 최상위 빈출 항목입니다.</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">공포 확대도</div>
+    <svg viewBox="0 0 340 220" style="width:100%;height:auto;display:block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M60 10 L44 40 M110 10 L94 40 M160 10 L144 40 M210 10 L194 40 M260 10 L244 40 M310 10 L294 40" opacity=".55" stroke-width="2.2"/>
+      <path d="M30 46 L310 46" stroke-width="2.6"/>
+      <circle cx="170" cy="38" r="0" />
+      <g stroke="#C2491E" stroke-width="2.4">
+        <rect x="52" y="52" width="236" height="12" rx="3" fill="#C2491E" fill-opacity=".12"/>
+        <rect x="60" y="52" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <rect x="163" y="52" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <rect x="266" y="52" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <path d="M78 70 C78 66 82 66 82 70 L82 78 C82 82 78 82 78 78 Z" fill="#C2491E" fill-opacity=".2"/>
+        <rect x="86" y="70" width="168" height="12" rx="3" fill="#C2491E" fill-opacity=".12"/>
+        <rect x="94" y="70" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <rect x="232" y="70" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <rect x="114" y="88" width="112" height="12" rx="3" fill="#C2491E" fill-opacity=".12"/>
+        <rect x="122" y="88" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <rect x="204" y="88" width="14" height="12" rx="2" fill="#C2491E" fill-opacity=".3"/>
+        <path d="M138 106 L202 106 L196 124 L144 124 Z" fill="#C2491E" fill-opacity=".2"/>
+      </g>
+      <path d="M144 124 C136 150 136 168 144 194 M196 124 C204 150 204 168 196 194" stroke-width="2.6"/>
+      <path d="M128 194 C128 202 134 205 170 205 C206 205 212 202 212 194 Z" fill="currentColor" fill-opacity=".12" stroke-width="2.2"/>
+      <path d="M96 208 L244 208" stroke-width="2.6"/>
+    </svg>
+    <div class="eq">기둥 머리(맨 아래 사다리꼴)에서 시작해 나무 부재가 <b>위로 갈수록 넓게</b> 짜여 올라갑니다.</div>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>다 포 양 식</h1>
+  <span class="tag">★★★</span>
+  <span class="tag">조선</span>
+  <div class="sub"><em>포(包)가 많다(多) — 그래서 화려하고 웅장합니다</em></div>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">이름 풀이 · 위치</div>
+    <div class="big">多(많을 다) 包(포)</div>
+    <div class="big">공포가 <b>기둥 위 + 기둥 사이</b>에도</div>
+  </div>
+  <div class="box b2">
+    <div class="bt">시대 · 전래</div>
+    <div class="big"><b>고려 말 원나라</b>를 통해 전래</div>
+    <div class="big"><b>조선</b>시대 유행 <small>현존 건축물의 80% 이상</small></div>
+    <div class="big">궁궐·사찰의 <b>주전(主殿)</b>에 사용</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">세트로 외우는 3종</div>
+    <div class="big">지붕 <span class="sep">/</span> <b>팔작 또는 우진각</b></div>
+    <div class="big">기둥 <span class="sep">/</span> <b>민흘림기둥</b></div>
+    <div class="big">천장 <span class="sep">/</span> <b>우물(장식)천장</b></div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b2">
+    <div class="bt">다포 건물의 생김새</div>
+    <svg viewBox="0 0 340 220" style="width:100%;height:auto;display:block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M170 40 L118 78 L222 78 Z" fill="currentColor" fill-opacity=".08" stroke-width="2.4"/>
+      <rect x="152" y="34" width="36" height="9" rx="2.5" fill="currentColor" fill-opacity=".18" stroke-width="2.2"/>
+      <path d="M14 112 C54 106 92 94 118 78 M222 78 C248 94 286 106 326 112" stroke-width="2.6"/>
+      <path d="M14 112 C10 108 10 104 16 102 M326 112 C330 108 330 104 324 102" stroke-width="2.6"/>
+      <path d="M26 118 L314 118" stroke-width="2.4"/>
+      <path d="M36 124 L304 124" opacity=".45"/>
+      <g stroke="#1F4E70" stroke-width="2.4">
+        <rect x="60" y="128" width="46" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="69" y="139" width="28" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <path d="M74 150 L92 150 L89 158 L77 158 Z" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="122" y="128" width="46" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="131" y="139" width="28" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="184" y="128" width="46" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="193" y="139" width="28" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="246" y="128" width="46" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <rect x="255" y="139" width="28" height="9" rx="2" fill="#1F4E70" fill-opacity=".14"/>
+        <path d="M260 150 L278 150 L275 158 L263 158 Z" fill="#1F4E70" fill-opacity=".14"/>
+      </g>
+      <path d="M76 158 L74 196 M90 158 L92 196" stroke-width="2.4"/>
+      <path d="M262 158 L260 196 M276 158 L278 196" stroke-width="2.4"/>
+      <path d="M64 196 C64 202 68 204 83 204 C98 204 102 202 102 196 Z" fill="currentColor" fill-opacity=".12" stroke-width="2.2"/>
+      <path d="M250 196 C250 202 254 204 269 204 C284 204 288 202 288 196 Z" fill="currentColor" fill-opacity=".12" stroke-width="2.2"/>
+      <path d="M18 206 L322 206" stroke-width="2.6"/>
+      <path d="M18 206 L18 215 L322 215 L322 206" opacity=".5"/>
+    </svg>
+    <div class="eq">위쪽 삼각형(합각)이 보이는 <b>팔작지붕</b> · 아래가 굵고 곧게 뻗은 <b>민흘림기둥</b> · 남색 공포가 <b>기둥 위뿐 아니라 기둥 사이 허공에도</b> 촘촘히 얹혀 있습니다.</div>
+  </div>
+  <div class="box b4">
+    <div class="bt">대표 건축물</div>
+    <ul class="rel">
+      <li><span class="n">1</span>경복궁 근정전</li>
+      <li><span class="n">2</span>창덕궁 인정전</li>
+      <li><span class="n">3</span>숭례문</li>
+      <li><span class="n">4</span>법주사 팔상전</li>
+      <li><span class="n">5</span>봉정사 대웅전 <small>조선</small></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>익 공 양 식</h1>
+  <span class="tag">출제 빈도 낮음</span>
+  <div class="sub"><em>선지 중 하나로만 등장 — 이름 풀이와 대표 건축물 하나면 충분합니다</em></div>
+</div>
+
+<div class="row r2">
+  <div class="box">
+    <div class="bt">이름 풀이 · 특징</div>
+    <div class="big">翼(날개 익) 工(공)</div>
+    <div class="big">공포가 <b>기둥 위에만</b> 놓임</div>
+    <div class="big">모양이 <b>새 날개</b>처럼 뾰족하게 빠져나옴</div>
+    <div class="big" style="margin-top:8px">대표 건축물 <span class="sep">/</span> <b>경회루</b></div>
+  </div>
+  <div class="box b3">
+    <div class="bt">익공 확대도</div>
+    <svg viewBox="0 0 340 200" style="width:100%;height:auto;display:block" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 28 L300 28" stroke-width="2.6"/>
+      <rect x="126" y="34" width="88" height="12" rx="3" fill="currentColor" fill-opacity=".1" stroke-width="2.4"/>
+      <g stroke="#C2491E" stroke-width="2.4">
+        <path d="M138 54 C112 54 76 48 34 30 C64 62 100 74 138 76 Z" fill="#C2491E" fill-opacity=".18"/>
+        <path d="M202 54 C228 54 264 48 306 30 C276 62 240 74 202 76 Z" fill="#C2491E" fill-opacity=".18"/>
+        <path d="M138 84 C118 84 92 80 60 68 C88 92 114 100 138 102" fill="#C2491E" fill-opacity=".12"/>
+        <path d="M202 84 C222 84 248 80 280 68 C252 92 226 100 202 102" fill="#C2491E" fill-opacity=".12"/>
+        <rect x="138" y="50" width="64" height="56" rx="3" fill="#C2491E" fill-opacity=".1"/>
+        <path d="M132 112 L208 112 L200 132 L140 132 Z" fill="#C2491E" fill-opacity=".2"/>
+      </g>
+      <path d="M140 132 L138 186 M200 132 L202 186" stroke-width="2.6"/>
+      <path d="M122 186 C122 194 128 197 170 197 C212 197 218 194 218 186 Z" fill="currentColor" fill-opacity=".12" stroke-width="2.2"/>
+    </svg>
+    <div class="eq">기둥 머리에서 <b>좌우로 뾰족하게 뻗어 나온 부재</b>가 새의 날개처럼 보입니다. 기둥 사이에는 아무것도 없습니다.</div>
+  </div>
+</div>
+</div>
+
+
+
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

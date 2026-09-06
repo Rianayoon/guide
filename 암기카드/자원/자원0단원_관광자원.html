@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>관광자원 0단원 암기카드</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#C6871A;--w:#C4272B;--neo:#2E8B4F;--bro:#C2491E;--iro:#1F4E70;--pal:#6B5738;--gL:#8F6510;--iroL:#1B3A52;--broL:#963012;--neoL:#1F6B34;--palL:#4A3B26;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#F0C040;--w:#F0524F;--neo:#5FCB7E;--bro:#E8703D;--iro:#4A8FC2;--gL:#F5C93A;--iroL:#6FA8D0;--broL:#F08050;--neoL:#7ED98F;--palL:#B08A5C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px;margin-bottom:14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r3b{grid-template-columns:1fr 1fr 1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.bt{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--i2);font-weight:800;margin:0 7px}
+.big+.big{margin-top:5px}
+.big small{font-size:.7em;font-weight:600;color:var(--i2)}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.trap{background:var(--p2);border:1px solid var(--l);border-left:3px solid var(--w);border-radius:11px;padding:10px 12px;font-size:15px;font-weight:700;line-height:1.55;margin-bottom:9px}
+.trap .tl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--w);margin-right:9px}
+.trap b{color:var(--w);font-weight:800}
+.trap .sep{color:var(--l);font-weight:400;margin:0 4px}
+@media (max-width:960px){
+ .r3,.r3b,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .chip{font-size:15px}
+ .trap{font-size:17px}
+ .eq{font-size:15px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:10mm}.card{break-inside:auto;page-break-inside:auto}.row,.box,.hd,tr,td,th{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<div class="card">
+<div class="hd">
+  <h1>관 광 자 원</h1>
+  <span class="tag">관광자원 0단원</span>
+</div>
+
+<div class="row r2">
+  <div class="box">
+    <div class="bt">성질</div>
+    <div class="big">경제성 <small>(개발하면 투자한 만큼 효과가 크다)</small></div>
+    <div class="big">가변성 <small>(시대나 관광객 취향이 바뀌면 가치도 바뀐다)</small></div>
+    <div class="big">유한성 <small>(한번 훼손되면 되돌릴 수 없다)</small></div>
+    <div class="big">보전성 <small>(계속 보호하고 지켜야 한다)</small></div>
+  </div>
+  <div class="box b2">
+    <div class="bt">분류</div>
+    <div class="big">자연관광자원 <small>(산악 · 구릉 · 해양 · 하천 · 호수 · 온천 등)</small></div>
+    <div class="big">인문관광자원 <small>(건축물 · 유적 · 유형무형문화재)</small></div>
+    <div class="big">유형 / 무형 관광자원</div>
+    <div class="eq">1983년 <b>한국관광공사</b>가 정함</div>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>국가지정문화유산</h1>
+  <span class="tag">국가유산청장 지정</span>
+</div>
+
+<div class="row r2">
+  <div class="box">
+    <div class="bt">지정</div>
+    <div class="big">국가유산청장 <small>(문화유산법에 근거 · 심의를 거쳐 지정)</small></div>
+  </div>
+  <div class="box b2">
+    <div class="bt">종류</div>
+    <div class="big">국보 · 보물 · 사적 · 국가민속문화유산 · 국가무형유산 · 명승 · 천연기념물</div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b3">
+    <div class="bt">국보</div>
+    <div class="big">먼저 보물로 지정 → <u>가치가 크고 유래가 드묾</u> → <b style="color:var(--w)">국보</b></div>
+  </div>
+  <div class="box b4">
+    <div class="bt">사적</div>
+    <div class="big">절터 · 옛무덤 · 성터 · 궁터 같은 유적지</div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b5">
+    <div class="bt">국가민속문화유산</div>
+    <div class="big">의식주 · 생업 · 신앙 · 연중행사 등 · 의복 · 기구 · 가옥</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">국가무형유산</div>
+    <div class="big">형태가 눈에 안 보이는 것 <small>(공연 · 기술 · 의식)</small></div>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>1 호 세 트</h1>
+</div>
+
+<div class="row r3">
+  <div class="box"><div class="bt">국보</div><div class="big">숭례문</div></div>
+  <div class="box b2"><div class="bt">보물</div><div class="big">흥인지문</div></div>
+  <div class="box b3"><div class="bt">사적</div><div class="big">경주 포석정지</div></div>
+</div>
+
+<div class="row r2">
+  <div class="box b4"><div class="bt">천연기념물</div><div class="big">대구 도동 측백나무 숲</div></div>
+  <div class="box b5"><div class="bt">명승</div><div class="big">강릉 청학동 소금강</div></div>
+</div>
+
+<div class="row r2">
+  <div class="box b3"><div class="bt">국가무형유산</div><div class="big">종묘제례악</div></div>
+  <div class="box"><div class="bt">국가민속문화유산</div><div class="big">덕온공주당의</div></div>
+</div>
+</div>
+
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

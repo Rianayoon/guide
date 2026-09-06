@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광학개론 8단원 · 여행업</title>
+<style>@page{size:A4;margin:0;}@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:45 920;font-style:normal;font-display:swap;}:root{--paper:#FAF5EA;--paper-2:#F3EBDA;--card:#FFFDF7;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--pal:#7A6A5A;--neo:#5F7F52;--bro:#A85436;--iro:#46525F;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--radius:14px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--pal:#B3A08B;--neo:#93B383;--bro:#DE8C6B;--iro:#93A6B8;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}section{margin:44px 0}h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}h2 .ic{color:var(--gold)}.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}.tl div:last-child{border-right:0}.tl>div>b{display:block;font-size:15px}.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}.tl span b{font-weight:800}.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}.tl .t1::before{background:var(--bro)} .tl .t2::before{background:var(--iro)}.tl .t3::before{background:var(--warn)} .tl .t4::before{background:var(--neo)}.tl .t1 b{color:var(--bro)} .tl .t2 b{color:var(--iro)} .tl .t3 b{color:var(--warn)} .tl .t4 b{color:var(--neo)}@media(max-width:640px){.tl{grid-template-columns:repeat(2,1fr)} .tl div{border-bottom:1px solid var(--line)}}.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}.story>.head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}.story .body{padding:18px 22px 22px}.story p{margin:0 0 13px}.s1 .num{background:var(--bro)} .s1 .ttl{color:var(--bro)} .s1{border-top:3px solid var(--bro)}.s2 .num{background:var(--iro)} .s2 .ttl{color:var(--iro)} .s2{border-top:3px solid var(--iro)}.s3 .num{background:var(--pal)} .s3 .ttl{color:var(--pal)} .s3{border-top:3px solid var(--pal)}.s4 .num{background:var(--neo)} .s4 .ttl{color:var(--neo)} .s4{border-top:3px solid var(--neo)}.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}.term b{color:var(--ink)}.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}b.k{color:var(--bro);font-weight:800}.s2 b.k{color:var(--iro)} .s3 b.k{color:var(--pal)} .s4 b.k{color:var(--neo)}.redo{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px;display:flex;gap:10px;align-items:flex-start}.redo .ic{flex:0 0 auto;color:var(--warn);margin-top:3px}.redo b{color:var(--warn)}.badge{display:inline-block;font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn);margin-left:6px;white-space:nowrap;vertical-align:2px}.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}table{border-collapse:collapse;width:100%;min-width:660px;font-size:14px}th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}tbody tr:last-child td{border-bottom:0}td.era{font-weight:800;white-space:nowrap}tr.r1 td.era{color:var(--bro)} tr.r2 td.era{color:var(--iro)}tr.r3 td.era{color:var(--pal)} tr.r4 td.era{color:var(--neo)}tr.r5 td.era{color:var(--ok)}  tr.r6 td.era{color:var(--gold)}tr.r7 td.era{color:var(--warn)}.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}.cmp .c.re{border-color:var(--warn);border-width:2px}.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.cmp h4 .ic{color:var(--warn)}.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5;min-width:0;overflow-wrap:break-word}.vs .side b{display:block;font-size:14.5px}.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}.side.p{background:rgba(122,106,90,.14);border:1px solid var(--pal);color:var(--pal)}.side.g{background:rgba(168,130,44,.14);border:1px solid var(--gold);color:var(--gold)}.side.o{background:rgba(62,122,78,.12);border:1px solid var(--ok);color:var(--ok)}.side.x{background:rgba(156,47,47,.12);border:1px solid var(--warn);color:var(--warn)}.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}.stars.red{border-color:var(--warn)}.stars ul{margin:0;padding:0;list-style:none}.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}.stars li:last-child{border-bottom:0}.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}.stars.red .ic{color:var(--warn)}.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}.btn.ghost{background:transparent;color:var(--ink)}.btn:disabled{opacity:.4;cursor:default}.prog{font-size:13.5px;color:var(--ink-2)}.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}.q .yr{font-size:12px;color:var(--ink-2);margin-left:auto;white-space:nowrap}.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}.q .stem{background:var(--paper-2);border-radius:9px;padding:11px 14px;margin:11px 0;font-size:14.5px;color:var(--ink-2)}.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}.opts li:hover{border-color:var(--gold)}.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}.graded .opts li{cursor:default}.graded .opts li:hover{border-color:var(--line)}.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}.graded .opts li.correct .no{color:var(--ok)}.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}.graded .opts li.wrong .no{color:var(--warn)}.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}.mark.o{color:var(--ok)} .mark.x{color:var(--warn)}.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}.graded .exp{display:block}.exp b{color:var(--ink)}.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}.score.on{display:block}.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px;color:var(--ink)}.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}.wronglist b{color:var(--warn)}.wronglist ul{margin:8px 0 0;padding-left:18px}.wronglist li{margin:4px 0}.freq{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}.freq table{min-width:700px}.freq td.era{width:92px}.grade{display:inline-block;font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:6px;white-space:nowrap}.g3{background:rgba(168,130,44,.18);color:var(--gold);border:1px solid var(--gold)}.g2{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}.item{display:inline-block;margin:0 10px 4px 0;white-space:nowrap}.item i{font-style:normal;font-size:11.5px;color:var(--ink-2);font-weight:700;margin-left:2px}.item.hi{font-weight:800}.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:var(--radius);padding:14px 18px;margin-top:14px;font-size:14px}.zero b{color:var(--warn)}.note{font-size:13px;color:var(--ink-2);margin-top:10px}footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}footer p{margin:5px 0}@media print{
+/*PRINTFIX*/:root{--paper:#FAF5EA;--paper-2:#F3EBDA;--card:#FFFDF7;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--pal:#7A6A5A;--neo:#5F7F52;--bro:#A85436;--iro:#46525F;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--radius:14px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+body{background:#fff!important;color:#2B2724!important}
+.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.tblwrap,.freq,.pick,.term,.simile,.redo,.zero{break-inside:avoid}.story,.stars{break-inside:auto}.story .head{break-after:avoid}h2,h3{break-after:avoid}.story .body>p{orphans:2;widows:2}table{font-size:12.5px}header.top{padding-top:0}}/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-redo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></symbol>
+</svg>
+<div class="wrap">
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광학개론 · 8단원</div>
+<h1>여행업
+<small>여행업이란 무엇이고 상품은 어떻게 유통되는가 · 여행 형태별 분류 10개 용어(최다출제) · 안내조건(IIT·ICT)·TC유무(FIT·FCT)·출입국수속 3개 분류축 · 여권과 사증(비자) · 출입국관리(CIQ)와 여행자 면세통관 · 해외여행 안전정보</small>
+</h1>
+<div class="meta">
+<span class="chip hot">여행 형태별 분류 = 필기·면접 모두 최다 출제, 강사 반복 강조</span>
+<span class="chip">원본 인쇄 82~94쪽</span>
+<span class="chip">IIT·ICT ↔ FIT·FCT는 서로 다른 축 — 가장 헷갈리는 파트</span>
+<span class="chip">예상문제 20문항</span>
+</div>
+</header>
+
+<!-- ================= 큰 그림 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원은 이 순서로 흘러갑니다</h2>
+<p class="sub">8단원은 <b>"여행업이란 무엇이고 상품은 어떻게 만들어지는가"</b>에서 시작해 <b>"그 여행은 어떤 모습으로 존재하는지(형태별 분류), 안내와 인솔은 어떤 방식인지(3개 분류축), 여행자는 무슨 서류를 들고 나가는지(여권·사증), 출입국장에서는 무슨 절차를 거치는지(CIQ·면세통관), 해외에서 위험할 땐 어떤 제도가 있는지(여행경보)"</b>로 뻗어나가는 단원입니다. 순서는 <b>①여행업이란 무엇인가(정의·유통구조·역사) → ②여행업은 어떤 특성·기능을 갖는가(3대 업무기능) → ③여행은 어떤 형태로 존재하는가(형태별 분류 10개 용어) → ④안내·인솔은 어떻게 나뉘는가(IIT·ICT / FIT·FCT / 기항지·통과상륙) → ⑤여행자는 무슨 서류가 필요한가(여권·사증) → ⑥출입국장에서는 무슨 절차를 거치는가(CIQ·면세통관·공항서비스) → ⑦해외에서 위험하면 어떤 제도가 있는가(여행경보·신속해외송금)</b>입니다. 강사는 이 단원에서 <b>여행 형태별 분류</b>가 "필기도 많이 나오고 면접에도 질문이 많이 들어온다"고 짚었고, <b>IIT·ICT(안내조건)와 FIT·FCT(TC유무)는 완전히 다른 두 개의 축인데 겉모습이 비슷해 상당히 헷갈릴 수 있다</b>고 반복해서 강조했습니다.</p>
+<div class="tl">
+<div class="t1"><b>① 여행업이란 무엇인가</b><span>정의·유통구조<br>Principal 함정</span></div>
+<div class="t2"><b>② 어떤 형태로 존재하는가</b><span>형태별 <b>10개</b> 용어(최다출제)<br>패키지투어 vs 기획여행</span></div>
+<div class="t3"><b>③ 안내·인솔은 어떻게 나뉘는가</b><span>IIT·ICT / FIT·FCT<br>기항지·통과상륙</span></div>
+<div class="t4"><b>④ 서류·수속·안전</b><span>여권·사증, CIQ·면세<br>여행경보 4단계</span></div>
+</div>
+</section>
+
+<!-- ================= 이야기 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 먼저 이해하기</h2>
+<p class="sub">표를 외우기 전에 이야기로 한 번 통과해 주세요. 이 단원은 <b>비슷하게 생긴 약자(IIT·ICT·FIT·FCT)와 비슷한 이름의 제도(여권·사증, 긴급여권·여행증명서)</b>가 많아서 헷갈리는 단원입니다. "왜 이렇게 갈리는가"를 한 번씩 짚고 넘어가면 훨씬 오래 남습니다.</p>
+
+<article class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">여행업이란 무엇이고, 상품은 누구 손을 거쳐 나에게 오는가</div><div class="era">여행업의 정의 · 유통구조 · 역사</div></div>
+<div class="body">
+<p>관광진흥법은 <b class="k">여행업</b>을 <b>여행자 또는 운송·숙박시설, 그 밖에 여행에 딸린 시설의 경영자 등을 위해</b> 시설 이용을 <b>알선</b>하거나 계약 체결을 <b>대리</b>하거나, 여행에 관한 <b>안내</b>나 그 밖의 여행 <b>편의를 제공</b>하는 업으로 정의합니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 여행사는 <b>여행자만을 위하는 것이 아니라</b>, 맞은편에 있는 <b>운송·숙박시설 경영자 등을 위해서도</b> 일합니다. 그래서 법률상 정의의 키워드는 <b>알선·대리·안내·편의 제공</b> 넷입니다. "여행상품을 기획·판매한다"는 문구는 이 법률 정의에는 없습니다 — 그건 실무에서 통용되는 별도의 「실무적 정의」이고, 실제로 모든 여행사가 상품을 직접 기획하는 것은 아니기 때문입니다.</p>
+<p>여행상품이 만들어지는 유통구조는 <b class="k">원료공급업자(Principal, 호텔·항공사 등) → 지상수배업자(랜드사, Tour Operator) → 여행도매업자(Wholesaler) → 여행소매업자(Retailer) → 여행자</b> 순으로 흘러갑니다. 숙박·교통·쇼핑·식사처럼 여행 하나하나를 구성하는 재료를 <b class="k">Principal(원료공급업자)</b>이라 부르고, 이 원료를 모아 하나의 상품으로 조립하는 것이 바로 여행업자의 역할입니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 100% 나오는 함정 —</b> "다음 중 Principal(원료공급업자)과 관계없는 것은?"이라는 문제가 나오면 <b>정답은 항상 「여행사」</b>입니다. 여행사는 Principal에 <b>포함되는 것이 아니라</b>, 여러 Principal(호텔·항공사 등)을 모아 상품을 기획하는 쪽입니다 — 절대 헷갈리면 안 됩니다.</div></div>
+<p>여행업의 역사는 영국 <b class="k">1845년 Thomas Cook & Son</b> 여행사에서 시작되어, 미국의 <b class="k">1850년 아메리칸 익스프레스(AMEXCO)</b>로 이어집니다. 우리나라는 <b class="k">1912년 일본교통공사(JTB) 조선지부</b> 설립(여행안내·철도승차권 대매업)이 시초이며, 이후 <b>1946년 조선여행사</b>(우리나라 여행업의 시초) → <b>1949년 재단법인 대한여행사</b> 개편 → <b>1962년 국제관광공사에 흡수</b> → <b>1973년 민영화</b>의 순서로 이어집니다.</p>
+</div>
+</article>
+
+<article class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">여행업은 어떤 회사이고, 무슨 일을 할까 — 특성과 3대 업무기능</div><div class="era">구조적·사회현상적·경영상 특성 · 3대 업무기능 · 원가구성</div></div>
+<div class="body">
+<p>여행업의 특성(★★★★★)은 세 축으로 정리됩니다. <b class="k">구조적 특성</b>은 입지적(고객 눈에 잘 띄는 곳)·규모적(소자본)·노동집약적·인간위주 경영·과당경쟁입니다. <b class="k">사회 현상적 특성</b>은 계절 집중적, 독자적 상품조성이 곤란해 모방이 쉽다는 점, 그래서 제품수명주기가 짧다는 점, 그리고 영리 추구와 함께 공익성·사회적 책임(여행사의 이미지 = 국가 이미지)도 함께 갖는다는 점입니다. <b class="k">경영상 특성</b>은 초기 자본이 적어 위험부담이 적다는 점, 제품 비율 의존적 경영체질(자기자본은 낮지만 실제로 굴리는 유동자산은 큼), 다품종 대량생산 시스템 산업, 그리고 신용을 바탕으로 하는 산업이라는 점입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>강사는 "여행사는 자기자본은 낮지만, 손님이 입금한 여행경비(숙박비·항공료 몫까지 포함)가 일단 전부 내 계좌로 들어온다"고 설명했습니다. 이 돈은 결국 다 나눠 줘야 할 돈인데 <b>내가 굴리는 자본은 커 보이는 구조</b>라 문제가 생기기 쉽고, 그래서 법규상 여행업의 결격사유에 <b>사기·횡령·배임</b>이 포함되어 있습니다.</div></div>
+<p>여행업의 기본 기능은 원본 교재에 <b>총 8가지</b>가 제시되어 있는데, 이를 크게 세 갈래로 묶으면 <b class="k">대리 업무(대신해주는 것)·서비스 업무(정보 제공·상담)·판매 업무</b> 셋으로 정리됩니다. 이 셋을 <b class="k">여행업의 3대 업무기능</b>이라 부릅니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>강사가 짚은 것 —</b> "기출문제는 3대 업무기능과 관계가 없는 것을 고르는 형태로 나옵니다. 대리·서비스·판매, 이 세 가지를 여행의 가장 기본적인 업무기능이라고 보시면 됩니다"라고 확인했습니다. 또한 "여행업의 특성 파트는 필기가 자주 나오는 편인데, 여기서 나오면 보너스입니다 — 앞의 구조적·사회현상적·경영상 내용은 어려운 게 없다"고 짚었습니다.</div></div>
+<p>여행상품의 원가는 <b class="k">①운임(항공·선박) ②지상경비(숙박비·식사비·지상교통비·관광비용(입장료)·가이드 비용·서비스료(tips)·세금(공항세·유흥음식세·통행세·출국세)) ③기타 경비</b>로 구성됩니다. <b>여행경비에 포함되는 것</b>은 인솔자의 운임·육상경비·출장경비, 해외여행자 보험료, 관광지 선물비용, 공항 대합실 이용료, 공항까지 드는 경비, 여정표 인쇄비, 수하물 꼬리표 비용, 귀국 후 발생 가능한 숙박비입니다. 반대로 <b class="k">여행경비에 포함되지 않는 것(★★★)</b>은 <b>여권발행비, 사증(비자)발행비, 예방접종비, 임의보험비, 개인적 비용(주류·세탁비·전화료·초과화물요금)</b>입니다.</p>
+</div>
+</article>
+
+<article class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">여행은 어떤 모습으로 존재하는가 — 형태별 분류(가장 자주 나오는 파트)</div><div class="era">10개 용어 · ★★★★★ 필기·면접 모두 최다출제</div></div>
+<div class="body">
+<p>강사가 "필기도 많이 나오고 면접에도 질문이 많이 들어온다"고 짚은 부분이 바로 이 <b class="k">여행 형태별 분류</b>입니다. <b class="k">Package tour</b>는 여행업자가 항공·숙박·음식·관광지 등을 미리 세트로 정해 판매하는 기획상품입니다. <b class="k">Series tour</b>는 <b>패키지투어의 한 형태</b>로, 동일한 형태·목적·기간·여정으로 정기적 혹은 부정기적으로 반복 실시되는 상품입니다(예: 매년 봄 벚꽃 시즌마다 반복되는 상품).</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 가장 자주 묻는 함정 —</b> 강사는 "패키지 투어를 관광진흥법상의 기획여행 아니냐고 많이 물어보시는데, 그건 다릅니다"라고 짚었습니다. <b>현재 법률상 「기획여행」이라는 용어는 오로지 아웃바운드(국외여행) 상품에만 해당</b>됩니다. 반면 실무에서 쓰는 「패키지 투어」는 아웃바운드·인바운드·국내(도메스틱) 상품을 모두 포괄하는 더 넓은 개념이라, 굳이 우리말로 옮기지 않고 그대로 「패키지 투어」라고 부릅니다.</div></div>
+<p>나머지 형태별 용어는 <b class="k">Cruise tour</b>(호화유람선 상품), <b class="k">Convention tour</b>(국제회의 참가 목적), <b class="k">Charter tour</b>(항공·차량 등을 전세 내는 저렴한 방식), <b class="k">Incentive tour</b>(기업·단체의 포상여행), <b class="k">Interline tour</b>(항공사가 가맹 여행사를 초대해 항공권 판매를 늘리려는 여행), <b class="k">Optional tour</b>(여행 중 즉석으로 추가 판매하는 임의여행), <b class="k">Familiarization tour(fam tour)</b>(관광기관·항공사가 여행업자·기자 등을 초청해 답사시키는 시찰 초청여행), <b class="k">Plant tour(산업관광)</b>(산업의 기술·시설을 대상으로 하는 관광. <b>테크니컬 투어리즘</b>과 같은 말)입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>이 용어들을 회사에 비유하면, <b>Package tour</b>는 회사가 미리 짜 놓은 <b>기성복</b>이고, <b>Charter tour</b>는 항공기를 통째로 빌려 만든 <b>맞춤 세트 상품</b>(강사 표현으로 "잘못하면 쪽박, 잘되면 대박"), <b>Fam tour</b>는 여행사·기자를 초청해 미리 입어보게 하는 <b>샘플 협찬</b>이라고 생각하면 쉽습니다.</div></div>
+</div>
+</article>
+
+<article class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">안내는 누가, 인솔은 누가 — IIT·ICT와 FIT·FCT는 다른 이야기입니다</div><div class="era">안내조건 · TC유무 · 출입국수속 — 3개의 독립된 분류축</div></div>
+<div class="body">
+<p>이 파트는 원본 재대조로 추가 확인된 내용인데, 강사가 "이거 상당히 헷갈릴 수 있습니다"라고 여러 번 짚은 만큼 <b>세 개의 분류축이 서로 독립적</b>이라는 점부터 잡고 가야 합니다.</p>
+<p><b class="k">①안내조건(투어 가이드 관계)</b>: <b class="k">I.I.T(Inclusive Independent Tour, = Local guide system)</b>은 안내원이 <b>각 관광지에서만</b> 안내하고 이동 구간은 여행자 혼자 이동하는 방식입니다. <b class="k">I.C.T(Inclusive Conducted Tour)</b>는 안내원이 <b>전 여행 기간</b>을 처음부터 끝까지 동행하며 안내하는 방식입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 일본인 관광객이 서울→부산→제주를 여행한다고 하면, <b>I.I.T</b>는 서울에서는 서울 가이드가, 부산에서는 부산 가이드가 각 도시에서만 안내하고 도시 사이 이동은 관광객 혼자 하는 방식입니다. <b>I.C.T</b>는 서울에서 처음 만난 가이드 한 명이 전체 일정 내내 동행하는 방식입니다. 강사는 "요즘은 개별여행이 늘면서 전체적인 트렌드가 I.C.T보다 I.I.T 쪽으로 옮겨가고 있다"고 짚었습니다.</div>
+<p><b class="k">②Tour Conductor(TC) 유무</b>: <b class="k">F.I.T(Foreign Independent Tour)</b>는 <b>인솔자 없이</b> 개인적으로 외국을 여행하는 것입니다. <b class="k">F.C.T(Foreign Conducted Tour, = F.E.T Foreign Escorted Tour)</b>는 여행의 시작부터 완료까지 <b>인솔자가 동승</b>하는 것입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 여기서 포인트는 <b>단체냐 개인이냐가 아니라, 인솔자(TC)가 동반되느냐 안 되느냐</b>입니다. 우리나라 관광객이 인솔자 없이 해외로 나가면 F.I.T, 인솔자와 함께 단체로 나가면 F.C.T입니다. 반대로 외국인 관광객이 인솔자 없이 개인적으로 우리나라에 들어와도 F.I.T이고, 인솔자를 동반한 단체로 들어와도 F.C.T입니다 — <b>내국인·외국인, 입국·출국 방향과 무관하게 「인솔자 동반 여부」만으로</b> 결정됩니다.</div>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 두 축을 섞으면 안 되는 이유 —</b> I.I.T·F.I.T는 서로 다른 질문에 대한 답입니다. <b>I.I.T·I.C.T는 "현지에서 가이드가 얼마나 동행하는가"</b>, <b>F.I.T·F.C.T는 "본국에서부터 인솔자가 따라왔는가"</b>를 묻습니다. 그래서 <b>F.I.T로 입국한 여행자가 현지에서는 I.I.T 방식(관광지에서만 현지 가이드 안내)을 선택</b>하는 경우도 얼마든지 있을 수 있습니다 — 인솔자 유무와 현지 안내 방식은 각자 선택 가능한 별개의 조합입니다.</div></div>
+<p><b class="k">③출입국수속 조건</b>: <b class="k">기항지 상륙여행(Shore excursion)</b>은 선박·항공기가 항만·공항에 도착한 후 <b>다시 출발할 때까지</b>의 기간에 부근 도시를 관광하는 것입니다(예: 환승 중 인접국을 짧게 관광). <b class="k">통과상륙여행(Over land tour)</b>은 선박이 <b>동일 국가 내 한 기항지에서 다른 기항지로 항해하는 동안</b> 통과상륙 허가를 얻어 <b>3~7일</b> 동안 하는 여행으로, <b>반드시 동일 선박에 재승선</b>해야만 합법입니다(예: 크루즈가 부산에 기항했을 때 내려서 관광하고, 다음 기항지인 인천에서 같은 배에 다시 타는 방식).</p>
+<p>여행사가 예약·계약을 진행하는 <b class="k">수배업무의 5원칙(★★★)</b>은 <b>정확성·신속성·적절성·확인성·경제성</b>입니다.</p>
+</div>
+</article>
+
+<article class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">여행자는 무슨 서류를 들고 나갈까 — 여권과 사증</div><div class="era">여권 4종류 · 사증(비자) 4가지 면제 유형 · 쉥겐 · 워킹홀리데이</div></div>
+<div class="body">
+<p><b class="k">여권</b>은 <b>외교부장관</b>이 발급합니다. 종류는 네 가지, <b class="k">일반여권</b>(10년 이내, 남색, 일반 국민), <b class="k">관용여권</b>(5년 이내, 진회색, 공무원·정부파견 의료요원 등), <b class="k">외교관여권</b>(5년 이내, 적색, 대통령·국무총리·외교부장관·특명전권대사 등), <b class="k">긴급여권</b>(청색, 긴급 발급 필요 시)입니다. 사용 횟수 기준으로는 유효기간 내 <b>1회만</b> 사용 가능한 <b class="k">단수여권</b>과 횟수 제한 없는 <b class="k">복수여권</b>으로 나뉩니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b class="k">여행증명서(검정색)</b>는 여권을 갈음하는 증명서로, <b>유효기간 1년 이내</b>이며 발급 목적을 이루면 효력을 잃습니다. 발급 대상은 출국하는 무국적자, <b>해외 입양자</b>, 외국 거주 동포(외국국적이 없고 우리 여권도 미소지), 여권 발급이 거부·제한된 자, 강제퇴거자 등입니다. 강사는 "긴급여권은 우리나라에서 밖으로 나갈 때, 여행증명서는 밖에 나갔다가 여권을 분실해 돌아오거나 다른 나라로 갈 때"로 구분해 짚었습니다.</div>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 대행 가능·불가능 함정 —</b> 문제풀이 강의에서 "일반인 여권 및 비자 발급 대행업"이 오답으로 나온 이유는 <b>여권은 생체정보(바이오정보) 때문에 반드시 본인이 직접 발급받아야 하고 대행이 불가능</b>하기 때문입니다. 반면 <b class="k">사증(VISA)은 여행사가 대행 신청</b>할 수 있습니다 — 여권=본인 직접, 사증=대행 가능으로 정확히 갈라 외워야 합니다.</div></div>
+<p><b class="k">사증(VISA)</b>은 <b>법무부장관</b>이 발급합니다 — 여권(외교부)과 소관 부처가 다릅니다. 사증이 불필요한 경우는 네 가지 유형입니다. <b class="k">상호면제협정</b>(태국 90일, 말레이시아 3개월, 싱가포르 90일, 독일·그리스·스위스·스페인·프랑스 90일/3개월 등), <b class="k">상호주의</b>(대만·마카오·일본·홍콩·미국·이탈리아 90일, 캐나다 6개월), <b class="k">일방적 면제</b>(필리핀 30일, 베트남 45일, 아르헨티나 90일), 그리고 <b class="k">TWOV(무사증단기체류, 72시간 이내)</b>입니다. 이밖에 재입국허가 소지자, 국제기구 발급여권(<b>라세파세</b>) 소지자, <b>APEC기업인여행카드(ABTC)</b> 소지자도 사증 없이 입국할 수 있습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b class="k">TWOV</b>의 성립 조건은 ⓐ 제3국으로 계속 여행할 <b>예약 확인된 항공권</b> 소지 ⓑ 계속 여행할 여행서류 구비 ⓒ <b>외교관계가 수립된 국가 간</b>에만 적용 ⓓ <b>출입국 공항이 동일</b>한 경우 적용, 넷입니다. 강사는 예로 "미국행 항공편이 일본을 경유할 때, 외교관계가 수립돼 있으면 보통 72시간까지는 사증 없이 일본을 여행할 수 있다"고 설명했습니다. 이밖에 <b class="k">쉥겐협약</b>은 유럽 국가 간 국경개방조약으로 <b>가입국 총 29개국</b>이며, <b class="k">워킹홀리데이 비자</b>("관광취업비자")는 <b>28개 국가·지역</b>, 만 <b>18~30세</b>, 최장 <b>1년</b> 체류가 가능합니다.</p>
+</div>
+</article>
+
+<article class="story s2">
+<div class="head"><div class="num">6</div><div class="ttl">공항에서는 무슨 절차를 거칠까 — 출입국관리(CIQ)와 면세통관</div><div class="era">CIQ 순서 · 여행자 면세통관 · 공항 서비스제도</div></div>
+<div class="body">
+<p><b class="k">CIQ</b>는 <b>Customs(세관)·Immigration(출입국)·Quarantine(검역)</b>의 약자로, 우리가 나갔다 들어올 때 거치는 출입국심사 전체를 가리킵니다. <b class="k">출국 수속 순서</b>는 병무신고 → <b>탑승수속</b>(탑승권 boarding pass·수하물인환증 baggage claim tag 수령) → 보안검색 → 세관신고 → <b>출국 사열</b> → 출국 라운지(면세점, <b>1인당 미화 1만 달러</b>까지 소지 가능) → 탑승입니다. <b class="k">입국 수속 순서</b>는 <b>검역 → 입국 사열 → 탁송 수하물 회수 → 세관 통관</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 수하물 사고가 났을 때 항공사 배상 기준은, <b>연착</b>이면 일용품 구입비 명목으로 <b>1회에 한해 미화 50달러</b> 한도, <b>분실·도난</b>이 확인되면 항공권에 기재된 무게 기준 <b>kg당 미화 20달러</b> 한도입니다.</div>
+<p><b class="k">여행자 면세통관(★★★★)</b>은 여행자 1명당 과세가격 합계 <b>미화 800달러 이하</b>(농림축수산물·한약재 포함)까지 기본 면세됩니다. 술은 <b>2리터(2L), 미화 400달러 이하</b>까지 병수 제한 없이, 담배는 궐련 <b>200개비</b> 기준(2종 이상 반입 시 한 종류로 한정), 향수는 <b>100밀리리터</b>까지 면세됩니다.</p>
+<div class="redo"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>★ 옛날 기준과 헷갈리지 말 것 —</b> 예전에는 <b>출국하는 내국인</b>이 살 수 있는 물건에 <b>5,000달러</b> 한도가 있었지만 <b>지금은 폐지되어 한도가 없습니다</b>(무역 목적이 아닌 한 자유). 반대로 <b>입국할 때 면세 한도는 800달러</b>이고, 이 800달러 기준은 <b>내국인·외국인 동일하게 적용</b>됩니다. "600달러"·"외국인만 무제한" 같은 지문은 오답으로 자주 나옵니다. 보세판매장(면세점) 구입 한도도 <b>외국인·재외한국인은 한도 없음</b>, 내국인 구매 한도는 <b>2022년 3월 폐지</b>되었습니다.</div></div>
+<p>공항 서비스 제도로는 <b class="k">자동출입국심사(SES, Smart Entry Service)</b>(사전에 여권·바이오정보를 등록, <b>만 7세 이상</b>부터 이용 가능, 등록외국인도 이용 가능하나 일반 관광객은 불가), <b class="k">셀프 백 드랍(self bag drop)</b>(본인 수하물, 길이 <b>90cm 이하</b>, 1개씩), <b class="k">패스트 트랙(fast track, 교통약자 출국우대서비스)</b>(보행 장애인, 만 7세 미만 유소아, 만 70세 이상 고령자, 임신부, 병약 승객 — 동반인 3인까지)이 있습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 문제풀이 강의에서 확인된 함정으로, <b>복수여권 소지자뿐 아니라 단수여권 소지자도 자동출입국심사대를 등록·이용할 수 있다는 지문은 틀린 지문</b>입니다. 단수여권은 한 번 사용으로 끝나므로 등록해 봤자 실익이 없기 때문입니다. 다만 강사는 "이런 시사적인 제도는 한 번 나오면 두 번은 잘 안 나오고, 예전에는 면접 단골이었지만 지금은 필기·면접에 거의 안 나온다"고 우선순위를 낮게 짚었습니다.</div>
+</div>
+</article>
+
+<article class="story s3">
+<div class="head"><div class="num">7</div><div class="ttl">해외에서 위험해지면 — 여행경보와 비상 지원제도</div><div class="era">여행경보 4단계 · 특별여행경보 · 동행서비스 · 신속해외송금</div></div>
+<div class="body">
+<p>외교부의 <b class="k">해외여행 안전정보(여행경보, ★★★★)</b>는 4단계입니다. <b>1단계 남색경보(여행유의)</b>는 해외체류자에게 신변안전 유의를 권고합니다. <b>2단계 황색경보(여행자제)</b>는 해외체류자에게 신변안전 특별유의를, 여행예정자에게는 여행 필요성을 신중히 검토하라고 권고합니다. <b>3단계 적색경보(철수권고)</b>는 해외체류자에게 긴급용무가 아닌 한 귀국을, 여행예정자에게는 가급적 여행 취소·연기를 권고합니다. <b>4단계 흑색경보(여행금지)</b>는 해외체류자에게 <b>즉시 대피·철수</b>를, 여행예정자에게는 <b>방문금지</b>를 명합니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 이 4단계와 별도로 <b class="k">특별여행경보제도</b>가 있습니다. 전쟁·자연재해처럼 <b>단기적인 위험 상황이 갑자기 발생했을 때</b> 발령되며, 1단계 <b>특별여행주의보(적색)</b>는 적색경보에 준하는 효과, 2단계 <b>특별여행경보(흑색)</b>는 즉시대피에 해당하는 효과를 갖습니다. 강사는 "특별여행경보는 정의를 문제로 띄워 놓고 이 제도가 뭐냐고 묻는 기출 유형이 있었는데, 키워드는 「단기적 위험사항」 하나만 기억하면 된다"고 짚었습니다.</div>
+<p>이밖에 해외여행자가 여행 일정을 인터넷에 등록해 두는 <b class="k">해외여행자 인터넷 등록 제도(= 동행서비스)</b>가 있고, 해외에서 급하게 돈이 필요할 때 국내 지인이 외교부 계좌로 입금하면 현지 공관이 현지화로 전달해주는 <b class="k">신속해외송금제도</b>(1회 <b>최고 미화 3,000달러 이하</b>)가 있습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>강사가 짚은 것 —</b> "여행업 관련 기출문제는 최근에는 이론적인 내용보다 해외여행 관련 최신 정보(면세 한도, 여행경보 등)에서 많이 출제된다"고 짚었습니다. 이런 수치·제도는 법 개정으로 바뀔 수 있으니 <b>시험 직전에 외교부·관세청 공지로 한 번 더 확인</b>하는 것이 안전합니다.</div></div>
+</div>
+</article>
+</section>
+
+<!-- ================= 총정리표 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빠짐없이</h2>
+<p class="sub">통합교재 제8장(원본 인쇄 82~94쪽)과 2026-08-11 원본 재대조 보강분에 나온 항목을 <b>빠뜨리지 않고</b> 옮겼습니다. 시험 전날에는 이 표들만 보면 됩니다.</p>
+
+<h3>① 여행업의 정의·유통구조·역사</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">법률상 정의</td><td>여행자 또는 운송·숙박시설 등 경영자를 위해 <b>알선·대리·안내·편의제공</b>을 하는 업</td></tr>
+<tr class="r2"><td class="era">여행상품 유통구조</td><td><b>원료공급업자(Principal) → 지상수배업자(랜드사) → 여행도매업자(Wholesaler) → 여행소매업자(Retailer) → 여행자</b></td></tr>
+<tr class="r3"><td class="era">여행업의 역사</td><td>영국 <b>1845 Thomas Cook & Son</b> → 미국 <b>1850 AMEXCO</b> → 한국 <b>1912 JTB 조선지부 → 1946 조선여행사 → 1949 대한여행사 → 1962 국제관광공사 흡수 → 1973 민영화</b></td></tr>
+</tbody>
+</table></div>
+<p class="note">※ "Principal과 관계없는 것은?" 문제의 정답은 항상 <b>「여행사」</b>입니다 — 여행사는 Principal이 아니라 Principal을 모아 상품을 조립하는 주체입니다.</p>
+
+<h3>② 여행업의 특성 — 3개 축(★★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">구조적 특성</td><td>입지적 / 규모적(소자본) / 노동집약적 / 인간위주 경영 / 과당경쟁</td></tr>
+<tr class="r2"><td class="era">사회 현상적 특성</td><td><b>계절 집중적</b> / 독자적 상품조성 곤란(모방 용이) / <b>제품수명주기 단명성</b> / <b>공익성</b> / 사회적 책임(여행사 이미지=국가 이미지)</td></tr>
+<tr class="r3"><td class="era">경영상 특성</td><td><b>위험부담이 적다</b> / 제품 비율 의존의 경영체질 / <b>다품종 대량생산의 시스템 산업</b> / <b>신용의 산업</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>③ 여행업의 기능(8가지)과 3대 업무기능</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">기본 기능</td><td>원본 교재 기준 총 <b>8가지</b> 세부 업무로 제시됨</td></tr>
+<tr class="r2"><td class="era">3대 업무기능</td><td><b>대리 업무(대신 해주는 것) · 서비스 업무(정보 제공·상담) · 판매 업무</b> — 실제 기출은 「3대 업무기능과 관계없는 것」을 고르는 유형</td></tr>
+</tbody>
+</table></div>
+
+<h3>④ 여행상품 원가구성 · 여행경비 포함/불포함</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">원가 구성요소</td><td>①<b>운임</b>(항공·선박) ②<b>지상경비</b>(숙박비·식사비·지상교통비·관광비용(입장료)·가이드 비용·서비스료(tips)·<b>세금</b>(공항세·유흥음식세·통행세·출국세)) ③기타 경비</td></tr>
+<tr class="r2"><td class="era">여행경비에 포함되는 것</td><td>인솔자의 운임·육상경비·출장경비, <b>해외여행자 보험료</b>, 관광지 선물비용, 공항 대합실 이용료, 공항까지 드는 경비, 여정표 인쇄비, 수하물 꼬리표 비용, 귀국 후 발생 가능한 숙박비</td></tr>
+<tr class="r3"><td class="era">여행경비에 포함되지 않는 것(★★★)</td><td><b>여권발행비, 사증(비자)발행비, 예방접종비, 임의보험비, 개인적 비용(주류·세탁비·전화료·초과화물요금)</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑤ 여행 형태에 의한 분류 — 10개 용어(★★★★★ 최다출제)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>용어</th><th>정의</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">Package tour</td><td>여행업자가 항공·숙박·음식·관광지 등을 미리 정해 판매하는 기획상품</td></tr>
+<tr class="r1"><td class="era">Series tour</td><td>패키지투어의 <b>한 형태</b>. 동일 형태·목적·기간·여정으로 정기/부정기 반복 실시</td></tr>
+<tr class="r2"><td class="era">Cruise tour</td><td>호화유람선 상품</td></tr>
+<tr class="r2"><td class="era">Convention tour</td><td>국제회의 참가 목적</td></tr>
+<tr class="r3"><td class="era">Charter tour</td><td>항공·차량 등을 전세 내는 방식, 저렴</td></tr>
+<tr class="r3"><td class="era">Incentive tour</td><td>기업·단체의 포상여행</td></tr>
+<tr class="r4"><td class="era">Interline tour</td><td>항공사가 가맹 여행사를 초대(항공권 판매 증진 목적)</td></tr>
+<tr class="r4"><td class="era">Optional tour</td><td>여행 중 즉석으로 추가 판매하는 임의여행</td></tr>
+<tr class="r5"><td class="era">Familiarization tour(fam tour)</td><td>관광기관·항공사가 여행업자·기자 등을 초청해 답사시키는 시찰 초청여행</td></tr>
+<tr class="r5"><td class="era">Plant tour(산업관광)</td><td>산업(기술·시설) 대상 관광. <b>테크니컬 투어리즘(Technical Tourism)</b>과 동의어 <span class="badge" style="background:rgba(168,130,44,.12);color:var(--gold);border-color:var(--gold)">재대조 보강</span></td></tr>
+</tbody>
+</table></div>
+<p class="note">※ <b>패키지 투어 ≠ 관광진흥법상 「기획여행」</b>입니다. 법률상 기획여행은 <b>아웃바운드 상품에만</b> 해당하는 용어이고, 패키지 투어는 인바운드·아웃바운드·국내(도메스틱) 상품을 모두 포괄하는 실무 용어입니다.</p>
+
+<h3>⑥ 여행의 3개 분류축(★★★★★, 2026-08-11 원본 재대조 보강)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>분류 기준</th><th>용어</th><th>정의</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">안내조건</td><td><b>I.I.T</b>(Inclusive Independent Tour)</td><td>= <b>Local guide system</b>. 안내원이 <b>각 관광지에서만</b> 안내, 이동은 여행자 단독</td></tr>
+<tr class="r1"><td class="era">&nbsp;</td><td><b>I.C.T</b>(Inclusive Conducted Tour)</td><td>안내원이 <b>전 여행 기간</b>을 안내</td></tr>
+<tr class="r2"><td class="era">Tour Conductor 유무</td><td><b>F.I.T</b>(Foreign Independent Tour)</td><td><b>인솔자 없이</b> 외국을 개인적으로 여행</td></tr>
+<tr class="r2"><td class="era">&nbsp;</td><td><b>F.C.T</b>(Foreign Conducted Tour)</td><td>시작부터 완료까지 <b>인솔자 동승</b>. = <b>F.E.T</b>(Foreign Escorted Tour)</td></tr>
+<tr class="r3"><td class="era">출입국수속</td><td><b>기항지 상륙여행</b>(Shore excursion)</td><td>선박·항공기가 항만·공항 도착 후 <b>다시 출발할 때까지</b>의 기간에 부근 도시를 관광</td></tr>
+<tr class="r3"><td class="era">&nbsp;</td><td><b>통과상륙여행</b>(Over land tour)</td><td>선박이 <b>동일 국가 내 한 기항지에서 다른 기항지로 항해하는 동안</b> 통과상륙 허가를 얻어 하는 <b>3~7일</b> 여행. <b>반드시 동일 선박에 재승선</b>할 때만 해당</td></tr>
+</tbody>
+</table></div>
+<p class="note">※ ★ 자주 틀리는 것 — <b>I.I.T = 각 관광지에서만 안내 / I.C.T = 전 기간 안내</b>, <b>F.I.T = 인솔자 없음 / F.C.T = 인솔자 동승</b>. 두 축은 서로 독립적이라 <b>F.I.T로 입국해 I.I.T를 선택</b>하는 조합도 가능합니다.</p>
+
+<h3>⑦ 수배업무의 5원칙(★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>원칙</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><b>정확성 · 신속성 · 적절성 · 확인성 · 경제성</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑧ 여권의 종류</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>종류</th><th>유효기간</th><th>색상</th><th>대상</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">일반여권</td><td>10년 이내</td><td>남색</td><td>일반 국민</td></tr>
+<tr class="r2"><td class="era">관용여권</td><td>5년 이내</td><td>진회색</td><td>공무원, 정부파견 의료요원 등</td></tr>
+<tr class="r3"><td class="era">외교관여권</td><td>5년 이내</td><td>적색</td><td>대통령·국무총리·외교부장관·특명전권대사 등</td></tr>
+<tr class="r4"><td class="era">긴급여권</td><td>—</td><td>청색</td><td>긴급 발급 필요 시</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑨ 여권 보충 — 발급기관·사용횟수·여행증명서</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">발급기관</td><td>여권 = <b>외교부장관</b> / 사증(VISA) = <b>법무부장관</b> — 소관 부처가 다름</td></tr>
+<tr class="r2"><td class="era">대행 가능 여부</td><td><b>여권은 본인 직접 발급</b>(생체정보 때문에 대행 불가) / <b>사증은 여행사 대행 신청 가능</b></td></tr>
+<tr class="r3"><td class="era">사용횟수별</td><td><b>단수여권</b>(유효기간 내 1회만) / <b>복수여권</b>(횟수 제한 없음)</td></tr>
+<tr class="r4"><td class="era">여행증명서(검정색)</td><td>여권을 갈음하는 증명서, <b>유효기간 1년 이내</b>, 발급목적 이루면 효력 상실. 대상=출국하는 무국적자·<b>해외 입양자</b>·외국거주 동포(외국국적 없고 우리 여권 미소지)·여권 발급 거부·제한자·강제퇴거자 등</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑩ 사증(VISA) 불필요 유형 및 국가 예시(일반여권 기준)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>유형</th><th>국가(체류기간)</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">상호면제협정</td><td>태국(90일), 말레이시아(3개월), 싱가포르(90일), <b>독일·그리스·스위스·스페인·프랑스</b>(90일/3개월)</td></tr>
+<tr class="r2"><td class="era">상호주의</td><td><b>대만·마카오·일본·홍콩·미국·이탈리아</b>(90일), <b>캐나다(6개월)</b></td></tr>
+<tr class="r3"><td class="era">일방적 면제</td><td><b>필리핀(30일), 베트남(45일), 아르헨티나(90일)</b></td></tr>
+<tr class="r4"><td class="era">TWOV(무사증단기체류)</td><td><b>72시간 이내</b>. ⓐ 제3국행 예약확인 항공권 ⓑ 계속여행 서류 구비 ⓒ 외교관계 수립국 간 ⓓ 출입국 공항 동일</td></tr>
+</tbody>
+</table></div>
+<p class="note">※ 이밖에 재입국허가 소지자, <b>국제기구 발급여권(LAISSEZ-PASSER, 라세파세)</b> 소지자, <b>APEC기업인여행카드(ABTC)</b> 소지자도 사증 없이 입국 가능. <b>쉥겐협약</b>=유럽 <b>29개국</b> 가입. <b>워킹홀리데이 비자</b>("관광취업비자")=<b>28개 국가·지역</b>, 만 <b>18~30세</b>, 최장 <b>1년</b>.</p>
+
+<h3>⑪ 출입국 관리(CIQ, ★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">CIQ</td><td><b>Customs(세관)·Immigration(출입국)·Quarantine(검역)</b></td></tr>
+<tr class="r2"><td class="era">출국 수속 순서</td><td>병무신고 → <b>탑승수속</b>(boarding pass+baggage claim tag) → 보안검색 → 세관신고 → <b>출국 사열</b> → 출국 라운지(면세점, <b>1인당 $10,000</b> 소지 가능) → 탑승</td></tr>
+<tr class="r3"><td class="era">입국 수속 순서</td><td><b>검역 → 입국 사열 → 탁송 수하물 회수 → 세관 통관</b></td></tr>
+<tr class="r4"><td class="era">수하물 사고 배상</td><td>연착 시 <b>1회 한정 미화 50달러</b> 한도 / 분실·도난 확인 시 <b>kg당 $20</b> 한도</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑫ 여행자 면세 통관(★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>면세 한도</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">기본 면세범위</td><td>여행자 1명당 과세가격 합계 <b>미화 800달러 이하</b>(농림축수산물·한약재 포함) — <b>내·외국인 공통 적용</b></td></tr>
+<tr class="r2"><td class="era">술</td><td><b>2리터(2L), 미화 400달러 이하</b> — 병수 제한 없음</td></tr>
+<tr class="r3"><td class="era">담배</td><td>궐련 <b>200개비</b> / 엽궐련 50개비 / 권련형 전자담배 200개비 / 니코틴용액 20mL / 기타유형 110g / 그 밖의 담배 250g — <b>2종 이상 반입 시 한 종류로 한정</b></td></tr>
+<tr class="r4"><td class="era">향수</td><td><b>100밀리리터(mL)</b></td></tr>
+<tr class="r5"><td class="era">보세판매장(면세점) 구입 한도</td><td>외국인·재외한국인 = <b>한도 없음</b> / 출국 내국인 구매한도는 <b>2022년 3월 폐지</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑬ 공항 서비스 제도</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>제도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">자동출입국심사(SES)</td><td>사전 여권·바이오정보 등록, <b>만 7세 이상</b> 이용 가능. <b>등록외국인은 가능, 일반 관광객은 불가</b>. <b>단수여권 소지자는 등록 실효 없음</b>(사실상 복수여권 위주)</td></tr>
+<tr class="r2"><td class="era">셀프 백 드랍(self bag drop)</td><td>본인 수하물, <b>길이 90cm 이하</b>, 1개씩</td></tr>
+<tr class="r3"><td class="era">패스트 트랙(fast track)</td><td>교통약자 출국우대서비스. 대상: 보행 장애인, <b>만 7세 미만 유소아</b>, <b>만 70세 이상 고령자</b>, 임신부, 병약 승객(동반인 <b>3인까지</b>)</td></tr>
+</tbody>
+</table></div>
+<p class="note">※ 강사 코멘트 — 이 제도들은 "예전에는 면접 단골이었지만 지금은 필기·면접에 거의 안 나온다"고 우선순위를 낮게 짚었습니다.</p>
+
+<h3>⑭ 해외여행 안전정보(외교부, ★★★★)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>여행경보단계</th><th>해외체류자</th><th>해외여행 예정자</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">1단계 남색경보(여행유의)</td><td>신변안전 유의</td><td>—</td></tr>
+<tr class="r2"><td class="era">2단계 황색경보(여행자제)</td><td>신변안전 특별유의</td><td>여행 필요성 신중 검토</td></tr>
+<tr class="r3"><td class="era">3단계 적색경보(철수권고)</td><td>긴급용무 아닌 한 귀국</td><td>가급적 여행 취소·연기</td></tr>
+<tr class="r4"><td class="era">4단계 흑색경보(여행금지)</td><td><b>즉시 대피·철수</b></td><td><b>방문금지</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑮ 특별여행경보·기타 비상 지원제도</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>제도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era">특별여행경보제도</td><td>단기적 위험 상황(전쟁·자연재해 등) 발생 시. 1단계 <b>특별여행주의보(적색)</b>=적색경보 준하는 효과 / 2단계 <b>특별여행경보(흑색)</b>=즉시대피 해당 효과</td></tr>
+<tr class="r2"><td class="era">해외여행자 인터넷 등록 제도</td><td>= <b>동행서비스</b></td></tr>
+<tr class="r3"><td class="era">신속해외송금제도</td><td>1회 <b>최고 미화 3,000달러 이하</b>. 국내 지인이 외교부 계좌 입금 → 현지 공관이 현지화로 전달</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!-- ================= 빈출 등급표 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 빈출 등급표 — 시간이 없으면 위에서부터</h2>
+<p class="sub"><b>이 등급은 기출 실측 카운트가 아닙니다.</b> 관광학개론은 원본 PDF가 스캔 이미지라 기출 원문을 확보하지 못했습니다. 따라서 아래 등급은 <b>①통합교재에 표시된 ★ 등급</b>과 <b>②강사가 강의에서 직접 「나온다」·「조심하라」고 말한 발언</b> 두 가지만을 근거로 매겼고, <b>각 줄에 그 근거를 그대로 적어 두었습니다.</b> 강사가 빈도를 언급하지 않은 항목은 <b>교재 서술량만으로 등급을 낮춰 매겼습니다</b> — 추측으로 등급을 올리지 않았습니다.</p>
+<div class="freq"><table>
+<thead><tr><th>등급</th><th>항목</th><th>근거(교재 ★ / 강사 발언)</th></tr></thead>
+<tbody>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">여행 형태별 분류(패키지투어 등 10개)</span></td><td>강사 <span class="quote" style="display:inline;border:0;padding:0">"이 용어는 필기도 많이 나오고 면접에도 질문이 많이 들어와요"</span> — 필기·면접 모두 최다출제로 직접 확인</td></tr>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">IIT·ICT / FIT·FCT 구분</span></td><td>강사 <span class="quote" style="display:inline;border:0;padding:0">"이거 상당히 헷갈릴 수 있습니다" / "빌리션 문제(반복 출제)"</span> — 두 축을 반복해서 강조</td></tr>
+<tr class="r1"><td class="era"><span class="grade g3">A</span></td><td><span class="item hi">여행자 면세통관(800달러 등)</span></td><td>교재 <b>★★★★</b> + 문제풀이강의(8/5)에서 같은 유형 반복 출제 확인 — "800불, 600불 아니고"</td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item">여권·사증 — 발급기관·대행가능여부</span></td><td>문제풀이강의(8/5) 실제 기출 확인 <span class="quote" style="display:inline;border:0;padding:0">"여권은 본인이 직접 발급해야 된다고 했죠 지금은... 비자 발급은 대행할 수가 있죠"</span></td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item">여행업의 특성 3개 축</span></td><td>강사 <span class="quote" style="display:inline;border:0;padding:0">"필기가 자주 나오는 편인데요. 여기에 나오면 보너스예요"</span></td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item">여행업 3대 업무기능(대리·서비스·판매)</span></td><td>강사 <span class="quote" style="display:inline;border:0;padding:0">"기출문제는 3대 업무 기능과 관계가 없는 것이 기출문제"</span></td></tr>
+<tr class="r2"><td class="era"><span class="grade g3">B</span></td><td><span class="item">해외여행 안전정보(여행경보 4단계·특별여행경보)</span></td><td>교재 <b>★★★★</b> + 강사 <span class="quote" style="display:inline;border:0;padding:0">"특별여행경보는 정의를 문제로 띄워놓고 묻는 기출 문제"</span></td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">Principal(원료공급업자) 트랩</span></td><td>강사 <span class="quote" style="display:inline;border:0;padding:0">"100% 항상 나오는 틀린 예문이 여행사예요"</span> — 오래된 기출 언급, 최근 빈도는 별도 확인 안 됨</td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">CIQ 출입국수속 순서</span></td><td>교재 <b>★★★</b> 표시 · 강사 별도 강조 없어 <b>교재 근거만으로 매김</b></td></tr>
+<tr class="r3"><td class="era"><span class="grade g2">C</span></td><td><span class="item">여행업 유통구조·역사(1845 Thomas Cook 등)</span></td><td>교재 서술은 있으나 강사가 빈도를 직접 언급하지 않음 — <b>교재 근거만으로 매김</b></td></tr>
+<tr class="r4"><td class="era"><span class="grade g2">D</span></td><td><span class="item">공항 서비스제도(SES·셀프백드랍·패스트트랙)</span></td><td>강사 <span class="quote" style="display:inline;border:0;padding:0">"예전에는 면접 단골이었는데 지금은 필기나 면접에 거의 안 나와요"</span> — 강사가 직접 우선순위를 낮춤</td></tr>
+</tbody>
+</table></div>
+<div class="zero"><b>확실히 챙길 것 vs 시간 없으면 뒤로 미룰 것</b> — 강사가 가장 여러 번 강조한 것은 <b>여행 형태별 분류</b>와 <b>IIT·ICT / FIT·FCT 구분</b>, <b>여행자 면세통관</b> 셋입니다. 반대로 <b>공항 서비스제도(SES·셀프백드랍·패스트트랙)</b>는 강사가 직접 "지금은 거의 안 나온다"고 말한 항목이라 <b>가장 나중에 봐도 됩니다.</b></div>
+</section>
+
+<!-- ================= 비교카드 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">하나씩 외우면 헷갈리고, <b>짝으로 붙여 놓으면 안 헷갈립니다.</b> 이 단원에서 실제로 답이 갈리는 자리는 아래 여덟 개입니다.</p>
+<div class="cmp">
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> I.I.T ↔ I.C.T (안내조건)</h4>
+<div class="vs">
+<div class="side a"><b>I.I.T</b>각 관광지에서만<br>안내(Local guide)</div>
+<div class="mid">vs</div>
+<div class="side b"><b>I.C.T</b>전 여행기간<br>안내원 동행</div>
+</div>
+<p class="why">두 번째 글자가 둘 다 <b>I</b>라 헷갈리지만, <b>I.I.T=현지 각 관광지에서만 안내 / I.C.T=처음부터 끝까지 동행 안내</b>로 구분하세요. 최근 트렌드는 개별여행 증가로 <b>I.I.T 비중이 늘고 있습니다.</b></p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> F.I.T ↔ F.C.T(F.E.T) (TC유무)</h4>
+<div class="vs">
+<div class="side n"><b>F.I.T</b>인솔자 없이<br>개인 여행</div>
+<div class="mid">vs</div>
+<div class="side p"><b>F.C.T=F.E.T</b>인솔자 동승<br>(Foreign Escorted)</div>
+</div>
+<p class="why">기준은 <b>「인솔자(TC)가 동반되느냐」</b> 하나뿐입니다 — 내국인·외국인, 입국·출국 방향과는 무관합니다. <b>I.I.T·I.C.T(현지 가이드 축)와 절대 섞지 마세요</b> — 서로 다른 질문에 대한 답입니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 기항지 상륙여행 ↔ 통과상륙여행</h4>
+<div class="vs">
+<div class="side o"><b>기항지 상륙</b>재출발까지<br>부근 관광</div>
+<div class="mid">vs</div>
+<div class="side x"><b>통과상륙</b>3~7일, 동일선박<br>재승선 필수</div>
+</div>
+<p class="why"><b>통과상륙여행</b>은 반드시 <b>같은 국가 내 다른 기항지에서 동일 선박에 재승선</b>해야 합니다. 재승선하지 않으면 불법체류입니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 여권(외교부) ↔ 사증(법무부)</h4>
+<div class="vs">
+<div class="side a"><b>여권</b>외교부장관 발급<br>본인 직접(대행 불가)</div>
+<div class="mid">vs</div>
+<div class="side b"><b>사증</b>법무부장관 발급<br>여행사 대행 가능</div>
+</div>
+<p class="why">여권은 <b>생체정보 때문에 본인이 직접</b> 발급받아야 하고, 사증(비자)은 <b>여행사가 대행 신청</b>할 수 있습니다. 소관 부처도 외교부·법무부로 다릅니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 단수여권 ↔ 복수여권</h4>
+<div class="vs">
+<div class="side n"><b>단수여권</b>유효기간 내<br>1회만 사용</div>
+<div class="mid">vs</div>
+<div class="side p"><b>복수여권</b>횟수 제한<br>없음</div>
+</div>
+<p class="why">자동출입국심사(SES) 문제에서 <b>"단수여권 소지자도 등록·이용할 수 있다"는 지문은 틀린 지문</b>입니다 — 단수여권은 등록해도 실익이 없습니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 긴급여권 ↔ 여행증명서</h4>
+<div class="vs">
+<div class="side g"><b>긴급여권</b>국내에서<br>밖으로 나갈 때</div>
+<div class="mid">vs</div>
+<div class="side x"><b>여행증명서</b>해외에서 분실 후<br>귀국·타국행(검정색)</div>
+</div>
+<p class="why"><b>긴급여권</b>은 아직 출국 전인 국내에서 발급, <b>여행증명서</b>는 이미 해외에 나가 있다가 여권을 분실했을 때 대사관에서 발급받습니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 패키지 투어 ↔ 관광진흥법상 기획여행</h4>
+<div class="vs">
+<div class="side a"><b>패키지 투어</b>실무 용어<br>인/아웃/도메스틱 모두</div>
+<div class="mid">vs</div>
+<div class="side b"><b>기획여행</b>법률 용어<br><b>아웃바운드 전용</b></div>
+</div>
+<p class="why">"패키지 투어=기획여행"이라고 단순 치환하면 틀립니다. <b>기획여행은 법률상 국외여행(아웃바운드)에만</b> 쓰는 용어입니다.</p>
+</div>
+
+<div class="c re">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> Principal(원료공급업자) ↔ 여행업자</h4>
+<div class="vs">
+<div class="side o"><b>Principal</b>호텔·항공사 등<br>원료 제공자</div>
+<div class="mid">vs</div>
+<div class="side x"><b>여행업자</b>Principal을 모아<br>상품 조립</div>
+</div>
+<p class="why">"Principal과 관계없는 것은?" 문제의 정답은 항상 <b>「여행사」</b>입니다. 여행사는 원료가 아니라 <b>원료를 조립하는 쪽</b>입니다.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= 강사 강조 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"여행 형태별 분류는 필기도 많이 나오고 면접에도 질문이 많이 들어와요."</b> — Package tour·Series tour·Fam tour 등 10개 용어를 가장 우선순위로 둘 것.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"패키지 투어를 관광진흥법상 기획여행 아니냐고 많이 물어보시는데, 현재 법률상 기획여행은 오로지 아웃바운드 투어에만 해당됩니다."</b> — 패키지 투어와 기획여행을 같은 개념으로 혼동하지 말 것.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"다음 중 Principal과 관계없는 것은? 했을 때 100% 항상 나오는 틀린 예문이 여행사예요."</b> — 원료공급업자와 여행업자를 헷갈리지 말 것.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"이 IIT·ICT는 토어 가이드 관계인 거고, FIT·FCT는 인솔자가 동반되느냐 안 되느냐입니다. 이 내용이 상당히 헷갈릴 수 있습니다."</b> — 두 축을 절대 섞지 말고 각각 "현지 안내"와 "본국 인솔"이라는 질문으로 구분할 것.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"여권은 본인이 직접 발급해야 된다고 했죠 지금은... 비자 발급은 대행할 수가 있죠."</b> — 여권(대행 불가)과 사증(대행 가능)을 구분할 것. 실제 기출로 확인.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"입국하는 외국인이 면세한도는 800이라고 했죠? 600이 아니고. 입국하는 내국인이 면세한도도 미화 800이고, 내국인 외국인 다 적용되는 금액입니다."</b> — 면세한도 숫자와 적용 대상을 정확히 기억할 것.</div></li>
+</ul>
+</div>
+</section>
+
+<!-- ================= 문제 ================= -->
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 예상문제 20문항 — 레벨 테스트</h2>
+<p class="sub"><b>진짜 기출이 아니라 예상문제입니다</b>(관광학개론은 기출 원문 미확보 — 원본 PDF가 스캔 이미지). 문항은 <b>통합교재 본문 사실</b>과 <b>강사가 강의에서 직접 언급한 출제 지점</b>에서만 뽑았습니다. 출제 비중대로 <b>정의·유통구조 3 · 특성·기능 1 · 형태별분류 5 · 3분류축 3 · 여권 3 · 사증 2 · CIQ 1 · 면세통관 1 · 안전정보 1</b>로 구성했습니다(여행경비 포함/불포함, 공항서비스제도는 강사가 우선순위를 낮춘 항목이라 총정리표에서만 다루고 문제에는 넣지 않았습니다). 보기를 눌러 답을 고르고, 다 풀면 <b>채점하기</b>를 누르세요. <b>권장 시간 16분</b>.</p>
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="timer">00:00</span>
+<span class="prog" id="prog">0 / 20 선택</span>
+<button class="btn" id="grade">채점하기</button>
+<button class="btn ghost" id="reset">다시 풀기</button>
+</div>
+<div id="quiz"></div>
+<div class="score" id="score">
+<div class="big" id="scoreNum">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongList"></div>
+<div class="acts">
+<button class="btn" id="retryWrong">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" id="retryAll">20문항 전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb"><svg width="16" height="16" style="color:var(--gold)"><use href="#i-book"/></svg> 오답노트용 기록 — 이걸 복사해서 채팅에 붙여넣으면 오답노트 파일로 저장해 드립니다</div>
+<textarea id="exportTxt" readonly></textarea>
+<div class="acts" style="margin-top:10px;justify-content:flex-start">
+<button class="btn" id="copyBtn">복사하기</button>
+<span class="hint" id="copyMsg"></span>
+</div>
+<p class="hint">※ 이 페이지는 결과를 저장하지 않습니다(새로고침하면 사라짐). 위 기록을 채팅에 붙여넣어 주시면 <code>04_관광학개론/03_작업자료/오답노트/</code>에 파일로 남기고 7일 뒤 복습 일정까지 잡아 둡니다.</p>
+</div>
+</div>
+</section>
+<footer>
+<p><b>근거</b> — 본문: <code>04_관광학개론/04_최종교재/관광학개론.md</code> 제8장 「여행업」(원본 인쇄 <b>82~94쪽</b>). 2026-08-11 원본 재대조 보강분(여행업 역사, 여행의 3개 분류축 IIT·ICT/FIT·FCT/기항지·통과상륙, Plant tour, 여행업 특성 3개 축, 여행상품 원가구성·여행경비 포함불포함, 수배업무 5원칙, 여권 보충, 사증 불필요 국가 예시, CIQ, 여행자 면세통관, 공항 서비스제도, 해외여행 안전정보)을 <b>표에 있는 항목까지 빠짐없이</b> 옮겼습니다.</p>
+<p><b>강의 근거</b> — <code>강의전사본/핵심강의/8월2일.txt</code>(관광학개론 여행업 구간, 약 1:04:53 여행업 진입~이후 구간), <code>강의전사본/문제풀이강의/8월5일.txt</code>(여행업·여권·사증·면세통관·자동출입국심사 관련 실제 기출 확인 구간). <b>교재에 없고 강의에만 있는 내용</b>은 본문에 「강사가 콕 집은 것」으로 표시했습니다 — ①Principal과 관계없는 것=여행사라는 100% 함정 유형 ②패키지투어와 관광진흥법상 기획여행이 다른 개념이라는 지적 ③IIT·ICT/FIT·FCT가 서로 다른 두 축이라는 반복 강조 ④여권 대행 불가·사증 대행 가능이라는 실제 기출 함정 ⑤면세한도 800달러가 내·외국인 공통이라는 점과 출국 시 구매한도가 폐지되었다는 최신 정보 ⑥자동출입국심사에서 단수여권 소지자는 등록 실효가 없다는 함정 ⑦공항서비스제도는 최근 필기·면접에 거의 안 나온다는 우선순위 조정.</p>
+<p><b>빈출 등급의 근거</b> — 관광학개론은 기출 원문을 확보하지 못해 <b>실측 카운트를 하지 않았습니다.</b> 등급은 <b>교재의 ★ 표시</b>와 <b>강사의 직접 발언</b>만을 근거로 매겼고, 각 줄에 그 근거를 그대로 적었습니다(추측 금지 원칙). 강사가 우선순위를 직접 낮춘 항목(공항 서비스제도)은 교재 근거만으로 등급을 낮춰 매겼습니다.</p>
+<p><b>문제 출처</b> — 위 20문항은 <b>예상문제</b>입니다. 원본 PDF가 스캔 이미지라 <code>pdftotext</code> 추출이 되지 않아 기출 문항 원문을 아직 확보하지 못했습니다. 기출 PDF를 판독해 <code>관광학개론기출.md</code>를 만들면 진짜 기출로 교체합니다.</p>
+<p><b>이해가 안 되면 → 강의 위치</b>: 여행 형태별 분류·IIT/ICT·FIT/FCT 구분·Principal 함정 강조는 <b>8월 2일 핵심강의 약 1:04:53(교재 82쪽 진입)~1:33:00 무렵(여행 형태별 분류 마무리) 구간</b>. 여권 대행 여부·자동출입국심사·면세한도 실제 기출 확인은 <b>8월 5일 문제풀이강의 약 2:48:00~3:11:00 구간</b>. 나머지 세부 수치·제도는 <b>통합교재 82~94쪽 원문 및 2026-08-11 재대조 보강분</b>에만 근거했습니다.</p>
+<p>2026-08-14 제작 · 시험일 2026-09-05 (D-22) · 사용자 검토 대기 — 배포·PDF 작업은 검토 후 별도 진행</p>
+</footer>
+</div>
+<script>
+const QS = [
+{n:1, yr:"예상", era:"정의유통",
+q:"관광진흥법상 여행업의 정의에 대한 설명으로 옳지 않은 것은?",
+o:["여행자를 위해 운송·숙박시설 이용을 알선한다","운송·숙박시설 경영자 등을 위해 계약체결을 대리한다","여행에 관한 안내나 그 밖의 편의를 제공한다","법률상 정의에 여행상품을 반드시 기획·판매해야 한다는 내용이 포함되어 있다"],
+a:3, e:"관광진흥법상 여행업의 정의는 <b>알선·대리·안내·편의제공</b>이 핵심 키워드입니다. '여행상품 기획·판매'는 실무적 정의에서 언급되는 내용으로, 모든 여행사가 상품을 직접 기획하는 것은 아니기 때문에 법률상 정의에는 포함되어 있지 않습니다."},
+
+{n:2, yr:"예상", era:"정의유통",
+q:"여행상품의 유통구조를 순서대로 바르게 나열한 것은?",
+o:["원료공급업자(Principal) → 지상수배업자(랜드사) → 여행도매업자 → 여행소매업자 → 여행자","여행자 → 여행소매업자 → 여행도매업자 → 지상수배업자 → 원료공급업자","원료공급업자 → 여행도매업자 → 지상수배업자 → 여행소매업자 → 여행자","여행소매업자 → 원료공급업자 → 지상수배업자 → 여행도매업자 → 여행자"],
+a:0, e:"여행상품 유통구조는 <b>원료공급업자(Principal, 호텔·항공사 등) → 지상수배업자(랜드사) → 여행도매업자(Wholesaler) → 여행소매업자(Retailer) → 여행자</b> 순으로 흐릅니다."},
+
+{n:3, yr:"예상", era:"정의유통",
+q:"다음 중 Principal(원료공급업자)에 해당하지 않는 것은?",
+o:["호텔","항공사","여행사","렌터카업체"],
+a:2, e:"<b>Principal(원료공급업자)</b>은 호텔·항공사·렌터카업체처럼 여행상품의 재료를 제공하는 쪽입니다. <b>여행사는 Principal이 아니라 이 원료들을 모아 상품을 조립하는 주체</b>이며, 실제 기출에서 「Principal과 관계없는 것」의 정답은 항상 여행사였습니다."},
+
+{n:4, yr:"예상", era:"특성기능",
+q:"여행업의 3대 업무기능에 해당하지 않는 것은?",
+o:["대리 업무","서비스 업무","판매 업무","시설 설치·운영 업무"],
+a:3, e:"여행업의 기본 기능 8가지는 크게 <b>대리 업무(대신해주는 것)·서비스 업무(정보 제공·상담)·판매 업무</b> 3가지로 묶입니다. 「시설 설치·운영」은 여행업이 아니라 국제회의시설업 등 다른 업종의 업무입니다."},
+
+{n:5, yr:"예상", era:"형태분류",
+q:"여행 형태별 분류 중 Series tour에 관한 설명으로 옳은 것은?",
+o:["Package tour와 완전히 다른 별개의 개념이다","Package tour의 한 형태로, 동일한 형태·목적·기간·여정으로 정기 또는 부정기적으로 반복 실시되는 상품이다","항공기를 전세 내어 만드는 저렴한 상품이다","기업·단체의 포상여행을 가리킨다"],
+a:1, e:"<b>Series tour</b>는 <b>Package tour의 한 형태</b>로, 동일한 형태·목적·기간·여정으로 정기/부정기 반복 실시되는 상품입니다(예: 매년 봄 벚꽃 시즌 반복 상품). ③은 Charter tour, ④는 Incentive tour의 정의입니다."},
+
+{n:6, yr:"예상", era:"형태분류",
+q:"관광기관·항공사가 여행업자·기자 등을 초청해 관광루트·시설을 답사시키는 여행을 가리키는 용어는?",
+o:["Optional tour","Interline tour","Familiarization tour(fam tour)","Convention tour"],
+a:2, e:"<b>Familiarization tour(fam tour)</b>는 관광기관·항공사가 여행업자·기자 등을 초청해 관광대상을 시찰시키는 여행으로, 우리말로 「시찰 초청여행」이라 번역합니다."},
+
+{n:7, yr:"예상", era:"형태분류",
+q:"Plant tour(산업관광)에 관한 설명으로 옳은 것은?",
+o:["호화유람선을 이용하는 여행이다","산업(기술·시설)을 대상으로 하는 관광으로, 테크니컬 투어리즘(Technical Tourism)과 같은 의미이다","항공사가 가맹 여행사를 초대하는 여행이다","여행 중 즉석으로 추가 판매하는 임의여행이다"],
+a:1, e:"<b>Plant tour(산업관광)</b>는 산업의 기술·시설을 대상으로 하는 관광으로, <b>테크니컬 투어리즘</b>과 동의어입니다. ①은 Cruise tour, ③은 Interline tour, ④는 Optional tour의 정의입니다."},
+
+{n:8, yr:"예상", era:"형태분류",
+q:"패키지 투어(Package tour)와 관광진흥법상 기획여행의 관계에 관한 설명으로 옳은 것은?",
+o:["두 용어는 완전히 동일한 개념이라 서로 바꿔 써도 된다","기획여행은 법률상 아웃바운드(국외여행) 상품에만 해당하지만, 패키지 투어는 인바운드·아웃바운드·국내 상품을 모두 포괄하는 실무 용어이다","패키지 투어는 국내여행에만 해당하는 용어이다","기획여행은 인바운드 상품에만 해당하는 용어이다"],
+a:1, e:"관광진흥법상 <b>기획여행은 아웃바운드 상품에만</b> 해당하는 법률 용어입니다. 반면 <b>패키지 투어는 인바운드·아웃바운드·국내(도메스틱) 상품을 모두 포괄</b>하는 더 넓은 실무 용어라서, 두 용어를 같은 개념으로 치환하면 틀립니다."},
+
+{n:9, yr:"예상", era:"3분류축",
+q:"안내조건에 의한 분류인 I.I.T와 I.C.T에 관한 설명으로 옳은 것은?",
+o:["I.I.T는 안내원이 전 여행기간을 안내하고, I.C.T는 각 관광지에서만 안내한다","I.I.T는 안내원이 각 관광지에서만 안내(Local guide system)하고, I.C.T는 안내원이 전 여행기간을 안내한다","두 용어 모두 인솔자(TC) 동반 여부를 가리키는 용어이다","I.I.T와 I.C.T는 완전히 동일한 개념이다"],
+a:1, e:"<b>I.I.T(Inclusive Independent Tour, = Local guide system)</b>는 안내원이 <b>각 관광지에서만</b> 안내하고, <b>I.C.T(Inclusive Conducted Tour)</b>는 안내원이 <b>전 여행기간</b>을 안내합니다. 이 축은 인솔자(TC) 유무가 아니라 「현지 안내 방식」을 가리킵니다."},
+
+{n:10, yr:"예상", era:"3분류축",
+q:"F.I.T와 F.C.T(F.E.T)를 구분하는 기준으로 옳은 것은?",
+o:["여행자의 국적","현지 관광지에서 가이드가 안내하는 범위","본국에서부터 인솔자(TC)가 동반되는지 여부","여행 기간의 길이"],
+a:2, e:"<b>F.I.T(인솔자 없이 개인 여행)</b>와 <b>F.C.T=F.E.T(시작부터 완료까지 인솔자 동승)</b>는 <b>인솔자(TC) 동반 여부</b>만으로 구분됩니다. 내국인·외국인, 입국·출국 방향과는 무관합니다."},
+
+{n:11, yr:"예상", era:"3분류축",
+q:"통과상륙여행(Over land tour)에 관한 설명으로 옳지 않은 것은?",
+o:["선박이 동일 국가 내 한 기항지에서 다른 기항지로 항해하는 동안 통과상륙 허가를 얻어 하는 여행이다","기간은 3~7일이다","여행자는 반드시 동일 선박에 재승선해야 한다","다른 국가로 이동해도 무방하다"],
+a:3, e:"통과상륙여행은 <b>동일 국가 내</b>의 한 기항지에서 다른 기항지로 이동하는 동안에만 성립하며, <b>반드시 같은 선박에 재승선</b>해야 합니다. 다른 국가로 이동하면 이 제도가 적용되지 않습니다."},
+
+{n:12, yr:"예상", era:"여권",
+q:"여권의 종류와 색상·유효기간을 바르게 짝지은 것은?",
+o:["일반여권 - 10년 이내 - 남색","관용여권 - 10년 이내 - 적색","외교관여권 - 5년 이내 - 진회색","긴급여권 - 5년 이내 - 청색"],
+a:0, e:"<b>일반여권</b>은 <b>10년 이내, 남색</b>입니다. 관용여권은 5년 이내·진회색, 외교관여권은 5년 이내·적색, 긴급여권은 유효기간 표기 없이 청색입니다."},
+
+{n:13, yr:"예상", era:"여권",
+q:"여행증명서에 관한 설명으로 옳지 않은 것은?",
+o:["여권을 갈음하는 증명서로 검정색이다","유효기간은 1년 이내이다","발급 대상에 해외 입양자가 포함된다","단수여권과 동일한 문서이다"],
+a:3, e:"여행증명서는 여권과 <b>별개의 문서</b>로, 여권을 갈음하는 증명서입니다(검정색, 유효기간 1년 이내). 발급 대상은 출국하는 무국적자·해외 입양자·외국거주 동포 등이며, <b>단수여권과는 다른 개념</b>입니다."},
+
+{n:14, yr:"예상", era:"여권",
+q:"「일반인 여권 및 비자 발급 대행업」이 일반여행업의 업무로 옳지 않은 이유는?",
+o:["여권과 비자 모두 대행이 불가능하기 때문이다","여권은 생체정보(바이오정보) 때문에 본인이 직접 발급받아야 해 대행이 불가능하기 때문이다(비자는 대행 가능)","비자는 대행이 불가능하지만 여권은 대행이 가능하기 때문이다","여행업자는 어떠한 발급 업무도 대행할 수 없기 때문이다"],
+a:1, e:"<b>여권은 생체정보 때문에 본인이 직접 발급</b>받아야 해 여행사가 대행할 수 없습니다. 반면 <b>사증(비자)은 여행사가 대행 신청</b>할 수 있습니다. 발급기관도 여권=외교부장관, 사증=법무부장관으로 다릅니다."},
+
+{n:15, yr:"예상", era:"사증",
+q:"사증(VISA)이 불필요한 4가지 유형에 해당하지 않는 것은?",
+o:["상호면제협정","상호주의","일방적 면제","TWOV(무사증단기체류)를 제외한 모든 단기체류"],
+a:3, e:"사증 불필요 4가지 유형은 <b>상호면제협정·상호주의·일방적 면제·TWOV(무사증단기체류, 72시간 이내)</b>입니다. 이 네 가지 요건을 충족하지 않으면 원칙적으로 사증이 필요합니다."},
+
+{n:16, yr:"예상", era:"사증",
+q:"TWOV(무사증단기체류)가 성립하기 위한 조건으로 옳지 않은 것은?",
+o:["제3국으로 계속 여행할 예약이 확인된 항공권을 소지해야 한다","외교관계가 수립된 국가 간에만 적용된다","출입국 공항이 동일해야 한다","체류 가능 기간은 최대 30일이다"],
+a:3, e:"TWOV는 <b>72시간 이내</b>의 단기 체류만 허용합니다. 30일은 TWOV와 무관한 숫자입니다(일방적 면제 유형 중 필리핀의 체류기간이 30일)."},
+
+{n:17, yr:"예상", era:"CIQ",
+q:"출국 수속의 순서로 옳은 것은?",
+o:["병무신고 → 탑승수속 → 보안검색 → 세관신고 → 출국 사열 → 출국 라운지 → 탑승","보안검색 → 병무신고 → 세관신고 → 탑승수속 → 출국 사열 → 탑승","출국 사열 → 병무신고 → 탑승수속 → 보안검색 → 세관신고 → 탑승","세관신고 → 출국 사열 → 병무신고 → 탑승수속 → 보안검색 → 탑승"],
+a:0, e:"출국 수속 순서는 <b>병무신고 → 탑승수속(보딩패스·수하물표 수령) → 보안검색 → 세관신고 → 출국 사열 → 출국 라운지(면세점) → 탑승</b>입니다."},
+
+{n:18, yr:"예상", era:"면세통관",
+q:"여행자 면세 통관에 관한 설명으로 옳지 않은 것은?",
+o:["기본 면세범위는 여행자 1명당 미화 800달러 이하이다","술은 2리터, 미화 400달러 이하까지 병수 제한 없이 면세된다","향수는 100밀리리터까지 면세된다","입국하는 외국인의 면세 한도는 내국인과 다르게 적용된다"],
+a:3, e:"입국 시 <b>800달러 면세 한도는 내국인·외국인에게 동일하게 적용</b>됩니다. 「외국인만 무제한」이나 「600달러」 같은 지문은 오답으로 자주 나옵니다."},
+
+{n:19, yr:"예상", era:"안전정보",
+q:"해외여행 안전정보(여행경보) 4단계 중 해외체류자에게 「즉시 대피·철수」를 명하는 단계는?",
+o:["1단계 남색경보(여행유의)","2단계 황색경보(여행자제)","3단계 적색경보(철수권고)","4단계 흑색경보(여행금지)"],
+a:3, e:"<b>4단계 흑색경보(여행금지)</b>는 해외체류자에게 즉시 대피·철수를, 해외여행 예정자에게는 방문금지를 명합니다. 3단계 적색경보는 「긴급용무가 아닌 한 귀국」 수준으로 4단계보다 완화된 조치입니다."},
+
+{n:20, yr:"예상", era:"안전정보",
+q:"특별여행경보제도에 관한 설명으로 옳은 것은?",
+o:["매년 정기적으로 모든 국가에 발령되는 제도이다","전쟁·자연재해 등 단기적인 위험 상황이 갑자기 발생했을 때 발령되며, 1단계 특별여행주의보(적색)와 2단계 특별여행경보(흑색)로 나뉜다","여행경보 4단계와 완전히 동일한 제도이다","신속해외송금제도의 다른 이름이다"],
+a:1, e:"특별여행경보제도는 <b>단기적 위험 상황이 갑자기 발생했을 때</b> 발령되는 별도 제도로, 1단계 <b>특별여행주의보(적색)</b>=적색경보 준하는 효과, 2단계 <b>특별여행경보(흑색)</b>=즉시대피 해당 효과를 갖습니다. 키워드는 「단기적 위험사항」입니다."},
+];
+
+const NUMS = ["①","②","③","④"];
+let ACTIVE = QS.slice();
+let picked = {};
+let graded = false, t0 = null, tick = null, elapsed = 0;
+let lastWrong = [];
+function render(){
+const box = document.getElementById('quiz');
+box.innerHTML = ACTIVE.map((q,i)=>`
+<div class="q" id="q${i}">
+<div class="qh">
+<span class="qn">Q${q.n}</span>
+<span class="qt">${q.q}</span>
+<span class="yr">${q.yr} · ${q.era}</span>
+</div>
+${q.stem?`<div class="stem">${q.stem}</div>`:''}
+<ul class="opts">
+${q.o.map((o,j)=>`<li data-q="${i}" data-o="${j}"><span class="no">${NUMS[j]}</span><span>${o}</span></li>`).join('')}
+</ul>
+<div class="exp"><b>왜 그런가 —</b> ${q.e}</div>
+</div>`).join('');
+box.querySelectorAll('.opts li').forEach(li=>{
+li.addEventListener('click',()=>{
+if(graded) return;
+startTimer();
+const qi = +li.dataset.q, oi = +li.dataset.o;
+picked[qi] = oi;
+li.parentNode.querySelectorAll('li').forEach(x=>x.classList.remove('sel'));
+li.classList.add('sel');
+updateProg();
+});
+});
+updateProg();
+}
+function updateProg(){
+document.getElementById('prog').textContent = `${Object.keys(picked).length} / ${ACTIVE.length} 선택`;
+}
+function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }
+function startTimer(){
+if(t0) return;
+t0 = performance.now();
+tick = setInterval(()=>{
+elapsed = Math.floor((performance.now()-t0)/1000);
+document.getElementById('timer').textContent = fmt(elapsed);
+},500);
+}
+function grade(){
+if(graded) return;
+graded = true;
+if(tick) clearInterval(tick);
+if(t0) elapsed = Math.floor((performance.now()-t0)/1000);
+let right = 0;
+const byEra = {};
+lastWrong = [];
+ACTIVE.forEach((q,i)=>{
+const el = document.getElementById('q'+i);
+el.classList.add('graded');
+const lis = el.querySelectorAll('.opts li');
+const sel = picked[i];
+const ok = sel === q.a;
+if(ok) right++; else lastWrong.push({q:q, mine:sel});
+byEra[q.era] = byEra[q.era] || [0,0];
+byEra[q.era][1]++; if(ok) byEra[q.era][0]++;
+lis.forEach((li,j)=>{
+li.classList.remove('sel');
+if(j===q.a){ li.classList.add('correct');
+li.insertAdjacentHTML('beforeend','<span class="mark o">정답</span>'); }
+if(j===sel && !ok){ li.classList.add('wrong');
+li.insertAdjacentHTML('beforeend','<span class="mark x">내가 고른 답</span>'); }
+});
+if(sel===undefined){
+el.querySelector('.opts').insertAdjacentHTML('beforebegin','<div class="stem" style="color:var(--warn)">답을 고르지 않았습니다.</div>');
+}
+});
+const pct = Math.round(right/ACTIVE.length*100);
+const sc = document.getElementById('score');
+sc.classList.add('on');
+document.getElementById('scoreNum').textContent = pct + '점';
+let msg;
+if(pct>=80) msg = '8단원은 잡혔습니다. 총정리표 ⑤번(형태별 분류)과 ⑥번(3분류축) 표만 한 번 더 훑고 9단원(관광교통업)으로 넘어가세요.';
+else if(pct>=60) msg = '합격선은 넘겼지만 안전권은 아닙니다. 틀린 문항이 「형태별 분류」 쪽인지 「IIT·ICT/FIT·FCT」 쪽인지부터 확인하세요.';
+else if(pct>=40) msg = '여행 형태별 분류와 안내조건·인솔자 구분에서 흔들립니다. 비교카드 8개를 다시 보세요.';
+else msg = '괜찮습니다 — 8단원은 「비슷한 약자」 싸움입니다. 이야기 4편(IIT·ICT/FIT·FCT)을 다시 읽고 내일 재도전하세요.';
+document.getElementById('scoreLab').innerHTML = `${ACTIVE.length}문항 중 <b>${right}문항</b> 정답 · 소요 ${fmt(elapsed)} · ${msg}`;
+document.getElementById('scoreBrk').innerHTML =
+Object.entries(byEra).map(([k,v])=>`<span>${k} ${v[0]}/${v[1]}</span>`).join('');
+const wl = document.getElementById('wrongList');
+if(lastWrong.length===0){
+wl.innerHTML = '<b>틀린 문항 없음</b> — 전부 맞히셨습니다.';
+} else {
+wl.innerHTML = `<b>틀린 문항 ${lastWrong.length}개</b>` +
+'<ul>' + lastWrong.map(w=>{
+const mine = (w.mine===undefined) ? '무응답' : `${NUMS[w.mine]} ${w.q.o[w.mine]}`;
+return `<li><b>Q${w.q.n}</b> (${w.q.era}) — 내 답 <b>${mine}</b> / 정답 <b>${NUMS[w.q.a]} ${w.q.o[w.q.a]}</b></li>`;
+}).join('') + '</ul>';
+}
+document.getElementById('retryWrong').disabled = (lastWrong.length===0);
+let txt = `[오답노트 기록] 관광학개론 8단원 여행업\n`;
+txt += `점수: ${right}/${ACTIVE.length} (${pct}점) · 소요시간 ${fmt(elapsed)}\n`;
+txt += `주제별: ` + Object.entries(byEra).map(([k,v])=>`${k} ${v[0]}/${v[1]}`).join(' / ') + `\n`;
+txt += `틀린 문항 ${lastWrong.length}개\n`;
+lastWrong.forEach(w=>{
+const mine = (w.mine===undefined) ? '무응답' : NUMS[w.mine];
+txt += `- Q${w.q.n} (${w.q.era}) ${w.q.q}\n`;
+txt += `   내 답 ${mine}${w.mine!==undefined?' '+w.q.o[w.mine]:''} / 정답 ${NUMS[w.q.a]} ${w.q.o[w.q.a]}\n`;
+});
+document.getElementById('exportTxt').value = txt;
+window.scrollTo({top: sc.offsetTop - 90, behavior:'smooth'});
+}
+function resetQuiz(set){
+ACTIVE = set;
+graded=false; t0=null; elapsed=0; if(tick) clearInterval(tick);
+picked = {};
+document.getElementById('timer').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('copyMsg').textContent='';
+render();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-140, behavior:'smooth'});
+}
+document.getElementById('grade').addEventListener('click', grade);
+document.getElementById('reset').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryAll').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryWrong').addEventListener('click', ()=>{
+if(!lastWrong.length) return;
+resetQuiz(lastWrong.map(w=>w.q));
+});
+document.getElementById('copyBtn').addEventListener('click', async ()=>{
+const ta = document.getElementById('exportTxt');
+const msg = document.getElementById('copyMsg');
+try{
+await navigator.clipboard.writeText(ta.value);
+msg.textContent = '복사됐습니다. 채팅에 붙여넣어 주세요.';
+}catch(e){
+ta.removeAttribute('readonly'); ta.select(); ta.setSelectionRange(0, 99999);
+try{ document.execCommand('copy'); msg.textContent='복사됐습니다.'; }
+catch(_){ msg.textContent='길게 눌러서 직접 복사해 주세요.'; }
+ta.setAttribute('readonly','');
+}
+});
+render();
+</script>
+</body>
+</html>

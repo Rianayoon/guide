@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광학개론 표 모음 제4장 — 관광개발론</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광학개론 · 표 모음</div>
+<h1>관광학개론 표 모음 — 제4장 관광개발론
+<small>교재 단원 순서대로 3개 부 · 표 14개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">제4장 관광개발론 (교재 39~51쪽)</span>
+<span class="chip">기출 9개년 15문항</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>1부 &nbsp;제1절 관광개발계획의 이론 &nbsp;(교재 39~40쪽)</b>
+<a href="#t1">표 ① 관광개발의 개념</a><a href="#t2">표 ② 관광개발의 목적</a><a href="#t3">표 ③ 관광개발의 조건</a><a href="#t4">표 ④ 관광개발주체에 의한 분류</a>
+<b>2부 &nbsp;제2절 관광개발계획 및 개발사례 &nbsp;(교재 41~49쪽)</b>
+<a href="#t5">표 ⑤ 관광권 설정 변천 과정</a><a href="#t6">표 ⑥ 제3차 관광개발기본계획</a><a href="#t7">표 ⑦ 제4차 관광개발기본계획</a><a href="#t8">표 ⑧ 관광지 vs 관광단지</a><a href="#t9">표 ⑨ 관광특구 지정현황</a><a href="#t10">표 ⑩ 관광거점도시 육성 사업</a><a href="#t11">표 ⑪ 스마트 관광도시</a><a href="#t12">표 ⑫ 관광두레 사업</a><a href="#t13">표 ⑬ 문화관광축제 지정 현황</a>
+<b>3부 &nbsp;제3절 지속가능한 관광 &nbsp;(교재 50~51쪽)</b>
+<a href="#t14">표 ⑭ 지속가능한 관광의 정의와 유형 9가지</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 14개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (8개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n">빨강</b> = 교재에 빨간펜으로 적힌 것</span>
+<span><b class="n5">★★★★★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<div class="part"><span class="pn">1부</span><span class="pt">제1절 관광개발계획의 이론</span><span class="pj">교재 39~40쪽</span></div>
+
+<section id="t1">
+<h2><span class="no">표 ①</span> 관광개발의 개념 <span class="sm"><b style="color:var(--gold)">★★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">(1) 협의의 개념</td><td>관광자원개발 (<b>자연자원 + 인문자원</b>)</td></tr>
+<tr class="per"><td class="biz">(2) 광의의 개념</td><td>관광자원개발 <b>+ 관광관련시설 및 기능개발</b><br>① 관광자원의 개발 &nbsp;② 교통운송 및 수용태세의 개발과 정비 &nbsp;③ 정보시스템의 확립</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2">
+<h2><span class="no">표 ②</span> 관광개발의 목적 <span class="sm"><b style="color:var(--gold)">★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:190px">목적</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">1) 관광공간의 재편성</td><td>자국의 <b>역사성·문화성·국토성·지역성</b>에 기초한 관광자원의 개발·보존·이용·관리를 할 수 있는 국토 관광공간의 재편성 및 관광을 할 수 있는 공간의 제공</td></tr>
+<tr class="reg"><td class="biz">2) 지역경제의 발전</td><td>지역사회를 <b>재정수입 및 고용구조</b>를 개선시키며 건전한 관광문화 창출 기여</td></tr>
+<tr class="reg"><td class="biz">3) 국민의 복지증진 및<br>문화 전파</td><td>국민들의 여가 생활 및 복지편익 증진을 통한 삶의 질 향상에 기여하고, 자국의 삶의 모습과 자연경관·문화경관을 소개하여 외국관광객에게 문화전파를 가능케 하는 데 목적</td></tr>
+<tr class="reg"><td class="biz">4) 관광자원 보호</td><td>지역특성에 맞는 관광자원을 합리적이고 효과적인 방법에 의하여 자원을 보호 관리</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t3">
+<h2><span class="no">표 ③</span> 관광개발의 조건 <span class="sm"><b style="color:var(--gold)">★★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:110px">조건</th><th style="width:190px">항목</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="gu" rowspan="3">지리적</td><td class="kind">거리</td><td>관광개발지와 관광여행자 송출시장</td></tr>
+<tr class="reg"><td class="kind">경합관광지 존재여부</td><td>주변에 몇 개의 관광지가 존재하는가의 여부</td></tr>
+<tr class="reg"><td class="kind">관광자원의 존재</td><td>가치 있는 관광자원이 존재하는가의 여부</td></tr>
+<tr class="per"><td class="gu" rowspan="3">자연적</td><td class="kind">지형</td><td>지형이 평탄하거나 개발예상조건에 맞는 지형인지의 여부</td></tr>
+<tr class="per"><td class="kind">기상</td><td>온난한 기후, 강수량 등</td></tr>
+<tr class="per"><td class="kind">자연환경</td><td>자연환경이 수려하며, 감동과 휴식을 제공할 수 있는지의 여부</td></tr>
+<tr class="not"><td class="gu" rowspan="2">사회적</td><td class="kind">법적 규제</td><td>관광개발 시 관계법령 문제 여부</td></tr>
+<tr class="not"><td class="kind">지역사회 반응</td><td>지역주민들이 긍정적인가·부정적인가의 여부</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t4" data-imp="1">
+<h2><span class="no">표 ④</span> 관광개발주체에 의한 분류 <span class="sm"><b class="n5">★★★★★</b></span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:110px">부문(Sector)</th><th style="width:230px">주체</th><th style="width:250px">장점</th><th>단점</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">제1섹터</span></td><td class="kind"><span class="hl">공공부문</span><br><span class="dash" style="font-weight:400">(정부, 지방자치단체, 정부투자기관, 공기업)</span></td><td>· 비영리부문의 투자가능<br>· 행정업무의 원활<br>· 사업의 신뢰성</td><td>· 비능률성<br>· 예산편성의 경직성</td></tr>
+<tr class="per"><td class="biz"><span class="hl">제2섹터</span></td><td class="kind"><span class="hl">민간부문</span><br><span class="dash" style="font-weight:400">(기업, 각종단체)</span></td><td>· 창의성 · 수익성 · 융통성 · 효율성</td><td>· 지역주민의 요구 배제 가능<br>· 이익의 외부노출<br>· 비영리적 투자 부진</td></tr>
+<tr class="not"><td class="biz"><span class="hl">제3섹터</span></td><td class="kind"><span class="hl">공공부문 + 민간부문</span><br>혼합개발방식<br><span class="dash" style="font-weight:400">· 공공부문 : 관광하부구조<br>· 민간부문 : 관광상부구조</span></td><td>· 개발기술과 자금의 협동성<br>· 단독형태의 단점보완</td><td>· 각 부문간의 의견 대립 가능성</td></tr>
+<tr class="des"><td class="biz">제4섹터</td><td class="kind"><span class="hl">공공부문 + 지역주민</span><br>혼합개발방식</td><td class="dash">―</td><td class="dash">―</td></tr>
+<tr class="mint"><td class="biz">제5섹터</td><td class="kind"><span class="hl">민간부문 + 지역주민</span><br>혼합개발방식</td><td class="dash">―</td><td class="dash">―</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="part"><span class="pn">2부</span><span class="pt">제2절 관광개발계획 및 개발사례</span><span class="pj">교재 41~49쪽</span></div>
+
+<section id="t5">
+<h2><span class="no">표 ⑤</span> 관광권 설정 변천 과정 <span class="sm"><b style="color:var(--gold)">★★★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:130px">년도</th><th style="width:290px">개발계획</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">1972</td><td class="kind">제2차 경제사회개발 5개년계획</td><td><b>10대 관광권</b></td></tr>
+<tr class="reg"><td class="biz">1979</td><td class="kind">한국관광진흥장기종합계획</td><td><b>8대 관광흡인권 24개발소권</b></td></tr>
+<tr class="reg"><td class="biz">1983</td><td class="kind">국민관광장기종합개발계획</td><td><b>8대 관광이용권 26개발소권</b></td></tr>
+<tr class="per"><td class="biz">1992~2001</td><td class="kind">제1차 관광개발기본계획</td><td><b>5대 관광권 24개발소권</b></td></tr>
+<tr class="per"><td class="biz">2002~2011</td><td class="kind">제2차 관광개발기본계획</td><td><b>16대 관광권</b></td></tr>
+<tr class="not"><td class="biz">2012~2021</td><td class="kind">제3차 관광개발기본계획</td><td><b>7개 광역 관광권, 6개 초광역 관광벨트</b></td></tr>
+<tr class="des"><td class="biz"><span class="hl">2022~2031</span></td><td class="kind"><span class="hl">제4차 관광개발기본계획</span></td><td><span class="hl">1³+4 광역연합관광권</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t6">
+<h2><span class="no">표 ⑥</span> 제3차 관광개발기본계획 (2012~2021) <span class="sm"><b style="color:var(--gold)">★★★★</b> · 7개 광역관광권 + 6개 초광역 관광벨트</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:170px">관광권</th><th>세부 내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">수도관광권</td><td>미래를 선도하는 <b>동북아 관광허브</b></td></tr>
+<tr class="reg"><td class="biz">충청관광권</td><td><b>과학기술과 관광</b>이 결합된 융합관광의 거점</td></tr>
+<tr class="reg"><td class="biz">호남관광권</td><td>아시아를 대표하는 <b>문화관광 중추지역</b></td></tr>
+<tr class="reg"><td class="biz">대구·경북관광권</td><td><b>3대 문화 역사관광</b>의 거점</td></tr>
+<tr class="reg"><td class="biz">부·울·경 관광권</td><td><b>해양 레저·크루즈관광</b> 중추지역</td></tr>
+<tr class="reg"><td class="biz">강원관광권</td><td><b>생태·웰빙관광 및 동계스포츠</b>의 메카</td></tr>
+<tr class="reg"><td class="biz">제주관광권</td><td>글로벌 경쟁력을 갖춘 <b>자연유산관광 및 MICE 산업</b>의 중심</td></tr>
+<tr class="per"><td class="biz">해안중심<br><span class="dash" style="font-weight:400">초광역관광벨트</span></td><td>① <b>서해안</b> 관광벨트(수도·충청·호남) &nbsp;② <b>동해안</b> 관광벨트(강원·대구경북·부울경) &nbsp;③ <b>남해안</b> 관광벨트(부울경·호남)</td></tr>
+<tr class="per"><td class="biz">접경지역<br>내륙자원</td><td>① <b>한반도평화생태관광벨트</b>(수도·강원) &nbsp;② <b>백두대간 생태문화관광벨트</b> &nbsp;③ <b>강변생태문화관광벨트</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t7" data-imp="1">
+<h2><span class="no">표 ⑦</span> 제4차 관광개발기본계획 (2022~2031) <span class="sm"><b class="n5">★★★★★</b> · 1³+4 광역연합관광권</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:110px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">비전</td><td>· 미래를 여는 관광 한국 &nbsp;· 관광으로 행복한 국민</td></tr>
+<tr class="per"><td class="biz">목표</td><td>· 사람과 지역이 동반 성장하는 <b>상생 관광</b><br>· 질적 발전을 추구하는 <b>지능형(스마트)혁신 관광</b><br>· 미래세대와 공존하는 <b>지속 가능 관광</b></td></tr>
+<tr class="not"><td class="biz">전략<br><span class="dash" style="font-weight:400">6가지</span></td><td>① <span class="hl">매력적인 관광자원 발굴</span> &nbsp;② <span class="hl">지속가능 관광개발 가치 구현</span><br>③ <span class="hl">편리한 관광편의 기반 확충</span> &nbsp;④ <span class="hl">건강한 관광산업생태계 구축</span><br>⑤ <span class="hl">입체적 관광 연계·협력 강화</span> &nbsp;⑥ <span class="hl">혁신적 제도·관리 기반 마련</span></td></tr>
+<tr class="des"><td class="biz">권역구분<br>5개</td><td><b>(수도·강원·제주권)</b> 글로벌 K관광 선도지대<br><b>(충청권)</b> 과학기술기반의 백제·중원문화관광지대<br><b>(전라권)</b> 다도해·새만금을 품은 문화예술관광지대<br><b>(대구·경북권)</b> 유교문화에 기반한 역사 문화·생태 관광지대<br><b>(부·울·경권)</b> 산업기반 해양레저·문화관광지대</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t8" data-imp="1">
+<h2><span class="no">표 ⑧</span> 관광지 vs 관광단지 <span class="sm">— 2025. 6월 기준</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:110px">구분</th><th><span class="hl">관광지</span></th><th><span class="hl">관광단지</span></th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">정의</td><td><span class="hl">자연적 또는 문화적 관광자원을 갖추고 관광객을 위한 기본적인 편의시설을 설치하는 지역</span></td><td>관광객의 다양한 관광 및 휴양을 위하여 <b>각종 관광시설을 종합적으로 개발</b>하는 관광거점지역</td></tr>
+<tr class="per"><td class="biz">근거</td><td>관광진흥법 제50조</td><td>관광진흥법 제50조</td></tr>
+<tr class="per"><td class="biz">지정현황</td><td><b>225개소</b></td><td><b>55개소</b></td></tr>
+<tr class="not"><td class="biz">지정기준<br>또는 요건</td><td>① 면적기준 : <b>없음</b><br>② 시설기준 : 공공편익시설 (필수)<br>③ 숙박시설, 운동·오락시설, 휴양·문화시설, 접객시설, 지원시설은 <b>임의</b>로 갖출 수 있음</td><td>① 면적기준 : <b>50만㎡ 이상</b><br>② 시설기준 : 공공편익시설 (필수)<br>③ 관광숙박시설 <b>1종류 이상</b> (필수)<br>④ 운동·오락시설 또는 휴양·문화시설 중 <b>1종류 이상</b> (필수)<br>⑤ 접객시설 및 지원시설은 임의로 갖출 수 있음</td></tr>
+<tr class="des"><td class="biz">지정절차</td><td><b>시장·군수·구청장 신청 → 시·도지사 지정</b></td><td><b>시장·군수·구청장 신청 → 시·도지사 지정</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="note" style="margin-top:10px">관광단지 지정현황 (자치단체별)</p>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:110px">자치단체</th><th>명칭과 지역</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">부산 (1)</td><td>오시리아(기장군)</td></tr>
+<tr class="reg"><td class="biz">인천 (1)</td><td>강화종합리조트(강화)</td></tr>
+<tr class="reg"><td class="biz">광주 (1)</td><td>어등산(광산구)</td></tr>
+<tr class="reg"><td class="biz">울산 (1)</td><td>강동(북구)</td></tr>
+<tr class="reg"><td class="biz">경기 (2)</td><td>안성 죽산(안성시), 평택호(평택시)</td></tr>
+<tr class="per"><td class="biz"><b>강원 (14)</b></td><td>델피노골프앤리조트(고성), 설악한화리조트(속초), 양양국제공항(양양), 원주 오크밸리(원주), 원주 더네이처(원주), 원주 루첸(원주), 라비에벨(춘천시), 신영(춘천시), 휘닉스 파크(평창군), 평창 용평(평창군), 대관령 알펜시아(평창군), 비발디파크(홍천군), 웰리힐리파크(횡성군), 드림마운틴(횡성군)</td></tr>
+<tr class="not"><td class="biz">경북 (6)</td><td>보문(경주시), 감포해양(경주시), 김천 온천(김천시), 안동 문화(안동시)</td></tr>
+<tr class="not"><td class="biz">경남 (3)</td><td>거제 남부(거제시), 창원 구산해양(창원시), 웅동복합레저(창원시)</td></tr>
+<tr class="des"><td class="biz">전북 (1)</td><td>드레곤(남원시)</td></tr>
+<tr class="des"><td class="biz">전남 (6)</td><td>고흥 우주해양(고흥시), 여수 화양(여수시), 여수경도 해양(여수시), 여수 챌린지파크(여수시)</td></tr>
+<tr class="mint"><td class="biz">충북 (1)</td><td>증평 에듀팜 특구(증평군)</td></tr>
+<tr class="mint"><td class="biz">충남 (2)</td><td>백제문화(부여군), 골드힐카운티리조트(천안시)</td></tr>
+<tr class="mint"><td class="biz">제주 (8)</td><td>중문(서귀포), 성산포해양(서귀포시), 신화역사공원(서귀포시), 제주헬스케어타운(서귀포), 록인제주(서귀포시), 애월국제문화복합단지(제주시), 프로젝트 ECO(제주시), 묘산봉(제주시)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t9" data-imp="1">
+<h2><span class="no">표 ⑨</span> 관광특구 지정현황 <span class="sm">— 2025. 6월 기준 · 1993년 제도 도입, 1994년 지정 · 14개 시·도 36개소</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:80px">지역</th><th style="width:170px">특구명</th><th>지정 지역 (소재지)</th><th style="width:120px">최초지정일</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="gu" rowspan="8">서울<br>(8)</td><td class="kind">명동·남대문·북창동<br>·다동·무교동</td><td>명동, 회현동, 소공동, 무교동·다동 각 일부지역</td><td class="org">2000.03.30</td></tr>
+<tr class="reg"><td class="kind">이태원</td><td>용산구 이태원동·한남동 일원</td><td class="org">1997.09.29</td></tr>
+<tr class="reg"><td class="kind">동대문 패션타운</td><td>중구 광희동·을지로5~7가·신당1동 일원</td><td class="org">2002.05.23</td></tr>
+<tr class="reg"><td class="kind">종로·청계</td><td>종로구 종로1~6가·서린동·관철동·관수동·예지동 일원, 창신동 일부지역(광화문 빌딩~숭인동 4거리)</td><td class="org">2006.03.30</td></tr>
+<tr class="reg"><td class="kind">잠실</td><td>송파구 잠실동·신천동·석촌동·송파동·방이동</td><td class="org">2012.03.15</td></tr>
+<tr class="reg"><td class="kind"><span class="hl">강남마이스</span></td><td>강남구 삼성동 무역센터 일대</td><td class="org">2014.12.18</td></tr>
+<tr class="reg"><td class="kind">홍대 문화예술</td><td>마포구 홍대 일대(서교동, 동교동, 합정동, 상수동 일원)</td><td class="org">2021.12.02</td></tr>
+<tr class="reg"><td class="kind">고터·세빛</td><td>서초구 반포한강공원 및 고속터미널 일대</td><td class="org">2024.12.26</td></tr>
+<tr class="per"><td class="gu" rowspan="2">부산(2)</td><td class="kind">해운대</td><td>해운대구 우동·중동·송정동·재송동 일원</td><td class="org">1994.08.31</td></tr>
+<tr class="per"><td class="kind">용두산·자갈치</td><td>중구 부평동·광복동·남포동 전역, 중앙동·동광동·대청동·보수동 일부</td><td class="org">2008.05.14</td></tr>
+<tr class="not"><td class="gu">대구(1)</td><td class="kind">동성로</td><td>성내1·2·3동, 남산1·2동, 대봉1동, 삼덕동 일원</td><td class="org">2024.07.22</td></tr>
+<tr class="not"><td class="gu">인천(1)</td><td class="kind">월미</td><td>중구 신포동·연안동·신흥동·북성동·동인천동 일원</td><td class="org">2001.06.26</td></tr>
+<tr class="not"><td class="gu">대전(1)</td><td class="kind">유성</td><td>유성구 봉명동·구암동·장대동·궁동·어은동·도룡동</td><td class="org">1994.08.31</td></tr>
+<tr class="des"><td class="gu" rowspan="5">경기<br>(5)</td><td class="kind">동두천</td><td>동두천시 중앙동·보산동·소요동 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="des"><td class="kind">평택시 송탄</td><td>평택시 서정동·신장1·2동·지산동·송북동 일원</td><td class="org">1997.05.30</td></tr>
+<tr class="des"><td class="kind">고양</td><td>고양시 일산 서구, 동구 일부 지역</td><td class="org">2015.08.06</td></tr>
+<tr class="des"><td class="kind">수원 화성</td><td>경기 수원시 팔달구, 장안구 일대</td><td class="org">2016.01.15</td></tr>
+<tr class="des"><td class="kind"><span class="hl">통일동산</span></td><td>경기도 파주시 탄현면 성동리, 법흥리 일원</td><td class="org">2019.4.30</td></tr>
+<tr class="mint"><td class="gu" rowspan="2">강원(2)</td><td class="kind">설악</td><td>속초시·고성군 및 양양군 일부 지역</td><td class="org">1994.08.31</td></tr>
+<tr class="mint"><td class="kind">대관령</td><td>강릉시·동해시·평창군·횡성군 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="reg"><td class="gu" rowspan="3">충북(3)</td><td class="kind">수안보온천</td><td>충주시 수안보면 온천리·안보리 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="reg"><td class="kind">속리산</td><td>보은군 내속리면 사내리·상판리·중판리·갈목리 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="reg"><td class="kind">단양</td><td>단양군 단양읍·매포읍 일원(2개 지역)</td><td class="org">2005.12.30</td></tr>
+<tr class="per"><td class="gu" rowspan="2">충남(2)</td><td class="kind">아산시온천</td><td>아산시 음봉면 신수리 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="per"><td class="kind">보령해수욕장</td><td>보령시 신흑동, 응천읍 독산·관당리, 남포면 월전리 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="not"><td class="gu" rowspan="2">전북(2)</td><td class="kind">무주 구천동</td><td>무주군 설천면·무풍면</td><td class="org">1997.01.18</td></tr>
+<tr class="not"><td class="kind">정읍 내장산</td><td>정읍시 내장지구·용산지구</td><td class="org">1997.01.18</td></tr>
+<tr class="des"><td class="gu" rowspan="2">전남(2)</td><td class="kind">구례</td><td>구례군 토지면·마산면·광의면·산동면 일부</td><td class="org">1997.01.18</td></tr>
+<tr class="des"><td class="kind">목포</td><td>북항·유달산·원도심·삼학도·갓바위·평화광장 일원</td><td class="org">2007.09.28</td></tr>
+<tr class="mint"><td class="gu" rowspan="4">경북(4)</td><td class="kind">경주시</td><td>경주 시내지구·보문지구·불국지구</td><td class="org">1994.08.31</td></tr>
+<tr class="mint"><td class="kind">백암온천</td><td>울진군 온정면 소태리 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="mint"><td class="kind">문경</td><td>문경시 문경읍·가은읍·마성면·농암면 일원</td><td class="org">2010.01.18</td></tr>
+<tr class="mint"><td class="kind">포항 영일만</td><td>영일대해수욕장, 해안도로, 환호공원, 송도해수욕장, 송도송림, 운하관, 포항운하, 죽도시장, 시내 실개천 일대</td><td class="org">2019.8.12</td></tr>
+<tr class="reg"><td class="gu" rowspan="2">경남(2)</td><td class="kind">부곡온천</td><td>창녕군 부곡면 거문리·사창리 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="reg"><td class="kind">미륵도</td><td>통영시 미수1·2동, 봉평동·도남동·산양읍 일원</td><td class="org">1997.01.18</td></tr>
+<tr class="per"><td class="gu">제주(1)</td><td class="kind">제주도</td><td>제주도 전역 (부속도서 제외)</td><td class="org">1994.08.31</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t10" data-imp="1">
+<h2><span class="no">표 ⑩</span> 관광거점도시 육성 사업 <span class="sm">— 사업기간 5년 ('20~'24년)</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">목표</td><td>① 방한 관광객의 지방방문 패러다임을 여는 <b>'대표도시'</b> 육성<br>② 외국인 관광객이 가고 싶은 <b>'모델도시'</b> 육성<br>③ 지역의 창의적 대응 역량 강화를 위한 <b>'지역주도형'</b> 정책 지원</td></tr>
+<tr class="reg"><td class="biz">지원대상</td><td>광역시(<span class="hl">국제관광도시 1곳</span>), 기초지자체(<span class="hl">지역관광거점도시 4곳</span>)</td></tr>
+<tr class="reg"><td class="biz">사업기간</td><td><b>5년 ('20~'24년)</b> — 국제 인지도 향상에 소요되는 시간 고려</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note" style="margin-top:10px">선정 도시와 비전</p>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th style="width:170px">선정 도시</th><th>비전</th></tr></thead>
+<tbody>
+<tr class="per"><td class="biz"><span class="hl">국제관광도시</span></td><td class="kind"><span class="hl">부산광역시</span></td><td>한국관광의 미래 원더풀 부산</td></tr>
+<tr class="not"><td class="biz" rowspan="4"><span class="hl">지역관광<br>거점도시</span></td><td class="kind"><span class="hl">강원 강릉시</span></td><td>Go East! Beautiful City, 강릉</td></tr>
+<tr class="not"><td class="kind"><span class="hl">전북 전주시</span></td><td>가장 한국적인 한(韓)문화 거점도시, 전주</td></tr>
+<tr class="not"><td class="kind"><span class="hl">전남 목포시</span></td><td>대한민국 서남해안권 관광거점 목포 실현</td></tr>
+<tr class="not"><td class="kind"><span class="hl">경북 안동시</span></td><td>글로벌 No.1 유교중심의 전통문화 관광도시</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t11" data-imp="1">
+<h2><span class="no">표 ⑪</span> 스마트 관광도시 <span class="sm">— 2020년</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:110px">유형</th><th style="width:130px">지자체</th><th style="width:250px">사업대상구역</th><th>사업명</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz" colspan="4" style="text-align:left;font-weight:400">4차 산업혁명 관련 <span class="hl">첨단기술(AI, AR/VR, 5세대 네트워크 등)</span>을 관광서비스에 접목시켜 관광객에 신속·편리하고 최적화된 관광서비스를 제공하고 이로 인해 누적된 정보를 분석해 지속적으로 관광 콘텐츠와 인프라를 발전시키는 도시</td></tr>
+<tr class="per"><td class="biz">관광명소형</td><td class="kind">경기 용인시</td><td>한국민속촌-G뮤지엄파크 일원</td><td>스마트 다다익선 용인, 'Link &amp; Stay'</td></tr>
+<tr class="not"><td class="biz" rowspan="2">강소형</td><td class="kind">강원 인제군</td><td>원대리 자작나무숲 일원</td><td>힐링 인제, 포레스트(FO:REST) 매직</td></tr>
+<tr class="not"><td class="kind">경남 통영시</td><td>동피랑-디피랑-서피랑 일원</td><td>투나잇 통영, 섬으로 가는 길</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t12">
+<h2><span class="no">표 ⑫</span> 관광두레 사업 <span class="sm">— 2013년 시범사업 실시</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:130px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">개념</td><td>① 관광두레는 <b>지역주민이 주체적·자발적·협력적으로 관광사업을 운영</b>하여 일자리와 수익을 창출하는 새로운 관광경영 형태 (<b>주민주도형 관광 경영 공동체</b>)<br>② 지역주민이 주도하여 숙박, 식음, 여행 알선, 체험, 기념품 등의 관광사업을 경영하는 관광사업체를 성공 창업하고 자립 발전하도록 지원하는 사업</td></tr>
+<tr class="per"><td class="biz">추진 배경</td><td>정부 또는 지방자치단체가 이미 조성한 공공시설을 활용하여 주민 주도로 지역의 관광자원을 연계해 관광사업화 함으로써 지역 내 수익과 일자리를 창출</td></tr>
+<tr class="not"><td class="biz">내용</td><td>① 신규 사업지는 기본적으로 <b>3년간</b> 사업이 추진되는 것을 원칙으로 하되, 3년 후 평가를 거쳐 <b>추가 2년간</b> 진행될 수 있다<br>② 주민사업체별로 <b>최대 5년간 지원</b>이 가능한 사업</td></tr>
+<tr class="des"><td class="biz">관광두레 PD</td><td>① 주민사업체의 육성 및 창업을 현장에서 지원하며, 지자체는 관광두레 사랑방 제공, 공동 홍보 마케팅, 부분적 예산 지원 등 행정 및 재정적 지원 등을 담당하는 활동가<br>② 주민사업체의 <b>발굴과 조직화, 역량 강화, 창업과 경영개선, 네트워크 구축</b>까지 밀착 지원</td></tr>
+<tr class="mint"><td class="biz">선정 지역</td><td><b>2024년 (8개)</b> — 경북 의성군 / 인천 중구 / 부산 수영구 / 울산 동구 / 경남 밀양시·함안군 / 광주 남구 / 전남 진도군<br><b>2025년 (5개)</b> — 경기 여주 / 강원 태백 / 충남 당진 / 전북 정읍 / 경남 함양</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t13" data-imp="1">
+<h2><span class="no">표 ⑬</span> 문화관광축제 지정 현황 <span class="sm">— 2026~2027년 · 1995년 시작 · 문화체육관광부장관 지정</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:80px">구분</th><th><span class="hl">문화관광축제 (27개)</span></th><th style="width:230px">명예 문화관광축제 (20개)</th><th style="width:230px">예비축제 (20개)</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">서울</td><td class="dash">―</td><td class="dash">―</td><td>강동선사문화축제</td></tr>
+<tr class="reg"><td class="biz">부산</td><td>광안리어방축제, 동래읍성축제, 부산국제록페스티벌</td><td class="dash">―</td><td>해운대 모래축제</td></tr>
+<tr class="reg"><td class="biz">대구</td><td>대구치맥페스티벌</td><td class="dash">―</td><td class="dash">―</td></tr>
+<tr class="reg"><td class="biz">인천</td><td><span class="hl">인천펜타포트음악축제</span>, 부평풍물대축제</td><td class="dash">―</td><td class="dash">―</td></tr>
+<tr class="reg"><td class="biz">광주</td><td>광주김치축제</td><td>추억의 충장축제</td><td class="dash">―</td></tr>
+<tr class="reg"><td class="biz">대전</td><td class="dash">―</td><td class="dash">―</td><td>대전사이언스페스티벌</td></tr>
+<tr class="reg"><td class="biz">울산</td><td>울산옹기축제</td><td class="dash">―</td><td>태화강마두희축제</td></tr>
+<tr class="reg"><td class="biz">세종</td><td>세종한글축제</td><td class="dash">―</td><td class="dash">―</td></tr>
+<tr class="per"><td class="biz">경기</td><td><span class="hl">수원화성문화제</span>, 시흥갯골축제, 연천구석기축제, 화성뱃놀이축제, 안성맞춤남사당바우덕이축제('26), 부천국제만화제('27)</td><td class="dash">―</td><td>여주오곡나루축제, 이천도자기축제, 부천국제만화제('26)</td></tr>
+<tr class="per"><td class="biz">강원</td><td>강릉커피축제, 정선아리랑제, 평창송어축제, 철원한탄강얼음트레킹</td><td><span class="hl">화천산천어축제</span>, 평창효석문화제, 춘천마임축제</td><td class="dash">―</td></tr>
+<tr class="not"><td class="biz">충북</td><td>음성품바축제('27)</td><td><span class="hl">영동난계국악축제</span></td><td>음성품바축제('26)</td></tr>
+<tr class="not"><td class="biz">충남</td><td>논산딸기축제</td><td><span class="hl">보령머드축제</span>, 천안흥타령축제, 금산인삼축제</td><td>계룡軍문화축제, 서산해미읍성축제, 한산모시문화제</td></tr>
+<tr class="des"><td class="biz">전북</td><td>순창장류축제('26)</td><td>김제지평선축제, 무주반딧불축제</td><td>임실N치즈축제, 진안홍삼축제, 장수한우랑사과랑축제</td></tr>
+<tr class="des"><td class="biz">전남</td><td>보성다향대축제, 영암왕인문화축제</td><td>담양대나무축제, 정남진장흥물축제, 함평나비축제</td><td>목포항구축제</td></tr>
+<tr class="mint"><td class="biz">경북</td><td>고령대가야축제, 청송사과축제</td><td><span class="hl">안동탈춤축제</span>, 문경찻사발축제, 영주풍기인삼축제</td><td>구미라면축제, 김천김밥축제, 포항국제불빛축제</td></tr>
+<tr class="mint"><td class="biz">경남</td><td>밀양아리랑대축제</td><td>진주유등축제, 하동야생차문화축제, 산청한방약초축제, 통영한산대첩축제</td><td>김해분청도자기축제, 진해군항제</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">1) 누적 재정지원 기간이 10년을 도과하여 지원 일몰된 축제들을 <b>명예 문화관광축제</b>로 지정하여 홍보마케팅 등 후속 지원<br>2) 광역지자체별 성장 잠재력을 가진 축제들을 <b>예비 축제</b>로 지정하여 2년간 지원 및 평가. '28~'29 문화관광축제 심사 시 문화관광축제 진입 여부 검정</p>
+</section>
+
+<div class="part"><span class="pn">3부</span><span class="pt">제3절 지속가능한 관광</span><span class="pj">교재 50~51쪽</span></div>
+
+<section id="t14" data-imp="1">
+<h2><span class="no">표 ⑭</span> 지속가능한 관광의 정의와 유형 9가지 <span class="sm"><b style="color:var(--gold)">★★★★</b></span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:210px">유형</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">정의</td><td><b>1996년 세계관광기구(UNWTO)</b> '여행 및 관광산업을 위한 <span class="hl">아젠다 21(Agenda 21 for the Travel &amp; Tourism Industry)</span>' : 지속가능한 관광의 개념을 정의하고 사회 경제, 자원의 보존관리, 정부 및 민간의 역할, 이행 방안 등 지구환경 보전을 위한 구체적인 지침을 제시하였다</td></tr>
+<tr class="per"><td class="biz">1) <span class="hl">생태관광</span><br>(ecotourism)</td><td>① <b>자연 보전을 위한 활동을 주목적</b>으로 하며, 관광객에게 환경보전의 학습기회를 제공하고 관광으로 인한 수익은 지역의 생태계 보전이나 지역주민에게 되돌아가는 관광의 한 형태<br>② 세 가지 요소 — 첫째, <b>생태적으로 민감한 자연자원</b>을 대상으로 하며 이를 보존하기 위한 관리시스템이 작동. 둘째, <b>지역주민이 주도</b>가 되어 그 이익이 지역에 환원됨. 셋째, 관광객에게 <b>생태계에 대한 이해를 높이고 태도 변화를 유도</b>. 지역 내 생태자원을 기반으로 한 <b>비교적 소규모</b>의 형태</td></tr>
+<tr class="not"><td class="biz">2) <span class="hl">녹색관광</span><br>(Green Tourism)</td><td>① 어원은 <b>프랑스</b>에서 관광활동이 일어나는 지역의 특성에 따라 푸른 해안에서의 관광을 <b>블루투어리즘</b>, 눈 덮인 산악지역에서의 관광을 <b>화이트 투어리즘</b>, 녹음이 짙은 전원에서의 관광을 <b>그린 투어리즘</b>이라 부른 데서 연유<br>② <span class="hl">농촌, 어촌, 산촌 등 회색 도시를 벗어난 지방의 녹색지역을 대상으로 한 관광형태</span>. 따라서 <b>전원관광, 농촌관광, 농업관광</b> 등으로도 불린다<br>③ 지구환경을 생각하여 탄소 절감을 추구하고 지역경제와 지역문화를 배려하는 관광</td></tr>
+<tr class="des"><td class="biz">3) 문화유산관광<br>(heritage tourism)</td><td>지역 내 <b>문화유산 및 자연유산의 보존</b>을 강조</td></tr>
+<tr class="mint"><td class="biz">4) 책임 관광<br>(Responsible Tourism)</td><td>여행자가 방문하는 지역의 <b>환경, 문화, 경제에 긍정적인 영향</b>을 미치도록 <b>책임감</b>을 가지고 여행하는 것</td></tr>
+<tr class="reg"><td class="biz">5) 공정 관광<br>(Fair Tourism)</td><td>여행 수익이 지역 주민에게 <b>공정하게 분배</b>되고, 현지 문화 존중과 노동자의 권리가 보장되는 여행</td></tr>
+<tr class="per"><td class="biz">6) 느린 관광<br>(Slow Tourism)</td><td>획일적인 관광 대신 지역의 삶과 문화, 자연을 <b>천천히 깊이 경험</b>하며 지속 가능한 여행</td></tr>
+<tr class="not"><td class="biz">7) 커뮤니티 기반 관광<br>(Community-Based Tourism)</td><td><b>지역 주민이 주도하고 참여</b>하여 관광자원을 관리하고 수익을 창출하는 형태</td></tr>
+<tr class="des"><td class="biz">8) 자원봉사 관광<br>(Voluntourism)</td><td><b>봉사 활동</b>을 통해 지역사회에 기여하면서 여행하는 형태로, 봉사와 관광의 결합</td></tr>
+<tr class="mint"><td class="biz">9) ESG 관광</td><td><b>환경(Environment), 사회(Social), 지배구조(Governance)</b>를 관광에 적용하여, 여행객 만족·기업 수익·지역사회 삶의 질을 균형 있게 추구하는 포괄적인 접근 방식</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 학원교재 「2026 관광통역안내사 수험서 관광학개론」(오민철 편저) 제4장 관광개발론, 교재 39~51쪽 원문 · 제1절 관광개발계획의 이론(39~40쪽) · 제2절 관광개발계획 및 개발사례(41~49쪽) · 제3절 지속가능한 관광(50~51쪽)</p>
+<p><b>이 표에서 뺀 것</b> — 별표도 없고 기출 9개년에 한 번도 안 나온 것 : 「2. 관광개발의 이념」 6가지(공익성·민주성·효율성·형평성·지역성·문화성, 39쪽) / 「5. 관광레저형 기업도시」(46쪽) / 「10. 해양레저관광 거점 조성 8개소」(49쪽)</p>
+<p><b>교재에 없는데 기출에 나온 것</b> — <b class="n">슬로시티</b>. 9개년 중 3회 출제(2018-48 세계 최초 국가 / 2020-38 한국 슬로시티 아닌 곳 / 2021-40 아시아 최초 가입지역)됐는데 교재 제4장에 해당 항목이 없습니다. 넣을지 알려주세요.</p>
+<p>★ 표시는 교재에 인쇄된 것 그대로입니다.</p>
+<p><b>색 읽는 법</b> — <span class="hl">노랑</span> = 기출 2013·2016·2018~2025년에 실제로 정답이나 보기로 나온 것만 / <b class="n">빨간 글씨</b> = 교재에 빨간펜으로 적힌 것 / <b class="n5">★★★★★</b> = 교재에 인쇄된 별</p>
+<p>2026 관광통역안내사 필기 대비 · 관광학개론 표 모음 제4장 · 2026-08-30</p>
+</footer>
+
+</div>
+</body>
+</html>

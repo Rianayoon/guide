@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광국사 1단원 · 선사시대</title>
+<style>
+@page{ size: A4; margin: 0; }
+@font-face{
+  font-family:'Pretendard';
+  font-weight:45 920;
+  font-style:normal;
+  font-display:swap;
+  src:url('fonts/PretendardVariable.woff2') format('woff2');
+}
+:root{
+  --paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+  --pal:#7A6A5A;   /* 구석기 */
+  --neo:#5F7F52;   /* 신석기 */
+  --bro:#A85436;   /* 청동기 */
+  --iro:#46525F;   /* 철기 */
+  --gold:#A8822C;  /* 강조 */
+  --warn:#9C2F2F;
+  --ok:#3E7A4E;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+    --pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+    --gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+  line-height:1.75; -webkit-font-smoothing:antialiased;
+  word-break:keep-all; overflow-wrap:break-word;
+}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+
+/* ---------- header ---------- */
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+
+/* ---------- section ---------- */
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+
+/* ---------- timeline ---------- */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--pal)} .tl .t2::before{background:var(--neo)}
+.tl .t3::before{background:var(--bro)} .tl .t4::before{background:var(--iro)}
+.tl .t1 b{color:var(--pal)} .tl .t2 b{color:var(--neo)} .tl .t3 b{color:var(--bro)} .tl .t4 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:repeat(2,1fr)} .tl div{border-bottom:1px solid var(--line)}}
+
+/* ---------- story card ---------- */
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--pal)} .s1 .ttl{color:var(--pal)} .s1{border-top:3px solid var(--pal)}
+.s2 .num{background:var(--neo)} .s2 .ttl{color:var(--neo)} .s2{border-top:3px solid var(--neo)}
+.s3 .num{background:var(--bro)} .s3 .ttl{color:var(--bro)} .s3{border-top:3px solid var(--bro)}
+.s4 .num{background:var(--iro)} .s4 .ttl{color:var(--iro)} .s4{border-top:3px solid var(--iro)}
+
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--pal)} .s2 b.k{color:var(--neo)} .s4 b.k{color:var(--iro)}
+
+/* ---------- table ---------- */
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:660px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.era{font-weight:800;white-space:nowrap}
+tr.r1 td.era{color:var(--pal)} tr.r2 td.era{color:var(--neo)}
+tr.r3 td.era{color:var(--bro)} tr.r4 td.era{color:var(--iro)}
+
+/* ---------- compare grid ---------- */
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.swr{background:rgba(192,57,43,.14);border:1px solid #C0392B;color:#A8342A}
+.side.swb{background:rgba(20,20,20,.10);border:1px solid #2A2A2A;color:#1E1E1E}
+@media (prefers-color-scheme: dark){ .side.swr{color:#E4796A;border-color:#E4796A} .side.swb{background:rgba(255,255,255,.06);color:#C6CBD1;border-color:#8A9099} }
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+
+/* ---------- star box ---------- */
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+
+/* ---------- quiz ---------- */
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .yr{font-size:12px;color:var(--ink-2);margin-left:auto;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .stem{background:var(--paper-2);border-radius:9px;padding:11px 14px;margin:11px 0;font-size:14.5px;color:var(--ink-2)}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.o{color:var(--ok)} .mark.x{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+
+/* ---------- 색 표기 (붉은/검은 간토기) ---------- */
+.sw{display:inline-block;width:.72em;height:.72em;border-radius:50%;vertical-align:-.04em;margin-right:.28em;border:1px solid rgba(0,0,0,.3)}
+.sw.r{background:#C0392B} .sw.b{background:#141414;border-color:rgba(255,255,255,.35)}
+.t-red{color:#B03A2E;font-weight:800}
+.t-black{color:#141414;font-weight:800}
+@media (prefers-color-scheme: dark){ .t-red{color:#E4796A} .t-black{color:#C6CBD1} .sw.b{background:#0C0C0C;border-color:#6C737C} }
+
+/* ---------- 빈출 등급표 ---------- */
+.freq{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+.freq table{min-width:700px}
+.freq td.era{width:78px}
+.grade{display:inline-block;font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:6px;white-space:nowrap}
+.g3{background:rgba(168,130,44,.18);color:var(--gold);border:1px solid var(--gold)}
+.g2{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.item{display:inline-block;margin:0 10px 4px 0;white-space:nowrap}
+.item i{font-style:normal;font-size:11.5px;color:var(--ink-2);font-weight:700;margin-left:2px}
+.item.hi{font-weight:800}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:var(--radius);padding:14px 18px;margin-top:14px;font-size:14px}
+.zero b{color:var(--warn)}
+.note{font-size:13px;color:var(--ink-2);margin-top:10px}
+
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.story,.cmp .c,.stars,.tblwrap,.freq,.pick,.term,.simile,.redo,.zero{break-inside:avoid}table{font-size:12.5px}header.top{padding-top:0}}/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+  <symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+  <symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+</svg>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 1단원</div>
+  <h1>선사시대
+    <small>구석기 → 신석기 → 청동기 → 철기 · 도구가 바뀌면 사람 사는 방식이 바뀐다</small>
+  </h1>
+  <div class="meta">
+    <span class="chip hot">출제 비중 청동기 &gt; 신석기 &gt;&gt; 철기(역대 1회)</span>
+    <span class="chip">2026-08-12 · D-24</span>
+    <span class="chip">기출 15문항 수록 (2013~2025)</span>
+  </div>
+</header>
+
+<!-- ================= 타임라인 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 먼저</h2>
+  <p class="sub">한국사의 첫 페이지는 <b>"무엇으로 도구를 만들었느냐"</b>의 역사입니다. 도구가 바뀌면 → 먹고사는 방법이 바뀌고 → 사는 곳이 바뀌고 → 결국 사회 구조까지 바뀝니다. 이 인과의 사슬만 잡으면 1단원은 끝납니다.</p>
+  <div class="tl">
+    <div class="t1"><b>구석기</b><span>약 70만 년 전 ~ 1만 년 전</span><span>돌을 <b>깨서</b> · 이동</span></div>
+    <div class="t2"><b>신석기</b><span>약 8000년 전 ~</span><span>돌을 <b>갈아서</b> · 정착</span></div>
+    <div class="t3"><b>청동기</b><span>BC 2000 ~ 1500년경</span><span>청동 · <b>계급 발생</b></span></div>
+    <div class="t4"><b>철기</b><span>BC 5세기 ~</span><span>철 · 중국과 교류</span></div>
+  </div>
+  <div class="pick">
+    <svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+    <div><b>한 줄 공식:</b> 뗀 → 간 → 청동 → 철 은 곧 <b>이동 → 정착 → 계급 → 국가</b> 의 순서입니다. 도구만 외우지 말고 반드시 그 시대의 "사회 성격"과 세트로 외우세요.</div>
+  </div>
+</section>
+
+<!-- ================= 스토리 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 먼저 이해하기</h2>
+  <p class="sub">표를 보기 전에, 이 네 편의 이야기를 먼저 읽어 주세요. 표는 그 다음에 봐야 머리에 붙습니다.</p>
+
+  <!-- 구석기 -->
+  <article class="story s1">
+    <div class="head"><div class="num">1</div><div class="ttl">구석기 — 돌을 깨서 쓰던 시대</div><div class="era">약 70만 년 전 ~ 1만 년 전</div></div>
+    <div class="body">
+      <p>아주 먼 옛날, 사람들은 돌을 손에 쥐고 다른 돌에다 힘껏 내리쳤습니다. 그러면 돌이 쪼개지면서 날카로운 면이 생기죠. 그 날카로운 조각으로 고기를 자르고, 나무를 찍고, 가죽을 벗겼습니다. 이렇게 <b class="k">"떼어내서"</b> 만든 돌 도구를 <b class="k">뗀석기</b>라고 부릅니다.</p>
+      <div class="term"><b>뗀석기</b>가 뭐냐면 — 돌을 깨뜨려 만든 도구입니다. '뗀'은 '떼어냈다'는 뜻이에요. 아직 돌을 <b>갈아서</b> 다듬는 기술은 몰랐습니다. 대표 선수는 <b>주먹도끼</b>(손에 쥐는 만능 도구), <b>슴베찌르개</b>(자루에 끼워 쓰는 찌르개), 찍개·긁개·밀개.</p></div>
+      <p>먹을 것을 스스로 기르는 방법은 상상도 못 했습니다. 그러니 방법은 하나뿐 — 사냥하고, 물고기 잡고, 열매 주워 먹는 것. 그런데 그 동네 짐승과 열매를 다 먹어치우면? 짐을 싸서 다른 곳으로 가야 합니다. 그래서 구석기 사람들은 평생 <b class="k">이동 생활</b>을 했습니다.</p>
+      <p>이동하며 사니까 집을 지을 이유가 없습니다. 그날그날 <b class="k">동굴</b>이나 <b class="k">바위 그늘</b>에서 자고, 강가에서는 나뭇가지로 대충 얽은 <b class="k">막집</b>을 지었다가 버리고 떠났습니다.</p>
+      <p>그리고 아주 중요한 결과 하나 — 다 같이 이동하며 다 같이 사냥해서 그날 먹어치우니, <b>모아둘 재산 자체가 없습니다.</b> 재산이 없으면 "누가 더 가졌냐"로 다툴 일도 없죠. 그래서 구석기는 무리 지어 살되 <b class="k">계급이 없는 평등한 무리사회</b>였습니다.</p>
+      <div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 사무실 없이 매일 다른 현장으로 옮겨 다니는 임시 팀입니다. 짐을 늘릴 수가 없으니 창고도 없고, 창고가 없으니 "내 것"도 없고, "내 것"이 없으니 팀장도 사장도 없습니다.</div></div>
+      <div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>유적지는 이 4개만:</b> <b>연천 전곡리</b>(아슐리안형 주먹도끼 — 시험 최다 단골), 상원 검은모루 동굴, 공주 석장리, 청원 두루봉 동굴(<b>흥수아이</b> 인골이 나온 곳).</div></div>
+    </div>
+  </article>
+
+  <!-- 신석기 -->
+  <article class="story s2">
+    <div class="head"><div class="num">2</div><div class="ttl">신석기 — 돌을 "갈기" 시작하니 인생이 바뀜</div><div class="era">약 8000년 전 ~</div></div>
+    <div class="body">
+      <p>어느 순간 사람들이 새로운 기술을 알아냅니다. 돌을 깨는 게 아니라 <b class="k">가는</b> 것. 숫돌에 문질러서 갈면 내가 <b>원하는 모양</b>이 나옵니다. 날을 얇고 곧게 세울 수도 있고, 구멍을 뚫을 수도 있습니다. 이렇게 갈아서 만든 도구가 <b class="k">간석기</b>입니다.</p>
+      <p>도구가 정교해지자 그전엔 못 하던 일이 가능해집니다. 땅을 파고 흙을 뒤집는 일 — 즉 <b class="k">농사</b>입니다. 이때 지은 건 벼가 아니라 <b>조·피·수수</b> 같은 <b class="k">밭농사</b>였고, 동시에 짐승을 잡아 가두고 기르는 <b class="k">목축</b>도 시작됩니다.</p>
+      <p>여기서 도미노가 넘어갑니다. 씨를 뿌려놨는데 떠날 수가 없죠. "여기 있어야 가을에 거둔다." 그래서 <b class="k">정착 생활</b>이 시작되고, 사람들은 강가와 바닷가에 땅을 조금 파고 지붕을 덮은 <b class="k">움집</b>을 짓습니다. 이 신석기 움집은 <b class="k">화덕이 집 한가운데</b>에 있습니다. (이건 시험에 나옵니다 — 아래 비교카드 참고.)</p>
+      <p>정착하니 또 필요한 게 생깁니다. 거둔 곡식을 어디다 담지? 그래서 처음으로 흙을 빚어 불에 구운 <b class="k">토기</b>를 만듭니다.</p>
+      <div class="term"><b>토기 순서가 함정입니다.</b> 신석기의 <b>가장 처음</b> 토기는 빗살무늬 토기가 아니라 <b>이른 민무늬토기(원시무문토기)</b>·<b>덧무늬토기</b>입니다. 그 유명한 <b>빗살무늬 토기</b>는 신석기 <b>후기</b>에 가서야 널리 쓰였습니다. "신석기 최초 토기 = 빗살무늬"라고 쓰여 있으면 <b>틀린 문장</b>입니다.</div>
+      <p>옷도 만들기 시작합니다. <b class="k">가락바퀴</b>로 실을 뽑고 <b class="k">뼈바늘</b>로 꿰맵니다. 이걸 원시 수공업이라고 부릅니다.</p>
+      <div class="term"><b>가락바퀴</b>가 뭐냐면 — 가운데 구멍 뚫린 동그란 추입니다. 여기에 실을 감아 돌리면서 실을 꼬아 뽑는 도구예요. <b>실을 뽑아 옷·그물을 만드는 도구</b>이지, 절대 <b>고기잡이 도구가 아닙니다</b>. 기출에 "가락바퀴를 이용하여 고기잡이를 하였다"로 나오면 그게 오답입니다.</div>
+      <p>마지막으로 마음의 변화. 왜 비가 오는지, 왜 흉년이 드는지 모르니 사람들은 자연에 영혼이 있다고 믿기 시작합니다. <b class="k">애니미즘</b>(해·물·바위 등 만물에 영혼이 있다), <b class="k">토테미즘</b>(우리 부족은 곰의 자손이다처럼 동식물을 조상으로 섬김), <b class="k">샤머니즘</b>(무당이 하늘과 사람을 이어준다). 이 원시신앙이 등장한 게 <b>신석기부터</b>입니다.</p>
+      <p>다만 아직 <b class="k">계급은 없습니다.</b> 농사를 시작했어도 겨우 먹을 만큼이라 남는 게 없거든요. 피가 섞인 사람들끼리 모여 사는 평등한 <b class="k">씨족사회</b>입니다.</p>
+      <div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 드디어 '내 집'과 '창고'가 생긴 것입니다. 그런데 창고에 넣을 게 딱 먹을 만큼뿐이라, 아직 이웃집보다 부자인 사람은 없습니다.</div></div>
+      <div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>유적지:</b> 서울 암사동, 양양 오산리, 봉산 지탑리, 부산 동삼동, 인천 소야도. — 전부 <b>강가·바닷가</b>라는 공통점을 기억하세요.</div></div>
+    </div>
+  </article>
+
+  <!-- 청동기 -->
+  <article class="story s3">
+    <div class="head"><div class="num">3</div><div class="ttl">청동기 — 남는 게 생기자 계급이 생김</div><div class="era">BC 2000 ~ 1500년경</div></div>
+    <div class="body">
+      <p>구리에 주석을 섞으면 단단한 금속이 나옵니다. 이게 <b class="k">청동</b>입니다. 그런데 청동은 재료도 귀하고 만들기도 어려워서 <b>아주 비쌌습니다.</b> 이 "비쌌다"는 한 마디가 청동기 시대 문제의 절반을 설명합니다.</p>
+      <p>같은 시기, 농사에 큰 변화가 옵니다. 일부 지역에서 <b class="k">벼농사</b>가 시작된 것입니다. 벼는 조·피·수수보다 훨씬 많이 나옵니다. 그러자 처음으로 <b class="k">잉여 생산물</b>, 즉 <b>먹고도 남는 것</b>이 생깁니다.</p>
+      <p>남는 게 생기면 반드시 따라오는 질문이 있습니다. <span class="quote">"그럼 이 남은 건 누구 거지?"</span> 여기서 <b class="k">사유재산</b>이 생기고, 더 많이 가진 사람과 덜 가진 사람이 갈리면서 <b class="k">계급</b>이 태어납니다. 힘과 재산을 쥔 사람이 <b class="k">군장(족장)</b>이 되어 사람들을 다스리기 시작합니다.</p>
+      <div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사 강조 —</b> "계급이 처음 발생한 시대는?", "지배자가 처음 등장한 시대는?", "국가가 등장하기 시작한 시대는?" 이 질문의 답은 <b>전부 청동기 "부터"</b>입니다. <b>'부터'</b>라는 말이 "여기서 처음 시작됐다"는 뜻이라는 걸 놓치면 함정에 걸립니다.</div></div>
+      <p>군장은 자기가 왜 남을 다스려도 되는지 설명해야 합니다. 그래서 이렇게 말합니다. <span class="quote">"나는 하늘의 자손이다. 하늘이 나를 내려보내 너희를 다스리게 했다."</span> 이 생각을 예전 교재는 <b class="k">선민사상</b>이라 불렀습니다.</p>
+      <div class="term"><b>선민사상 = 천손사상</b>, 같은 뜻입니다. 강사 말로는 최근 시험에서는 <b>"하늘의 자손", "천손"</b>이라는 표현으로 바뀌어 출제되는 추세이니 <b>두 단어를 하나로 묶어서</b> 기억해 두세요.</div>
+      <p>가진 자가 생기면 뺏으러 오는 자도 생깁니다. 그래서 마을 둘레에 나무 울타리(<b class="k">목책</b>)를 세우고 도랑(<b class="k">환호</b>)을 팠습니다. 기출 지문에 "마을 유적에서 목책과 환호가 발견되었다"가 나오면 그건 <b>무조건 청동기</b>입니다.</p>
+      <p>이제 아까 그 "청동은 비쌌다"로 돌아옵니다. 비싼 청동을 농사짓는 데 썼을까요? 아닙니다. 청동은 <b class="k">무기</b>와 <b class="k">제사 도구</b>, 즉 <b>지배자의 권위를 보여주는 물건</b>으로만 썼습니다. 실제 농사는 여전히 돌과 나무 도구로 지었습니다 — <b class="k">반달돌칼</b>(이삭을 자르는 돌칼), <b class="k">홈자귀</b>, <b class="k">바퀴날도끼</b>.</p>
+      <div class="term"><b>거푸집</b>이 뭐냐면 — 붕어빵 틀입니다. 틀에 녹인 청동물을 부어 굳히면 똑같은 모양의 청동기를 여러 개 찍어낼 수 있어요.</div>
+      <div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 회사에 처음으로 <b>연봉 차이</b>가 생긴 순간입니다. 사장은 자기 방에 "하늘이 내린 사람"이라는 명패를 걸어둡니다. 그 명패가 바로 <b>비파형동검</b>과 <b>거친무늬거울</b>이에요. 직원들이 실제로 쓰는 도구는 여전히 값싼 돌칼이고요.</div></div>
+      <div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>대표 유물:</b> 비파형동검, 거친무늬거울, 민무늬토기·미송리식토기·<span class="sw r"></span><span class="t-red">붉은간토기</span>, 반달돌칼, <b>고인돌</b>·돌널무덤. <b>유적지:</b> 부여 송국리, 의주 미송리, 화순 대곡리. — 그리고 이때부터 움집 <b>화덕이 벽 쪽</b>으로 옮겨갑니다(여기서 "아랫목"이라는 말이 나왔습니다).</div></div>
+    </div>
+  </article>
+
+  <!-- 철기 -->
+  <article class="story s4">
+    <div class="head"><div class="num">4</div><div class="ttl">철기 — 쇠로 농사짓고, 중국과 거래하다</div><div class="era">BC 5세기 ~</div></div>
+    <div class="body">
+      <p>철은 청동과 정반대입니다. <b>흔하고, 싸고, 훨씬 단단합니다.</b> 그래서 이번엔 진짜로 <b class="k">농기구와 무기를 철로</b> 만들기 시작합니다. 밭 가는 도구가 돌에서 쇠로 바뀌니 생산력이 폭발적으로 늘어납니다.</p>
+      <p>그럼 청동은 어떻게 됐을까요? 실용 도구 자리에서 밀려나 <b class="k">제사용·의식용</b>으로만 남습니다. 이 시기의 청동 유물이 <b class="k">세형동검</b>과 <b class="k">잔무늬거울</b>이고, 토기는 <span class="sw b"></span><span class="t-black">검은간토기</span>입니다. — <span class="t-red">청동기는 구리라서 <b>붉은</b>간토기</span>, <span class="t-black">철기는 쇠라서 <b>검은</b>간토기</span>. 색깔 그대로입니다.</p>
+      <div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 청동이 '금장식'이었다면 철은 '스테인리스'입니다. 금은 이제 진열장(제사)으로 들어가고, 실제 일은 값싸고 튼튼한 스테인리스가 다 합니다.</div></div>
+      <p>그리고 이 시대 유적에서 <b>중국 돈</b>이 나옵니다 — <b class="k">명도전·반량전·오수전</b>. 돈이 나온다는 건 <b>중국과 장사를 했다</b>는 증거죠. 창원 다호리에서는 <b class="k">붓</b>까지 나왔습니다. 붓이 나왔다는 건 <b>글자(한자)를 쓰기 시작했다</b>는 증거입니다.</p>
+      <p>무덤도 바뀝니다. 청동기의 고인돌 대신 <b class="k">널무덤</b>(나무 관)과 <b class="k">독무덤</b>(큰 항아리에 시신을 넣는 무덤)이 퍼집니다.</p>
+      <div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>다행인 소식:</b> 강사 말로는 철기는 지금까지 <b>딱 한 번</b> 출제되었을 만큼 비중이 낮습니다. 시간이 부족하면 <b>청동기 · 신석기</b>부터 완벽하게 잡으세요.</div></div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= 전체 참고표 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 시대별 총정리표 (하나도 빠짐없이)</h2>
+  <p class="sub">이야기로 이해했으면, 이제 이 표로 사실을 확인하세요. 시험은 결국 이 표의 <b>가로줄 하나를 뒤섞어</b> 냅니다.</p>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>시대</th><th>도구</th><th>경제 · 사회</th><th>대표 유적</th><th>대표 유물</th></tr></thead>
+    <tbody>
+      <tr class="r1">
+        <td class="era">구석기</td>
+        <td>뗀석기<br>(주먹도끼·슴베찌르개·찍개·긁개·밀개)</td>
+        <td>이동생활<br>무리사회(<b>평등</b>)<br>사냥·어로·채집<br>동굴·바위그늘·막집</td>
+        <td>연천 전곡리<br>상원 검은모루동굴<br>공주 석장리<br>청원 두루봉동굴(흥수아이 인골)</td>
+        <td><b>주먹도끼</b>, 슴베찌르개</td>
+      </tr>
+      <tr class="r2">
+        <td class="era">신석기</td>
+        <td>간석기</td>
+        <td>정착생활(움집, <b>화덕 중앙</b>)<br>농경(조·피·수수)·목축 시작<br><b>씨족사회</b><br>원시신앙(애니미즘·토테미즘·샤머니즘)</td>
+        <td>서울 암사동<br>양양 오산리<br>봉산 지탑리<br>부산 동삼동<br>인천 소야도</td>
+        <td>이른민무늬토기·덧무늬토기 → (후기)<b>빗살무늬토기</b><br>가락바퀴·뼈바늘(원시 수공업)</td>
+      </tr>
+      <tr class="r3">
+        <td class="era">청동기</td>
+        <td>청동(<b>무기·제사용만</b>)<br>농기구는 여전히 돌·나무</td>
+        <td><b>사유재산·계급 발생</b><br>군장(족장)국가 등장<br>선민(천손)사상<br>목책·환호, 암각화<br><b>벼농사</b> 시작<br>화덕이 벽 쪽(→ "아랫목")</td>
+        <td>부여 송국리<br>의주 미송리<br>화순 대곡리</td>
+        <td><b>반달돌칼</b>·홈자귀·바퀴날도끼<br><b>비파형동검</b>, 거친무늬거울<br>민무늬·미송리식·<span class="sw r"></span><span class="t-red">붉은간토기</span><br><b>고인돌</b>·돌널무덤</td>
+      </tr>
+      <tr class="r4">
+        <td class="era">철기</td>
+        <td>철제 농기구·무기</td>
+        <td>생산력 급증<br>중국과 교류(화폐·문자)<br>청동기는 <b>의식용으로 격하</b></td>
+        <td>창원 다호리(붓 출토)</td>
+        <td>세형동검, 잔무늬거울, <span class="sw b"></span><span class="t-black">검은간토기</span><br>명도전·반량전·오수전(중국화폐)<br>붓<br><b>널무덤·독무덤</b></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ================= 빈출 등급 암기표 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 빈출 핵심 암기표 — 13년 기출로 직접 센 것</h2>
+  <p class="sub">위 총정리표가 "하나도 빠짐없이"라면, 이 표는 <b>"이것만 외워도 대부분 맞는다"</b>입니다.
+  2013~2025년 1단원 기출 <b>27문항</b>의 <b>문제·보기 원문</b>에 그 단어가 실제로 몇 번 등장했는지 세어서 등급을 매겼습니다. 괄호 안 숫자가 등장 횟수예요.</p>
+
+  <div class="freq">
+  <table>
+    <thead><tr><th>시대</th><th><span class="grade g3">★★★ 이건 무조건</span></th><th><span class="grade g2">★★ 그 다음</span></th></tr></thead>
+    <tbody>
+      <tr class="r1">
+        <td class="era">구석기</td>
+        <td><span class="item hi">주먹도끼<i>4</i></span><span class="item hi">연천 전곡리<i>4</i></span></td>
+        <td><span class="item">상원 검은모루<i>3</i></span><span class="item">공주 석장리<i>2</i></span><span class="item">뗀석기<i>2</i></span><span class="item">동굴·바위그늘·막집<i>다수</i></span></td>
+      </tr>
+      <tr class="r2">
+        <td class="era">신석기</td>
+        <td><span class="item hi">빗살무늬토기<i>7</i></span><span class="item hi">간석기<i>4</i></span><span class="item hi">가락바퀴<i>4</i></span><span class="item hi">양양 오산리<i>4</i></span></td>
+        <td><span class="item">토테미즘<i>3</i></span><span class="item">서울 암사동<i>2</i></span><span class="item">덧무늬토기<i>2</i></span><span class="item">뼈바늘<i>2</i></span><span class="item">화덕 중앙<i>2</i></span></td>
+      </tr>
+      <tr class="r3">
+        <td class="era">청동기</td>
+        <td><span class="item hi">비파형동검<i>5</i></span><span class="item hi">반달돌칼<i>5</i></span><span class="item hi">고인돌<i>4</i></span></td>
+        <td><span class="item"><span class="sw r"></span><span class="t-red">붉은간토기</span><i>3</i></span><span class="item">거친무늬거울<i>3</i></span><span class="item">미송리식토기<i>2</i></span><span class="item">민무늬토기<i>2</i></span><span class="item">목책·환호<i>2</i></span></td>
+      </tr>
+      <tr class="r4">
+        <td class="era">철기</td>
+        <td><span class="item hi">독무덤<i>3</i></span></td>
+        <td><span class="item">세형동검<i>2</i></span><span class="item">명도전<i>2</i></span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="zero">
+    <p style="margin:0 0 8px"><b>★ 1회만 나온 것</b> — 여유 있을 때: 흥수아이·청원 두루봉(1) · 슴베찌르개(1) · 웅기 굴포리(1) · 봉산 지탑리(1) · 부산 동삼동(1) · <b>인천 소야도(1)</b> · 조개껍데기 가면(1) · 애니미즘(1) · 샤머니즘(1) · 천손(선민)사상(1) · 거푸집(1) · 바퀴날도끼(1) · 창원 다호리·붓(1) · 널무덤(1) · <span class="sw b"></span><span class="t-black">검은간토기</span>(1) · 오수전(1)</p>
+    <p style="margin:0"><b>0회 — 13년간 기출에 한 번도 안 나온 것</b>: <b>화순 대곡리</b> · <b>부여 송국리</b>(유적 이름으로는 0회) · <b>의주 미송리</b>(유적 이름으로는 0회, 단 "미송리<u>식</u> 토기"는 2회) · 홈자귀 · 잔무늬거울 · 반량전 · 이른민무늬토기(문제·보기 기준. 단 <b>해설·함정</b>으로는 반복 등장)</p>
+  </div>
+
+  <div class="pick" style="margin-top:14px">
+    <svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+    <div><b>궁금해하신 것에 대한 답 —</b> <b>인천 소야도</b>는 2016년 문제 지문에 딱 <b>한 번</b>("인천 소이도"), <b>화순 대곡리</b>는 <b>13년간 0번</b> 나왔습니다. 안 들어보신 게 맞고, 강사가 안 짚은 것도 이유가 있습니다. <b>부여 송국리·의주 미송리</b>도 "유적 이름"으로는 출제된 적이 없어요 — 다만 <b>미송리식 토기</b>는 청동기 대표 토기로 2번 나왔으니 <b>토기 이름으로만</b> 외우면 됩니다.</div>
+  </div>
+
+  <p class="note">※ 이 집계는 <b>우리 기출정리본(관광국사기출.md, 2013~2025년 215문항 중 1단원 27문항)</b>의 문제·보기 원문 기준입니다. 정답 여부와는 별개로 "그 단어가 시험지에 등장한 횟수"라서, 오답 보기로 나온 것도 포함됩니다 — <b>오답 보기로 자주 나온다는 것 자체가 시험이 노리는 함정</b>이라는 뜻이라 그대로 세는 편이 유용합니다.</p>
+</section>
+
+<!-- ================= 비교카드 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+  <p class="sub">1단원에서 점수를 깎아먹는 지점은 딱 이 여섯 군데입니다.</p>
+  <div class="cmp">
+
+    <div class="c">
+      <h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 간토기 색깔</h4>
+      <div class="vs">
+        <div class="side swr"><b><span class="sw r"></span>붉은간토기</b>청동기</div>
+        <div class="mid">vs</div>
+        <div class="side swb"><b><span class="sw b"></span>검은간토기</b>철기</div>
+      </div>
+      <p class="why" style="text-align:center;font-size:15px;margin-top:12px">
+        <span class="t-red">청동기 = 구리 = 붉다</span><br>
+        <span class="t-black">철기 = 쇠 = 검다</span>
+      </p>
+      <p class="why">토기 이름의 <b>색깔이 곧 그 시대의 금속 색</b>입니다. 이 한 줄이면 다시는 안 헷갈립니다.</p>
+    </div>
+
+    <div class="c">
+      <h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 거울 무늬</h4>
+      <div class="vs">
+        <div class="side a"><b>거친무늬거울</b>청동기</div>
+        <div class="mid">vs</div>
+        <div class="side b"><b>잔무늬거울</b>철기</div>
+      </div>
+      <p class="why">기술이 <b>거친 것 → 잔(정교한) 것</b> 순서로 발전. 동검도 같은 원리 — <b>비파형(청동기) → 세형(철기)</b>.</p>
+    </div>
+
+    <div class="c">
+      <h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 움집 화덕 위치</h4>
+      <div class="vs">
+        <div class="side n"><b>중앙</b>신석기</div>
+        <div class="mid">vs</div>
+        <div class="side a"><b>벽 쪽</b>청동기~철기</div>
+      </div>
+      <p class="why">청동기 때 화덕이 벽으로 가면서 <b>"아랫목"</b>이라는 말이 생겼습니다. 지문에 "움집 중앙에 화덕"이 나오면 <b>신석기</b>.</p>
+    </div>
+
+    <div class="c">
+      <h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 무덤으로 시대 찍기</h4>
+      <div class="vs">
+        <div class="side a"><b>고인돌·돌널무덤</b>청동기</div>
+        <div class="mid">vs</div>
+        <div class="side b"><b>널무덤·독무덤</b>철기</div>
+      </div>
+      <p class="why">외우는 법 <b>"고청철독"</b> — <b>고</b>인돌은 <b>청</b>동기, <b>철</b>기는 <b>독</b>무덤.</p>
+    </div>
+
+    <div class="c">
+      <h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 신석기 "최초" 토기</h4>
+      <div class="vs">
+        <div class="side n"><b>이른민무늬·덧무늬</b>신석기 초기 ○</div>
+        <div class="mid">vs</div>
+        <div class="side b"><b>빗살무늬</b>신석기 후기</div>
+      </div>
+      <p class="why">"신석기 최초의 토기는 빗살무늬토기이다" → <b>틀린 문장</b>. 단, "신석기 대표 토기 = 빗살무늬"는 <b>맞는 문장</b>입니다.</p>
+    </div>
+
+    <div class="c">
+      <h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 이건 신석기가 아닙니다</h4>
+      <div class="vs">
+        <div class="side n"><b>가락바퀴·뼈바늘</b>옷·그물 만들기</div>
+        <div class="mid">≠</div>
+        <div class="side b"><b>고기잡이</b>오답</div>
+      </div>
+      <p class="why">"가락바퀴로 고기잡이를 하였다"는 매년 나오는 함정. 그리고 <b>"도둑질한 자는 노비로 삼았다"는 고조선 8조법</b>이지 신석기가 아닙니다(신석기=평등사회).</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 강사 강조 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+  <div class="stars">
+    <ul>
+      <li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>출제 비중:</b> 청동기 &gt; 신석기 &gt;&gt; 철기(역대 딱 1회). 시간이 없으면 <b>청동기·신석기</b>부터.</div></li>
+      <li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>계급·군장·국가 = 전부 "청동기부터".</b> '부터'라는 말에 걸리지 마세요.</div></li>
+      <li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>선민사상 = 천손사상.</b> 요즘은 "하늘의 자손·천손"으로 출제되는 추세.</div></li>
+      <li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>아슐리안형 주먹도끼 = 연천 전곡리.</b> "그냥 외우셔야 돼요"라고 못박은 항목.</div></li>
+      <li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>고인돌</b>은 그냥 "고인돌"로만 나와도 맞는 문장. 다만 <b>"바둑판식(남방식)"</b> 같은 세부 명칭이 엉뚱한 지역·시대 설명과 함께 나오면 함정일 수 있으니 한 번 더 확인.</div></li>
+      <li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>최다 출제 유형:</b> 시대별 유물·유적 짝짓기(거의 매년) + 무덤 양식으로 시대 구분.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 기출 테스트 ================= -->
+<section>
+  <h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 실전 기출 15문항 — 레벨 테스트</h2>
+  <p class="sub">2013~2025년 실제 기출에서 1단원 문항만 골랐습니다. 출제 비중대로 <b>구석기 4 · 신석기 5 · 청동기 4 · 철기 1 · 통합 1</b>로 구성했습니다. 보기를 눌러 답을 고르고, 다 풀면 <b>채점하기</b>를 누르세요. <b>권장 시간 15분</b>.</p>
+
+  <div class="quizbar">
+    <svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+    <span class="timer" id="timer">00:00</span>
+    <span class="prog" id="prog">0 / 15 선택</span>
+    <button class="btn" id="grade">채점하기</button>
+    <button class="btn ghost" id="reset">다시 풀기</button>
+  </div>
+
+  <div id="quiz"></div>
+
+  <div class="score" id="score">
+    <div class="big" id="scoreNum">0점</div>
+    <div class="lab" id="scoreLab"></div>
+    <div class="brk" id="scoreBrk"></div>
+
+    <div class="wronglist" id="wrongList"></div>
+
+    <div class="acts">
+      <button class="btn" id="retryWrong">틀린 문제만 다시 풀기</button>
+      <button class="btn ghost" id="retryAll">15문항 전체 다시 풀기</button>
+    </div>
+
+    <div class="exportbox">
+      <div class="lb"><svg width="16" height="16" style="color:var(--gold)"><use href="#i-book"/></svg> 오답노트용 기록 — 이걸 복사해서 채팅에 붙여넣으면 오답노트 파일로 저장해 드립니다</div>
+      <textarea id="exportTxt" readonly></textarea>
+      <div class="acts" style="margin-top:10px;justify-content:flex-start">
+        <button class="btn" id="copyBtn">복사하기</button>
+        <span class="hint" id="copyMsg"></span>
+      </div>
+      <p class="hint">※ 이 페이지는 결과를 저장하지 않습니다(새로고침하면 사라짐). 위 기록을 채팅에 붙여넣어 주시면 <code>01_AI작업자료/오답노트/</code>에 파일로 남기고 7일 뒤 복습 일정까지 잡아 둡니다.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>근거</b> — 본문: <code>02_ 과목별교재/md파일/관광국사.md</code> 1단원 (핵심.pdf 2p) · 기출: <code>관광국사기출.md</code> 1단원 Q1~Q27 (2013~2025 실제 출제 문항 원문)</p>
+  <p><b>이해가 안 되면 → 강의 위치</b>: 관광국사·자원 기출문제풀이, <b>7월 3일 영상 약 2시간 23분 ~ 3시간 28분</b> 구간.</p>
+  <p>2026-08-12 제작 · 시험일 2026-09-05 (D-24)</p>
+</footer>
+
+</div>
+
+<script>
+const QS = [
+ {n:1, yr:"2016", era:"구석기",
+  q:"구석기 문화에 관한 설명으로 옳은 것은?",
+  o:["격지·팔매돌·밀개는 조리 도구이다","움집에 거주하였으며 난방을 위한 화덕이 있었다","석기 제작 기법은 간석기에서 뗀석기로 발전하였다","연천 전곡리 유적에서 주먹도끼 등의 유물이 출토되었다"],
+  a:3, e:"① 팔매돌은 <b>사냥용 뗀석기</b>지 조리 도구가 아닙니다. ② 구석기는 이동생활이라 움집이 아니라 <b>동굴·막집</b>. ③ 순서가 반대 — <b>뗀석기 → 간석기</b>입니다. ④ 연천 전곡리의 <b>아슐리안형 주먹도끼</b>가 정답."},
+
+ {n:2, yr:"2013", era:"구석기",
+  q:"우리나라에서 아슐리안형 주먹도끼가 출토된 곳은?",
+  o:["상원 검은모루 유적","연천 전곡리 유적","공주 석장리 유적","웅기 굴포리 유적"],
+  a:1, e:"넷 다 구석기 유적이 맞지만, <b>아슐리안형 주먹도끼</b>의 대표 출토지는 <b>연천 전곡리</b>입니다. 강사가 \"그냥 외우셔야 돼요\"라고 못박은 항목."},
+
+ {n:3, yr:"2014", era:"구석기",
+  q:"다음의 \"흥수 아이\"가 살았을 시기의 생활상에 관한 설명으로 옳은 것을 모두 고른 것은?",
+  stem:"ㄱ. 뼈바늘·가락바퀴 등을 이용한 원시적 수공업 등장<br>ㄴ. 동굴·바위그늘·강가 막집 거주<br>ㄷ. 지상 가옥 일반화, 널무덤·독무덤 확산<br>ㄹ. 짐승·물고기잡이 및 열매·뿌리 채취",
+  o:["ㄴ, ㄷ","ㄴ, ㄹ","ㄱ, ㄴ, ㄷ","ㄱ, ㄴ, ㄹ"],
+  a:1, e:"흥수아이 인골이 나온 곳은 <b>청원 두루봉 동굴</b> → 동굴이니까 <b>구석기</b>. ㄱ 뼈바늘·가락바퀴는 <b>신석기</b>, ㄷ 지상가옥·널무덤·독무덤은 <b>철기</b>라서 탈락. 남는 건 ㄴ·ㄹ."},
+
+ {n:4, yr:"2015", era:"구석기",
+  q:"구석기 유적으로 옳지 않은 것은?",
+  o:["양양 오산리 유적","연천 전곡리 유적","공주 석장리 유적","상원 검은모루 유적"],
+  a:0, e:"강원도 <b>양양 오산리</b>는 바닷가 <b>신석기</b> 유적입니다. 나머지 셋은 모두 구석기 유적."},
+
+ {n:5, yr:"2025", era:"신석기",
+  q:"신석기 시대에 관한 설명으로 옳지 않은 것은?",
+  o:["옷이나 그물을 만들었다","간석기를 사용하여 농사를 지었다","도둑질을 한 자는 노비로 삼았다","토기를 만들어 곡식을 저장하였다"],
+  a:2, e:"\"도둑질하면 노비로 삼는다\"는 <b>계급이 있다</b>는 뜻 → <b>고조선 8조법</b>입니다. 신석기는 평등한 씨족사회라 성립할 수 없습니다. (참고: 부여는 훔친 물건의 <b>12배 배상</b>.)"},
+
+ {n:6, yr:"2022", era:"신석기",
+  q:"신석기 시대에 관한 설명으로 옳은 것을 모두 고른 것은?",
+  stem:"ㄱ. 서울 암사동, 양양 오산리 유적<br>ㄴ. 움집에서의 정착 생활 시작<br>ㄷ. 고인돌과 독무덤 제작<br>ㄹ. 농업 생산력 발달로 계급 분화",
+  o:["ㄱ, ㄴ","ㄱ, ㄹ","ㄴ, ㄷ","ㄷ, ㄹ"],
+  a:0, e:"ㄷ <b>고인돌=청동기, 독무덤=철기</b>. ㄹ 농업 생산력 발달로 <b>계급이 분화된 것도 청동기부터</b>. 그래서 ㄱ·ㄴ만 신석기."},
+
+ {n:7, yr:"2016", era:"신석기",
+  q:"다음 유적지(양양 오산리 · 봉산 지탑리 · 부산 동삼동 · 인천 소이도)와 관련된 시대에 관한 설명으로 옳지 않은 것은?",
+  o:["가락바퀴를 이용하여 고기잡이를 하였다","종교적인 필요에 의해 조개껍데기 가면이 제작되었다","진흙을 빚어 불에 구워 만든 빗살무늬 토기를 사용하였다","탄화된 곡식이 출토되어 식량 생산 단계였음을 알 수 있다"],
+  a:0, e:"<b>가락바퀴는 뼈바늘과 함께 옷·그물을 만드는 도구</b>입니다. 고기잡이 도구가 아니에요. 강사: \"가락바퀴 갖고 고기 잡아먹는다고 생각하면 큰일 난다.\""},
+
+ {n:8, yr:"2015", era:"신석기",
+  q:"다음의 유물(탄화된 좁쌀, 덧무늬 토기 등)이 등장하는 시대 생활상에 관한 설명으로 옳은 것은?",
+  o:["조, 보리, 콩 등 밭작물과 벼농사를 본격적으로 지었다","뗀석기와 뼈 도구를 가지고 사냥과 채집을 하였다","움집 중앙에 화덕이 설치되고, 출입문이 남쪽으로 나 있었다","거푸집을 이용하여 비파형 동검을 만들었다"],
+  a:2, e:"탄화 좁쌀·덧무늬 토기 → <b>신석기</b>. 신석기 움집은 <b>화덕이 중앙</b>(청동기부터 벽 쪽 = \"아랫목\"). ① 벼농사 본격화와 ④ 거푸집·비파형동검은 <b>청동기</b>, ② 뗀석기는 <b>구석기</b>."},
+
+ {n:9, yr:"2019", era:"신석기",
+  q:"다음 중 신석기 시대에 사용한 토기를 모두 고른 것은?",
+  stem:"ㄱ. 빗살무늬 토기 &nbsp; ㄴ. 미송리식 토기 &nbsp; ㄷ. 붉은 간토기 &nbsp; ㄹ. 덧무늬 토기",
+  o:["ㄱ, ㄴ","ㄱ, ㄹ","ㄴ, ㄷ","ㄷ, ㄹ"],
+  a:1, e:"<b>미송리식 토기</b>와 <b>붉은 간토기</b>는 <b>청동기</b> 대표 토기입니다. 신석기 토기는 이른민무늬·<b>덧무늬</b>(초기) → <b>빗살무늬</b>(후기)."},
+
+ {n:10, yr:"2013", era:"청동기",
+  q:"청동기 시대 사회상에 관한 설명으로 옳지 않은 것은?",
+  o:["사적 소유와 지배·피지배의 관계가 발생하였다","약탈과 정복을 위한 집단 간의 전쟁이 잦았다","농업 생산력의 증가에 따라 잉여 생산물이 나타났다","혈연을 바탕으로 하는 씨족이 사회의 기본 구성 단위였다"],
+  a:3, e:"<b>혈연 중심 씨족사회</b>는 <b>신석기</b> 이야기입니다. 청동기는 사적 소유·계급·전쟁·잉여생산물이 특징."},
+
+ {n:11, yr:"2013", era:"청동기",
+  q:"고인돌이 만들어지던 시대의 사회상에 관한 설명으로 옳지 않은 것은?",
+  o:["반달돌칼을 이용하여 곡물의 이삭을 잘랐다","철제 호미와 쟁기 등을 사용하여 농사를 지었다","수장의 권위를 상징하는 청동검이 사용되었다","민무늬 토기, 붉은 간 토기 등을 만들어 사용하였다"],
+  a:1, e:"<b>고인돌 = 청동기</b>. 그런데 <b>철제 호미·쟁기</b>는 <b>철기</b> 이야기라 시대가 어긋납니다. 청동기 농기구는 여전히 <b>돌·나무</b>(반달돌칼 등)."},
+
+ {n:12, yr:"2022", era:"청동기",
+  q:"청동기 시대에 관한 설명으로 옳은 것은?",
+  o:["거친무늬 거울을 만들었다","주로 동굴이나 막집에서 살았다","빗살무늬 토기에 음식을 저장하였다","소를 이용하여 땅을 갈고 농사를 지었다"],
+  a:0, e:"<b>거친무늬 거울</b> = 제사장이 의식에 쓰던 청동 도구 → 청동기. ② 동굴·막집은 <b>구석기</b>, ③ 빗살무늬는 <b>신석기</b>, ④ 소를 이용한 밭갈이(우경)는 <b>신라 지증왕(6세기)</b>."},
+
+ {n:13, yr:"2014", era:"청동기",
+  q:"선사 시대 대표적 유물의 연결로 옳은 것은?",
+  o:["구석기 시대 - 비파형 동검","신석기 시대 - 고인돌","신석기 시대 - 반달(형)돌칼","청동기 시대 - 미송리식 토기"],
+  a:3, e:"비파형동검·고인돌·반달돌칼은 <b>전부 청동기</b> 유물이라 ①②③은 시대가 어긋납니다. <b>미송리식 토기</b>도 청동기 대표 토기(고조선 세력범위를 보여주는 증거)."},
+
+ {n:14, yr:"2015", era:"철기",
+  q:"어느 박물관의 철기 시대 전시실에 들어갔다. 전시실에서 볼 수 있는 유물을 모두 고른 것은?",
+  stem:"ㄱ. 오수전 &nbsp; ㄴ. 빗살무늬 토기 &nbsp; ㄷ. 독무덤 &nbsp; ㄹ. 가락바퀴 &nbsp; ㅁ. 슴베찌르개",
+  o:["ㄱ, ㄴ","ㄱ, ㄷ","ㄴ, ㄹ","ㄷ, ㅁ"],
+  a:1, e:"<b>오수전</b>=철기시대 중국 교류 화폐, <b>독무덤</b>=철기. 빗살무늬토기·가락바퀴는 <b>신석기</b>, 슴베찌르개는 <b>구석기</b>."},
+
+ {n:15, yr:"2015", era:"통합",
+  q:"( )에 들어갈 내용을 옳게 나열한 것은?",
+  stem:"\"신석기 시대에는 대자연의 모든 만물에 영혼이 있다고 믿는 <b>( 가 )</b>이 등장하였다. 청동기 시대의 <b>( 나 )</b>은 중국 요령성 지역에서 집중적으로 출토되고 있지만, 한반도 남부에서도 많이 확인되고 있다.\"",
+  o:["가 - 토테미즘, 나 - 세형동검","가 - 애니미즘, 나 - 비파형동검","가 - 샤머니즘, 나 - 반달돌칼","가 - 토테미즘, 나 - 명도전"],
+  a:1, e:"만물에 영혼이 있다고 믿는 것은 <b>애니미즘</b>(토테미즘=동식물 조상 숭배, 샤머니즘=무당). 요령성에 집중 출토되는 청동기 유물은 <b>비파형동검</b>(세형동검·명도전은 철기)."}
+];
+
+const NUMS = ["①","②","③","④"];
+let ACTIVE = QS.slice();
+let picked = {};
+let graded = false, t0 = null, tick = null, elapsed = 0;
+let lastWrong = [];
+
+function render(){
+  const box = document.getElementById('quiz');
+  box.innerHTML = ACTIVE.map((q,i)=>`
+  <div class="q" id="q${i}">
+    <div class="qh">
+      <span class="qn">Q${q.n}</span>
+      <span class="qt">${q.q}</span>
+      <span class="yr">${q.yr} · ${q.era}</span>
+    </div>
+    ${q.stem?`<div class="stem">${q.stem}</div>`:''}
+    <ul class="opts">
+      ${q.o.map((o,j)=>`<li data-q="${i}" data-o="${j}"><span class="no">${NUMS[j]}</span><span>${o}</span></li>`).join('')}
+    </ul>
+    <div class="exp"><b>왜 그런가 —</b> ${q.e}</div>
+  </div>`).join('');
+
+  box.querySelectorAll('.opts li').forEach(li=>{
+    li.addEventListener('click',()=>{
+      if(graded) return;
+      startTimer();
+      const qi = +li.dataset.q, oi = +li.dataset.o;
+      picked[qi] = oi;
+      li.parentNode.querySelectorAll('li').forEach(x=>x.classList.remove('sel'));
+      li.classList.add('sel');
+      updateProg();
+    });
+  });
+  updateProg();
+}
+function updateProg(){
+  document.getElementById('prog').textContent = `${Object.keys(picked).length} / ${ACTIVE.length} 선택`;
+}
+function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }
+function startTimer(){
+  if(t0) return;
+  t0 = performance.now();
+  tick = setInterval(()=>{
+    elapsed = Math.floor((performance.now()-t0)/1000);
+    document.getElementById('timer').textContent = fmt(elapsed);
+  },500);
+}
+function grade(){
+  if(graded) return;
+  graded = true;
+  if(tick) clearInterval(tick);
+  if(t0) elapsed = Math.floor((performance.now()-t0)/1000);
+  let right = 0;
+  const byEra = {};
+  lastWrong = [];
+  ACTIVE.forEach((q,i)=>{
+    const el = document.getElementById('q'+i);
+    el.classList.add('graded');
+    const lis = el.querySelectorAll('.opts li');
+    const sel = picked[i];
+    const ok = sel === q.a;
+    if(ok) right++; else lastWrong.push({q:q, mine:sel});
+    byEra[q.era] = byEra[q.era] || [0,0];
+    byEra[q.era][1]++; if(ok) byEra[q.era][0]++;
+    lis.forEach((li,j)=>{
+      li.classList.remove('sel');
+      if(j===q.a){ li.classList.add('correct');
+        li.insertAdjacentHTML('beforeend','<span class="mark o">정답</span>'); }
+      if(j===sel && !ok){ li.classList.add('wrong');
+        li.insertAdjacentHTML('beforeend','<span class="mark x">내가 고른 답</span>'); }
+    });
+    if(sel===undefined){
+      el.querySelector('.opts').insertAdjacentHTML('beforebegin','<div class="stem" style="color:var(--warn)">답을 고르지 않았습니다.</div>');
+    }
+  });
+  const pct = Math.round(right/ACTIVE.length*100);
+  const sc = document.getElementById('score');
+  sc.classList.add('on');
+  document.getElementById('scoreNum').textContent = pct + '점';
+  let msg;
+  if(pct>=80) msg = '1단원은 이미 잡혀 있습니다. 표만 한 번 훑고 다음 단원으로 넘어가세요.';
+  else if(pct>=60) msg = '합격선은 넘겼지만 안전권은 아닙니다. 틀린 문항의 시대 구분을 다시 확인하세요.';
+  else if(pct>=40) msg = '기초는 있는데 시대 짝짓기에서 흔들립니다. 위 비교카드 6개를 집중적으로 보세요.';
+  else msg = '괜찮습니다 — 오늘이 기준선을 만드는 날입니다. 스토리 4편을 다시 읽고 내일 아침에 재도전하세요.';
+  document.getElementById('scoreLab').innerHTML = `${ACTIVE.length}문항 중 <b>${right}문항</b> 정답 · 소요 ${fmt(elapsed)} · ${msg}`;
+  document.getElementById('scoreBrk').innerHTML =
+    Object.entries(byEra).map(([k,v])=>`<span>${k} ${v[0]}/${v[1]}</span>`).join('');
+
+  // 틀린 문항 목록
+  const wl = document.getElementById('wrongList');
+  if(lastWrong.length===0){
+    wl.innerHTML = '<b>틀린 문항 없음</b> — 전부 맞히셨습니다.';
+  } else {
+    wl.innerHTML = `<b>틀린 문항 ${lastWrong.length}개</b>` +
+      '<ul>' + lastWrong.map(w=>{
+        const mine = (w.mine===undefined) ? '무응답' : `${NUMS[w.mine]} ${w.q.o[w.mine]}`;
+        return `<li><b>Q${w.q.n}</b> (${w.q.yr}·${w.q.era}) — 내 답 <b>${mine}</b> / 정답 <b>${NUMS[w.q.a]} ${w.q.o[w.q.a]}</b></li>`;
+      }).join('') + '</ul>';
+  }
+  document.getElementById('retryWrong').disabled = (lastWrong.length===0);
+
+  // 오답노트용 텍스트
+  const d = document.getElementById('exportTxt').dataset.date || '';
+  let txt = `[오답노트 기록] 관광국사 1단원 선사시대\n`;
+  txt += `점수: ${right}/${ACTIVE.length} (${pct}점) · 소요시간 ${fmt(elapsed)}\n`;
+  txt += `시대별: ` + Object.entries(byEra).map(([k,v])=>`${k} ${v[0]}/${v[1]}`).join(' / ') + `\n`;
+  txt += `틀린 문항 ${lastWrong.length}개\n`;
+  lastWrong.forEach(w=>{
+    const mine = (w.mine===undefined) ? '무응답' : NUMS[w.mine];
+    txt += `- Q${w.q.n} (${w.q.yr}·${w.q.era}) ${w.q.q}\n`;
+    txt += `   내 답 ${mine}${w.mine!==undefined?' '+w.q.o[w.mine]:''} / 정답 ${NUMS[w.q.a]} ${w.q.o[w.q.a]}\n`;
+  });
+  document.getElementById('exportTxt').value = txt;
+
+  window.scrollTo({top: sc.offsetTop - 90, behavior:'smooth'});
+}
+function resetQuiz(set){
+  ACTIVE = set;
+  graded=false; t0=null; elapsed=0; if(tick) clearInterval(tick);
+  picked = {};
+  document.getElementById('timer').textContent='00:00';
+  document.getElementById('score').classList.remove('on');
+  document.getElementById('copyMsg').textContent='';
+  render();
+  window.scrollTo({top:document.getElementById('quiz').offsetTop-140, behavior:'smooth'});
+}
+document.getElementById('grade').addEventListener('click', grade);
+document.getElementById('reset').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryAll').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryWrong').addEventListener('click', ()=>{
+  if(!lastWrong.length) return;
+  resetQuiz(lastWrong.map(w=>w.q));
+});
+document.getElementById('copyBtn').addEventListener('click', async ()=>{
+  const ta = document.getElementById('exportTxt');
+  const msg = document.getElementById('copyMsg');
+  try{
+    await navigator.clipboard.writeText(ta.value);
+    msg.textContent = '복사됐습니다. 채팅에 붙여넣어 주세요.';
+  }catch(e){
+    ta.removeAttribute('readonly'); ta.select(); ta.setSelectionRange(0, 99999);
+    try{ document.execCommand('copy'); msg.textContent='복사됐습니다.'; }
+    catch(_){ msg.textContent='길게 눌러서 직접 복사해 주세요.'; }
+    ta.setAttribute('readonly','');
+  }
+});
+render();
+</script>
+</body>
+</html>

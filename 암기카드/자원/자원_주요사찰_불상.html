@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>주요 사찰 · 불상 암기카드</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#C6871A;--w:#C4272B;--neo:#2E8B4F;--bro:#C2491E;--iro:#1F4E70;--pal:#6B5738;--gL:#8F6510;--iroL:#1B3A52;--broL:#963012;--neoL:#1F6B34;--palL:#4A3B26;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#F0C040;--w:#F0524F;--neo:#5FCB7E;--bro:#E8703D;--iro:#4A8FC2;--gL:#F5C93A;--iroL:#6FA8D0;--broL:#F08050;--neoL:#7ED98F;--palL:#B08A5C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px;margin-bottom:14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r3b{grid-template-columns:1fr 1fr 1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.bt{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--i2);font-weight:800;margin:0 7px}
+.big+.big{margin-top:5px}
+.big small{font-size:.7em;font-weight:600;color:var(--i2)}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.trap{background:var(--p2);border:1px solid var(--l);border-left:3px solid var(--w);border-radius:11px;padding:10px 12px;font-size:15px;font-weight:700;line-height:1.55;margin-bottom:9px}
+.trap .tl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--w);margin-right:9px}
+.trap b{color:var(--w);font-weight:800}
+.trap .sep{color:var(--l);font-weight:400;margin:0 4px}
+@media (max-width:960px){
+ .r3,.r3b,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .chip{font-size:15px}
+ .trap{font-size:17px}
+ .eq{font-size:15px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:10mm}.card{break-inside:auto;page-break-inside:auto}.row,.box,.hd,tr,td,th{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<div class="card">
+<div class="hd">
+  <h1>삼 보 사 찰</h1>
+  <span class="tag">★★★</span>
+  <span class="tag">주요 사찰</span>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt" style="display:block;font-size:18px">통도사 · 불보사찰</div>
+    <div class="big">자장 창건 · 경남 양산 · 계율종</div>
+    <div class="big">진신사리 봉안 <span class="sep">/</span> 대웅전에 불상 X</div>
+    <div class="big"><b>5대 적멸보궁</b></div>
+  </div>
+  <div class="box b2">
+    <div class="bt" style="display:block;font-size:18px">해인사 · 법보사찰</div>
+    <div class="big">경남 합천 가야산 국립공원</div>
+    <div class="big">팔만대장경 <span class="sep">/</span> 장경판전 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(세계문화유산)</small></div>
+  </div>
+  <div class="box b3">
+    <div class="bt" style="display:block;font-size:18px">송광사 · 승보사찰</div>
+    <div class="big">전남 순천 조계산 도립공원</div>
+    <div class="big">조계종 발상지</div>
+  </div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>의 상 이 창 건 한 절</h1>
+  <span class="tag">주요 사찰</span>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt" style="display:block;font-size:18px">부석사 ★★★</div>
+    <div class="big">화엄종의 본찰</div>
+    <div class="big">선묘각</div>
+    <div class="big">무량수전 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(주심포)</small> · 소조여래좌상</div>
+  </div>
+  <div class="box b2">
+    <div class="bt" style="display:block;font-size:18px">낙산사</div>
+    <div class="big">강원도 양양</div>
+    <div class="big">2005년 화재</div>
+  </div>
+  <div class="box b3">
+    <div class="bt" style="display:block;font-size:18px">범어사</div>
+    <div class="big">부산 금정산</div>
+    <div class="big">화엄종 사찰</div>
+  </div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>그 밖 의 사 찰</h1>
+  <span class="tag">주요 사찰</span>
+</div>
+
+<div class="row r2">
+  <div class="box b4">
+    <div class="bt" style="display:block;font-size:18px">화엄사</div>
+    <div class="big">지리산 국립공원</div>
+    <div class="big">각황전 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(석가모니불)</small></div>
+    <div class="big">대웅전 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(비로자나불)</small> · 3층석탑</div>
+  </div>
+  <div class="box b5">
+    <div class="bt" style="display:block;font-size:18px">법주사</div>
+    <div class="big">보은 속리산 국립공원</div>
+    <div class="big">팔상전 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(5층 목탑)</small> · 대웅전</div>
+    <div class="big">쌍사자 석등</div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b4">
+    <div class="bt" style="display:block;font-size:18px">백담사</div>
+    <div class="big">설악산 국립공원</div>
+    <div class="big">신흥사의 말사 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(조선 정조 때 백담사로 개칭)</small></div>
+    <div class="big">봉정암 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(5대 적멸보궁)</small></div>
+  </div>
+  <div class="box b5">
+    <div class="bt" style="display:block;font-size:18px">월정사</div>
+    <div class="big">평창 오대산 국립공원</div>
+    <div class="big">월정사 9층석탑</div>
+    <div class="big">상원사 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(5대 적멸보궁)</small></div>
+  </div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>5 대 적 멸 보 궁</h1>
+  <span class="tag">주요 사찰</span>
+</div>
+
+<div class="row r3">
+  <div class="box"><div class="bt" style="display:block;font-size:18px">통도사</div><div class="big">경남 양산</div></div>
+  <div class="box b2"><div class="bt" style="display:block;font-size:18px">상원사</div><div class="big">평창 오대산 <small style="font-weight:400;color:var(--i2);font-size:10.5px;letter-spacing:-.02em">(중대)</small></div></div>
+  <div class="box b3"><div class="bt" style="display:block;font-size:18px">봉정암</div><div class="big">인제 설악산</div></div>
+</div>
+
+<div class="row r2">
+  <div class="box b4"><div class="bt" style="display:block;font-size:18px">법흥사</div><div class="big">영월 사자산</div></div>
+  <div class="box b5"><div class="bt" style="display:block;font-size:18px">정암사</div><div class="big">정선 태백산</div></div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>불 상</h1>
+  <span class="tag">주요 사찰</span>
+</div>
+
+<div class="row r3">
+  <div class="box"><div class="bt" style="display:block;font-size:18px">수인</div><div class="big">부처의 손 / 손가락</div></div>
+  <div class="box b2"><div class="bt" style="display:block;font-size:18px">육계</div><div class="big">정수리의 상투 모양 머리</div></div>
+  <div class="box b3"><div class="bt" style="display:block;font-size:18px">나발</div><div class="big">부처님의 머리카락</div></div>
+</div>
+
+<div class="row r3">
+  <div class="box b4">
+    <div class="bt" style="display:block;font-size:18px">현존하는 가장 오래된 불상</div>
+    <div class="big">고구려 <span class="sep">/</span> 금동여래입상</div>
+  </div>
+  <div class="box b5">
+    <div class="bt" style="display:block;font-size:18px">세계 최대 석불 입상</div>
+    <div class="big">고려 <span class="sep">/</span> 논산 관촉사 석조미륵보살입상</div>
+  </div>
+  <div class="box">
+    <div class="bt" style="display:block;font-size:18px">통일신라 3대 금동불상</div>
+    <div class="big">불국사 비로자나불 좌상 · 불국사 아미타여래 좌상 · 경주 백률사 금동 약사여래 입상</div>
+  </div>
+</div>
+
+</div>
+
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>고조선 암기카드</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#C6871A;--w:#C4272B;--neo:#2E8B4F;--bro:#C2491E;--iro:#1F4E70;--pal:#6B5738;--gL:#8F6510;--iroL:#1B3A52;--broL:#963012;--neoL:#1F6B34;--palL:#4A3B26;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#F0C040;--w:#F0524F;--neo:#5FCB7E;--bro:#E8703D;--iro:#4A8FC2;--gL:#F5C93A;--iroL:#6FA8D0;--broL:#F08050;--neoL:#7ED98F;--palL:#B08A5C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r3b{grid-template-columns:1fr 1fr 1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.bt{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--l);font-weight:400;margin:0 2px}
+.big small{font-size:.7em;font-weight:600;color:var(--i2)}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.trap{background:var(--p2);border:1px solid var(--l);border-left:3px solid var(--w);border-radius:11px;padding:10px 12px;font-size:15px;font-weight:700;line-height:1.55;margin-bottom:9px}
+.trap .tl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--w);margin-right:9px}
+.trap b{color:var(--w);font-weight:800}
+.trap .sep{color:var(--l);font-weight:400;margin:0 4px}
+.myth{font-size:12px;color:var(--i2);line-height:1.62}
+.myth b{color:var(--i);font-weight:800}
+.myth u{text-decoration:none;border-bottom:2px solid var(--g);font-weight:800;color:var(--i)}
+.mean{margin-top:5px;font-size:12px;color:var(--i2)}
+.mean b{color:var(--g);font-weight:800}
+@media (max-width:960px){
+ .r3,.r3b,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .chip{font-size:15px}
+ .trap{font-size:17px}
+ .eq{font-size:15px}
+ .myth,.mean{font-size:13.5px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:10mm}.card{break-inside:auto;page-break-inside:auto}.row,.box,.hd,tr,td,th{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+<div class="card">
+
+<div class="hd">
+  <h1>고 조 선</h1>
+  <span class="tag">BC 2333 건국</span>
+  <span class="tag">청동기 시대</span>
+  <div class="sub"><em>BC 108 왕검성 함락 → 멸망</em></div>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">성격</div>
+    <div class="big">제정일치 — 단군왕검</div>
+    <div class="eq">단군(제사장) + 왕검(정치) · 하늘의 자손</div>
+  </div>
+  <div class="box b2">
+    <div class="bt">유물</div>
+    <ul class="rel">
+      <li><span class="n">1</span>비파형동검</li>
+      <li><span class="n">2</span>미송리식 토기</li>
+      <li><span class="n">3</span>탁자식 고인돌</li>
+    </ul>
+  </div>
+  <div class="box b3">
+    <div class="bt">관직</div>
+    <div class="big">상 · 대부 · 장군</div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b4">
+    <div class="bt">8조법</div>
+    <div class="big">사람을 죽이면 <b>사형</b><span class="sep">/</span>상해를 입히면 <b>곡물로 배상</b><span class="sep">/</span>도둑질하면 <b>노비</b></div>
+  </div>
+  <div class="box b5">
+    <div class="bt">사회</div>
+    <div class="big">생명·재산 중시 · 농경사회 · 계급과 형벌 · 노비 · 순장</div>
+  </div>
+</div>
+
+<div class="row" style="grid-template-columns:1fr">
+  <div class="box b3">
+    <div class="bt">영역</div>
+    <div class="big">요령 지방 중심 → 한반도로 확장</div>
+  </div>
+</div>
+
+
+<div class="box b5">
+  <div class="bt" style="color:var(--palL)">단군신화 — 『삼국유사』</div>
+  <div class="myth"><b>환웅</b>이 <b>천부인 3개</b>와 무리 <b>3,000명</b>을 이끌고 <b>태백산 신단수</b> 아래로 내려와 그곳을 <b>신시</b>라 하였고, <b>풍백·우사·운사</b>를 거느리고 인간 세상 <b>360여 가지 일</b>을 다스렸으며, <b>널리 인간을 이롭게</b> 하였다. 곰이 변한 <b>웅녀</b>와 혼인해 <b>단군왕검</b>을 낳았고, 그가 <b>아사달</b>에 도읍을 정해 나라 이름을 <b>조선</b>이라 했다.</div>
+</div>
+
+<div class="hd" style="margin-top:14px">
+  <h1 style="font-size:26px">위 만 조 선</h1>
+  <span class="tag">BC 194 성립</span>
+  <span class="tag">철기 시대</span>
+  <div class="sub"><em>BC 108 왕검성 함락 → 멸망</em></div>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">유입</div>
+    <div class="big">위만 남하</div>
+    <div class="eq">연(燕)나라 유이민 <b>무리 약 1,000여 명</b>을 이끌고 고조선으로 옴</div>
+  </div>
+  <div class="box b2">
+    <div class="bt">성립</div>
+    <div class="big">기원전 194년</div>
+    <div class="eq">위만이 <b>준왕</b>(단군조선의 마지막 왕)을 몰아내고 왕위 차지</div>
+  </div>
+  <div class="box b4">
+    <div class="bt">특징</div>
+    <ul class="rel">
+      <li><span class="n">1</span>철기문화 본격 수용</li>
+      <li><span class="n">2</span>중계무역(한 ↔ 남방)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row" style="grid-template-columns:1fr">
+  <div class="box b3">
+    <div class="bt">멸망</div>
+    <div class="big">기원전 108년 <b>왕검성</b> 함락 — 한 무제의 침입으로 멸망</div>
+    <div class="eq">이때의 왕은 <b>우거왕</b>(위만의 손자)</div>
+  </div>
+</div>
+
+</div>
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

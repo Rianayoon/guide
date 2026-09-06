@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 33단원 · 전통 가면극(탈춤)과 남사당놀이</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65;white-space:pre-line}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.stack,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.stack .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.stack .p b{display:block;font-size:15px;margin-bottom:6px;color:var(--bro)}
+.stack .p span{font-size:12.5px;color:var(--ink-2);display:block}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}
+</style>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">&larr; 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 33단원</div>
+<h1>전통 가면극(탈춤) — 그리고 남사당놀이
+<small>가면극은 <b>지역마다 이름이 다릅니다</b>. 중부=산대놀이 · 경남=오광대/야류 · 황해도=탈춤 · 함남=사자놀음 · 안동=별신굿탈놀이</small>
+</h1>
+<div class="meta"><span class="chip hot">오광대·야류 A</span><span class="chip hot">문둥이 마당 유무</span><span class="chip">2022 유네스코 18개</span><span class="chip">남사당놀이 6마당</span><span class="chip">예상문제 12문항</span></div>
+</header>
+
+<div class="notice">
+<b>강사가 이 단원을 두고 남긴 경고입니다.</b> &ldquo;여기서 여러분들 특히 <b>탈춤 가면극은 정말 복습 잘 해놓으셔야 됩니다.</b> 나오면 여러 가지 변수들이 작용하는 그 주제가 탈춤 가면극 부분이 됩니다.&rdquo; 그리고 오광대에 대해서는 &ldquo;<b>제일 중요하고 제일 복잡하고 제일 어려운 내용들이 너무 많아요. 그러니까 시험에도 나와요. 그러다 보니 오류 문제도 나와요.</b>&rdquo;라고 했습니다.
+</div>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 같은 탈춤인데 지역마다 이름이 다릅니다</h2>
+<p class="sub">이 단원이 어려운 이유는 딱 하나입니다. <b>본질은 하나(가면을 쓰고 사회를 풍자하는 연극)인데, 지역마다 부르는 이름이 다르기 때문</b>입니다. 그래서 &ldquo;이름 ↔ 지역&rdquo; 매칭이 곧 문제가 됩니다. 지도부터 머리에 넣으세요.</p>
+
+<div class="flow">
+<b class="hi">산대도감극</b><i>고려 때부터 있던 원래 이름 →</i><b>조선 후기 &lsquo;가면극(탈춤)&rsquo;이라는 장르로 정착</b><i>→ 2022년 유네스코 등재</i>
+</div>
+
+<div class="tblwrap"><table>
+<thead><tr><th>지역</th><th>부르는 이름</th><th>대표</th></tr></thead>
+<tbody>
+<tr><td class="nm">중부(서울·경기)</td><td><b>산대놀이</b></td><td>양주 별산대놀이 · 송파 산대놀이</td></tr>
+<tr><td class="nm">경상남도</td><td><b>오광대</b> / <b>야류(들놀음)</b></td><td>통영·고성·가산 오광대 &nbsp;/&nbsp; 동래·수영 야류</td></tr>
+<tr><td class="nm">황해도</td><td><b>탈춤</b></td><td>봉산 탈춤 · 강령 탈춤 · 은율 탈춤</td></tr>
+<tr><td class="nm">함경남도</td><td><b>사자놀음</b></td><td>북청 사자놀음</td></tr>
+<tr><td class="nm">경북 안동</td><td><b>별신굿 탈놀이</b></td><td>하회 별신굿 탈놀이</td></tr>
+<tr><td class="nm">강원 강릉</td><td><b>관노 가면극</b></td><td>강릉단오제 안에서 연행 (30단원과 연결)</td></tr>
+</tbody></table></div>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>모든 가면극이 공유하는 세 가지 주제.</b> ①<b>양반</b>이라는 지배층과 부조리한 현실 사회 풍자 ②<b>파계승</b> 풍자 ③<b>남녀 간의 애정</b>과 <b>가정의 비극</b>. 강사의 설명이 명쾌합니다 — &ldquo;<b>가면을 썼잖아요. 얼굴이 안 보이니까 양반을 잡숴놓고 연극할 수 있는 거야.</b>&rdquo; <b>다만 북청 사자놀음만은 예외</b>입니다(336번의 정답 근거).</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-book"/></svg> 이야기로 읽기</h2>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">탈춤은 조선 후기에 &lsquo;처음 생긴&rsquo; 것이 아닙니다</div><div class="era">개념</div></div>
+<div class="body">
+<p><b class="k">가면극(탈춤)</b>은 <b>탈(가면)</b>을 쓰고 <b class="k">산대</b>라는 무대 위에서 음악에 맞춰 춤과 대사로 하는 연극입니다. 조선 후기에 크게 유행하며 <b>당시 현실 사회를 비판</b>했습니다.</p>
+<div class="term"><b>많은 사람이 착각하는 지점 —</b> 가면극이 <b>조선 후기에 처음 등장했다고 생각하지만 그렇지 않습니다.</b> 원래 이름은 <b class="k">산대도감극</b>이고, <b>고려 시대부터</b> 있었습니다. 당연히 <b>조선 전기</b>에도 있었고, 원래는 <b>수도권을 중심으로 상류층에서도</b> 하던 공연이었습니다. 그것이 <b>조선 후기에 서민 문화로 크게 유행</b>하면서 &lsquo;가면극·탈춤&rsquo;이라는 장르로 정착한 것입니다.</div>
+<div class="quote">&ldquo;혹시라도 <b>산대도감극</b>이라는 말이 나오면 뭐와 관련된 얘기냐? <b>가면극 탈춤</b>을 의미한다고 보시면 됩니다.&rdquo;</div>
+<p>여기서 <b class="k">산대</b>는 <b>무대</b>라는 뜻입니다. 그래서 <b>중부 지방의 탈춤을 산대놀이</b>라 부르는 것도 이 말에서 나왔습니다.</p>
+<h3>2022년 유네스코 등재 — 여기서 기출이 뒤집혔습니다</h3>
+<p>2022년, 우리나라 탈춤들이 <b>&lsquo;한국의 탈춤&rsquo;</b>이라는 이름으로 <b>한꺼번에</b> 유네스코 인류무형문화유산에 등재되었습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>&ldquo;옛날 문제가 무용지물이 되어버린&rdquo; 대표 사례입니다.</b> 강사의 말 그대로 — &ldquo;<b>2022년 이전 기출문제는 틀린 선지가 있을 수밖에 없습니다. 늦게 지정됐기 때문에.</b>&rdquo; 실제로 봉산탈춤이 <b>&lsquo;유네스코가 아니다&rsquo;가 정답</b>이었던 과거 기출이 있는데, <b>이제는 정답이 반대로 바뀝니다.</b> 오래된 기출을 풀 때 이 점을 반드시 감안하세요.</div></div>
+<div class="term"><b>숫자를 정확히 —</b> 강사에 따르면 등재된 탈춤은 <b>총 18개</b>이고, 그 내역은 <b>국가무형유산 13개 + 시도무형유산 5개</b>입니다. 교재에 실린 13개 목록은 그중 <b>국가무형유산 13개</b>에 해당합니다.</div>
+<div class="quote">&ldquo;18개를 우리가 어떻게 다 외우냐고요? 못 외워요. 저도 못 외워요. <b>나도 안 외울 거니까 여러분도 외우지 마세요.</b> 대신에 우리가 중요하게 봤던 것들, <b>걔네들은 대부분 들어가 있다</b>고 보면 되는 거야.&rdquo;</div>
+<p>즉 <b>목록을 통째로 외우는 대신, &ldquo;18개 = 국가 13 + 시도 5&rdquo;라는 구조</b>와 <b>주요 탈춤은 다 포함된다</b>는 사실만 잡으면 됩니다.</p>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">경상남도 — 오광대와 야류, 그리고 &lsquo;문둥이&rsquo;</div><div class="era">★★★ 최우선</div></div>
+<div class="body">
+<p>교재에서 <b>별표 3개</b>가 붙은 유일한 항목이 <b class="k">오광대 놀이</b>입니다. 그리고 가장 복잡합니다.</p>
+<div class="term"><b>오광대와 야류는 &lsquo;같은 것, 다른 이름&rsquo;입니다.</b> <b>야류(野遊)</b>를 우리말로 풀면 <b>들놀음</b>입니다 — <b>야(野)=들판, 유(遊)=놀 유</b>. 둘 다 <b>경상남도</b>의 전통 가면극이며, 이름만 다릅니다.</div>
+<div class="vs" style="max-width:680px">
+<div class="side a"><b>오광대</b>통영 · 고성 · 가산<br>(&ldquo;통영&middot;고성&rdquo;이 제일 중요)</div>
+<div class="mid">=</div>
+<div class="side b"><b>야류(들놀음)</b>동래 · 수영<br>(둘 다 현재 <b>부산</b>)</div>
+</div>
+<p><b>오광대</b>라는 이름은 <b>다섯 광대</b>, 즉 <b>다섯 개의 탈</b>이 등장한다는 뜻이고, <b>음양오행설</b>에 바탕을 둡니다. 그런데 여기에 함정이 있습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>&ldquo;오&rdquo;광대인데 다섯 마당이 아닌 것이 있습니다.</b> <b>통영·고성 오광대는 다섯 마당</b>이지만, <b>동래·수영 야류는 네 마당</b>입니다. 그래서 상대적으로 <b>통영과 고성이 더 중요</b>하고, 그중에서도 <b>통영 오광대가 가장 중요</b>합니다.</div></div>
+<h3>이 단원 최대의 킬러 — 문둥이 마당</h3>
+<p>오광대·야류에는 <b>공통으로 등장하는 인물</b>이 있습니다. 바로 <b class="k">문둥이</b>입니다. 원래는 한센병 환자를 낮잡아 부르던 <b>비속어</b>인데, 그 존재를 무대에 올려 <b>세상을 비판하게</b> 만든 것입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>그런데 딱 한 곳, 「수영 야류」에만 문둥이 마당이 없습니다.</b> 통영·고성·동래에는 있습니다. 강사가 &ldquo;<b>밑줄 치시고 별표 해 주셔야 돼요</b>&rdquo;라고 한 항목이고, 실제로 <b>이 지점 때문에 출제 오류가 난 기출이 있습니다</b>(339번 — 수영야류 문제의 보기에 문둥이가 적혀 있어 <b>전부 정답 처리</b>).</div></div>
+<div class="tblwrap"><table>
+<thead><tr><th>이름</th><th>지역</th><th>마당</th><th>등장하는 탈·마당</th><th>함께 하는 것</th></tr></thead>
+<tbody>
+<tr><td class="nm">통영 오광대</td><td>경남 <b>통영</b></td><td><b>5마당</b></td><td><b>문둥탈 · 풍자탈 · 영노탈 · 농창탈 · 포수탈</b> (5개 탈 필수 암기)</td><td><b>사자춤</b> 병행</td></tr>
+<tr><td class="nm">고성 오광대</td><td>경남 <b>고성</b><br>(강원 고성 아님)</td><td><b>5마당</b></td><td><b>문둥이춤</b> 있음</td><td>—</td></tr>
+<tr><td class="nm">가산 오광대</td><td>경남</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="nm">동래 야류</td><td>부산 동래</td><td><b>4마당</b></td><td><b>문둥이</b> · 양반 · 영노 · 할미</td><td><b>줄다리기</b> 병행</td></tr>
+<tr><td class="nm">수영 야류</td><td>부산 수영</td><td><b>4마당</b></td><td>양반 · 할미영감 · 영노 · <b>사자춤</b> &nbsp;— <b class="x">문둥이 마당 없음</b></td><td><b>산신제</b>를 지냄</td></tr>
+</tbody></table></div>
+<div class="simile"><svg class="ic" width="16" height="16"><use href="#i-bulb"/></svg><div><b>암기법</b> — 문둥이가 없는 곳은 <b>수영</b> 하나뿐입니다. &ldquo;<b>수</b>영은 문둥이가 <b>수</b>줍어서 안 나온다&rdquo;처럼 억지로라도 붙여두면, 보기에서 &ldquo;수영야류 &mdash; 문둥이마당&rdquo;이 보이는 순간 손이 먼저 반응합니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">중부 · 황해도 · 함경도 · 안동</div><div class="era">지역별 나머지</div></div>
+<div class="body">
+<h3>양주 별산대놀이 — 경기 양주</h3>
+<p><b>중부 지방(서울·경기)</b>의 탈춤을 <b class="k">산대놀이</b>라 부르고, 그 대표가 <b class="k">양주 별산대놀이</b>입니다. 옛 <b>국가무형유산 제2호</b>였습니다 — <b>1호가 종묘제례악</b>이었으니 나름 지위가 높았던 셈입니다.</p>
+<p>등장인물은 <b>파계승·몰락 양반·하인</b> 등이고, <b>춤과 무언극, 덕담, 익살</b>이 어우러집니다.</p>
+<h3>송파 산대놀이 — 서울</h3>
+<p><b>서울에 남아 있는 유일한 가면극</b>입니다. 송파는 예전에 서울이 아니라 <b>경기도</b>였습니다.</p>
+<h3>봉산 탈춤 — 황해도 봉산</h3>
+<div class="term"><b>봉산 탈춤의 트레이드마크는 &lsquo;언제&rsquo;입니다.</b> <b>단오 하짓날 밤</b>에 공연합니다(하짓날 = 1년 중 낮이 가장 긴 날). <b>7마당</b>이며 <b>벽사진경</b>의 의미를 담고, <b>16개의 탈</b>이 등장합니다. 그중 <b>말뚝이</b>와 <b>취발이</b>가 가장 많은 대사를 주고받으며 양반을 풍자합니다.</div>
+<h3>북청 사자놀음 — 함경남도 북청</h3>
+<p><b>정월대보름</b>에 하는 <b>사자놀이</b>입니다. 목적이 다른 가면극과 <b>다릅니다</b>.</p>
+<div class="term"><b>벽사진경(辟邪進慶)이 뭐냐면 —</b> <b>벽사</b>는 <b>사악한 것을 물리치고</b>, <b>진경</b>은 <b>좋은 일을 불러들인다</b>는 뜻입니다. 32단원의 <b>제액초복</b>과 <b>같은 의미</b>이고, 궁궐 지붕 위 <b>잡상</b>도 같은 뜻으로 올린 것입니다.</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>336번의 정답이 바로 이 지점이었습니다.</b> &ldquo;양반 계급에 대한 반감, 파계승 풍자, 남녀 간의 애정, 가정의 비극&rdquo;은 <b>오광대·야류의 주제</b>이지 북청 사자놀음의 주제가 <b>아닙니다</b>. 북청 사자놀음은 <b>오로지 마을의 평안</b>을 빌고 <b>악귀를 쫓는</b> 것이 목적입니다.</div></div>
+<p>또 하나의 특징 — <b>탈을 쓰는 인물과 쓰지 않는 인물이 나뉩니다.</b> <b>탈을 쓰는 쪽</b>은 <b>사자 · 양반 · 꺽쇠 · 곱추 · 사령</b>입니다(이름을 다 외울 필요는 없고, <b>&ldquo;일부만 탈을 쓴다&rdquo;</b>는 사실이 핵심입니다).</p>
+<h3>하회 별신굿 탈놀이 — 경북 안동</h3>
+<p><b>현존하는 가장 오래된 가면극</b>입니다. 안동 <b>하회동과 병산동</b>에서 전승됩니다.</p>
+<div class="term"><b>별신굿과 도당굿의 차이 —</b> <b>도당굿</b>은 <b>규모가 작은</b> 마을굿이라 <b>매년</b> 할 수 있고, <b>별신굿</b>은 <b>규모가 큰</b> 마을굿이라 비용이 많이 들어 <b>매년 하지 못합니다</b>. 대상은 마을의 수호신인 <b>서낭신</b>입니다. (집을 지키는 신은 <b>성주신</b>, 부엌을 지키는 신은 <b>조왕신</b>.)</div>
+<p>탈 개수도 그대로 출제 대상입니다 — <b>하회탈 11개 + 병산탈 2개 = 13개</b>이며, 이들은 <b>국보</b>로 지정되어 있습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>335번은 &ldquo;옳은 것을 모두 고르시오&rdquo;였고, 정답이 &ldquo;전부&rdquo;였습니다.</b> 강사의 조언을 그대로 옮깁니다 — &ldquo;<b>자원 문제에는 &lsquo;모두 고르시오&rsquo;에서 말 그대로 전부가 정답인 문제가 가끔 나옵니다. 공부한 사람일수록 &lsquo;진짜 다 맞다고?&rsquo; 하고 의심이 시작되는데, 그때는 본인을 믿어야 돼요.</b>&rdquo;</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">남사당놀이 — 가면극은 아니지만 여기 붙어 있는 이유</div><div class="era">국가무형유산 제3호</div></div>
+<div class="body">
+<p><b class="k">남사당</b>은 조선 시대의 <b>남자 유랑 연예인</b>입니다. 돌아다니며 <b>서민</b>을 상대로 공연했고, 그들이 하던 놀이가 <b class="k">남사당놀이</b>입니다.</p>
+<div class="term"><b>왜 가면극 단원에 들어와 있느냐 —</b> 남사당놀이는 <b>원래 가면극이 아닙니다.</b> 다만 여섯 마당 공연 <b>중 한 장르가 탈놀음(덧뵈기)</b>이라서 함께 묶어놓은 것뿐입니다. 강사가 직접 &ldquo;<b>얘를 무조건 가면극으로 보는 것이 아니라 한 내용이 들어가 있기 때문에 포함시킨 것</b>&rdquo;이라고 못 박았습니다.</div>
+<p>남사당놀이는 <b>국가무형유산 제3호</b>이자 <b>유네스코 인류무형문화유산</b>입니다. 내용은 <b>풍년 기원 + 벽사진경 + 조선 후기 사회 비판</b>입니다.</p>
+<h3>6마당 — 순서는 외우지 말고 &lsquo;마지막&rsquo;만 외우세요</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>순서</th><th>이름</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="yr">1</td><td class="nm">풍물</td><td>농악</td></tr>
+<tr><td class="yr">2</td><td class="nm">버나</td><td><b>접시 돌리기</b></td></tr>
+<tr><td class="yr">3</td><td class="nm">살판</td><td>땅에서 부리는 재주 (&ldquo;브레이크 댄스 치는 거죠&rdquo;)</td></tr>
+<tr><td class="yr">4</td><td class="nm">어름</td><td><b>줄타기</b></td></tr>
+<tr><td class="yr">5</td><td class="nm">덧뵈기</td><td><b>탈놀음</b> — 남사당놀이가 가면극 단원에 들어온 이유</td></tr>
+<tr><td class="yr">6</td><td class="nm">덜미</td><td><b>꼭두각시놀음</b> — <b>우리나라 유일의 전통 인형극</b></td></tr>
+</tbody></table></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>강사가 &ldquo;순서는 외우지 마십시오&rdquo;라고 했습니다.</b> 대신 <b>마지막 순서인 덜미 = 꼭두각시놀음 = 우리나라 유일의 전통 인형극</b>, 이 하나는 반드시 외웁니다. 319번 풀이에서 &ldquo;<b>잊어버리셨다면 지금 외우시기 바랍니다</b>&rdquo;라고 다시 한 번 강조했습니다.</div></div>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">탈 이름 네 가지 — 문제로 나왔으니 답만 외우세요</div><div class="era">334번 대비</div></div>
+<div class="body">
+<p>334번에서 <b>탈 이름 네 개</b>가 보기로 나왔습니다. 교재에서 다루지 않은 것도 있어, 강사가 <b>&ldquo;문제로 답을 정리해 두시라&rdquo;</b>고 한 항목입니다.</p>
+<div class="tblwrap"><table>
+<thead><tr><th>탈</th><th>어디에 쓰이나</th><th>생김새 · 역할</th></tr></thead>
+<tbody>
+<tr><td class="nm">방상시탈</td><td><b>궁중의 나례</b>와 <b>장례</b> 때 악귀를 쫓음</td><td><b>눈이 4개</b>, 눈썹이 아주 두꺼움 (334번 정답)</td></tr>
+<tr><td class="nm">영노탈</td><td><b>오광대 놀이</b></td><td><b>용머리 모양</b>. 상상 속 동물로, <b>양반을 골리고 풍자</b>하는 역할</td></tr>
+<tr><td class="nm">주지탈</td><td><b>하회 별신굿 탈놀이</b></td><td>악귀를 쫓는 역할</td></tr>
+<tr><td class="nm">청계씨탈</td><td>개성의 <b>최영 장군</b> 사당</td><td>얼굴 전체가 <b>붉은색</b>, 눈과 입이 <b>푸른색</b>. &ldquo;청계씨탈 = <b>최영 장군</b>&rdquo;으로만 외우면 충분</td></tr>
+</tbody></table></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>&ldquo;나례&rdquo;라는 단어 하나만으로도 문제가 나올 수 있다</b>고 강사가 예고했습니다. <b>나례 = 음력 12월 30일 섣달 그믐날에 악귀를 쫓는 의식</b>이며, <b>궁중뿐 아니라 민가에서도</b> 했습니다. 문제에 &ldquo;섣달 그믐날&rdquo;로만 나오면 순간 멍해질 수 있으니 <b>날짜와 우리말 이름을 함께</b> 외우세요.</div></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표</h2>
+<p class="sub">33단원의 사실을 한 장에 모았습니다.</p>
+<div class="tblwrap"><table>
+<thead><tr><th>가면극</th><th>지역</th><th>시기</th><th>핵심 특징</th></tr></thead>
+<tbody>
+<tr><td class="nm">양주 별산대놀이</td><td>경기 양주 (중부)</td><td>—</td><td>옛 <b>국가무형유산 제2호</b> · <b>산대놀이</b>(중부 지방 탈춤) 계통 · 파계승·몰락양반·하인 등장 · 춤+무언극+덕담+익살</td></tr>
+<tr><td class="nm">송파 산대놀이</td><td><b>서울</b> 송파 (옛 경기)</td><td>—</td><td><b>서울에 남은 유일한 가면극</b></td></tr>
+<tr><td class="nm">통영 오광대</td><td>경남 통영</td><td>정월대보름</td><td><b>5마당</b> · 탈 5개 <b>문둥·풍자·영노·농창·포수</b> · <b>사자춤</b> 병행 · 국가무형유산 제6호</td></tr>
+<tr><td class="nm">고성 오광대</td><td>경남 고성</td><td>정월대보름</td><td><b>5마당</b> · <b>문둥이춤</b></td></tr>
+<tr><td class="nm">가산 오광대</td><td>경남</td><td>—</td><td>오광대 계통</td></tr>
+<tr><td class="nm">동래 야류</td><td>부산 동래</td><td>정월대보름</td><td><b>4마당</b>(문둥이·양반·영노·할미) · <b>줄다리기</b> 병행</td></tr>
+<tr><td class="nm">수영 야류</td><td>부산 수영</td><td>정월대보름</td><td><b>4마당</b>(양반·할미영감·영노·사자춤) · <b class="x">문둥이 마당 없음</b> · <b>산신제</b></td></tr>
+<tr><td class="nm">북청 사자놀음</td><td><b>함경남도</b> 북청</td><td>정월대보름</td><td><b>벽사진경</b>이 목적(양반 풍자가 주제가 아님) · <b>탈을 쓰는 인물</b> = 사자·양반·꺽쇠·곱추·사령</td></tr>
+<tr><td class="nm">봉산 탈춤</td><td><b>황해도</b> 봉산</td><td><b>단오 하짓날 밤</b></td><td><b>7마당</b> · 탈 <b>16개</b> · <b>말뚝이·취발이</b>가 대사 주도 · 벽사진경</td></tr>
+<tr><td class="nm">하회 별신굿 탈놀이</td><td>경북 <b>안동</b><br>(하회동·병산동)</td><td>별신굿 때</td><td><b>현존 가장 오래된 가면극</b> · <b>하회탈 11 + 병산탈 2 = 13개(국보)</b> · 대상은 <b>서낭신</b> · <b>별신굿=큰 마을굿 / 도당굿=작은 마을굿</b></td></tr>
+<tr><td class="nm">강릉 관노 가면극</td><td>강원 강릉</td><td>단오</td><td><b>강릉단오제</b>의 핵심 (30단원과 연결)</td></tr>
+<tr><td class="nm">남사당놀이</td><td>전국 유랑</td><td>—</td><td><b>국가무형유산 제3호</b> · 유네스코 · <b>남자 유랑 연예인</b> · 6마당 <b>풍물→버나→살판→어름→덧뵈기→덜미</b> · <b>덜미=꼭두각시놀음=유일한 전통 인형극</b></td></tr>
+</tbody></table></div>
+
+<h3>2022년 유네스코 &lsquo;한국의 탈춤&rsquo;</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>개수</th><th>목록</th></tr></thead>
+<tbody>
+<tr><td class="nm">국가무형유산</td><td class="yr">13</td><td>양주 별산대놀이 · 통영 오광대 · 고성 오광대 · 북청 사자놀음 · 강릉 관노가면극 · 봉산 탈춤 · 동래 야류 · 강령 탈춤 · 수영 야류 · 송파 산대놀이 · 은율 탈춤 · 하회별신굿 탈놀이 · 가산 오광대</td></tr>
+<tr><td class="nm">시도무형유산</td><td class="yr">5</td><td>—</td></tr>
+<tr><td class="nm">합계</td><td class="yr">18</td><td>강사: &ldquo;18개를 다 외우지 마세요. 중요하게 본 것들은 대부분 들어가 있다고 보면 됩니다.&rdquo;</td></tr>
+</tbody></table></div>
+
+<h3>국가무형유산 지정번호 (옛 제도 · 참고용)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>번호</th><th>대상</th></tr></thead>
+<tbody>
+<tr><td class="yr">제1호</td><td><b>종묘제례악</b> (31단원)</td></tr>
+<tr><td class="yr">제2호</td><td><b>양주 별산대놀이</b></td></tr>
+<tr><td class="yr">제3호</td><td><b>남사당놀이</b></td></tr>
+<tr><td class="yr">제6호</td><td><b>통영 오광대</b></td></tr>
+</tbody></table></div>
+<div class="zero"><b>주의</b> — 지정번호 제도는 <b>폐지되었습니다</b>. 강사도 &ldquo;<b>이제는 의미가 없어진 거지, 호수가 없어졌으니까</b>&rdquo;라고 했습니다. 다만 <b>과거 기출 문장</b>에 번호가 그대로 들어 있어, <b>기출을 읽어내기 위한 참고</b>로만 알아두세요. 위 표에 적은 번호는 <b>강사가 강의에서 직접 말한 것만</b>입니다.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급 — 근거를 밝힙니다</h2>
+<p class="sub">기출 원문 대조가 불가능한 단원입니다(사유는 하단 각주). 등급은 <b>8/14 문제풀이 강의에서 실제로 다룬 333~339번 7문항</b>과 <b>강사의 발언</b>만을 근거로 매겼습니다.</p>
+<div class="freq">
+<div class="row"><span class="gr gA">A</span><div><b>오광대 · 야류 (특히 통영 오광대의 탈 5개, 수영야류의 문둥이 마당 없음)</b> — 문항 <b>337·339</b> + 교재 <b>★★★</b> + 강사: &ldquo;<b>제일 중요하고 제일 복잡하고 제일 어려운 내용</b>&rdquo;. 실제 <b>출제 오류</b>까지 발생한 지점.</div></div>
+<div class="row"><span class="gr gA">A</span><div><b>하회 별신굿 탈놀이</b> — 문항 <b>335</b>. 현존 最古 · 하회탈 11+병산탈 2 · 별신굿(큰 마을굿) · 서낭신.</div></div>
+<div class="row"><span class="gr gA">A</span><div><b>북청 사자놀음</b> — 문항 <b>336</b> + 교재 <b>★★</b>. 함경남도 · 정월대보름 · <b>주제가 다른 탈춤과 다르다</b>(벽사진경).</div></div>
+<div class="row"><span class="gr gA">A</span><div><b>양주 별산대놀이 · 산대도감극</b> — 문항 <b>338</b>. 경기 양주 · 제2호 · <b>산대놀이=중부</b> · <b>조선 전기에도 있었다</b>.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>강릉 관노 가면극</b> — 문항 <b>333</b>. 강사: &ldquo;<b>강릉단오제 하면 이 단어 절대 빠지면 안 됩니다</b>&rdquo;.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>탈 이름 4종(방상시·영노·주지·청계씨)</b> — 문항 <b>334</b>. 교재에 없는 내용이라 강사가 <b>&ldquo;문제로 답을 정리해 두라&rdquo;</b>고 지시.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>남사당놀이 · 꼭두각시놀음</b> — 문항 <b>319</b>(31단원 구간)에서 <b>덜미=꼭두각시놀음</b>이 오답 논점으로 등장 + 제3호 + 유네스코.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>봉산 탈춤</b> — 단독 문항은 없지만 <b>313번의 오답 선지</b>로 등장했고, <b>2022년 등재로 정답이 뒤집힌 대표 사례</b>로 강사가 별도 설명.</div></div>
+<div class="row"><span class="gr gC">C</span><div><b>송파 산대놀이</b> — &ldquo;서울에 남은 유일한 가면극&rdquo; 한 줄. <b>강령·은율 탈춤</b>은 목록 암기용.</div></div>
+<div class="zero"><b>버려도 되는 것</b> — 강사가 직접 말한 것만 옮깁니다. <b>①유네스코 18개 목록 전체 암기</b>(&ldquo;나도 안 외울 거니까 여러분도 외우지 마세요&rdquo;) <b>②남사당놀이 6마당의 순서</b>(&ldquo;순서는 외우지 마십시오&rdquo; — 단 <b>덜미=꼭두각시놀음</b>은 필수) <b>③북청 사자놀음 등장인물 이름 전체</b>(&ldquo;다 외우라는 의미는 아닙니다&rdquo;).</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<div class="cmp">
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 오광대 ↔ 야류</h4>
+<div class="vs"><div class="side a"><b>오광대</b>통영·고성·가산<br><b>5마당</b>(통영·고성)</div><div class="mid">같은 것</div><div class="side b"><b>야류=들놀음</b>동래·수영<br><b>4마당</b></div></div>
+<p class="why">&ldquo;둘은 <b>다른 것</b>이다&rdquo;라고 써놓으면 함정입니다. <b>같은 것을 지역에 따라 다르게 부르는 것</b>이며 <b>둘 다 경상남도</b>입니다. 다만 <b>마당 수</b>가 다릅니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 문둥이 마당 — 있다 ↔ 없다</h4>
+<div class="vs"><div class="side n"><b>있다</b>통영 · 고성 · 동래</div><div class="mid">vs</div><div class="side x2"><b>없다</b><b>수영 야류</b>만</div></div>
+<p class="why">이 단원 최대의 킬러입니다. 실제 기출에서 <b>수영야류 보기에 문둥이가 들어가 출제 오류</b>가 났습니다. 문제에 &ldquo;수영&rdquo;과 &ldquo;문둥이&rdquo;가 함께 보이면 의심하세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 하회별신굿탈놀이 ↔ 봉산탈춤</h4>
+<div class="vs"><div class="side a"><b>하회별신굿탈놀이</b>경북 <b>안동</b><br><b>현존 가장 오래됨</b><br>하회탈 11+병산탈 2</div><div class="mid">vs</div><div class="side b"><b>봉산 탈춤</b><b>황해도</b> 봉산<br><b>단오 하짓날 밤</b><br>7마당 · 탈 16개</div></div>
+<p class="why">&ldquo;가장 오래된 가면극은 봉산탈춤이다&rdquo; → <b>틀림</b>. 정답은 늘 <b>하회별신굿탈놀이</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 별신굿 ↔ 도당굿</h4>
+<div class="vs"><div class="side g"><b>별신굿</b>규모가 <b>큼</b><br>비용 때문에 <b>매년 못 함</b></div><div class="mid">vs</div><div class="side b"><b>도당굿</b>규모가 <b>작음</b><br><b>매년</b> 가능</div></div>
+<p class="why">둘 다 <b>마을굿</b>이라는 점은 같습니다. 갈림길은 <b>규모와 주기</b>입니다. 신은 마을 수호신인 <b>서낭신</b>(집=성주신, 부엌=조왕신).</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 북청 사자놀음 ↔ 나머지 가면극</h4>
+<div class="vs"><div class="side x2"><b>북청 사자놀음</b>목적 = <b>벽사진경</b><br>마을의 평안·악귀 쫓기</div><div class="mid">≠</div><div class="side a"><b>오광대·야류 등</b>양반 풍자 · 파계승<br>남녀 애정 · 가정 비극</div></div>
+<p class="why">336번의 정답이 정확히 이 차이였습니다. 북청 사자놀음 문제에 <b>&ldquo;양반 계급에 대한 반감&rdquo;</b>이 보이면 그것이 틀린 보기입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 남사당놀이 — 가면극이다? 아니다?</h4>
+<div class="vs"><div class="side b"><b>본질</b>가면극이 <b>아님</b><br>남자 유랑 연예인의 <b>종합 공연</b></div><div class="mid">단</div><div class="side g"><b>덧뵈기</b>6마당 중 하나가<br><b>탈놀음</b>이라 함께 묶임</div></div>
+<p class="why">&ldquo;남사당놀이는 대표적인 가면극이다&rdquo;처럼 단정하는 문장은 위험합니다. 그리고 마지막 마당 <b>덜미=꼭두각시놀음=유일한 전통 인형극</b>은 반드시.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 고성 — 경남 ↔ 강원</h4>
+<div class="vs"><div class="side a"><b>고성 오광대</b><b>경상남도</b> 고성</div><div class="mid">vs</div><div class="side b"><b>고성 왕곡마을</b><b>강원도</b> 고성 (29단원)</div></div>
+<p class="why">같은 &ldquo;고성&rdquo;이 다른 단원에서 다른 도(道)로 나옵니다. 강사가 &ldquo;<b>이 고성은 경남 고성입니다. 강원도 고성이 아니라</b>&rdquo;라고 직접 짚었습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 제액초복 ↔ 벽사진경</h4>
+<div class="vs"><div class="side n"><b>제액초복</b>제액=나쁜 기운 제거<br>초복=복을 부름<br>(달집태우기)</div><div class="mid">=</div><div class="side g"><b>벽사진경</b>벽사=사악한 것 물리침<br>진경=좋은 일 불러들임<br>(북청사자놀음·봉산탈춤·잡상)</div></div>
+<p class="why"><b>뜻이 같은 두 한자어</b>입니다. 강사가 &ldquo;<b>시험 문제에 이런 단어가 밖에서 나올 수도 있다</b>&rdquo;고 경고했습니다.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars"><ul>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;탈춤 가면극은 정말 복습 잘 해놓으셔야 됩니다. 나오면 여러 가지 변수들이 작용하는 그 주제가 탈춤 가면극 부분&rdquo;</b> — 8/14 문제풀이 도입부.</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>통영 오광대의 탈 5개는 &ldquo;꼭 외우라&rdquo;고 두 번 말했습니다</b> — <b>문둥탈 · 풍자탈 · 영노탈 · 농창탈 · 포수탈</b>. &ldquo;고성 오광대는 문둥이만 같고 나머지 이름이 다르니, <b>통영만은 반드시</b>.&rdquo;</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;수영에는 문둥이 마당이 없다 — 밑줄 치시고 별표 해 주셔야 돼요.&rdquo;</b> 이 한 줄 때문에 실제 기출이 <b>전부 정답 처리</b>되었습니다.</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;산대도감극이라는 말이 나오면 가면극 탈춤을 의미한다&rdquo;</b> — 그리고 가면극은 <b>고려 시대부터</b> 있었습니다. &ldquo;조선 후기에 처음 등장했다&rdquo;는 문장은 틀립니다.</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;2022년 이전 기출문제는 틀린 선지가 있을 수밖에 없습니다.&rdquo;</b> 오래된 기출에서 &ldquo;탈춤은 유네스코가 아니다&rdquo;가 정답이었던 문항은 <b>지금은 정답이 뒤집힙니다</b>.</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;18개를 다 외우지 마세요. 나도 안 외웁니다.&rdquo;</b> 대신 <b>&ldquo;국가 13 + 시도 5 = 18&rdquo;</b>이라는 구조와, 주요 탈춤은 대부분 포함된다는 사실만.</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;남사당놀이 6마당의 순서는 외우지 마십시오.&rdquo;</b> 대신 <b>덜미 = 꼭두각시놀음 = 우리나라 유일의 전통 인형극</b>은 필수.</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;모두 고르시오&rdquo;에서 전부가 정답인 문제가 나옵니다.</b> &ldquo;공부한 사람일수록 의심이 시작되는데, <b>그때는 본인을 믿어야 돼요.</b>&rdquo;</div></li>
+<li><svg class="ic" width="16" height="16"><use href="#i-star"/></svg><div><b>&ldquo;나례&rdquo;라는 단어만으로 문제가 나올 수 있다</b>고 예고했습니다 — <b>음력 12월 30일 섣달 그믐날</b>, 궁중과 민가 모두에서 악귀를 쫓던 의식.</div></li>
+</ul></div>
+</section>
+
+<section id="quizsec">
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 예상문제 12문항</h2>
+<p class="sub">보기를 눌러 고르고, 다 풀면 <b>채점하기</b>를 누르세요. 채점 후 <b>틀린 문제만 다시 풀기</b>와 <b>오답노트용 기록</b>이 나옵니다.</p>
+
+<div class="notice">
+<b>이 문제들은 기출 원문이 아니라 예상문제입니다.</b> 다만 <b>8/14 문제풀이 강의에서 강사가 실제로 풀어준 333~339번 문항의 논점</b>과 강사가 직접 &ldquo;외우라&rdquo;고 지목한 항목만으로 재구성했습니다. 각 문항 태그에 근거 문항 번호를 적어두었습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 12 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/04_최종교재/관광자원.md</code>의 33단원 + <b>강의전사본/핵심강의/8월9일 관광자원_관광국사.txt</b> 3129~3810행(전통 가면극·남사당놀이) + <b>강의전사본/문제풀이강의/8월14일 문제풀이.txt</b> 2551~3050행(333~339번 문항 풀이).</p>
+<p><b class="x">교재와 강의가 다른 부분 — 유네스코 등재 개수</b>. 교재에는 2022년 등재 탈춤이 <b>13개</b>로 되어 있으나, 강의에서는 <b>총 18개(국가무형유산 13 + 시도무형유산 5)</b>라고 설명했습니다. 교재의 13개 목록은 그중 <b>국가무형유산 13개</b>에 해당하므로 두 설명은 모순이 아니며, 이 페이지는 <b>강의 기준(18개)</b>으로 정리했습니다. <b>시도무형유산 5개의 이름은 강의·교재 어디에도 없어 적지 않았습니다(추측 금지).</b></p>
+<p><b>기출 실측 불가 사유</b> — <code>관광자원기출.md</code>(2013~2025년 136문항)의 수록 범위가 유교 건축(Q136)까지여서 20단원 이후는 기출 원문 대조가 구조적으로 불가능합니다. 그래서 빈출 등급은 <b>8/14 문제풀이 강의의 문항 배분(33단원 333~339번, 7문항)</b>과 <b>강사의 직접 발언</b>만을 근거로 매겼습니다.</p>
+<p><b>국가무형유산 지정번호</b>는 <b>강사가 강의에서 직접 말한 것만</b> 적었습니다(종묘제례악 1호 · 양주별산대놀이 2호 · 남사당놀이 3호 · 통영오광대 6호). 지정번호 제도는 폐지되었으므로 <b>과거 기출 문장을 읽어내기 위한 참고</b>로만 쓰세요.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var UNIT='[관광자원해설 33단원 — 전통 가면극(탈춤)·남사당놀이]';
+var QS=[
+{n:1,src:"예상 · 337번 근거(통영 오광대)",q:"다음 설명에 해당하는 것은?\n· 국가무형유산으로 지정된 남부 지방의 탈춤이다.\n· 문둥탈·풍자탈·영노탈·농창탈·포수탈 다섯 개의 탈이 등장한다.\n· 다섯 마당으로 구성되며 사자춤을 함께 연행한다.",o:["통영 오광대","고성 오광대","동래 야류","수영 야류"],a:0,c:"오광대·야류",e:"<b>다섯 개 탈의 이름</b>이 나오면 무조건 <b>통영 오광대</b>입니다. 강사가 &ldquo;<b>통영 오광대만은 반드시 다섯 개 탈의 이름을 외우라</b>&rdquo;고 두 번 강조했습니다. 고성 오광대는 <b>문둥이</b>만 겹치고 나머지 탈 이름이 다릅니다."},
+{n:2,src:"예상 · 339번 근거(실제 출제 오류 지점)",q:"수영 야류에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["부산 수영 지역에서 전승되는 경상남도 계통의 가면극이다.","들놀음을 할 때 산신제를 함께 지낸다.","양반마당·할미영감마당·영노마당·사자춤 등 네 마당으로 구성된다.","문둥이마당으로 시작하여 양반마당으로 이어진다."],a:3,c:"오광대·야류",e:"<b>수영 야류에만 문둥이 마당이 없습니다.</b> 통영·고성·동래에는 있습니다. 강사가 &ldquo;밑줄 치고 별표 하라&rdquo;고 한 항목이며, 실제 기출에서 수영야류 보기에 문둥이를 넣어 <b>정답이 없어 전부 정답 처리된 오류 문항</b>이 있었습니다."},
+{n:3,src:"예상 · 오광대/야류 개념",q:"오광대 놀이와 야류(들놀음)에 관한 설명으로 옳은 것은?",o:["오광대는 경상남도, 야류는 황해도의 가면극으로 서로 계통이 다르다.","둘 다 경상남도 지역의 가면극으로, 같은 성격의 놀이를 지역에 따라 다르게 부르는 것이다.","야류의 &lsquo;야&rsquo;는 밤 야(夜)로, 밤에만 공연한다는 뜻이다.","오광대는 모두 네 마당, 야류는 모두 다섯 마당으로 구성된다."],a:1,c:"오광대·야류",e:"<b>오광대 = 야류(들놀음)</b>, 이름만 다른 <b>같은 경상남도</b>의 가면극입니다. <b>야(野)는 들판, 유(遊)는 놀 유</b>이므로 &lsquo;들놀음&rsquo;입니다. 마당 수는 반대입니다 — <b>통영·고성 오광대 5마당 / 동래·수영 야류 4마당</b>."},
+{n:4,src:"예상 · 335번 근거(하회별신굿탈놀이)",q:"하회 별신굿 탈놀이에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["경북 안동의 하회동과 병산동에서 전승된다.","마을의 안녕과 풍년을 기원하는 마을굿에서 유래한 가면극이다.","현존하는 우리나라 가면극 중 가장 오래된 것이다.","황해도 봉산 지방에서 단오 하짓날 밤에 공연된다."],a:3,c:"지역별 탈춤",e:"④는 <b>봉산 탈춤</b>의 설명입니다. 하회 별신굿 탈놀이는 <b>경북 안동</b>이며 <b>현존 가장 오래된 가면극</b>입니다. 탈은 <b>하회탈 11개 + 병산탈 2개 = 13개</b>로 <b>국보</b>입니다."},
+{n:5,src:"예상 · 336번 근거(북청 사자놀음)",q:"함경남도 북청 사자놀음에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["사자탈을 쓰고 노는 놀이로 정월대보름에 행해졌다.","연초에 잡귀를 쫓고 마을의 평안을 비는 행사로 널리 행해졌다.","양반 계급에 대한 반감과 파계승 풍자, 남녀 간의 애정과 가정의 비극을 주제로 한다.","사자·양반·꺽쇠·곱추·사령 등은 탈을 쓰고, 나머지 인물은 탈을 쓰지 않는다."],a:2,c:"지역별 탈춤",e:"③은 <b>오광대·야류</b>의 주제입니다. 북청 사자놀음의 목적은 <b>오로지 마을의 평안과 악귀 쫓기(벽사진경)</b>입니다. 8/14 강의 336번의 정답이 정확히 이 차이였습니다."},
+{n:6,src:"예상 · 338번 근거(양주 별산대놀이)",q:"양주 별산대놀이에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["경기도 양주에서 전승되며 옛 국가무형유산 제2호였다.","서울과 경기 지방에서 즐겼던 산대도감극의 한 갈래이다.","춤과 무언극, 덕담, 익살이 어우러진 민속놀이이다.","산대놀이는 남부 지방의 탈춤을 가리키는 말이다."],a:3,c:"지역별 탈춤",e:"<b>산대놀이는 &lsquo;중부 지방&rsquo;(서울·경기)의 탈춤</b>을 가리킵니다. 남부(경상남도)는 <b>오광대·야류</b>입니다. <b>산대</b>는 &lsquo;무대&rsquo;라는 뜻이고, 여기서 <b>산대도감극</b>이라는 원래 이름이 나왔습니다."},
+{n:7,src:"예상 · 가면극의 성립 시기",q:"전통 가면극(탈춤)에 관한 설명으로 옳은 것은?",o:["조선 후기에 처음 등장한 서민 문화의 장르로, 그 이전에는 존재하지 않았다.","원래 산대도감극이라 불렸으며 고려 시대부터 존재하였다.","가면을 쓰지 않고 무언극으로만 공연하는 것이 원칙이다.","주로 왕실의 연회에서만 공연되었다."],a:1,c:"개념",e:"가면극은 <b>산대도감극</b>이라는 이름으로 <b>고려 시대부터</b> 있었고 조선 전기에도 존재했습니다. <b>조선 후기에 서민 문화로 크게 유행</b>하면서 &lsquo;가면극·탈춤&rsquo; 장르로 정착한 것입니다. &ldquo;조선 후기에 처음 등장&rdquo;은 대표적인 함정입니다."},
+{n:8,src:"예상 · 334번 근거(탈 이름)",q:"다음 설명에 해당하는 탈은?\n· 궁중에서 나례를 행하거나 장례를 치를 때 악귀를 쫓기 위해 사용하였다.\n· 눈이 네 개인 것이 가장 큰 특징이다.",o:["방상시탈","영노탈","주지탈","청계씨탈"],a:0,c:"탈 이름",e:"<b>눈 4개 = 방상시탈</b>입니다. <b>나례</b>는 <b>음력 12월 30일 섣달 그믐날</b>에 악귀를 쫓던 의식으로, 궁중뿐 아니라 민가에서도 행했습니다. 나머지 — <b>영노탈</b>(오광대, 용머리, 양반 풍자) · <b>주지탈</b>(하회 별신굿, 악귀 쫓기) · <b>청계씨탈</b>(개성 <b>최영 장군</b> 사당)."},
+{n:9,src:"예상 · 334번 근거(영노탈)",q:"탈과 그 설명의 연결이 옳지 <b>않은</b> 것은?",o:["영노탈 — 오광대 놀이에서 양반을 골리고 풍자하는 용머리 모양의 탈","주지탈 — 하회 별신굿 탈놀이에서 악귀를 쫓는 역할의 탈","청계씨탈 — 최영 장군과 관련된 탈로 얼굴이 붉고 눈과 입이 푸르다","방상시탈 — 봉산 탈춤에서 양반과 대사를 주고받는 하인 역의 탈"],a:3,c:"탈 이름",e:"봉산 탈춤에서 양반과 대사를 주고받는 인물은 <b>말뚝이</b>와 <b>취발이</b>입니다. <b>방상시탈</b>은 <b>나례·장례</b> 때 악귀를 쫓는 <b>눈이 네 개</b> 달린 탈입니다."},
+{n:10,src:"예상 · 남사당놀이 (319번 논점)",q:"남사당놀이에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["조선 시대 남자 유랑 연예인들이 서민을 상대로 공연하던 놀이이다.","국가무형유산이자 유네스코 인류무형문화유산으로 등재되었다.","마지막 순서인 덜미는 꼭두각시놀음으로, 우리나라 유일의 전통 인형극이다.","여섯 마당 전체가 가면을 쓰고 하는 가면극으로 구성되어 있다."],a:3,c:"남사당놀이",e:"남사당놀이는 <b>원래 가면극이 아닙니다.</b> 여섯 마당 중 <b>덧뵈기</b> 하나가 탈놀음이라 가면극 단원에 함께 묶여 있을 뿐입니다. 순서는 <b>풍물 → 버나(접시돌리기) → 살판(땅재주) → 어름(줄타기) → 덧뵈기(탈놀음) → 덜미(꼭두각시놀음)</b>."},
+{n:11,src:"예상 · 별신굿/도당굿 · 서낭신",q:"마을굿에 관한 설명으로 옳은 것은?",o:["별신굿은 규모가 작아 매년 열리고, 도당굿은 규모가 커서 몇 년에 한 번 열린다.","별신굿은 규모가 큰 마을굿으로 비용 때문에 매년 열지 못하고, 도당굿은 규모가 작은 마을굿이다.","마을의 수호신은 조왕신이며 부엌을 지키는 신은 서낭신이다.","하회 별신굿 탈놀이는 집을 지키는 성주신에게 올리는 굿에서 유래하였다."],a:1,c:"개념",e:"<b>별신굿 = 큰 마을굿(매년 못 함) / 도당굿 = 작은 마을굿(매년 가능)</b>입니다. 신은 <b>서낭신 = 마을 수호신</b>, <b>성주신 = 집</b>, <b>조왕신 = 부엌</b>입니다. 하회 별신굿 탈놀이는 <b>서낭신</b>에게 제를 올리고 풍년을 기원하는 데서 유래했습니다."},
+{n:12,src:"예상 · 333번 근거(강릉단오제) · 30단원 교차",q:"강릉 단오제에서 함께 연행되는 가면극은?",o:["강릉 관노 가면극","하회 별신굿 탈놀이","수영 야류","남사당놀이"],a:0,c:"지역별 탈춤",e:"<b>강릉단오제 = 관노 가면극</b>입니다. 강사: &ldquo;<b>강릉 단오제 하면 이 단어 절대 빠지면 안 됩니다.</b>&rdquo; 나머지는 지역이 전혀 다릅니다 — 하회 별신굿 탈놀이는 <b>경북 안동</b>, 수영 야류는 <b>부산</b>, 남사당놀이는 <b>유랑 연예인</b>의 공연입니다."}
+];
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx=''+UNIT+' 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\n/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+# 용량 큰 원본 — 올리지 않음
+*.pdf
+*.hwp
+*.mp4
+*.mov
+*.m4a
+*.zip
+*.tar.gz
+*.srt
+.DS_Store
+pages/
+ocr/
+인쇄모음/
+_to_delete*/
+_옛버전/
+_백업_수정전/

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>국사 표모음 2편 — 삼국시대의 정치와 발전</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광국사 · 표 모음</div>
+<h1>관광국사 표 모음 — 2편 삼국시대의 정치와 발전
+<small>교재 진도 순서대로 · 표 10개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">3단원 삼국시대의 정치와 발전</span>
+<span class="chip">11개년 기출 37문항 · 단일 단원 최다</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>삼국시대의 정치와 발전</b>
+<a href="#t1">표 ① 삼국 항쟁과 삼국 통일 — 시기(순서) + 왕</a><a href="#t2">표 ② 신라 왕호의 변천</a><a href="#t3">표 ③ 삼국의 항쟁과 발전 (4세기 ~ 6세기) — 전성기였던 나라</a><a href="#t4">표 ④ 고구려 왕 계보 — 업적 전부</a><a href="#t5">표 ⑤ 백제 왕 계보 — 업적 전부</a><a href="#t6">표 ⑥ 신라 왕 계보 — 업적 전부</a><a href="#t7">표 ⑦ 가야</a><a href="#t8">표 ⑧</a><a href="#t9">표 ⑨</a><a href="#t10">표 ⑩ 삼국 시대 주요 전투 순서</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 10개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (10개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n5">★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<section id="t1" data-imp="1">
+<h2><span class="no">표 ①</span> 삼국 항쟁과 삼국 통일 — 시기(순서) + 왕 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:64px">시기</th><th>고구려</th><th>백제</th><th>신라</th><th style="width:170px">가야</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>1~2C</b></td>
+<td><b>주몽(동명왕) 건국</b> : 부여 유이민 중심<br><b>태조왕(1C)</b> : 중앙집권국가 기틀 마련<br>옥저 복속 · <b>계루부 고씨 왕위 세습</b><br><b>고국천왕(2C 후반)</b> : 왕위 <b>부자 상속제</b><br><b><span class="hl">진대법</span></b> 실시<br><b class="n5">★</b> 춘대추납 빈민 구제<br><span class="dash">1. 고구려 : 진대법 &nbsp; 2. 고려 : 의창 &nbsp; 3. 조선 : 환곡</span></td>
+<td><b>온조</b>(주몽 아들) : <b>하남 위례성</b> 도읍(<b>BC 18</b>)<br>고구려 유이민 + 한강 유역 토착민</td>
+<td><b>BC 57년 박혁거세</b> 건국<br><b>사로국</b> — 경주 토착민 + 유이민 집단<br><b>석탈해</b> 집단 등장 → <b>박·석·김</b> 부족 연맹<br><b><span class="hl">이사금</span></b> 선출</td>
+<td>2C 이후<br>낙동강 하류<br><b>변한</b> 지역에서 성장</td></tr>
+
+<tr class="per"><td class="biz"><b>3C</b></td>
+<td>—</td>
+<td><b>고이왕</b> — 중앙 집권 국가 기틀 마련<br><b>목지국 정복</b>, <b><span class="hl">율령</span></b> 반포<br><b>6<span class="hl">좌평</span></b>(중앙 관제) · <b>16관등제</b> · 관복제</td>
+<td>—</td>
+<td><b>전기 가야 연맹</b><br>(<b><span class="hl">금관가야</span></b> 주도)<br><b>김해</b></td></tr>
+
+<tr class="not"><td class="biz"><b>4C</b></td>
+<td><b>미천왕</b> : <b><span class="hl">낙랑</span></b> 멸망(<b>313</b>)<br><b><span class="hl">근초고왕</span></b>의 침략 → <b><span class="hl">고국원왕</span></b> 전사<br><b><span class="hl">소수림왕</span></b>(4C 후반) : 중앙 집권 체제 완비<br>&nbsp;&nbsp;<b>불교 수용 · <span class="hl">태학</span> 설립 · <span class="hl">율령</span> 반포</b></td>
+<td><b><span class="hl">근초고왕</span></b> — 중앙집권 완비, <b>전성기</b><br>고구려 <b><span class="hl">평양</span></b>성 공격 → <b><span class="hl">고국원왕</span></b> 전사<br><b>부자 상속제</b> 확립 · <b>마한 병합</b><br><b><span class="hl">요서</span> · 산둥 · 규슈 진출</b> · <b>칠지도</b>(왜)<br>역사서 <b>『<span class="hl">서기</span>』</b> 편찬<br><b>침류왕</b> : 불교 공인(동진의 <b>마라난타</b>)</td>
+<td><b>내물왕</b>(4C 말) — 중앙집권국가 마련<br>진한 병합 · <b>김씨 왕위 세습</b> 확립<br><b><span class="hl">마립간</span></b> 칭호 사용<br><b><span class="hl">광개토대왕</span></b> 원조 → 왜구 퇴치<br>&nbsp;&nbsp;(경주 <b>호우명 그릇</b>, <b><span class="hl">광개토대왕릉비</span></b>문)</td>
+<td>벼농사 · 철 생산<br><b>낙랑 · 왜 중계 무역</b><br><b><span class="hl">광개토대왕</span></b> 원정(5C 초)</td></tr>
+
+<tr class="des"><td class="biz"><b>5C</b></td>
+<td><b><span class="hl">광개토대왕</span></b>(4C 말~5C 초)<br>후연(선비족) 정벌 → <b>요동 정복</b><br>신라 원조 → 왜구 격퇴, 연호 <b><span class="hl">영락</span></b><br><b><span class="hl">장수왕</span></b>(<b>전성기</b>)<br>&nbsp;&nbsp;남하정책 · <b><span class="hl">평양</span> 천도</b> · <b><span class="hl">한성</span></b> 함락<br>&nbsp;&nbsp;남양만~죽령 이북 · <b>충주(중원) 고구려비</b> 건립<br><b>문자왕</b> : 부여 복속(<b>494</b>) → 최대 영토</td>
+<td><b>개로왕</b> : 장수왕의 <b><span class="hl">한성</span></b> 점령 → 전사<br><b><span class="hl">문주왕</span></b> : <b><span class="hl">웅진</span></b>(공주) 천도 → 국력 약화<br><b>동성왕</b> : 신라와 결혼동맹, <b>탐라국 복속</b></td>
+<td><b>눌지왕</b> : 왕위 부자 상속제, <b><span class="hl">나제동맹</span></b><br>&nbsp;&nbsp;불교 전래(고구려의 묵호자)<br><b>소지왕</b> : 백제와 결혼동맹</td>
+<td><b>후기 가야 연맹</b><br>(<b>대가야</b> 주도)<br>신라와 결혼동맹</td></tr>
+
+<tr class="mint"><td class="biz"><b>6C</b></td>
+<td>—</td>
+<td><b>무령왕</b>(6C 초)<br>&nbsp;&nbsp;<b><span class="hl">22담로</span></b> : 왕족 파견 → 지방 세력 통제<br>&nbsp;&nbsp;<b>무령왕릉</b> : 벽돌무덤, 남조의 <b>양</b>과 교류<br><b><span class="hl">성왕</span></b>(6C 중기)<br>&nbsp;&nbsp;<b><span class="hl">사비</span></b>(부여) 천도(<b>538</b>) · 국호 <b><span class="hl">남부여</span></b><br>&nbsp;&nbsp;중앙 관제(<b><span class="hl">22부</span></b>), 지방제도(<b>5방</b>) 정비<br>&nbsp;&nbsp;일본에 불교 전파(<b>노리사치계</b>)<br>&nbsp;&nbsp;<b><span class="hl">한강</span> 하류 확보 → <span class="hl">진흥왕</span>에게 상실</b><br>&nbsp;&nbsp;→ <b><span class="hl">관산성</span></b> 전투에서 전사(<b>554</b>) — 신라 김무력</td>
+<td><b><span class="hl">지증왕</span></b>(6C) : 국호 <b>신라</b> · <b>‘왕’ 칭호</b><br>&nbsp;&nbsp;<b><span class="hl">우경</span></b> 실시 · <b><span class="hl">우산국</span></b>(울릉도) 복속<br><b><span class="hl">법흥왕</span></b> : 중앙집권체제 완비<br>&nbsp;&nbsp;<b><span class="hl">율령</span></b> 반포 · <b>불교 공인</b>(<b>이차돈</b>의 순교)<br>&nbsp;&nbsp;<b><span class="hl">금관가야</span></b> 정복(<b>532</b>) · 불교식 왕명<br><b><span class="hl">진흥왕</span></b>(<b>전성기</b>) : 6C 중후반<br>&nbsp;&nbsp;<b><span class="hl">한강</span></b>(553) · <b>단양 적성비</b> · <b>북한산비</b><br>&nbsp;&nbsp;<b><span class="hl">대가야</span></b> 정복(<b>562</b>) · <b><span class="hl">화랑도</span></b> 활동</td>
+<td><b><span class="hl">금관가야</span></b> 멸망<br>(532 · <b><span class="hl">법흥왕</span></b>)<br><b><span class="hl">대가야</span></b> 멸망<br>(562 · <b><span class="hl">진흥왕</span></b>)<br>→ 신라에게 멸망</td></tr>
+
+<tr class="rose"><td class="biz"><b>7C</b></td>
+<td><b>여수 전쟁</b> — 고구려와 수나라 전쟁<br>&nbsp;&nbsp;고구려의 <b><span class="hl">요서</span></b> 선제공격 → 수 문제 침략<br>&nbsp;&nbsp;<b><span class="hl">살수</span>대첩</b>(612) 수 양제 침략 — <b><span class="hl">을지문덕</span></b> 격퇴<br><b><span class="hl">연개소문</span></b> 쿠데타 → <b>보장왕</b> 즉위<br><b>여당 전쟁</b> : 연개소문 → <b><span class="hl">천리장성</span></b> 축조<br>&nbsp;&nbsp;<b><span class="hl">안시성</span></b> 싸움(645 · <b>양만춘</b> 장군)<br><b>보장왕</b> : 고구려 멸망(<b>668</b>)</td>
+<td><b><span class="hl">무왕</span></b> : 익산 천도 추진 · <b><span class="hl">미륵사</span></b> 건립<br><b>의자왕</b>(백제의 마지막 왕)<br>&nbsp;&nbsp;신라의 <b>대야성</b> 등 함락<br>&nbsp;&nbsp;<b>황산벌 전투</b>(계백) 패배 → <b>김유신</b>에게<br>&nbsp;&nbsp;백제 멸망(<b>660</b>)</td>
+<td><b><span class="hl">선덕여왕</span></b> : <b><span class="hl">황룡사</span> 9층 목탑</b> · <b><span class="hl">첨성대</span></b><br>&nbsp;&nbsp;분황사 모전석탑 건립<br><b>진덕여왕</b> : 나당 연합(<b><span class="hl">김춘추</span></b>)<br><b>무열왕</b> : <b>진골 최초 왕</b>(김춘추)<br><b>문무왕</b> : <b>삼국 통일</b>(<b>676</b>)</td>
+<td>중앙집권국가로 성장하지 못하고<br><b>연맹 왕국 단계에서 멸망</b><br><b class="n5">★</b> 가야 토기 → 일본 <b>스에키 토기</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2" data-imp="1">
+<h2><span class="no">표 ②</span> 신라 왕호의 변천 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:70px">순서</th><th style="width:150px">왕호</th><th>뜻</th><th style="width:200px">시작 · 비고</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>1</b></td><td><b><span class="hl">거서간</span></b></td><td>군장 · 부족장</td><td>박혁거세</td></tr>
+<tr class="per"><td class="biz"><b>2</b></td><td><b><span class="hl">차차웅</span></b></td><td>제사장</td><td>—</td></tr>
+<tr class="not"><td class="biz"><b>3</b></td><td><b><span class="hl">이사금</span></b></td><td>연맹장 · 연장자</td><td>박 · 석 · 김 교대</td></tr>
+<tr class="des"><td class="biz"><b>4</b></td><td><b><span class="hl">마립간</span></b></td><td>대군장</td><td><b>내물왕</b>부터 · 김씨 독점 세습</td></tr>
+<tr class="mint"><td class="biz"><b>5</b></td><td><b>왕</b></td><td>중국식 왕호</td><td><b><span class="hl">지증왕</span></b>부터 · 국호 사로국 → <b>신라</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t3" data-imp="1">
+<h2><span class="no">표 ③</span> 삼국의 항쟁과 발전 (4세기 ~ 6세기) — 전성기였던 나라 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:120px">시기 · 전성기</th><th>고구려</th><th>백제</th><th>신라</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>4세기</b><br><b class="n5">★</b> <b>백제</b> 전성기</td>
+<td><b>미천왕</b> : <b><span class="hl">낙랑</span></b> 멸망(313)<br>백제의 평양성 공격 → <b><span class="hl">고국원왕</span></b> 전사<br><b><span class="hl">소수림왕</span></b> — 중앙집권체제 완성<br>&nbsp;&nbsp;불교 공인 · <b><span class="hl">율령</span></b> 반포 · <b><span class="hl">태학</span></b> 설립<br>&nbsp;&nbsp;<b class="n5">★</b> <b><span class="hl">태학</span></b> = 최초의 국립 대학<br><b><span class="hl">광개토대왕</span></b> — 요동 정벌, 연호 <b><span class="hl">영락</span></b><br>&nbsp;&nbsp;신라 원조 → 왜구 · 가야 격퇴</td>
+<td><b><span class="hl">근초고왕</span></b><br>&nbsp;&nbsp;마한 병합 · <b><span class="hl">요서</span> · 산둥 · 규슈 진출</b><br>&nbsp;&nbsp;역사책 『<b><span class="hl">서기</span></b>』 편찬<br><b>침류왕</b> : 불교 공인 — 공식 종교로 인정</td>
+<td>중앙집권국가 기틀 마련(<b>내물왕</b>)<br>김씨 왕위 세습 · <b><span class="hl">마립간</span></b><br>진한 병합<br>(증거 : <b>호우명 그릇</b>, <b><span class="hl">광개토대왕릉비</span></b>문)</td></tr>
+
+<tr class="per"><td class="biz"><b>5세기</b><br><b class="n5">★</b> <b>고구려</b> 전성기</td>
+<td><b><span class="hl">장수왕</span></b><br>&nbsp;&nbsp;<b><span class="hl">평양</span></b> 천도(남하 정책)<br>&nbsp;&nbsp;<b><span class="hl">한강</span>(<span class="hl">한성</span>) 점령</b><br>&nbsp;&nbsp;중국 <b>남조</b>와 교류<br>&nbsp;&nbsp;중원(충주) 고구려비 건립<br><b>문자왕</b> : 부여 복속(<b>494</b>)</td>
+<td><b>개로왕</b> 전사<br><b><span class="hl">문주왕</span></b> : <b><span class="hl">웅진</span></b>(공주) 천도<br><b>동성왕</b> : 탐라 복속 · 신라와 결혼 동맹</td>
+<td><b><span class="hl">나제동맹</span></b> — 백제와 신라가 동맹<br>&nbsp;&nbsp;<b>눌지왕</b> · <b>평양 천도를 계기로</b><br>&nbsp;&nbsp;불교 전래<br><b>소지왕</b> : 백제와 결혼 동맹</td></tr>
+
+<tr class="not"><td class="biz"><b>6세기</b><br><b class="n5">★</b> <b>신라</b> 전성기</td>
+<td>—</td>
+<td><b>무령왕</b> : <b><span class="hl">22담로</span></b> 설치 → 지방 세력 통제<br>&nbsp;&nbsp;<b>무령왕릉</b>(중국 남조의 영향 → 벽돌무덤)<br><b><span class="hl">성왕</span></b> : <b><span class="hl">사비</span></b>(부여) 천도 · 국호 <b><span class="hl">남부여</span></b><br>&nbsp;&nbsp;<b><span class="hl">22부</span></b>(중앙 관사) · <b>5방</b>(지방 행정조직) 설치<br>&nbsp;&nbsp;<b><span class="hl">한강</span></b> 하류 탈환 → <b><span class="hl">진흥왕</span></b>에게 상실<br>&nbsp;&nbsp;<b><span class="hl">관산성</span></b> 전투에서 사망</td>
+<td><b><span class="hl">지증왕</span></b> : 국호 신라 · ‘왕’ 칭호 사용<br>&nbsp;&nbsp;<b><span class="hl">우경</span></b> 실시 · <b><span class="hl">우산국</span></b>(울릉도) 복속<br><b><span class="hl">법흥왕</span></b> : <b><span class="hl">율령</span></b> 반포 · 불교 공인(<b>이차돈</b> 순교)<br>&nbsp;&nbsp;불교식 왕명 · <b><span class="hl">금관가야</span></b> 정복<br><b><span class="hl">진흥왕</span></b> : <b><span class="hl">한강</span></b> 상류(단양 적성비)<br>&nbsp;&nbsp;<b><span class="hl">한강</span></b> 하류(북한산 순수비)<br>&nbsp;&nbsp;<b><span class="hl">대가야</span></b> 정복 · 『국사』 편찬<br>&nbsp;&nbsp;<b><span class="hl">화랑도</span></b>(군사 조직) · <b><span class="hl">황룡사</span></b> 건립<br>&nbsp;&nbsp;<b class="n5">★</b> <b><span class="hl">황룡사</span> 9층 목탑</b>은 <b><span class="hl">선덕여왕</span></b> 건립</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t4" data-imp="1">
+<h2><span class="no">표 ④</span> 고구려 왕 계보 — 업적 전부 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:130px">왕</th><th style="width:120px">시기</th><th>업적</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>태조왕</b></td><td>1C 후반</td><td>옥저 복속 · <b>계루부 고씨 왕위 세습</b> 시작 · 이전은 형제상속</td></tr>
+<tr class="per"><td class="biz"><b>고국천왕</b></td><td>2C 후반</td><td><b><span class="hl">진대법</span></b>(춘대추납 빈민구제) · <b>부자상속제</b>로 전환</td></tr>
+<tr class="not"><td class="biz"><b>미천왕</b></td><td>4C 초</td><td><b><span class="hl">낙랑</span></b>군 축출(313) · 대동강 유역 차지</td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">고국원왕</span></b></td><td>4C 중</td><td>선비족 침입으로 국가적 위기 · 백제 <b><span class="hl">근초고왕</span></b>에게 <b><span class="hl">평양</span></b>성에서 전사</td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">소수림왕</span></b></td><td>4C 후반</td><td>① 불교 공인(372, 전진 순도) ② <b><span class="hl">율령</span></b> 반포 ③ <b><span class="hl">태학</span></b> 설립(최초의 국립대학)</td></tr>
+<tr class="rose"><td class="biz"><b><span class="hl">광개토대왕</span></b></td><td>4C 말~5C 초</td><td>요동 정벌 · 최초의 독자 연호 <b><span class="hl">영락</span></b> · 신라 내물왕 요청으로 왜 · 가야 격퇴(증거 : 호우명 그릇 · <b><span class="hl">광개토대왕릉비</span></b>) · <b><span class="hl">금관가야</span></b> 쇠퇴시킴</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">장수왕</span></b><br><span class="dash">전성기</span></td><td>5C</td><td><b><span class="hl">평양</span> 천도(427)</b> = 남하정책 · <b><span class="hl">나제동맹</span></b>(433) 유발 · <b><span class="hl">한성</span></b> 함락(475, 개로왕 전사) · 중원 고구려비 · <b>등거리 외교</b>(남조 · 북조 동시 친선) · 광개토대왕릉비 건립</td></tr>
+<tr class="per"><td class="biz"><b>문자왕</b></td><td>5C 말</td><td>부여 복속(<b>494</b>) · 최대 영토 — 전성기 왕은 장수왕</td></tr>
+<tr class="not"><td class="biz"><b>영양왕</b></td><td>6C 말~7C</td><td><b><span class="hl">요서</span></b> 선제공격(여수전쟁 시작) · <b>612 <span class="hl">살수</span>대첩</b>(<b><span class="hl">을지문덕</span></b> vs 수 양제)</td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">연개소문</span></b></td><td>7C</td><td>정변으로 보장왕 옹립 · 당 대비 <b><span class="hl">천리장성</span></b>(부여성~비사성) · <b>645 <span class="hl">안시성</span> 전투</b>(양만춘 vs 당 태종)</td></tr>
+<tr class="mint"><td class="biz"><b>보장왕</b></td><td>668</td><td>고구려 <b>마지막 왕</b> · 나당연합군에 멸망 · 이후 부흥운동(<b>검모잠 · 안승 · 고연무</b>)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t5" data-imp="1">
+<h2><span class="no">표 ⑤</span> 백제 왕 계보 — 업적 전부 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:130px">왕</th><th style="width:120px">시기</th><th>업적</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>온조</b></td><td>BC 18</td><td>고구려 유이민 + 한강 토착민이 건국 · 도읍 <b>하남위례성</b></td></tr>
+<tr class="per"><td class="biz"><b>고이왕</b></td><td>3C</td><td>목지국 병합 · <b>6<span class="hl">좌평</span></b> 중앙관제 · <b>16관등제</b> · 관복 색깔로 등급 구분</td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">근초고왕</span></b><br><span class="dash">전성기</span></td><td>4C</td><td>마한 통합 · <b><span class="hl">고국원왕</span></b> 전사시킴(황해도 차지) · <b><span class="hl">요서</span> · 산둥 · 규슈 진출</b> · 왜와 친선(<b>칠지도</b>) · 부자상속 확립 · 역사서 『<b><span class="hl">서기</span></b>』 편찬</td></tr>
+<tr class="des"><td class="biz"><b>침류왕</b></td><td>384</td><td>불교 수용(동진 <b>마라난타</b>) — 들어오자마자 즉시 공인</td></tr>
+<tr class="mint"><td class="biz"><b>비유왕</b></td><td>433</td><td><b><span class="hl">나제동맹</span></b> 체결(신라 눌지왕과)</td></tr>
+<tr class="rose"><td class="biz"><b>개로왕</b></td><td>475</td><td>장수왕에게 <b><span class="hl">한성</span></b> 함락당하고 전사</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">문주왕</span></b></td><td>475</td><td><b><span class="hl">웅진</span></b>(공주) 천도</td></tr>
+<tr class="per"><td class="biz"><b>동성왕</b></td><td>5C 말</td><td>탐라(제주도) 복속 · 신라와 결혼동맹</td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">무령왕</span></b></td><td>6C</td><td><b><span class="hl">22담로</span></b> 설치 · 왕족 파견(지방통제 강화) · 중국 남조 <b>양</b>나라와 교류 · <b>무령왕릉 = 벽돌무덤</b>(공주)</td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">성왕</span></b></td><td>6C</td><td><b><span class="hl">사비</span></b>(부여) 천도(<b>538</b>) · 국호 <b><span class="hl">남부여</span></b> · <b><span class="hl">22부</span></b> 중앙관제 · <b>5방</b> 지방제 · <b>노리사치계</b>가 일본에 불교 전파 · <b><span class="hl">한강</span></b> 일시 회복 후 상실 · <b><span class="hl">관산성</span></b> 전투(554)에서 <b>김무력</b>에게 전사</td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">무왕</span></b></td><td>7C 초</td><td>익산 <b><span class="hl">미륵사</span></b> 창건 · 익산 천도 추진</td></tr>
+<tr class="rose"><td class="biz"><b>의자왕</b></td><td>660</td><td>백제 <b>마지막 왕</b> · 신라 <b>대야성</b> 함락 · <b>황산벌 전투</b>에서 계백이 김유신에게 패배 → 멸망 · 부흥운동(<b>복신 · 도침</b> — 주류성, <b>흑치상지</b> — 임존성, 왕자 <b>풍</b> 추대) → <b>백강 전투</b>(663) 패배로 실패</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t6" data-imp="1">
+<h2><span class="no">표 ⑥</span> 신라 왕 계보 — 업적 전부 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">왕</th><th style="width:120px">시기</th><th>업적</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>박혁거세</b></td><td>BC 57</td><td>건국 · 원래 국호 <b>사로국</b> · 이후 박 · 석 · 김 3성 교대</td></tr>
+<tr class="per"><td class="biz"><b>내물왕</b></td><td>4C</td><td>김씨 왕위 세습 확립 · <b><span class="hl">마립간</span></b> 칭호 · <b><span class="hl">광개토대왕</span></b>의 도움으로 왜구 격퇴</td></tr>
+<tr class="not"><td class="biz"><b>눌지왕</b></td><td>433</td><td><b><span class="hl">나제동맹</span></b>(백제 비유왕과) · 불교 <b>전래</b>(공인 아님)</td></tr>
+<tr class="des"><td class="biz"><b>소지왕</b></td><td>5C 말</td><td>백제와 결혼동맹</td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">지증왕</span></b></td><td>6C</td><td>국호 <b>신라</b> · 왕호 ‘왕’ · <b><span class="hl">우경</span></b> 실시 · <b><span class="hl">우산국</span></b>(울릉도) 복속</td></tr>
+<tr class="rose"><td class="biz"><b><span class="hl">법흥왕</span></b></td><td>6C</td><td><b><span class="hl">율령</span></b> 반포(527) · 불교 공인(527, <b>이차돈</b> 순교) · <b><span class="hl">금관가야</span></b> 병합(<b>532</b>) · <b><span class="hl">상대등</span></b> · 병부 설치 · 독자 연호 <b>건원</b> · 불교식 왕명 시작</td></tr>
+<tr class="reg"><td class="biz"><b><span class="hl">진흥왕</span></b><br><span class="dash">전성기</span></td><td>6C 후반</td><td><b><span class="hl">한강</span></b> 유역 완전 차지(<b>단양 적성비</b> = 상류, <b>북한산비</b> = 하류) · <b><span class="hl">대가야</span></b> 정복(<b>562</b>) · <b><span class="hl">화랑도</span></b>를 국가 조직으로 개편 · 함경도 진출(<b>황초령비 · 마운령비</b>) · 『국사』 편찬 · <b><span class="hl">황룡사</span></b> 건립</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">선덕여왕</span></b></td><td>7C</td><td>성골 출신 · <b><span class="hl">첨성대</span></b> · <b><span class="hl">황룡사</span> 9층목탑</b> · 분황사 모전석탑 · <b>자장</b>을 당에 파견</td></tr>
+<tr class="not"><td class="biz"><b>무열왕</b><br><span class="dash">김춘추</span></td><td>654~</td><td><b>최초의 진골 왕</b> · 나당연합(<b>648</b>) · <b><span class="hl">집사부</span></b> <b><span class="hl">시중</span></b> 기능 강화</td></tr>
+<tr class="des"><td class="biz"><b>문무왕</b></td><td>676</td><td><b>삼국통일 완성</b>(<b>매소성</b> 675 · 기벌포 676)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t7" data-imp="1">
+<h2><span class="no">표 ⑦</span> 가야 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b><span class="hl">금관가야</span></b></td><td><b>김해</b> · <b>전기 가야연맹</b> 주도 · 질 좋은 <b>철</b> 생산, <b>낙랑 · 왜</b>와 교역(철을 화폐처럼 사용, <b>덩이쇠</b>) · <b><span class="hl">광개토대왕</span></b>의 공격으로 쇠퇴 · <b>532년 <span class="hl">법흥왕</span></b>에게 병합</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">대가야</span></b></td><td><b>고령</b> · <b>후기 가야연맹</b> 주도 · 신라와 결혼동맹 · <b>562년 <span class="hl">진흥왕</span></b>에게 병합</td></tr>
+<tr class="not"><td class="biz"><b>가야 총평</b></td><td>끝까지 <b>연맹왕국</b> 단계에 머묾 = <b>중앙집권국가로 성장하지 못함</b> · 토기 기술이 일본 <b>스에키 토기</b>에 영향</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t8" data-imp="1">
+<h2><span class="no">표 ⑧</span> <b class="n5">★</b> 십자형 외교 시대 (6세기 말 ~ 7세기)</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:170px">구분</th><th style="width:300px">연합</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>남북 연합</b></td><td><b>돌궐 = 고구려 = 백제 = 왜</b></td><td>진흥왕의 한강 독차지 이후 고구려와 백제가 다시 연합</td></tr>
+<tr class="per"><td class="biz"><b>동서 연합</b></td><td><b>신라 = 수 · 당</b></td><td>포위된 신라가 중국과 연합 → 나당연합(648)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t9" data-imp="1">
+<h2><span class="no">표 ⑨</span> <b class="n5">★</b> 신라의 삼국 통일 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>통일 과정</b></td><td><b>나당 연합(648)</b> → <b>백제 멸망(660)</b> → <b>고구려 멸망(668)</b> → <b>나당 전쟁</b>(<b>매소성</b> · 기벌포 전투 승리) → <b>삼국통일(676)</b></td></tr>
+<tr class="per"><td class="biz"><b>백제 부흥 운동</b></td><td><b>흑치상지 · 복신 · 도침 · 풍</b><br>왜의 지원 — <b>백강 전투</b> 패배</td></tr>
+<tr class="not"><td class="biz"><b>고구려 부흥 운동</b></td><td><b>검모잠 · 안승</b> — 한성, <b>고연무</b> — 오골성<br>신라의 지원 → <b>당 견제 목적</b></td></tr>
+<tr class="des"><td class="biz"><b>당의 한반도<br>지배 야욕</b></td><td><b>안동도호부</b>(고구려) · <b>웅진도독부</b>(백제) · <b>계림도독부</b>(신라)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t10" data-imp="1">
+<h2><span class="no">표 ⑩</span> 삼국 시대 주요 전투 순서 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:64px">순서</th><th style="width:180px">전투</th><th style="width:100px">연도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>1</b></td><td><b><span class="hl">관산성</span> 전투</b></td><td><b>554</b></td><td>백제 <b><span class="hl">성왕</span></b> 전사 — 신라 김무력</td></tr>
+<tr class="per"><td class="biz"><b>2</b></td><td><b><span class="hl">살수</span>대첩</b></td><td><b>612</b></td><td><b><span class="hl">을지문덕</span></b> — 수 양제 격퇴</td></tr>
+<tr class="not"><td class="biz"><b>3</b></td><td><b><span class="hl">안시성</span> 전투</b></td><td><b>645</b></td><td><b>양만춘</b> — 당 태종 격퇴</td></tr>
+<tr class="des"><td class="biz"><b>4</b></td><td><b>황산벌 전투</b></td><td><b>660</b></td><td>계백 vs 김유신 → <b>백제 멸망</b></td></tr>
+<tr class="mint"><td class="biz"><b>5</b></td><td><b><span class="hl">매소성</span> 전투</b></td><td><b>675</b></td><td rowspan="2"><b>나 · 당 전쟁</b> → 삼국통일(676)</td></tr>
+<tr class="rose"><td class="biz"><b>6</b></td><td><b>기벌포 전투</b></td><td><b>676</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 관광국사 원본교재 「관광국사 핵심 요약 정리」(세종 관광 통역 가이드 학원, 이현호) 1. 고대의 정치 (1) 삼국 항쟁과 삼국 통일 · [삼국의 항쟁과 발전(4세기~6세기)], 그리고 같은 교재로 만들어 둔 관광국사 3단원 학습자료의 총정리표. <b class="n5">★</b>는 교재에 인쇄되어 있는 별표를 그대로 옮긴 것입니다.</p>
+<p>노랑 표시는 산업인력공단·학원 기출 관광국사 11개년 273문항을 세어 붙였습니다. 이 단원은 <b>37문항(13.6%)</b>으로 단일 단원 최다입니다.</p>
+<p><b>확인 필요</b> — 원본교재 첫 번째 표에는 문자왕의 부여 복속이 「434」로 인쇄되어 있고, 같은 교재 두 번째 표와 3단원 학습자료에는 「494」로 되어 있습니다. 표에는 <b>494</b>로 적었습니다. 어느 쪽으로 할지 알려주세요.</p>
+</footer>
+
+</div>
+<script>
+function flt(m){
+  var secs=document.querySelectorAll('section');
+  for(var i=0;i<secs.length;i++){ secs[i].hidden=(m!=='all')&&!secs[i].dataset[m]; }
+  var bs=document.querySelectorAll('.tabbtn');
+  for(var k=0;k<bs.length;k++){ bs[k].classList.toggle('on', bs[k].dataset.f===m); }
+  var toc=document.querySelector('nav.toc'); if(toc) toc.hidden=(m!=='all');
+}
+</script>
+</body></html>

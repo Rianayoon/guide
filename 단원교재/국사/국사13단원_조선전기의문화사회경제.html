@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광국사 13단원 · 조선 전기의 문화·사회·경제</title>
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.s5 .num{background:var(--pal)} .s5 .ttl{color:var(--pal)} .s5{border-top:3px solid var(--pal)}
+.s6 .num{background:var(--neo)} .s6 .ttl{color:var(--neo)} .s6{border-top:3px solid var(--neo)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)} .s5 b.k{color:var(--pal)} .s6 b.k{color:var(--neo)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q.hide{display:none}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.rank,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(2,1fr)}}
+.rank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0}
+.rank .r{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;box-shadow:var(--shadow)}
+.rank .r b{display:block;font-size:15px;color:var(--bro);margin-bottom:5px}
+.rank .r span{font-size:12px;color:var(--ink-2);display:block;line-height:1.5}
+.rank .r.top{border-color:var(--gold)}
+.rank .r.top b{color:var(--gold)}
+@media(max-width:560px){.rank{grid-template-columns:repeat(2,1fr)}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 13단원</div>
+<h1>조선 전기의 문화·사회·경제
+<small>유교의 나라, 그러나 왕실은 불교를 못 놓았다 · 이이(주기론) vs 이황(주리론) · 과전법→직전법→관수관급제</small>
+</h1>
+<div class="meta">
+<span class="chip hot">기출 원문 0문항 — 대신 오답노트 검증 문장 17개를 근거로 구성</span>
+<span class="chip">예상문제 24문항 전부 관광국사.md·오답노트 확인</span>
+<span class="chip">2013~2025년 215문항 실측(정치 단원만 수록)</span>
+<span class="chip">시험 D-20</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원을 관통하는 한 줄</h2>
+<p class="sub">이 단원을 관통하는 한 줄은 이것입니다 — <b>조선은 정치뿐 아니라 정신세계까지 유교(성리학)의 나라로 바꾸려 했지만, 왕실 개인은 끝내 불교를 완전히 놓지 못했고, 16세기 사림파가 집권하며 성리학이 만개하는 동시에 사회·경제 제도도 조선 특유의 틀(반상제·직전법 등)을 갖추게 되었다</b>는 것입니다. 억불 정책(도첩제)을 펴면서도 세종은 몰래 내불당을 짓고, 세조는 대놓고 원각사지 10층 석탑을 세웁니다. 학문에서는 사림파가 커지며 이이의 주기론과 이황의 주리론으로 갈라지고, 토지 제도는 세습지 문제(과전법)를 해결하려다 관리의 수탈 문제(직전법)를 낳고, 결국 국가가 직접 걷는 방식(관수관급제)으로 정리됩니다.</p>
+
+<div class="flow">
+<b>억불 정책 + 왕실의 개인 신앙</b><i>→</i><b>관학파 역사서 → 사림파의 존화주의</b><i>→</i><b class="hi">성리학의 만개(주기론 vs 주리론)</b><i>→</i><b>양천제 → 반상제</b><i>→</i><b>과전법 → 직전법 → 관수관급제</b>
+</div>
+
+<div class="tl">
+<div class="t1"><b>건국~15세기 중엽</b><span>도첩제 실시(억불) · 고려사·고려사절요·<b>동국통감</b> 편찬(관학파)<br><b>과전법</b>(태조, 경기도 한정 수조권) · <b>양천제</b>(법제적 2분류)</span></div>
+<div class="t2"><b>세종~성종(15세기 중후반)</b><span>세종의 과학·문화 황금기 / 세조: <b>원각사지 10층 석탑</b>·<b>직전법</b> / 성종: <b>동국여지승람</b>·<b>관수관급제</b>·도첩제 폐지</span></div>
+<div class="t3"><b>16세기(사림파 집권기)</b><span>존화주의 역사서(동국사략·기자실기) · <b>이이(주기론) vs 이황(주리론)</b><br><b>반상제</b> 정착 · 방납의 폐단 → 수미법 주장(이이·유성룡)</span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>먼저 알려드립니다 — 이 단원은 기출 원문 215문항 중 대응 문항이 0개입니다.</b> 저희가 가진 기출 원문(관광국사기출.pdf)은 <b>「정치」 단원 문항만</b> 수록하고 있어, 문화·사회·경제를 다루는 이 단원은 원본에 아예 없습니다(6·7·9·10단원과 같은 사정). 대신 <b>오답노트(PART IV, CHAPTER02〈문화〉·CHAPTER03〈사회·경제〉)</b>에 실제로 검증된 O/X 문항 17개가 있어, 이를 근거로 예상문제 24개를 만들었습니다 — 추측으로 채운 내용은 없습니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 읽는 조선 전기의 문화·사회·경제</h2>
+<p class="sub">외우기 전에 먼저 이야기로 한 번 읽어 주세요. 조선이 어떤 나라를 만들려 했는지 그 <b>이유</b>를 알면, 이름과 연도는 저절로 따라옵니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">유교의 나라, 그러나 왕실은 불교를 못 놓았다</div><div class="era">건국~성종</div></div>
+<div class="body">
+<p>조선을 세운 사람들은 정치적으로도, 정신적으로도 고려와 다른 나라를 만들고 싶어했습니다. 고려가 불교의 나라였다면, 조선은 <b class="k">유교(성리학)의 나라</b>입니다. 그래서 건국 초부터 승려가 되려면 나라의 허가를 받아야 하는 <b class="k">도첩제</b>를 실시해 불교 세력을 억누릅니다(이를 "억불" 정책이라 합니다). 도첩제는 <b>성종 때 폐지</b>됩니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사가 공식적으로는 "우리는 전 직원이 신제도(유교)만 따른다"고 선언하면서도, 정작 오너(왕실) 개인은 예전 방식(불교)을 몰래 계속 쓰는 것과 비슷합니다.</div></div>
+<p>왕실 개인의 신앙까지 막지는 못해서, <b>세종</b>은 궁궐 안에 몰래 <b class="k">내불당</b>을 짓고 부처님을 기리는 노래 <b>"월인천강지곡"</b>을 짓기도 했고, <b>세조</b>는 독실한 불교 신자여서 대리석으로 만든 <b class="k">원각사지 10층 석탑</b>을 세우고 불경 번역 기관 <b>간경도감</b>도 설치했습니다. 이렇게 조선 전기 불교는 "나라는 억누르지만 왕실 개인은 가끔 챙기는" 애매한 위치에 있었습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> "원각사지 10층 석탑은 화강암으로 만들어졌다"는 <b>틀린 문장</b>입니다(오답노트 확인) — <b>대리석</b>입니다. 고려의 경천사지 10층 석탑(원의 영향)을 계승한 것으로 봅니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">역사를 다시 쓰다 — 관학파에서 사림파까지</div><div class="era">건국~16세기</div></div>
+<div class="body">
+<p>역사서도 성격이 달라집니다. 건국 초에는 정도전이 "고려국사"를 정리해 조선 건국의 정당성을 확보했고, 15세기 중엽에는 "고려사"(기전체), "고려사절요"(편년체), 그리고 단군부터 고려까지를 정리한 <b class="k">동국통감</b>(서거정)이 만들어집니다.</p>
+<p>그런데 16세기가 되면 중앙 정치를 잡은 사림파가 "중국(중화)을 받드는" <b class="k">존화주의적</b> 역사관을 강하게 갖게 되면서, 기자 조선(중국에서 온 기자가 다스렸다는 전설의 나라)을 중요하게 여기는 역사서(<b>"동국사략"</b>(박상), <b>"기자실기"</b>(이이))가 나옵니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 15세기 중엽 역사서(고려사·고려사절요·동국통감)는 <b>관학파(훈구파)</b>가 조선 건국의 정통성을 강조하며 쓴 것이고, 16세기 역사서(동국사략·기자실기)는 <b>사림파</b>가 중국(중화) 중심의 세계관으로 쓴 것입니다 — 지은이의 소속 세력이 다르니 성격도 다릅니다.</p>
+<p>나라를 다스리는 데 필요한 실용적인 자료도 많이 만들어졌는데, 태종 때는 현재 남아있는 세계지도 중 동양에서 가장 오래된 <b class="k">혼일강리역대국도지도</b>를, 성종 때는 전국 군현의 정보를 정리한 지리서 <b class="k">동국여지승람</b>을 만듭니다. 그리고 왕이 죽고 나면 다음 왕 대에 그 왕의 재위 기간 기록을 편년체로 정리하는 <b class="k">조선왕조실록</b>도 이때부터 이어져, 오늘날 유네스코 세계기록유산으로 남아 있습니다(원래 4곳의 사고에 보관했는데 임진왜란 때 전주 사고본만 남고 다 불타서, <b>광해군 때 5곳으로 늘려</b> 다시 보관했습니다).</p>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">세종의 과학, 그리고 조선 전기의 문화유산</div><div class="era">건국~16세기</div></div>
+<div class="body">
+<p>예술·문학·과학에서도 성과가 이어집니다. 도자기는 회청색 <b class="k">분청사기</b>(15세기)에서 깨끗한 흰색의 <b class="k">순백자</b>(16세기)로 유행이 바뀌고, 문학에서는 <b>"동문선"</b>(서거정, 우리나라 역대 시와 산문 모음), <b>"금오신화"</b>(김시습, 우리나라 <b>최초의 한문 소설</b>), <b>"용비어천가"</b>(훈민정음으로 간행, 조선 왕조의 창업을 찬양), 그리고 정철의 <b>"관동별곡"</b> 같은 가사 문학이 나옵니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>안견의 "몽유도원도"는 안평대군이 꾼 꿈을 소재로 그린, 조선 전기를 대표하는 그림입니다. 아쉽게도 지금은 우리나라가 아니라 <b>일본(덴리대학)</b>에 소장되어 있습니다 — 이런 국외 소재 문화재 이야기가 나올 때마다 마음이 아프지만, 시험에는 정확한 소재지를 알아 둬야 합니다.</div></div>
+<p>과학기술은 특히 <b>세종</b> 때 집중적으로 발전했습니다 — 이미 11단원에서 다룬 측우기·앙부일구·자격루, 우리 실정에 맞는 역법 <b class="k">칠정산</b>, 농민들의 경험담을 바탕으로 한 최초의 농서 <b class="k">농사직설</b>, 의학서 향약집성방·의방유취까지, 조선 전기 과학은 사실상 "세종 시대"라 해도 될 정도입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> "세종 때는 계미자를, 태종 때에는 갑인자를 주조하였다"는 <b>틀린 문장</b>입니다(오답노트 확인) — 반대입니다: <b>태종=계미자, 세종=갑인자</b>입니다.</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">성리학의 두 물줄기 — 이이의 주기론 vs 이황의 주리론</div><div class="era">16세기, 사림파</div></div>
+<div class="body">
+<p>학문에서는 16세기에 사림파가 성리학을 깊이 연구하며 두 갈래로 나뉩니다. 하나는 <b class="k">주기론</b>(현실 세계의 원리=기를 중시)으로, 서경덕이 선구자이고 <b class="k">이이</b>가 집대성해 "성학집요", "동호문답", "격몽요결"을 쓰고, 임진왜란을 예견한 "10만 양병설"을 주장했으며, 훗날 그의 학풍이 <b>기호학파</b>(충청·경기 지역)로 이어집니다.</p>
+<p>다른 하나는 <b class="k">주리론</b>(도덕적 원리=이를 중시)으로, 이언적이 선구자이고 <b class="k">이황</b>이 확립해 "주자서절요", "성학십도"를 쓰고, 이 학풍은 일본에도 전해질 만큼 영향력이 컸으며 <b>영남학파</b>로 이어집니다. 두 사람 모두 자기 고향에서 마을 자치 규약인 향약(이이는 <b>해주향약</b>, 이황은 <b>예안향약</b>)을 조직해 유교 윤리를 백성들에게 퍼뜨리기도 했습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>시험 포인트 —</b> "이황의 저서에는 성학집요가 있다"는 <b>틀린 문장</b>입니다(오답노트 확인) — <b>성학집요는 이이</b>의 저서이고, 이황의 대표 저서는 <b>성학십도</b>입니다. 저서 이름을 서로 바꿔 묻는 문제가 가장 흔한 함정입니다.</div></div>
+<p>도교(소격서에서 국가가 초제를 지냄, 마니산 초제)와 풍수지리설(한양 도읍 선정, 그러나 후에는 양반들이 좋은 묏자리를 놓고 다투는 "산송" 문제로 변질)도 이 시기 사상의 일부입니다.</p>
+</div>
+</div>
+
+<div class="story s5">
+<div class="head"><div class="num">5</div><div class="ttl">법 위의 신분, 현실의 신분 — 양천제와 반상제</div><div class="era">건국~16세기</div></div>
+<div class="body">
+<p>사회 신분제는 법으로는 <b class="k">양인</b>(과거를 볼 수 있는 자유민, 조세·국역의 의무)과 <b class="k">천민</b>(비자유민)이라는 단 두 계층뿐인 <b class="k">양천제</b>였습니다. 하지만 16세기를 지나며 실제로는 양반·중인·상민·천민이라는 네 신분이 뚜렷하게 갈리는 <b class="k">반상제</b>로 굳어집니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>법전(사규집)에는 "정규직/비정규직" 딱 두 종류만 적혀 있지만, 실제 회사 안에서는 임원·중간관리자·일반사원·인턴이라는 4단계 위계가 자연스럽게 굳어져 있는 것과 비슷합니다. 법과 현실이 서로 다른 층위에서 작동한 것입니다.</div></div>
+<p>문무 관직에 오를 수 있는 <b class="k">양반</b>이 특권 지배층이 되고, 향리·서리·기술관 같은 실무직 <b class="k">중인</b>(양반 첩의 자식인 <b>서얼</b>도 비슷한 대우를 받으며 <b>문과 응시가 금지</b>됨)이 그 아래에 있으며, 농민·상인·수공업자인 <b class="k">상민</b>은 법적으로는 과거를 볼 수 있었지만 현실적으로는 매우 어려웠습니다. 가장 아래에는 매매·상속·증여의 대상이 되는 <b class="k">노비</b>를 비롯한 천민이 있었습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 짚은 함정 —</b> "백정"이라는 같은 단어가 고려와 조선에서 전혀 다른 신분을 가리킵니다 — <b>고려의 백정</b>(10단원 참고)은 평범한 <b>양민 농민</b>이지만, <b>조선의 백정</b>은 도살업에 종사하는 <b>천민</b>입니다(필기반 7/12 영상 약 4시간52분경). 또한 "서얼은 과거 응시가 금지되었다"는 절반만 맞는 함정입니다 — 서얼은 <b>문과</b> 응시만 금지되었고, <b>무과·잡과</b> 응시는 가능했습니다(오답노트 확인).</div></div>
+<p>가족 제도는 아직 고려의 모습이 많이 남아 있었습니다 — 혼인 후 남자가 처가에서 사는 <b class="k">남귀여가혼</b>, 아들딸 구분 없이 재산을 고르게 나누는 <b class="k">균분 상속</b>(다만 제사를 모시는 자식에게는 조금 더 얹어줌), 형제가 돌아가며 제사를 지내고 딸도 제사를 지낼 수 있었던 점 등, 이는 조선 후기의 "아들 중심" 가족 제도와는 다른 모습입니다.</p>
+</div>
+</div>
+
+<div class="story s6">
+<div class="head"><div class="num">6</div><div class="ttl">땅을 둘러싼 세 번의 개혁 — 과전법·직전법·관수관급제</div><div class="era">태조~성종</div></div>
+<div class="body">
+<p>경제에서 가장 중요한 것은 토지 제도의 변화입니다. 조선은 건국 직후 경기도 땅에 한정해 관리들에게 수조권(세금 걷을 권리, <b>소유권 아님</b>)을 주는 <b class="k">과전법</b>을 실시했는데, 시간이 지나며 죽은 관리의 부인(수신전)·자식(휼양전)에게 세습되는 땅이 늘어나 새로 관직에 오른 사람에게 줄 땅이 부족해집니다.</p>
+<p>그래서 <b>세조</b>는 <b class="k">직전법</b>으로 바꿔 현직 관리에게만 수조권을 주고 세습 토지를 없앴는데, 이번엔 관리들이 자기 임기 안에 최대한 걷으려고 백성을 수탈하는 문제가 생깁니다. 그러자 <b>성종</b>은 <b class="k">관수관급제</b>로 다시 바꿔, 국가가 직접 세금을 걷은 다음 관리에게 나눠주는 방식으로 바꿉니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 관수관급제는 겉보기엔 관리의 권한을 줄인 것 같지만, 실제로는 <b>국가의 토지 지배력이 오히려 강해진</b> 결과를 낳았습니다. 관리가 백성에게서 직접 걷지 못하고 국가를 거쳐야 하니, 국가가 토지와 세금 전체를 실질적으로 장악하게 된 것입니다.</p>
+<p>세금 제도도 세종 때 토지 등급과 풍흉에 따라 <b class="k">전분6등법·연분9등법</b>으로 정교해졌고, 특산물을 내는 공납(호구 기준), 노동력을 제공하는 역(16세 이상 남자, <b>양반·서리·향리는 면제</b>)도 있었습니다. 16세기 이후에는 공납을 대신 내주고 과도하게 챙기는 <b class="k">방납의 폐단</b>이 심해지자, 이이·유성룡 등이 쌀로 통일해 걷자는 <b>수미법</b>을 주장합니다 — 이는 훗날 12단원에서 배운 광해군의 대동법으로 이어집니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> "수조권을 받은 자는 생산량의 1/2을 세금으로 거두었다"는 <b>틀린 문장</b>입니다(오답노트 확인) — 원칙은 <b>1/10</b>입니다. "조선의 과전은 세습되는 것이 원칙이었다"도 <b>틀린 문장</b>입니다 — 사망·반역 시 <b>반납이 원칙</b>이며, 수신전·휼양전은 예외입니다.</div></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빼지 않고</h2>
+<p class="sub">이야기를 읽었으면 이제 표로 정리합니다. 이름·순서·구분은 여기서 확정하세요.</p>
+
+<h3>① 불교</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">억불 정책</td><td>건국 초 <b>도첩제</b>(승려 출가 허가제) 실시 → 불교 위축 → <b>성종 때 도첩제 폐지</b></td></tr>
+<tr><td class="nm">세종</td><td>궁궐 내 <b>내불당</b>, <b>월인천강지곡</b></td></tr>
+<tr><td class="nm">세조</td><td><b>원각사지 10층 석탑</b>(대리석, 고려 경천사지 10층 석탑 계승), <b>간경도감</b> 설치(불경 번역), 석보상절</td></tr>
+</tbody>
+</table></div>
+
+<h3>② 역사서·지도·지리지·실록</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">건국 초</td><td>고려국사(정도전) — 조선 건국의 정당성 확보</td></tr>
+<tr><td class="nm">15세기 중엽<br>(관학파)</td><td>고려사(기전체) · 고려사절요(편년체) · <b>동국통감</b>(서거정, 단군~고려)</td></tr>
+<tr><td class="nm">16세기<br>(사림파, 존화주의)</td><td>동국사략(박상) · 기자실기(이이) — 기자 조선을 중시</td></tr>
+<tr><td class="nm">지도·지리지</td><td><b>혼일강리역대국도지도</b>(태종, 현존 동양 최고(最古) 세계지도) · 조선방역지도(16세기) · <b>동국여지승람</b>(성종)</td></tr>
+<tr><td class="nm">조선왕조실록</td><td>국왕 사후 실록청 편찬(편년체), 유네스코 세계기록유산 / 4대 사고 → 임진왜란으로 전주 사고만 보전 → <b>광해군 때 5대 사고</b>로 확대</td></tr>
+</tbody>
+</table></div>
+
+<h3>③ 문학·공예·과학기술</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">공예</td><td><b>분청사기</b>(15세기, 회청색) → <b>순백자</b>(16세기, 흰색)</td></tr>
+<tr><td class="nm">문학</td><td>동문선(서거정, 시문선집) · <b>금오신화</b>(김시습, 최초의 한문 소설) · <b>용비어천가</b>(훈민정음, 왕조 창업 찬양) · 관동별곡(정철, 가사 문학)</td></tr>
+<tr><td class="nm">회화</td><td><b>몽유도원도</b>(안견, 안평대군의 꿈) — 현재 <b>일본 덴리대학</b> 소장</td></tr>
+<tr><td class="nm">활자</td><td><b>태종=계미자</b>, <b>세종=갑인자</b></td></tr>
+<tr><td class="nm">과학기술</td><td>칠정산(역법) · <b>농사직설</b>(우리 풍토+농민 경험담) · 측우기·앙부일구·자격루 · 향약집성방·의방유취(의학서) — 대부분 <b>세종</b> 대 집중</td></tr>
+</tbody>
+</table></div>
+
+<h3>④ 성리학의 융성(16세기, 사림파)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>주기론</th><th>주리론</th></tr></thead>
+<tbody>
+<tr><td class="nm">선구자</td><td>서경덕</td><td>이언적</td></tr>
+<tr><td class="nm">집대성</td><td><b>이이</b></td><td><b>이황</b></td></tr>
+<tr><td class="nm">저서</td><td>성학집요, 동호문답, 격몽요결</td><td>주자서절요, 성학십도</td></tr>
+<tr><td class="nm">성격</td><td>현실적·개혁적(10만 양병설, 수미법)</td><td>근본적·이상주의적</td></tr>
+<tr><td class="nm">계승</td><td>기호학파(조헌·김장생)</td><td>영남학파(김성일·류성룡), 일본 성리학에 영향</td></tr>
+<tr><td class="nm">향약</td><td>해주향약</td><td>예안향약</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑤ 신분제</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">양천제(법제적)</td><td><b>양인</b>(과거 응시 가능한 자유민, 조세·국역 의무) vs <b>천민</b>(비자유민) — 단 두 계층</td></tr>
+<tr><td class="nm">반상제(실제, 16세기 이후)</td><td>양반(문무 관직자만 사족 인정, 국역 면제) / 중인(서리·향리·기술관, 직역 세습 / <b>서얼=문과 응시 금지</b>, 무과·잡과는 가능) / 상민(농민·상인·수공업자, 법적 과거 응시 가능하나 현실적 제약) / 천민(노비·백정·광대·무당·창기, 매매·상속·증여 대상)</td></tr>
+<tr><td class="nm">고려 백정 vs 조선 백정</td><td>고려의 백정=일반 <b>양민 농민</b> / 조선의 백정=도살업에 종사하는 <b>천민</b> — 같은 단어, 다른 신분</td></tr>
+</tbody>
+</table></div>
+
+<h3>⑥ 가족 제도(조선 초~중기)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">혼인</td><td>남자가 처가에서 사는 <b>남귀여가혼</b></td></tr>
+<tr><td class="nm">상속</td><td>아들딸 구분 없이 <b>균분 상속</b>(제사 모시는 자식에게 1/5 추가 지급)</td></tr>
+<tr><td class="nm">제사</td><td>형제가 돌아가며 지내거나 책임 분담, <b>딸도 제사 가능</b></td></tr>
+<tr><td class="nm">비교</td><td>조선 후기의 "부계 중심·적장자 중심·친영 제도" 가족 제도와는 <b>다른 모습</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑦ 토지 제도 변천</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>제도</th><th>시기</th><th>원칙</th><th>특징·문제점</th></tr></thead>
+<tbody>
+<tr><td class="nm">과전법</td><td>태조(1391, 경기도)</td><td>전·현직 관리에게 수조권 지급, 사망·반역 시 반납</td><td>세습지(수신전·휼양전·공신전) 증가 → 신진 관료에게 지급할 토지 부족</td></tr>
+<tr><td class="nm">직전법</td><td><b>세조</b></td><td>현직 관리만 수조권 지급, 수신전·휼양전 폐지</td><td>양반 관료의 수조권 남용(1/10 원칙 초과 징수) → 농민 부담 증가</td></tr>
+<tr><td class="nm">관수관급제</td><td><b>성종</b></td><td>국가가 조세를 직접 징수한 뒤 현직 관리에게 지급</td><td>국가의 토지 지배력 <b>강화</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑧ 수취 제도(조선 전기)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">조세</td><td>과전법상 생산량의 <b>1/10</b>, <b>전분6등법·연분9등법</b>(20두~4두), 조창→한양 경창으로 운송(조운제)</td></tr>
+<tr><td class="nm">공납</td><td><b>호구 기준</b> 토산물 납부, 16세기 이후 <b>방납의 폐단</b>(대납 관리가 2~3배 징수) → 수미법 주장(이이·유성룡)</td></tr>
+<tr><td class="nm">역</td><td>16세 이상 남자, <b>양반·서리·향리는 면제</b>, 16세기 이후 군포 2필로 대체</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 핵심 암기표 — 감이 아니라 실측입니다</h2>
+<p class="sub">2013~2025년 기출 <b>215문항의 문제·선택지 원문</b>만을 대상으로 이 단원 키워드가 등장한 문항 수를 셌습니다(해설문 제외, 오답 보기 포함, 한 문항 내 중복은 1회).</p>
+
+<div class="notice">
+<b>이 단원의 특수 사정을 먼저 밝힙니다.</b> 저희가 가진 기출 원문은 <b>「정치」 단원 문항만</b> 수록한 자료라, <b>13단원(문화·사회·경제) 내용이 정확히 들어맞는 문항은 215문항 전체에서 0개</b>입니다. 6·7·9·10단원과 같은 사정입니다. 아래 표는 기출 대신 <b>오답노트(PART IV, CHAPTER02·03)에서 실제로 검증된 O/X 문항 17개</b>를 주제별로 집계한 것입니다.
+</div>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A</span><div><b>문학·공예·역사서·지도 관련 오답노트 확인 (7)</b> — 용비어천가·농사직설·동국통감·동국여지승람(이상 O 확인) / 몽유도원도 소장처·원각사지 재질·계미자·갑인자(이상 함정 확인). 이 단원에서 가장 촘촘하게 검증된 영역입니다.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>토지·수취 제도 관련 오답노트 확인 (5)</b> — 전분6등법·연분9등법·군역 면제 대상(이상 O) / 수조율 1/10·관수관급제 지배력 강화(이상 함정 확인).</div></div>
+<div class="row"><span class="gr gC">C</span><div><b>신분제·사상 관련 오답노트 확인 (5)</b> — 양인의 과거 응시 자격·향약 보급(조광조)(이상 O) / 이황 저서(성학집요 함정)·서얼의 과거 응시·서원의 시초(주세붕 함정).</div></div>
+<div class="row"><span class="gr gZ">참고</span><div><b>성리학(주기론 vs 주리론)</b>은 오답노트 직접 검증 문항은 1개뿐이지만, 관광국사.md가 "매우 자주 나온다"고 명시적으로 강조한 주제입니다 — 빈도 실측과 별개로 반드시 챙기세요.</div></div>
+</div>
+
+<div class="zero"><b>이 표를 「출제 안 된다」는 뜻으로 읽지 마세요.</b> 이 기출 자료가 「정치」 단원만 담고 있는 한계일 뿐입니다. 실제 관광통역안내사 시험은 문화·사회·경제 단원에서도 매년 출제되며, 특히 <b>이이·이황 비교</b>와 <b>과전법·직전법·관수관급제 순서</b>는 다른 학습자료·기출 분석에서도 자주 언급되는 인기 주제입니다.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">이 단원에서 점수를 깎아 먹는 건 <b>모르는 것</b>이 아니라 <b>비슷해서 헷갈리는 것</b>입니다. 아래 6쌍만 확실히 갈라 두면 절반은 지킵니다.</p>
+
+<div class="cmp">
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ① 이이(주기론) vs 이황(주리론)</h4>
+<div class="vs">
+<div class="side a"><b>이이</b>주기론 집대성<br>성학집요·동호문답·격몽요결<br>기호학파·해주향약</div>
+<div class="mid">저서·계승<br>뒤바꿈 최다</div>
+<div class="side b"><b>이황</b>주리론 확립<br>주자서절요·성학십도<br>영남학파·예안향약</div>
+</div>
+<p class="why">"이황의 저서에는 성학집요가 있다"는 <b>틀린 문장</b>입니다(오답노트 확인). 성학집요는 <b>이이</b>의 저서입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ② 계미자(태종) vs 갑인자(세종)</h4>
+<div class="vs">
+<div class="side g"><b>태종</b>계미자</div>
+<div class="mid">순서<br>뒤바뀜 함정</div>
+<div class="side x2"><b>세종</b>갑인자</div>
+</div>
+<p class="why">"세종 때는 계미자를, 태종 때에는 갑인자를 주조하였다"는 <b>틀린 문장</b>입니다(오답노트 확인). 반대로 외우면 안 됩니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ③ 원각사지 10층 석탑 — 재질</h4>
+<div class="vs">
+<div class="side g"><b>대리석</b>실제 재질<br>고려 경천사지 계승</div>
+<div class="mid">재질<br>혼동 금지</div>
+<div class="side x2"><b>화강암</b>흔한 오답<br>실제 재질 아님</div>
+</div>
+<p class="why">"원각사지 10층 석탑은 화강암으로 만들어졌다"는 <b>틀린 문장</b>입니다(오답노트 확인). 세조 때 세운 이 탑은 <b>대리석</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ④ 몽유도원도 — 소장처</h4>
+<div class="vs">
+<div class="side g"><b>일본(덴리대학)</b>실제 소장처</div>
+<div class="mid">국외<br>소재 함정</div>
+<div class="side x2"><b>프랑스</b>흔한 오답<br>실제 소장처 아님</div>
+</div>
+<p class="why">"몽유도원도는 현재 프랑스에 있다"는 <b>틀린 문장</b>입니다(오답노트 확인). 안견의 이 그림은 <b>일본 덴리대학</b>에 있습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ⑤ 양천제 vs 반상제</h4>
+<div class="vs">
+<div class="side n"><b>양천제</b>법제적 원칙<br>양인 / 천민 2분류</div>
+<div class="mid">법 vs<br>현실</div>
+<div class="side b"><b>반상제</b>16세기 이후 현실<br>양반·중인·상민·천민 4분류</div>
+</div>
+<p class="why">법전상 원칙은 양천제 2분류이지만, 16세기 이후 <b>실제로</b> 굳어진 것은 반상제 4분류입니다. 이 둘을 같은 것으로 혼동하지 마세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ⑥ 고려 백정 vs 조선 백정</h4>
+<div class="vs">
+<div class="side g"><b>고려 백정</b>일반 <b>양민</b> 농민<br>(10단원 참고)</div>
+<div class="mid">같은 단어<br>다른 신분</div>
+<div class="side x2"><b>조선 백정</b>도살업 종사<br><b>천민</b></div>
+</div>
+<p class="why">같은 "백정"이라는 단어가 시대에 따라 완전히 다른 신분을 가리킵니다. 시대를 바꿔치기해 묻는 문제에 주의하세요(필기반 7/12 영상 약 4시간52분경).</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<p class="sub">이 단원은 관광국사.md 본문에 새로 추가된 강의 인용이 거의 없어(강의01·02·03·05 전사본에 새 내용 없음 확인), 남아 있는 인용 하나와 오답노트에서 확인된 사실 위주로 정리했습니다.</p>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"'백정'이라는 같은 단어가 고려와 조선에서 전혀 다른 신분을 가리킨다는 점에 주의하세요 — 고려의 백정은 평범한 양민 농민이지만, 조선의 백정은 도살업에 종사하는 천민입니다. 시대를 바꿔치기해 묻는 문제가 자주 출제됩니다."</b> (필기반 7/12 영상 약 4시간52분경)</div></li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 24문항</h2>
+<p class="sub">이 단원은 <b>기출 원문이 없어 24문항 전부 예상문제</b>입니다. 관광국사.md 교재 원문과 오답노트(PART IV)에서 검증된 사실만으로 만들었습니다 — 추측으로 채운 내용은 없습니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>구성을 밝힙니다.</b> 2013~2025년 215문항 중 <b>13단원 내용에 정확히 들어맞는 문항은 0개</b>입니다 — 기출 원문 자료가 「정치」 단원만 수록하고 있기 때문입니다(원본에 없는 것이지 빠뜨린 것이 아닙니다). 대신 <b>오답노트(PART IV, CHAPTER02〈문화〉·CHAPTER03〈사회·경제〉)에서 검증된 O/X 문항 17개</b>를 4지선다 형태로 바꾸고, 관광국사.md 본문 사실을 더해 24문항을 구성했습니다 — 불교 · 역사서·지도·실록 · 문학·공예 · 성리학(주기론·주리론) · 신분제 · 가족제도 · 토지·수취제도.
+</div>
+
+<div class="quizbar">
+<svg class="ic" width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 24 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="wrongBtn" onclick="onlyWrong()" style="display:none">틀린 문제만 다시</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts">
+<button class="btn" onclick="onlyWrong()">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" onclick="reset()">전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>01_관광국사/04_최종교재/관광국사.md</code> 13단원(핵심.pdf 14·15·16·18·19·21·22·24·25·26페이지의 "조선 전기" 해당 부분 재구성) / 문항 근거: <code>오답노트.pdf</code> PART IV〈조선 전기의 정치·문화·사회·경제〉CHAPTER02〈문화〉·CHAPTER03〈사회·경제〉 O/X 문항 17개(핵심.pdf 표와 대조 검증) / 강의: 필기반 <b>7/12 영상</b> 약 4시간52분경(백정 함정).</p>
+<p><b>실측 방법</b> — 215문항의 <b>문제·선택지 원문</b>만을 대상으로 이 단원 키워드가 등장한 문항 수를 셌습니다. <b>13단원 직접 출제: 0문항</b> — 기출 원문 자료가 「정치」 단원만 수록한 탓이며, 실제 시험의 문화·사회·경제 단원 출제 비중과는 다를 수 있습니다.</p>
+<p><b>추측 금지</b> — 교재 원문과 오답노트에서 검증된 사실, 확인한 강의 구간에 없는 내용은 넣지 않았습니다. 24문항 전부 이 세 가지 안의 사실만으로 구성했습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var QS=[
+{n:1,c:"불교",src:"예상문제",q:"조선 전기 불교 정책에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["건국 초 승려 출가를 허가제(도첩제)로 통제하였다","도첩제는 성종 때 폐지되었다","세종은 궁궐 안에 내불당을 짓고 월인천강지곡을 지었다","조선 왕실은 불교를 완전히 배척해 개인적으로도 전혀 신앙하지 않았다"],a:3,e:"조선은 억불 정책을 폈지만 왕실 개인의 신앙까지 막지는 못했습니다. 세종의 내불당·월인천강지곡, 세조의 원각사지 10층 석탑·간경도감 설치가 그 예입니다. 도첩제는 건국 초 실시되어 성종 때 폐지되었습니다."},
+{n:2,c:"불교",src:"예상문제",q:"세조 때 세운 원각사지 10층 석탑에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["대리석으로 만들어졌다","화강암으로 만들어졌다","고려의 경천사지 10층 석탑을 계승하였다","세조가 불교를 신앙하며 세웠다"],a:1,e:"원각사지 10층 석탑은 <b>대리석</b>으로 만들어졌습니다(오답노트 확인) — 화강암이 아닙니다. 원의 영향을 받은 고려 경천사지 10층 석탑을 계승한 것으로 봅니다."},
+{n:3,c:"역사서·지도·실록",src:"예상문제",q:"15세기 중엽에 편찬된 역사서로 옳지 <b>않은</b> 것은?",o:["고려사(기전체)","고려사절요(편년체)","동국통감(서거정)","동국사략(박상)"],a:3,e:"동국사략은 <b>16세기</b> 사림파의 존화주의적 역사관을 반영해 편찬된 역사서입니다. 고려사·고려사절요·동국통감(단군~고려 정리)은 모두 15세기 중엽에 편찬되었습니다."},
+{n:4,c:"역사서·지도·실록",src:"예상문제",q:"16세기 사림파가 편찬한, 존화주의적 성격이 강한 역사서로 옳은 것은?",o:["고려사","동국통감","동국사략·기자실기","조선왕조실록"],a:2,e:"16세기 중앙 정치를 잡은 사림파는 중국(중화)을 받드는 존화주의 역사관을 강하게 가지며 기자 조선을 중시하는 <b>동국사략(박상)·기자실기(이이)</b>를 편찬했습니다."},
+{n:5,c:"역사서·지도·실록",src:"예상문제",q:"다음 중 왕과 그 업적의 연결로 옳지 <b>않은</b> 것은?",o:["태종 — 혼일강리역대국도지도","성종 — 동국여지승람","세종 — 칠정산","성종 — 원각사지 10층 석탑"],a:3,e:"원각사지 10층 석탑은 성종이 아니라 <b>세조</b> 때 세워졌습니다. 태종의 혼일강리역대국도지도(현존 동양 최고 세계지도), 성종의 동국여지승람, 세종의 칠정산은 모두 옳은 연결입니다."},
+{n:6,c:"역사서·지도·실록",src:"예상문제",q:"조선왕조실록에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["국왕 사후 실록청에서 편년체로 편찬하였다","유네스코 세계기록유산으로 등재되어 있다","임진왜란 때 전주 사고본만 남고 나머지는 소실되었다","광해군 때 사고를 4곳에서 2곳으로 줄였다"],a:3,e:"광해군 때는 사고를 <b>4곳에서 5곳으로 늘려</b> 다시 보관했습니다(줄인 것이 아닙니다). 나머지는 모두 옳은 설명입니다."},
+{n:7,c:"문학·공예",src:"예상문제",q:"용비어천가에 관한 설명으로 옳은 것은?",o:["훈민정음으로 간행되어 조선 왕조의 창업을 찬양하였다","김시습이 지은 최초의 한문 소설이다","서거정이 편찬한 우리나라 역대 시문선집이다","정철이 지은 가사 문학 작품이다"],a:0,e:"용비어천가는 훈민정음으로 간행되어 조선 왕조의 창업을 찬양한 노래입니다(오답노트 확인). 최초의 한문 소설은 김시습의 <b>금오신화</b>, 역대 시문선집은 서거정의 <b>동문선</b>, 가사 문학은 정철의 <b>관동별곡</b>입니다."},
+{n:8,c:"문학·공예",src:"예상문제",q:"농사직설에 관한 설명으로 옳은 것은?",o:["중국의 농서를 그대로 들여온 것이다","우리나라 풍토에 맞는 농법과 농민들의 경험담을 바탕으로 편찬하였다","고려 말 이암이 원에서 소개하였다","세조 때 편찬되었다"],a:1,e:"농사직설은 우리나라 풍토에 맞는 농법과 농민들의 경험담을 바탕으로 편찬되었습니다(오답노트 확인). 중국 농서를 그대로 들여온 것은 이암이 소개한 <b>농상집요</b>(고려 말)이며, 농사직설은 <b>세종</b> 때 편찬되었습니다."},
+{n:9,c:"문학·공예",src:"예상문제",q:"조선 전기 도자기 유행의 변화로 옳은 것은?",o:["순백자(16세기) → 분청사기(15세기)","분청사기(15세기) → 순백자(16세기)","청자(15세기) → 분청사기(16세기)","순백자(15세기) → 청자(16세기)"],a:1,e:"조선 전기 도자기는 회청색 <b>분청사기(15세기)</b>에서 깨끗한 흰색의 <b>순백자(16세기)</b>로 유행이 바뀌었습니다."},
+{n:10,c:"문학·공예",src:"예상문제",q:"조선의 활자 주조에 관한 설명으로 옳은 것은?",o:["태종 때 계미자, 세종 때 갑인자를 주조하였다","세종 때 계미자, 태종 때 갑인자를 주조하였다","태종 때 갑인자, 세조 때 계미자를 주조하였다","계미자와 갑인자 모두 세조 때 주조되었다"],a:0,e:"<b>태종=계미자, 세종=갑인자</b>입니다(오답노트 확인). 이를 반대로 서술하면(\"세종 때는 계미자를, 태종 때에는 갑인자를 주조\") 틀린 문장이 됩니다."},
+{n:11,c:"문학·공예",src:"예상문제",q:"안견의 몽유도원도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["조선 전기를 대표하는 그림이다","안평대군의 꿈을 소재로 그렸다","현재 일본(덴리대학)에 소장되어 있다","현재 프랑스에 소장되어 있다"],a:3,e:"몽유도원도는 현재 <b>일본 덴리대학</b>에 소장되어 있습니다(오답노트 확인) — 프랑스가 아닙니다."},
+{n:12,c:"성리학",src:"예상문제",q:"다음 인물과 학문 갈래의 연결로 옳지 <b>않은</b> 것은?",o:["이이 — 주기론","이황 — 주리론","이황 — 성학집요","이이 — 격몽요결"],a:2,e:"성학집요는 이황이 아니라 <b>이이</b>의 저서입니다(오답노트 확인). 이황의 대표 저서는 <b>성학십도</b>입니다."},
+{n:13,c:"성리학",src:"예상문제",q:"다음 내용과 관련된 인물로 옳은 것은? — 주기론을 집대성, 10만 양병설 주장, 성학집요·동호문답·격몽요결 저술, 기호학파로 계승",o:["이황","이이","서경덕","이언적"],a:1,e:"주기론을 집대성하고 10만 양병설을 주장한 인물은 <b>이이</b>입니다. 주기론의 선구자는 서경덕이지만 집대성은 이이가 했고, 그의 학풍은 기호학파(충청·경기)로 이어집니다."},
+{n:14,c:"성리학",src:"예상문제",q:"다음 내용과 관련된 인물로 옳은 것은? — 주리론을 확립, 일본 성리학에도 영향, 예안향약 조직, 영남학파로 계승",o:["이이","이황","서경덕","조광조"],a:1,e:"주리론을 확립하고 일본에도 영향을 준 인물은 <b>이황</b>입니다. 예안향약을 조직했고 그의 학풍은 영남학파로 이어집니다(이이는 해주향약, 기호학파)."},
+{n:15,c:"성리학",src:"예상문제",q:"향촌 자치 규약인 향약이 보급되기 시작한 시기와 인물로 옳은 것은?",o:["세종 때 이황이 보급","중종 때 조광조가 보급","성종 때 이이가 보급","태종 때 정도전이 보급"],a:1,e:"향약은 <b>중종 때 조광조</b>가 보급하기 시작하였습니다(오답노트 확인)."},
+{n:16,c:"성리학",src:"예상문제",q:"서원의 시초에 관한 설명으로 옳은 것은?",o:["이황이 세운 도산서원이 시초이다","주세붕이 세운 백운동서원(훗날 소수서원)이 시초이다","이이가 세운 해주서원이 시초이다","조광조가 세운 정암서원이 시초이다"],a:1,e:"서원의 시초는 <b>주세붕</b>이 세운 <b>백운동서원</b>(훗날 소수서원으로 사액)입니다. 도산서원은 이황 사후 그를 기리며 세워진 서원입니다."},
+{n:17,c:"신분제",src:"예상문제",q:"조선의 신분제에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["법제적으로는 양인과 천민 둘로 나뉘는 양천제였다","16세기 이후 실제로는 양반·중인·상민·천민의 반상제로 굳어졌다","법적으로 양인이면 누구나 과거에 응시할 수 있었다","양반과 상민의 구분은 법전에 명시된 공식 신분이었다"],a:3,e:"조선의 <b>법제적 신분은 양인/천민의 양천제</b>였고, 양반·중인·상민의 구분은 법전상의 공식 신분이 아니라 <b>16세기 이후 실제로 굳어진 반상제</b>였습니다. 법적으로는 양인이면 누구나 과거 응시가 가능했습니다(오답노트 확인)."},
+{n:18,c:"신분제",src:"예상문제",q:"조선의 중인(서얼)에 관한 설명으로 옳은 것은?",o:["서얼은 문과·무과·잡과 모두 응시가 금지되었다","서얼은 문과 응시만 금지되었고 무과·잡과는 가능했다","서얼은 양반과 동일한 대우를 받았다","서얼은 천민에 해당한다"],a:1,e:"서얼은 <b>문과 응시만 금지</b>되었고, 무과·잡과 응시는 가능했습니다(오답노트 확인 — '서얼은 과거 응시가 금지되었다'는 절반만 맞는 함정 문장)."},
+{n:19,c:"신분제",src:"예상문제",q:"고려와 조선의 '백정'에 관한 설명으로 옳은 것은?",o:["고려의 백정은 도살업에 종사하는 천민이다","조선의 백정은 일반 양민 농민이다","고려의 백정은 일반 양민 농민, 조선의 백정은 도살업에 종사하는 천민이다","고려·조선 모두 백정은 같은 신분을 가리킨다"],a:2,e:"같은 단어 '백정'이 시대마다 다른 신분을 가리킵니다 — <b>고려의 백정은 일반 양민 농민</b>(10단원 참고), <b>조선의 백정은 도살업에 종사하는 천민</b>입니다(필기반 7/12 영상 약 4시간52분경). 시대를 바꿔치기해 묻는 문제에 주의하세요."},
+{n:20,c:"가족제도",src:"예상문제",q:"조선 전기(초~중기) 가족 제도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["혼인 후 남자가 처가에서 사는 남귀여가혼이 있었다","재산은 아들딸 구분 없이 균분 상속되었다","딸도 제사를 지낼 수 있었다","친영 제도로 시집살이가 원칙이었고 적장자만 제사를 지냈다"],a:3,e:"조선 전기(초~중기)는 아직 고려의 모습이 많이 남아 있어 <b>남귀여가혼·균분 상속·딸의 제사 참여</b>가 가능했습니다. '친영 제도·적장자 중심'은 <b>조선 후기</b>의 가족 제도입니다."},
+{n:21,c:"토지·수취제도",src:"예상문제",q:"조선의 토지 제도 변천 순서로 옳은 것은?",o:["과전법 → 직전법 → 관수관급제","직전법 → 과전법 → 관수관급제","관수관급제 → 과전법 → 직전법","과전법 → 관수관급제 → 직전법"],a:0,e:"<b>과전법(태조) → 직전법(세조) → 관수관급제(성종)</b> 순입니다. 세습지 증가 문제(과전법) → 세습지 폐지·현직만 지급(직전법) → 국가가 직접 징수 후 지급(관수관급제) 순으로 개혁되었습니다."},
+{n:22,c:"토지·수취제도",src:"예상문제",q:"직전법에서 관수관급제로 바뀌면서 나타난 변화로 옳은 것은?",o:["국가의 토지 지배력이 약화되었다","국가의 토지 지배력이 강화되었다","수조권 자체가 완전히 폐지되었다","경기도 한정 지급 원칙이 폐지되었다"],a:1,e:"직전법에서는 관리가 직접 백성에게 수조권을 행사해 수탈 문제가 있었지만, 관수관급제는 <b>국가가 직접 조세를 걷은 뒤 관리에게 지급</b>하는 방식이라 오히려 <b>국가의 토지 지배력이 강화</b>되었습니다(오답노트 확인 — '약화되었다'는 틀린 문장)."},
+{n:23,c:"토지·수취제도",src:"예상문제",q:"과전법의 수조권에 관한 설명으로 옳은 것은?",o:["수조권자는 생산량의 1/2을 세금으로 거두었다","수조권자는 생산량의 1/10을 세금으로 거두는 것이 원칙이었다","과전은 세습이 원칙이었다","과전법은 전국 모든 토지를 대상으로 하였다"],a:1,e:"과전법의 수조율은 원칙적으로 <b>생산량의 1/10</b>입니다(오답노트 확인 — '1/2'은 틀린 문장). 과전은 경기도에 한정되었고, 사망·반역 시 반납이 원칙이며 세습은 예외(수신전·휼양전)였습니다."},
+{n:24,c:"토지·수취제도",src:"예상문제",q:"조선 전기 수취 제도에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["세종 때 전분6등법·연분9등법을 시행하였다","군역에 복무하지 않는 사람은 양반·서리·향리 등이었다","16세기 이후 방납의 폐단이 심해지자 이이·유성룡 등이 수미법을 주장하였다","공납은 토지 결수를 기준으로 쌀로만 납부하였다"],a:3,e:"공납은 <b>호구를 기준</b>으로 <b>토산물</b>을 납부하는 것이었습니다(쌀로만 납부하는 것은 훗날 대동법의 원리). 전분6등법·연분9등법, 군역 면제 대상(양반·서리·향리), 방납의 폐단과 수미법 주장(이이·유성룡)은 모두 옳은 설명입니다."}
+];
+var sel={},graded=false,t0=null,tick=null;
+var live=null,lastWrong=[];
+function visible(){return live?QS.filter(function(q){return live.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=visible();var h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+visible().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=visible();var right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';
+lastWrong=wrong.map(function(q){return q.n});
+document.getElementById('wrongBtn').style.display='';
+}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';lastWrong=[];document.getElementById('wrongBtn').style.display='none';}
+var tx='[관광국사 13단원 — 조선 전기의 문화·사회·경제] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] ('+q.src+') '+q.q.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onlyWrong(){
+if(!lastWrong.length){return;}
+live=lastWrong.slice();
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function reset(){
+live=null;lastWrong=[];
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

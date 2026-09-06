@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광국사 16단원 · 조선 후기의 사회·문화</title>
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.s5 .num{background:var(--pal)} .s5 .ttl{color:var(--pal)} .s5{border-top:3px solid var(--pal)}
+.s6 .num{background:var(--neo)} .s6 .ttl{color:var(--neo)} .s6{border-top:3px solid var(--neo)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)} .s5 b.k{color:var(--pal)} .s6 b.k{color:var(--neo)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q.hide{display:none}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.rank,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(2,1fr)}}
+.rank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0}
+.rank .r{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;box-shadow:var(--shadow)}
+.rank .r b{display:block;font-size:15px;color:var(--bro);margin-bottom:5px}
+.rank .r span{font-size:12px;color:var(--ink-2);display:block;line-height:1.5}
+.rank .r.top{border-color:var(--gold)}
+.rank .r.top b{color:var(--gold)}
+@media(max-width:560px){.rank{grid-template-columns:repeat(2,1fr)}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 16단원</div>
+<h1>조선 후기의 사회·문화
+<small>신분제의 동요 → 가족제도의 변화 → 서민 문화와 진경산수화 → 실학(중농학파·중상학파)</small>
+</h1>
+<div class="meta">
+<span class="chip hot">8/21 강의 전사본으로 실학·문화 전 구간 확인</span>
+<span class="chip">교재 해설집 조선 후기 사회 14문항 실측</span>
+<span class="chip">기출 215문항 중 직접 문항 0 — 이유는 본문에 명시</span>
+<span class="chip">시험 D-13</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원을 관통하는 한 줄</h2>
+<p class="sub">15단원에서 <b>경제</b>가 바뀌었습니다. 그 결과가 이 단원입니다 — <b>돈을 번 사람이 신분을 사면서 신분제가 무너지고, 먹고살 만해진 백성이 자기 문화를 만들고, 그 현실을 성리학이 설명하지 못하자 실학이 나온다</b>는 것입니다. 즉 <b>돈 → 신분 → 문화 → 사상</b>. 15단원과 16단원은 한 몸입니다.</p>
+
+<div class="flow">
+<b>이앙법·상업 발달</b><i>→</i><b>부농·상인 등장</b><i>→</i><b class="hi">납속·공명첩으로 신분 상승</b><i>→</i><b>양반 수 ↑ 상민·노비 ↓</b><i>→</i><b>서민 문화</b><i>→</i><b>실학·서학</b>
+</div>
+
+<div class="tl">
+<div class="t1"><b>① 사회 — 신분의 벽이 무너진다</b><span><b>납속책</b>(돈 내면 신분 상승)·<b>공명첩</b>(이름 빈칸 관직 임명장) → <b>양반 수 증가 · 상민·노비 수 감소</b><br>양반층 분화: <b>권반</b>(집권 노론)·<b>향반</b>(향촌)·<b>잔반</b>(몰락)<br><b>서얼</b> 신분 상승 운동 → <b>성공</b>(정조, 규장각 검서관) / <b>중인</b> 소청 운동 → <b>실패</b> / <b>노비</b> → 순조 때 공노비 해방 → <b>갑오개혁(1894)</b> 완전 폐지</span></div>
+<div class="t2"><b>② 가족 — 남자 중심으로 굳는다 (13단원과 대비)</b><span>혼인: <b>친영 제도</b>(시집살이) / 재산 상속·제사: <b>적장자</b> 몰아주기<br><b>양자 입양 일반화</b> · 부계 위주 <b>족보</b> 편찬 · <b>동성 촌락</b> · 과부 <b>재가 금지</b><br>※ 조선 전기·고려는 <b>균분 상속·남귀여가혼·재가 허용</b> — 정반대</span></div>
+<div class="t3"><b>③ 문화·사상 — 백성이 주인공이 된다</b><span>서민 문화: <b>판소리</b>·<b>탈놀이</b>·<b>한글 소설</b>(홍길동전=허균)·<b>사설시조</b>·<b>시사</b>(중인, 위항문학)·<b>민화</b><br>회화: <b>진경산수화</b>(정선) · 풍속화(<b>김홍도</b>/<b>신윤복</b>) · 강세황(서양 화법) · 김정희(세한도)<br>실학: <b>중농학파</b>(유형원·이익·정약용) ↔ <b>중상학파=북학파</b>(유수원·홍대용·박지원·박제가) / <b>서학 → 천주교</b></span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>이 단원 강의는 8월 21일에 진행됐습니다.</b> 15단원(경제)은 아직 전용 강의가 없지만, <b>16단원은 강사가 실학·서민문화·회화를 전부 짚어 줬습니다</b>(8/21 문제풀이강의 1시간57분~2시간47분경). 사회(신분제·가족제도) 부분은 7월 24일 강의에 있습니다. 아래 「강사가 콕 집은 것」은 전부 그 두 회차에서 <b>강사가 직접 "동그라미"·"별표" 하라고 지시한 항목</b>입니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 읽는 조선 후기의 사회·문화</h2>
+<p class="sub">외우기 전에 먼저 이야기로 한 번 읽어 주세요. "왜 이런 일이 벌어졌는가"를 알면 인물 이름과 책 제목은 저절로 붙습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">돈을 내면 양반이 된다 — 납속책과 공명첩</div><div class="era">임진왜란 이후</div></div>
+<div class="body">
+<p>전쟁으로 나라 곳간이 텅 비었습니다. 그러자 조선 정부가 꺼내 든 카드가 있습니다. <b>"돈을 내면 신분을 올려 주겠다"</b>는 것입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>납속책(納粟策)</b>의 <b>납(納)은 "바칠 납"</b>입니다. 강사의 7/24 설명 그대로 — <b>"나라에다가 돈을 내면 신분을 업그레이드시켜 준다는 얘기야."</b> 곡식이나 돈을 나라에 바치면 신분을 올려 주는 제도입니다.</div>
+<div class="term"><b>공명첩(空名帖)은 한 글자씩 뜯어보면 바로 이해됩니다 —</b> <b>공(空)=빌 공</b>, <b>명(名)=이름 명</b>, <b>첩(帖)=문서</b>. 즉 <b>이름 칸이 비어 있는 관직 임명장</b>입니다. 강사 설명 — <b>"돈을 냈더니 나한테 이조판서 관직을 줬어요. 그런데 그 관직 수여증에 제 이름은 없어요. 실제로 이조판서로 근무하는 사람은 따로 있으니까. '너는 이조판서 관직에 있었다'는 증서만 주는 거지. 그럼 그 순간 저는 신분이 뭐가 되는 거요? 양반."</b></div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>요즘으로 치면 <b>명예 이사 직함만 주는 임명장</b>입니다. 실제로 회사를 경영하진 않지만 명함에는 "이사"라고 찍히죠. 그 명함 한 장으로 사회적 대우가 달라지는 것입니다.</div></div>
+<p>강사가 특별히 짚은 대목이 있습니다 — <b>"이 공명첩과 납속책은 합법이냐 불법이냐? 합법이라고."</b> 나라가 공식적으로 판 것이라 위조가 아닙니다. 다만 이런 현실도 함께 짚습니다 — <b>"자기는 양반일지 모르지만 그 집안의 혈통들은 인정 안 하는 거지. 사회적인 대우는 양반일지 모르지만 가문에서 인정 못 받을 뿐이죠."</b></p>
+<p>이 두 제도가 남발되면서 결과가 하나로 모입니다 — <b class="k">양반의 수는 늘고, 상민과 노비의 수는 줄어듭니다.</b> 15단원에서 본 <b>균역법의 배경</b>이 바로 이것입니다. 군포 낼 상민이 줄어드니 남은 사람에게 몫이 몰려 <b>백골징포·황구첨정</b>이 벌어진 것이죠.</p>
+<p>양반들 내부도 갈라집니다. 붕당 정치가 변질되어 권력을 독점한 소수는 <b class="k">권반</b>, 향촌에 머무는 다수는 <b class="k">향반</b>, 경제적으로 몰락해 이름만 양반인 사람은 <b class="k">잔반</b>이 됩니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> <b>납속=돈 내고 신분 상승 / 공명첩=돈 내고 이름 없는 관직 임명장</b>. 둘 다 <b>합법</b>이고, 결과는 <b>양반 수 증가·상민 노비 수 감소</b>. 교재 해설집 조선 후기 사회 14문항 중 <b>3문항</b>에 이 두 단어가 나옵니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">아래에서 위로 — 서얼은 성공하고, 중인은 실패한다</div><div class="era">정조 · 순조 · 1894</div></div>
+<div class="body">
+<p>신분의 벽이 흔들리자 그동안 눌려 있던 사람들이 움직입니다. 결과는 셋으로 갈립니다.</p>
+<p><b class="k">① 서얼 — 성공했습니다.</b> 서얼은 첩에게서 난 자식으로, 아무리 능력이 있어도 높은 관직에 못 나갔습니다. 이들이 집단으로 관직 진출을 요구하는 상소를 올립니다. 그리고 <b>정조</b>가 이를 받아 줍니다. 강사의 7/24 설명 — <b>"정조는 '저 노론들 골치 아파, 차라리 서얼들을 등용할게' 해서 규장각 검서관에 등용한 게 서얼이야. 어느 왕 대라는 게 굉장히 중요한 거예요."</b> 대표적인 인물이 <b class="k">박제가·유득공·이덕무</b>입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>여기서 연결이 하나 생깁니다.</b> 박제가는 <b>서얼 출신</b>이면서 동시에 <b>중상학파 실학자</b>입니다. 「북학의」를 쓴 그 사람입니다. 서얼 이야기와 실학 이야기가 한 사람에서 만나므로, 이 연결을 기억하면 두 문제를 한 번에 잡습니다.</div></div>
+<p><b class="k">② 중인 — 실패했습니다.</b> 중인은 역관·의관 같은 기술직 관리입니다. 재산도 있고 실무 경력도 쌓았으니 자신들도 올려 달라고 <b>대규모 소청 운동</b>을 벌입니다. 강사 설명 — <b>"소청이란 자신들의 억울함을 해결해 달라고 요구한 거야."</b> 그러나 <b>실패</b>했습니다. 다만 이들 중 <b>역관</b>은 청을 오가며 <b>서학</b> 등 외래 문물을 들여오는 통로가 되었습니다.</p>
+<p><b class="k">③ 노비 — 단계적으로 해방됩니다.</b> 노비는 나라 소속인 <b>공노비</b>와 개인 소속인 <b>사노비</b>로 나뉘는데, 도망치거나 신분을 사서 벗어나는 일이 흔해집니다. 그러다 <b>순조</b> 때 <b class="k">공노비가 해방</b>되고, 마침내 <b class="k">갑오개혁(1894)</b> 때 공·사 노비제가 법적으로 완전히 폐지됩니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>세 줄로 외우세요 —</b> <b>서얼=성공(정조·규장각 검서관)</b> / <b>중인=소청 운동, 실패</b> / <b>노비=순조 공노비 해방 → 갑오개혁 완전 폐지</b>. 성공/실패를 서로 바꿔 묻는 것이 이 구간의 대표 함정입니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">집안이 남자 중심으로 굳는다 — 13단원과 정반대</div><div class="era">조선 후기</div></div>
+<div class="body">
+<p>이 이야기는 <b>13단원(조선 전기)과 짝으로 외워야</b> 점수가 됩니다. 고려와 조선 전기·중기까지는 오히려 여성의 지위가 상당히 높았습니다. 재산은 <b>아들딸에게 균등하게</b> 나눠 줬고, 제사도 딸이 지낼 수 있었으며, 남자가 처가에 들어가 사는 <b>남귀여가혼</b>이 흔했고, 과부의 <b>재가도 허용</b>됐습니다.</p>
+<p>조선 후기에는 이것이 통째로 뒤집힙니다. 강사의 7/24 설명을 그대로 옮기면 — <b>"조선 후기에는 처가살이 했다간 큰일 나. 집에서 쫓겨나."</b> 여자가 시집으로 들어가 사는 <b class="k">친영 제도</b>가 자리 잡습니다.</p>
+<p>재산과 제사는 <b class="k">적장자</b>(첫 부인의 큰아들) 몰아주기가 됩니다. 강사의 비유가 재미있습니다 — <b>"흥부가 맨날 놀부 집에 갔죠? 다 이유가 있는 내용이에요. 큰아들 놀부가 다 가져가 버리니까 동생은 아무것도 없는 거야."</b></p>
+<div class="term"><b>여기서 연쇄 반응이 일어납니다 —</b> 제사는 <b>반드시 아들</b>이 지내야 하는데 아들이 없으면? 그래서 <b class="k">양자 입양이 일반화</b>됩니다. 그리고 부계 혈통을 증명해야 하니 <b class="k">족보</b> 편찬이 활발해지고, 같은 성씨끼리 모여 사는 <b class="k">동성 촌락</b>이 생기며, 집도 남자 공간(사랑채)과 여자 공간(안채)으로 나뉩니다.</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 별표를 지시한 문장입니다 —</b> <b>"'양자 입양의 일반화' 별표하세요. 이 문장은 오로지 조선 후기만 해당하는 거야. 조선 전기나 고려에서 이 단어가 나오면 무조건 X야. 실제로 고려시대 사회 문제에서 '양자 입양이 일반화되었다'가 틀린 답으로 나왔어요."</b> <b>과부 재가 금지</b>도 마찬가지로 조선 후기 전용 표현입니다.</div></div>
+<p>한편 향촌 사회에서도 다툼이 벌어집니다. 15단원에서 본 <b>부농층</b>이 돈으로 신분을 사서 향촌의 주도권을 노리자, 기존 양반들과 충돌합니다. 교재 해설집 조선 후기 사회 14문항 중 <b>7문항</b>이 이 향촌 사회 변화를 다룹니다 — 이 구간 <b>최다 빈출</b>입니다.</p>
+</div>
+</div>
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">성리학으로는 답이 안 나온다 — 실학이 등장한 이유</div><div class="era">17~18세기</div></div>
+<div class="body">
+<p>강사가 8/21 강의를 이렇게 엽니다 — <b>"조선 후기는 왜란·호란으로 사회가 완전히 무너져 버렸단 말이죠. 특히 백성들의 경제는 바닥으로 가라앉습니다. 정치는 붕당 간의 대립으로 극심하게 진행됩니다."</b></p>
+<p>그러면 무엇부터 해야 할까요? 강사의 설명이 실학의 정의를 그대로 만들어 냅니다.</p>
+<div class="term"><b>실학의 두 글자 —</b> ① <b>"조선 사회가 지금 어떤 게 문제인지 알아내야 바꾸지 않을까요? 있는 그대로의 사실을 발견해야 되는 겁니다. 그래서 얘는 <b>실증적</b>인 학문이야."</b> ② <b>"지금 백성들이 너무 힘들어. 어떻게 하면 잘 살 수 있을까 방법을 찾아야 해. 우리가 살아가는 데 정말 유용한 학문, 그래서 얘는 <b>실용적</b>이라고."</b> → <b>실학 = 실증적 + 실용적인 개혁 사상</b>입니다.</div>
+<p>실학이 나온 배경도 두 갈래입니다. 하나는 <b class="k">성리학에 대한 반성과 비판</b>(윤휴·박세당이 성리학을 새롭게 해석하려 한 흐름과 이어집니다), 다른 하나는 청나라의 <b class="k">고증학</b>과 <b class="k">서양 학문</b>의 영향입니다.</p>
+<div class="term"><b>고증학이 뭐냐면 —</b> 강사 설명 그대로 <b>"고증이 뭐야? 사실을 발견하는 거야. 과거에 있던 사실을 각종 자료 — 서적이라든지 비석에 새겨진 유물의 내용 — 을 통해서 밝히는 게 고증학"</b>입니다. 청나라에서 만들어진 이 학문이 조선 실학에 영향을 줬습니다.</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 시험 출제 방식을 직접 알려 줍니다 —</b> <b>"실학이 시험에 나오는데, 실학은 거기 빨간색인 것처럼 <b>인물 중심</b>으로 나와요. 인물 중심. 시기별로 실학자를 물어보는 문제가 나와요."</b> 그리고 <b>"조선 후기 실학의 1인자는 당연히 다산 정약용이 짱입니다."</b> 즉 <b>인물 ↔ 책 ↔ 주장</b> 세 칸을 짝지어 외우는 것이 전부입니다.</div></div>
+<div class="quote">실학자는 <b>중농학파</b>와 <b>중상학파</b> 둘로 나뉩니다. 가르는 기준은 <b>"무엇을 고쳐야 백성이 잘사는가"</b>입니다 — <b>땅</b>이라고 답하면 중농학파, <b>상공업</b>이라고 답하면 중상학파입니다.</div>
+</div>
+</div>
+
+<div class="story s5">
+<div class="head"><div class="num">5</div><div class="ttl">중농학파 — "땅을 나눠 주면 백성이 산다"</div><div class="era">경기 · 남인</div></div>
+<div class="body">
+<p>중농학파는 <b>경기도에 살던 남인</b> 출신 학자들입니다. 권력에서 밀려나 시골에 있으니 농민의 현실이 눈에 보였던 것이죠. 세 사람이 나옵니다.</p>
+
+<p><b class="k">① 유형원 — 「반계수록」, 균전론</b></p>
+<div class="term"><b>왜 「반계수록」이냐면 —</b> 강사 설명 <b>"그 사람의 호가 반계, 그래서 반계수록인 거고."</b> 호를 알면 책 제목이 따라옵니다. <b>균전론의 균(均)은 "고를 균"</b> — <b>"땅을 균등하게 똑같이 나눠 주자는 얘기야."</b></div>
+<p>그런데 강사가 반드시 짚어야 한다며 덧붙인 한계가 있습니다 — <b>"근데 이 사람의 생각은 좀 달라. 같은 땅을 나눠 주더라도 <b>양반에게 더 많이</b> 줘야 한대요. 그게 '균등'이라는, 사고의 한계를 보여 주는 실학자가 유형원입니다."</b> 신분제 자체는 못 벗어난 것입니다. 그러면서도 양반 문벌 제도·과거제·노비제는 비판했습니다.</p>
+
+<p><b class="k">② 이익 — 「성호사설」·「곽우록」, 한전론(영업전)</b></p>
+<div class="term"><b>호가 성호(星湖)라서 「성호사설」</b>이고, 제자 집단을 <b>성호학파</b>라 부릅니다. 토지론은 <b>한전론(限田論)</b> — 강사 설명 <b>"한(限)은 일정한, 최소한. 최소한의 먹고살 땅은 줘야 된다, 그래서 이름이 한전론이야."</b></div>
+<p>핵심 개념이 <b class="k">영업전</b>입니다. 강사가 "동그라미하고 별표"를 지시한 항목입니다 — <b>"영업전이 뭐냐 그러면, 농민 한 가구의 생계 유지에 필요한 <b>최소한의 땅</b>."</b> 그리고 결정적으로 이 땅은 <b>법으로 매매를 금지</b>하자고 했습니다. 이유는 이렇습니다 — <b>"매매를 허용하면 결국 농민들은 언젠가 또다시 땅을 잃어버릴 테니까, 죽어도 이 땅만은 팔지 못하게 해야 농민이 먹고살 땅을 온전하게 지킬 수 있으니까."</b></p>
+<p>이익은 나라를 좀먹는 여섯 가지 폐단인 <b class="k">6좀</b>도 비판했습니다 — 양반 문벌·노비제·과거제·사치와 미신·승려·게으름.</p>
+
+<p><b class="k">③ 정약용 — 실학의 집대성, 「여유당전서」, 여전론 → 정전론</b></p>
+<p>강사가 <b>"오, 빨간색이다"</b>라며 가장 힘주어 다룬 인물입니다. 먼저 호부터 — <b>다산(茶山)</b>의 다는 <b>"아는 게 많다"가 아니라 마시는 차(茶)</b>입니다. 강사의 설명 — <b>"천주교 신자였던 집안이 신유박해로 박살나면서, 형 정약전은 흑산도로 가 「자산어보」를 쓰고, 정약용 본인은 전라남도 강진으로 유배를 가요. 강진 옆이 보성이야. 거기 뭐가 있어? 차가 있어. 그래서 차를 즐기셨어. 그래서 호가 다산."</b> 또 다른 호가 <b>여유당</b>이라, 평생 쓴 약 500권의 저서를 묶어 <b class="k">「여유당전서」</b>라 부릅니다.</p>
+<div class="term"><b>3대 저서는 반드시 —</b> <b>「목민심서」</b>(지방관=수령이 지켜야 할 도리) · <b>「경세유표」</b> · <b>「흠흠신서」</b>. 강사가 <b>"시험에 나왔던 것들"</b>이라고 못박습니다.</div>
+<p>토지론은 <b class="k">여전론</b>(동그라미)입니다. <b>공동 농장 제도</b>인데, 강사가 구조까지 설명합니다 — <b>"30가구를 신분 구분 없이 묶어 1여(閭)로 보는 거지. 그 30가구가 <b>같이 일하고(공동 생산) 같이 나누자(공동 분배)</b>."</b> 그런데 문제가 있었습니다 — <b>"조선의 양반들은 죽으면 죽었지 일 안 합니다. 정약용이 '너희도 들어와서 일해, 그럼 두 배 줄게' 했는데 '세 배 줘도 우리 일 안 해'."</b> 그래서 실현 가능성이 없자 대안으로 내놓은 것이 <b class="k">정전론</b>(별표)입니다 — <b>"정(井)이 우물 정(井)자야. 나라의 땅을 우물 정자 모양으로 나눠서, 가운데 땅은 여덟 집이 함께 농사지어 그 수입을 나라 세금으로 내고, 나머지는 각자 몫으로 인정해 주는 거지."</b></p>
+<p>정약용은 의학자이기도 했습니다 — <b class="k">「마과회통」</b>에서 <b>마진(홍역)</b>과 종두법을 연구했습니다. 지리서 <b>「아방강역고」</b>도 남겼고, <b>수원 화성</b> 설계에 참여해 <b>거중기</b>(도르래 원리)를 만들었습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 결론으로 못박은 한 줄 —</b> <b>"유형원은 균전론, 이익은 한전론, 정약용은 여전론과 정전론. 이 '론(論)'이 한자로 뭡니까? <b>주장</b>입니다. 이들은 토지 개혁을 주장했지만 실제로 시행된 적은 한 번도 없어요. 왜? 이들은 전부 어느 붕당이야? <b>남인</b>. 권력이 있어 없어? 없어."</b> → <b>"주장만 했고 정책에 반영되지 못했다"</b>가 결론입니다.</div></div>
+</div>
+</div>
+
+<div class="story s6">
+<div class="head"><div class="num">6</div><div class="ttl">중상학파(북학파) — "청을 배워 상공업을 키우자"</div><div class="era">서울 · 노론</div></div>
+<div class="body">
+<p>중상학파는 <b>서울에 살던 노론</b> 출신입니다. 강사의 설명 — <b>"북학파 실학자들은 주로 서울 출신의 노론이야. 그럼 얘네들은 어디를 많이 갔다 올 수 있을까요? <b>청나라</b>를 많이 갔다 왔던 거지. 그나마 권력이 좀 있던 애들인 거죠."</b> 청의 발달한 문물을 직접 본 사람들이라 "배우자"고 한 것입니다. 그래서 <b class="k">북학파</b>입니다.</p>
+
+<p><b class="k">① 유수원 — 「우서」, 사농공상의 직업적 평등·전문화</b></p>
+<div class="term"><b>사농공상이란</b> 선비(士)·농민(農)·공인(工)·상인(商)의 서열입니다. 조선은 <b>농업 중심 국가</b>라 상업과 수공업을 천한 직업으로 봤습니다. 강사 설명 — <b>"유수원은 모든 직업은 똑같다, 평등하다는 얘기죠. 직업마다 나름의 전문성과 가치가 있으니 따로 부리지 말고 함께 발전시키자."</b></div>
+
+<p><b class="k">② 홍대용 — 지전설, 혼천의, 「의산문답」·「임하경륜」</b> (강사가 "동그라미하고 별표" 지시)</p>
+<p>홍대용은 <b>문벌 제도 폐지</b>(=신분제 폐지)를 주장했고, 무엇보다 <b class="k">지전설</b>로 유명합니다 — 지구가 스스로 돈다는 주장입니다. 이게 왜 중요할까요? 강사 설명 — <b>"세상의 중심은 중국이다, 그 사상을 <b>중화사상</b>이라고 한다고 했죠. 그 중국 중심의 세계관을 <b>비판하는 계기</b>가 된 게 지전설."</b> 지구가 둥글게 돌면 중심이라는 게 있을 수 없기 때문입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 콕 집은 혼동 포인트 —</b> 홍대용이 만든 천체 관측기구는 <b>혼천의</b>입니다. <b>세종</b> 때 만든 것은 <b>혼의·간의</b>입니다. <b>"세종 대에 만든 게 혼의·간의고, 지금 홍대용이 만든 건 <b>혼천의</b>. 좀 더 업그레이드된 버전이라 보시면 됩니다."</b> 이름이 비슷해 반드시 바꿔 냅니다.</div></div>
+
+<p><b class="k">③ 박지원 — 「열하일기」, 「양반전」·「허생전」·「호질」</b></p>
+<p>박지원의 주장은 셋입니다 — <b>상공업 진흥</b>, <b>수레와 선박의 이용</b>, <b>화폐 유통</b>. 강사가 이유까지 설명합니다 — <b>"장사란 건 물건이 왔다 갔다 해야 되잖아요. 그럼 운송업이 발전해야 되는데 우리나라는 전국의 70%가 산이야. 그러니까 선박과 수레를 이용한 운송."</b></p>
+<div class="term"><b>「열하일기」가 뭐냐면 —</b> 강사 설명 <b>"박지원이 청나라에 갔다 돌아와서 쓴 <b>기행문</b>이야. 기행문이 뭐예요? <b>여행 기록문</b>."</b> 그리고 <b>「양반전」·「허생전」·「호질」</b>은 <b>양반 중심의 신분제(문벌 제도)를 대놓고 깐 소설</b>입니다. 참고로 「허생전」에 나오는 매점매석 상인이 15단원의 <b>도고</b>입니다.</div>
+
+<p><b class="k">④ 박제가 — 「북학의」, 소비를 통한 생산 중시</b></p>
+<p>박제가는 <b>서얼</b> 출신으로 <b>정조</b> 때 <b>규장각 검서관</b>에 등용된 그 사람입니다(2번 이야기와 연결). 박지원의 제자이기도 합니다. 책 제목이 곧 학파 이름을 만들었습니다 — 강사 설명 <b>"「북학의」, 북쪽을 배우자는 얘기죠. 그래서 이 사람이 쓴 「북학의」 때문에 <b>북학파</b>가 된 거지."</b></p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>박제가의 가장 유명한 주장은 <b>"절약보다 소비가 중요하다"</b>입니다. 강사가 <b>"별표"</b>를 지시한 대목 — 그는 소비의 중요성을 <b class="k">우물물</b>에 비유했습니다. <b>우물은 퍼서 쓸수록 새 물이 차오르고, 안 쓰면 말라 버립니다.</b> 소비가 있어야 생산이 돌아간다는 것이죠. 유교 사회의 "근검절약" 상식을 정면으로 뒤집은 주장이라 시험에 잘 나옵니다.</div></div>
+<p>그 밖에 청과의 <b>통상 강화</b>도 주장했습니다.</p>
+</div>
+</div>
+<div class="story s5">
+<div class="head"><div class="num">7</div><div class="ttl">백성이 주인공이 되다 — 서민 문화와 진경산수화</div><div class="era">조선 후기</div></div>
+<div class="body">
+<p>15단원에서 본 대로 백성들이 조금 먹고살 만해졌습니다. 그러자 자기들의 문화를 갖기 시작합니다. 강사가 8/21에 <b>"시험은 서민 문화의 <b>장르</b>부입니다. 파란색 제목들이 통째로 외우는 것"</b>이라고 짚은 목록입니다.</p>
+
+<p><b class="k">① 판소리 · 탈놀이</b> — 관광자원해설 33단원의 <b>가면극</b>과 같은 것입니다. 강사도 <b>"우리 자원 시간에 배운 내용이 다 있어요. 판소리, 탈놀이가 우리가 배웠던 가면극이야. 봉산탈춤, 다 여기 들어가 있는 거예요"</b>라고 두 과목을 연결합니다. 탈놀이는 <b>양반의 위선과 승려의 부패를 풍자</b>합니다.</p>
+
+<p><b class="k">② 한글 소설</b> — 강사가 시대 흐름으로 풀어 줍니다. <b>"한글은 세종대왕이 조선 초에 만들었잖아. 근데 조선 전기에는 한글 소설을 볼 수가 없어. 왜? 양반들이 못 쓰게 만들었거든. 자기들만 글자 하고 싶어서. 이제 백성들 사이에서 한글이 보급되면서 한글 소설이 나온 거죠."</b></p>
+<div class="term"><b>최초의 한글 소설은 허균의 「홍길동전」</b>입니다. 강사가 특히 강조한 포인트 — <b>"이 홍길동의 신분이 뭡니까? <b>서얼</b>이거든. 그래서 조선 후기의 '서얼'이라는 신분에 대한 차별을 비판한 소설이 홍길동전. 아버지를 아버지라 부르지 못하고 형을 형이라 부르지 못한 그 신세."</b> → <b>홍길동전 = 서얼 차별 비판</b>. 2번 이야기(서얼)와 그대로 이어집니다. 「춘향전」은 <b>신분을 초월한 남녀의 사랑</b>입니다.</div>
+
+<p><b class="k">③ 사설시조</b> — 강사 설명 <b>"원래 시조는 글자 수가 정해져 있었단 말이야. 세 글자, 네 글자… 근데 사설시조는 글자 수 관계없이 자기 마음대로 하는 거야. <b>형식에 구애받지 않고</b> 자기 감정을 그대로 풀어서 표현하는 시조."</b> 내용은 서민의 생활과 남녀의 사랑, 조선 현실 비판입니다.</p>
+
+<p><b class="k">④ 시사(詩社)</b> — 강사가 "별표"를 지시한 항목입니다. <b>시인 동호회</b>인데, 핵심은 참여 계층입니다 — <b>"서민 문화 중에 특히 <b>중인층</b>이 참여한 게 시사야."</b> 그리고 중인들이 남긴 작품을 따로 부르는 이름이 있습니다 — <b class="k">위항문학</b>. 강사가 <b>"위항문학은 어떤 계층의 문학이야? <b>중인층</b>의 문학"</b>이라고 두 번 확인합니다.</p>
+
+<p><b class="k">⑤ 민화</b> — <b>민(民)은 백성 민</b>입니다. 강사의 설명이 그림값 이야기로 아주 쉽습니다 — <b>"민화는 <b>무명 화가</b>가 그린 거야. 김홍도·신윤복 그림은 백성들한테 너무 비싸. 그래서 백성들이 조금 먹고살 만해지니까 자기도 집에 그림 걸어 놓고 싶은 거야. <b>생활 공간을 장식</b>하기 위해 무명 화가에게 싼값에 그려 달라고 한 게 민화."</b> 가장 대표적인 소재가 <b>까치와 호랑이</b>입니다.</p>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>회화로 넘어갑니다.</b> 강사가 <b>"밑줄 짝 치고 별표"</b>라고 지시한 항목이 <b class="k">진경산수화</b>입니다.</div></div>
+
+<p>강사의 설명이 이 개념의 전부입니다 — <b>"우리나라의 산수, 산수가 뭐야? <b>산과 물</b>이죠? 다른 말로 하면 <b>자연</b>. 우리의 자연, 즉 <b>진경(眞景)=진짜 경치</b>를 있는 그대로 똑같이 그리는 게 <b>진경산수화</b>야."</b></p>
+<div class="term"><b>왜 이게 중요하냐면 —</b> 강사 설명 <b>"우리나라의 자연을 그리는 그림이 <b>중국의 영향</b>을 받다 보니까, 자연을 보고 똑같이 그리는 게 아니라 자연을 보고 <b>자기가 느낀 감정</b>으로 그리는 거야. 그게 기존의 산수화라고. 그런데 진경산수화는 우리나라 자연을 똑같이 그림으로 옮겨 놓는 거."</b> → <b>중국 화풍 탈피 + 우리 산천의 사실적 묘사</b>가 두 축입니다.</div>
+<p>대표 화가는 <b class="k">정선</b>(호 겸재)이고, 대표작은 <b class="k">인왕제색도</b>와 <b class="k">금강전도</b>입니다(금강=금강산).</p>
+<p>다음이 <b class="k">풍속화</b>입니다 — <b>김홍도</b>(호 단원)는 씨름도·서당도처럼 <b>서민의 일상</b>을, <b>신윤복</b>(호 혜원)은 <b>단오풍정</b>처럼 <b>양반의 풍류와 남녀의 애정</b>을 그렸습니다.</p>
+<p>그리고 두 사람 더 — <b class="k">강세황</b>은 서양 화법인 <b>원근법과 명암법</b>을 도입했고(「영통골 입구도」), <b class="k">김정희</b>(호 추사·완당)는 <b>선비의 절개</b>를 표현한 <b>「세한도」</b>와 <b>추사체</b>, 그리고 비석 글자를 해석하는 <b>금석학</b>(「금석과안록」)으로 유명합니다.</p>
+
+<p>마지막으로 <b class="k">건축</b>입니다. 신분 상승을 이룬 부농·상인들의 후원으로 규모가 큰 사원이 지어집니다 — <b>화엄사 각황전, 법주사 팔상전, 금산사 미륵전</b>. 정조 때는 <b>수원 화성</b>(정약용 설계·거중기, 유네스코 세계문화유산), 19세기에는 흥선대원군이 왕권 강화를 위해 <b>경복궁 근정전</b>을 다시 지었습니다. 도자기는 <b class="k">청화백자</b>가 유행합니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 "조심하셔야 돼요"라고 경고한 함정 —</b> <b>해인사 장경판전</b>은 조선 <b>후기</b>가 아니라 <b>조선 전기(15세기)</b> 건축물입니다. <b>"해인사는 원래 있었지만, 팔만대장경을 보관하기 위한 건축물인 장경판전은 조선 전기에 만든 거야."</b></div></div>
+</div>
+</div>
+
+<div class="story s6">
+<div class="head"><div class="num">8</div><div class="ttl">서양에서 학문이 들어오다 — 서학에서 천주교로</div><div class="era">17세기 이후 · 순조</div></div>
+<div class="body">
+<p>강사의 7/24 설명이 이 항목의 함정을 정확히 짚어 줍니다 — <b>"천주교가 처음 조선에 들어올 때는 사람들이 이걸 신앙·종교로 안 본 거야. 서양에서 들어온 하나의 <b>학문</b>으로 인식한 거야. 그래서 <b>서학</b>이라고 불렀단 말이야."</b></p>
+<div class="term"><b>이게 시험 포인트입니다 —</b> 천주교는 <b>서양 선교사가 직접 들여온 것이 아닙니다.</b> 청에 다녀온 사신들이 <b>학문(서학)</b>으로 먼저 들여왔고, 이승훈이 베이징에서 세례를 받고 돌아온 뒤 신앙으로 퍼졌습니다. "선교사가 처음 소개했다"는 문장은 틀립니다.</div>
+<p>그런데 누가 받아들였을까요? 강사 설명 — <b>"17세기 이후 특히 <b>남인</b> 계열 실학자들에 의해서 서학이 천주교라는 신앙의 형태로 받아들여지기 시작한 거죠. 조선 후기의 천주교 신자들은 양반 중에서 <b>남인</b> 쪽이야."</b> 5번 이야기의 <b>중농학파=경기 남인</b>과 정확히 겹칩니다 — 그래서 정약용 집안 전체가 천주교였던 것입니다.</p>
+<p>탄압도 옵니다. <b>순조</b> 때 세도 정치가 시작되면서 노론 강경파가 <b class="k">신유박해</b>를 일으켜 천주교 신자들을 대대적으로 탄압합니다. 이때 정약종은 죽고, 정약전은 흑산도로, 정약용은 강진으로 유배를 갑니다. 이 사건을 계기로 양반·실학자들이 천주교에서 이탈합니다.</p>
+<p>그 밖에 예언서 <b class="k">「정감록」</b>과 <b class="k">미륵 신앙</b>도 유행했습니다 — 현실이 힘들수록 "곧 세상이 바뀐다"는 이야기가 퍼지는 것입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>동학은 이 단원이 아닙니다.</b> 최제우가 동학을 창시한 것은 1860년으로, 이후 <b>동학 농민 운동(1894)</b>으로 이어지는 <b>근현대사</b> 영역입니다. 이 단원에서는 <b>서학=천주교</b>까지만 확실히 하세요.</div></div>
+</div>
+</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빼지 않고</h2>
+
+<h3>① 실학 — 강사가 "인물 중심으로 나온다"고 못박은 표</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>갈래</th><th>인물</th><th>저서</th><th>토지론·핵심 주장</th><th>그 밖에</th></tr></thead>
+<tbody>
+<tr><td class="nm" rowspan="3"><b>중농학파</b><br>경기 <b>남인</b><br>토지 개혁으로<br>자영농 육성</td><td class="nm">유형원</td><td><b>반계수록</b>(호가 반계)</td><td><b>균전론</b> — 토지를 균등 분배. 단 <b>양반에게 더 많이</b>(사고의 한계)</td><td>양반 문벌·과거제·노비제 비판</td></tr>
+<tr><td class="nm">이익</td><td><b>성호사설</b>(호가 성호)·곽우록</td><td><b>한전론</b> — <b>영업전</b>(한 가구 생계 유지에 필요한 최소한의 땅)은 <b>매매 금지</b></td><td>성호학파 형성 · <b>6좀</b>(양반문벌·노비제·과거제·사치와 미신·승려·게으름) 비판</td></tr>
+<tr><td class="nm"><b>정약용</b><br>(호 다산·여유당)</td><td><b>여유당전서</b>(약 500권)<br>3대 저서: <b>목민심서</b>(수령의 도리)·<b>경세유표</b>·<b>흠흠신서</b></td><td><b>여전론</b>(30가구=1여, 공동 생산·공동 분배) → 실현 불가 → <b>정전론</b>(우물 井자로 토지 구획)</td><td>실학 <b>집대성</b> / <b>마과회통</b>(마진=홍역, 종두법) / 아방강역고 / <b>수원 화성 설계·거중기</b></td></tr>
+<tr><td class="nm" rowspan="4"><b>중상학파<br>(북학파)</b><br>서울 <b>노론</b><br>청 문물 수용·<br>상공업 진흥</td><td class="nm">유수원</td><td><b>우서</b></td><td><b>사농공상의 직업적 평등·전문화</b> — 상업·수공업을 천시하지 말자</td><td>—</td></tr>
+<tr><td class="nm">홍대용</td><td>의산문답 · 임하경륜</td><td><b>지전설</b> — 지구 자전 → <b>중국 중심의 중화사상 비판</b></td><td><b>혼천의</b> 제작(세종의 혼의·간의와 구분!) / 문벌 제도 폐지 주장</td></tr>
+<tr><td class="nm">박지원</td><td><b>열하일기</b>(청 여행 <b>기행문</b>)<br>소설: <b>양반전·허생전·호질</b></td><td>상공업 진흥 · <b>수레와 선박</b> 이용 · <b>화폐 유통</b></td><td>양반 중심 신분제(문벌) 비판 / 허생전의 매점매석 상인=<b>도고</b>(15단원)</td></tr>
+<tr><td class="nm">박제가</td><td><b>북학의</b> → 학파 이름의 유래</td><td>청과의 <b>통상 강화</b> / <b>절약보다 소비</b>가 생산을 늘린다(<b>우물물</b>에 비유)</td><td><b>서얼</b> 출신 · 정조 때 <b>규장각 검서관</b> 등용 · 박지원의 제자</td></tr>
+</tbody>
+</table>
+</div>
+<p class="sub"><b>강사의 결론 한 줄</b> — "균전론·한전론·여전론·정전론의 <b>론(論)은 '주장'</b>이다. 이들은 토지 개혁을 <b>주장만 했을 뿐 실제로 시행된 적은 한 번도 없다</b>. 왜? 중농학파는 권력이 없는 <b>남인</b>이었으니까."</p>
+
+<h3>② 신분제의 동요와 가족 제도</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>내용</th><th>결과</th></tr></thead>
+<tbody>
+<tr><td class="nm">신분 상승 수단</td><td><b>납속책</b>(나라에 돈·곡식을 내면 신분 상승) · <b>공명첩</b>(<b>공=빌 공, 명=이름 명</b> — 이름 칸이 빈 관직 임명장). 둘 다 <b>합법</b></td><td><b>양반 수 증가 · 상민·노비 수 감소</b> → 15단원 균역법의 배경</td></tr>
+<tr><td class="nm">양반층 분화</td><td><b>권반</b>(집권 노론) / <b>향반</b>(향촌 거주) / <b>잔반</b>(경제적 몰락)</td><td>붕당 정치 변질의 결과</td></tr>
+<tr><td class="nm"><b>서얼</b></td><td>집단 상소로 관직 진출 요구 → <b>성공</b></td><td><b>정조</b> 때 <b>규장각 검서관</b> 등용 — <b>박제가·유득공·이덕무</b></td></tr>
+<tr><td class="nm"><b>중인</b>(기술직)</td><td>재산·실무 경력 바탕으로 <b>대규모 소청 운동</b> → <b>실패</b></td><td><b>역관</b>이 <b>서학</b> 등 외래 문물 수용 통로 / <b>시사</b> 조직·<b>위항문학</b></td></tr>
+<tr><td class="nm"><b>노비</b></td><td>도망·신분 매입 일상화</td><td><b>순조</b> 때 <b>공노비 해방</b> → <b>갑오개혁(1894)</b> 때 공·사 노비제 <b>법적 완전 폐지</b></td></tr>
+<tr><td class="nm">향촌 사회</td><td>부농층이 신분을 사서 향촌 주도권 요구 → 기존 양반과 충돌</td><td>교재 해설집 이 구간 <b>최다 빈출(7문항)</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>가족 제도</th><th>고려 · 조선 전기~중기 (13단원)</th><th>조선 후기 (16단원)</th></tr></thead>
+<tbody>
+<tr><td class="nm">혼인</td><td>남귀여가혼(처가살이)</td><td><b>친영 제도</b>(시집살이)</td></tr>
+<tr><td class="nm">재산 상속</td><td><b>균분 상속</b>(아들딸 똑같이)</td><td><b>적장자</b> 몰아주기</td></tr>
+<tr><td class="nm">제사</td><td>아들딸 <b>윤회 봉사</b>(딸도 가능)</td><td><b>적장자</b>만</td></tr>
+<tr><td class="nm">양자</td><td>드묾</td><td><b>양자 입양 일반화</b> ← <b>강사 별표: 조선 후기에만 해당</b></td></tr>
+<tr><td class="nm">과부 재가</td><td><b>허용</b></td><td><b>금지</b></td></tr>
+<tr><td class="nm">그 밖에</td><td>—</td><td>부계 위주 <b>족보</b> 편찬 · <b>동성 촌락</b> 형성 · 안채/사랑채 구분</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>③ 조선 후기의 문화</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">서민 문화</td><td><b>판소리</b>(중심) · <b>탈놀이</b>(봉산탈춤 등, 양반·승려 <b>풍자</b>) · <b>한글 소설</b>(<b>홍길동전</b>=허균, 최초 · 서얼 차별 비판 / 춘향전=신분 초월한 사랑) · <b>사설시조</b>(글자 수 제약 없음) · <b>시사</b>(<b>중인층</b> 시인 동호회 → <b>위항문학</b>) · <b>민화</b>(<b>무명 화가</b>, 생활 공간 장식, 까치와 호랑이)</td></tr>
+<tr><td class="nm">회화</td><td><b>진경산수화</b> — <b>정선</b>(겸재), <b>인왕제색도·금강전도</b>. 중국 화풍 탈피 + 우리 산천을 <b>있는 그대로</b><br><b>풍속화</b> — <b>김홍도</b>(단원): 씨름도·서당도, <b>서민의 일상</b> / <b>신윤복</b>(혜원): <b>단오풍정</b>, 양반의 풍류·남녀 애정<br><b>강세황</b> — 서양 화법(<b>원근법·명암법</b>), 영통골 입구도<br><b>김정희</b> — <b>세한도</b>(선비의 절개), <b>추사체</b>, 금석학(금석과안록)</td></tr>
+<tr><td class="nm">건축</td><td>17·18세기 사원 건축 — <b>화엄사 각황전 · 법주사 팔상전 · 금산사 미륵전</b>(양반 후원) / 논산 쌍계사(부농·상인 후원)<br><b>수원 화성</b>(18세기, 정조·<b>정약용 설계</b>, <b>거중기</b>, 유네스코 세계문화유산)<br>경복궁 근정전(19세기, <b>흥선대원군</b>, 왕권 강화 목적)<br>⚠️ <b>해인사 장경판전은 조선 전기(15세기)</b> — 후기 아님</td></tr>
+<tr><td class="nm">도자기</td><td>분청사기(15세기) → 순백자(16세기) → <b>청화백자</b>(조선 후기)</td></tr>
+<tr><td class="nm">지리·역사·의학</td><td>택리지(이중환, 인문지리서) · <b>동국지도</b>(정상기, 100리 척) · <b>대동여지도</b>(김정호) · 동사강목(안정복, 고조선~고려 말) · 곤여만국전도 유입 · <b>동의수세보원</b>(<b>이제마</b>, 사상 의학)</td></tr>
+<tr><td class="nm">새로운 사상</td><td><b>서학 → 천주교</b>(청 사신이 <b>학문</b>으로 먼저 소개 → <b>남인</b> 계열이 신앙으로 수용 → 순조 때 <b>신유박해</b>) · <b>「정감록」</b>·<b>미륵 신앙</b> 유행 · 성리학 교조화 비판(<b>윤휴·박세당</b>)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 핵심 암기표 — 감이 아니라 실측입니다</h2>
+
+<div class="notice">
+<b>이번 단원도 집계 대상이 다릅니다 — 반드시 읽어 주세요.</b> <code>관광국사기출.pdf</code>(2013~2025년 <b>215문항</b>)는 <b>"정치" 단원만</b> 수록돼 있어 이 단원 <b>직접 문항은 0개</b>입니다(수원 화성·정약용이 나온 2014년 Q200 한 문항만 정치 문항으로 걸쳐 있습니다). 그래서 두 갈래로 실측했습니다 — ① <b>학원 교재(핵심.pdf) 뒤쪽 해설집</b>의 <b>조선 후기 사회 구간 14문항</b>에서 항목별 등장 문항 수를 셌고, ② <b>실학·회화·서민 문화 구간은 해설집에도 문항이 없어</b>, 대신 <b>8/21 강의에서 강사가 "동그라미"·"별표"를 직접 지시한 항목</b>을 우선순위 신호로 삼았습니다. 두 근거를 섞지 않고 아래에 따로 표기했습니다.
+</div>
+
+<div class="freq">
+<div class="row"><span class="gr gA">S급</span><div><b>실학 인물 ↔ 저서 ↔ 토지론 매칭 (강의 근거)</b> — 강사가 <b>"실학은 인물 중심으로 나와요"</b>라고 출제 방식을 직접 말했습니다. <b>유형원-반계수록-균전론 / 이익-성호사설-한전론(영업전) / 정약용-여유당전서-여전론→정전론</b> 세 줄이 이 단원 <b>최우선</b>입니다.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>향촌 사회의 변화 (해설집 14문항 중 7문항)</b> — 부농층이 신분을 사서 향촌 주도권을 요구하는 흐름. <b>이 구간 실측 최다</b>입니다. 「신분제의 동요」와 세트로 나옵니다.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>신분제의 동요 (5문항)</b> — 양반 수 증가·상민 노비 수 감소. <b>공명첩·납속(3문항)</b>과 거의 항상 붙어 나옵니다.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>진경산수화 · 풍속화 (강의 근거 — 강사가 "밑줄 짝 치고 별표" 지시)</b> — <b>정선</b>(인왕제색도·금강전도) ↔ <b>김홍도</b>(씨름도·서당도) ↔ <b>신윤복</b>(단오풍정). 교재가 <b>"화가·작품을 서로 바꿔 묻는 문제가 매우 자주 나온다"</b>고 명시한 항목입니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>중인·역관·소청 운동 (4문항)</b> — 중인은 <b>실패</b>, 서얼은 <b>성공</b>. 성공/실패를 바꿔 내는 함정. <b>시사·위항문학</b>(강사 별표)도 여기 붙습니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>노비 해방 (3문항)</b> — <b>순조 때 공노비 해방 → 갑오개혁(1894) 완전 폐지</b>. 두 단계를 한 단계로 뭉개는 함정이 잦습니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>가족 제도 (2문항)</b> — <b>친영·적장자·양자 입양 일반화·과부 재가 금지</b>. 강사가 <b>"양자 입양의 일반화는 오로지 조선 후기만 해당, 고려·조선 전기에 나오면 무조건 X"</b>라고 별표를 지시했습니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>홍대용 지전설 · 박제가 소비론 (강사 "동그라미하고 별표" 지시)</b> — 지전설=<b>중화사상 비판</b>의 계기, 혼천의(≠세종의 혼의·간의). 박제가=<b>절약보다 소비</b>(우물물 비유).</div></div>
+<div class="row"><span class="gr gC">B급</span><div><b>민화·서민문화 (2문항)</b> · <b>서얼 (2문항)</b> · <b>잔반 (1문항)</b> — 등장은 적지만 정답 선지로 쓰인 적이 있습니다. <b>민화=무명 화가·생활 공간 장식</b> 한 줄만 확실히.</div></div>
+<div class="row"><span class="gr gZ">별도</span><div><b>215문항 기출에서 이 단원이 걸친 1문항</b> — 2014년 <b>Q200</b>(수원 화성과 정약용의 거중기). 정치 문항으로 분류돼 있지만 <b>정약용·수원 화성·거중기</b>가 그대로 나왔습니다. 아래 문제 섹션에 <b>원문 그대로</b> 실었습니다.</div></div>
+</div>
+
+<div class="zero"><b>0회라고 버리지 마세요.</b> 이 단원이 "기출 0문항"인 것은 <b>우리가 가진 기출 PDF가 정치 단원만 수록했기 때문</b>입니다. 오히려 이 단원은 <b>강사가 8/21에 1시간 가까이 전용으로 강의한 구간</b>이고, 실학 인물표는 강사가 직접 "시험에 인물 중심으로 나온다"고 말한 부분입니다. 학습 우선순위는 <b>①실학 인물표 3+4명 → ②정선·김홍도·신윤복 → ③납속·공명첩과 서얼/중인/노비 → ④가족제도 전기 vs 후기 → ⑤서민문화 5장르 → ⑥서학·천주교</b> 순으로 잡으세요.</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<div class="cmp">
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 중농학파 vs 중상학파 — 최대 빈출</h4>
+<div class="vs">
+<div class="side a"><b>중농학파</b>경기 · <b>남인</b><br><b>토지</b> 개혁 → 자영농 육성<br>유형원 · 이익 · 정약용</div>
+<div class="mid">vs</div>
+<div class="side b"><b>중상학파(북학파)</b>서울 · <b>노론</b><br><b>상공업</b> 진흥 · 청 문물 수용<br>유수원 · 홍대용 · 박지원 · 박제가</div>
+</div>
+<p class="why">가르는 기준 한 줄 — <b>"무엇을 고쳐야 백성이 잘사는가"</b>에 <b>땅</b>이라 답하면 중농, <b>상공업</b>이라 답하면 중상입니다. <b>붕당(남인/노론)과 지역(경기/서울)까지 세트</b>로 외우세요 — 강사가 "북학파는 서울 노론이라 청나라를 많이 갔다 왔다"고 이유까지 설명합니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 토지론 3종 — 균전 vs 한전 vs 여전</h4>
+<div class="vs">
+<div class="side a"><b>유형원 · 균전론</b><b>균</b>=고를 균<br>균등 분배(단 양반 우대)</div>
+<div class="mid">/</div>
+<div class="side n"><b>이익 · 한전론</b><b>한</b>=한정할 한<br><b>영업전</b> 매매 금지</div>
+<div class="mid">/</div>
+<div class="side g"><b>정약용 · 여전론</b>30가구=1여<br>공동 생산·분배 → <b>정전론</b></div>
+</div>
+<p class="why">한자 한 글자가 곧 정의입니다 — <b>균=고르게 / 한=최소한만 / 여=마을 단위 공동</b>. <b>"정약용은 균전론"</b>은 대표적 오답(균전론은 유형원)입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 김홍도 vs 신윤복 — 작품 바꿔치기</h4>
+<div class="vs">
+<div class="side a"><b>김홍도 (단원)</b><b>서민의 일상</b><br>씨름도 · 서당도</div>
+<div class="mid">≠</div>
+<div class="side b"><b>신윤복 (혜원)</b><b>양반의 풍류·남녀 애정</b><br><b>단오풍정</b> · 월하정인</div>
+</div>
+<p class="why">교재가 <b>"매우 자주 나온다"</b>고 명시한 함정입니다. <b>"김홍도의 대표작은 단오풍정"</b>은 <b class="x">틀림</b> — 단오풍정·월하정인은 <b>신윤복</b>입니다. <b>단(단원 김홍도) ↔ 단(단오풍정 신윤복)</b>이 헷갈리니, <b>"단오풍정은 혜원"</b>으로 외우세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 진경산수화 vs 기존 산수화</h4>
+<div class="vs">
+<div class="side n"><b>기존 산수화</b><b>중국 화풍</b>의 영향<br>자연을 보고 <b>느낀 감정</b>으로 그림</div>
+<div class="mid">→</div>
+<div class="side g"><b>진경산수화</b>중국 화풍 <b>탈피</b><br>우리 산천을 <b>있는 그대로</b><br>정선 · 인왕제색도 · 금강전도</div>
+</div>
+<p class="why"><b>진경(眞景)=진짜 경치</b>. 강사가 "밑줄 짝 치고 별표"를 지시한 항목입니다. <b>중국 화풍 탈피 + 사실적 묘사</b> 두 축이 정답 문장에 반드시 들어갑니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 가족 제도 — 조선 전기 vs 조선 후기</h4>
+<div class="vs">
+<div class="side a"><b>고려·조선 전기</b>남귀여가혼(처가살이)<br><b>균분 상속</b> · 딸도 제사<br>과부 <b>재가 허용</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>조선 후기</b><b>친영</b>(시집살이)<br><b>적장자</b> 몰아주기<br><b>양자 입양 일반화</b> · 재가 <b>금지</b></div>
+</div>
+<p class="why">강사 별표 — <b>"양자 입양의 일반화는 오로지 조선 후기만. 고려·조선 전기 문제에 이 단어가 나오면 무조건 X."</b> <b>과부 재가 금지</b>도 같습니다. 이 두 단어가 보이면 <b>조선 후기</b>로 확정하세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 신분 상승 운동 — 서얼 vs 중인</h4>
+<div class="vs">
+<div class="side g"><b>서얼 ○ 성공</b>집단 상소<br><b>정조</b> 때 규장각 검서관<br>박제가·유득공·이덕무</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>중인 ✕ 실패</b>대규모 <b>소청 운동</b><br>역관이 <b>서학</b> 수용 통로<br>시사·<b>위항문학</b></div>
+</div>
+<p class="why">성공/실패를 바꿔 내는 것이 이 구간 함정입니다. <b>서얼=성공, 중인=실패</b>. 그리고 <b>박제가는 서얼이면서 중상학파 실학자</b>라는 연결도 함께 잡아 두세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 혼천의 vs 혼의·간의</h4>
+<div class="vs">
+<div class="side b"><b>혼천의</b><b>홍대용</b>(조선 후기)<br>중상학파 실학자</div>
+<div class="mid">≠</div>
+<div class="side n"><b>혼의 · 간의</b><b>세종</b>(조선 전기)</div>
+</div>
+<p class="why">강사가 직접 짚은 혼동 포인트입니다 — <b>"세종 대에 만든 게 혼의·간의고, 홍대용이 만든 건 혼천의. 좀 더 업그레이드된 버전."</b> 이름이 비슷해 시대를 바꿔 냅니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 건축 — 조선 전기 vs 조선 후기</h4>
+<div class="vs">
+<div class="side n"><b>조선 전기</b><b>해인사 장경판전</b>(15세기)<br>서원 건축(16세기)</div>
+<div class="mid">vs</div>
+<div class="side g"><b>조선 후기</b>화엄사 <b>각황전</b> · 법주사 <b>팔상전</b><br>금산사 <b>미륵전</b> · <b>수원 화성</b></div>
+</div>
+<p class="why">강사가 <b>"조심하셔야 돼요"</b>라고 경고한 항목 — <b>해인사 장경판전은 조선 전기</b>입니다. "조선 후기 대표 건축물로 해인사 장경판전이 있다"는 <b class="x">틀림</b>.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 인물 ↔ 저서 바꿔치기 3종</h4>
+<div class="vs">
+<div class="side a"><b>김정호</b> 대동여지도<br><b>정상기</b> 동국지도(100리 척)</div>
+<div class="mid">/</div>
+<div class="side n"><b>허준</b> 동의보감<br><b>이제마</b> 동의수세보원(사상 의학)</div>
+<div class="mid">/</div>
+<div class="side b"><b>허균</b> 홍길동전(<b>한글</b> 소설)<br>※ 한문 소설 아님</div>
+</div>
+<p class="why">셋 다 오답노트에 실린 실제 함정입니다 — <b>"김정호가 동국지도를 만들었다"</b>, <b>"허준이 동의수세보원을 펴냈다"</b>, <b>"홍길동전·춘향전은 한문 소설"</b> 전부 <b class="x">틀림</b>입니다.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="notice">
+<b>이 단원은 강의가 있습니다.</b> 15단원(경제)과 달리, 16단원은 <b>8월 21일 문제풀이강의(1시간57분~2시간47분경)</b>에 실학·서민문화·회화가 통째로 진행됐고, 사회(신분제·가족제도)는 <b>7월 24일 강의(2시간9분~2시간33분경, 3시간6분경)</b>에 있습니다. 아래는 전부 <b>강사가 직접 "동그라미"·"별표"·"밑줄"을 지시했거나 반복 강조한 항목</b>이며, 전사본 시각을 함께 적었습니다.
+</div>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"실학은 <u>인물 중심</u>으로 나와요"</b> — 8/21 01:58. 출제 방식을 직접 알려 준 문장입니다. <b>"시기별로 실학자를 물어보는 문제가 나와요"</b>, <b>"실학의 1인자는 당연히 다산 정약용이 짱입니다."</b> → 인물표 암기가 이 단원 최우선.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>이익의 「영업전」 — "동그라미하고 별표"</b> — 8/21 02:06~02:08. <b>"영업전이 뭐냐면, 농민 한 가구의 생계 유지에 필요한 <u>최소한의 땅</u>."</b> 그리고 <b>매매를 법으로 금지</b>하자고 한 이유까지 — <b>"매매를 허용하면 농민은 언젠가 또 땅을 잃을 테니까."</b></div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>정약용의 여전론(동그라미)과 정전론(별표)</b> — 8/21 02:12~02:15. 여전론=<b>30가구를 1여로 묶어 공동 생산·공동 분배</b>. 실현 불가 → 대안이 <b>정전론</b>(우물 井자 구획). 3대 저서 <b>목민심서·경세유표·흠흠신서</b>는 <b>"시험에 나왔던 것들"</b>이라고 못박습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"론(論)은 <u>주장</u>이다 — 실제로 시행된 적은 한 번도 없다"</b> — 8/21 02:15. <b>"이들은 전부 남인이야. 권력이 있어 없어? 없어."</b> 토지 개혁론이 <b>정책에 반영되지 못했다</b>는 결론이 그대로 정답 문장이 됩니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>홍대용 — "동그라미하고 별표"</b> — 8/21 02:21. <b>지전설 → 중국 중심의 중화사상 비판</b>이라는 인과를 강조하고, <b>혼천의</b>를 <b>세종의 혼의·간의</b>와 구분하라고 직접 짚습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>박제가의 소비론 — "별표"</b> — 8/21 02:25~02:26. <b>절약보다 소비가 생산을 늘린다</b>는 주장을 <b>우물물</b>에 비유했다는 점. 그리고 <b>"「북학의」 때문에 북학파가 된 거지"</b>라며 책 제목이 학파 이름이 된 유래.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>진경산수화 — "밑줄 짝 치고 별표", 정선 — "동그라미"</b> — 8/21 02:41~02:43. <b>"중국 영향을 받으면 자연을 보고 느낀 감정으로 그리는 건데, 진경산수화는 우리나라 자연을 똑같이 옮겨 놓는 것."</b> 대표작 <b>인왕제색도·금강전도</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>홍길동전 = 서얼 차별 비판</b> — 8/21 02:30. <b>"홍길동의 신분이 뭡니까? 서얼이거든. 조선 후기의 '서얼'이라는 신분 차별을 비판한 소설이 홍길동전."</b> 최초의 한글 소설이라는 점과 함께 세트.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>시사 = 중인층 → 위항문학 — "별표"</b> — 8/21 02:32~02:33. <b>"서민 문화 중에 특히 <u>중인층</u>이 참여한 게 시사야."</b> 중인들의 작품을 부르는 명칭이 <b>위항문학</b>이라고 두 번 확인합니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>민화 = 무명 화가 · 생활 공간 장식</b> — 8/21 02:33~02:34. <b>"김홍도·신윤복 그림은 백성들한테 너무 비싸. 그래서 무명 화가에게 싼값에 그려 달라고 걸어 놓은 게 민화."</b> 대표 소재는 <b>까치와 호랑이</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>해인사 장경판전 = 조선 전기 — "조심하셔야 돼요"</b> — 8/21 02:46. <b>"해인사는 원래 있었지만, 팔만대장경을 보관하기 위한 장경판전은 조선 전기에 만든 건축물이야."</b></div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"양자 입양의 일반화 — 별표. 오로지 조선 후기만"</b> — 7/24 02:30~02:31. <b>"조선 전기나 고려에서 이 단어가 나오면 무조건 X야. 실제로 고려시대 사회 문제에서 '양자 입양이 일반화되었다'가 틀린 답으로 나왔어요."</b></div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>공명첩의 글자 뜻 — "공(空)=빌 공, 명(名)=이름 명"</b> — 7/24 02:10~02:12. <b>"이름이 없는 관직첩을 주는 거죠."</b> 그리고 <b>"이 공명첩과 납속책은 합법이라고."</b> 결과는 <b>양반의 수 증가</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>서얼 등용은 "어느 왕 대인지가 굉장히 중요"</b> — 7/24 02:12. <b>정조</b>가 <b>규장각 검서관</b>에 등용했고 대표 인물이 <b>박제가·유득공·이덕무</b>. 그리고 <b>공노비 해방은 순조 때</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>천주교는 처음에 <u>학문(서학)</u>으로 들어왔다</b> — 7/24 03:06~03:08. <b>"사람들은 이걸 신앙·종교로 안 본 거야. 서양에서 들어온 하나의 학문으로 인식한 거야."</b> 수용층은 <b>남인</b> 계열 실학자, 탄압은 <b>순조 때 신유박해</b>.</div></li>
+</ul>
+</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 20문항</h2>
+<p class="sub"><b>기출 원문 1문항 + 예상문제 19문항</b>입니다. 예상문제는 전부 관광국사.md 16단원·학원 교재 해설집·<b>8/21과 7/24 강의 전사본</b>에서 확인된 사실로만 만들었습니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>구성을 밝힙니다.</b> 2013~2025년 기출 <b>215문항</b> 중 조선 후기 사회·문화를 <b>직접 묻는 문항은 0개</b>입니다(기출 PDF가 정치 단원만 수록). 이 단원 내용이 등장한 것은 2014년 <b>Q200</b>(수원 화성·정약용의 거중기) <b>한 문항</b>뿐이라, 이것만 <b>원문 그대로</b> 실었습니다. 나머지 19문항은 <b>교재 해설집의 조선 후기 사회 14문항</b>과 <b>강사가 8/21·7/24 강의에서 직접 짚은 내용</b>만으로 만든 예상문제입니다. <b>추측으로 만든 선택지는 하나도 없습니다.</b>
+</div>
+
+<div class="quizbar">
+<svg class="ic" width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 20 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="wrongBtn" onclick="onlyWrong()" style="display:none">틀린 문제만 다시</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts">
+<button class="btn" onclick="onlyWrong()">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" onclick="reset()">전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>01_관광국사/04_최종교재/관광국사.md</code> 16단원(핵심.pdf 인쇄 19쪽〈사상·학문 (2)실학〉·20쪽〈서민 문화, 조선시대 회화, 건축·기타〉·25~26쪽〈신분제의 동요, 가족제도〉) · <code>01_원본자료/관광국사 핵심txt.txt</code> 해설집 / 문항: <code>03_작업자료/관광국사기출.md</code> Q200 / 강의: 문제풀이 <b>8/21</b> 1시간57분~2시간47분경(실학 배경·중농학파·정약용·중상학파·서민문화·회화·건축), 문제풀이 <b>7/24</b> 2시간9분~2시간33분경(납속·공명첩·서얼·중인·노비·가족제도)·3시간6분경(서학·천주교).</p>
+<p><b>실측 방법</b> — ① 학원 교재 해설집 중 <b>조선 후기 사회 구간 14문항</b>(번호 341·346~358)을 문항 단위로 잘라 항목별 등장 문항 수를 셌습니다 — 향촌 7 / 신분제 5 / 중인·역관 4 / 노비 3 / 공명첩·납속 3 / 서얼 2 / 가족제도 2 / 민화·서민문화 2 / 잔반 1. ② <b>실학·회화·서민문화 구간은 해설집에 문항이 없어</b>, 강사가 8/21 강의에서 <b>"동그라미"·"별표"·"밑줄"을 직접 지시한 항목</b>을 우선순위 신호로 삼았습니다(각 항목의 전사본 시각을 「강사가 콕 집은 것」에 표기). ③ 별개로 기출 <b>215문항</b>의 문제·선택지 원문을 실측해 이 단원이 걸친 문항이 <b>Q200 하나</b>임을 확인했습니다. 세 근거를 섞지 않고 따로 표기했습니다.</p>
+<p><b>추측 금지</b> — 교재·기출 해설·확인한 강의 구간에 없는 내용은 넣지 않았습니다. 동학은 1860년 창시로 <b>근현대사</b> 영역이라 이 단원에서 다루지 않고, 8/13 근현대 특강 자료로 미뤘습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+
+</div>
+
+<script>
+var QS=[
+{n:1,c:"실학",src:"기출 2014년",q:"다음은 수원화성과 정약용이 제작한 거중기이다. 이 시설과 장치가 만들어질 당시의 역사적 사실로 옳지 <b>않은</b> 것은?",o:["친위부대인 장용영을 설치하여 왕권을 강화하였다","국토 경영의 효율성을 높이기 위하여 『동국여지승람』을 편찬하였다","영조의 탕평책을 계승·강화하였다","규장각에 젊은 학자들을 모아 학문과 정책을 연구하도록 하였다"],a:1,e:"강사 해설(7/31) — \"수원화성·정약용이 나오면 이 시기는 무조건 <b>정조</b>다.\" 장용영·탕평책 계승·규장각은 모두 정조의 업적이 맞지만, <b>동국여지승람</b>은 <b>성종</b> 때 편찬한 지리서라 시대가 다릅니다. 215문항 기출 중 이 단원(정약용·수원 화성·거중기)이 등장한 <b>유일한</b> 문항입니다."},
+{n:2,c:"실학",src:"예상문제",q:"실학이 등장한 배경과 성격에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["왜란·호란 이후 무너진 사회 현실을 개혁하려는 사상이었다","있는 그대로의 사실을 밝히려는 실증적 성격을 지녔다","백성의 생활 향상에 도움이 되는 실용적 학문을 지향하였다","성리학을 전면 부정하고 유학과 무관한 새로운 학문 체계를 세웠다"],a:3,e:"강사 해설(8/21) — <b>\"원래 실학도 유학의 한 갈래예요.\"</b> 실학은 성리학을 <b>전면 부정</b>한 것이 아니라 <b>성리학에 대한 반성과 비판</b>에서 나왔습니다. 성격은 <b>실증적</b>(있는 그대로의 사실 발견) + <b>실용적</b>(살아가는 데 유용한 학문)이고, 청의 <b>고증학</b>과 서양 학문의 영향을 받았습니다."},
+{n:3,c:"실학",src:"예상문제",q:"실학의 두 갈래에 관한 설명으로 옳은 것은?",o:["중농학파는 서울의 노론, 중상학파는 경기의 남인이 주도하였다","중농학파는 토지 제도 개혁을, 중상학파는 상공업 진흥을 주장하였다","유수원은 중농학파로서 「우서」에서 균전론을 주장하였다","중상학파는 청을 배척하자는 입장이어서 북벌파라고도 불린다"],a:1,e:"중농학파는 <b>경기의 남인</b>으로 <b>토지 개혁</b>을, 중상학파는 <b>서울의 노론</b>으로 <b>상공업 진흥과 청 문물 수용</b>을 주장했습니다(①은 반대). <b>유수원</b>은 <b>중상학파</b>로 「우서」에서 <b>사농공상의 직업적 평등·전문화</b>를 주장했습니다. 중상학파는 청을 <b>배우자</b>는 입장이라 <b>북학파</b>입니다."},
+{n:4,c:"실학",src:"예상문제",q:"「반계수록」을 저술하고 균전론을 주장한 실학자는?",o:["유형원","이익","정약용","박지원"],a:0,e:"<b>유형원</b>입니다. 강사 해설(8/21) — <b>\"그 사람의 호가 반계, 그래서 반계수록인 거고.\"</b> 다만 그의 균전론은 <b>양반에게 더 많은 토지를 주자</b>는 것이어서 강사는 <b>\"사고의 한계를 보여 주는 실학자\"</b>라고 평했습니다. 양반 문벌·과거제·노비제는 비판했습니다."},
+{n:5,c:"실학",src:"예상문제",q:"이익이 주장한 한전론의 「영업전」에 관한 설명으로 옳은 것은?",o:["관리에게 등급에 따라 지급하는 토지이다","농민 한 가구의 생계 유지에 필요한 최소한의 토지로, 매매를 금지하자고 하였다","마을이 공동으로 경작하고 수확을 나누는 토지이다","왕실 경비를 충당하기 위해 설정한 토지이다"],a:1,e:"강사가 <b>\"동그라미하고 별표\"</b>를 지시한 항목입니다(8/21) — <b>영업전 = 농민 한 가구의 생계 유지에 필요한 최소한의 땅</b>. 그리고 <b>법으로 매매를 금지</b>하자고 한 이유는 <b>\"매매를 허용하면 농민은 언젠가 또 땅을 잃어버릴 테니까\"</b>입니다. ③은 정약용의 여전론입니다."},
+{n:6,c:"실학",src:"예상문제",q:"정약용의 토지 개혁론에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["여전론은 마을 단위로 공동 생산하고 공동 분배하는 제도이다","여전론이 실현되기 어렵자 대안으로 정전론을 제시하였다","정전론은 토지를 우물 井자 모양으로 구획하는 방안이다","정약용의 토지론은 균전론으로, 조선 정부에 의해 실제로 시행되었다"],a:3,e:"정약용의 토지론은 <b>여전론 → 정전론</b>입니다 — <b>균전론은 유형원</b>의 주장입니다. 그리고 강사 해설(8/21) — <b>\"론(論)이 한자로 뭡니까? 주장입니다. 이들은 토지 개혁을 주장했지만 실제로 시행된 적은 한 번도 없어요. 왜? 이들은 전부 남인. 권력이 있어 없어? 없어.\"</b>"},
+{n:7,c:"실학",src:"예상문제",q:"정약용의 저서와 그 내용의 연결이 옳지 <b>않은</b> 것은?",o:["목민심서 — 지방관(수령)이 지켜야 할 도리","마과회통 — 마진(홍역)과 종두법 연구","동의수세보원 — 체질을 넷으로 나눈 사상 의학","아방강역고 — 우리나라의 역사 지리 연구"],a:2,e:"<b>「동의수세보원」과 사상 의학은 이제마</b>의 업적입니다. 정약용의 저술은 약 500권으로 <b>「여유당전서」</b>에 묶여 있고, 3대 저서는 <b>목민심서·경세유표·흠흠신서</b>입니다. 참고로 <b>「동의보감」은 허준</b>(광해군 때)입니다."},
+{n:8,c:"실학",src:"예상문제",q:"홍대용에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["지전설을 주장하여 중국 중심의 중화사상을 비판하는 계기를 만들었다","천체 관측기구인 혼천의를 제작하였다","「의산문답」·「임하경륜」을 저술하였다","세종의 명으로 혼의와 간의를 제작하였다"],a:3,e:"강사가 직접 짚은 혼동 포인트입니다(8/21) — <b>\"세종 대에 만든 게 혼의·간의고, 홍대용이 만든 건 혼천의. 좀 더 업그레이드된 버전.\"</b> 홍대용은 조선 <b>후기</b> 중상학파 실학자로, <b>지전설</b>로 중화사상 비판의 계기를 만들고 <b>문벌 제도 폐지</b>도 주장했습니다."},
+{n:9,c:"실학",src:"예상문제",q:"박지원에 관한 설명으로 옳은 것은?",o:["청에 다녀와 기행문인 「열하일기」를 남겼고 「양반전」·「허생전」으로 양반 사회를 풍자하였다","「북학의」를 저술하여 절약보다 소비의 중요성을 강조하였다","「반계수록」에서 균전론을 주장하였다","지전설로 중화사상을 비판하였다"],a:0,e:"강사 해설(8/21) — <b>\"「열하일기」는 박지원이 청나라에 갔다 돌아와서 쓴 <b>기행문</b>이야. 기행문이 뭐예요? 여행 기록문.\"</b> 그는 <b>상공업 진흥·수레와 선박 이용·화폐 유통</b>을 주장했고, <b>「양반전」·「허생전」·「호질」</b>로 문벌 제도를 비판했습니다. ②는 박제가, ③은 유형원, ④는 홍대용입니다."},
+{n:10,c:"실학",src:"예상문제",q:"박제가에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["「북학의」를 저술하였고 이 책에서 북학파라는 이름이 유래하였다","절약보다 적절한 소비가 생산을 늘린다고 주장하였다","서얼 출신으로 정조 때 규장각 검서관에 등용되었다","경기 남인 출신의 중농학파로 토지 개혁을 주장하였다"],a:3,e:"박제가는 <b>중상학파(북학파)</b>이며 <b>서얼</b> 출신으로 정조 때 <b>규장각 검서관</b>에 등용되었습니다(유득공·이덕무와 함께). 박지원의 제자이기도 합니다. 강사가 <b>\"별표\"</b>를 지시한 소비론은 <b>우물물</b>에 비유한 주장입니다 — 우물은 퍼서 쓸수록 새 물이 차오르고 안 쓰면 마릅니다."},
+{n:11,c:"사회·가족",src:"예상문제",q:"조선 후기의 납속책과 공명첩에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["납속책은 나라에 돈이나 곡식을 바치면 신분을 올려 주는 제도이다","공명첩은 이름 칸이 비어 있는 관직 임명장이다","두 제도로 양반의 수가 늘고 상민·노비의 수가 줄었다","두 제도는 국가가 금지한 불법적인 신분 매매였다"],a:3,e:"강사 해설(7/24) — <b>\"이 공명첩과 납속책은 합법이라고.\"</b> 나라가 재정을 메우려고 공식적으로 시행한 제도입니다. <b>공(空)=빌 공, 명(名)=이름 명</b> — 실제 근무자는 따로 있으니 이름 없는 임명장만 주는 것입니다. 그 결과 <b>양반 수 증가·상민 노비 수 감소</b>가 일어나 15단원 균역법의 배경이 됩니다."},
+{n:12,c:"사회·가족",src:"예상문제",q:"조선 후기 신분 상승 운동에 관한 설명으로 옳은 것은?",o:["서얼은 집단 상소로 관직 진출을 요구해 성공하였고, 중인의 소청 운동은 실패하였다","중인은 소청 운동에 성공하여 청요직에 진출하였다","서얼은 영조 때 규장각 검서관으로 등용되었다","양반층은 분화 없이 하나의 집단으로 유지되었다"],a:0,e:"<b>서얼=성공 / 중인=실패</b>가 핵심입니다. 서얼은 <b>정조</b>(영조 아님) 때 <b>규장각 검서관</b>에 등용되었습니다 — 박제가·유득공·이덕무. 중인(기술직)은 <b>대규모 소청 운동</b>을 벌였으나 실패했고, 역관이 <b>서학</b> 수용 통로가 되었습니다. 양반층도 <b>권반·향반·잔반</b>으로 분화했습니다."},
+{n:13,c:"사회·가족",src:"예상문제",q:"조선 후기 노비 신분의 변화 과정으로 옳은 것은?",o:["순조 때 공노비가 해방되고, 갑오개혁(1894) 때 공·사 노비제가 법적으로 완전히 폐지되었다","영조 때 사노비가 먼저 해방되었다","갑오개혁으로 공노비만 해방되고 사노비는 유지되었다","조선 후기 내내 노비의 수는 오히려 크게 늘어났다"],a:0,e:"두 단계입니다 — <b>순조 때 공노비 해방 → 갑오개혁(1894) 때 공·사 노비제 법적 완전 폐지</b>. 강사도 7/24에서 <b>\"공노비는 순조 때 해방이 됐어요\"</b>라고 짚습니다. 납속·공명첩과 도망으로 <b>노비 수는 줄어드는</b> 추세였습니다."},
+{n:14,c:"사회·가족",src:"예상문제",q:"조선 후기 가족 제도의 특징으로 옳지 <b>않은</b> 것은?",o:["여자가 시집으로 가서 사는 친영 제도가 자리 잡았다","재산 상속과 제사가 적장자 중심으로 바뀌었다","양자 입양이 일반화되고 부계 위주의 족보 편찬이 활발해졌다","재산을 아들딸에게 균등하게 나누는 균분 상속이 일반적이었다"],a:3,e:"<b>균분 상속·남귀여가혼·과부 재가 허용</b>은 <b>고려와 조선 전기~중기</b>의 특징으로, 13단원 내용입니다. 강사가 <b>별표</b>를 지시한 문장(7/24) — <b>\"'양자 입양의 일반화'는 오로지 조선 후기만 해당. 조선 전기나 고려에서 이 단어가 나오면 무조건 X야.\"</b> <b>과부 재가 금지</b>도 마찬가지입니다."},
+{n:15,c:"문화",src:"예상문제",q:"조선 후기 서민 문화에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["판소리와 탈놀이가 유행하였고 탈놀이는 양반과 승려를 풍자하였다","사설시조는 정해진 글자 수의 형식을 엄격히 지켰다","시사는 중인층이 참여한 시인 동호회이며 그 문학을 위항문학이라 한다","민화는 무명 화가가 그린 그림으로 생활 공간 장식을 목적으로 하였다"],a:1,e:"강사 해설(8/21) — <b>\"사설시조는 글자 수 관계없이 자기 마음대로 하는 거야. <b>형식에 구애받지 않고</b> 자기 감정을 그대로 풀어서 표현하는 시조.\"</b> 글자 수가 정해져 있던 것은 <b>기존의 시조</b>입니다. <b>시사=중인층→위항문학</b>, <b>민화=무명 화가·생활 공간 장식</b>(까치와 호랑이)은 모두 강사가 별표를 지시한 항목입니다."},
+{n:16,c:"문화",src:"예상문제",q:"「홍길동전」에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["허균이 지은 최초의 한글 소설이다","주인공의 신분은 서얼로, 서얼 차별을 비판한 작품이다","조선 후기 한글이 널리 보급되면서 서민층에 퍼졌다","한문으로 쓰인 소설이어서 양반층에서만 읽혔다"],a:3,e:"<b>홍길동전·춘향전은 한글(국문) 소설</b>입니다 — \"한문 소설\"이라는 서술은 오답노트에 실린 대표적 함정입니다. 강사 해설(8/21) — <b>\"홍길동의 신분이 뭡니까? 서얼이거든. 조선 후기의 '서얼'이라는 신분 차별을 비판한 소설이 홍길동전.\"</b> 조선 전기에는 양반들이 한글을 억눌러 한글 소설이 나오지 못했습니다."},
+{n:17,c:"문화",src:"예상문제",q:"진경산수화에 관한 설명으로 옳은 것은?",o:["중국 화풍을 벗어나 우리 산천을 있는 그대로 그린 그림으로, 정선이 개척하였다","자연을 보고 화가가 느낀 감정을 관념적으로 표현한 중국식 산수화이다","서민의 일상을 익살스럽게 담은 그림으로 김홍도가 대표 화가이다","서양의 원근법과 명암법을 도입한 그림으로 강세황이 대표 화가이다"],a:0,e:"강사가 <b>\"밑줄 짝 치고 별표\"</b>를 지시한 항목입니다(8/21) — <b>진경(眞景)=진짜 경치</b>. <b>\"진경산수화는 우리나라 자연을 똑같이 그림으로 옮겨 놓는 것.\"</b> 대표 화가 <b>정선</b>(겸재), 대표작 <b>인왕제색도·금강전도</b>. ②는 기존 산수화, ③은 풍속화, ④는 강세황입니다."},
+{n:18,c:"문화",src:"예상문제",q:"조선 후기 풍속화가와 작품의 연결이 옳은 것은?",o:["김홍도 — 단오풍정, 월하정인","신윤복 — 씨름도, 서당도","신윤복 — 단오풍정, 양반의 풍류와 남녀 애정","정선 — 씨름도, 서민의 일상"],a:2,e:"<b>단오풍정·월하정인은 신윤복(혜원)</b>의 작품으로, 양반의 풍류와 남녀의 애정을 그렸습니다. <b>김홍도(단원)</b>는 <b>씨름도·서당도</b> 등 서민의 일상을 그렸습니다. 교재가 <b>\"화가·작품을 서로 바꿔 묻는 문제가 매우 자주 나온다\"</b>고 명시한 최다 함정입니다 — <b>\"단오풍정은 혜원\"</b>으로 외우세요."},
+{n:19,c:"문화",src:"예상문제",q:"조선 후기 건축에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["부농·상인의 후원으로 화엄사 각황전·법주사 팔상전·금산사 미륵전 같은 큰 사원이 지어졌다","정조 때 정약용이 설계에 참여하고 거중기를 이용한 수원 화성이 축조되었다","19세기에 흥선대원군이 왕권 강화를 위해 경복궁 근정전을 다시 지었다","팔만대장경을 보관하는 해인사 장경판전이 조선 후기를 대표하는 건축물이다"],a:3,e:"강사가 <b>\"조심하셔야 돼요\"</b>라고 경고한 항목입니다(8/21) — <b>\"해인사는 원래 있었지만, 팔만대장경을 보관하기 위한 장경판전은 <b>조선 전기</b>(15세기)에 만든 건축물이야.\"</b> 조선 후기 대표 건축물은 각황전·팔상전·미륵전·수원 화성입니다. 도자기는 <b>청화백자</b>가 유행했습니다."},
+{n:20,c:"문화",src:"예상문제",q:"조선 후기 천주교의 수용 과정에 관한 설명으로 옳은 것은?",o:["서양 선교사가 직접 들어와 처음으로 천주교를 전파하였다","청에 다녀온 사신들이 학문(서학)으로 소개한 뒤 신앙으로 받아들여졌다","노론 계열 학자들이 중심이 되어 신앙으로 수용하였다","영조 때 신유박해로 천주교 신자들이 대대적으로 탄압받았다"],a:1,e:"강사 해설(7/24) — <b>\"천주교가 처음 들어올 때는 신앙·종교로 안 본 거야. 서양에서 들어온 하나의 <b>학문</b>으로 인식한 거야. 그래서 <b>서학</b>이라고 불렀단 말이야.\"</b> 수용층은 <b>남인</b> 계열 실학자들이었고(정약용 집안), 탄압인 <b>신유박해</b>는 <b>순조</b> 때입니다. 그 밖에 「정감록」·미륵 신앙도 유행했습니다."}
+];
+var sel={},graded=false,t0=null,tick=null;
+var live=null,lastWrong=[];
+function visible(){return live?QS.filter(function(q){return live.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=visible();var h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+visible().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=visible();var right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';
+lastWrong=wrong.map(function(q){return q.n});
+document.getElementById('wrongBtn').style.display='';
+}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';lastWrong=[];document.getElementById('wrongBtn').style.display='none';}
+var tx='[관광국사 16단원 — 조선 후기의 사회·문화] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] ('+q.src+') '+q.q.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onlyWrong(){
+if(!lastWrong.length){return;}
+live=lastWrong.slice();
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function reset(){
+live=null;lastWrong=[];
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

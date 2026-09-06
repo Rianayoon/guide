@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 22·23단원 · 자연 관광자원 개관 &amp; 산악 국립공원</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65;white-space:pre-line}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.stack,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.stack .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.stack .p b{display:block;font-size:15px;margin-bottom:6px;color:var(--bro)}
+.stack .p span{font-size:12.5px;color:var(--ink-2);display:block}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 22·23단원</div>
+<h1>자연 관광자원 개관 &amp; 산악 국립공원
+<small>여기서부터는 <b>문화재가 아니라 자연 그 자체</b>가 관광자원입니다. 그리고 이 단원의 시험 문제는 놀랄 만큼 단순합니다 — <b>"누가 지정했나"</b>, <b>"어느 도(道)에 있나"</b>, <b>"최초와 최근은 무엇인가"</b> 셋뿐입니다</small>
+</h1>
+<div class="meta">
+<span class="chip hot">유네스코 자연자원 · 관동팔경 ★★★</span>
+<span class="chip hot">"강원도에 있는 국립공원 모두 고르시오" — 반복 출제</span>
+<span class="chip">예상문제 14문항</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 국제기구가 정한 것과 우리나라가 정한 것</h2>
+<p class="sub">자연 관광자원은 딱 두 층으로 나뉩니다. <b>①유네스코·람사르 같은 국제기구가 인정한 것</b>과 <b>②우리나라 정부가 지정한 것</b>입니다. 이 두 층을 섞지 않는 것이 이 단원 공부의 전부입니다.</p>
+
+<div class="flow">
+<b class="hi">국제</b><i>세계자연유산 · 생물권보전지역 · 세계지질공원 · 람사르 습지</i><i>→</i><b class="hi">국내</b><i>국립·도립·군립공원 · 국가지질공원 · 천연기념물 · 명승</i>
+</div>
+
+<div class="tl">
+<div class="t1"><b>① 누가 지정하나</b><span><b>국립·도립·군립공원과 지질공원 = 환경부 장관 계열</b>, <b>천연기념물·명승 = 국가유산청장</b>. 지정 주체를 바꿔 묻는 문제가 단골입니다</span></div>
+<div class="t2"><b>② 개발이 되나 안 되나</b><span>세계자연유산·생물권보전지역·자연공원은 <b>개발 금지</b>, <b>지질공원만 개발 허용</b>입니다. 이 하나가 함정으로 계속 나옵니다</span></div>
+<div class="t3"><b>③ 최초와 최근</b><span>강사가 가장 여러 번 반복한 말이 <b>"최초는 무조건 외운다"</b>였습니다. 국립공원·도립공원·군립공원·생물권·람사르·지질공원 전부 최초가 있습니다</span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>먼저 솔직하게 밝힙니다.</b> 이 두 단원도 <b>기출 원문 정리본(2013~2025년 136문항)에 해당 문항이 없습니다.</b> 원본 기출 PDF의 수록 범위가 유교 건축까지이기 때문입니다. 그래서 이 페이지의 빈출 등급은 <b>기출 실측이 아니라 강사의 별표 표시와 발언</b>을 근거로 했고, 문제도 <b>기출이 아니라 예상문제</b>입니다 — 다만 강사가 <b>"이런 문제만 나온다"</b>고 문장 형태까지 지목해준 유형이 유난히 많은 단원이라, 그 유형 그대로 만들었습니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 이해하기</h2>
+<p class="sub">이 단원은 외울 목록이 많습니다. 그래도 "왜 그렇게 나뉘는지"를 먼저 잡아두면 목록이 훨씬 잘 붙습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">유네스코 세계자연유산은 딱 두 개입니다</div><div class="era">22단원 · 필수</div></div>
+<div class="body">
+<p>유네스코 세계유산에는 문화유산·자연유산·복합유산 세 종류가 있습니다. 우리나라에는 <b>복합유산이 없고</b>, <b class="k">자연유산은 두 개</b>뿐입니다. 강사의 표현을 그대로 옮기면 <b>"이 두 개 못 외우면 큰일 나겠죠?"</b>입니다.</p>
+<p>첫 번째가 <b class="k">제주 화산섬과 용암동굴</b>(2007)입니다. 여기서 주의할 점이 있습니다. <b>제주도 전체가 등재된 것이 아닙니다.</b> 등재된 것은 <b>한라산 · 성산일출봉 · 거문오름 용암동굴계</b> 세 구역이고, 거문오름 용암동굴계 안에서 가장 유명한 것이 <b>만장굴</b>입니다.</p>
+<p>두 번째가 <b class="k">한국의 갯벌</b>(2021)입니다. 이름은 하나지만 실제로는 <b>네 개 지역</b>이 묶여 있습니다 — <b>충남 서천 · 전북 고창 · 전남 신안 · 전남 순천보성</b>입니다. 철새가 찾아오고 다양한 생물이 사는 가치를 인정받았습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>갯벌 네 곳은 <b>"서천–고창–신안–순천보성"</b> 순서로 서해안을 따라 남쪽으로 내려간다고 생각하면 순서째로 외워집니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">생물권보전지역 — 아직 안 나왔지만 언제든 나올 수 있는 항목</div><div class="era">22단원</div></div>
+<div class="body">
+<p><b class="k">세계 생물권보전지역</b>은 <b>생태계를 보전하기 위해</b> 유네스코가 지정하는 구역입니다. 흥미로운 것은 강사의 말입니다.</p>
+<div class="quote">"이 세계 생물권보전지역이 <b>아직까지 시험에 한 번도 나온 적이 없어요.</b> 내야지 정상인데 왜 안 나오는지는 모르겠지만, <b>그러니까 항상 나올 가능성은 있는데 안 나오고 있어요.</b> 나오면 문제 형태는 딱 하나예요 — <b>다음 중 생물권보전지역으로 지정된 것을(아닌 것을) 고르시오.</b>" — 강사, 7/12 핵심강의 2:11:11경</div>
+<p>그래서 <b>다른 설명은 몰라도 이름만은 알아두라</b>는 것이 강사의 지시였습니다. 목록은 이렇습니다 — <b class="k">설악산(1982, 최초)</b>, <b>제주도</b>, 신안다도해, <b class="k">광릉숲</b>, 고창, 순천, 강원생태평화, 연천임진강, 완도, <b class="k">경남 창녕(가장 최근)</b>.</p>
+<p>이 중 셋에는 이야기가 붙어 있습니다.</p>
+<p><b>제주도</b>는 2002년에 <b>일부 지역만</b> 지정되었다가 <b>2019년에 제주도 전체</b>로 확대되었습니다. 제주도 안에는 <b>문섬·범섬·섭섬</b> 세 섬이 있는데, 이 중 <b class="k">문섬과 범섬만 천연보호구역</b>이고 <b class="x">섭섬은 천연보호구역이 아닙니다.</b></p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>강사가 직접 만들어준 암기법입니다 — <b>"섭섬은 아니라서 섭섭해."</b> 문섬·범섬은 천연보호구역, <b>섭섬만 아닙니다.</b></div></div>
+<p><b class="k">광릉숲</b>은 앞 단원(20단원)에서 본 세조의 능 <b>광릉</b> 주변의 숲입니다. 이곳에 우리나라 <b>유일한 국립수목원</b>(광릉수목원)이 있고, 천연기념물인 <b>크낙새 서식지</b>가 있습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>크낙새</b>"는 우리가 흔히 아는 <b>딱따구리</b>의 한 종류입니다.</p></div>
+<p><b>강원생태평화</b>는 <b>비무장지대(DMZ)</b> 일대입니다. 휴전선 남쪽 2km 안쪽에는 민간인이 들어갈 수 없는 <b>민간인출입통제선(민통선)</b>이 있어, 사람이 손대지 않은 자연이 그대로 보존되어 있습니다.</p>
+<p>마지막 <b class="k">경남 창녕</b>이 <b>가장 최근에 지정</b>된 곳인데, 여기에 그 유명한 <b>우포늪</b>이 있습니다. 즉 <b>우포늪은 생물권보전지역이면서 동시에 람사르 습지</b>입니다.</p>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">지질공원만 개발이 허용됩니다 — 이 단원 최대의 함정</div><div class="era">22단원 · 함정 1순위</div></div>
+<div class="body">
+<p>여기가 이 단원에서 가장 자주 틀리는 지점입니다. 논리는 간단합니다.</p>
+<p><b class="k">세계자연유산</b>과 <b class="k">생물권보전지역</b>은 이름에 이미 답이 있습니다 — <b>"유산"과 "보전"</b>입니다. 지키고 보호해야 한다는 뜻이므로 유네스코는 <b class="x">개발 금지</b>를 조건으로 지정합니다.</p>
+<p>그런데 <b class="k">세계지질공원</b>은 다릅니다. <b>유네스코가 지정하면서도 개발을 허용하는 유일한 제도</b>입니다.</p>
+<div class="quote">"유네스코에서 지정하면서도 <b>개발을 허용한 것은 세계지질공원만</b> 허용. 왜? 이 세계지질공원은 특별한 암석 지층들이 많다 보니까 <b>관광의 가치가 뛰어나</b>. 그래서 그 <b>지역 주민의 소득·경제력을 향상시키기 위해서</b> 관광 수단으로 개발을 허용하고 있습니다." — 강사, 7/12 핵심강의 2:19:36경</div>
+<p>우리나라의 세계지질공원은 <b>7곳</b>입니다 — <b class="k">제주도(2010, 최초)</b>, <b>청송</b>(주왕산 국립공원 포함), <b>무등산권</b>(광주·화순·담양 세 행정구역), <b>한탄강</b>(철원), <b class="k">전북 서해안</b>(고창·부안 — <b>최초의 해안형</b>), <b>충북 단양</b>(석회암이 많아서), <b>경북 동해안</b>(경주·포항·영덕·울진).</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 시험에 나왔다고 밝힌 항목 —</b> <b>무등산권 지질공원의 행정구역은 광주·화순·담양</b>이고, 대표 지질 구조물은 <b>서석대·입석대·광석대</b>입니다. "이 세 개가 나오면 무조건 무등산"이라고 했습니다.</div></div>
+<p>한편 우리나라가 자체적으로 지정하는 <b class="k">국가지질공원</b>도 <b>16곳</b> 있습니다. 지정 주체는 세계지질공원과 마찬가지로 <b>환경부 장관</b>이고, <b>개발이 허용</b>되는 것도 같습니다. <b>4년마다 관리·운영 현황을 조사·점검</b>해 제대로 운영되지 않으면 자격을 박탈합니다. <b>최초로 지정된 국가지질공원은 제주도와 울릉도·독도</b>입니다.</p>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">람사르 습지 — 물새의 서식지를 지키는 협약</div><div class="era">22단원</div></div>
+<div class="body">
+<p><b class="k">람사르 협약</b>(1971)은 <b>물새의 서식지로서 보전 가치가 있는 습지</b>를 보호하기 위한 국제 협약입니다. 우리나라에는 <b>26개소</b>가 지정되어 있습니다.</p>
+<div class="quote">"람사르 습지는 시험 문제가 나오는 것도 뻔합니다 — <b>다음 중 람사르 습지인 것은 / 아닌 것은.</b> 그렇게밖에 문제가 안 나와요." — 강사, 7/12 핵심강의 2:21:05경</div>
+<p>반드시 외워야 할 두 개는 이렇습니다.</p>
+<p><b class="k">대암산 용늪</b>(강원)이 <b>최초로 지정된 람사르 습지(1997)</b>입니다. 그리고 <b>남한에서 유일한 고층습원</b>이라는 특징이 있습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>고층습원</b>"은 <b>산의 높은 곳에 형성된 늪지</b>를 말합니다. 보통 늪은 낮은 땅에 생기는데, 높은 산 위에 생겼다는 점이 특별한 것입니다.</p></div>
+<p><b class="k">창녕 우포늪</b>은 <b>우리나라에서 가장 오래된 자연 늪지</b>입니다. 앞에서 본 대로 <b>생물권보전지역이자 람사르 습지</b>이며, <b>천연보호구역</b>이기도 합니다.</p>
+<p>가장 최근(2024)에 지정된 두 곳도 알아둘 만합니다. <b class="k">경북 문경 돌리네 습지</b>와 <b class="k">무등산 평두메 습지</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>돌리네</b>"는 석회암이 빗물·지하수에 녹아내려 만들어진 <b>깔때기 모양의 움푹 팬 지형</b>입니다(석회암 지형=카르스트 지형). 물이 잘 빠져 습지가 생기기 어려운 곳인데, 예외적으로 습지가 생겨 가치를 인정받았습니다. "<b>평두메</b>"는 농사를 짓지 않고 버려둔 계단식 논(묵논)에 자연스럽게 습지가 형성된 곳입니다.</p></div>
+<p>그 밖에 제주도의 물영아리오름·물장오리오름·1100고지·동백동산 등, 그리고 순천만·보성갯벌·송도갯벌 같은 갯벌이 다수 포함되어 있습니다. <b>한국의 갯벌(세계자연유산) 4곳 중 일부는 람사르 습지로도 중복 지정</b>되어 있습니다.</p>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">국립 · 도립 · 군립 — 누가 지정하느냐가 전부입니다</div><div class="era">22단원 · 지정 주체</div></div>
+<div class="body">
+<p>국가가 지정하는 자연공원은 세 등급입니다. 시험은 <b>지정 주체를 바꿔서</b> 냅니다.</p>
+<div class="stack">
+<div class="p"><b>국립공원 24개</b><span>지정: <b>환경부 장관</b><br>(현 정부에서 명칭이 <b>기후에너지환경부</b> 장관으로 바뀜)</span></div>
+<div class="p"><b>도립공원 30개</b><span>지정: <b>특별시장·광역시장·도지사</b></span></div>
+<div class="p"><b>군립공원 27개</b><span>지정: <b>시장·군수·구청장</b><br>(여기서 시장은 중소도시 시장)</span></div>
+</div>
+<p>강사는 출제 비중까지 알려주었습니다. <b>"시험은 국립공원에서 거의 80%가 나오고, 가끔 나오는 게 도립공원"</b>이며 군립공원은 거의 나오지 않습니다.</p>
+<p>국립공원은 유형이 네 가지입니다.</p>
+<div class="tblwrap"><table>
+<thead><tr><th>유형</th><th>해당</th></tr></thead>
+<tbody>
+<tr><td class="nm">산악형</td><td>19개(지리산~금정산)</td></tr>
+<tr><td class="nm">해상·해안형</td><td><b>한려해상 · 태안해안 · 다도해상</b> 세 곳</td></tr>
+<tr><td class="nm">반도형</td><td><b>변산반도</b> 한 곳뿐</td></tr>
+<tr><td class="nm">사적형</td><td><b>경주</b> 한 곳뿐 — 국립공원이면서 <b>세계문화유산</b></td></tr>
+</tbody></table></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>면적 함정 —</b> <b>지리산은 "내륙 최대 면적"</b>이지 전체 최대가 아닙니다. <b>국립공원 전체에서 면적이 가장 넓은 곳은 다도해상</b>입니다. 강사: <b>"지리산 국립공원 나오면 '국립공원 중에 최대 면적'이라고 답이 풀리는 거야. 최대 면적은 다도해상이야."</b></div></div>
+<p>그리고 <b>도립공원이었다가 국립공원으로 승격</b>한 곳들이 있습니다 — <b class="k">치악산 · 변산반도 · 월출산 · 무등산 · 태백산 · 팔공산</b>입니다. "처음부터 국립공원이었다"고 하면 틀립니다.</p>
+<p>도립공원에서 외울 것은 <b>최초</b> 하나입니다 — <b class="k">금오산(경북 구미)</b>. 강사가 실제 출제 사례를 들려주었습니다.</p>
+<div class="quote">"시험장에 뭐가 나왔냐면 — <b>다음 중 최초의 국립공원과 도립공원으로 지정된 것을 맞게 연결한 것은?</b> 국립은 <b>지리산</b>, 도립은 <b>금오산</b>, 이렇게 나온 거예요." — 강사, 7/12 핵심강의 2:32:51경</div>
+<p>도립공원 중 <b>남한산성</b>은 <b>사적형 도립공원</b>이면서 <b>세계문화유산</b>입니다. 그래서 <b>사적형 국립공원 경주</b>와 <b>사적형 도립공원 남한산성</b>, 이 둘이 모두 세계문화유산이라는 점을 묶어서 기억하라고 했습니다. 가장 최근 지정된 도립공원은 <b>철원 DMZ 한탄강</b>입니다.</p>
+<p>군립공원에서는 <b>최초가 강천산</b>(전북 순창)이고, <b>가장 최근이 부산 해운대구의 장산</b>입니다. 장산은 <b>구청장이 지정한 최초의 군립공원</b>이라는 점이 특이합니다.</p>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">6</div><div class="ttl">산악 국립공원 — "강원도에 있는 것 모두 고르시오"가 계속 나옵니다</div><div class="era">23단원 · 핵심</div></div>
+<div class="body">
+<div class="quote">"이 산악 국립공원은 국립공원 전체 문제 나올 때 제일 많이 나온 게 뭐냐면 — <b>다음 중 강원도에 있는 국립공원을 모두 고르시오.</b> 이 문제만 아주 바글바글이야. 아니면 <b>다음 중 강원도에 있는 국립공원이 아닌 것</b>. 주로 ㄱ·ㄴ·ㄷ 이런 식으로 묶어서 나온다니까 자꾸. <b>우리는 강원도에 집중하는 거예요.</b>" — 강사, 7/17 문제풀이강의 1:27:49경</div>
+<p>그러니 <b>강원도에 있는 국립공원 네 곳</b>을 먼저 확실히 붙잡으세요 — <b class="k">설악산 · 오대산 · 치악산 · 태백산</b>입니다(태백산은 강원과 경북에 걸쳐 있습니다). 북한산·소백산·월악산처럼 이름만 들으면 강원도 같지만 아닌 곳들이 함정 보기로 들어갑니다.</p>
+<p>두 번째로 확실히 잡을 것이 <b>최초와 최근</b>입니다.</p>
+<div class="vs"><div class="side n"><b>지리산 (1967)</b>우리나라 <b>최초</b>의 국립공원<br><b>내륙 최대 면적</b></div><div class="mid">↔</div><div class="side g"><b>금정산 (2025)</b><b>가장 최근</b> 지정<br><b>최초의 도심형 국립공원</b></div></div>
+<p><b>지리산</b>에는 딸린 정보가 많습니다. <b>경남·전남·전북</b> 세 개 도에 걸쳐 있고(<b>경상북도는 아닙니다</b> — 강사가 실제 출제 사례로 든 함정입니다), 별칭이 <b>두류산·방장산</b>이며, 신선이 놀던 <b class="k">삼신산</b>(지리산·한라산·금강산) 중 하나입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 콕 집은 함정 —</b> 지리산의 대표 봉우리는 <b>천왕봉</b>인데, <b>"천황봉/천왕봉이라는 이름의 봉우리는 다른 국립공원에도 있습니다."</b> 보기에 이 이름이 보이면 반드시 어느 산의 것인지 확인하세요.</div></div>
+<p>세 번째로, 산마다 붙은 <b>대표 절(寺)과 국제 지정 이력</b>이 자주 함께 나옵니다. 계룡산=갑사·동학사, 속리산=법주사·정이품송, 가야산=해인사, 오대산=월정사·상원사, 소백산=부석사, 팔공산=동화사·부인사 — 이렇게 절 이름이 산과 짝지어져 있습니다.</p>
+<p>마지막으로 <b>한라산</b>은 국제 지정이 겹겹이 붙은 산입니다. <b>남한 최고봉(1950m)</b>, <b>백록담</b>, <b>세계자연유산(2007)</b>, <b>세계지질공원(2010)</b>, <b>세계 7대 자연경관(2011)</b>. 제주도 전체의 지정 이력과 한라산만의 이력을 섞지 않도록 주의하세요.</p>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">7</div><div class="ttl">천연기념물 · 명승 — 여기서만 지정 주체가 바뀝니다</div><div class="era">22단원 · 함정 2순위</div></div>
+<div class="body">
+<p>지금까지 본 국립공원·지질공원은 모두 <b>환경부 장관</b>이 지정했습니다. 그런데 <b class="k">천연기념물과 명승은 국가유산청장</b>이 지정합니다. 강사가 <b>"그거 조심하셔야 돼요"</b>라고 따로 짚은 부분입니다.</p>
+<p><b class="k">천연기념물</b>은 희귀한 <b>식물·동물·지질광물</b>과 그 서식지를 보호하기 위해 지정합니다. 현재 500개가 넘어 다 외울 수는 없고, <b>식물 제1호가 대구 도동 측백나무 숲</b>이라는 것과, <b>속리산 정이품송</b>(세조가 벼슬을 내린 소나무) 정도를 챙기면 됩니다. 한 장소에 천연기념물이 여러 개 모여 있으면 <b class="k">천연보호구역</b>으로 따로 지정합니다(설악산 천연보호구역 1965 등).</p>
+<p><b class="k">명승</b>은 <b>경치가 아름다우면서 역사·인문적 유래와 관련된 곳</b>에 지정합니다. <b>명승 제1호는 명주 청학동 소금강</b>인데, <b>명주는 지금의 강릉</b>이고 이곳에 <b>"소금강"이라는 이름을 붙인 사람이 율곡 이이</b>입니다 — 바로 이 인문적 유래 때문에 명승이 된 것입니다. 명승 제2호는 <b>거제 해금강</b>입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>명승과 천연기념물의 차이</b>는 이렇게 잡으세요 — <b>명승은 "경치 + 사람의 이야기"</b>, <b>천연기념물은 "생물·지질 그 자체"</b>. 소금강에 율곡의 이야기가 붙어 있듯이, 명승에는 늘 사람의 흔적이 있습니다.</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">8</div><div class="ttl">관동팔경 · 단양팔경, 그리고 코리아 둘레길</div><div class="era">22단원 · ★★★</div></div>
+<div class="body">
+<p>교재에서 <b>가장 붉게 표시된 항목</b>이 <b class="k">관동팔경</b>입니다. 강사는 <b>"사실은 별 다섯 개도 부족합니다"</b>라고 했습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>관동(關東)</b>"은 <b>강원도</b>를 가리키는 옛말입니다. 그러니 관동팔경 = <b>강원도 지역의 이름난 여덟 경치</b>입니다.</p></div>
+<p>여덟 곳은 이렇습니다 — <b class="k">통천 총석정</b>과 <b class="k">고성 삼일포</b>(이 둘은 <b>북한</b>에 있습니다), <b>간성(고성) 청간정</b>, <b>양양 낙산사</b>, <b>강릉 경포대</b>, <b>삼척 죽서루</b>, 그리고 <b class="k">울진 망양정</b>과 <b class="k">평해 월송정</b>(이 둘은 현재 <b>경상북도</b>입니다).</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 별표를 준 이유 —</b> 이미 <b>북한에 있는 두 곳</b>이 시험에 나왔으므로, 다음에는 <b>"현재 강원도에 있지 않은 관동팔경"</b>, 즉 <b>경상북도에 있는 울진 망양정·평해 월송정</b>이 나올 가능성이 높다는 것입니다.</div></div>
+<div class="quote">"관동팔경 문제는 형태가 뻔해요 — <b>다음 중 관동팔경이 아닌 것을 고르시오.</b> 총 8개니까, <b>아닌 것은 대부분 단양팔경에서 틀린 보기가 나와요.</b>" — 강사, 7/12 핵심강의 2:47:03경</div>
+<p>그래서 <b class="k">단양팔경</b>도 같이 알아야 합니다. 다행히 외우기 쉽습니다 — <b>이름이 "암(巖)" 아니면 "봉(峰)"</b>입니다. 상선암·중선암·하선암·구담봉·옥순봉·도담삼봉·사인암, 그리고 <b>딱 하나 예외가 석문</b>입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>보기 판별 공식</b> — 보기에 <b>"~암" 또는 "~봉"</b>이 있으면 <b>단양팔경</b>(=관동팔경이 아님), <b>"~정·~대·~루·~사·~포"</b>가 있으면 <b>관동팔경</b>일 가능성이 높습니다. 단양에 암·봉이 많은 이유는 <b>석회암 지대</b>이기 때문입니다(그래서 세계지질공원이기도 합니다).</div></div>
+<p>이 밖에 <b>태안팔경·변산팔경</b>이 있으나 참고 수준입니다.</p>
+<p>마지막으로 <b class="k">코리아 둘레길</b>입니다. 예전의 "문화생태탐방로"를 대체해 만든 것으로, <b>한반도 전체를 빙 둘러 잇는 걷기길</b>이며 <b>지역 주민의 소득·지역경제 활성화</b>가 목적입니다. 네 구간으로 나뉩니다.</p>
+<div class="tblwrap"><table>
+<thead><tr><th>구간</th><th>바다</th><th>연도</th></tr></thead>
+<tbody>
+<tr><td class="nm">해파랑길</td><td><b>동해</b> — <b>강사: "시험에 두 번 나왔다"</b></td><td class="yr">2016</td></tr>
+<tr><td class="nm">남파랑길</td><td>남해</td><td class="yr">2020</td></tr>
+<tr><td class="nm">서해랑길</td><td>서해</td><td class="yr">2022</td></tr>
+<tr><td class="nm">DMZ 평화의 길</td><td>비무장지대</td><td class="yr">2024</td></tr>
+</tbody></table></div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>해파랑길</b>의 이름 뜻이 그대로 시험에 나왔습니다 — <b>"떠오르는 해와 푸른 바다를 보며 파도 소리를 들으면서 걷는 길"</b>. 그래서 <b>동해</b>입니다.</div></div>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">9</div><div class="ttl">지형 용어 네 개 — 이 다음 단원 전체의 기초</div><div class="era">22단원 · 기초</div></div>
+<div class="body">
+<p>다음 단원(하천·해안)을 이해하려면 네 단어를 먼저 정확히 구분해야 합니다. 강사도 매 시간 이것부터 복습했습니다.</p>
+<div class="vs"><div class="side n"><b>융기</b>땅이 <b>솟아오름</b><br>(내부 요인)</div><div class="mid">↔</div><div class="side b"><b>침강</b>땅이 <b>내려앉음</b><br>(내부 요인)</div></div>
+<div class="vs"><div class="side a"><b>침식</b>물·바람이 <b>깎아냄</b><br>(외부 요인)</div><div class="mid">↔</div><div class="side g"><b>퇴적</b>깎인 것이 <b>쌓임</b><br>(외부 요인)</div></div>
+<p>이 중 <b>융기</b>가 우리나라 지형의 성격을 결정했습니다. 수천 년 전 지각변동 때 <b>동쪽은 융기가 크게, 서쪽은 작게</b> 일어났습니다. 그 결과 우리나라는 <b class="k">동고서저(東高西低)의 경동지형</b>이 되었습니다 — 동쪽이 높고 서쪽이 낮습니다.</p>
+<p>그래서 태백산맥 같은 큰 산맥이 동쪽에 몰려 있고, <b>큰 강은 대부분 서쪽·남쪽으로 흐릅니다.</b> 이 한 문장이 다음 단원(하천)의 출발점입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>강사가 알려준 눈으로 확인하는 법 — <b>동해는 파랗고 서해는 흐리게 보입니다.</b> 동해는 융기가 커서 <b>수심이 깊고</b>, 서해는 <b>얕기</b> 때문입니다. 서해가 더러워서가 아닙니다.</div></div>
+<p>화산 지형도 네 가지로 나뉩니다. 경사가 완만한 방패 모양의 <b class="k">순상화산</b>(한라산), 급경사의 종 모양인 <b class="k">종상화산</b>(제주 산방산·울릉도), 큰 화산 옆에 붙어 생긴 작은 화산인 <b class="k">기생화산</b>(제주도의 오름), 용암이 넓게 퍼져 굳은 <b class="k">용암대지</b>(철원·연천)입니다.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표</h2>
+<p class="sub">교재와 강의에 나온 사실을 빠짐없이 담았습니다.</p>
+
+<h3>① 국제기구 지정 — 유네스코 · 람사르</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th><th>개발</th></tr></thead>
+<tbody>
+<tr><td class="nm">세계자연유산</td><td><b>제주 화산섬과 용암동굴(2007)</b> — 한라산·성산일출봉·거문오름 용암동굴계(만장굴 등) / <b>한국의 갯벌(2021)</b> — 서천·고창·신안·순천보성 <b>4개 지역</b><br>※ 복합유산은 없음</td><td class="x">금지</td></tr>
+<tr><td class="nm">생물권보전지역</td><td><b>설악산(1982, 최초)</b> · 제주도(2002 일부→<b>2019 전체</b>) · 신안다도해 · <b>광릉숲</b>(국립수목원·크낙새 서식지) · 고창 · 순천 · 강원생태평화(DMZ·민통선) · 연천임진강 · 완도 · <b>경남 창녕(가장 최근, 우포늪)</b><br>※ 제주 문섬·범섬=천연보호구역, <b>섭섬은 아님</b></td><td class="x">금지</td></tr>
+<tr><td class="nm">세계지질공원 <b>7곳</b></td><td><b>제주도(2010, 최초)</b> · 청송(주왕산) · <b>무등산권(광주·화순·담양 / 서석대·입석대·광석대)</b> · 한탄강(철원) · <b>전북 서해안(고창·부안, 최초의 해안형)</b> · 충북 단양(석회암) · 경북 동해안(경주·포항·영덕·울진)</td><td class="o">허용</td></tr>
+<tr><td class="nm">람사르 습지 <b>26개소</b></td><td><b>대암산 용늪(1997, 최초, 남한 유일 고층습원)</b> · <b>창녕 우포늪(가장 오래된 자연 늪지)</b> · 제주 물영아리오름 등 · 순천만·보성갯벌·송도갯벌 등<br>가장 최근(2024): <b>경북 문경 돌리네 습지</b> · <b>무등산 평두메 습지</b></td><td>—</td></tr>
+</tbody></table></div>
+
+<h3>② 국가 지정 — 지정 주체가 핵심</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>지정 주체</th><th>개수 · 비고</th></tr></thead>
+<tbody>
+<tr><td class="nm">국립공원</td><td class="yr">환경부(기후에너지환경부) 장관</td><td><b>24개</b> · 산악형 19 / 해상해안형 3 / 반도형 1 / 사적형 1<br>강사: <b>"시험은 국립공원에서 80%가 나온다"</b></td></tr>
+<tr><td class="nm">도립공원</td><td class="yr">특별시장·광역시장·도지사</td><td><b>30개</b> · <b>최초=금오산(경북 구미)</b> · 가장 최근=철원 DMZ 한탄강<br><b>남한산성=사적형 도립공원 + 세계문화유산</b></td></tr>
+<tr><td class="nm">군립공원</td><td class="yr">시장·군수·<b>구청장</b></td><td><b>27개</b> · <b>최초=강천산(전북 순창)</b> · 가장 최근=<b>부산 해운대구 장산</b>(구청장이 지정한 최초 사례)</td></tr>
+<tr><td class="nm">국가지질공원</td><td class="yr">환경부(기후에너지환경부) 장관</td><td><b>16개</b> · <b>개발 허용</b> · <b>4년마다</b> 조사·점검 후 자격 박탈 가능 · <b>최초=제주도, 울릉도·독도</b></td></tr>
+<tr><td class="nm">천연기념물</td><td class="yr"><b>국가유산청장</b></td><td>500개 이상 · 식물/동물/지질광물/천연보호구역 · <b>식물 1호=대구 도동 측백나무 숲</b> · 속리산 <b>정이품송</b>(세조)</td></tr>
+<tr><td class="nm">명승</td><td class="yr"><b>국가유산청장</b></td><td>유적 + 아름다운 경관 · <b>1호=명주(강릉) 청학동 소금강</b>(이름 붙인 사람=<b>율곡 이이</b>) · 2호=거제 해금강</td></tr>
+</tbody></table></div>
+
+<h3>③ 산악 국립공원 — 지정 순서대로</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>국립공원(지정년도)</th><th>위치</th><th>핵심 특징</th></tr></thead>
+<tbody>
+<tr><td class="nm">지리산(1967)</td><td class="yr">전남·전북·경남</td><td><b>최초 지정</b> · <b>내륙 최대 면적</b>(전체 최대는 다도해상) · 삼신산의 하나(방장산, 별칭 두류산) · 대표 봉우리 <b>천왕봉</b> · <b>경상북도는 아님</b></td></tr>
+<tr><td class="nm">계룡산(1968)</td><td class="yr">충남 공주·계룡·논산</td><td>갑사 · 동학사</td></tr>
+<tr><td class="nm">설악산(1970)</td><td class="yr"><b>강원</b> 속초·양양·인제·고성</td><td>대청봉(1708m) · <b>천연보호구역(1965)</b> · <b>세계 생물권보전지역(1982, 최초)</b></td></tr>
+<tr><td class="nm">속리산(1970)</td><td class="yr">충북 보은·괴산, 경북 상주</td><td>법주사 · <b>정이품송</b>(천연기념물)</td></tr>
+<tr><td class="nm">한라산(1970)</td><td class="yr">제주</td><td><b>남한 최고봉(1950m)</b> · 백록담 · <b>세계자연유산(2007)</b> · <b>세계지질공원(2010)</b> · 세계 7대 자연경관(2011) · 삼신산의 하나</td></tr>
+<tr><td class="nm">내장산(1971)</td><td class="yr">전북 정읍·순창, 전남 장성</td><td>백암산과 연결 · '단풍 국립공원'</td></tr>
+<tr><td class="nm">가야산(1972)</td><td class="yr">경북 성주·고령, 경남 합천·거창</td><td><b>해인사</b>(장경판전, 세계문화유산)</td></tr>
+<tr><td class="nm">덕유산(1975)</td><td class="yr">전북 무주·장수, 경남 거창·함양</td><td>무주구천동 계곡</td></tr>
+<tr><td class="nm">오대산(1975)</td><td class="yr"><b>강원</b> 홍천·평창·강릉</td><td>월정사 · 상원사(적멸보궁)</td></tr>
+<tr><td class="nm">주왕산(1976)</td><td class="yr">경북 청송·영덕</td><td>화산 분출 지형 · <b>청송 세계지질공원</b></td></tr>
+<tr><td class="nm">북한산(1983)</td><td class="yr">서울·경기 고양·의정부</td><td>도봉산 포함 · 북한산성 · <b>강원도 아님(함정)</b></td></tr>
+<tr><td class="nm">치악산(1984)</td><td class="yr"><b>강원</b> 원주·횡성</td><td>구룡사 · <b>도립공원→국립공원 승격</b></td></tr>
+<tr><td class="nm">월악산(1984)</td><td class="yr">충북 제천·충주·단양, 경북 문경</td><td>문경새재 도립공원 · 충주호 · <b>강원도 아님(함정)</b></td></tr>
+<tr><td class="nm">소백산(1987)</td><td class="yr">충북 단양, 경북 영주</td><td>죽령 · 부석사 · <b>강원도 아님(함정)</b></td></tr>
+<tr><td class="nm">월출산(1988)</td><td class="yr">전남 영암·강진</td><td>도갑사 · <b>도립공원→국립공원 승격</b></td></tr>
+<tr><td class="nm">무등산(2013)</td><td class="yr">광주, 전남 화순·담양</td><td>주상절리대(서석대·입석대·광석대) · <b>세계지질공원</b> · <b>승격</b></td></tr>
+<tr><td class="nm">태백산(2016)</td><td class="yr"><b>강원</b> 태백·영월·정선, 경북 봉화</td><td>남한강 발원지(<b>검룡소</b>) · 낙동강 발원지(<b>황지</b>) · <b>승격</b></td></tr>
+<tr><td class="nm">팔공산(2023)</td><td class="yr">대구, 경북</td><td><b>도립공원→국립공원 승격</b> · 동화사 · 부인사(초조대장경)</td></tr>
+<tr><td class="nm">금정산(2025)</td><td class="yr">부산</td><td><b>최신 지정</b> · <b>최초의 도심형 국립공원</b> · 범어사 · 금정산성</td></tr>
+</tbody></table></div>
+
+<h3>④ 팔경 · 코리아 둘레길 · 지형 용어</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">관동팔경 ★★★</td><td>관동=<b>강원도</b>. <b>통천 총석정 · 고성 삼일포(북한)</b> / 간성 청간정 · 양양 낙산사 · 강릉 경포대 · 삼척 죽서루 / <b>울진 망양정 · 평해 월송정(경상북도)</b></td></tr>
+<tr><td class="nm">단양팔경</td><td>이름이 <b>"암" 아니면 "봉"</b> — 상선암·중선암·하선암·구담봉·옥순봉·도담삼봉·사인암 + <b>예외 하나 석문</b>. 석회암 지대라 세계지질공원이기도 함</td></tr>
+<tr><td class="nm">기타 팔경</td><td>태안팔경 · 변산팔경(참고)</td></tr>
+<tr><td class="nm">코리아 둘레길</td><td><b>해파랑길(2016, 동해)</b> · 남파랑길(2020, 남해) · 서해랑길(2022, 서해) · DMZ 평화의 길(2024). 옛 <b>문화생태탐방로</b>를 대체. 목적=지역 주민 소득·지역경제 활성화</td></tr>
+<tr><td class="nm">지형 용어</td><td><b>융기</b>(솟음) ↔ <b>침강</b>(내려앉음) / <b>침식</b>(깎임) ↔ <b>퇴적</b>(쌓임). 우리나라 = <b>동고서저 경동지형</b> → 큰 강이 서·남으로 흐름, 동해는 수심이 깊음</td></tr>
+<tr><td class="nm">화산 지형</td><td><b>순상화산</b>(완만·방패, 한라산) / <b>종상화산</b>(급경사·종, 산방산·울릉도) / <b>기생화산</b>(제주 오름) / <b>용암대지</b>(철원·연천)</td></tr>
+</tbody></table></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급표 — 무엇부터 외울 것인가</h2>
+<p class="sub">아래 등급은 <b>기출 실측이 아닙니다.</b> 이 단원은 기출 원문 정리본에 문항이 없어 실측이 불가능하므로, <b>교재의 별표 개수와 강의 중 발언</b>을 근거로 매기고 그 근거를 그대로 적었습니다.</p>
+<div class="freq">
+<div class="row"><span class="gr gA">최우선</span><div><b>"강원도에 있는 국립공원을 모두 고르시오"</b> — 강사: <b>"이 문제만 아주 바글바글이야."</b> 정답 후보 <b>설악산·오대산·치악산·태백산</b>, 함정 보기 <b>북한산·소백산·월악산</b></div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>최초 항목 전부</b> — 국립공원 <b>지리산(1967)</b> / 도립공원 <b>금오산</b> / 군립공원 <b>강천산</b> / 생물권보전지역 <b>설악산(1982)</b> / 람사르 <b>대암산 용늪(1997)</b> / 세계지질공원 <b>제주도(2010)</b> / 국가지질공원 <b>제주도·울릉도독도</b>. 강사: <b>"최초는 무조건 외워야 되는 거죠"</b>(반복)</div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>관동팔경</b> — 교재 <b>★★★</b>, 강사: <b>"사실은 별 다섯 개도 부족합니다."</b> 출제 형태는 <b>"관동팔경이 아닌 것"</b>이고 오답 보기는 <b>단양팔경</b>에서 나옴</div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>지정 주체 구분</b> — 국립(환경부 장관) / 도립(시·도지사) / 군립(시장·군수·<b>구청장</b>) / <b>천연기념물·명승은 국가유산청장</b>. 강사: <b>"그거 조심하셔야 돼요"</b></div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>지질공원만 개발 허용</b> — 세계자연유산·생물권보전지역·자연공원은 개발 금지. 교재의 대표 함정</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>세계자연유산 2개</b>(제주 화산섬과 용암동굴 / 한국의 갯벌 4지역) — 강사: <b>"이 두 개 못 외우면 큰일 나겠죠?"</b></div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>지리산=내륙 최대, 다도해상=전체 최대</b> — 강사가 별도로 경고한 면적 함정</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>도립공원→국립공원 승격 목록</b>(치악산·변산반도·월출산·무등산·태백산·팔공산) — "처음부터 국립공원"이라는 서술이 함정</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>해파랑길</b> — 강사: <b>"시험에 두 번 나왔어요."</b> "떠오르는 해와 푸른 바다, 파도 소리" = 동해</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>무등산권 지질공원 = 광주·화순·담양</b> — 강사: <b>"시험에 나왔던 내용이에요"</b> / 서석대·입석대·광석대</div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>생물권보전지역 10곳의 이름</b> — 강사: <b>"아직 한 번도 안 나왔지만 나올 가능성이 있으니 명칭만은 외워야 한다."</b> 출제 형태는 "지정된 것/아닌 것 고르기" 하나뿐</div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>제주 문섬·범섬(천연보호구역) vs 섭섬(아님)</b> — 암기법 <b>"섭섬은 아니라서 섭섭해"</b></div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>명승 1호 = 명주(강릉) 청학동 소금강, 이름 붙인 사람 = 율곡 이이</b> / 천연기념물 식물 1호 = 대구 도동 측백나무 숲</div></div>
+<div class="row"><span class="gr gZ">가볍게</span><div>국립공원 <b>전체 지정 순서</b> — 강사: <b>"최근에는 안 나와요. 다 외우란 말은 안 해요. 앞부분 몇 개(지리산→계룡산·경주·한려해상→설악산·속리산·한라산)와 마지막 네 개(무등산→태백산→팔공산→금정산)만."</b></div></div>
+<div class="row"><span class="gr gZ">가볍게</span><div>군립공원 개별 목록 — 강사: <b>"시험에 거의 나오지 않고 있죠"</b></div></div>
+</div>
+<div class="zero"><b>0회 확인 —</b> 이 두 단원은 기출 원문 정리본(2013~2025년 <b>136문항</b>)에 <b>단 한 문항도 없습니다.</b> 원본 기출 PDF가 유교 건축(Q136)까지만 수록되어 있기 때문이며, 실제로 출제되지 않았다는 뜻이 <b>아닙니다.</b> 오히려 강사가 <b>"계속 나와요"</b>(국립공원), <b>"지금도 나와요"</b>(해수욕장·다음 단원)라고 반복한 구간입니다.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">시험은 이 짝들을 서로 바꿔치기해서 냅니다.</p>
+<div class="cmp">
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 개발 금지 · 개발 허용</h4>
+<div class="vs"><div class="side x2"><b>금지</b>세계자연유산<br>생물권보전지역<br>국립·도립·군립공원</div><div class="mid">VS</div><div class="side n"><b>허용</b><b>세계지질공원</b><br><b>국가지질공원</b></div></div>
+<p class="why">이유까지 외우세요 — 지질공원은 <b>관광 가치가 커서 주민 소득 증대를 위해</b> 개발을 허용합니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 지정 주체 — 환경부 vs 국가유산청</h4>
+<div class="vs"><div class="side b"><b>환경부 장관</b>국립공원<br>국가지질공원</div><div class="mid">VS</div><div class="side g"><b>국가유산청장</b><b>천연기념물</b><br><b>명승</b></div></div>
+<div class="vs"><div class="side a"><b>도립</b>시·도지사</div><div class="mid">·</div><div class="side n"><b>군립</b>시장·군수·<b>구청장</b></div></div>
+<p class="why">자연은 환경부, <b>문화재적 성격이 있는 것(천연기념물·명승)은 국가유산청</b>입니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 지리산 · 다도해상 면적</h4>
+<div class="vs"><div class="side a"><b>지리산</b><b>내륙</b> 최대 면적</div><div class="mid">≠</div><div class="side b"><b>다도해상</b><b>전체</b> 최대 면적</div></div>
+<p class="why">"지리산이 국립공원 중 가장 넓다"는 문장은 <b class="x">틀립니다.</b> 육지 기준일 때만 맞습니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 강원도인가 아닌가</h4>
+<div class="vs"><div class="side n"><b>강원도 O</b>설악산 · 오대산<br>치악산 · 태백산</div><div class="mid">VS</div><div class="side x2"><b>강원도 X</b>북한산(서울·경기)<br>소백산(충북·경북)<br>월악산(충북·경북)</div></div>
+<p class="why">가장 자주 나오는 유형입니다. 정답 후보 네 개를 통째로 외우는 것이 가장 빠릅니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 관동팔경 · 단양팔경</h4>
+<div class="vs"><div class="side g"><b>관동팔경</b>~정 · ~대 · ~루<br>~사 · ~포</div><div class="mid">VS</div><div class="side a"><b>단양팔경</b><b>~암 · ~봉</b><br>(예외: 석문)</div></div>
+<p class="why">"관동팔경이 아닌 것"의 정답은 대부분 <b>단양팔경</b>에서 나옵니다. 어미로 갈라보세요.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 최초와 최근</h4>
+<div class="vs"><div class="side n"><b>지리산 1967</b>최초 국립공원</div><div class="mid">↔</div><div class="side g"><b>금정산 2025</b>최신 · 최초의 <b>도심형</b></div></div>
+<div class="vs"><div class="side b"><b>금오산</b>최초 도립공원</div><div class="mid">·</div><div class="side a"><b>강천산</b>최초 군립공원</div></div>
+<p class="why">실제 기출: <b>"최초의 국립공원과 도립공원을 맞게 연결한 것"</b> → 지리산·금오산.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 제주도의 세 가지 자격</h4>
+<div class="vs"><div class="side n"><b>세계자연유산</b>2007<br>일부 구역만</div><div class="mid">·</div><div class="side b"><b>생물권보전지역</b>2002 일부<br>→ <b>2019 전체</b></div></div>
+<div class="vs"><div class="side g"><b>세계지질공원</b>2010</div><div class="mid">·</div><div class="side a"><b>국가지질공원</b>최초 지정</div></div>
+<p class="why">자연유산은 <b>한라산·성산일출봉·거문오름 용암동굴계</b>만입니다. "제주도 전체가 세계자연유산"은 <b class="x">틀립니다.</b></p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 승격한 국립공원</h4>
+<div class="vs"><div class="side b"><b>원래 도립공원</b>치악산 · 변산반도<br>월출산 · 무등산<br>태백산 · <b>팔공산</b></div><div class="mid">VS</div><div class="side n"><b>처음부터 국립</b>지리산 · 설악산<br>한라산 등 초기 지정</div></div>
+<p class="why">"팔공산은 처음부터 국립공원이었다"는 문장은 <b class="x">틀립니다.</b> 2023년 승격입니다.</p></div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars"><ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"다음 중 강원도에 있는 국립공원을 모두 고르시오 — 이 문제만 아주 바글바글이야. 우리는 강원도에 집중하는 거예요."</b> — 7/17 문제풀이강의 1:27:49경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"최초는 무조건 외워야 되는 거죠."</b> 국립·도립·군립·생물권·람사르·지질공원 전부. 실제로 <b>"최초의 국립공원과 도립공원을 맞게 연결"</b> 문제가 출제되었습니다. — 7/12 2:29:56 / 2:32:51경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"지리산은 내륙 최대 면적이지, 국립공원 전체 최대 면적은 다도해상이야."</b> 보기에 "최대 면적"이 나오면 반드시 "내륙"이 붙었는지 확인하세요. — 7/17 1:28:52경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"천황봉(천왕봉)이라는 산봉우리는 다른 국립공원에도 있어요. 우리는 지리산에 있는 것만."</b> — 7/17 1:30:54경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"유네스코에서 지정하면서도 개발을 허용한 것은 세계지질공원만."</b> 이 단원 최대의 함정입니다. — 7/12 2:19:52경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"천연기념물은 국가유산청장이 지정해요. 그거 조심하셔야 돼요."</b> 앞의 공원들과 지정 주체가 다릅니다. — 7/12 2:39:16경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"관동팔경은 별 다섯 개도 부족합니다. 문제 형태는 뻔해요 — 아닌 것을 고르라고 나오고, 아닌 것은 대부분 단양팔경에서 나와요."</b> — 7/12 2:46:02 / 2:47:03경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"해파랑길이 시험에 두 번 나왔어요."</b> 코리아 둘레길 중 가장 자주 나온 구간입니다. — 7/12 2:48:52경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"생물권보전지역은 아직 한 번도 나온 적이 없어요. 그러니까 항상 나올 가능성이 있는데 안 나오고 있어요. 다른 건 몰라도 명칭만은 외워야 될 거예요."</b> — 7/12 2:11:11경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"섭섬은 아니라서 섭섭해."</b> 제주 문섬·범섬은 천연보호구역, 섭섬은 아닙니다. 강사가 직접 만든 암기법입니다. — 7/12 2:14:20경</div></li>
+</ul></div>
+</section>
+
+<section id="quizsec">
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 예상문제 14문항</h2>
+<p class="sub">보기를 눌러 고르고, 다 풀면 <b>채점하기</b>를 누르세요. 채점 후 <b>틀린 문제만 다시 풀기</b>와 <b>오답노트용 기록</b>이 나옵니다.</p>
+
+<div class="notice">
+<b>이 문제들은 기출이 아니라 예상문제입니다.</b> 이 두 단원은 기출 원문 정리본(136문항)에 해당 문항이 없어 기출을 그대로 실을 수 없었습니다. 대신 강사가 <b>문장 형태까지 지목해준 출제 유형</b>("강원도에 있는 국립공원을 모두 고르시오", "람사르 습지인 것/아닌 것", "최초의 국립공원과 도립공원을 연결", "생물권보전지역으로 지정된 것/아닌 것")에 맞춰, <b>교재와 강의에 실제로 있는 사실만</b>으로 만들었습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 14 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/04_최종교재/관광자원.md</code>의 22단원(자연 관광자원 개관)·23단원(산악 국립공원) + <b>강의전사본/핵심강의/7월12일.txt</b> 2:07:49~2:49경(유네스코 자연유산·생물권보전지역·지질공원·람사르·국립도립군립공원·천연기념물·명승·팔경·코리아 둘레길) + <b>강의전사본/문제풀이강의/7월17일.txt</b> 1:27~1:31경(산악 국립공원 출제 유형·지리산).</p>
+<p><b>기출 실측 불가 사유</b> — <code>02_관광자원해설/03_작업자료/관광자원기출.md</code>(2013~2025년 136문항)의 수록 범위가 유교 건축(Q136)까지여서, 자연 관광자원 단원의 기출 원문이 존재하지 않습니다. 따라서 <b>빈도를 감으로 매기지 않고 강사의 별표·발언을 근거로 표기</b>했습니다.</p>
+<p><b>추측 금지</b> — 교재·강의에 없는 내용은 넣지 않았습니다. 국립공원 개수(24개)·도립공원(30개)·군립공원(27개)·국가지질공원(16개)·람사르(26개소)는 교재 표기를 그대로 따랐고, 강의에서 "총 18개의 산악형"이라고 언급된 부분은 교재의 산악형 목록(19개)과 수가 달라 <b>목록 그대로</b>를 기준으로 삼았습니다(금정산 추가 시점 차이로 보이나, 확인되지 않아 단정하지 않습니다). 지리산 대표 봉우리는 교재에 "천황봉"으로 적혀 있으나 일반적으로 통용되는 표기는 "천왕봉"이므로 두 표기를 함께 적었습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var UNIT='[관광자원해설 22·23단원 — 자연 관광자원 개관 · 산악 국립공원]';
+var QS=[
+{n:1,src:"예상 · 강사 지목형(강원도)",q:"강원도에 위치한 국립공원을 모두 고른 것은?\nㄱ. 설악산  ㄴ. 오대산  ㄷ. 북한산  ㄹ. 치악산  ㅁ. 소백산",o:["ㄱ, ㄴ, ㄷ","ㄱ, ㄴ, ㄹ","ㄱ, ㄷ, ㅁ","ㄴ, ㄹ, ㅁ"],a:1,c:"국립공원",e:"강원도에 있는 국립공원은 <b>설악산(속초·양양·인제·고성)·오대산(홍천·평창·강릉)·치악산(원주·횡성)</b>이며, 여기에 <b>태백산</b>(태백·영월·정선, 경북 봉화 일부)이 더해집니다. <b>북한산은 서울·경기</b>, <b>소백산은 충북 단양·경북 영주</b>입니다. 강사가 <b>“이 문제만 아주 바글바글하다”</b>고 한 최다 출제 유형입니다."},
+{n:2,src:"예상 · 최초 연결형(실제 출제 형태)",q:"최초로 지정된 국립공원과 도립공원을 바르게 연결한 것은?",o:["국립공원: 지리산 — 도립공원: 금오산","국립공원: 설악산 — 도립공원: 금오산","국립공원: 지리산 — 도립공원: 강천산","국립공원: 한라산 — 도립공원: 남한산성"],a:0,c:"자연공원 체계",e:"<b>최초의 국립공원은 지리산(1967)</b>, <b>최초의 도립공원은 금오산(경북 구미)</b>입니다. <b>강천산(전북 순창)은 최초의 군립공원</b>입니다. 강사가 “시험장에 실제로 이렇게 나왔다”고 밝힌 문제 형태입니다."},
+{n:3,src:"예상 · 지정 주체형",q:"자연 관광자원의 지정 주체 연결이 옳지 않은 것은?",o:["국립공원 — 환경부 장관","도립공원 — 특별시장·광역시장·도지사","군립공원 — 시장·군수·구청장","천연기념물 — 환경부 장관"],a:3,c:"자연공원 체계",e:"<b>천연기념물과 명승은 국가유산청장</b>이 지정합니다. 국립공원·국가지질공원은 환경부(기후에너지환경부) 장관, 도립공원은 시·도지사, 군립공원은 시장·군수·<b>구청장</b>이 지정합니다. 강사가 <b>“그거 조심하셔야 돼요”</b>라고 따로 경고한 부분입니다."},
+{n:4,src:"예상 · 개발 허용 함정형",q:"다음 중 유네스코가 지정하면서도 개발이 허용되는 것은?",o:["세계자연유산","세계 생물권보전지역","세계지질공원","람사르 협약에 따른 지정"],a:2,c:"국제 지정",e:"<b>세계지질공원만 개발이 허용</b>됩니다. 특별한 암석·지층이 많아 관광 가치가 크므로, <b>지역 주민의 소득 증대를 위해</b> 관광 수단으로 개발을 허용하는 것입니다. 세계자연유산과 생물권보전지역은 <b>개발 금지</b>를 조건으로 지정됩니다. 우리나라가 지정하는 <b>국가지질공원도 개발이 허용</b>됩니다."},
+{n:5,src:"예상 · 목록형",q:"우리나라의 유네스코 세계자연유산에 해당하는 것을 모두 고른 것은?\nㄱ. 제주 화산섬과 용암동굴  ㄴ. 한국의 갯벌  ㄷ. 설악산  ㄹ. 남한산성",o:["ㄱ, ㄴ","ㄱ, ㄷ","ㄴ, ㄹ","ㄱ, ㄴ, ㄷ"],a:0,c:"국제 지정",e:"우리나라의 세계자연유산은 <b>제주 화산섬과 용암동굴(2007)</b>과 <b>한국의 갯벌(2021)</b> 두 가지뿐이며, 복합유산은 없습니다. <b>설악산은 천연보호구역·세계 생물권보전지역</b>이고, <b>남한산성은 세계문화유산</b>입니다."},
+{n:6,src:"예상 · 세부 구역 함정형",q:"세계자연유산 「제주 화산섬과 용암동굴」에 관한 설명으로 옳은 것은?",o:["제주도 전체가 등재되었다.","한라산, 성산일출봉, 거문오름 용암동굴계가 등재되었다.","한라산과 우도만 등재되었다.","제주도의 갯벌이 등재되었다."],a:1,c:"국제 지정",e:"등재된 것은 제주도 전체가 아니라 <b>한라산 · 성산일출봉 · 거문오름 용암동굴계</b> 세 구역입니다. 거문오름 용암동굴계에서 가장 유명한 동굴이 <b>만장굴</b>입니다. 참고로 <b>생물권보전지역</b>은 2002년 일부 지역으로 시작해 <b>2019년 제주도 전체</b>로 확대되었습니다."},
+{n:7,src:"예상 · 강사 지목형(람사르)",q:"람사르 습지에 관한 설명으로 옳지 않은 것은?",o:["최초로 지정된 곳은 대암산 용늪(1997)이다.","대암산 용늪은 남한에서 유일한 고층습원이다.","창녕 우포늪은 우리나라에서 가장 오래된 자연 늪지이다.","람사르 습지는 산림 보호를 목적으로 지정된다."],a:3,c:"국제 지정",e:"람사르 협약(1971)은 <b>물새의 서식지로서 보전 가치가 있는 습지</b>를 보호하기 위한 협약입니다. 산림 보호가 목적이 아닙니다. 우리나라에는 <b>26개소</b>가 지정되어 있고, 창녕 우포늪은 <b>생물권보전지역·람사르 습지·천연보호구역</b>을 겸합니다."},
+{n:8,src:"예상 · 면적 함정형",q:"국립공원의 면적에 관한 설명으로 옳은 것은?",o:["지리산은 우리나라 국립공원 중 전체 면적이 가장 넓다.","지리산은 내륙 국립공원 중 면적이 가장 넓고, 전체 최대는 다도해상이다.","전체 면적이 가장 넓은 국립공원은 한려해상이다.","전체 면적이 가장 넓은 국립공원은 태안해안이다."],a:1,c:"국립공원",e:"<b>지리산은 “내륙(육지) 최대 면적”</b>이고, <b>국립공원 전체에서 가장 넓은 곳은 다도해상</b>입니다. 강사는 “지리산이 나오면 ‘국립공원 중 최대 면적’이라고 답을 고르게 되는데 그게 함정”이라고 별도로 경고했습니다."},
+{n:9,src:"예상 · 승격 함정형",q:"원래 도립공원이었다가 국립공원으로 승격된 곳이 아닌 것은?",o:["팔공산","무등산","태백산","지리산"],a:3,c:"국립공원",e:"<b>지리산은 1967년 우리나라 최초의 국립공원</b>으로 처음부터 국립공원이었습니다. <b>치악산·변산반도·월출산·무등산·태백산·팔공산</b>은 도립공원에서 국립공원으로 승격된 사례입니다. “팔공산은 처음부터 국립공원이었다”는 서술이 대표적인 함정입니다."},
+{n:10,src:"예상 · 최초/최신형",q:"2025년에 지정된 우리나라의 가장 최근 국립공원이며, 최초의 도심형 국립공원인 곳은?",o:["금정산","팔공산","무등산","주왕산"],a:0,c:"국립공원",e:"<b>부산 금정산(2025)</b>이 가장 최근에 지정된 국립공원이자 <b>최초의 도심형 국립공원</b>입니다. 금정산에는 <b>범어사</b>와 <b>금정산성</b>(현존 최대 규모 석축 산성)이 있습니다. 팔공산은 2023년, 무등산은 2013년, 주왕산은 1976년 지정입니다."},
+{n:11,src:"예상 · 강사 지목형(팔경)",q:"관동팔경에 해당하지 않는 것은?",o:["강릉 경포대","삼척 죽서루","단양 도담삼봉","울진 망양정"],a:2,c:"팔경",e:"<b>도담삼봉은 단양팔경</b>입니다. 관동팔경은 <b>통천 총석정·고성 삼일포(북한)</b>, 간성 청간정, 양양 낙산사, <b>강릉 경포대</b>, <b>삼척 죽서루</b>, <b>울진 망양정</b>, 평해 월송정 여덟 곳입니다. 강사는 <b>“관동팔경이 아닌 것을 고르라는 문제에서 오답 보기는 대부분 단양팔경에서 나온다”</b>고 했습니다 — 단양팔경은 이름이 <b>“~암” 또는 “~봉”</b>인 것이 특징입니다."},
+{n:12,src:"예상 · 강사 지목형(둘레길)",q:"다음 설명에 해당하는 코리아 둘레길의 구간은?\n“떠오르는 해와 푸른 바다를 보며 파도 소리를 들으면서 걷는 길이라는 뜻으로 이름 붙여졌다.”",o:["남파랑길","서해랑길","해파랑길","DMZ 평화의 길"],a:2,c:"둘레길",e:"<b>해파랑길(2016)</b>이며 <b>동해</b> 구간입니다. 강사가 <b>“시험에 두 번 나왔다”</b>고 밝힌 항목입니다. 남파랑길(2020)은 남해, 서해랑길(2022)은 서해, DMZ 평화의 길(2024)은 비무장지대 구간입니다."},
+{n:13,src:"예상 · 명승/천연기념물형",q:"명승에 관한 설명으로 옳지 않은 것은?",o:["국가유산청장이 지정한다.","유적과 함께 아름다운 경관을 이루는 곳을 지정한다.","명승 제1호는 명주 청학동 소금강이며, 명주는 현재의 강릉이다.","소금강이라는 이름은 정도전이 붙였다."],a:3,c:"국가 지정",e:"소금강이라는 이름을 붙인 사람은 <b>율곡 이이</b>입니다. 이렇게 <b>사람의 이야기(인문적 유래)가 함께 있는 아름다운 경관</b>이 명승의 지정 요건입니다. 명승 제2호는 <b>거제 해금강</b>입니다. 정도전은 한양도성 4대문의 이름을 지은 인물입니다."},
+{n:14,src:"예상 · 지형 기초형",q:"우리나라의 지형에 관한 설명으로 옳은 것은?",o:["서쪽의 융기가 커서 큰 산맥이 서쪽에 몰려 있다.","동쪽의 융기가 커서 동고서저의 경동지형을 이루며, 큰 강이 대부분 서·남쪽으로 흐른다.","동해는 수심이 얕아 갯벌이 발달한다.","침식은 쌓이는 작용, 퇴적은 깎이는 작용을 말한다."],a:1,c:"지형",e:"우리나라는 <b>동쪽의 융기가 크게 일어나 동고서저의 경동지형</b>을 이룹니다. 그래서 태백산맥이 동쪽에 있고, 큰 강은 <b>서쪽·남쪽</b>으로 흐릅니다. <b>동해는 수심이 깊고</b>(그래서 더 파랗게 보임), 갯벌은 <b>서·남해안</b>에 발달합니다. <b>침식=깎임, 퇴적=쌓임</b>으로 ④는 뒤바뀐 설명입니다."}
+];
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx=''+UNIT+' 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\n/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

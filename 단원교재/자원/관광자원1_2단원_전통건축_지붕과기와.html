@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 1·2단원 · 전통건축 — 지붕과 기와</title>
+<style>
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.story,.cmp .c,.stars,.tblwrap,.freq,.pick,.term,.simile,.zero,.flow{break-inside:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 1·2단원</div>
+<h1>전통건축 — 지붕과 기와
+<small>무거운 지붕을 어떻게 떠받치는가 · 마루 3형제 ○×로 지붕 4종 가르기 · 치미·취두·용두·잡상</small>
+</h1>
+<div class="meta">
+<span class="chip hot">전통건축(1~7단원)의 출발점</span>
+<span class="chip">2026-08-13 · D-23</span>
+<span class="chip">진짜 기출 3문항 + 예상문제 12문항</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 먼저</h2>
+<p class="sub">전통건축 1~7단원은 사실 <b>한 가지 이야기</b>입니다. "지붕이 너무 무거운데, 이 무게를 어떻게 땅까지 안전하게 흘려보낼까?" 이 질문 하나에 지붕·공포·기둥·초석·기단이 전부 매달려 있어요. 순서를 먼저 머리에 박아두면 뒤 단원이 저절로 이해됩니다.</p>
+<div class="flow">
+<b class="hi">지붕</b><i>→</i><b>공포</b><i>→</i><b>기둥</b><i>→</i><b>초석</b><i>→</i><b>기단</b><i>→</i><b>지면</b>
+</div>
+<div class="tl">
+<div class="t1"><b>① 왜 지붕이 문제인가</b><span>한옥의 몸통은 <b>나무</b>, 지붕은 <b>기와</b></span><span>기와가 엄청 무겁다 → 구조 전체가 이 무게 때문에 존재</span></div>
+<div class="t2"><b>② 시험이 묻는 것 (1단원)</b><span>지붕마루 <b>3종의 있다/없다</b></span><span>용마루 · 내림마루 · 추녀마루 → ○× 조합으로 지붕 4종</span></div>
+<div class="t3"><b>③ 시험이 묻는 것 (2단원)</b><span>장식기와 <b>위치와 모양</b></span><span>치미 · 취두 · 용두 · 잡상 — 어디에 붙었나</span></div>
+</div>
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div><b>이 단원의 한 줄:</b> <b>지붕은 그림으로 외우지 말고 "마루 3종의 ○×"로 외운다.</b> 기와는 <b>"어디에 붙어 있느냐"</b>로 외운다. 이 두 문장이 1·2단원 전부입니다.</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 먼저 이해하기</h2>
+<p class="sub">네 편입니다. 표를 보기 전에 이것부터 읽어 주세요.</p>
+
+<article class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">지붕은 왜 이렇게 복잡한가</div><div class="era">1단원 · 하중의 흐름</div></div>
+<div class="body">
+<p>우리 전통건축(한옥)의 기본 재료는 <b class="k">나무</b>입니다. 그런데 그 위에 얹는 지붕은 전부 <b class="k">기와</b>예요. 기와는 흙을 구워 만든 것이라 무게가 어마어마합니다. 나무 기둥 위에 무거운 흙덩어리를 잔뜩 올려놓은 셈이죠.</p>
+<p>그래서 한옥의 모든 구조물은 사실상 하나의 목적으로 연결되어 있습니다. <span class="quote">"이 무거운 지붕의 무게를 어떻게 밑으로, 밑으로 흘려보내서 건물이 안 무너지게 하느냐."</span> 지붕 → 공포 → 기둥 → 초석 → 기단 → 지면. 뒤에 나올 단원들이 왜 필요한지 여기서 이미 답이 나옵니다.</p>
+<p>지붕이 하는 일은 네 가지입니다.</p>
+<div class="term">
+<b>① 보호</b> — 비·눈·햇빛으로부터 건물을 지킨다.<br>
+<b>② 편리</b> — 그 아래에서 생활할 수 있게 한다.<br>
+<b>③ 권위의 상징</b> — 특히 왕의 건물일수록 지붕이 크고 화려하다.<br>
+<b>④ 의장(장식)</b> — 보기 좋게 꾸미는 기능.
+</div>
+<p>이제 지붕을 이루는 <b>부재(재료·부품)</b>를 봅시다. 이름이 낯설 뿐 하나하나는 어렵지 않습니다.</p>
+<div class="term">
+<b>서까래</b> — 지붕의 <b>뼈대</b>가 되는 나무. 지붕에서 가장 핵심이 되는 뼈대입니다.<br>
+<b>도리</b> — 서까래 <b>아래</b>에서 서까래를 받쳐주는 부재.<br>
+<b>보(대들보)</b> — 기둥 위에서 지붕 무게를 <b>전달받는</b> 부재. 보가 하나만 있으면 <b>대들보</b>라 부릅니다.<br>
+<b>처마</b> — 서까래(또는 도리)가 지붕 <b>밖으로 삐져나온</b> 부분. 앞에도 뒤에도 있습니다.<br>
+<b>추녀</b> — 앞쪽 처마와 뒤쪽 처마가 <b>만나서 경계를 이루는</b> 부분.
+</div>
+<p>여기서 <b class="k">처마</b>는 시험에서 특히 예뻐하는 부재입니다. 처마의 목적이 두 개인데, 두 번째가 재미있어요.</p>
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div>처마는 <b>여름엔 양산, 겨울엔 창문</b> 역할을 합니다. 여름에는 해가 머리 꼭대기(높은 고도)에 있어서 처마가 햇빛을 딱 막아 그늘을 만들고, 겨울에는 해가 낮게 깔려서 처마 <b>안쪽까지</b> 햇빛이 들어와 방을 데워줍니다. 우연이 아니라 계산해서 만든 구조입니다.</div>
+</div>
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div>처마의 두 가지 기능: <b>① 비바람으로부터 외벽 보호 ② 일조량 조절(여름 차단·겨울 수용)</b>. "여름에 햇빛을 받아들인다"는 식으로 뒤집어 놓는 것이 전형적인 오답 형태입니다.</div>
+</div>
+</div>
+</article>
+
+<article class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">마루 3형제와 지붕 4종 — 이 단원의 심장</div><div class="era">1단원 · ○× 조합</div></div>
+<div class="body">
+<p>지붕에는 <b class="k">능선</b>(산등성이처럼 튀어나온 선)이 있습니다. 이걸 <b class="k">지붕마루</b>라고 부르고, 딱 <b>3종류</b>뿐입니다.</p>
+<div class="term">
+<b>용마루</b> — 지붕 <b>정상</b>을 지나는 수평선. 맨 위 가로줄.<br>
+<b>내림마루</b> — 용마루에서 <b>대각선으로 내려오는</b> 부분.<br>
+<b>추녀마루(=귀마루)</b> — 앞뒤 처마가 만나는 <b>추녀 위에</b> 얹히는 마루. 건물 <b>모서리</b>에 있습니다.
+</div>
+<p>그리고 여기가 핵심입니다. <b>지붕 4종은 이 마루 3형제가 "있다/없다"의 조합일 뿐입니다.</b> 그림 모양으로 외우려고 하면 시험장에서 반드시 헷갈립니다. ○× 표로 외우세요.</p>
+<div class="term">
+<b>맞배지붕</b> — 용마루 ○, 내림마루 ○, <b>추녀마루 ×</b>. 모서리에 귀마루가 없으니 측면 벽이 <b>삼각형</b>이 되고, 그 삼각형 안으로 지붕 속 구조가 훤히 들여다보입니다.<br>
+<b>우진각지붕</b> — 용마루 ○, 추녀마루 ○, <b>내림마루 ×</b>. 지붕면이 <b>4면 전부</b>에 있습니다.<br>
+<b>팔작(합각)지붕</b> — <b>전부 ○</b>. 우진각지붕 위에 맞배지붕을 얹어놓은 형태라서 마루가 다 있습니다.<br>
+<b>모임(삿갓)지붕</b> — <b>추녀마루만 ○</b>, 용마루 ×, 내림마루 ×. 하나의 꼭짓점에서 지붕골이 모입니다.
+</div>
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div>강사의 비유 — <span class="quote">"우리가 책을 엎어놓으면 이런 모양이 되잖아요. 그게 맞배지붕입니다."</span> 실제로 <b>"책을 엎어 놓은 것과 같은 형태"</b>라는 표현이 기출 선택지에 그대로 등장했습니다(2022년). 그 문제에서는 이 설명을 "모임지붕"에 붙여놓고 틀린 것으로 만들었어요.</div>
+</div>
+<p>각 지붕이 어디에 쓰이는지도 세트로 외웁니다. 사용처를 물어보는 문제가 실제로 나왔습니다.</p>
+<div class="term">
+<b>맞배지붕</b> → 주심포 계통 건물 — 수덕사 대웅전 등<br>
+<b>우진각지붕</b> → <b>초가지붕</b>, 그리고 <b>궁궐의 정문</b> — 경복궁 <b>광화문</b>, 창덕궁 <b>돈화문</b><br>
+<b>팔작지붕</b> → 궁궐의 <b>정전</b>, 사찰의 <b>법당</b> — 경복궁 근정전, 창덕궁 인정전, 부석사 무량수전, 낙산사 홍련암<br>
+<b>모임지붕</b> → <b>정자·탑</b> — 경복궁 <b>향원정</b>(육모지붕)
+</div>
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div><b>2022년 기출에 딸린 강사 메모 그대로:</b> <b>부석사 무량수전은 "주심포 양식"이지만 지붕은 "팔작지붕"</b>입니다. "주심포=맞배, 다포=팔작"이라고 통째로 외우면 이 문제에서 낚입니다. 양식(공포)과 지붕은 <b>별개의 분류</b>예요.</div>
+</div>
+</div>
+</article>
+
+<article class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">기와 — 기본 7종은 "어디에 쓰는 물건인가"로</div><div class="era">2단원 · 기본 기와</div></div>
+<div class="body">
+<p>먼저 시대부터. <b class="k">기와는 삼국시대부터</b> 사용되었습니다. 이 한 줄이 밑줄 암기 포인트예요. 기출에서 "고려시대부터", "조선시대부터"로 슬쩍 바꿔놓는 오답이 나온다고 강사가 못 박았습니다.</p>
+<p>기본 기와는 <b>지붕을 실제로 덮는</b> 기와들입니다.</p>
+<div class="term">
+<b>암키와</b> — <b>오목</b>하게 파인 기와. 이어 붙이면 물이 흐르는 <b>기왓골</b>이 생깁니다.<br>
+<b>수키와</b> — <b>볼록</b>하게 둥근 기와. 이어 붙이면 <b>기왓등</b>이 생깁니다.<br>
+<b>막새기와</b> — 기와 <b>끝부분</b>에 끼워 구멍을 막는 기와. 수키와에 끼우면 <b>수막새</b>, 암키와에 끼우면 <b>암막새</b>.<br>
+<b>서까래기와</b> — <b>서까래</b>를 감싸 부식을 막고 치장하는 기와.<br>
+<b>사래기와</b> — 추녀 끝에 끼우는 <b>사래</b>라는 부재를 감싸는 기와.<br>
+<b>마루기와</b> — 용마루·내림마루·추녀마루, 세 <b>마루를 쌓아 올릴 때</b> 쓰는 기와.<br>
+<b>곱새기와</b> — 원통형이거나 약간 굽은 형태로, <b>내림마루와 추녀마루의 끝단</b>에 쓰는 기와.
+</div>
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div>암키와·수키와를 이어 붙이면 <b>끝에 구멍</b>이 뻥 뚫립니다. 그 구멍으로 비바람이 들이치니 <b>마개</b>를 끼워야겠죠 — 그게 <b>막새</b>입니다. 이름 그대로 "막는" 기와예요. 서까래기와·사래기와도 똑같은 발상입니다. <b>나무를 그대로 두면 비에 썩으니까 기와로 싸주는 것</b>입니다.</div>
+</div>
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div>2015년 기출은 <b>막새·치미·곱새·취두</b> 네 개를 나란히 놓고 설명을 하나만 틀리게 만들었습니다. 즉 <b>기본 기와와 장식기와를 섞어서</b> 냅니다. 따로 외우지 말고 한 표에서 같이 보세요.</div>
+</div>
+</div>
+</article>
+
+<article class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">장식기와 4종 ★★★ — 이번 범위 최고 등급</div><div class="era">2단원 · 치미·취두·용두·잡상</div></div>
+<div class="body">
+<p>장식기와는 <b class="k">궁궐의 왕과 관련된 건축물</b>에 주로 설치됩니다. 이 조건 자체가 별표로 강조된 부분이에요. 그리고 PDF에서 장식기와 항목은 <b>★★★(별 3개)</b> — 이번 강의 범위 중 최고 등급 중요도입니다.</p>
+<p>넷을 외우는 요령은 딱 두 가지 축입니다. <b>어디에 붙었나(위치)</b>와 <b>무슨 모양인가</b>.</p>
+<div class="term">
+<b>치미(鴟尾)</b> — <b>용마루 양쪽 끝</b>, <b>새 꼬리</b> 모양의 대형 장식기와. <b>삼국시대~고려 전기</b>.<br>
+<b>취두(鷲頭)</b> — <b>용마루 양쪽 끝</b>, <b>용머리</b> 모양. <b>고려 후기 이후</b> 치미 대신 사용. 조선 건축물은 대부분 취두.<br>
+<b>용두(龍頭)</b> — <b>내림마루와 추녀마루 사이</b>, <b>용머리</b> 모양.<br>
+<b>잡상(雜像)</b> — <b>추녀(귀)마루</b> 위, 여러 <b>동물상·인물상</b>. 보통 <b>9개</b>, <b>경회루만 11개</b>.
+</div>
+<p>정리하면 이렇게 됩니다. <b>치미와 취두는 같은 자리(용마루 끝)인데 모양과 시대가 다르고</b>, <b>취두와 용두는 같은 모양(용머리)인데 자리가 다릅니다.</b> 이 두 문장만 잡으면 셋이 안 섞입니다.</p>
+<p>잡상은 <b class="k">길상</b>(좋은 기운을 불러들임)과 <b class="k">벽사</b>(나쁜 기운을 쫓아냄)의 의미로 올립니다. 근정전·경회루처럼 왕과 관련된 건물에 배치되죠.</p>
+<div class="simile">
+<svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg>
+<div><b>왜 경회루만 11개일까요?</b> 조선은 왕국, 중국은 황제국이라는 사대관계 때문에 조선 건물은 왕의 격(9개)에 맞춥니다. 그런데 <b>경회루는 중국 황제가 보낸 사신을 대접하던 연회장</b>이었어요. 손님이 황제의 대리인이니 예외적으로 <b>황제의 격(11개)</b>을 적용한 것입니다. 이유를 알면 숫자가 안 잊힙니다.</div>
+</div>
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-alert"/></svg>
+<div>2015년 기출의 정답 포인트가 정확히 여기였습니다 — <b>"추녀마루 위 사람·동물 모양"은 취두가 아니라 <span style="text-decoration:underline">잡상</span>"</b>. 원본 PDF에 빨간펜으로 "잡상"이라고 정정 메모까지 되어 있는 문항입니다.</div>
+</div>
+</div>
+</article>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 하나도 빠짐없이</h2>
+<p class="sub">교재에 나온 모든 사실입니다. 여기 없는 건 이 단원에 없습니다.</p>
+
+<h3>표 1 — 지붕을 이루는 부재</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>부재</th><th>무엇인가</th><th>기능·특징</th></tr></thead>
+<tbody>
+<tr><td class="nm">서까래</td><td>지붕의 뼈대를 이루는 나무</td><td>지붕 구조의 핵심 뼈대</td></tr>
+<tr><td class="nm">도리</td><td>서까래 아래에서 서까래를 받쳐주는 부재</td><td>서까래 지지</td></tr>
+<tr><td class="nm">보(대들보)</td><td>기둥 위에서 지붕 무게를 전달받는 부재</td><td>보가 하나만 있으면 <b>대들보</b></td></tr>
+<tr><td class="nm">처마</td><td>서까래(도리)가 지붕 밖으로 나온 부분</td><td><b>① 비바람에서 외벽 보호 ② 일조량 조절</b><br>여름=햇빛 차단 / 겨울=햇빛 수용</td></tr>
+<tr><td class="nm">추녀</td><td>앞쪽 처마와 뒤쪽 처마가 만나 경계를 이루는 부분</td><td>모서리 부분. 끝에 <b>사래</b>를 끼움</td></tr>
+<tr><td class="nm">용마루</td><td>지붕 정상의 수평 능선</td><td>지붕마루 3종 ①</td></tr>
+<tr><td class="nm">내림마루</td><td>용마루에서 대각선으로 내려오는 능선</td><td>지붕마루 3종 ②</td></tr>
+<tr><td class="nm">추녀마루<br>(=귀마루)</td><td>추녀 위에 얹히는 능선</td><td>지붕마루 3종 ③</td></tr>
+</tbody>
+</table>
+</div>
+<p class="sub" style="margin-top:-6px">지붕의 기능 4가지: <b>① 보호(비·눈·햇빛) ② 생활의 편리 ③ 권위의 상징(특히 왕) ④ 의장(장식)</b></p>
+
+<h3>표 2 — 지붕 4종 ○× 표 <span style="color:var(--warn)">(이 표가 1단원의 전부)</span></h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>지붕</th><th>용마루</th><th>내림마루</th><th>추녀마루</th><th>모양 설명</th><th>주요 사용처</th></tr></thead>
+<tbody>
+<tr><td class="nm">맞배지붕</td><td class="o">○</td><td class="o">○</td><td class="x">×</td><td>책을 엎어 놓은 형태. 측면이 삼각형이고 지붕 속이 보임</td><td>주심포 계통 — 수덕사 대웅전 등</td></tr>
+<tr><td class="nm">우진각지붕</td><td class="o">○</td><td class="x">×</td><td class="o">○</td><td>지붕면이 <b>4면 전부</b>에 있음</td><td><b>초가지붕</b>, 궁궐 <b>정문</b> — 경복궁 광화문, 창덕궁 돈화문</td></tr>
+<tr><td class="nm">팔작지붕<br>(합각지붕)</td><td class="o">○</td><td class="o">○</td><td class="o">○</td><td><b>우진각 + 맞배</b>. 가장 화려·웅장</td><td>궁궐 <b>정전</b>·사찰 <b>법당</b> — 경복궁 근정전, 창덕궁 인정전, 부석사 무량수전, 낙산사 홍련암</td></tr>
+<tr><td class="nm">모임지붕<br>(삿갓지붕)</td><td class="x">×</td><td class="x">×</td><td class="o">○</td><td>하나의 <b>꼭짓점</b>에서 지붕골이 모임</td><td><b>정자·탑</b> — 경복궁 향원정(육모지붕)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>표 3 — 기와 총정리 (기본 7종 + 장식 4종)</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>기와</th><th>위치</th><th>모양·특징</th></tr></thead>
+<tbody>
+<tr><td>기본</td><td class="nm">암키와</td><td>지붕면</td><td><b>오목</b>. 이어 붙이면 <b>기왓골</b></td></tr>
+<tr><td>기본</td><td class="nm">수키와</td><td>지붕면</td><td><b>볼록</b>. 이어 붙이면 <b>기왓등</b></td></tr>
+<tr><td>기본</td><td class="nm">막새기와</td><td>기와 <b>끝부분</b>(처마 끝)</td><td>구멍을 막아 비바람 차단. 수키와용=<b>수막새</b>, 암키와용=<b>암막새</b></td></tr>
+<tr><td>기본</td><td class="nm">서까래기와</td><td>서까래</td><td>부식 방지 + 치장</td></tr>
+<tr><td>기본</td><td class="nm">사래기와</td><td>추녀 끝의 <b>사래</b></td><td>목재 사래에 습기가 스미는 것 방지</td></tr>
+<tr><td>기본</td><td class="nm">마루기와</td><td>용마루·내림마루·추녀마루</td><td>마루를 <b>쌓아 올릴 때</b> 사용</td></tr>
+<tr><td>기본</td><td class="nm">곱새기와</td><td>내림마루·추녀마루의 <b>끝단</b></td><td>원통형 또는 약간 굽은 형태</td></tr>
+<tr><td>장식 ★★★</td><td class="nm">치미(鴟尾)</td><td><b>용마루 양쪽 끝</b></td><td><b>새 꼬리</b> 모양 대형 장식기와 · <b>삼국시대~고려 전기</b></td></tr>
+<tr><td>장식 ★★★</td><td class="nm">취두(鷲頭)</td><td><b>용마루 양쪽 끝</b></td><td><b>용머리</b> 모양 · <b>고려 후기 이후</b>, 조선은 대부분 취두</td></tr>
+<tr><td>장식 ★★★</td><td class="nm">용두(龍頭)</td><td><b>내림마루와 추녀마루 사이</b></td><td><b>용머리</b> 모양</td></tr>
+<tr><td>장식 ★★★</td><td class="nm">잡상(雜像)</td><td><b>추녀(귀)마루</b></td><td>동물·인물 형상 · <b>길상·벽사</b> · 보통 <b>9개</b>, <b>경회루만 11개</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="sub" style="margin-top:-6px"><b>기와 사용 시작 = 삼국시대</b> · 장식기와는 <b>궁궐의 왕과 관련된 건축물</b>에 주로 설치</p>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급표 — 감이 아니라 실측</h2>
+<p class="sub">기준: <code>관광자원기출.md</code>(2013~2025년 <b>136문항 전체</b>)의 <b>문제·선택지 원문</b>에서 해당 단어가 등장한 횟수를 셌습니다. 해설문은 세지 않았습니다.</p>
+
+<div class="notice">
+<b>먼저 알아야 할 것 — 이 단원은 "출제량"이 적습니다.</b> 13년치 136문항 중 <b>1·2단원에 직접 걸린 문항은 3문항</b>(2022년 지붕 1 · 2015년 지붕 1 · 2015년 기와 1)뿐입니다. 대신 <b>같은 전통건축이라도 단청 15회 · 공포 6회</b>로 4·6단원이 훨씬 자주 나옵니다. 이 단원은 <b>점수를 버는 곳이 아니라 뒤 단원을 이해하는 뼈대</b>라고 생각하고, 표 2·표 3만 확실히 잡고 넘어가세요.
+</div>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A급</span><div><b>지붕 4종의 이름과 특징</b> — 팔작 3회 · 맞배 2회 · 우진각 2회 · 모임지붕 2회. <b>등장하는 3문항 중 2문항이 전부 지붕 4종 구분 문제</b>였습니다. 나오면 무조건 여기서 나옵니다.</div></div>
+<div class="row"><span class="gr gA">A급</span><div><b>기와 명칭 구분</b> — 기와 5회 · 막새 3회(수막새 1 · 암막새 1) · 치미 1 · 취두 1 · 곱새 1. 2015년 한 문항에서 <b>막새·치미·곱새·취두를 한꺼번에</b> 물었습니다.</div></div>
+<div class="row"><span class="gr gB">B급</span><div><b>지붕마루 3종</b> — 용마루 1 · 내림마루 1 · 추녀마루 1 · 귀마루 1. 단독 출제는 없지만 <b>기와 문제의 선택지 안에서 위치를 설명하는 도구</b>로 계속 등장합니다. 몰라도 되는 게 아니라, 몰라도 되는 것처럼 보이는 함정입니다.</div></div>
+<div class="row"><span class="gr gB">B급</span><div><b>사용처 건물 이름</b> — 근정전 10회 · 무량수전 8회 · 숭례문 6회 · 광화문 5회 · 돈화문 3회. <b>건물 자체는 자원 과목 전체에서 최상위 빈출</b>이므로, 지금 "무슨 지붕인지"까지 같이 붙여서 외워두면 뒤 단원에서 이자가 붙습니다.</div></div>
+<div class="row"><span class="gr gC">C급</span><div><b>처마</b> 2회 · <b>추녀</b> 1회 · <b>대들보</b> 2회 · <b>기단</b> 4회. 대부분 <b>공포 문제의 선택지</b>로 끌려 나왔습니다(6단원).</div></div>
+</div>
+
+<div class="zero">
+<b>13년간 문제·선택지 원문에 0회 — 버릴 것 (그러나 조건부)</b><br>
+합각(이라는 단어) · 지붕마루(라는 용어) · 서까래 · 도리 · 초석 · 암키와 · 수키와 · 사래 · 마루기와 · 서까래기와 · 용두 · <b>잡상</b> · 향원정<br><br>
+<b>단, 이 두 개는 0회로 오해하면 안 됩니다.</b><br>
+▸ <b>잡상</b> — 선택지 원문에는 "잡상"이라는 단어가 없지만, <b>2015년 기와 문제의 정답 근거가 바로 잡상</b>입니다(선택지는 "취두"로 잘못 써놓고 그걸 고르게 함). 원본 PDF에 빨간펜으로 "잡상"이라 정정되어 있어요. <b>반드시 외웁니다.</b><br>
+▸ <b>용두</b> — 취두와 짝으로만 구분되는 항목이라 단독 출제는 없었지만, 취두가 나오면 오답 선택지로 언제든 쓰입니다.
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">이 단원에서 헷갈릴 수 있는 건 아래가 전부입니다.</p>
+<div class="cmp">
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 맞배 vs 우진각 — 없는 마루가 다르다</h4>
+<div class="vs">
+<div class="side a"><b>맞배지붕</b>추녀마루 <span class="x">없음</span><br>측면이 삼각형</div>
+<div class="mid">VS</div>
+<div class="side b"><b>우진각지붕</b>내림마루 <span class="x">없음</span><br>지붕면 4면</div>
+</div>
+<p class="why"><b>"맞배는 모서리(추녀)가 없고, 우진각은 대각선(내림)이 없다."</b> 2022년 기출은 이 둘의 설명을 서로 바꿔놓았습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 팔작지붕은 왜 마루가 다 있나</h4>
+<div class="vs">
+<div class="side b"><b>우진각</b>아래에 깔고</div>
+<div class="mid">+</div>
+<div class="side a"><b>맞배</b>위에 얹으면</div>
+</div>
+<p class="why">= <b>팔작(합각)지붕</b>. 둘을 합쳤으니 <b>용·내림·추녀 마루 전부 ○</b>. 원리를 알면 안 외워도 답이 나옵니다. 가장 화려하고 웅장해서 <b>정전·법당</b>에 씁니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> "책을 엎어 놓은 모양" = ?</h4>
+<div class="vs">
+<div class="side n"><b>맞배지붕</b>정답</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>모임지붕</b>2022년 오답</div>
+</div>
+<p class="why"><b>책을 엎어놓은 모양 = 맞배지붕.</b> 모임지붕은 <b>한 꼭짓점에서 지붕골이 만나는</b> 삿갓 모양입니다. 이 둘을 바꿔치기한 선택지가 실제로 나왔습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 궁궐 정문 vs 궁궐 정전</h4>
+<div class="vs">
+<div class="side b"><b>정문</b>우진각<br>광화문·돈화문</div>
+<div class="mid">VS</div>
+<div class="side a"><b>정전</b>팔작<br>근정전·인정전</div>
+</div>
+<p class="why"><b>"문은 우진각, 집은 팔작."</b> 숭례문 같은 도성의 문도 우진각입니다. 정자는? <b>모임지붕</b>(향원정).</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 양식(공포)과 지붕은 별개다 ★</h4>
+<div class="vs">
+<div class="side x2"><b>부석사 무량수전</b>주심포 양식<br>+ <b>팔작</b>지붕</div>
+</div>
+<p class="why">"주심포=맞배, 다포=팔작"으로 통째 암기하면 여기서 틀립니다. <b>무량수전은 주심포인데 팔작지붕</b> — 2022년 기출 원본에 강사가 예외로 적어둔 항목입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 처마 vs 추녀</h4>
+<div class="vs">
+<div class="side n"><b>처마</b>지붕이 밖으로<br>나온 부분</div>
+<div class="mid">VS</div>
+<div class="side b"><b>추녀</b>앞·뒤 처마가<br>만나는 모서리</div>
+</div>
+<p class="why">처마는 <b>면</b>, 추녀는 그 면들이 만나는 <b>선(모서리)</b>. 추녀 끝에 끼우는 부재가 <b>사래</b>, 그걸 감싸는 게 <b>사래기와</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 치미 vs 취두 — 자리는 같고 모양·시대가 다르다</h4>
+<div class="vs">
+<div class="side a"><b>치미</b>새 꼬리 모양<br>삼국~고려 전기</div>
+<div class="mid">같은 자리<br>용마루 끝</div>
+<div class="side b"><b>취두</b>용머리 모양<br>고려 후기~조선</div>
+</div>
+<p class="why">둘 다 <b>용마루 양쪽 끝</b>. <b>치미가 먼저, 취두가 나중.</b> 조선 건물이면 취두입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 취두 vs 용두 — 모양은 같고 자리가 다르다</h4>
+<div class="vs">
+<div class="side b"><b>취두</b>용마루 <b>양 끝</b></div>
+<div class="mid">둘 다<br>용머리</div>
+<div class="side a"><b>용두</b>내림마루–추녀마루 <b>사이</b></div>
+</div>
+<p class="why">모양만 보면 구분이 안 됩니다. <b>무조건 위치로</b> 가르세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 추녀마루 위 사람·동물 = 잡상 ★</h4>
+<div class="vs">
+<div class="side n"><b>잡상</b>정답</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>취두</b>2015년 오답</div>
+</div>
+<p class="why">2015년 기출이 정확히 이 자리를 "취두"라고 써놓고 틀린 것을 고르게 했습니다. <b>추녀마루 = 잡상</b>, <b>용마루 끝 = 취두</b>.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 잡상 9개 vs 경회루 11개</h4>
+<div class="vs">
+<div class="side b"><b>보통</b>9개<br>왕(제후)의 격</div>
+<div class="mid">VS</div>
+<div class="side g"><b>경회루</b>11개<br>황제의 격</div>
+</div>
+<p class="why">"잡상은 항상 9개"라는 문장에 낚이지 마세요. <b>경회루는 중국 사신 접대용 연회장</b>이라 유일한 예외입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 곱새기와 vs 마루기와</h4>
+<div class="vs">
+<div class="side a"><b>마루기와</b>마루를 <b>쌓을 때</b></div>
+<div class="mid">VS</div>
+<div class="side b"><b>곱새기와</b>내림·추녀마루 <b>끝단</b></div>
+</div>
+<p class="why">둘 다 마루에 쓰지만, 하나는 <b>몸통</b>, 하나는 <b>끝마개</b>. 곱새는 원통형이거나 약간 굽은 형태입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 기와는 언제부터?</h4>
+<div class="vs">
+<div class="side n"><b>삼국시대</b>정답</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>고려·조선</b>전형적 오답</div>
+</div>
+<p class="why">강사가 콕 집은 오답 유형입니다. <b>기와 = 삼국시대부터.</b> (참고로 <b>단청도 삼국시대부터</b> — 2020년 기출 정답이 이것이었습니다.)</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>처마·추녀</b>는 PDF에 각각 <b>동그라미 + 별표</b>로 강조되어 있습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div>지붕 종류 표의 <b>○/× 표시</b>가 PDF에 명확히 그려져 있고, <b>이 ○×를 정확히 구분하는 것이 시험의 핵심</b>이라고 했습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>장식기와 항목은 ★★★(별 3개)</b> — 이번 강의 범위 중 최고 등급 중요도입니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>잡상</b>은 "동그라미하고 별표"로 강조되었습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>치미·취두는 "궁궐의 왕과 관련된 건축물에 설치"</b>라는 조건이 별표로 강조되어 있습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div>기와 문제는 <b>"고려시대부터 썼다 / 조선시대부터 썼다"</b>는 식으로 <b>시대를 틀리게 제시하는</b> 오답 유형이 나옵니다. 정답은 <b>삼국시대</b>.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"책을 엎어놓은 모양의 지붕"</b>이라는 서술로 맞배지붕을 묻는 문제가 실제로 나온 적이 있다고 언급했습니다 — 그리고 실제로 2022년에 나왔습니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div>관광가이드 시험은 <b>"다음 중 옳지 않은 것을 고르시오"</b> 유형이 유난히 많습니다. 지붕·기와처럼 표로 정리된 항목은 이 유형의 단골입니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div>지붕은 <b>그림만 보고 구분하려 하지 말고</b> 반드시 <b>"지붕마루 3종의 유무"</b>라는 기준으로 구분하라고 반복 강조했습니다.</div></li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 실전 테스트 — 15문항</h2>
+<p class="sub"><b>1~3번은 실제 기출(2022·2015·2015)</b>이고, <b>4~15번은 교재 사실에 근거한 예상문제</b>입니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>솔직하게 밝힙니다.</b> 2013~2025년 136문항 중 1·2단원에 직접 걸린 것은 <b>3문항</b>뿐입니다. 나머지 12문항은 <b>통합교재의 사실만으로</b> 만든 예상문제이고, 추측으로 지어낸 내용은 하나도 없습니다. 문항마다 <b>기출 / 예상</b> 배지를 달아두었습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 15 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_ 과목별교재/md파일/관광자원.md</code>(관광자원해설 통합교재) 1단원·2단원 / 기출·빈도: <code>02_ 과목별교재/md파일/관광자원기출.md</code>(2013~2025년 136문항).</p>
+<p><b>실측 방법</b> — 136문항의 <b>문제·선택지 원문</b>만을 대상으로 단어 등장 횟수를 셌습니다(해설문 제외). 1·2단원 직접 출제 문항: 2022년 지붕 1문항, 2015년 지붕 1문항, 2015년 기와 1문항 = <b>총 3문항</b>.</p>
+<p><b>추측 금지</b> — 교재에 없는 내용은 넣지 않았습니다. 예상문제도 교재의 사실 서술만으로 구성했습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+
+<script>
+var QS=[
+{n:1,src:"기출 2022",q:"한국의 전통 지붕에 관한 설명으로 옳은 것은?",o:["모임지붕은 책을 엎어 놓은 것과 같은 형태로 고려 이전에 주로 사용되었다.","맞배지붕은 지붕면이 4면으로 되어 있어 숭례문과 같은 도성의 문에 사용되었다.","우진각 지붕은 하나의 꼭짓점에서 지붕골이 만나는 형태이다.","팔작지붕은 경복궁 근정전, 부석사 무량수전과 같이 권위적인 건축에 많이 사용되었다."],a:3,c:"지붕종류",e:"①은 <b>모임지붕이 아니라 맞배지붕</b>의 설명(책을 엎어놓은 형태), ②는 <b>맞배가 아니라 우진각</b>(지붕면 4면·도성의 문), ③은 <b>우진각이 아니라 모임(삿갓)지붕</b>(한 꼭짓점에서 지붕골이 만남)으로 용어가 전부 뒤바뀐 오답입니다. ④가 옳습니다. 원본에 강사 메모로 <b>\"무량수전은 주심포 양식이지만 팔작지붕\"</b>이라는 예외가 부기되어 있습니다."},
+{n:2,src:"기출 2015",q:"한 꼭짓점에서 지붕골이 만나는 형태로 주로 정자에 사용되는 지붕은?",o:["모임지붕","팔작지붕","맞배지붕","우진각 지붕"],a:0,c:"지붕종류",e:"하나의 꼭짓점(정상)에서 지붕골이 모이는 형태는 <b>모임지붕(삿갓지붕)</b>이며 <b>정자·탑</b>에 흔히 씁니다. 마루로 보면 <b>추녀마루만 있고 용마루·내림마루가 없습니다.</b> 대표 사례: 경복궁 향원정(육모지붕)."},
+{n:3,src:"기출 2015",q:"전통 건축물에서 기와에 관한 설명으로 옳지 않은 것은?",o:["막새 — 지붕의 처마 끝에 사용되는 기와로 수막새와 암막새가 있다.","치미 — 용마루의 양 끝에 높게 부착하던 대형의 장식기와이다.","곱새 — 원통형이나 약간 굽은 형태로 내림마루와 귀마루 끝단에 사용되는 기와이다.","취두 — 추녀마루 위에 올리는 사람 모양과 동물 형상의 장식기와이다."],a:3,c:"기와",e:"추녀마루 위에 올리는 사람·동물 모양의 장식기와는 취두가 아니라 <b>잡상</b>입니다. <b>취두는 용마루 끝</b>에 얹는 용머리 모양 대형 장식기와예요. 원본 PDF에 빨간펜으로 <b>\"잡상\"</b>이라는 정정 메모가 되어 있는 문항입니다. ①②③은 모두 옳은 설명입니다."},
+{n:4,src:"예상",q:"지붕마루 3종 중 추녀마루가 없는 지붕은?",o:["맞배지붕","우진각지붕","팔작지붕","모임지붕"],a:0,c:"지붕종류",e:"<b>맞배지붕</b>은 용마루·내림마루는 있고 <b>추녀마루가 없습니다.</b> 모서리에 귀마루가 없어 측면이 삼각형이 되고 지붕 속 구조가 드러납니다. 참고 — 내림마루가 없는 것은 우진각, 마루가 전부 있는 것은 팔작, 추녀마루만 있는 것은 모임지붕."},
+{n:5,src:"예상",q:"용마루와 추녀마루는 있으나 내림마루가 없으며, 지붕면이 4면으로 되어 있는 지붕은?",o:["맞배지붕","우진각지붕","팔작지붕","모임지붕"],a:1,c:"지붕종류",e:"<b>우진각지붕</b>입니다. 건물 4면 모두 지붕면을 가지며 <b>내림마루가 없습니다.</b> <b>초가지붕</b>이 보통 이 형태이고, 궁궐 <b>정문</b>(경복궁 광화문·창덕궁 돈화문)에 주로 씁니다."},
+{n:6,src:"예상",q:"팔작(합각)지붕에 관한 설명으로 옳지 않은 것은?",o:["우진각지붕 위에 맞배지붕을 얹어놓은 형태이다.","용마루·내림마루·추녀마루가 모두 있다.","궁궐의 정전이나 사찰의 법당 등 주요 건물에 주로 사용되었다.","하나의 꼭짓점에서 여러 개의 지붕골이 모이는 형태이다."],a:3,c:"지붕종류",e:"④는 <b>모임(삿갓)지붕</b>의 설명입니다. 팔작지붕은 <b>우진각 + 맞배</b>의 합성이라 마루 3종이 <b>모두</b> 있고, 가장 화려·웅장해서 정전·법당에 씁니다."},
+{n:7,src:"예상",q:"지붕과 대표 건축물의 연결로 옳지 않은 것은?",o:["우진각지붕 — 경복궁 광화문","우진각지붕 — 창덕궁 돈화문","모임지붕 — 경복궁 향원정","맞배지붕 — 경복궁 근정전"],a:3,c:"사용처",e:"<b>경복궁 근정전은 팔작지붕</b>입니다(궁궐의 정전 = 팔작). 맞배지붕은 수덕사 대웅전 같은 주심포 계통 건물에 쓰입니다. 나머지 연결은 모두 옳습니다 — <b>궁궐 정문 = 우진각</b>, <b>정자 = 모임지붕</b>."},
+{n:8,src:"예상",q:"처마에 관한 설명으로 옳지 않은 것은?",o:["서까래나 도리가 지붕 밖으로 나온 부분이다.","비바람으로부터 건물의 외벽을 보호한다.","여름에는 해의 고도가 높아 처마가 햇빛을 막아준다.","겨울에는 해의 고도가 높아져 처마가 햇빛을 차단한다."],a:3,c:"부재",e:"<b>겨울에는 해의 고도가 낮아져</b> 처마 <b>안쪽까지 햇빛이 들어옵니다</b>(난방 효과). 처마의 두 기능은 <b>① 외벽 보호 ② 일조량 조절 — 여름 차단 / 겨울 수용</b>입니다. 계절을 뒤집는 것이 전형적인 오답 형태입니다."},
+{n:9,src:"예상",q:"다음 중 지붕마루(능선) 3종에 해당하지 않는 것은?",o:["용마루","내림마루","추녀마루","대들보"],a:3,c:"부재",e:"지붕마루 3종은 <b>용마루 · 내림마루 · 추녀마루(=귀마루)</b>입니다. <b>대들보</b>는 마루가 아니라 <b>기둥 위에서 지붕 무게를 전달받는 부재</b>(보가 하나만 있을 때의 이름)입니다."},
+{n:10,src:"예상",q:"용마루 양쪽 끝에 높게 설치한 새 꼬리 모양의 대형 장식기와로, 삼국시대부터 고려 전기까지 사용된 것은?",o:["치미","취두","용두","잡상"],a:0,c:"장식기와",e:"<b>치미(鴟尾)</b>입니다. 같은 자리(용마루 끝)에 고려 후기 이후 쓰인 <b>용머리</b> 모양이 <b>취두</b>예요. <b>치미가 먼저, 취두가 나중</b> — 조선 건축물은 대부분 취두입니다."},
+{n:11,src:"예상",q:"장식기와의 위치 연결로 옳은 것은?",o:["치미 — 추녀마루","취두 — 내림마루와 추녀마루 사이","용두 — 내림마루와 추녀마루 사이","잡상 — 용마루 양쪽 끝"],a:2,c:"장식기와",e:"<b>용두(龍頭)</b>가 내림마루와 추녀마루 사이에 설치됩니다. 나머지는 자리가 뒤바뀌었습니다 — <b>치미·취두 = 용마루 양쪽 끝</b>, <b>잡상 = 추녀(귀)마루</b>. 취두와 용두는 <b>둘 다 용머리 모양</b>이라 <b>위치로만</b> 구분해야 합니다."},
+{n:12,src:"예상",q:"잡상에 관한 설명으로 옳지 않은 것은?",o:["추녀(귀)마루에 설치하는 동물상·인물상이다.","길상과 벽사의 의미로 설치한다.","왕과 관련된 건물에 주로 배치된다.","건물에 관계없이 항상 9개로 통일되어 있다."],a:3,c:"장식기와",e:"보통 <b>9개</b>가 배치되지만 <b>경회루만 유일하게 11개</b>입니다. 경회루가 중국 황제의 사신을 대접하는 연회 장소였기 때문에 예외적으로 <b>황제의 격</b>을 적용한 것입니다. \"항상 9개\"라는 서술에 낚이면 안 됩니다."},
+{n:13,src:"예상",q:"우리나라 전통건축에서 기와를 사용하기 시작한 시기는?",o:["삼국시대","통일신라","고려시대","조선시대"],a:0,c:"기와",e:"<b>삼국시대</b>부터입니다. 강사가 \"고려시대부터 / 조선시대부터\"로 바꿔놓는 오답이 나온다고 특별히 강조한 항목입니다. 참고로 <b>단청의 기원도 삼국시대</b>이며, 이 역시 2020년 기출에서 \"고려시대부터\"로 제시된 것이 오답이었습니다."},
+{n:14,src:"예상",q:"기와와 그 쓰임의 연결로 옳지 않은 것은?",o:["암키와 — 오목한 형태로 이어 붙이면 기왓골이 형성된다.","수막새 — 암키와 끝에 끼워 넣는 막새기와이다.","사래기와 — 추녀 끝의 사래를 감싸 습기를 막는 기와이다.","마루기와 — 용마루·내림마루·추녀마루를 쌓아 올릴 때 사용하는 기와이다."],a:1,c:"기와",e:"<b>수막새는 수키와</b>에 끼우고, <b>암막새가 암키와</b>에 끼웁니다. 이름 그대로예요. 암키와(오목)=기왓골, 수키와(볼록)=기왓등도 세트로 외웁니다."},
+{n:15,src:"예상",q:"원통형이거나 약간 굽은 형태로 내림마루와 추녀마루의 끝단에 사용되는 기와는?",o:["곱새기와","막새기와","마루기와","서까래기와"],a:0,c:"기와",e:"<b>곱새기와</b>입니다. <b>마루기와</b>는 마루를 <b>쌓아 올릴 때</b> 쓰는 몸통용, <b>곱새기와</b>는 그 마루의 <b>끝단 마개</b>라고 구분하세요. 막새기와는 <b>처마 끝</b>(암·수키와의 끝), 서까래기와는 <b>서까래</b>를 감싸는 기와입니다."}
+];
+var sel={},graded=false,t0=null,tick=null;
+function esc(s){return s}
+function render(){
+var h='';
+for(var i=0;i<QS.length;i++){var q=QS[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+QS.length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var right=0,wrong=[],cat={};
+for(var i=0;i<QS.length;i++){var q=QS[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/QS.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=QS.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx='[관광자원해설 1·2단원 — 전통건축: 지붕과 기와] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+QS.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function reset(){
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

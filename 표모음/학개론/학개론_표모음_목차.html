@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광학개론 표 모음</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+
+.card{display:block;background:var(--card);border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px 18px;margin:12px 0;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--gold)}
+.ct{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.cs{font-size:13px;color:var(--ink-2);margin-top:6px;line-height:1.55}
+.cm{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+</style>
+</head><body>
+<div class="wrap">
+
+
+<header class="top">
+<div class="kicker">2026 관광통역안내사 필기</div>
+<h1>관광학개론 표 모음 — 전 12장
+<small>학원교재 진도 순서대로 · 표 187개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">교재 9~134쪽 전체</span>
+<span class="chip">2026-08-30</span>
+</div>
+</header>
+
+<a class="card" href="https://claude.ai/code/artifact/00766f53-c1f7-4dc0-b292-d38f3f2866c1" target="_blank"><div class="ct">제1장 관광의 기초이론</div>
+<div class="cs">관광의 어원·정의 · 관광의 3요소 · 관광의 발전단계 · 관광의 효과 · 관광객의 정의 · 국적과 국경에 의한 관광분류 · 세계관광기구 지역구분 · 관광구조의 3체계론</div>
+<div class="cm"><span class="chip">교재 9~23쪽</span><span class="chip">표 17개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/62e53dfc-a773-4c29-8025-1b308dceab22" target="_blank"><div class="ct">제2장 관광자 행동의 이해</div>
+<div class="cs">관광욕구와 동기 · 매슬로우 욕구단계 · 관광행동의 결정요인 · 관광의사결정 과정 · 관광자 유형</div>
+<div class="cm"><span class="chip">교재 24~29쪽</span><span class="chip">표 8개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/ad112581-11f0-4c04-895a-53ee8b49feb8" target="_blank"><div class="ct">제3장 국민관광 · 국제관광론</div>
+<div class="cs">관광의 발전단계 · 국민관광 정의 · 대중관광과 복지관광 · 한국관광의 별 · 테마여행 10선 · 국제관광의 공간적 범위 · 통계작성 기준</div>
+<div class="cm"><span class="chip">교재 30~38쪽</span><span class="chip">표 15개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/7a6dd357-0adf-46e0-be10-cc9545d5a028" target="_blank"><div class="ct">제4장 관광개발론</div>
+<div class="cs">관광개발의 개념·목적·조건 · 제1~5섹터 · 제3·4차 관광개발기본계획 · 관광지vs관광단지 · 관광특구 · 관광거점도시 · 관광두레 · 문화관광축제 · 지속가능한 관광</div>
+<div class="cm"><span class="chip">교재 39~51쪽</span><span class="chip">표 14개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/3456fbfd-665f-4a2e-90ea-183c92b2b305" target="_blank"><div class="ct">제5장 관광정책론</div>
+<div class="cs">관광정책 과정 4단계 · 관광정책의 특성 · 관광행정기관과 관광기구 6종 · 한국관광공사 · UNWTO · PATA · ASTA · ICCA · ICAO · IATA · WTTC · OECD</div>
+<div class="cm"><span class="chip">교재 52~59쪽</span><span class="chip">표 13개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/a94b0eca-410a-490a-b1e1-8efb02667060" target="_blank"><div class="ct">제6장 관광사업론</div>
+<div class="cs">관광사업의 분류 · 여행업 3종과 자본금 · 관광숙박업 · 테마파크업 · 국제회의업 · 카지노와 시설기준 · 카지노 발전과정 · 카지노 현황 18개 · 관광편의시설업 11업종 · 관광상품의 특성 12가지</div>
+<div class="cm"><span class="chip">교재 60~67쪽</span><span class="chip">표 14개 + 보충</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/2451d5dd-edf7-4ab1-af7b-10699999c2e1" target="_blank"><div class="ct">제7장 국제회의업</div>
+<div class="cs">MICE 산업 · 국제회의 통계 기준 (UIA·ICCA·AACVB·KNTO) · 기업회의와 협회회의의 특성 · 회의의 형태별 분류 13가지 · 국제회의시설 현황 · 국제회의기획업 · CVB · 코리아 유니크 베뉴 · 국제회의도시</div>
+<div class="cm"><span class="chip">교재 68~81쪽</span><span class="chip">표 17개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/5af3737b-5397-4c89-b93a-b0ef66dc8a57" target="_blank"><div class="ct">제8장 여행업</div>
+<div class="cs">여행업의 역사·정의·특성 · IIT/ICT · FIT/FCT · 여행형태 10가지 · 여행상품 원가 · 유통구조 · 수배업무 · 여권의 종류 · 사증(VISA) · CIQ · 면세 통관 · 여행경보단계</div>
+<div class="cm"><span class="chip">교재 82~94쪽</span><span class="chip">표 21개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/22f657ea-9b40-470a-a06f-1143fc083686" target="_blank"><div class="ct">제9장 관광교통업</div>
+<div class="cs">관광교통의 기본적 성격 · 항공운송사업의 특성 · 시카고회의·하바나회의·버뮤다협정 · ICAO · IATA · BSP/ATR · 항공 동맹체 · 항공예약시스템 · 노쇼 방지 · 항공사 코드 · 도시코드 · 저비용항공사</div>
+<div class="cm"><span class="chip">교재 95~104쪽</span><span class="chip">표 19개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/cccc5c31-7d3a-4568-ad30-64c9c73586bd" target="_blank"><div class="ct">제10장 호텔업</div>
+<div class="cs">호텔의 역사 · 미국·한국의 호텔 · 호텔경영의 특성 · 숙박기간/요금지불형식별 분류 · 경영방식별 분류 · 호텔 조직 · 객실의 종류 14가지 · 객실요금 · 객실 관련용어 · 식당 분류 · 서비스 형식 · 정식 코스 · 와인 · 증류주</div>
+<div class="cm"><span class="chip">교재 105~122쪽</span><span class="chip">표 26개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/f3efc138-64db-4e80-b715-a57a356347df" target="_blank"><div class="ct">제11장 기타관광사업</div>
+<div class="cs">주제공원의 특징·구성요소·분류 · 리조트의 개념과 의의 · 리조트와 관광의 차이점 · 관광이벤트의 특성 · 메가/홀마크/메이저 이벤트</div>
+<div class="cm"><span class="chip">교재 123~128쪽</span><span class="chip">표 9개</span></div></a>
+<a class="card" href="https://claude.ai/code/artifact/793f7292-a630-403b-b94b-106bfd56cdee" target="_blank"><div class="ct">제12장 관광마케팅론</div>
+<div class="cs">마케팅 발달 과정 5단계 · 4P · 관광마케팅의 특징(무형성·비분리성·소멸성·이질성) · SWOT · 8P와 7P · STP 전략 · 시장세분화 · 관광상품 수명주기 · 가격전략 · 촉진전략</div>
+<div class="cm"><span class="chip">교재 129~134쪽</span><span class="chip">표 14개</span></div></a>
+
+<footer>
+<p><b>표 읽는 법</b> — <span class="hl">노랑 형광펜</span>은 기출(2013·2016·2018~2025년)에 실제로 정답이나 보기로 나온 단어입니다. <b class="n5">★</b>은 교재에 인쇄된 별을 그대로 옮긴 것이고, <b class="n5">★★★★★</b>짜리 표는 빨간 테두리를 둘렀습니다. 기출에 나온 표에는 <span class="badge">최빈출</span> 배지가 붙습니다.</p>
+<p>각 페이지 맨 위 <b>「중요」 탭</b>을 누르면 별표·최빈출 표만 남습니다. <b>인쇄 버튼</b>은 화면에 보이는 것만 A4 가로로 뽑습니다.</p>
+<p>근거 — 학원교재 「2026 관광통역안내사 수험서 관광학개론」 · 기출 11개년 실측</p>
+</footer>
+
+</div></body></html>

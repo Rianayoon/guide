@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>핵심암기카드 템플릿</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#C6871A;--w:#C4272B;--neo:#2E8B4F;--bro:#C2491E;--iro:#1F4E70;--pal:#6B5738;--gL:#8F6510;--iroL:#1B3A52;--broL:#963012;--neoL:#1F6B34;--palL:#4A3B26;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#F0C040;--w:#F0524F;--neo:#5FCB7E;--bro:#E8703D;--iro:#4A8FC2;--gL:#F5C93A;--iroL:#6FA8D0;--broL:#F08050;--neoL:#7ED98F;--palL:#B08A5C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px;margin-bottom:14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r1{grid-template-columns:1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.box.key{border-left-color:var(--w)}
+.bt{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.box.key .bt{color:var(--w)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--i2);font-weight:800;margin:0 7px}
+.big+.big{margin-top:5px}
+.big small,ul.rel small{font-size:.7em;font-weight:600;color:var(--i2)}
+ul.rel small{margin-left:9px}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.grade{font-size:11px;font-weight:800;color:#fff;border-radius:5px;width:18px;height:18px;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.gA{background:#C6871A}.gB{background:#2E8B4F}.gC{background:#8A6D3B}
+.cmpw{border:1px solid var(--l);border-radius:11px;overflow:hidden;margin-bottom:9px}
+.cmp{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--p2)}
+.cmp th,.cmp td{border-right:1px solid var(--l);border-bottom:1px solid var(--l);padding:7px 11px;text-align:left;vertical-align:top}
+.cmp tr:last-child th,.cmp tr:last-child td{border-bottom:0}
+.cmp th:last-child,.cmp td:last-child{border-right:0}
+.cmp thead th{background:var(--c);font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--i2)}
+.cmp thead th.c1{color:var(--iroL)}.cmp thead th.c2{color:var(--broL)}
+.cmp tbody th{background:var(--c);width:92px;font-size:12px;font-weight:800;color:var(--i2);letter-spacing:.04em;white-space:nowrap}
+.cmp td{font-weight:700;line-height:1.45}
+.cmp td b{color:var(--w);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.myth{font-size:12.5px;color:var(--i2);line-height:1.62}
+.myth b{color:var(--i);font-weight:800}
+.myth u{text-decoration:none;border-bottom:2px solid var(--g);font-weight:800;color:var(--i)}
+.mean{margin-top:5px;font-size:12px;color:var(--i2)}
+.mean b{color:var(--g);font-weight:800}
+@media (max-width:960px){
+ .r3,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .chip{font-size:15px}
+ .cmp{font-size:16px}
+ .cmp tbody th{font-size:13px}
+ .eq{font-size:15px}
+ .myth,.mean{font-size:13.5px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none;margin-bottom:0;page-break-after:always}.card:last-of-type{page-break-after:auto}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:10mm}.card{break-inside:auto;page-break-inside:auto}.row,.box,.hd,tr,td,th{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<div class="card">
+<div class="hd">
+  <h1>관 광 법 5 가 지</h1>
+  <span class="tag">관광법규 1단원</span>
+</div>
+
+<div class="row r1">
+  <div class="box">
+    <ul class="rel">
+      <li><span class="n">1</span>관광기본법</li>
+      <li><span class="n">2</span>관광진흥법</li>
+      <li><span class="n">3</span>관광진흥개발기금법</li>
+      <li><span class="n">4</span>국제회의 육성에 관한 법률</li>
+      <li><span class="n">5</span>한국관광공사법</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>연 혁</h1>
+  <span class="tag">관광법규 1단원</span>
+</div>
+
+<div class="row r1">
+  <div class="box b2">
+    <div class="big"><b style="color:var(--g)">1954</b>&nbsp;&nbsp;교통부 육운국 관광과 <b>— 관광행정의 시작</b></div>
+    <div class="big"><b style="color:var(--g)">1961</b>&nbsp;&nbsp;관광사업진흥법 제정 <b>— 최초 법률</b></div>
+    <div class="big"><b style="color:var(--g)">1962</b>&nbsp;&nbsp;국제관광공사법 <span class="sep">→</span> 82년 한국관광공사로 명칭 변경</div>
+    <div class="big"><b style="color:var(--g)">1972</b>&nbsp;&nbsp;관광진흥개발기금법 <small>(현재도 있음)</small></div>
+    <div class="big"><b style="color:var(--g)">1975</b>&nbsp;&nbsp;관광단지개발촉진법 <small>(진흥개발기금법으로 통합됨)</small></div>
+    <div class="big" style="padding-left:74px">61년 관광사업진흥법이 <b>관광기본법 · 관광사업법으로 나뉨</b></div>
+    <div class="big"><b style="color:var(--g)">1982</b>&nbsp;&nbsp;한국관광공사법 <small>(62년 국제관광공사법이 변경)</small></div>
+    <div class="big"><b style="color:var(--g)">1986</b>&nbsp;&nbsp;관광진흥법 <small>(61년 사업진흥법 · 75년 사업법이 진흥법으로 변천)</small></div>
+    <div class="big" style="padding-left:74px">관광단지개발촉진법 폐지되며 진흥법으로 통합</div>
+    <div class="big"><b style="color:var(--g)">1996</b>&nbsp;&nbsp;국제회의 산업육성법</div>
+    <div class="big"><b style="color:var(--g)">1997</b>&nbsp;&nbsp;관광숙박시설지원법</div>
+  </div>
+</div>
+
+</div>
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

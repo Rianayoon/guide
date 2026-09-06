@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 0단원 · 관광자원의 개념과 문화유산 체계</title>
+<style>
+@page{ size: A4; margin: 0; }
+@font-face{
+  font-family:'Pretendard';
+  font-weight:45 920;
+  font-style:normal;
+  font-display:swap;
+  src:url('fonts/PretendardVariable.woff2') format('woff2');
+}
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.era{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.x{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .yr{font-size:12px;color:var(--ink-2);margin-left:auto;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .stem{background:var(--paper-2);border-radius:9px;padding:11px 14px;margin:11px 0;font-size:14.5px;color:var(--ink-2)}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.o{color:var(--ok)} .mark.x{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.story,.cmp .c,.stars,.tblwrap,.freq,.pick,.term,.simile,.redo,.zero{break-inside:avoid}table{font-size:12.5px}header.top{padding-top:0}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 0단원</div>
+<h1>관광자원의 개념과 문화유산 체계
+<small>관광자원이란 무엇인가 · 국가가 정하는 등급 · 유네스코가 정하는 등급</small>
+</h1>
+<div class="meta">
+<span class="chip hot">자원 41단원 중 첫 단원 — 여기가 모든 자원 과목의 뼈대</span>
+<span class="chip">2026-08-12 · D-24</span>
+<span class="chip">예상문제 12문항</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 먼저</h2>
+<p class="sub">0단원은 <b>"누가 어떤 이름표를 붙이느냐"</b>의 이야기입니다. 같은 문화재 하나에도 <b>국가가 붙인 이름표</b>와 <b>유네스코가 붙인 이름표</b>가 따로 있어요. 이 둘을 섞어버리는 게 이 단원 함정의 전부입니다.</p>
+<div class="tl">
+<div class="t1"><b>① 관광자원이란</b><span>가보고 싶게 만드는 <b>유인성</b></span><span>4대 성질 · 자연/인문 · 유형/무형</span></div>
+<div class="t2"><b>② 국가가 붙이는 이름표</b><span><b>국가유산청장</b>이 지정</span><span>국보·보물·사적·명승·천연기념물…</span></div>
+<div class="t3"><b>③ 유네스코가 붙이는 이름표</b><span><b>세계유산</b> 등재</span><span>문화 15 · 기록 20 · 자연 1 · <b>복합 0</b></span></div>
+</div>
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div><b>이 단원의 한 줄:</b> <b>국보 1호 숭례문은 유네스코 세계문화유산이 아니다.</b> 이 문장 하나가 0단원에서 가장 자주 나오는 함정이고, ②와 ③이 서로 다른 제도라는 걸 아는지 묻는 장치입니다.</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 먼저 이해하기</h2>
+<p class="sub">세 편입니다. 표를 보기 전에 이것부터 읽어 주세요.</p>
+
+<article class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">관광자원이란 무엇인가</div><div class="era">개념 · 성질 · 분류</div></div>
+<div class="body">
+<p>정의는 의외로 간단합니다. 사람이 보고 <span class="quote">"저기 한번 가보고 싶다"</span>고 느끼게 만드는 <b class="k">매력</b>을 가진 모든 것 — 그게 관광자원입니다. 이 매력을 어려운 말로 <b class="k">유인성</b>(끌어당기는 성질)이라고 부릅니다.</p>
+<p>그런데 관광자원에는 성질이 네 가지 있습니다. 이걸 <b>하나의 흐름</b>으로 외우면 편해요.</p>
+<div class="term">
+<b>① 경제성</b> — 개발하면 투자한 만큼 효과가 크다. <b>그래서 개발하고 싶어진다.</b><br>
+<b>② 가변성</b> — 시대나 관광객 취향이 바뀌면 가치도 변한다. <b>그래서 영원히 인기 있는 건 아니다.</b><br>
+<b>③ 유한성</b> — 한 번 함부로 훼손되면 되돌릴 수 없다. <b>그래서 함부로 못 건드린다.</b><br>
+<b>④ 보전성</b> — 그러니 계속 보호하고 지켜야 한다. <b>③에서 자동으로 나오는 결론.</b>
+</div>
+<div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 오래된 명품 가방입니다. 팔면 값을 크게 받고(경제성), 유행에 따라 값이 오르내리고(가변성), 한 번 찢어지면 복구가 안 되고(유한성), 그래서 애지중지 관리해야 합니다(보전성).</div></div>
+<p>분류는 두 가지 잣대로 나눕니다. <b>어떻게 생겨났느냐</b>와 <b>눈에 보이느냐</b>입니다.</p>
+<div class="term">
+<b>생겨난 과정으로</b> → <b>자연 관광자원</b>(산악·구릉·해양·하천·호수·온천 등) / <b>인문 관광자원</b>(건축물·유적·유형무형 문화재 등)<br>
+<b>눈에 보이느냐로</b> → <b>유형 관광자원</b> / <b>무형 관광자원</b>
+</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div>이 분류 기준을 정한 곳은 <b>한국관광공사</b>, 정한 해는 <b>1983년</b>입니다. 기관 이름과 연도를 바꿔치기하는 문제가 나올 수 있으니 세트로 기억하세요.</div></div>
+</div>
+</article>
+
+<article class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">국가가 붙이는 이름표 — 국가지정문화유산</div><div class="era">국보는 "보물 중에서" 뽑는다</div></div>
+<div class="body">
+<p>우리나라 문화재에 등급을 매기는 사람은 <b class="k">국가유산청장</b>입니다. 문화유산법에 근거해서, <b>문화유산위원회의 심의</b>를 거쳐 지정합니다. 이렇게 지정된 게 <b class="k">국가지정문화유산</b>이에요. 종류는 <b>국보 · 보물 · 사적 · 국가민속문화유산 · 국가무형유산 · 명승 · 천연기념물</b> 등입니다.</p>
+<p>여기서 <b>가장 중요한 한 가지</b>가 있습니다. 국보와 보물의 관계예요.</p>
+<div class="term"><b>먼저 "보물"로 지정합니다.</b> 국가유산청장이 심의를 거쳐 "이건 중요하다" 하고 지정한 유형 문화유산이 <b>보물</b>입니다.<br><br><b>그 보물들 중에서</b> 다시 "이건 가치가 유난히 크고 유래가 드물다" 하는 것만 골라 한 번 더 심의해서 지정한 게 <b>국보</b>입니다.<br><br>즉 <b class="k">국보 ⊂ 보물</b> — 국보는 보물의 <b>상위 개념</b>이지, 보물과 나란히 따로 지정되는 게 아닙니다.</div>
+<div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 회사에서 먼저 "우수사원"을 뽑고, 그 우수사원들 중에서 다시 "올해의 사원"을 뽑는 것과 같습니다. 올해의 사원은 반드시 우수사원 출신이에요. 일반 직원 중에서 바로 올해의 사원이 나오지 않습니다.</div></div>
+<p>나머지 종류도 한 줄씩만 잡아두면 됩니다.</p>
+<div class="term">
+<b>사적</b> — 절터·옛무덤·성터·궁터처럼 역사적·학술적 가치가 큰 <b>유적지(史蹟地)</b>. 즉 <b>땅·터</b>입니다.<br>
+<b>국가민속문화유산</b> — 의식주·생업·신앙·연중행사 같은 <b>풍속과 관습</b>, 그리고 거기 쓰인 의복·기구·가옥. 우리 <b>생활사</b>를 보여주는 것.<br>
+<b>국가무형유산</b> — 형태가 없어 눈에 안 보이는 것(공연·기술·의식 등).
+</div>
+<p>국가 지정을 못 받은 문화재라고 사라지는 건 아닙니다. 그중에서 <b>시·도지사</b>가 따로 <b class="k">시·도 지정 문화유산</b>으로 지정합니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사 강조 —</b> "1호 안 외워오면 시험 안 보겠다는 것과 같다"고 못박은 항목이 있습니다. 아래 <b>1호 세트</b>는 무조건입니다.</div></div>
+</div>
+</article>
+
+<article class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">유네스코가 붙이는 이름표 — 세계유산</div><div class="era">완전히 다른 제도입니다</div></div>
+<div class="body">
+<p>여기가 핵심입니다. <b>유네스코 세계유산은 우리나라 제도가 아닙니다.</b> 국제기구인 유네스코가 <b class="k">완전성 · 진정성 · 탁월한 보편적 가치</b>라는 세 가지 기준으로 전 세계를 상대로 등재하는 별개의 제도예요.</p>
+<p>그래서 이런 일이 생깁니다. <span class="quote">"국보 1호 숭례문은 당연히 유네스코 세계문화유산이겠지?"</span> — <b>아닙니다.</b> 숭례문은 우리나라가 국보로 지정했을 뿐, 유네스코에 등재된 적이 없습니다. 두 이름표는 서로 아무 관계가 없어요.</p>
+<div class="simile"><svg class="ic" width="17" height="17"><use href="#i-bulb"/></svg><div>비유하자면 — 국내 영화상과 아카데미상입니다. 국내에서 대상을 받았다고 자동으로 아카데미 후보가 되는 게 아니죠. 심사 주체도 기준도 완전히 다른 별개의 상입니다.</div></div>
+<p>우리나라가 가진 유네스코 유산은 <b>2025년 기준</b>으로 이렇습니다.</p>
+<div class="term">
+<b>세계 문화유산 15개</b> — 아래 표 전체<br>
+<b>세계 기록유산 20개</b> — 훈민정음 해례본, 조선왕조실록 등<br>
+<b>세계 자연유산</b> — <b>제주 화산섬과 용암동굴</b> (자세한 건 22단원)<br>
+<b class="k">복합유산 0개</b> — <b>우리나라에는 복합유산이 없습니다</b>
+</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사 강조 —</b> "복합유산에 해당하는 것을 고르시오"라는 선지가 나오면 <b>정답이 아예 없는(0개) 함정</b>일 수 있습니다. 복합유산 = 자연유산의 가치와 문화유산의 가치를 <b>동시에</b> 가진 유산인데, 우리나라엔 없습니다.</div></div>
+<p>그리고 이름이 비슷해서 반드시 헷갈리는 짝이 하나 있습니다.</p>
+<div class="term"><b>해인사 장경판전</b> (1995, <b>세계문화유산</b>) — 팔만대장경을 <b>보관하는 건축물</b> 자체.<br><b>해인사 대장경판 및 제경판</b> (2007, <b>세계기록유산</b>) — 그 안에 들어 있는 <b>대장경판이라는 기록물</b> 자체.<br><br>이름도 비슷하고 장소도 같지만 <b>서로 다른 유산이고 등재 연도도 다릅니다.</b> 건물은 문화유산, 안의 판은 기록유산.</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>강사가 "무조건 외우라"고 한 것:</b> 우리나라 최초의 세계문화유산 <b>3건은 전부 1995년</b> — <b>석굴암·불국사, 해인사 장경판전, 종묘</b>.</div></div>
+</div>
+</article>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 (하나도 빠짐없이)</h2>
+
+<h3>① 국보 · 보물 · 사적 1~3호</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>번호</th><th>국보</th><th>보물</th><th>사적</th></tr></thead>
+<tbody>
+<tr><td class="era">1호</td><td><b>서울 숭례문</b></td><td><b>서울 흥인지문</b></td><td><b>경주 포석정지</b></td></tr>
+<tr><td class="era">2호</td><td>서울 원각사지 십층석탑</td><td>서울 옛 보신각 동종(국립중앙박물관)</td><td>김해 봉황동 유적(패총)</td></tr>
+<tr><td class="era">3호</td><td>서울 북한산 신라 진흥왕 순수비</td><td>서울 원각사지 대원각사비(탑골공원)</td><td>수원 화성</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>② 그 밖의 1호 — 강사가 "무조건"이라고 한 것</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>1호</th><th>메모</th></tr></thead>
+<tbody>
+<tr><td class="era">천연기념물</td><td><b>대구 도동의 측백나무 숲</b></td><td>—</td></tr>
+<tr><td class="era">명승</td><td><b>강릉(명주) 청학동 소금강</b></td><td>율곡 이이와 연관</td></tr>
+<tr><td class="era">국가무형유산</td><td><b>종묘제례악</b></td><td>2호 양주 별산대놀이 · 3호 남사당놀이</td></tr>
+<tr><td class="era">국가민속문화유산</td><td><b>덕온공주당의</b></td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>③ 유네스코 세계 문화유산 15개</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>연도</th><th>명칭</th><th>핵심 내용</th></tr></thead>
+<tbody>
+<tr><td class="yr">1995</td><td><b>석굴암 · 불국사</b></td><td>신라 경덕왕 때 김대성 창건 시작 → 혜공왕 때 완공(8C)</td></tr>
+<tr><td class="yr">1995</td><td><b>해인사 장경판전</b></td><td>팔만대장경을 보관한 <b>건축물</b></td></tr>
+<tr><td class="yr">1995</td><td><b>종묘</b></td><td>조선 왕·왕비의 신주를 모신 사당, 유교 건축물 대표</td></tr>
+<tr><td class="yr">1997</td><td>창덕궁</td><td>태종 때 경복궁의 <b>이궁</b>으로 건립, 자연과의 조화</td></tr>
+<tr><td class="yr">1997</td><td>수원 화성</td><td>정조 때 <b>정약용이 거중기</b> 이용해 축조(1796)</td></tr>
+<tr><td class="yr">2000</td><td>경주 역사 유적 지구</td><td>남산·월성·대릉원·황룡사·산성 지구 (사적형 국립공원)</td></tr>
+<tr><td class="yr">2000</td><td>고창·화순·강화 고인돌 유적</td><td><b>청동기시대</b> 유물, 거석문화 유산</td></tr>
+<tr><td class="yr">2009</td><td>조선 왕릉</td><td>총 <b>42기 중 40기</b> 등재</td></tr>
+<tr><td class="yr">2010</td><td>한국의 역사 마을: <b>하회와 양동</b></td><td>14~15세기 조성, 유교적 양반 문화</td></tr>
+<tr><td class="yr">2014</td><td>남한산성</td><td>유사시 임시 수도, 사적형 <b>도립</b>공원</td></tr>
+<tr><td class="yr">2015</td><td>백제 역사 유적 지구</td><td>공주(공산성·송산리 고분군) / 익산(왕궁리·미륵사지) / 부여(관북리·부소산성·정림사지·능산리 고분군·나성)</td></tr>
+<tr><td class="yr">2018</td><td>산사, 한국의 산지 승원</td><td>법주사·마곡사·부석사·봉정사·통도사·선암사·대흥사 등 <b>9곳</b></td></tr>
+<tr><td class="yr">2019</td><td>한국의 서원</td><td>소수·도산·병산·옥산·도동·남계·필암·돈암서원 등 <b>9곳</b></td></tr>
+<tr><td class="yr">2023</td><td>가야 고분군</td><td>고령 지산동 · 김해 대성동 · 남원 유곡리·두락리 · 함안 말이산 등</td></tr>
+<tr><td class="yr">2025</td><td>울주 반구천 암각화</td><td>반구대 암각화(동물·사냥 장면), 천전리 명문·암각화</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>④ 유네스코 세계 기록유산 20개</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>연도</th><th>기록유산</th></tr></thead>
+<tbody>
+<tr><td class="yr">1997</td><td><b>훈민정음 해례본</b> · <b>조선왕조실록</b> — 최초 2건</td></tr>
+<tr><td class="yr">2001</td><td><b>불조직지심체요절</b>(청주 흥덕사, <b>현존 최고 금속활자본</b>) · 승정원일기</td></tr>
+<tr><td class="yr">2007</td><td>조선왕조 의궤 · <b>해인사 대장경판 및 제경판</b></td></tr>
+<tr><td class="yr">2009</td><td>동의보감</td></tr>
+<tr><td class="yr">2011</td><td>일성록 · 5·18 민주화운동 기록물</td></tr>
+<tr><td class="yr">2013</td><td><b>난중일기</b>(이순신 친필) · <b>새마을운동 기록물</b></td></tr>
+<tr><td class="yr">2015</td><td>한국의 유교책판</td></tr>
+<tr><td class="yr">2017</td><td>조선왕실 어보와 어책 · 국채보상운동 기록물 · 조선통신사 기록물</td></tr>
+<tr><td class="yr">2023</td><td>동학농민혁명 기록물 · 4·19혁명 기록물</td></tr>
+<tr><td class="yr">2025</td><td>제주 4·3 기록물 · 산림녹화 기록물</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>⑤ 국가무형유산 · 국가민속문화유산 대표 사례</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>구분</th><th>사례</th></tr></thead>
+<tbody>
+<tr><td class="era">국가무형유산</td><td><b>1호 종묘제례악</b> · 2호 양주 별산대놀이 · 3호 남사당놀이 · 판소리 · 강강술래 · 농악 · 강릉단오제 · 북청사자놀음 · 봉산탈춤</td></tr>
+<tr><td class="era">국가민속<br>문화유산</td><td><b>1호 덕온공주당의</b> · 강릉 선교장 · 남원 실상사 석장승 · 방상시탈 · <b>안동 하회마을</b> · <b>경주 양동마을</b> · 삼척 대이리 굴피집</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 빈출 핵심 암기표 — 이것만은</h2>
+<p class="sub">위 표가 "하나도 빠짐없이"라면, 이건 "시간 없으면 이것만". 강사가 직접 강조한 것과 교재가 함정으로 지목한 것만 뽑았습니다.</p>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>최초 세계문화유산 3건(1995):</b> 석굴암·불국사 / 해인사 장경판전 / 종묘 — "무조건 외우라"</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>우리나라 복합유산 = 0개.</b> 선지에 나오면 정답 없음 함정</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>국보는 "보물 중에서"</b> 지정. "시·도 문화유산 중에서"가 아님</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>1호 세트:</b> 국보 숭례문 / 보물 흥인지문 / 사적 포석정지 / 천연기념물 대구 도동 측백나무 숲 / 명승 청학동 소금강 / 국가무형유산 종묘제례악</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>숭례문(국보 1호)은 유네스코 세계문화유산이 아니다</b> — 가장 잦은 함정</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>2013년 기록유산 2건:</b> 난중일기 · 새마을운동 기록물</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>분류 기준:</b> 한국관광공사, <b>1983년</b></div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>4대 성질:</b> 경제성 → 가변성 → 유한성 → 보전성</div></li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">0단원에서 점수를 깎아먹는 지점은 이 다섯 군데입니다.</p>
+<div class="cmp">
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 국보와 보물의 관계</h4>
+<div class="vs">
+<div class="side a"><b>보물</b>먼저 지정</div>
+<div class="mid">→</div>
+<div class="side n"><b>국보</b>보물 중에서 다시</div>
+</div>
+<p class="why">국보는 <b>보물의 상위 개념</b>. "시·도 문화유산 중에서 국보를 지정한다" → <b>틀린 문장</b>.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 두 개의 다른 제도</h4>
+<div class="vs">
+<div class="side a"><b>국가지정문화유산</b>국가유산청장</div>
+<div class="mid">≠</div>
+<div class="side b"><b>유네스코 세계유산</b>유네스코</div>
+</div>
+<p class="why"><b>숭례문(국보 1호)·흥인지문(보물 1호)은 유네스코 세계문화유산이 아닙니다.</b> "국보니까 당연히 세계유산" 착각 금지.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 해인사 이름 두 개</h4>
+<div class="vs">
+<div class="side a"><b>장경판전</b>1995 · 문화유산</div>
+<div class="mid">vs</div>
+<div class="side b"><b>대장경판·제경판</b>2007 · 기록유산</div>
+</div>
+<p class="why"><b>건물은 문화유산, 안에 든 판은 기록유산.</b> 등재 연도도 12년 차이.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 복합유산</h4>
+<div class="vs">
+<div class="side n"><b>문화 15 · 기록 20</b>있음</div>
+<div class="mid">vs</div>
+<div class="side x"><b>복합유산 0개</b>없음</div>
+</div>
+<p class="why">자연 + 문화 가치를 동시에 가진 <b>복합유산은 우리나라에 없습니다.</b> 자연유산은 <b>제주 화산섬과 용암동굴</b> 하나.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 사적과 명승</h4>
+<div class="vs">
+<div class="side a"><b>사적</b>절터·무덤·성터·궁터</div>
+<div class="mid">vs</div>
+<div class="side n"><b>명승</b>경치가 아름다운 곳</div>
+</div>
+<p class="why">사적은 <b>역사·학술 가치가 있는 터(史蹟地)</b>, 명승은 <b>경관</b>. 사적 1호 <b>경주 포석정지</b>, 명승 1호 <b>청학동 소금강</b>.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="16" height="16"><use href="#i-alert"/></svg> 공원 유형</h4>
+<div class="vs">
+<div class="side a"><b>경주 역사 유적 지구</b>사적형 <b>국립</b>공원</div>
+<div class="mid">vs</div>
+<div class="side b"><b>남한산성</b>사적형 <b>도립</b>공원</div>
+</div>
+<p class="why">둘 다 "사적형"이지만 <b>국립 / 도립</b>이 다릅니다. 바꿔치기 함정 주의.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 예상문제 12문항</h2>
+<div class="notice">
+<b>⚠️ 이건 기출문제가 아니라 예상문제입니다.</b> 관광자원해설은 국사와 달리 <b>기출 원문 정리본이 아직 없습니다</b> — 원본 <code>관광자원해설 기출.pdf</code>(2013~2025, 137제)가 스캔 이미지라 텍스트가 추출되지 않기 때문입니다. 아래 12문항은 <b>교재 본문의 사실과 강사 강조 지점만으로</b> 만든 것이라 내용은 정확하지만, 실제 출제 문장은 아닙니다. 기출 원문을 추출해 정리하면 국사처럼 진짜 기출로 교체해 드립니다.
+</div>
+<p class="sub">보기를 눌러 답을 고르고, 다 풀면 <b>채점하기</b>를 누르세요. <b>권장 시간 12분</b>.</p>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="timer">00:00</span>
+<span class="prog" id="prog">0 / 12 선택</span>
+<button class="btn" id="grade">채점하기</button>
+<button class="btn ghost" id="reset">다시 풀기</button>
+</div>
+<div id="quiz"></div>
+<div class="score" id="score">
+<div class="big" id="scoreNum">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongList"></div>
+<div class="acts">
+<button class="btn" id="retryWrong">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" id="retryAll">12문항 전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb"><svg width="16" height="16" style="color:var(--gold)"><use href="#i-book"/></svg> 오답노트용 기록 — 복사해서 채팅에 붙여넣으면 파일로 저장해 드립니다</div>
+<textarea id="exportTxt" readonly></textarea>
+<div class="acts" style="margin-top:10px;justify-content:flex-start">
+<button class="btn" id="copyBtn">복사하기</button>
+<span class="hint" id="copyMsg"></span>
+</div>
+<p class="hint">※ 이 페이지는 결과를 저장하지 않습니다(새로고침하면 사라짐).</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — <code>02_ 과목별교재/md파일/관광자원.md</code> 0단원 (핵심.pdf 원본 인쇄 1~4쪽). 세계유산 개수는 2025년 기준.</p>
+<p><b>이해가 안 되면 → 강의 위치</b>: 기출문제풀이 <b>7월 10일 영상 약 1시간 5분 ~ 1시간 48분</b> 구간.</p>
+<p>2026-08-12 제작 · 시험일 2026-09-05 (D-24)</p>
+</footer>
+</div>
+
+<script>
+const QS = [
+{n:1, era:"개념",
+q:"관광자원의 성질에 관한 설명으로 옳지 않은 것은?",
+o:["개발하면 투자한 만큼 효과가 커서 경제성이 있다","시대나 관광객의 취향이 바뀌면 가치도 변한다","한번 훼손되어도 원상태로 쉽게 복구할 수 있다","지속적인 보호·보존이 필요하다"],
+a:2, e:"관광자원은 <b>유한성</b>이 있어 한번 무분별하게 훼손되면 <b>되돌리기 어렵습니다.</b> 그래서 보전성이 따라옵니다. ①경제성 ②가변성 ④보전성은 모두 맞는 설명."},
+
+{n:2, era:"개념",
+q:"관광자원의 분류 기준을 정한 기관과 연도로 옳은 것은?",
+o:["문화체육관광부 · 1975년","한국관광공사 · 1983년","국가유산청 · 1983년","한국관광협회중앙회 · 1975년"],
+a:1, e:"자연/인문, 유형/무형으로 나누는 이 분류 체계는 <b>한국관광공사</b>가 <b>1983년</b>에 정했습니다. 기관과 연도를 바꿔치기하는 문제에 주의."},
+
+{n:3, era:"국가지정",
+q:"국보의 지정에 관한 설명으로 옳은 것은?",
+o:["시·도지정문화유산 중에서 가치가 큰 것을 지정한다","보물 중에서 가치가 크고 유래가 드문 것을 다시 지정한다","보물과는 별개로 처음부터 국보로 지정한다","국가무형유산 중에서 특히 중요한 것을 지정한다"],
+a:1, e:"<b>국보 ⊂ 보물</b>입니다. 먼저 보물로 지정한 뒤, 그중 가치가 특별히 크고 유래가 드문 것을 다시 심의해 국보로 지정합니다. 강사가 <b>\"시·도 문화유산 중에서가 아니라 보물 중에서\"</b>라고 콕 집은 지점."},
+
+{n:4, era:"국가지정",
+q:"국보 1호 · 보물 1호 · 사적 1호의 연결로 옳은 것은?",
+o:["숭례문 - 흥인지문 - 경주 포석정지","흥인지문 - 숭례문 - 수원 화성","숭례문 - 원각사지 십층석탑 - 김해 봉황동 유적","원각사지 십층석탑 - 흥인지문 - 경주 포석정지"],
+a:0, e:"<b>국보 1호 서울 숭례문 / 보물 1호 서울 흥인지문 / 사적 1호 경주 포석정지</b>. 참고로 원각사지 십층석탑은 <b>국보 2호</b>, 김해 봉황동 유적은 <b>사적 2호</b>, 수원 화성은 <b>사적 3호</b>."},
+
+{n:5, era:"국가지정",
+q:"각 분야 1호로 지정된 것의 연결이 옳지 않은 것은?",
+o:["천연기념물 1호 - 대구 도동의 측백나무 숲","명승 1호 - 강릉(명주) 청학동 소금강","국가무형유산 1호 - 남사당놀이","국가민속문화유산 1호 - 덕온공주당의"],
+a:2, e:"<b>국가무형유산 1호는 종묘제례악</b>입니다. 남사당놀이는 <b>3호</b>, 양주 별산대놀이가 2호. 강사가 \"1호 안 외워오면 시험 안 보겠다는 것과 같다\"고 강조한 부분."},
+
+{n:6, era:"국가지정",
+q:"다음 설명에 해당하는 국가지정문화유산의 종류는?",
+stem:"\"절터, 옛무덤, 성터, 궁터 등 역사적·학술적 가치가 큰 유적지\"",
+o:["명승","사적","국가민속문화유산","국가무형유산"],
+a:1, e:"<b>사적(史蹟地)</b> — 역사적·학술적 가치가 큰 <b>터</b>입니다. 명승은 <b>경치</b>가 아름다운 곳, 국가민속문화유산은 <b>생활사</b>(풍속·관습과 의복·기구·가옥), 국가무형유산은 <b>형태가 없는 것</b>."},
+
+{n:7, era:"유네스코",
+q:"우리나라 유네스코 세계유산에 관한 설명으로 옳지 않은 것은?",
+o:["세계 문화유산은 15개이다","세계 기록유산은 20개이다","세계 자연유산으로 제주 화산섬과 용암동굴이 있다","자연과 문화의 가치를 함께 지닌 복합유산이 1개 있다"],
+a:3, e:"<b>우리나라에는 복합유산이 없습니다(0개).</b> 강사가 특히 강조한 함정 — 선지에 \"복합유산에 해당하는 것\"이 나오면 정답이 아예 없을 수 있습니다."},
+
+{n:8, era:"유네스코",
+q:"1995년에 우리나라 최초로 유네스코 세계문화유산에 등재된 것을 모두 고른 것은?",
+stem:"ㄱ. 석굴암·불국사 &nbsp; ㄴ. 창덕궁 &nbsp; ㄷ. 해인사 장경판전 &nbsp; ㄹ. 종묘 &nbsp; ㅁ. 수원 화성",
+o:["ㄱ, ㄴ, ㄷ","ㄱ, ㄷ, ㄹ","ㄴ, ㄹ, ㅁ","ㄱ, ㄹ, ㅁ"],
+a:1, e:"최초 3건은 전부 <b>1995년 — 석굴암·불국사, 해인사 장경판전, 종묘</b>. 강사가 \"무조건 외우라\"고 한 항목입니다. <b>창덕궁과 수원 화성은 1997년</b>."},
+
+{n:9, era:"유네스코",
+q:"유네스코 세계유산 등재 연도의 연결로 옳지 않은 것은?",
+o:["수원 화성 - 1997년","조선 왕릉 - 2009년","한국의 서원 - 2019년","가야 고분군 - 2018년"],
+a:3, e:"<b>가야 고분군은 2023년</b> 등재입니다. 2018년은 <b>산사, 한국의 산지 승원</b>(법주사·마곡사·부석사·봉정사·통도사·선암사·대흥사 등 9곳)."},
+
+{n:10, era:"유네스코",
+q:"해인사와 관련된 두 유산에 관한 설명으로 옳은 것은?",
+o:["해인사 장경판전은 2007년 세계기록유산으로 등재되었다","해인사 대장경판 및 제경판은 1995년 세계문화유산으로 등재되었다","장경판전은 1995년 세계문화유산, 대장경판 및 제경판은 2007년 세계기록유산이다","둘은 같은 유산을 부르는 다른 이름이며 1995년에 함께 등재되었다"],
+a:2, e:"<b>건물(장경판전)은 1995년 세계문화유산</b>, <b>안에 든 판(대장경판 및 제경판)은 2007년 세계기록유산</b>입니다. 이름이 비슷하지만 서로 다른 유산이고 제도도 연도도 다릅니다."},
+
+{n:11, era:"유네스코",
+q:"2013년에 유네스코 세계기록유산으로 등재된 것을 모두 고른 것은?",
+stem:"ㄱ. 난중일기 &nbsp; ㄴ. 동의보감 &nbsp; ㄷ. 새마을운동 기록물 &nbsp; ㄹ. 일성록",
+o:["ㄱ, ㄴ","ㄱ, ㄷ","ㄴ, ㄹ","ㄷ, ㄹ"],
+a:1, e:"2013년 등재 2건은 <b>난중일기</b>(이순신 친필)와 <b>새마을운동 기록물</b>입니다. 동의보감은 <b>2009년</b>, 일성록은 <b>2011년</b>."},
+
+{n:12, era:"통합",
+q:"다음 중 유네스코 세계문화유산에 등재된 것을 모두 고른 것은?",
+stem:"ㄱ. 남한산성 &nbsp; ㄴ. 서울 흥인지문 &nbsp; ㄷ. 서울 숭례문 &nbsp; ㄹ. 조선 왕릉",
+o:["ㄱ, ㄴ","ㄱ, ㄹ","ㄴ, ㄷ","ㄷ, ㄹ"],
+a:1, e:"<b>남한산성(2014)·조선 왕릉(2009)</b>이 세계문화유산입니다. <b>흥인지문은 보물 1호, 숭례문은 국보 1호</b>로 <b>국가지정문화유산일 뿐 유네스코 등재 유산이 아닙니다.</b> 두 제도를 섞는 게 이 단원 최대 함정."}
+];
+
+const NUMS = ["①","②","③","④"];
+let ACTIVE = QS.slice();
+let picked = {};
+let graded = false, t0 = null, tick = null, elapsed = 0;
+let lastWrong = [];
+function render(){
+  const box = document.getElementById('quiz');
+  box.innerHTML = ACTIVE.map((q,i)=>`
+  <div class="q" id="q${i}">
+    <div class="qh"><span class="qn">Q${q.n}</span><span class="qt">${q.q}</span><span class="yr">${q.era}</span></div>
+    ${q.stem?`<div class="stem">${q.stem}</div>`:''}
+    <ul class="opts">${q.o.map((o,j)=>`<li data-q="${i}" data-o="${j}"><span class="no">${NUMS[j]}</span><span>${o}</span></li>`).join('')}</ul>
+    <div class="exp"><b>왜 그런가 —</b> ${q.e}</div>
+  </div>`).join('');
+  box.querySelectorAll('.opts li').forEach(li=>{
+    li.addEventListener('click',()=>{
+      if(graded) return;
+      startTimer();
+      const qi = +li.dataset.q, oi = +li.dataset.o;
+      picked[qi] = oi;
+      li.parentNode.querySelectorAll('li').forEach(x=>x.classList.remove('sel'));
+      li.classList.add('sel');
+      updateProg();
+    });
+  });
+  updateProg();
+}
+function updateProg(){ document.getElementById('prog').textContent = `${Object.keys(picked).length} / ${ACTIVE.length} 선택`; }
+function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }
+function startTimer(){
+  if(t0) return;
+  t0 = performance.now();
+  tick = setInterval(()=>{ elapsed = Math.floor((performance.now()-t0)/1000); document.getElementById('timer').textContent = fmt(elapsed); },500);
+}
+function grade(){
+  if(graded) return;
+  graded = true;
+  if(tick) clearInterval(tick);
+  if(t0) elapsed = Math.floor((performance.now()-t0)/1000);
+  let right = 0; const byEra = {}; lastWrong = [];
+  ACTIVE.forEach((q,i)=>{
+    const el = document.getElementById('q'+i);
+    el.classList.add('graded');
+    const lis = el.querySelectorAll('.opts li');
+    const sel = picked[i];
+    const ok = sel === q.a;
+    if(ok) right++; else lastWrong.push({q:q, mine:sel});
+    byEra[q.era] = byEra[q.era] || [0,0];
+    byEra[q.era][1]++; if(ok) byEra[q.era][0]++;
+    lis.forEach((li,j)=>{
+      li.classList.remove('sel');
+      if(j===q.a){ li.classList.add('correct'); li.insertAdjacentHTML('beforeend','<span class="mark o">정답</span>'); }
+      if(j===sel && !ok){ li.classList.add('wrong'); li.insertAdjacentHTML('beforeend','<span class="mark x">내가 고른 답</span>'); }
+    });
+    if(sel===undefined){ el.querySelector('.opts').insertAdjacentHTML('beforebegin','<div class="stem" style="color:var(--warn)">답을 고르지 않았습니다.</div>'); }
+  });
+  const pct = Math.round(right/ACTIVE.length*100);
+  const sc = document.getElementById('score');
+  sc.classList.add('on');
+  document.getElementById('scoreNum').textContent = pct + '점';
+  let msg;
+  if(pct>=80) msg = '0단원은 잡혔습니다. 1단원(전통건축-지붕)으로 넘어가세요.';
+  else if(pct>=60) msg = '합격선은 넘겼습니다. 틀린 문항의 제도 구분(국가 vs 유네스코)을 다시 보세요.';
+  else if(pct>=40) msg = '두 제도를 섞고 계십니다. 위 비교카드 2번·4번을 집중해서 보세요.';
+  else msg = '스토리 3편을 다시 읽고 재도전하세요. 특히 "국보는 보물 중에서"와 "복합유산 0개"부터.';
+  document.getElementById('scoreLab').innerHTML = `${ACTIVE.length}문항 중 <b>${right}문항</b> 정답 · 소요 ${fmt(elapsed)} · ${msg}`;
+  document.getElementById('scoreBrk').innerHTML = Object.entries(byEra).map(([k,v])=>`<span>${k} ${v[0]}/${v[1]}</span>`).join('');
+  const wl = document.getElementById('wrongList');
+  if(lastWrong.length===0){ wl.innerHTML = '<b>틀린 문항 없음</b> — 전부 맞히셨습니다.'; }
+  else {
+    wl.innerHTML = `<b>틀린 문항 ${lastWrong.length}개</b>` + '<ul>' + lastWrong.map(w=>{
+      const mine = (w.mine===undefined) ? '무응답' : `${NUMS[w.mine]} ${w.q.o[w.mine]}`;
+      return `<li><b>Q${w.q.n}</b> (${w.q.era}) — 내 답 <b>${mine}</b> / 정답 <b>${NUMS[w.q.a]} ${w.q.o[w.q.a]}</b></li>`;
+    }).join('') + '</ul>';
+  }
+  document.getElementById('retryWrong').disabled = (lastWrong.length===0);
+  let txt = `[오답노트 기록] 관광자원해설 0단원 관광자원의 개념과 문화유산 체계\n`;
+  txt += `점수: ${right}/${ACTIVE.length} (${pct}점) · 소요시간 ${fmt(elapsed)}\n`;
+  txt += `주제별: ` + Object.entries(byEra).map(([k,v])=>`${k} ${v[0]}/${v[1]}`).join(' / ') + `\n`;
+  txt += `틀린 문항 ${lastWrong.length}개\n`;
+  lastWrong.forEach(w=>{
+    const mine = (w.mine===undefined) ? '무응답' : NUMS[w.mine];
+    txt += `- Q${w.q.n} (${w.q.era}) ${w.q.q}\n`;
+    txt += `   내 답 ${mine}${w.mine!==undefined?' '+w.q.o[w.mine]:''} / 정답 ${NUMS[w.q.a]} ${w.q.o[w.q.a]}\n`;
+  });
+  document.getElementById('exportTxt').value = txt;
+  window.scrollTo({top: sc.offsetTop - 90, behavior:'smooth'});
+}
+function resetQuiz(set){
+  ACTIVE = set;
+  graded=false; t0=null; elapsed=0; if(tick) clearInterval(tick);
+  picked = {};
+  document.getElementById('timer').textContent='00:00';
+  document.getElementById('score').classList.remove('on');
+  document.getElementById('copyMsg').textContent='';
+  render();
+  window.scrollTo({top:document.getElementById('quiz').offsetTop-140, behavior:'smooth'});
+}
+document.getElementById('grade').addEventListener('click', grade);
+document.getElementById('reset').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryAll').addEventListener('click', ()=>resetQuiz(QS.slice()));
+document.getElementById('retryWrong').addEventListener('click', ()=>{ if(!lastWrong.length) return; resetQuiz(lastWrong.map(w=>w.q)); });
+document.getElementById('copyBtn').addEventListener('click', async ()=>{
+  const ta = document.getElementById('exportTxt'); const msg = document.getElementById('copyMsg');
+  try{ await navigator.clipboard.writeText(ta.value); msg.textContent='복사됐습니다. 채팅에 붙여넣어 주세요.'; }
+  catch(e){ ta.removeAttribute('readonly'); ta.select(); ta.setSelectionRange(0,99999);
+    try{ document.execCommand('copy'); msg.textContent='복사됐습니다.'; }catch(_){ msg.textContent='길게 눌러서 직접 복사해 주세요.'; }
+    ta.setAttribute('readonly',''); }
+});
+render();
+</script>
+</body>
+</html>

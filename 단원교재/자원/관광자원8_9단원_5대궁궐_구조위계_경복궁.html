@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 8·9단원 · 5대 궁궐 — 궁궐의 구조·위계 / 경복궁</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.pillar,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(3,1fr)}}
+.pillar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.pillar .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.pillar .p b{display:block;font-size:15px;margin-bottom:8px;color:var(--bro)}
+.pillar .p .fig{font-family:ui-monospace,Menlo,monospace;font-size:13px;line-height:1.25;white-space:pre;color:var(--ink-2);margin:6px 0 8px}
+.pillar .p span{font-size:13px;color:var(--ink-2);display:block}
+@media(max-width:560px){.pillar{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 8·9단원</div>
+<h1>5대 궁궐 — 궁궐의 구조·위계 / 경복궁
+<small>궁궐은 <b>앞은 사무실, 뒤는 집</b>입니다. 이 한 줄만 잡으면 다섯 궁궐이 전부 같은 구조로 보입니다</small>
+</h1>
+<div class="meta">
+<span class="chip hot">★★★ 정전·편전·정문은 무조건 암기</span>
+<span class="chip">궁궐 기출 15문항 / 136문항</span>
+<span class="chip">경복궁 15회 · 근정전 8회</span>
+<span class="chip">「편전」이라는 단어는 13년간 0회</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 궁궐은 「앞은 사무실, 뒤는 집」</h2>
+<p class="sub">궁궐이 어려운 이유는 건물 이름이 스무 개씩 쏟아지기 때문입니다. 그런데 그 스무 개는 딱 두 덩어리로 나뉩니다.</p>
+
+<div class="flow">
+<b class="hi">정문</b><i>→</i><b>조정(앞마당)</b><i>→</i><b class="hi">정전</b><i>→</i><b class="hi">편전</b><i>│ 여기까지 <b>외전 = 사무실</b> │</i><b>대전(왕)</b><i>·</i><b>중궁전(왕비)</b><i>·</i><b>동궁(세자)</b><i>│ <b>내전 = 집</b></i>
+</div>
+
+<p>이 배치에는 이름까지 붙어 있습니다. <b class="k">전조후침(前朝後寢)</b> — <b>앞(前)에는 조정(朝), 뒤(後)에는 침전(寢)</b>. 딱 네 글자가 궁궐 전체의 설계도입니다. 그리고 궁궐 밖 좌우에는 <b class="k">좌묘우사(左廟右社)</b> — 왼쪽에 종묘, 오른쪽에 사직단이 섭니다.</p>
+
+<div class="tl">
+<div class="t1"><b>8단원 · 구조와 위계</b><span>모든 궁궐에 공통으로 적용되는 <b>규칙</b>. 정전·편전·조정·외전·내전·동궁·중궁전, 그리고 「전당합각재헌누정」 서열.</span></div>
+<div class="t2"><b>9단원 · 경복궁</b><span>그 규칙이 실제로 적용된 <b>첫 번째 사례</b>이자 조선의 <b>정궁</b>. 근정전·사정전·광화문·교태전·경회루.</span></div>
+<div class="t3"><b>10~13단원 · 나머지 4궁</b><span>창덕궁·창경궁·덕수궁·경희궁. 같은 규칙에 <b>이름만 바꿔 끼운 것</b>이라 8·9단원을 잡으면 절반은 끝납니다.</span></div>
+</div>
+
+<div class="pick">
+<svg class="ic" width="18" height="18"><use href="#i-star"/></svg>
+<div><b>강사가 「오늘의 하이라이트」라며 별 3개를 친 문장</b> — “5대 궁궐 각각의 <b>정전·편전·정문</b>은 무조건 외워야 한다.” 이 페이지에서는 <b>경복궁 = 근정전·사정전·광화문</b>을 확실히 박아두고, 나머지 4궁은 다음 묶음에서 이어갑니다.</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-book"/></svg> 이야기로 이해하기</h2>
+<p class="sub">외우기 전에 먼저 그림이 그려져야 합니다. 광화문 앞에 서서 안쪽으로 한 번 걸어 들어가 보겠습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">광화문에서 교태전까지 — 궁궐을 한 번 걸어봅니다</div><div class="era">외전·내전</div></div>
+<div class="body">
+<p>지금 우리는 <b class="k">광화문</b> 앞에 서 있습니다. 궁궐의 <b>정문</b>입니다. 이 문을 지나면 눈앞에 넓디넓은 돌바닥 마당이 펼쳐집니다. 이 마당의 이름이 <b class="k">조정(朝廷)</b>입니다. 우리가 흔히 “조정 대신들이 반대했다”라고 할 때의 바로 그 조정이에요. 원래는 <b>건물이 아니라 마당 이름</b>이었습니다. 신하들이 이 마당에 줄을 서서 왕에게 인사를 올렸기 때문에, 그 마당에 모인 사람들 전체를 가리키는 말로 뜻이 넓어진 것입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>조정(朝廷)</b>의 <b>조(朝)</b>는 「아침」이면서 동시에 「임금을 뵙는 일」이라는 뜻입니다. 신하들이 <b>아침마다</b> 나와 임금께 문안을 올렸기 때문이에요. 그래서 이 아침 인사를 <b>조회(朝會)</b>, 이 예절을 <b>조례(朝禮)</b>라고 부릅니다. <b>「조회를 받던 곳이 어디냐」는 기출 문제가 실제로 나왔습니다</b>(2016년).</div>
+<p>마당 한가운데를 보면 돌길이 세 갈래로 나 있습니다. 이걸 <b class="k">삼도(三道)</b>라고 하고, 그중 <b>가운데 한 줄이 왕만 밟을 수 있는 길</b>인 <b class="k">어도(御道)</b>입니다. 나머지 양쪽 두 줄이 신하들의 길이에요. 왕은 늘 정중앙, 신하는 좌우 — 길바닥에까지 신분이 새겨져 있었던 셈입니다.</p>
+<p>그 마당 끝, 두 겹 돌기단(월대) 위에 우뚝 선 건물이 <b class="k">근정전</b>입니다. 이것이 <b class="k">정전(正殿)</b>이에요. 왕의 즉위식, 신하들의 조회, 외국 사신 접견 — <b>나라의 공식 행사는 전부 여기서</b> 치렀습니다. 그래서 정전을 <b>법전(法殿)</b>이라고도 부릅니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사로 바꿔 보면 이렇습니다. <b>정전 = 큰 강당(입사식·창립기념식·중요 손님 맞이하는 곳)</b>, <b>편전 = 사장님 집무실(매일 실무 보는 방)</b>. 강당은 크고 화려하지만 <b>매일 쓰지는 않고</b>, 집무실은 소박해도 <b>매일 쓰는 방</b>입니다. 궁궐도 똑같아요.</div></div>
+<p>근정전 뒤로 돌아가면 조금 작은 건물이 나옵니다. <b class="k">사정전</b>, 곧 <b class="k">편전(便殿)</b>입니다. 왕이 <b>매일 신하들과 실무 회의를 하던 사무실</b>이에요. 정전이 「행사장」이라면 편전은 「집무실」입니다. 여기까지가 궁궐의 <b class="k">외전(外殿)</b> — 정문에서 조정을 지나 정전·편전까지, 즉 <b>공적인 업무 구간</b>입니다.</p>
+<p>편전을 지나 더 안쪽으로 들어가면 분위기가 확 바뀝니다. 이제부터가 <b class="k">내전(內殿)</b>, 사람이 <b>사는 집</b>입니다. 왕이 잠자는 <b class="k">대전(大殿)</b>(경복궁에서는 강녕전), 왕비가 사는 <b class="k">중궁전(中宮殿)</b>(경복궁에서는 교태전), 그리고 내전에서 볼 때 <b>동쪽</b>에 자리한 세자의 공간 <b class="k">동궁(東宮)</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 사극에서 왕비를 <b>“중전마마”</b>라고 부르죠. 그 「중전」이 바로 <b>중궁전(中宮殿)</b>의 줄임말입니다. <b>궁궐 한가운데(中) 사는 분</b>이라는 뜻이에요. 세자를 <b>“동궁마마”</b>라고 부르는 것도 똑같은 원리 — <b>동쪽(東)에 사는 분</b>입니다. 왜 하필 동쪽이냐면, <b>해가 뜨는 방향 = 다음에 떠오를 사람</b>이라는 상징 때문입니다. 이 한 줄만 알면 동궁·중궁은 평생 안 헷갈립니다.</div>
+<p>정리하면 이렇습니다. <b>정문 → 조정 → 정전 → 편전</b>까지가 <b>외전(사무실)</b>, 그 뒤의 <b>대전·중궁전·동궁</b>이 <b>내전(집)</b>. 앞에 조정, 뒤에 침전 — 이것이 <b class="k">전조후침</b>입니다.</p>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">이름의 끝 글자만 봐도 서열이 보입니다 — 전당합각재헌누정</div><div class="era">건물 위계</div></div>
+<div class="body">
+<p>궁궐 건물 이름을 쭉 보면 끝 글자가 제각각입니다. 근정<b>전</b>, 자선<b>당</b>, 규장<b>각</b>, 낙선<b>재</b>, 경회<b>루</b>, 향원<b>정</b>. 이게 그냥 멋으로 붙인 게 아니라 <b>정확한 서열</b>입니다. 조선은 건물 이름 끝 글자 하나로 <b>누가 쓰는 건물인지, 얼마나 격이 높은지</b>를 표시했습니다.</p>
+<div class="term"><b>암기법 —</b> <b>“전당합각재헌누정”</b>. 여덟 글자를 노래하듯 순서대로 외우면 그대로 <b>높은 것 → 낮은 것</b> 순입니다. <b>전 &gt; 당 &gt; 합 &gt; 각 &gt; 재 &gt; 헌 &gt; 누 &gt; 정</b>.</div>
+<p>맨 앞의 <b class="k">전(殿)</b>이 최고 등급입니다. <b>왕·왕비·대비</b>만 쓸 수 있어요. 근정전(정전)·사정전(편전)·교태전(왕비)·자경전(대비) — 전부 「전」입니다. 그 다음이 <b class="k">당(堂)</b>인데, <b>세자</b>의 공간입니다. 경복궁 세자의 거처 <b>자선당</b>이 대표적이에요.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사 사무실 크기와 똑같습니다. <b>전 = 사장·회장실</b>, <b>당 = 부사장(후계자)실</b>. 크기와 겉모습은 비슷해 보여도 <b>이름표가 다르면 급이 다릅니다.</b> 시험은 바로 이 「전 vs 당」을 노립니다.</div></div>
+<p>이어서 <b class="k">합(閤)·각(閣)</b>은 큰 건물에 딸린 <b>부속 건물</b>입니다. 창덕궁의 <b>규장각</b>이 그 예예요. <b class="k">재(齋)</b>는 조용히 <b>책 읽고 사색하는 거처</b>라서, 창덕궁 <b>낙선재</b>가 단청도 칠하지 않은 소박한 모습인 것이 우연이 아닙니다. <b class="k">헌(軒)</b>은 대청마루가 있는 업무 공간이고요.</p>
+<p>마지막 둘이 재미있습니다. <b class="k">누(樓)</b>는 <b>사람 키 높이만큼 마루를 띄운</b> 건물입니다. 경복궁 <b>경회루</b>가 딱 그렇죠 — 연못 위에 다리 같은 기둥을 세우고 그 위에 마루를 올렸습니다. <b class="k">정(亭)</b>은 <b>경치 좋은 곳에 세운 작은 정자</b>, 경복궁의 <b>향원정</b>이 그렇습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>시험에 나오는 방식</b> — “다음 중 건물의 위계가 가장 높은 것은?” 또는 “세자가 거처하는 건물의 명칭으로 옳은 것은?” 형태입니다. <b>전=왕·왕비·대비 / 당=세자</b> 이 한 줄이 핵심이고, 나머지는 <b>순서만</b> 외우면 됩니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">궁·궁·궁 — 정궁, 이궁, 행궁, 그리고 행재소</div><div class="era">기출 직결</div></div>
+<div class="body">
+<p>여기가 <b>8단원에서 실제로 기출이 나온 자리</b>입니다. 「궁」이 붙은 말이 너무 많아서 헷갈리는데, 딱 두 갈래로 나누면 끝납니다. <b>① 어느 궁궐이냐(장소의 급)</b> — 정궁·이궁·행궁·행재소. <b>② 누가 사느냐(사람의 방위)</b> — 동궁·중궁·서궁.</p>
+<p>먼저 <b>장소의 급</b>입니다. <b class="k">정궁(正宮)</b>은 왕이 <b>실제로 상주하는 으뜸 궁궐</b>이고, 다른 말로 <b class="k">법궁(法宮)</b>이라고도 합니다. 조선의 정궁은 <b>경복궁</b>이에요. <b class="k">이궁(離宮)</b>은 <b>「떠날 이(離)」</b> — 정궁을 떠나 임시로 머무는 <b>또 하나의 궁궐</b>입니다. 창덕궁이 처음 지어질 때가 바로 <b>이궁</b>이었습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>행궁(行宮)</b>과 <b>행재소(行在所)</b>가 마지막 함정입니다. <b>행궁</b>은 왕이 지방에 나갔을 때 머무는 궁이고, <b>행재소</b>는 그중에서도 <b>궁궐이 아닌 임시 거처</b>를 가리킵니다 — 온천, 법주사, 수원 화성, 남한산성 같은 곳이에요. 핵심은 <b>이궁은 「궁궐」이지만 행재소는 「궁궐이 아니다」</b>라는 것입니다.</div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사 건물로 바꾸면 — <b>정궁 = 본사</b>, <b>이궁 = 제2사옥(정식 사옥)</b>, <b>행궁·행재소 = 출장 갔을 때 묵는 숙소</b>. 제2사옥은 회사 건물이지만, 출장 숙소는 회사 건물이 아니죠. 딱 그 차이입니다.</div></div>
+<p>다음은 <b>사람의 방위</b>입니다. 2013년 기출이 이걸 그대로 물었습니다. <b class="k">동궁 = 세자</b>(동쪽·해 뜨는 곳), <b class="k">중궁 = 왕비</b>(가운데), <b class="k">서궁 = 대비</b>(서쪽). 시험은 여기서 <b>“동궁 — 후궁의 침전”</b>처럼 <b>한 칸만 슬쩍 바꿔</b> 놓습니다. <b>동궁은 후궁이 아니라 세자</b>입니다. 이 한 문제가 실제로 2013년에 그대로 나왔어요.</p>
+<p>2015년에는 반대 방향으로 물었습니다. <b>“왕이 궁궐을 떠나 지방에서 임시로 머무르는 궁은?”</b> 보기가 ①동궁 ②행궁 ③중궁 ④서궁이었어요. 답은 <b>행궁</b>입니다. <b>동·중·서는 사람</b>, <b>행은 이동</b> — 이 구분만 서 있으면 3초 문제입니다.</p>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">궁궐 왼쪽엔 조상, 오른쪽엔 땅과 곡식 — 좌묘우사</div><div class="era">배치 원리</div></div>
+<div class="body">
+<p>궁궐은 건물 하나가 아니라 <b>도시 설계</b>였습니다. 조선을 세운 사람들은 중국 고전의 원칙을 따라 <b>경복궁을 한가운데 두고, 왼쪽에 하나 오른쪽에 하나</b>를 세웠습니다. 이것이 <b class="k">좌묘우사(左廟右社)</b>입니다.</p>
+<p><b>왼쪽(동쪽)의 「묘」</b>는 <b class="k">종묘(宗廟)</b> — 역대 <b>왕과 왕비의 신주를 모시고 제사</b>를 지내는 곳입니다. <b>오른쪽(서쪽)의 「사」</b>는 <b class="k">사직단(社稷壇)</b> — <b>토지신(社)과 곡식신(稷)</b>에게 제사를 지내는 제단입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 사극에서 신하들이 <b>“종묘와 사직을 보전하소서!”</b>라고 외치는 장면, 많이 보셨을 겁니다. <b>종묘 = 왕실의 조상</b>, <b>사직 = 백성의 먹고사는 일</b>이니까, 이 둘을 합치면 곧 <b>「나라 그 자체」</b>라는 뜻이 됩니다. 그래서 종묘사직은 <b>국가의 대명사</b>가 된 것입니다.</div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>왼쪽엔 조상 사진, 오른쪽엔 곳간.</b> 조선이라는 집이 서 있으려면 <b>뿌리(조상)</b>와 <b>먹을 것(땅·곡식)</b>이 둘 다 필요했다는 이야기입니다.</div></div>
+<p>여기서 방향을 헷갈리기 쉬운데, <b>기준은 궁궐(경복궁)에 앉은 왕의 시선</b>입니다. 왕이 남쪽을 바라보고 앉았을 때 <b>왼손 쪽이 동쪽 = 종묘</b>, <b>오른손 쪽이 서쪽 = 사직단</b>. 실제 서울 지도에서도 종묘는 경복궁 동쪽, 사직단은 서쪽에 있습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>솔직하게 —</b> 「좌묘우사」·「사직단」이라는 단어는 2013~2025년 기출 문제·선택지 원문에 <b>한 번도 나오지 않았습니다</b>(「종묘」는 세계유산 목록 문항에서 5회 등장). 개념 이해용으로만 가볍게 보고, <b>암기 부담은 갖지 마세요.</b></div></div>
+</div>
+</div>
+<div class="story s2">
+<div class="head"><div class="num">5</div><div class="ttl">경복궁 — “큰 복을 누리라”, 조선의 정궁</div><div class="era">1395 창건</div></div>
+<div class="body">
+<p>1392년 이성계가 조선을 세우고, 1394년 한양으로 도읍을 옮기고, 이듬해 <b class="k">경복궁(景福宮)</b>을 완성합니다. 이름은 정도전이 지었습니다. <b>「경(景)」은 크다, 「복(福)」은 복</b> — 즉 <b>“하늘이 내린 큰 복”</b>이라는 뜻입니다. 2014년 기출에 <b>“경복궁은 ‘하늘이 내린 큰 복’이라는 뜻을 가진 궁이다”</b>가 <b>옳은 선택지</b>로 그대로 나왔습니다.</p>
+<p>경복궁은 조선의 <b class="k">정궁(법궁)</b>입니다. 왕이 실제로 사는 으뜸 궁궐이라는 뜻이에요. 그런데 이 궁궐의 역사는 순탄하지 않았습니다. <b>1592년 임진왜란으로 완전히 불타</b> 없어졌고, 그 뒤 <b>270년 넘게 폐허로 방치</b>됩니다. 광해군이 창덕궁·창경궁은 복원했지만 <b>경복궁만은 다시 짓지 않았어요.</b> 그래서 이 기간에는 <b>창덕궁이 사실상 정궁 역할</b>을 하게 됩니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>중건(重建)</b>은 「무너진 것을 <b>다시</b> 세운다」는 뜻입니다. 경복궁을 다시 세운 것은 <b>고종 때(1865~1868)</b>인데, 시험이 노리는 함정이 여기 있습니다. <b>공식적으로는 「고종 때 중건」</b>이지만, <b>실제로 밀어붙인 사람은 고종의 아버지 흥선대원군</b>이에요. 고종은 당시 열두 살이었습니다. <b>“고종이 지었다”가 아니라 “고종 때 흥선대원군이 중건했다”</b>로 외우세요.</div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사로 치면 — <b>본사 건물이 화재로 전소</b>되어 270년간 임시 사옥(창덕궁)에서 버티다가, <b>어린 사장이 취임하자 그 아버지가 실권을 쥐고 본사를 재건축</b>한 셈입니다. 그래서 「누가 지었나」를 물으면 <b>서류상 사장(고종) / 실제 결정권자(흥선대원군)</b> 둘 다 답이 될 수 있는 겁니다.</div></div>
+<p>2014년 기출은 경복궁을 이렇게 물었습니다. <b>“경복궁에 관한 설명으로 옳지 않은 것은?”</b> — ①경복궁의 정전은 <b>인정전</b>이다 ②사적 제117호 ③임진왜란으로 소실 ④조선 말기 고종 때 중건. 답은 <b>①</b>입니다. <b>인정전은 창덕궁의 정전</b>이고, <b>경복궁의 정전은 근정전</b>이에요. <b>이 두 이름을 바꿔치기하는 것이 궁궐 파트 최다 함정</b>입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>경복궁 3종 세트</b> — <b>정전 = 근정전</b>(국보) · <b>편전 = 사정전</b> · <b>정문 = 광화문</b>(남문). 강사가 “동그라미 치고 별표하라”고 한 것이 <b>근정전·교태전·광화문</b>입니다. 여기에 사정전만 얹으면 완성입니다.</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">6</div><div class="ttl">경복궁 안을 들여다보기 — 품계석, 경회루, 굴뚝, 그리고 건청궁</div><div class="era">기출 밀집 구간</div></div>
+<div class="body">
+<p>이제 경복궁 안으로 들어갑니다. <b>기출이 가장 많이 나온 네 곳</b>만 짚겠습니다.</p>
+
+<p><b>① 품계석</b> — 근정전 앞마당(조정)에 줄지어 선 <b>작은 돌기둥</b>들입니다. 여기에 <b>「정1품」「종1품」</b>처럼 벼슬의 등급이 새겨져 있어서, 신하들이 <b>자기 등급이 적힌 돌 앞에 서서</b> 조회에 참석했습니다. 개수는 <b class="k">좌우 합쳐 24개</b>예요.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>품계(品階)</b>는 공무원의 직급입니다. 조선은 <b>1품부터 9품까지</b> 있고 각각 <b>정(正)·종(從)</b>으로 나뉘어 <b>총 18관등</b>이었어요. 그런데 <b>돌은 24개</b>입니다. 왜냐하면 <b>1~3품만 정·종을 따로 세우고, 4품부터 9품까지(당하관)는 정·종 구분 없이 하나로 묶었기</b> 때문입니다. 좌우 각 12개씩 = 24개.</div>
+<p>가장 중요한 건 <b>방향</b>입니다. <b class="k">동쪽에 문관, 서쪽에 무관</b> — 줄여서 <b>“동문서무(東文西武)”</b>. 2015년 기출은 이걸 <b>정확히 뒤집어서</b> 냈습니다. <b>“동편에는 무관, 서편에는 문관이 위치한다”</b>가 <b>틀린 선택지</b>였어요. <b>동쪽=문관</b>, 네 글자만 붙들면 됩니다. 그리고 품계석은 <b>어도(가운데 왕의 길) 양옆이 아니라 삼도를 따라 좌우</b>에 서 있습니다.</p>
+
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>학교 운동장 조회를 떠올려 보세요. <b>바닥에 반 이름이 적힌 표시가 있고, 학생들은 자기 반 표시에 맞춰 줄을 섭니다.</b> 품계석이 딱 그겁니다. 다만 반이 아니라 <b>직급</b>이었을 뿐이에요.</div></div>
+
+<p><b>② 경회루</b> — 연못 위에 세운 <b>연회장</b>입니다. 나라의 경사가 있거나 외국 사신이 왔을 때 잔치를 벌인 곳이에요. <b>국보</b>입니다. 그리고 여기에 <b>건축 양식 함정</b>이 하나 숨어 있습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>6단원(공포 양식)과 이어지는 함정</b> — <b>경복궁 근정전은 다포</b> 양식인데, <b>같은 경복궁의 경회루는 익공</b> 양식입니다. 2019년 기출이 <b>「경복궁 근정전」과 「경복궁 경회루」를 한 문제 안에 나란히</b> 넣어 다포를 고르게 했어요. <b>경회루 = 익공</b> 하나만 따로 붙여두세요.</div></div>
+<p>참고로 <b>경복궁은 국보를 2개 가진 유일한 궁궐</b>입니다 — <b>근정전과 경회루</b>. 창덕궁은 인정전 하나, 창경궁은 명정전 하나, 덕수궁과 경희궁은 <b>국보인 정전이 없습니다.</b></p>
+
+<p><b>③ 굴뚝</b> — 뜻밖에도 굴뚝이 기출로 나왔습니다. 2015년 문제가 이랬어요. <b>“꽃 벽돌로 장식된 아미산 굴뚝과 자경전 십장생 굴뚝이 있는 궁은?”</b> 답은 <b>경복궁</b>입니다. <b>아미산</b>은 왕비의 침전인 <b>교태전 뒤뜰에 만든 인공 동산</b>이고, 그 화단에 <b>꽃무늬 벽돌 굴뚝</b>이 서 있습니다. <b>자경전</b>은 <b>대비의 침전</b>인데, 그 뒤편에 <b>십장생(해·산·물·돌·소나무·거북·학·사슴·불로초·구름)</b> 무늬를 새긴 굴뚝이 있어요.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>왜 하필 굴뚝을 꾸몄을까요? <b>왕비와 대비는 궁궐 밖으로 나갈 수 없었습니다.</b> 그래서 <b>뒤뜰이 곧 세상의 전부</b>였고, 그 좁은 마당에 <b>인공 산을 쌓고 굴뚝에 꽃과 장수의 상징을 새겨</b> 정원으로 만든 것입니다. <b>교태전=꽃(아미산) / 자경전=십장생</b>, 이렇게 짝지어 외우세요.</div></div>
+
+<p><b>④ 건청궁</b> — 경복궁 안에서 <b>유일하게 이름에 「궁」자가 붙은 건물</b>입니다. 고종과 명성황후가 머물던 곳이고, <b>1895년 을미사변(명성황후 시해 사건)이 일어난 바로 그 장소</b>입니다. 「궁 안의 궁」이라는 특이한 지위 때문에 <b>“경복궁 안에서 궁자가 붙은 유일한 건물”</b>이라는 형태로 물어보기 좋은 항목입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>다만 솔직하게 —</b> 「건청궁」·「을미사변」·「월대」·「잡상」은 2013~2025년 기출 원문에 <b>0회</b>입니다. 반면 <b>「근정전」은 8회, 「품계석」·「아미산」·「십장생」은 각 1회</b> 나왔습니다. <b>근정전 &gt; 품계석 &gt; 굴뚝 &gt; 건청궁</b> 순으로 시간을 쓰세요.</div></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표</h2>
+<p class="sub">원본 교재의 사실을 하나도 빼지 않고 담았습니다. 시험 직전에는 이 표만 보시면 됩니다.</p>
+
+<h3>표 1 · 궁궐 구조 용어 (8단원)</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>용어</th><th>뜻</th><th>기억 포인트</th></tr></thead>
+<tbody>
+<tr><td class="nm">정전(법전)</td><td>국가 행사(즉위식·조회·사신 접견)를 치르는 궁궐의 중심 건물</td><td>회사의 <b>대강당</b>. 5대 궁궐마다 이름이 다름 → 최우선 암기</td></tr>
+<tr><td class="nm">조정</td><td>정전 앞마당. 국가 의식을 거행하는 곳</td><td>「조정 대신」의 그 조정. 원래 <b>마당 이름</b></td></tr>
+<tr><td class="nm">편전</td><td>왕이 매일 정치 업무를 보는 공간</td><td>회사의 <b>집무실</b>. 정전보다 작고 실용적</td></tr>
+<tr><td class="nm">외전</td><td>정문~조정, 정전·편전이 위치하는 <b>공적 구간</b></td><td>궁궐의 <b>앞쪽 = 사무실</b></td></tr>
+<tr><td class="nm">대전</td><td>왕의 공간(내전 중)</td><td>경복궁에서는 <b>강녕전</b></td></tr>
+<tr><td class="nm">중궁전</td><td>왕비의 공간(내전 중)</td><td>사극의 <b>“중전마마”</b> 어원. 경복궁에서는 <b>교태전</b></td></tr>
+<tr><td class="nm">동궁</td><td>세자의 공간(내전에서 볼 때 <b>동쪽</b>)</td><td>해 뜨는 방향 = 다음 왕. 경복궁에서는 <b>자선당</b></td></tr>
+<tr><td class="nm">정궁(법궁)</td><td>왕이 실제로 상주하는 <b>으뜸 궁궐</b></td><td><b>= 경복궁</b></td></tr>
+<tr><td class="nm">이궁(행궁)</td><td>왕이 정궁 밖에서 임시로 머무는 <b>궁궐</b></td><td>궁궐<b>이다</b>. 창덕궁이 처음엔 이궁</td></tr>
+<tr><td class="nm">행재소</td><td>궁궐이 <b>아닌</b>, 왕의 지방 임시 거처</td><td>온천·법주사·수원 화성·남한산성. 궁궐<b>이 아니다</b></td></tr>
+<tr><td class="nm">전조후침</td><td>궁궐 배치 원리 — <b>앞에는 조정, 뒤에는 침전</b></td><td>궁궐 전체의 설계도 네 글자</td></tr>
+<tr><td class="nm">좌묘우사</td><td>경복궁 기준 <b>왼쪽=종묘</b>(왕·왕비 제사), <b>오른쪽=사직단</b>(토지신·곡식신 제사)</td><td>왕이 남쪽을 볼 때 왼손=동쪽=종묘</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>표 2 · 건물 서열 「전당합각재헌누정」 (8단원 ★★)</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>순위</th><th>글자</th><th>누가 / 무엇</th><th>대표 건물</th></tr></thead>
+<tbody>
+<tr><td class="yr">1</td><td class="nm">전(殿)</td><td><b>왕·왕비·대비</b></td><td>근정전(정전)·사정전(편전)·교태전(왕비)·자경전(대비)</td></tr>
+<tr><td class="yr">2</td><td class="nm">당(堂)</td><td><b>세자</b></td><td><b>자선당</b>(경복궁 동궁)</td></tr>
+<tr><td class="yr">3</td><td class="nm">합(閤)·각(閣)</td><td>부속 건물</td><td>규장각(창덕궁)</td></tr>
+<tr><td class="yr">4</td><td class="nm">재(齋)</td><td>독서·사색 거처</td><td>낙선재(창덕궁, 단청 없음)</td></tr>
+<tr><td class="yr">5</td><td class="nm">헌(軒)</td><td>대청마루가 있는 업무 공간</td><td>—</td></tr>
+<tr><td class="yr">6</td><td class="nm">누(樓)</td><td>사람 키 높이로 마루를 <b>띄운</b> 건물</td><td><b>경회루</b>(경복궁, 국보·익공)</td></tr>
+<tr><td class="yr">7</td><td class="nm">정(亭)</td><td>경치 좋은 곳의 <b>정자</b></td><td><b>향원정</b>(경복궁)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>표 3 · 경복궁 전각 총정리 (9단원)</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>전각</th><th>역할</th><th>반드시 함께 외울 것</th></tr></thead>
+<tbody>
+<tr><td class="nm">근정전</td><td><b>정전</b></td><td><b>국보</b>. 앞에 <b>품계석 24개</b>, <b>2층 월대</b>(기단). 양식은 <b>다포</b></td></tr>
+<tr><td class="nm">사정전</td><td><b>편전</b></td><td>정도전이 <b>“정치는 생각하며 하라”</b>는 뜻으로 작명</td></tr>
+<tr><td class="nm">강녕전</td><td>왕의 침전(대전)</td><td>—</td></tr>
+<tr><td class="nm">교태전</td><td><b>왕비의 침전(중궁전)</b></td><td>뒤뜰에 <b>아미산</b>(인공 동산), <b>꽃 벽돌 굴뚝</b></td></tr>
+<tr><td class="nm">자경전</td><td>대비의 침전</td><td>뒤편에 <b>십장생 무늬 굴뚝</b></td></tr>
+<tr><td class="nm">자선당</td><td>세자(동궁)의 공간</td><td>「전」이 아니라 <b>「당」</b> — 세자이기 때문</td></tr>
+<tr><td class="nm">건청궁</td><td>고종·명성황후의 거처</td><td>경복궁에서 <b>유일하게 「궁」자가 붙은 건물</b>. <b>을미사변</b> 발생 장소</td></tr>
+<tr><td class="nm">경회루</td><td>왕의 연회 장소</td><td><b>국보</b>. 잡상 <b>11개</b>(예외적으로 많음). <b>익공 양식</b>(근정전=다포와 다름)</td></tr>
+<tr><td class="nm">향원정</td><td>후원의 정자</td><td>「정」 — 서열표의 마지막 글자</td></tr>
+<tr><td class="nm">광화문</td><td><b>정문(남문)</b></td><td>동문=<b>건춘문</b>, 북문=<b>신무문</b>도 함께</td></tr>
+<tr><td class="nm">품계석</td><td>정전 앞 <b>24개</b>(총 18관등)</td><td><b>동쪽=문관, 서쪽=무관(동문서무)</b> / 1~3품만 정·종 구분, <b>4~9품(당하관)은 구분 없음</b></td></tr>
+<tr><td class="nm">어도</td><td>광화문~근정전 <b>가운데 왕의 길</b></td><td><b>삼도(3줄)</b> 중 가운데. <b>어도 옆에는 품계석이 없다</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급 — 감이 아니라 실측</h2>
+<p class="sub">2013~2025년 관광자원해설 기출 <b>136문항</b>의 <b>문제·선택지 원문</b>만을 대상으로 단어 등장 횟수를 직접 셌습니다(해설문 제외, 오답 보기 포함, 한 문항 내 중복은 1회).</p>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A</span><div><b>경복궁 15회</b> · <b>창덕궁 13회</b> · <b>정전(正殿) 11회</b> · <b>창경궁 9회</b> — 궁궐 파트에서 가장 자주 등장하는 네 단어입니다. 특히 <b>「정전」 11회</b>는 <b>“궁궐과 정전의 연결이 옳은 것/옳지 않은 것”</b> 유형이 거의 매년 반복된다는 뜻이에요.</div></div>
+<div class="row"><span class="gr gA">A</span><div><b>근정전 8회</b> · <b>덕수궁 8회</b> — 근정전은 <b>단일 건물 중 압도적 1위</b>입니다. 정답으로도, 다른 궁의 오답 보기로도(“덕수궁 — 근정전”, “경복궁의 정전은 인정전이다”) 계속 쓰입니다.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>인정전 6회</b> · <b>경희궁 4회</b> · <b>광화문 3회</b> · <b>동궁 3회</b> — 인정전(창덕궁 정전)은 <b>근정전의 짝꿍 함정</b>으로 늘 함께 나옵니다. <b>동궁 3회</b>가 8단원 개념 중 최다입니다.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>사정전 2회</b> · <b>강녕전 2회</b> · <b>자경전 2회</b> · <b>건춘문 2회</b> · <b>서궁 2회</b> · <b>중궁 2회</b> · <b>이궁 2회</b> — <b>“경복궁 내 건축물이 아닌 것은?”</b> 유형의 보기로 자경전·사정전·강녕전이 세트로 나옵니다(2022년).</div></div>
+<div class="row"><span class="gr gC">C</span><div><b>교태전 1회</b> · <b>정궁 1회</b> · <b>행궁 1회</b> · <b>침전 1회</b> · <b>품계석 1회</b> · <b>삼도 1회</b> · <b>아미산 1회</b> · <b>십장생 1회</b> · <b>굴뚝 1회</b> · <b>흥선대원군 1회</b> · <b>동궐 1회</b> · <b>신무문 1회</b> — 1회씩이지만 <b>전부 이 8·9단원에서 나온 문항</b>입니다. 특히 품계석·삼도는 <b>한 문제(2015년)에 몰려</b> 나왔어요.</div></div>
+</div>
+
+<div class="zero">
+<b>0회 — 버려도 되는 것</b>: <b>편전</b>·<b>조정</b>·<b>어도</b>·<b>중궁전</b>·<b>대전</b>·<b>법궁</b>·<b>행재소</b>·<b>전조후침</b>·<b>좌묘우사</b>·<b>사직단</b>·<b>자선당</b>·<b>규장각</b>·<b>낙선재</b>·<b>향원정</b>·<b>수정전</b>·<b>월대</b>·<b>잡상</b>·<b>건청궁</b>·<b>을미사변</b>·<b>정도전</b>·<b>월산대군</b> — 13년간 문제·선택지 원문에 한 번도 등장하지 않았습니다.<br><br>
+특히 짚어야 할 것은 <b>「편전」이라는 단어 자체가 0회</b>라는 점입니다. 강사가 <b>“정전·편전·정문을 무조건 외우라”</b>고 별 3개를 쳤지만, 실제로 <b>13년간 물어본 것은 정전(11회)과 정문(광화문 3·돈화문 2·홍화문 2·대한문 1·흥화문 1)</b>이었고 <b>편전은 「사정전」·「자정전」이라는 건물 이름으로만 각 2회·1회</b> 스쳐 지나갔습니다. <b>시간이 없다면 정전 → 정문 → 편전 순</b>으로 외우세요.
+</div>
+
+<p class="sub" style="margin-top:14px">참고로 <b>「유네스코」 19회 · 「국보」 17회 · 「사적」 10회</b>로, 궁궐은 <b>세계유산·국보·사적 번호</b>와 엮여 출제되는 비중이 매우 큽니다. <b>세계유산 등재 궁궐은 창덕궁 하나뿐</b>(1997년)이라는 사실이 <b>2021·2023년에 두 번</b> 그대로 나왔습니다 — 이건 다음 묶음(10~13단원)에서 집중적으로 다룹니다.</p>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">이 단원에서 실제로 사람들이 틀리는 지점만 모았습니다. 하나씩 외우지 말고 <b>둘씩 붙여서</b> 외우세요.</p>
+
+<div class="cmp">
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 근정전 vs 인정전</h4>
+<div class="vs">
+<div class="side a"><b>근정전</b>경복궁의 정전</div>
+<div class="mid">VS</div>
+<div class="side b"><b>인정전</b>창덕궁의 정전</div>
+</div>
+<p class="why"><b>궁궐 파트 최다 함정.</b> 2014년 “경복궁의 정전은 <b>인정전</b>이다”가 <b>틀린 선택지</b>, 2024년 “창덕궁 내 건축물이 아닌 것”의 답이 <b>근정전</b>. <b>양쪽 방향으로 다 물어봅니다.</b> 「<b>경</b>복궁—<b>근</b>정전 / <b>창</b>덕궁—<b>인</b>정전」으로 소리 내어 외우세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 전(殿) vs 당(堂)</h4>
+<div class="vs">
+<div class="side g"><b>전</b>왕·왕비·대비<br>근정전·교태전·자경전</div>
+<div class="mid">VS</div>
+<div class="side n"><b>당</b>세자<br>자선당</div>
+</div>
+<p class="why">규모와 생김새가 비슷해 헷갈리지만 기준은 <b>신분</b>입니다. 「전당합각재헌누정」에서 <b>전이 1위, 당이 2위</b> — 딱 한 칸 차이인 이유가 <b>왕과 세자의 차이</b>이기 때문이에요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 이궁 vs 행재소</h4>
+<div class="vs">
+<div class="side b"><b>이궁</b>궁궐<b>이다</b><br>정궁 밖의 또 다른 궁</div>
+<div class="mid">VS</div>
+<div class="side x2"><b>행재소</b>궁궐이 <b>아니다</b><br>온천·법주사·수원 화성·남한산성</div>
+</div>
+<p class="why">둘 다 “왕이 임시로 머문다”는 점은 같아서 헷갈립니다. 갈라지는 지점은 딱 하나 — <b>그곳이 궁궐이냐 아니냐</b>. 2016년에는 <b>“인조부터 철종까지 이궁으로 사용”</b>이라는 문장으로 경희궁을 물었습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 동궁 / 중궁 / 서궁</h4>
+<div class="vs">
+<div class="side n"><b>동궁</b>세자</div>
+<div class="mid">·</div>
+<div class="side g"><b>중궁</b>왕비</div>
+</div>
+<div class="vs" style="margin-top:0">
+<div class="side b"><b>서궁</b>대비</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>행궁</b>지방 임시 거처</div>
+</div>
+<p class="why">2013년에 <b>“동궁 — 후궁의 침전”</b>이 틀린 선택지로, 2015년에 <b>“지방에서 임시로 머무는 궁” = 행궁</b>이 정답으로 나왔습니다. <b>동·중·서는 사람, 행은 이동</b>으로 갈라두세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 근정전 vs 경회루 (양식)</h4>
+<div class="vs">
+<div class="side a"><b>근정전</b>다포 양식</div>
+<div class="mid">VS</div>
+<div class="side b"><b>경회루</b>익공 양식</div>
+</div>
+<p class="why"><b>같은 경복궁 안</b>인데 양식이 다릅니다. 2019년 다포 고르기 문제에서 <b>경복궁 근정전은 정답, 경복궁 경회루는 오답</b>으로 <b>한 문제에 나란히</b> 들어갔어요. 6단원(공포)과 9단원이 만나는 지점입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 품계석 — 동문서무</h4>
+<div class="vs">
+<div class="side n"><b>동쪽</b>문관(文)</div>
+<div class="mid">VS</div>
+<div class="side b"><b>서쪽</b>무관(武)</div>
+</div>
+<p class="why">2015년 기출이 <b>정확히 뒤집어서</b> 냈습니다(“동편 무관, 서편 문관” = 오답). <b>동문서무</b> 네 글자로 통째 암기. 개수는 <b>24개</b>, <b>1~3품만 정·종 구분</b>이라는 두 숫자도 같은 문제에 나옵니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 교태전 vs 대조전</h4>
+<div class="vs">
+<div class="side a"><b>교태전</b>경복궁 왕비 침전</div>
+<div class="mid">VS</div>
+<div class="side b"><b>대조전</b>창덕궁 왕비 침전</div>
+</div>
+<p class="why">2020년 기출이 <b>“창덕궁 — 인정전, <u>교태전</u>, 돈화문”</b>처럼 <b>정전은 맞게 두고 왕비 침전만 다른 궁 것으로</b> 바꿔 놓았습니다. 정전만 확인하고 넘어가면 그대로 걸립니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 고종 vs 흥선대원군</h4>
+<div class="vs">
+<div class="side g"><b>고종</b>서류상 「고종 때 중건」</div>
+<div class="mid">VS</div>
+<div class="side a"><b>흥선대원군</b>실제 주도자</div>
+</div>
+<p class="why">2014년 기출 선택지 <b>“조선 말기 고종 때 중건되었다”</b>는 <b>옳은</b> 문장이고, 원본 PDF에는 <b>“흥선대원군”</b>이라는 보충 메모까지 달려 있었습니다. <b>둘 다 맞는 표현</b>이니 어느 쪽이 나와도 당황하지 마세요.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>★★★ 오늘의 하이라이트</b> — “5대 궁궐 각각의 <b>정전·편전·정문</b>은 무조건 외워야 한다.” 별 3개짜리 문장입니다.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>★★ 「전」과 「당」의 구분</b> — 신분 기준으로 <b>전=왕·왕비·대비 / 당=세자(자선당)</b>.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>★★ 좌묘우사</b> — 경복궁 기준 <b>왼쪽 종묘, 오른쪽 사직단</b>.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>동그라미 치고 별표하라</b>고 한 경복궁 3개 — <b>근정전 · 교태전 · 광화문</b>.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>경복궁만 국보 2개</b>(근정전·경회루) — <b>유일한 궁궐</b>이라는 점.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>품계석 24개 · 동문서무</b> · <b>1~3품만 정·종 구분</b> — 세 숫자·네 글자를 세트로.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>경회루는 익공 양식</b> — 근정전을 포함한 대부분의 경복궁 건물이 다포인 것과 <b>예외적으로 다름</b>.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>“경복궁은 고종이 지었다”는 함정</b> — 공식적으로는 고종 때 중건, 실질 주도자는 <b>흥선대원군</b>.</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>암기법 “전당합각재헌누정”</b> — 여덟 글자를 순서대로. 그대로 높은 순서입니다.</div></li>
+</ul>
+</div>
+</section>
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기</h2>
+<p class="sub"><b>1~10번은 실제 기출</b>(2013·2014·2014·2015·2015·2016·2019·2022·2024)이고, <b>11~15번은 통합교재 사실에 근거한 예상문제</b>입니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>솔직하게 밝힙니다.</b> 2013~2025년 136문항 중 궁궐 파트는 <b>15문항</b>이고, 그중 <b>8·9단원(구조·위계 + 경복궁)에 직접 걸린 것이 10문항</b>입니다. 나머지 5문항은 <b>궁궐별 정전 짝짓기</b>라서 <b>다음 묶음(10~13단원)</b>으로 넘겼습니다. 여기 실은 기출 10문항은 <b>보기 4개가 원문에 온전히 남아 있는 것만</b> 골랐고, 11~15번 예상문제도 <b>통합교재의 사실 서술만으로</b> 만들었습니다 — 추측으로 지어낸 내용은 하나도 없습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 15 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/03_작업자료/8단원_5대궁궐_구조위계.md</code> · <code>9단원_5대궁궐_경복궁.md</code>(관광자원해설 통합교재 기반 단원 정리본) / 기출·빈도: <code>02_관광자원해설/03_작업자료/관광자원기출.md</code>(2013~2025년 136문항).</p>
+<p><b>실측 방법</b> — 136문항의 <b>문제·선택지 원문</b>만을 대상으로 단어 등장 횟수를 셌습니다(해설문 제외, 오답 보기 포함, 한 문항 내 중복은 1회). 궁궐 관련 문항: 총 15문항 중 <b>8·9단원 직접 관련 10문항</b>.</p>
+<p><b>추측 금지</b> — 교재에 없는 내용은 넣지 않았습니다. 예상문제도 교재의 사실 서술만으로 구성했습니다. 보기 4개가 원문에 온전하지 않은 기출은 사용하지 않았습니다.</p>
+<p><b>강의 위치</b> — 관광국사자원 필기반 <b>6월 28일</b> 영상 약 <b>1:43:51~1:55:21</b>(궁궐 구조·위계), 약 <b>1:55:21~2:05:35</b>(경복궁). 기출 문제풀이는 <b>7월 3일</b> 영상 약 <b>2:03:45~2:15:38</b> 구간(5대 궁궐 81~91번).</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var QS=[
+{n:1,src:"기출 2013",q:"조선 시대 궁궐의 명칭 설명으로 옳지 않은 것은?",o:["정궁 — 왕의 침전","서궁 — 대비의 침전","동궁 — 후궁의 침전","중궁 — 왕비의 침전"],a:2,c:"궁궐 용어",e:"<b>동궁은 후궁이 아니라 「세자」</b>의 거처입니다. 원본 기출지에도 손글씨로 <b>“세자”</b>라는 정정 메모가 남아 있어요. <b>동(東)=해가 뜨는 방향=다음에 떠오를 사람</b>이라고 이해하면 평생 안 헷갈립니다. 나머지 세 개도 그대로 외우세요 — <b>중궁=왕비</b>(사극의 “중전마마”), <b>서궁=대비</b>, <b>정궁=왕이 실제로 상주하는 으뜸 궁궐(=경복궁)</b>."},
+{n:2,src:"기출 2015",q:"왕이 궁궐을 떠나 지방에서 임시로 머무르는 궁(宮)은?",o:["동궁","행궁","중궁","서궁"],a:1,c:"궁궐 용어",e:"정답은 <b>행궁(行宮)</b>입니다. 보기 구성을 보세요 — <b>동궁·중궁·서궁은 「누가 사느냐(사람)」</b>이고 <b>행궁만 「어디로 가느냐(이동)」</b>입니다. 성격이 다른 하나를 고르는 문제였던 셈이에요. 원본 기출지에도 <b>“동궁=세자, 중궁=왕비, 서궁=대비”</b>라는 보충 메모가 달려 있습니다. 한 걸음 더 — <b>행재소</b>는 왕의 지방 임시 거처 중에서도 <b>궁궐이 아닌 곳</b>(온천·법주사·수원 화성·남한산성)을 가리킵니다."},
+{n:3,src:"기출 2014",q:"우리나라 궁에 관한 설명으로 옳지 않은 것은?",o:["경복궁은 ‘하늘이 내린 큰 복’이라는 뜻을 가진 궁이다.","창덕궁은 경복궁의 동쪽에 위치하여 창경궁과 더불어 동궐이라 불렸다.","창경궁은 세조비 정희왕후, 예종계비 안순왕후, 덕종비 소혜왕후 세 분을 모시기 위해 창건된 궁이다.","덕수궁의 본래 이름은 인경궁이었다."],a:3,c:"궁궐 용어",e:"<b>덕수궁의 본래 이름은 「경운궁」</b>입니다(인경궁 아님). 원본 기출지에 손글씨로 <b>“경운궁”</b>이라고 정정되어 있어요. 나머지는 전부 옳은 설명이고, 그대로 다음 묶음의 핵심이 됩니다 — <b>①경복궁=큰 복</b>, <b>②창덕궁+창경궁=동궐</b>(경복궁 동쪽), <b>③창경궁=세 분의 대비를 모시려 지은 궁</b>. 참고로 <b>창경궁의 옛 이름은 수강궁</b>(세종 때)이라는 메모도 함께 있었습니다."},
+{n:4,src:"기출 2014",q:"경복궁에 관한 설명으로 옳지 않은 것은?",o:["경복궁의 정전은 인정전이다.","사적 제117호로 서울특별시 종로구에 위치해 있다.","임진왜란으로 소실되었다.","조선 말기 고종 때 중건되었다."],a:0,c:"경복궁",e:"<b>경복궁의 정전은 근정전</b>입니다. <b>인정전은 창덕궁의 정전</b>이에요 — 이 두 이름의 바꿔치기가 <b>궁궐 파트 최다 함정</b>입니다. 나머지는 모두 옳습니다: <b>사적 제117호</b>, <b>임진왜란(1592) 소실</b>, <b>고종 때 중건</b>. 특히 ④는 원본 기출지에 <b>“흥선대원군”</b>이라는 보충 메모가 달려 있는데, <b>서류상으로는 고종 때, 실제로 밀어붙인 사람은 흥선대원군</b>이라 <b>둘 다 옳은 표현</b>입니다."},
+{n:5,src:"기출 2016",q:"다음 설명에 해당하는 것은?<br><span style=\"display:block;margin-top:8px;padding:9px 12px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:14px\">ㄱ. 국보 제223호로 지정되어 있으며, 왕이 신하들의 조례를 받던 곳<br>ㄴ. 경복궁의 정문이며 남문에 해당함</span>",o:["ㄱ: 근정전, ㄴ: 건춘문","ㄱ: 사정전, ㄴ: 광화문","ㄱ: 경회루, ㄴ: 신무문","ㄱ: 근정전, ㄴ: 광화문"],a:3,c:"경복궁",e:"<b>ㄱ은 근정전, ㄴ은 광화문</b>입니다. ㄱ의 열쇠는 <b>“조례(朝禮)를 받던 곳”</b> — 신하들의 아침 인사를 받는 <b>국가 행사</b>이므로 <b>정전(근정전)</b>이에요. 매일 하는 실무 회의였다면 편전(사정전)이겠지만, 조례는 <b>의식</b>입니다. ㄴ은 경복궁 4대문을 함께 정리하세요 — <b>남문=광화문(정문)</b>, <b>동문=건춘문</b>, <b>북문=신무문</b>. 보기가 이 셋을 그대로 섞어 놓았습니다."},
+{n:6,src:"기출 2015",q:"경복궁 근정전 앞 품계석에 관한 설명으로 옳지 않은 것은?",o:["벼슬의 높낮이가 순서대로 관계(官階)의 품(品)을 새겨 세운 돌이다.","근정전까지 이어진 삼도(三道)를 따라 좌우에 세워져 있다.","동편에는 무관, 서편에는 문관이 위치한다.","1품에서 3품까지는 정(正), 종(從)으로 구분하였다."],a:2,c:"품계석·조정",e:"방향이 <b>정확히 뒤집혀</b> 있습니다. 실제로는 <b>동쪽=문관, 서쪽=무관</b> — 줄여서 <b>“동문서무(東文西武)”</b>입니다. 원본 기출지에도 손글씨로 <b>“동문서무”</b>라고 적혀 있어요. 같은 문제에서 나머지 셋은 전부 옳으니 함께 외우세요 — <b>품계석은 삼도를 따라 좌우</b>, <b>1~3품만 정·종 구분</b>(4품부터 당하관은 구분 없음), 그리고 손글씨 메모에 있던 <b>“좌우 총 24개”</b>."},
+{n:7,src:"기출 2022",q:"경복궁 내 건축물이 아닌 것은?",o:["인정전","자경전","사정전","강녕전"],a:0,c:"경복궁",e:"<b>인정전은 창덕궁의 정전</b>입니다. 나머지 셋은 모두 경복궁이에요 — <b>자경전(대비 침전, 십장생 굴뚝)</b>, <b>사정전(편전)</b>, <b>강녕전(왕의 침전)</b>. 이 문제 유형은 <b>경복궁 전각 3개에 창덕궁 것 하나를 섞는</b> 방식이라, <b>창덕궁 3종(인정전·선정전·희정당·대조전)</b>만 확실히 알아두면 자동으로 걸러집니다."},
+{n:8,src:"기출 2024",q:"창덕궁 내 건축물이 아닌 것은?",o:["희정당","인정전","선정전","근정전"],a:3,c:"경복궁",e:"<b>근정전은 경복궁의 정전</b>입니다. 나머지 셋이 창덕궁이에요 — <b>인정전(정전)</b>, <b>선정전(편전)</b>, <b>희정당(왕의 침전)</b>. 앞의 7번 문제와 <b>정확히 거울처럼 뒤집힌 문제</b>라는 점을 보세요. 2022년엔 “경복궁 아닌 것 = 인정전”, 2024년엔 “창덕궁 아닌 것 = 근정전”. <b>근정전↔인정전 한 쌍만 잡으면 두 문제가 한꺼번에 풀립니다.</b>"},
+{n:9,src:"기출 2015",q:"꽃 벽돌로 장식된 아미산 굴뚝과 자경전 십장생 굴뚝이 있는 궁(宮)은?",o:["창덕궁","경희궁","덕수궁","경복궁"],a:3,c:"경복궁",e:"<b>경복궁</b>입니다. <b>아미산</b>은 왕비의 침전인 <b>교태전 뒤뜰에 만든 인공 동산</b>이고 거기 <b>꽃무늬 벽돌 굴뚝</b>이 있습니다. <b>자경전</b>은 <b>대비의 침전</b>으로 뒤편에 <b>십장생 무늬 굴뚝</b>이 있어요. 왕비와 대비는 궁 밖을 나갈 수 없었기 때문에 <b>뒤뜰이 곧 세상의 전부</b>였고, 그래서 굴뚝까지 정원처럼 꾸민 것입니다. <b>교태전=꽃(아미산) / 자경전=십장생</b>으로 짝지어 외우세요."},
+{n:10,src:"기출 2019",q:"목조 건축 양식 중 다포 양식으로 지어진 것을 모두 고른 것은?<br><span style=\"display:block;margin-top:8px;padding:9px 12px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:14px\">ㄱ. 통도사 대웅전 &nbsp; ㄴ. 봉정사 극락전 &nbsp; ㄷ. 경복궁 근정전<br>ㄹ. 경복궁 경회루 &nbsp; ㅁ. 수덕사 대웅전 &nbsp; ㅂ. 창덕궁 인정전</span>",o:["ㄱ, ㄴ, ㅂ","ㄱ, ㄷ, ㅂ","ㄴ, ㄹ, ㅁ","ㄹ, ㅁ, ㅂ"],a:1,c:"공포 연계",e:"정답은 <b>ㄱ·ㄷ·ㅂ</b>. 6단원(공포)에서 이미 푼 문제지만 <b>궁궐 파트에서 다시 봐야 하는 이유</b>가 있습니다 — <b>궁궐의 정전은 나라에서 가장 격이 높아 가장 화려한 다포</b>를 씁니다(경복궁 근정전·창덕궁 인정전 둘 다 다포). 그런데 <b>같은 경복궁의 경회루는 익공</b>이에요. <b>연회장이라 정전보다 격이 낮기 때문</b>입니다. <b>「정전=다포 / 경회루=익공」</b>으로 정리해 두세요."},
+{n:11,src:"예상",q:"조선 궁궐 건물의 위계(전당합각재헌누정)에 관한 설명으로 옳지 않은 것은?",o:["‘전(殿)’은 왕·왕비·대비가 사용하는 가장 격이 높은 건물이다.","‘당(堂)’은 세자가 사용하는 건물로, 경복궁의 자선당이 이에 해당한다.","‘누(樓)’는 사람 키 높이만큼 마루를 높인 건물로, 경복궁 경회루가 이에 해당한다.","‘재(齋)’는 경치가 좋은 곳에 세운 정자를 가리키며, 경복궁 향원정이 이에 해당한다."],a:3,c:"건물 서열",e:"④는 <b>‘재(齋)’가 아니라 ‘정(亭)’</b>의 설명입니다. <b>향원정</b>은 이름 끝 글자가 <b>‘정’</b>이니 그대로 정자예요. <b>‘재(齋)’는 독서·사색을 위한 조용한 거처</b>로, 창덕궁 <b>낙선재</b>가 대표적입니다(단청도 칠하지 않은 소박한 건물인 이유가 여기 있어요). 서열은 <b>전 &gt; 당 &gt; 합·각 &gt; 재 &gt; 헌 &gt; 누 &gt; 정</b> — <b>“전당합각재헌누정”</b> 여덟 글자를 노래하듯 외우면 순서가 곧 답입니다."},
+{n:12,src:"예상",q:"궁궐의 구조에 관한 용어 설명으로 옳지 않은 것은?",o:["정전(법전)은 즉위식·조회·사신 접견 등 국가 행사를 치르는 중심 건물이다.","편전은 왕이 일상적으로 정치 업무를 보는 공간이다.","조정은 정전 앞마당으로 국가 의식을 거행하는 장소이다.","내전은 정문에서 조정을 지나 정전·편전이 위치하는 구간을 가리킨다."],a:3,c:"궁궐 용어",e:"④는 <b>내전이 아니라 「외전」</b>의 설명입니다. <b>외전 = 정문~조정~정전~편전(공적인 업무 구간)</b>, <b>내전 = 대전(왕)·중궁전(왕비)·동궁(세자)이 있는 생활 구간</b>이에요. <b>앞은 사무실(외전), 뒤는 집(내전)</b> — 이 한 줄이 궁궐 구조의 전부입니다. 배치 원리 이름까지 붙여두면 완벽해요: <b>전조후침(前朝後寢)</b>, 앞에는 조정 뒤에는 침전."},
+{n:13,src:"예상",q:"경복궁의 전각과 그 역할의 연결로 옳지 않은 것은?",o:["사정전 — 편전(왕의 집무 공간)","교태전 — 왕비의 침전","자경전 — 세자의 거처","강녕전 — 왕의 침전"],a:2,c:"경복궁",e:"<b>자경전은 세자가 아니라 「대비」의 침전</b>입니다. <b>세자의 거처는 자선당</b>이에요 — 세자이기 때문에 이름 끝 글자가 <b>‘전’이 아니라 ‘당’</b>이라는 점이 결정적 힌트입니다. 나머지는 모두 옳습니다: <b>사정전=편전</b>(정도전이 “정치는 생각하며 하라”는 뜻으로 작명), <b>교태전=왕비 침전</b>(뒤뜰 아미산), <b>강녕전=왕의 침전</b>. <b>자경전(대비, 십장생 굴뚝) vs 자선당(세자)</b> — 앞 글자가 같아서 헷갈리니 붙여서 외우세요."},
+{n:14,src:"예상",q:"조선 궁궐의 배치 원리에 관한 설명으로 옳은 것은?",o:["전조후침(前朝後寢)은 앞에 조정을, 뒤에 침전을 두는 배치 원리이다.","좌묘우사(左廟右社)에 따라 경복궁 왼쪽에 사직단, 오른쪽에 종묘를 두었다.","동궁은 내전에서 볼 때 서쪽에 위치한 세자의 공간이다.","이궁(離宮)은 왕이 머무는 궁궐이 아닌 임시 거처를 가리킨다."],a:0,c:"배치 원리",e:"옳은 것은 <b>①</b>뿐입니다. ②는 <b>좌우가 뒤바뀌었어요</b> — <b>왼쪽(동쪽)=종묘</b>(왕·왕비 제사), <b>오른쪽(서쪽)=사직단</b>(토지신·곡식신 제사)입니다. ③은 <b>동궁이니 당연히 동쪽</b>(해 뜨는 방향=다음 왕). ④는 <b>이궁이 아니라 「행재소」</b>의 설명입니다 — <b>이궁은 어디까지나 궁궐</b>이고, <b>행재소는 궁궐이 아닌</b> 온천·법주사·수원 화성·남한산성 같은 곳이에요. 이 <b>이궁 vs 행재소</b>가 8단원의 마지막 함정입니다."},
+{n:15,src:"예상",q:"경복궁 경회루에 관한 설명으로 옳지 않은 것은?",o:["왕이 연회를 베풀던 장소로 국보로 지정되어 있다.","잡상이 11개로 예외적으로 많다.","근정전과 마찬가지로 다포 양식으로 지어졌다.","‘누(樓)’는 사람 키 높이만큼 마루를 높인 건물을 가리킨다."],a:2,c:"공포 연계",e:"<b>경회루는 다포가 아니라 「익공(翼工)」 양식</b>입니다. <b>같은 경복궁 안인데 근정전(다포)과 양식이 다르다</b>는 것이 핵심이에요. 2019년 기출이 실제로 <b>「경복궁 근정전」과 「경복궁 경회루」를 한 문제에 나란히 넣어</b> 이 차이를 물었습니다. 나머지는 모두 옳습니다: <b>국보</b>, <b>잡상 11개</b>(예외적으로 많음), 그리고 <b>‘누’는 마루를 띄운 건물</b>(전당합각재헌누정의 7번째). <b>경복궁 국보 2개 = 근정전 + 경회루</b>라는 것도 함께 기억하세요."}
+];
+
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx='[관광자원해설 8·9단원 — 5대 궁궐: 궁궐의 구조·위계 / 경복궁] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

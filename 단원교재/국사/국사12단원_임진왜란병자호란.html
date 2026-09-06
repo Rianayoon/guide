@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광국사 12단원 · 임진왜란~병자호란</title>
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.s5 .num{background:var(--pal)} .s5 .ttl{color:var(--pal)} .s5{border-top:3px solid var(--pal)}
+.s6 .num{background:var(--neo)} .s6 .ttl{color:var(--neo)} .s6{border-top:3px solid var(--neo)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)} .s5 b.k{color:var(--pal)} .s6 b.k{color:var(--neo)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q.hide{display:none}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.rank,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(2,1fr)}}
+.rank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0}
+.rank .r{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;box-shadow:var(--shadow)}
+.rank .r b{display:block;font-size:15px;color:var(--bro);margin-bottom:5px}
+.rank .r span{font-size:12px;color:var(--ink-2);display:block;line-height:1.5}
+.rank .r.top{border-color:var(--gold)}
+.rank .r.top b{color:var(--gold)}
+@media(max-width:560px){.rank{grid-template-columns:repeat(2,1fr)}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 12단원</div>
+<h1>임진왜란~병자호란
+<small>이순신의 4대 해전 · 광해군의 줄타기 외교 · 삼전도의 굴욕 · 비변사의 팽창</small>
+</h1>
+<div class="meta">
+<span class="chip hot">200년 평화가 두 번 깨진 자리 — 비변사가 최고 기구로 커진 이유</span>
+<span class="chip">기출 원문 직접 매칭 4문항 + 예상 14문항</span>
+<span class="chip">2013~2025년 215문항 실측</span>
+<span class="chip">시험 D-21</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원을 관통하는 한 줄</h2>
+<p class="sub">이 단원을 관통하는 한 줄은 이것입니다 — <b>200년 가까이 평화롭던 조선이 일본·청과 잇달아 전쟁을 치르며, 국방만 다루던 임시 기구 「비변사」가 나라의 진짜 최고 권력 기구로 커져버렸다</b>는 것입니다. 임진왜란(1592~98)은 이순신과 의병의 활약으로 겨우 막아냈지만, 그 여파로 광해군은 명·후금 사이에서 아슬아슬한 줄타기 외교를 폅니다. 그런데 인조반정으로 정권을 잡은 서인이 이 균형을 깨고 <b>친명배금</b>을 선언하자, 후금(청)이 두 차례 쳐들어와 정묘호란·병자호란이 벌어지고, 결국 인조는 <b>삼전도의 굴욕</b>을 겪습니다. 이 두 전쟁을 거치며 원래 국방 문제만 다루던 <b>비변사</b>가 의정부·6조를 밀어내고 국가 최고 정치 기구로 커진 것이 이 단원의 진짜 결말입니다.</p>
+
+<div class="flow">
+<b>임진왜란(1592~98, 선조)</b><i>→</i><b>광해군의 중립 외교</b><i>→</i><b>인조반정 → 친명배금</b><i>→</i><b class="hi">정묘·병자호란 → 삼전도의 굴욕</b><i>→</i><b>비변사의 최고 기구화</b>
+</div>
+
+<div class="tl">
+<div class="t1"><b>임진왜란기 (선조, 1592~1598)</b><span>왜군 침략 → 이순신 <b>4대 해전</b> + 의병 → 조·명 연합군 평양성 수복 → <b>행주 대첩</b><br>휴전기 <b>훈련도감·속오법</b> 정비 → <b>정유재란</b>(1597) → 왜군 완전 철수</span></div>
+<div class="t2"><b>광해군의 균형외교 (1608~1623)</b><span><b>중립 외교</b>(강홍립) · <b>대동법</b> 시작 · <b>동의보감</b> 편찬<br>인목대비 유폐 등으로 반발 → <b>인조반정</b>(1623)</span></div>
+<div class="t3"><b>호란과 북벌 (인조~효종, 1623~1650년대)</b><span><b>친명배금</b> → 정묘호란(1627, 형제 관계) → 청 건국(1636)<br><b>병자호란</b>(1636~37) → <b>삼전도의 굴욕</b> → 효종의 <b>북벌 운동</b>(실패)</span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>먼저 알려드립니다 — 이 단원은 「정치」 기출 원문 215문항 중 직접 들어맞는 문항이 4개뿐입니다.</b> 저희가 가진 기출 원문(2013~2025년 215문항) 중 12단원과 정확히 일치하는 문항은 <b>Q191~194 4개</b>뿐이었습니다(2023~2025년 구간에는 이 단원 문항이 아예 없었습니다). 4문항을 그대로 싣고, 나머지는 관광국사.md 교재 원문과 강의전사본만으로 예상문제 14개를 채웠습니다 — 추측으로 채운 내용은 없습니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 읽는 임진왜란~병자호란</h2>
+<p class="sub">외우기 전에 먼저 이야기로 한 번 읽어 주세요. 전쟁이 왜 두 번이나 반복됐는지 그 <b>이유</b>를 알면, 연도와 이름은 저절로 따라옵니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">7년 전쟁의 시작 — 임진왜란</div><div class="era">선조, 1592</div></div>
+<div class="body">
+<p>1592년, 200년 가까이 큰 전쟁 없이 지내던 조선에 일본(왜)이 대규모로 쳐들어옵니다 — <b class="k">임진왜란</b>입니다. 조선군은 초반에 크게 밀렸습니다. <b>부산진과 동래성</b>이 곧바로 함락되었고, 선조 임금은 한양을 버리고 중국 국경 근처 <b>의주</b>까지 피난합니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>오랫동안 큰 화재가 없던 건물에 갑자기 큰 불이 난 것과 비슷합니다. 초기 진화 인력(상비군)이 부족해 순식간에 번졌지만, 곧 두 갈래에서 반격이 시작됩니다 — 바다(이순신)와 육지(의병)입니다.</div></div>
+<p>바다에서는 <b class="k">이순신</b>이 옥포→사천→<b class="k">한산도 대첩</b>으로 연이어 승리하며 일본의 물자 보급로(바닷길)를 끊었습니다. 육지에서는 <b class="k">곽재우·조헌</b> 같은 민간인들이 스스로 무기를 들고 일어난 <b class="k">의병</b>이 곳곳에서 활약했습니다. 여기에 조선을 도우러 온 명나라 군대가 합세해(조·명 연합군) <b>평양성</b>을 되찾았고, <b>권율</b> 장군은 <b class="k">행주 대첩</b>으로 크게 승리합니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>의병</b>은 정규군이 아니라 나라가 위기에 처하자 <b>백성이 스스로</b> 무기를 들고 일어난 민간 저항군입니다. 관군 지휘관인 권율(행주 대첩)이나 수군 지휘관인 이순신과는 신분이 다릅니다.</p>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">전열을 가다듬다 — 훈련도감과 삼수병</div><div class="era">휴전 협상기, 1593경</div></div>
+<div class="body">
+<p>전세가 조선 쪽으로 기울자 잠시 휴전 협상이 벌어집니다. 이 틈에 조선은 직업 군인 부대인 <b class="k">훈련도감</b>을 만들고, 지방군 편제를 정비한 <b class="k">속오법</b>을 실시하며 전열을 가다듬습니다. 훈련도감 군인은 활을 쏘는 <b>사수</b>, 조총을 쏘는 <b>포수</b>, 창칼을 쓰는 <b>살수</b> 세 종류로 구성되어 이를 <b class="k">삼수병</b>이라 부릅니다.</p>
+<div class="quote">"재수·삼수하는 수험생을 떠올리며 '삼수'라는 단어로 기억하면 사수·포수·살수 세 종류라는 게 잊히지 않습니다." — 강사, 필기반 7/12 영상 약 5시간48분경</div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> <b>훈련도감은 임진왜란(선조) 때 설치</b>된 기구입니다. 병자호란(인조) 시기를 배경으로 한 소설을 제시하고 "청의 침입에 대항하기 위해 훈련도감을 설치하였다"고 하면 <b>틀린 문장</b>입니다 — 그때는 이미 훈련도감이 존재했습니다(2013년 기출 확인).</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">정유재란과 전쟁의 상처</div><div class="era">선조, 1597~1598</div></div>
+<div class="body">
+<p>하지만 협상이 깨지자 일본이 다시 쳐들어옵니다 — <b class="k">정유재란</b>(1597)입니다. 이때도 이순신이 <b class="k">명량 대첩</b>과 <b class="k">노량 해전</b>에서 승리하며 결국 일본군을 완전히 몰아냅니다.</p>
+<p>7년간의 이 전쟁은 조선에 큰 상처를 남겼습니다. 국가 재정이 바닥나고, <b>불국사·경복궁·조선왕조실록 사고(史庫)</b> 같은 소중한 문화재가 불타 없어졌습니다. 반면 <b>담배·고추</b> 같은 새로운 작물이 이때 조선에 들어오기도 했습니다. 이웃 나라들에도 큰 영향을 줬는데, <b>명나라는 국력이 크게 약해졌고</b>, 그 틈에 여진족이 힘을 키워 훗날 <b class="k">후금</b>(1616)을 세우게 됩니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>실측으로 확인된 함정 —</b> "임진왜란이 대외 정세에 끼친 영향"을 묻는 문제에 <b>북벌론 대두</b>를 정답 오답으로 끼워 넣는 문제가 실제 출제되었습니다(2013년). 북벌론은 임진왜란이 아니라 <b>훨씬 뒤 병자호란 이후 효종 때</b> 나온 이야기입니다.</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">광해군의 줄타기 외교, 그리고 인조반정</div><div class="era">광해군, 1608~1623</div></div>
+<div class="body">
+<p>전쟁이 끝난 뒤 왕이 된 <b>광해군</b>은 매우 실리적인 외교를 폅니다. 예전 은인인 명나라와, 새로 떠오르는 강자 후금 사이에서 어느 한쪽 편을 들지 않는 <b class="k">중립 외교</b>를 편 것입니다 — 명의 요청으로 파병하면서도, 강홍립 장군에게 상황을 봐서 항복해도 된다고 지시했습니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>두 거래처(명·후금) 사이에서 한쪽 편만 들면 다른 쪽과 관계가 끊길 위험이 있으니, 겉으로는 예전 거래처(명) 편을 들면서도 뒤로는 신흥 강자(후금)와 척지지 않도록 여지를 남겨 두는 것과 같습니다.</div></div>
+<p>전쟁 피해 복구를 위해 방대한 의학서 <b class="k">동의보감</b>(허준)을 편찬하고, 세금 제도를 개선한 <b class="k">대동법</b>도 시작합니다. 하지만 광해군은 명에 대한 의리를 저버렸다는 비판, 그리고 인목대비를 유폐한 일 등으로 반대 세력(서인)의 반발을 사서, 결국 <b class="k">인조반정</b>(1623)으로 쫓겨나고 인조가 왕이 됩니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> "광해군 때 북벌 운동이 전개되었다"는 <b>틀린 문장</b>으로 반복 출제됩니다(2021년 기출). 북벌 운동은 광해군이 아니라 병자호란 이후 <b>효종</b> 때입니다 — 광해군은 오히려 정반대로 중립 외교를 편 왕입니다.</div></div>
+</div>
+</div>
+
+<div class="story s5">
+<div class="head"><div class="num">5</div><div class="ttl">정묘호란과 병자호란 — 삼전도의 굴욕</div><div class="era">인조, 1623~1637</div></div>
+<div class="body">
+<p>인조를 세운 서인 정권은 광해군과 반대로 "명나라와는 친하게, 후금은 배척한다"는 <b class="k">친명배금</b> 정책을 폅니다. 이에 분노한 후금이 쳐들어온 것이 <b class="k">정묘호란</b>(1627)입니다 — 인조는 강화도로 피난했고, 결국 후금과 <b>"형과 아우" 관계</b>를 맺는 선에서 마무리됩니다.</p>
+<p>그런데 후금은 이후 국호를 아예 <b class="k">청</b>으로 바꾸고(1636, 홍타이지=태종), 조선에 "이제 형제가 아니라 임금과 신하 관계를 맺자"고 요구합니다. 조선이 이를 거부하자 청 태종이 직접 대군을 이끌고 쳐들어온 것이 <b class="k">병자호란</b>(1636~37)입니다. 인조는 이번엔 강화도로 가는 길이 막혀 <b class="k">남한산성</b>으로 피신해 항전하지만 결국 버티지 못하고 항복합니다 — 청 황제에게 세 번 절하고 아홉 번 머리를 조아리는 <b class="k">삼전도의 굴욕</b>을 겪고, 청과 임금·신하 관계를 맺으며 소현세자와 봉림대군(훗날 효종)이 청에 인질로 끌려갑니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>정묘호란=형제 관계</b>, <b>병자호란=군신 관계+삼전도의 굴욕</b>입니다. 같은 나라(후금→청)를 상대로 한 두 전쟁이지만 결과가 완전히 다릅니다 — 첫 번째는 대등한 관계로 봉합했지만, 두 번째는 완전한 항복이었습니다.</p>
+<p>이후 왕이 된 <b>효종</b>은 이 치욕을 갚겠다며 송시열·송준길·이완 등과 함께 청을 정벌하자는 <b class="k">북벌 운동</b>을 추진하지만, 실제로 실행에 옮기지는 못하고 실패로 끝납니다.</p>
+</div>
+</div>
+
+<div class="story s6">
+<div class="head"><div class="num">6</div><div class="ttl">비변사, 임시 기구에서 최고 기구로</div><div class="era">임진왜란 이후~19세기</div></div>
+<div class="body">
+<p>이 전쟁들을 거치며 원래 국방 문제만 다루던 임시 회의 기구 <b class="k">비변사</b>의 역할이 완전히 달라집니다. 비변사는 원래 1510년 <b>3포왜란</b>을 계기로 만들어진 임시 기구였다가 1555년 <b>을묘왜변</b> 이후 상설 기구가 되었는데, 임진왜란을 거치며 전·현직 3정승과 5조 판서·참판, 각 군영 대장까지 다 모이는 <b class="k">국가 최고 정치 기구</b>로 커집니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>원래는 "비상 상황에만 소집되는 국방 태스크포스"였던 조직이, 위기가 반복되자 어느새 정규 이사회(의정부)보다 힘이 센 실질적 경영위원회가 되어버린 것과 비슷합니다.</div></div>
+<p>군사뿐 아니라 외교·재정까지 총괄하게 되면서, 원래 나랏일을 담당하던 <b>의정부와 6조의 힘은 오히려 약해지고 왕권도 약해지는</b> 부작용이 생깁니다. 훗날 세도 정치기에는 비변사가 세도 가문이 권력을 휘두르는 근거지가 되기도 하는데, 결국 19세기 <b>흥선대원군</b>이 왕권 강화를 위해 비변사를 폐지하고 의정부·삼군부의 기능을 되살립니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> 비변사는 <b>3포왜란(1510) 계기 임시 설치 → 을묘왜변(1555) 이후 상설화 → 임진왜란 이후 최고 기구화 → 흥선대원군 때 폐지</b>, 이 네 단계 순서를 정확히 기억하세요. 설치 당시부터 최고 기구였다고 하면 틀립니다.</div></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빼지 않고</h2>
+<p class="sub">이야기를 읽었으면 이제 표로 정리합니다. 연도·순서·인물은 여기서 확정하세요.</p>
+
+<h3>① 임진왜란(1592)~정유재란(1597), 선조</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">전개</td><td>왜군 침략 → 부산진·동래성 함락 → 선조 의주 피난 → <b>이순신</b>(옥포→사천→<b>한산도 대첩</b>) + 의병(곽재우·조헌) → 조·명 연합군 평양성 수복 → <b>행주 대첩</b>(권율) → 휴전 협상</td></tr>
+<tr><td class="nm">휴전기 정비</td><td><b>훈련도감</b> 설치, <b>속오법</b>(지방군 개편), 조총 제작</td></tr>
+<tr><td class="nm">정유재란(1597)</td><td>휴전 결렬 → 왜군 재침략 → 이순신의 <b>명량·노량 해전</b> 승리 → 왜군 철수</td></tr>
+<tr><td class="nm">영향(조선)</td><td>비변사 기능 강화, 국가 재정 악화, 문화재 소실(불국사·경복궁·조선왕조실록 등), 신작물 전래(담배·고추 등)</td></tr>
+<tr><td class="nm">영향(대외)</td><td>명 쇠퇴, 여진족 성장 → <b>후금 건국</b>(1616)</td></tr>
+</tbody>
+</table></div>
+
+<h3>② 이순신의 4대 해전</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>순서</th><th>해전</th><th>시기</th><th>전쟁 구분</th></tr></thead>
+<tbody>
+<tr><td class="nm">1</td><td>옥포 해전</td><td>1592.5</td><td>임진왜란</td></tr>
+<tr><td class="nm">2</td><td>한산도 대첩</td><td>1592.7</td><td>임진왜란</td></tr>
+<tr><td class="nm">3</td><td>명량 해전</td><td>1597.9</td><td>정유재란</td></tr>
+<tr><td class="nm">4</td><td>노량 해전</td><td>1598.11</td><td>정유재란</td></tr>
+</tbody>
+</table></div>
+
+<h3>③ 광해군</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">외교</td><td><b>중립 외교</b>(강홍립 파견, 명·후금 사이 균형), 일본과 국교 재개(통신사 파견)</td></tr>
+<tr><td class="nm">내정</td><td><b>동의보감</b> 편찬(허준), <b>대동법</b> 실시, 인목대비 폐위</td></tr>
+<tr><td class="nm">몰락</td><td>명에 대한 의리를 저버렸다는 비판 + 인목대비 유폐 → <b>인조반정</b>(1623, 서인 주도)으로 폐위</td></tr>
+</tbody>
+</table></div>
+
+<h3>④ 호란(인조~효종)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>사건</th><th>시기</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">정묘호란</td><td>1627</td><td>서인 정권의 <b>친명배금</b> 정책 + 모문룡 지원 → 후금 침략 → 인조 강화도 피난 → <b>형제 관계</b></td></tr>
+<tr><td class="nm">청 건국</td><td>1636</td><td>홍타이지(태종) 즉위 → 국호를 후금→<b>청</b>으로 변경</td></tr>
+<tr><td class="nm">병자호란</td><td>1636~37</td><td>청의 군신 관계 요구 → 조선 거부 → 청 태종 침입 → <b>남한산성</b> 항전 → <b>삼전도의 굴욕</b> → 청과 군신 관계 + 소현세자·봉림대군 인질</td></tr>
+<tr><td class="nm">북벌 운동</td><td>효종</td><td>송시열·송준길·이완 등 서인 정권 → 청 정벌 추진 → <b>실패</b></td></tr>
+</tbody>
+</table></div>
+
+<h3>⑤ 비변사의 위상 변화</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>단계</th><th>시기</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td class="nm">1</td><td>1510</td><td><b>3포왜란</b> 계기 임시 설치</td></tr>
+<tr><td class="nm">2</td><td>1555</td><td><b>을묘왜변</b> 이후 상설 기구화</td></tr>
+<tr><td class="nm">3</td><td>임진왜란 이후</td><td>구성원 확대(전·현직 3정승, 5조 판서·참판, 각 군영 대장) / 군사·외교·재정 총괄 → <b>국가 최고 정치 기구</b>, 왕권·의정부·6조 기능 약화</td></tr>
+<tr><td class="nm">4</td><td>세도 정치기</td><td>세도 가문의 권력 기반</td></tr>
+<tr><td class="nm">5</td><td>19세기</td><td><b>흥선대원군</b> 때 폐지(의정부·삼군부 기능 부활)</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 핵심 암기표 — 감이 아니라 실측입니다</h2>
+<p class="sub">2013~2025년 기출 <b>215문항의 문제·선택지 원문</b>만을 대상으로 이 단원 키워드가 등장한 문항 수를 셌습니다(해설문 제외, 오답 보기 포함, 한 문항 내 중복은 1회).</p>
+
+<div class="notice">
+<b>이 단원의 특수 사정을 먼저 밝힙니다.</b> 저희가 가진 기출 원문은 <b>「정치」 단원 문항만</b> 수록한 자료인데, 그중에서도 <b>12단원과 정확히 들어맞는 문항은 215문항 전체에서 단 4개(Q191~194, 모두 2013~2020년)</b>입니다. 2023~2025년 최근 3개년 구간에는 이 단원 문항이 없었습니다. 아래 표는 이 4문항과, 관광국사.md·강의가 직접 강조한 서술을 근거로 정리했습니다.
+</div>
+
+<div class="freq">
+<div class="row"><span class="gr gA">A</span><div><b>이순신 해전 순서 (1)</b> — 2014년 기출에서 옥포·한산도·명량·노량 4개 해전의 순서를 묻는 문제가 그대로 출제되었습니다. 임진왜란 초반(옥포·한산도)과 정유재란(명량·노량)으로 나눠 기억하는 것이 핵심입니다.</div></div>
+<div class="row"><span class="gr gA">A</span><div><b>병자호란의 결과·전개 (2)</b> — 2013년(『박씨전』 배경 시기)·2020년(병자호란 결과) 두 문항 모두 "이 시기가 아닌 사실을 끼워 넣는" 함정형이었습니다.</div></div>
+<div class="row"><span class="gr gB">B</span><div><b>전쟁의 국내외 영향 (1)</b> — 2013년 기출에서 "북벌론 대두"를 임진왜란의 영향으로 잘못 끼워 넣는 함정이 출제되었습니다.</div></div>
+<div class="row"><span class="gr gZ">0회</span><div><b>이 자료 안에서 0회</b> — 광해군의 중립 외교·대동법·동의보감, 인조반정, 정묘호란, 비변사, 훈련도감·속오법·삼수병 자체를 직접 묻는 문항.</div></div>
+</div>
+
+<div class="zero"><b>다만 「0회」를 버릴 근거로 삼지 마세요.</b> 이 기출 자료가 「정치」 단원만, 그것도 극히 일부만 담고 있는 한계일 뿐입니다. 관광국사.md와 강의가 이 단원에서 가장 자주 강조한 함정은 <b>「정묘호란(형제 관계) vs 병자호란(군신 관계·삼전도의 굴욕)」</b> 구분과, <b>「북벌 운동=효종(광해군 아님)」</b> 구분입니다. 실제 시험에서는 광해군·비변사도 자주 출제되는 인기 주제이므로, 이 표를 「출제 안 된다」는 뜻으로 읽지 마세요.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">이 단원에서 점수를 깎아 먹는 건 <b>모르는 것</b>이 아니라 <b>비슷해서 헷갈리는 것</b>입니다. 아래 6쌍만 확실히 갈라 두면 절반은 지킵니다.</p>
+
+<div class="cmp">
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ① 정묘호란 vs 병자호란</h4>
+<div class="vs">
+<div class="side g"><b>정묘호란</b>1627<br><b>형제</b> 관계로 마무리<br>강화도 피난</div>
+<div class="mid">결과<br>완전히 다름</div>
+<div class="side x2"><b>병자호란</b>1636~37<br><b>군신</b> 관계+삼전도 굴욕<br>남한산성 항전</div>
+</div>
+<p class="why">"삼전도의 굴욕"과 "군신 관계"는 병자호란의 결과입니다. 정묘호란은 <b>형제 관계</b>로 봉합되었을 뿐 항복은 아니었습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ② 광해군의 중립 외교 vs 인조의 친명배금</h4>
+<div class="vs">
+<div class="side n"><b>광해군</b>명·후금 사이 <b>중립</b><br>강홍립에게 상황 판단 지시</div>
+<div class="mid">정반대<br>노선</div>
+<div class="side b"><b>인조(서인)</b><b>친명배금</b><br>후금을 자극 → 정묘호란</div>
+</div>
+<p class="why">인조반정으로 광해군의 중립 외교를 뒤집고 친명배금을 택한 것이 오히려 두 차례 호란을 부른 원인이 되었습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ③ 북벌 운동 — 효종 vs 광해군</h4>
+<div class="vs">
+<div class="side g"><b>효종</b>병자호란 치욕 갚기<br>송시열·송준길·이완</div>
+<div class="mid">가장 흔한<br>함정</div>
+<div class="side x2"><b>광해군</b>북벌 운동<br><b>아님</b>(중립 외교 폈음)</div>
+</div>
+<p class="why">"광해군 때 북벌 운동이 전개되었다"는 <b>틀린 문장</b>입니다(2021년 기출 확인). 북벌 운동은 병자호란 이후 <b>효종</b> 때입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ④ 훈련도감 — 임진왜란 vs 병자호란</h4>
+<div class="vs">
+<div class="side g"><b>임진왜란(선조)</b>훈련도감 <b>설치</b><br>삼수병(사수·포수·살수)</div>
+<div class="mid">시점<br>혼동 금지</div>
+<div class="side x2"><b>병자호란(인조)</b>훈련도감<br>이미 <b>존재</b>(신설 아님)</div>
+</div>
+<p class="why">"청의 침입에 대항하기 위해 훈련도감을 설치하였다"(병자호란 시점)는 <b>틀린 문장</b>입니다(2013년 기출 확인). 훈련도감은 그보다 앞서 임진왜란 때 이미 설치되었습니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ⑤ 비변사 — 설치 당시 vs 임진왜란 이후</h4>
+<div class="vs">
+<div class="side b"><b>설치 당시(1510)</b>3포왜란 계기<br><b>임시</b> 국방 기구</div>
+<div class="mid">위상<br>완전히 다름</div>
+<div class="side g"><b>임진왜란 이후</b><b>국가 최고 정치 기구</b><br>외교·재정까지 총괄</div>
+</div>
+<p class="why">비변사는 처음부터 최고 기구가 아니라 <b>3포왜란→을묘왜변→임진왜란</b>을 거치며 단계적으로 커진 것입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> ⑥ 4군 6진 vs 임진·병자 전쟁</h4>
+<div class="vs">
+<div class="side a"><b>4군 6진</b><b>세종</b> 때 개척<br>여진 정벌·영토 확장</div>
+<div class="mid">200년<br>차이</div>
+<div class="side b"><b>병자호란</b><b>인조</b> 때<br>영토 확장과 무관</div>
+</div>
+<p class="why">"병자호란의 결과로 4군 6진을 설치해 영토를 확장하였다"는 <b>틀린 문장</b>입니다(2020년 기출 확인). 4군 6진은 병자호란보다 200년 앞선 세종 때의 일입니다.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<p class="sub">이 단원은 관광국사.md 본문·기출 정리 자료 모두에서 강의 인용이 많이 남아 있지 않았습니다(핵심.pdf 12페이지 서술과, 삼수병 암기법 한 대목만 확인). 나머지는 강의 인용을 억지로 채우지 않고 교재·기출 원문만으로 정리했습니다.</p>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"재수·삼수하는 수험생을 떠올리며 '삼수'라는 단어로 기억하면 사수·포수·살수 세 종류라는 게 잊히지 않습니다."</b> (필기반 7/12 영상 약 5시간48분경)</div></li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 18문항</h2>
+<p class="sub"><b>4문항이 실제 기출</b>이고, 교재·강의가 강조한 나머지 주제 14개를 예상문제로 채웠습니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>구성을 밝힙니다.</b> 2013~2025년 215문항 중 <b>12단원 내용에 정확히 들어맞는 문항은 4개</b>뿐입니다 — 기출 원문 자료가 「정치」 단원만 수록하고 있고, 그중에서도 이 단원은 2013~2022년 구간에서만 4문항이 확인되었기 때문입니다(2023~2025년에는 없음). 그 4문항을 그대로 실었습니다: <b>Q1</b>(2013년, 한산도 대첩 사료·전쟁의 영향), <b>Q2</b>(2014년, 4대 해전 순서), <b>Q3</b>(2013년, 『박씨전』과 병자호란 시기), <b>Q4</b>(2020년, 병자호란의 결과). <b>보기 4개가 원문에 온전한 문항만</b> 사용했습니다(추측 금지 원칙).<br><br>
+예상문제 14문항은 <b>관광국사.md 교재 원문과 기출문제풀이 강의(7/12 영상)에서 확인한 사실만으로</b> 만들었습니다 — 임진왜란의 전개·의병·훈련도감과 삼수병·정유재란·전쟁의 영향·광해군의 중립 외교와 업적·인조반정·정묘호란·병자호란·북벌 운동·비변사의 위상 변화.
+</div>
+
+<div class="quizbar">
+<svg class="ic" width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 18 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="wrongBtn" onclick="onlyWrong()" style="display:none">틀린 문제만 다시</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts">
+<button class="btn" onclick="onlyWrong()">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" onclick="reset()">전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>01_관광국사/04_최종교재/관광국사.md</code> 12단원(핵심.pdf 12페이지〈"5.임진왜란~병자호란"〉및 비변사 표) + 필기반 7/12 영상 약 5시간48분경(삼수병 암기법) / 기출: <code>01_관광국사/03_작업자료/관광국사기출.md</code>(2013~2025년 215문항 중 Q191~194, 12단원 4문항).</p>
+<p><b>실측 방법</b> — 215문항의 <b>문제·선택지 원문</b>만을 대상으로 이 단원 키워드가 등장한 문항 수를 셌습니다(해설문 제외, 오답 보기 포함, 한 문항 내 중복은 1회). <b>12단원 직접 출제: 4문항</b> — 기출 원문 자료가 「정치」 단원만 수록한 탓이며, 실제 시험의 이 단원 출제 비중과는 다를 수 있습니다.</p>
+<p><b>추측 금지</b> — 교재와 기출 원문, 확인한 강의 구간에 없는 내용은 넣지 않았습니다. 예상문제 14문항도 이 범위 안의 사실만으로 구성했습니다. Q196(광해군)·Q211(병자호란 대외관계 연결)은 기출 정리 자료에서 14단원(조선 후기의 정치)으로 분류되어 있어 이 자료에는 싣지 않았습니다 — 14단원 제작 시 다룹니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var QS=[
+{n:1,c:"임진왜란",src:"기출 2013",q:"다음 사료와 관련된 전쟁이 국내외에 끼친 영향으로 옳지 <b>않은</b> 것은? — \"견내량의 지형이 좁고 암초가 많아서 판옥선은 부딪히기 쉬우므로 싸우기가 어려울 뿐 아니라, 적이 만일 형세에 불리하면 기슭을 타고 육지로 올라갈 것이라 생각되어 한산도 앞바다로 꾀어내어 모두 해치워 버릴 전략을 세웠다.\"",o:["인구 감소","문화재 손실","여진 성장","북벌론 대두"],a:3,e:"사료는 <b>한산도 대첩(임진왜란)</b>을 가리킵니다. <b>북벌론은 이보다 한참 뒤인 병자호란 이후 효종 때</b> 대두된 것이라 임진왜란의 영향으로 볼 수 없습니다. 인구 감소, 문화재 손실(불국사·경복궁 등 소실), 여진족 성장(후금 건국의 계기)은 모두 임진왜란이 남긴 실제 영향입니다."},
+{n:2,c:"임진왜란",src:"기출 2014",q:"다음을 발생한 순서대로 옳게 나열한 것은? ㄱ.옥포 해전 ㄴ.명량 해전 ㄷ.한산도 대첩 ㄹ.노량 해전",o:["ㄱ→ㄴ→ㄹ→ㄷ","ㄱ→ㄷ→ㄴ→ㄹ","ㄷ→ㄱ→ㄴ→ㄹ","ㄷ→ㄹ→ㄱ→ㄴ"],a:1,e:"이순신의 4대 해전은 <b>옥포해전(1592.5) → 한산도 대첩(1592.7) → 명량해전(1597.9) → 노량해전(1598.11)</b> 순입니다. 임진왜란 초반(옥포·한산도)과 정유재란 때(명량·노량)로 나눠 기억하면 순서가 헷갈리지 않습니다."},
+{n:3,c:"호란·광해군",src:"기출 2013",q:"다음 소설이 서술하고 있는 시기에 관한 설명으로 옳지 <b>않은</b> 것은? — \"이 말을 들은 청나라 왕이 크게 기뻐하며 한유와 용골대를 대장으로 삼고, 날랜 군사 십만을 주어 조선을 공격하게 하였다…\" -『박씨전』-",o:["서인들이 정치를 주도하고 있었다","친명배금(親明排金) 정책을 실시하고 있었다","청의 침입에 대항하기 위하여 훈련도감을 설치하였다","반정(反正)을 통해 인조가 집권하고 있었다"],a:2,e:"소설 『박씨전』이 그리는 시기는 <b>병자호란(인조 대)</b>입니다. 그런데 훈련도감은 병자호란 때가 아니라 그보다 앞선 <b>임진왜란(선조 대)</b> 때 이미 설치된 기구입니다 — 병자호란 시점에 '설치하였다'고 하면 시대가 어긋납니다. 서인 집권, 친명배금 정책, 인조반정은 모두 이 시기(인조 대)의 옳은 특징입니다."},
+{n:4,c:"호란·광해군",src:"기출 2020",q:"병자호란의 결과에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["청나라에 많은 양의 조공을 바쳤다","청나라를 정벌하자는 북벌 운동이 대두되었다","4군과 6진을 설치하여 북방 영토를 확장하였다","청나라와 군신 관계를 맺고 세자와 백성들이 포로로 끌려갔다"],a:2,e:"4군 6진은 병자호란(인조)의 결과가 아니라 그보다 200년 앞선 <b>세종</b> 때 여진족을 정벌해 개척한 영토입니다. 조공, 북벌 운동(효종 때 대두), 군신 관계·포로 압송은 모두 병자호란의 실제 결과입니다."},
+{n:5,c:"임진왜란",src:"예상문제",q:"임진왜란의 전개 순서로 옳은 것은?",o:["부산진·동래성 함락 → 이순신의 옥포·한산도 대첩 → 조·명 연합군의 평양성 수복 → 행주 대첩","이순신의 한산도 대첩 → 부산진·동래성 함락 → 행주 대첩 → 평양성 수복","조·명 연합군의 평양성 수복 → 부산진 함락 → 행주 대첩 → 한산도 대첩","행주 대첩 → 부산진 함락 → 평양성 수복 → 한산도 대첩"],a:0,e:"임진왜란은 <b>부산진·동래성 함락(왜군 상륙) → 이순신의 옥포·한산도 대첩 → 조·명 연합군의 평양성 수복 → 권율의 행주 대첩</b> 순으로 전개되었고, 이후 휴전 협상에 들어갑니다."},
+{n:6,c:"임진왜란",src:"예상문제",q:"다음 중 임진왜란 때 의병으로 활약한 인물은?",o:["권율","이순신","곽재우","유성룡"],a:2,e:"<b>곽재우</b>는 스스로 무기를 들고 일어난 대표적 의병장입니다(조헌도 마찬가지). 권율은 관군 지휘관(행주 대첩), 이순신은 수군 지휘관, 유성룡은 선조의 명으로 훈련도감 설치를 주도한 문신입니다(기출 11단원 자료 확인)."},
+{n:7,c:"임진왜란",src:"예상문제",q:"휴전 협상 기간 중 조선이 정비한 내용으로 옳지 <b>않은</b> 것은?",o:["훈련도감을 설치하였다","속오법으로 지방군을 개편하였다","조총을 제작하였다","4군 6진을 설치하였다"],a:3,e:"4군 6진은 <b>세종</b> 때 개척한 영토로, 임진왜란 휴전기 정비와는 무관합니다. 훈련도감 설치, 속오법(지방군 개편), 조총 제작은 모두 이 시기 조선의 전열 정비입니다."},
+{n:8,c:"임진왜란",src:"예상문제",q:"훈련도감 군인을 부르는 '삼수병'을 구성하는 세 병종으로 옳은 것은?",o:["궁수·창수·기병","사수·포수·살수","보병·기병·수군","정병·잡색군·갑사"],a:1,e:"삼수병은 활을 쏘는 <b>사수</b>, 조총을 쏘는 <b>포수</b>, 창칼을 쓰는 <b>살수</b> 세 종류입니다. 강사는 '재수·삼수하는 수험생을 떠올리며 삼수라는 단어로 기억하라'고 짚었습니다(필기반 7/12 영상 약 5시간48분경)."},
+{n:9,c:"임진왜란",src:"예상문제",q:"정유재란(1597)에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["휴전 협상이 결렬되며 왜군이 다시 침략하였다","이순신이 명량 해전에서 승리하였다","이순신이 노량 해전에서 승리하며 왜군을 몰아냈다","임진왜란보다 먼저 일어난 전쟁이다"],a:3,e:"정유재란(1597)은 <b>임진왜란(1592) 이후</b>, 휴전 협상이 결렬되며 다시 일어난 전쟁입니다. 명량·노량 해전 승리로 왜군을 완전히 몰아내며 7년 전쟁이 끝납니다."},
+{n:10,c:"임진왜란",src:"예상문제",q:"임진왜란이 남긴 영향으로 옳지 <b>않은</b> 것은?",o:["국가 재정이 크게 악화되었다","불국사·경복궁 등 문화재가 소실되었다","담배·고추 등 새로운 작물이 전래되었다","왜란 직후 조선의 국력이 크게 강해졌다"],a:3,e:"임진왜란은 조선에 큰 상처를 남겼습니다 — 국가 재정 악화, 문화재 소실(불국사·경복궁·조선왕조실록 사고 등), 반대로 담배·고추 같은 새 작물의 전래도 있었습니다. '국력이 크게 강해졌다'는 사실과 정반대입니다."},
+{n:11,c:"임진왜란",src:"예상문제",q:"임진왜란이 대외 정세에 끼친 영향으로 옳은 것은?",o:["명나라의 국력이 크게 강해졌다","여진족이 힘을 키워 후금을 세우는 계기가 되었다","일본의 에도 막부가 무너졌다","조선이 청과 군신 관계를 맺었다"],a:1,e:"임진왜란으로 <b>명나라는 국력이 크게 약해졌고</b>, 그 틈에 여진족이 힘을 키워 <b>후금(1616)</b>을 세우는 계기가 되었습니다. 청과의 군신 관계는 이보다 훨씬 뒤인 병자호란(1637)의 결과입니다."},
+{n:12,c:"호란·광해군",src:"예상문제",q:"광해군의 중립 외교에 관한 설명으로 옳은 것은?",o:["명나라 편에 서서 후금을 적극 공격하였다","후금 편에 서서 명나라와 국교를 단절하였다","강홍립에게 상황을 보아 항복해도 된다고 지시하며 명·후금 사이에서 균형을 취하였다","명나라와 후금 모두와 국교를 단절하였다"],a:2,e:"광해군은 예전 은인인 명과 새로 떠오르는 후금 사이에서 어느 한쪽 편을 들지 않는 <b>중립 외교</b>를 폈습니다. 명의 파병 요청에 응하면서도 강홍립 장군에게 상황을 봐서 항복해도 된다고 지시한 것이 대표적입니다."},
+{n:13,c:"호란·광해군",src:"예상문제",q:"광해군 때의 사실로 옳지 <b>않은</b> 것은?",o:["동의보감(허준)이 편찬되었다","대동법이 시행되기 시작하였다","북인 세력이 왕을 지지하였다","북벌 운동이 전개되었다"],a:3,e:"북벌 운동은 광해군이 아니라 병자호란 이후 <b>효종</b> 때 대두되었습니다. 동의보감 편찬, 대동법 시작, 북인 세력 지지는 모두 광해군 때의 옳은 사실입니다."},
+{n:14,c:"호란·광해군",src:"예상문제",q:"인조반정(1623)에 관한 설명으로 옳은 것은?",o:["광해군의 중립 외교와 인목대비 유폐 등에 반발한 서인이 주도하였다","이순신이 주도하여 광해군을 몰아냈다","임진왜란 중에 일어났다","북인이 주도하여 정권을 잡았다"],a:0,e:"광해군이 명에 대한 의리를 저버렸다는 비판과 인목대비 유폐 등으로 반발한 <b>서인</b>이 인조반정(1623)을 주도해 광해군을 몰아내고 인조를 세웠습니다."},
+{n:15,c:"호란·광해군",src:"예상문제",q:"정묘호란(1627)에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["인조 정권의 친명배금 정책이 원인이 되었다","후금의 침입으로 인조가 강화도로 피난하였다","후금과 형제 관계를 맺는 것으로 마무리되었다","청과 군신 관계를 맺고 삼전도의 굴욕을 겪었다"],a:3,e:"청과 군신 관계를 맺고 삼전도의 굴욕을 겪은 것은 정묘호란이 아니라 <b>병자호란(1636~37)</b>의 결과입니다. 정묘호란은 후금과 <b>형제 관계</b>를 맺는 선에서 마무리되었습니다."},
+{n:16,c:"호란·광해군",src:"예상문제",q:"병자호란(1636~37)에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["후금이 국호를 청으로 바꾸고 군신 관계를 요구하며 시작되었다","인조가 남한산성으로 피신해 항전하였다","인조가 청 황제에게 삼전도의 굴욕을 겪었다","조선이 승리하며 청의 군신 관계 요구를 물리쳤다"],a:3,e:"병자호란은 조선의 <b>항복</b>으로 끝났습니다. 후금이 국호를 <b>청</b>으로 바꾸고(1636, 홍타이지=태종) 군신 관계를 요구 → 조선 거부 → 청 태종 침입 → 인조의 남한산성 항전 → 결국 항복하며 <b>삼전도의 굴욕</b>을 겪었습니다."},
+{n:17,c:"호란·광해군",src:"예상문제",q:"효종의 북벌 운동에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["병자호란의 치욕을 갚기 위해 추진되었다","송시열·송준길·이완 등이 함께하였다","청을 정벌하자는 운동이었다","실제로 북벌을 실행에 옮겨 성공하였다"],a:3,e:"북벌 운동은 <b>실행에 옮기지 못하고 실패</b>로 끝났습니다. 병자호란의 치욕을 갚겠다는 목표로 송시열·송준길·이완 등과 함께 청 정벌을 추진했지만, 실제 정벌은 이루어지지 않았습니다."},
+{n:18,c:"비변사",src:"예상문제",q:"임진왜란 이후 비변사의 위상 변화에 관한 설명으로 옳은 것은?",o:["군사 문제만 전담하는 기구로 축소되었다","전·현직 3정승과 5조 판서·참판, 각 군영 대장까지 참여하는 최고 기구로 커졌다","비변사는 흥선대원군 때 처음 설치되었다","정조 때 처음 설치되었다"],a:1,e:"임진왜란을 거치며 비변사는 <b>전·현직 3정승, 5조 판서·참판, 각 군영 대장</b>까지 다 모이는 국가 최고 정치 기구로 커졌고, 군사뿐 아니라 외교·재정까지 총괄하게 되면서 오히려 의정부·6조의 힘과 왕권이 약해지는 부작용을 낳았습니다. 비변사는 1510년 3포왜란을 계기로 이미 임시 설치되어 있었습니다."}
+];
+var sel={},graded=false,t0=null,tick=null;
+var live=null,lastWrong=[];
+function visible(){return live?QS.filter(function(q){return live.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=visible();var h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+visible().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=visible();var right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';
+lastWrong=wrong.map(function(q){return q.n});
+document.getElementById('wrongBtn').style.display='';
+}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';lastWrong=[];document.getElementById('wrongBtn').style.display='none';}
+var tx='[관광국사 12단원 — 임진왜란~병자호란] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] ('+q.src+') '+q.q.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onlyWrong(){
+if(!lastWrong.length){return;}
+live=lastWrong.slice();
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function reset(){
+live=null;lastWrong=[];
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

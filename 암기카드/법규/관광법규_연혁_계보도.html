@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>관광법규 연혁 · 계보도</title><style>
+@page{size:A4;margin:8mm}
+:root{--bg:#eeece8;--c:#ffffff;--p2:#f7f6f3;--i:#1a1a1a;--i2:#6b6b6b;--l:#e2e0dc;--navy:#2c5282;--navyL:#93a7c4;--navyBg:#f4f7fb;--g:#a8792c;--w:#c0392b;--stone:#9a968f;--neo:#2e8b4f;--sh:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05)}
+html[data-t="d"]{--bg:#16181c;--c:#1e2126;--p2:#24272d;--i:#e8e6e1;--i2:#9a958e;--l:#343841;--navy:#7fa8d4;--navyL:#4a6c92;--navyBg:#1c2530;--g:#e0b040;--w:#f0665f;--stone:#6b6259;--neo:#5fcb7e;--sh:0 1px 3px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:12px;box-shadow:var(--sh);padding:26px 30px 24px;margin-bottom:16px}
+
+/* 제목줄 — A안 스타일: 남색 굵은 밑줄 */
+.hd{display:flex;align-items:baseline;gap:11px;border-bottom:2.5px solid var(--navy);padding-bottom:11px;margin-bottom:20px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:29px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.tag{background:var(--navy);color:#fff;border-radius:5px;padding:3px 10px;font-size:11.5px;font-weight:800;letter-spacing:.02em}
+html[data-t="d"] .tag{color:#16181c}
+.hd .sub{font-size:12.5px;color:var(--i2);font-weight:700;margin-left:auto}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+
+/* 번호 목록 — A/D안 스타일 */
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:18px;font-weight:700;line-height:1.4;padding:9px 0;border-bottom:1px dotted var(--l);display:flex;gap:11px;align-items:baseline;letter-spacing:-.02em}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--navy);border-radius:4px;width:19px;height:19px;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none;position:relative;top:-1px}
+html[data-t="d"] ul.rel .n{color:#16181c}
+ul.rel small{font-size:.68em;font-weight:600;color:var(--i2);margin-left:8px}
+
+/* A안 — 타임라인 */
+.tl{position:relative;padding-left:92px}
+.tl::before{content:"";position:absolute;left:62px;top:9px;bottom:9px;width:2px;background:linear-gradient(180deg,var(--navy),var(--navyL))}
+.tl-i{position:relative;padding-bottom:15px}
+.tl-i:last-child{padding-bottom:0}
+.tl-y{position:absolute;left:-92px;top:-1px;width:46px;text-align:right;font-size:17px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1.4}
+.tl-d{position:absolute;left:-34px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--c);border:2.5px solid var(--navyL)}
+.tl-i.k .tl-d{background:var(--g);border-color:var(--g);width:12px;height:12px;left:-35px;top:6px}
+.tl-t{font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.4}
+.tl-t small{font-size:.72em;font-weight:600;color:var(--i2)}
+.tl-b{margin-top:7px;background:var(--navyBg);border-left:3px solid var(--navyL);border-radius:0 6px 6px 0;padding:8px 12px;font-size:13.5px;font-weight:600;line-height:1.55}
+.tl-b b{color:var(--navy);font-weight:800}
+.arw{color:var(--navyL);font-weight:800;padding:0 5px}
+
+/* D안 — 계보도 */
+.tr{max-width:680px;margin:0 auto}
+.nd{border:1.5px solid var(--l);background:var(--c);border-radius:8px;padding:8px 13px;text-align:center;font-size:15px;font-weight:800;letter-spacing:-.02em;line-height:1.35}
+.nd .y{display:inline-block;font-size:11.5px;font-weight:800;background:var(--p2);border:1px solid var(--l);border-radius:4px;padding:0 6px;margin-right:8px;color:var(--i2);font-variant-numeric:tabular-nums;vertical-align:1px}
+.nd.root{background:#5b4636;color:#fff;border-color:#5b4636}
+.nd.root .y{background:transparent;border-color:rgba(255,255,255,.4);color:#fff}
+.nd.now{background:var(--navy);color:#fff;border-color:var(--navy)}
+.nd.now .y{background:transparent;border-color:rgba(255,255,255,.45);color:#fff}
+html[data-t="d"] .nd.now,html[data-t="d"] .nd.now .y{color:#16181c}
+.nd.live{border-color:var(--neo);border-width:2px}
+.lbl{font-size:12px;font-weight:800;color:var(--i2);text-align:center;padding-top:7px}
+.lbl.live{color:var(--neo)}
+.spw{position:relative;height:30px}
+.spw i{position:absolute;top:0;left:50%;width:2px;height:16px;background:var(--stone);transform:translateX(-1px)}
+.spw u{position:absolute;top:16px;left:25%;right:25%;height:2px;background:var(--stone);text-decoration:none}
+.spw u::before,.spw u::after{content:"";position:absolute;top:0;width:2px;height:14px;background:var(--stone)}
+.spw u::before{left:0}.spw u::after{right:0}
+.mgw{position:relative;height:30px}
+.mgw u{position:absolute;top:14px;left:25%;right:25%;height:2px;background:var(--stone);text-decoration:none}
+.mgw u::before,.mgw u::after{content:"";position:absolute;top:-14px;width:2px;height:14px;background:var(--stone)}
+.mgw u::before{left:0}.mgw u::after{right:0}
+.mgw i{position:absolute;top:14px;left:50%;width:2px;height:16px;background:var(--stone);transform:translateX(-1px)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.trh{font-size:12.5px;font-weight:800;color:var(--i2);letter-spacing:.06em;text-align:center;margin:0 0 9px}
+.keypt{margin-top:20px;background:var(--navyBg);border-left:3px solid var(--navy);border-radius:0 6px 6px 0;padding:12px 15px;font-size:13px;line-height:1.7;font-weight:600}
+.keypt b{color:var(--navy);font-weight:800}
+.keypt .lb{display:inline-block;font-weight:800;color:var(--navy);margin-right:6px}
+
+@media (max-width:860px){
+ .card{padding:20px 18px}
+ .hd h1{font-size:32px}
+ ul.rel li{font-size:20px}
+ .tl{padding-left:74px}.tl::before{left:50px}.tl-y{left:-74px;width:38px}.tl-d{left:-28px}.tl-i.k .tl-d{left:-29px}
+ .tl-t,.tl-y{font-size:18px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0;min-height:0;display:block}.card{border:0;box-shadow:none;margin-bottom:24px;padding:0;break-inside:avoid;page-break-inside:avoid}
+ @page{size:A4;margin:10mm}
+ .tl-i,.nd,.g2,li{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}
+
+/* D안 사이드 목록 */
+.side{display:grid;grid-template-columns:1fr 290px;gap:30px;align-items:start}
+.mini h4{margin:0 0 9px;font-size:11.5px;font-weight:800;color:var(--i2);letter-spacing:.08em}
+.mini ol{margin:0;padding-left:0;list-style:none;counter-reset:m}
+.mini li{counter-increment:m;display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted var(--l);font-size:13px;font-weight:700;align-items:baseline}
+.mini li::before{content:counter(m);background:var(--navy);color:#fff;width:17px;height:17px;border-radius:4px;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none;font-weight:800;position:relative;top:1px}
+html[data-t="d"] .mini li::before{color:#16181c}
+.mini li:last-child{border-bottom:0}
+.mini li em{font-style:normal;color:var(--i2);font-weight:600;font-size:11.5px;margin-left:auto;font-variant-numeric:tabular-nums}
+.D-h{font-size:15px;font-weight:800;margin:0 0 4px;letter-spacing:-.03em}
+.D-sub{font-size:12px;color:var(--i2);margin:0 0 18px;font-weight:600}
+.absorb{display:flex;align-items:center;gap:11px;margin-top:15px;justify-content:center;flex-wrap:wrap}
+.absorb .arrow{color:var(--stone);font-size:15px;font-weight:800}
+.absorb .memo{font-size:12px;color:var(--i2);font-weight:700}
+.nd.dead{border-style:dashed;color:var(--i2);font-weight:700;font-size:13.5px}
+@media(max-width:860px){.side{grid-template-columns:1fr;gap:20px}}
+@media(max-width:520px){.nd{font-size:13px;padding:7px 9px}.nd .y{margin-right:5px;font-size:10.5px}}
+.tl-s{font-size:12.5px;color:var(--i2);margin-top:3px;font-weight:600}
+</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<div class="card">
+<div class="hd">
+  <h1>관 광 법 규 연 혁</h1>
+</div>
+<div class="tl">
+  <div class="tl-i"><span class="tl-y">1954</span><span class="tl-d"></span>
+    <div class="tl-t">교통부 육운국 관광과 설치</div>
+    <div class="tl-s">우리나라 관광행정의 시작</div></div>
+
+  <div class="tl-i k"><span class="tl-y">1961</span><span class="tl-d"></span>
+    <div class="tl-t">관광사업진흥법 제정</div>
+    <div class="tl-s">최초의 관광 법률 — 이후 모든 법의 뿌리</div></div>
+
+  <div class="tl-i"><span class="tl-y">1962</span><span class="tl-d"></span>
+    <div class="tl-t">국제관광공사법</div>
+    <div class="tl-b"><b>1982</b><span class="arw">→</span>한국관광공사법으로 <b>명칭 변경</b></div></div>
+
+  <div class="tl-i k"><span class="tl-y">1972</span><span class="tl-d"></span>
+    <div class="tl-t">관광진흥개발기금법</div>
+    <div class="tl-s">제정 이후 현재까지 유지되는 법</div></div>
+
+  <div class="tl-i"><span class="tl-y">1975</span><span class="tl-d"></span>
+    <div class="tl-t">관광단지개발촉진법</div>
+    <div class="tl-b">61년 <b>관광사업진흥법</b><span class="arw">→</span><b>관광기본법</b> + <b>관광사업법</b>으로 분리</div></div>
+
+  <div class="tl-i k"><span class="tl-y">1986</span><span class="tl-d"></span>
+    <div class="tl-t">관광진흥법 제정</div>
+    <div class="tl-b">61년 <b>사업진흥법</b> · 75년 <b>사업법</b><span class="arw">→</span><b>관광진흥법</b>으로 통합<br>
+      관광단지개발촉진법 <b>폐지</b><span class="arw">→</span>진흥법으로 흡수</div></div>
+
+  <div class="tl-i"><span class="tl-y">1996</span><span class="tl-d"></span>
+    <div class="tl-t">국제회의산업 육성에 관한 법률</div></div>
+
+  <div class="tl-i"><span class="tl-y">1997</span><span class="tl-d"></span>
+    <div class="tl-t">관광숙박시설지원법</div></div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>계 보 도</h1>
+</div>
+<div class="side">
+  <div>
+    <p class="D-h">관광법의 갈라짐과 합쳐짐</p>
+    <p class="D-sub">61년 법 하나에서 출발해 오늘의 체계가 됨</p>
+
+    <div class="nd root"><span class="y">1961</span>관광사업진흥법</div>
+    <div class="spw"><i></i><u></u></div>
+    <div class="g2">
+      <div><div class="nd"><span class="y">1975</span>관광기본법</div></div>
+      <div><div class="nd"><span class="y">1975</span>관광사업법</div></div>
+    </div>
+    <div class="mgw"><u></u><i></i></div>
+    <div class="nd now"><span class="y">1986</span>관광진흥법</div>
+
+    <div class="absorb">
+      <div class="nd dead"><span class="y">1975</span>관광단지개발촉진법</div>
+      <span class="arrow">→</span>
+      <span class="memo">86년 <b>폐지</b>되며 진흥법에 흡수</span>
+    </div>
+
+    <div class="keypt">
+      <span class="lb">①</span>61년 <b>관광사업진흥법</b>이 모든 것의 뿌리<br>
+      <span class="lb">②</span>75년에 <b>기본법 · 사업법</b>으로 둘로 갈라짐<br>
+      <span class="lb">③</span>86년에 <b>관광진흥법</b>으로 다시 합쳐지고, 촉진법도 여기로 흡수
+    </div>
+  </div>
+
+  <div class="mini">
+    <h4>현행 관광법 5가지</h4>
+    <ol>
+      <li>관광기본법 <em>1975</em></li>
+      <li>관광진흥법 <em>1986</em></li>
+      <li>관광진흥개발기금법 <em>1972</em></li>
+      <li>국제회의산업 육성에 관한 법률 <em>1996</em></li>
+      <li>한국관광공사법 <em>1982</em></li>
+    </ol>
+    <h4 style="margin-top:20px">따로 기억</h4>
+    <ol>
+      <li>교통부 육운국 관광과 <em>1954</em></li>
+      <li>관광숙박시설지원법 <em>1997</em></li>
+    </ol>
+  </div>
+</div>
+</div>
+
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

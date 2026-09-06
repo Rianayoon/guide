@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>국사 표모음 3편 — 고대의 통치 조직 · 골품제 · 남북국시대</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광국사 · 표 모음</div>
+<h1>관광국사 표 모음 — 3편 고대의 통치 조직 · 골품제 · 남북국시대
+<small>교재 진도 순서대로 · 표 10개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">4단원 고대의 통치 조직 · 5단원 남북국시대</span>
+<span class="chip">11개년 기출 29문항 · 발해는 9년 연속 출제</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>고대의 통치 조직 · 골품제 · 남북국시대</b>
+<a href="#t1">표 ① 고대의 통치 조직 — 삼국시대 · 남북국시대</a><a href="#t2">표 ② 골품제도</a><a href="#t3">표 ③</a><a href="#t4">표 ④</a><a href="#t5">표 ⑤ 남북국의 정치적 발전 — 시기별</a><a href="#t6">표 ⑥ 통일신라 왕별 총정리</a><a href="#t7">표 ⑦ 발해 왕별 총정리</a><a href="#t8">표 ⑧</a><a href="#t9">표 ⑨</a><a href="#t10">표 ⑩ 후삼국 ~ 고려 건국</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 10개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (8개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n5">★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<section id="t1" data-imp="1">
+<h2><span class="no">표 ①</span> 고대의 통치 조직 — 삼국시대 · 남북국시대 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:110px">구분</th><th>삼국 시대</th><th>통일 신라</th><th>발해</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>귀족 회의<br>기구</b></td>
+<td>고구려 : <b><span class="hl">제가회의</span></b><br>백제 : <b>정사암 회의</b><br>신라 : <b>화백회의</b>(의장 <b><span class="hl">상대등</span></b>)<br><b>기능</b> : 국가 중대사 결정 · 왕권 견제</td>
+<td>—</td><td>—</td></tr>
+
+<tr class="per"><td class="biz"><b>중앙 관제</b></td>
+<td>백제 <b>6<span class="hl">좌평</span></b>(고이왕) → <b><span class="hl">22부</span></b>(성왕)<br>신라 <b><span class="hl">상대등</span></b> · 병부(법흥왕)</td>
+<td><b><span class="hl">집사부</span></b> : 국왕 직속의 <b>최고 행정 기구</b><br>&nbsp;&nbsp;장관 = <b><span class="hl">시중</span></b><br><b>위화부</b> 등의 <b>13부</b> 설치</td>
+<td><b>3성 6부</b>(당의 영향) — <b>독자적 운영</b><br><b>정당성 · 선조성 · 중대성</b><br>정당성 장관 = <b>대내상</b>(국정 총괄)<br>6부 : <b>좌사정</b>(충 · 인 · 의부), <b>우사정</b>(예 · 지 · 신부) — 유교</td></tr>
+
+<tr class="not"><td class="biz"><b>감찰 기관</b></td>
+<td>—</td>
+<td><b>사정부</b> · <b>외사정</b>(지방관 감찰)</td>
+<td><b>중정대</b></td></tr>
+
+<tr class="des"><td class="biz"><b>국립 대학</b></td>
+<td>고구려 <b><span class="hl">태학</span></b>(소수림왕)</td>
+<td><b><span class="hl">국학</span></b>(<b>신문왕</b>)</td>
+<td><b>주자감</b>(문왕)</td></tr>
+
+<tr class="mint"><td class="biz"><b>지방 행정<br>조직</b></td>
+<td>고구려 : <b>5부</b>(<b>욕살</b>)<br>백제 : <b>5방</b>(<b><span class="hl">방령</span></b>) — 성 · 군<br>신라 : <b>5주</b>(<b>군주</b>) — 지방관이 군사 지휘관<br><b class="n5">★</b> 부 · 방 · 주 — <b>성 · 군까지만 지방관 파견</b><br>&nbsp;&nbsp;촌은 <b>촌주</b>가 다스림</td>
+<td><b>9주 5소경</b><br><b>9주</b>(총관 → <b>도독</b>) : 군사적 → <b>행정적</b> 역할<br><b>5소경</b> : 수도의 편재성 보완<br>&nbsp;&nbsp;지방의 균형적 발전 · 지방 세력 통제<br><b>향 · 부곡</b> : 특수 행정 구역(하층민 거주)<br><b>상수리 제도</b> → 지방 세력 통제</td>
+<td><b>5경 15부 62주</b><br><b>5경</b> : 전략 요충지에 설치<br><b>15부</b>(도독) — <b>62주</b>(자사) — 현<br><b>촌락</b> : 말갈족이 주로 거주<br>&nbsp;&nbsp;촌장(고구려인 — <b>토인</b>)이 지배</td></tr>
+
+<tr class="rose"><td class="biz"><b>관등 조직</b></td>
+<td>고구려 : <b><span class="hl">대대로</span></b> 이하 <b>10여 관등</b> — 형 · 사자(使者) 계열<br>백제 : <b><span class="hl">좌평</span></b> 이하 <b>16관등</b> — 솔 · 덕 계열<br>신라 : <b>이벌찬</b> 이하 <b>17관등</b><br>&nbsp;&nbsp;자 · 비 · 청 · 황색의 <b>관복 4색</b><br><b>관등 조직은 신분제에 의해 제약</b>(<b><span class="hl">골품</span></b>제도)</td>
+<td>—</td><td>—</td></tr>
+
+<tr class="reg"><td class="biz"><b>군사 조직</b></td>
+<td>—</td>
+<td><b>9서당</b>(중앙군) — <b>민족 융합</b> 목적 편성<br><b>10정</b>(지방군) → 9주에 배치</td>
+<td><b>10위</b>(중앙군)</td></tr>
+
+<tr class="per"><td class="biz"><b>관리 선발</b></td>
+<td>—</td>
+<td><b>독서삼품과</b>(원성왕)</td>
+<td>—</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2" data-imp="1">
+<h2><span class="no">표 ②</span> 골품제도 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:110px">신분</th><th style="width:150px">관등 상한</th><th style="width:130px">관복 색</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>성골</b></td><td>—</td><td>—</td><td>왕이 될 수 있는 최고 신분 · <b>박혁거세 ~ 진덕여왕</b> · 정통 왕족</td></tr>
+<tr class="per"><td class="biz"><b>진골</b></td><td><b>1관등</b>(이벌찬)</td><td><b>자색</b>부터 전부</td><td><b>태종 무열왕 ~ 경순왕</b> · 김춘추 = 왕족, 김유신 = 왕비족<br>나머지 진골 = 특권 귀족 → <b>고위 관직 독점</b></td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">6두품</span></b></td><td><b>6관등</b>(아찬)</td><td><b>비색</b>까지</td><td>일반 귀족 · 별칭 <b><span class="hl">득난</span></b></td></tr>
+<tr class="des"><td class="biz"><b>5두품</b></td><td><b>10관등</b></td><td><b>청색</b>까지</td><td>—</td></tr>
+<tr class="mint"><td class="biz"><b>4두품</b></td><td><b>12관등</b></td><td><b>황색</b>만</td><td>—</td></tr>
+<tr class="rose"><td class="biz"><b>제도 성격</b></td><td colspan="3"><b><span class="hl">골품</span>에 따라 관직 진출의 상한선 결정</b> · <b>가옥의 규모 · 수레의 크기</b> 등 제한 · <b>신분 간 이동 불가</b><br>진골 귀족의 특권을 유지시켜 주기 위한 <b>폐쇄적 신분제도</b> · 신라 <b><span class="hl">법흥왕</span></b> 때 만듦</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t3" data-imp="1">
+<h2><span class="no">표 ③</span> <b class="n5">★</b> 신라 시대 구분 — 상대 · 중대 · 하대 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:110px">구분</th><th>상대</th><th>중대 — 신라 전성기</th><th>하대 — 신라 말</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>시기</b></td><td>통일 이전(삼국 시대)</td><td>통일 이후</td><td>왕위 쟁탈전(진골 귀족)</td></tr>
+<tr class="per"><td class="biz"><b>왕위</b></td><td><b>성골</b><br><span class="dash">박혁거세 ~ 진덕여왕</span></td><td><b>진골</b> — <b>무열계</b><br><span class="dash">무열왕 ~ 혜공왕</span></td><td><b>진골</b> — <b>내물계</b><br><span class="dash">선덕왕 ~ 경순왕</span></td></tr>
+<tr class="not"><td class="biz"><b>주도 세력</b></td><td>진골 귀족</td><td>왕 · <b><span class="hl">6두품</span></b></td><td>진골 귀족</td></tr>
+<tr class="des"><td class="biz"><b>수상</b></td><td><b><span class="hl">상대등</span></b>(화백회의 의장)<br><span class="dash">진골 귀족의 대장</span></td><td><b><span class="hl">시중</span></b>(<b><span class="hl">집사부</span></b> 장관)</td><td><b><span class="hl">상대등</span></b></td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">6두품</span></b></td><td>—</td><td>전제 왕권 강화에 기여</td><td>호족과 연합하여 <b>반 신라적 경향</b> · <b><span class="hl">골품</span></b>제도 비판</td></tr>
+<tr class="rose"><td class="biz"><b>토지</b></td><td><b><span class="hl">녹읍</span></b> · 식읍</td><td><b><span class="hl">관료전</span></b> 지급 → <b><span class="hl">녹읍</span> 폐지</b></td><td><b><span class="hl">녹읍</span> 부활</b></td></tr>
+<tr class="reg"><td class="biz"><b>사상</b></td><td>지배층 중심 불교</td><td><b>교종</b> 불교 유행</td><td><b>선종</b> 불교 유행(승탑) · <b>풍수지리설</b> · 도교 · 노장사상</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t4">
+<h2><span class="no">표 ④</span> <b class="n5">★</b> 녹읍 · 관료전</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:130px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b><span class="hl">녹읍</span></b></td><td>관료 귀족에게 지급한 토지 → <b>조세 징수 ○</b>, <b>노동력 징발 ○</b> → (진골) 귀족의 경제적 · 군사적 기반</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">관료전</span></b></td><td>국왕과 국가에 대한 충성의 대가로 지급 → <b>조세 징수 ○</b>, <b>노동력 징발 ✕</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t5" data-imp="1">
+<h2><span class="no">표 ⑤</span> 남북국의 정치적 발전 — 시기별 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:64px">시기</th><th>통일 신라</th><th>발해</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>7C</b></td>
+<td><b>무열왕</b> : 진골 왕위 세습 → <b>신라 중대</b> 시작<br><b><span class="hl">집사부</span> <span class="hl">시중</span></b> 기능 강화 → <b><span class="hl">상대등</span></b> 세력 약화<br><b class="n5">★</b> <b><span class="hl">집사부</span></b> : 국왕 직속 → 최고 정치 기구, 장관 <b><span class="hl">시중</span></b><br><b>문무왕</b> : 삼국 통일 완성(<b>676</b>)<br><b>신문왕</b><br>&nbsp;&nbsp;<b>김흠돌 반란 진압</b> · <b>만파식적</b> · 달구벌(대구) 천도 추진<br>&nbsp;&nbsp;<b>9주 5소경</b>(지방 행정 조직) · <b>9서당</b>(중앙군) · <b>10정</b>(지방군)<br>&nbsp;&nbsp;<b><span class="hl">국학</span></b>(국립대) 설립 · <b><span class="hl">관료전</span></b> 지급 → <b><span class="hl">녹읍</span> 폐지</b> · <b><span class="hl">6두품</span></b> 세력 등용</td>
+<td><b>대조영(고왕)</b> : 길림성 <b>동모산</b>에서 건국(<b>698</b>)<br>&nbsp;&nbsp;→ <b>남북국 시대</b> 형성(남 신라 · 북 발해)<br>지배층 — <b>고구려인</b> / 피지배층 — <b>말갈인</b><br><b>고구려 계승 의식 표방</b><br>&nbsp;&nbsp;일본에 보낸 국서 → <b>고려국왕</b> 명칭 사용<br>&nbsp;&nbsp;고구려와의 문화적 유사성 : <b>온돌</b> 장치, 굴식 돌방무덤의 <b>모임 천장</b></td></tr>
+
+<tr class="per"><td class="biz"><b>8C</b></td>
+<td><b>성덕왕</b> : <b>정전</b> 지급 — 국가의 농민 지배력 강화<br><b>경덕왕</b> : 왕권 약화 — 진골 귀족 반발 → <b><span class="hl">녹읍</span> 부활</b><br><b>원성왕</b> : <b>독서삼품과</b><br><b>선덕왕</b>(8C 후반) : 진골 <b>내물계</b> 왕위 세습 → <b>신라 하대</b> 시작</td>
+<td><b>무왕</b>(8C 전반) : 연호 <b>인안</b><br>&nbsp;&nbsp;당과 대립 — <b>장문휴</b>의 <b>산둥반도 공격</b> · 요서 지역 침략<br>&nbsp;&nbsp;<b>돌궐 · 일본과 친선</b> → 당 · 신라 견제<br><b>문왕</b>(8C 후반) : 연호 <b>대흥</b> · <b>전륜성왕</b> 칭호 사용<br>&nbsp;&nbsp;당과 <b>친선</b> 관계 → 당의 <b>3성 6부제</b> 도입 · <b>신라도</b> 개설<br>&nbsp;&nbsp;<b>상경 천도</b> : <b>주작대로</b> 건설(당의 장안성 모방)<br>&nbsp;&nbsp;불교 발전</td></tr>
+
+<tr class="not"><td class="biz"><b>9C</b></td>
+<td>진골 귀족의 <b>왕위 쟁탈전</b> → 왕권 약화<br>중앙 정부의 지방 통제력 약화 → <b>호족</b> 세력 성장<br>지방 반란 : <b>김헌창 · 김범문의 난</b>, <b>장보고의 난</b><br><b><span class="hl">녹읍</span> 부활</b> · 귀족의 대토지 소유 → <b>농민 봉기</b>(<b>원종 · 애노의 난</b>, 진성여왕)<br><b><span class="hl">6두품</span></b> · <b>선종</b> 승려 : <b><span class="hl">골품</span></b>제 모순 비판 → 개혁 추진(<b>최치원</b>)<br><b>호족</b> — 성주 · 장군 자처, 행정권 · 군사권 · 경제력 장악<br>&nbsp;&nbsp;선종 불교 후원 · <b>풍수지리</b> 수용 · <b><span class="hl">6두품</span></b>과 연합 → 고려 건국 주도</td>
+<td><b>선왕</b>(9C 전반)<br>&nbsp;&nbsp;<b>요동</b> 지역 진출 · <b>해동성국</b>(전성기)<br>&nbsp;&nbsp;지방제도 정비 : <b>5경 15부 62주</b></td></tr>
+
+<tr class="des"><td class="biz"><b>10C</b></td>
+<td><b>후삼국 시대</b> — 신라 · 후백제 · 후고구려(1차) → 신라 · 후백제 · 고려(2차)<br><b>후백제</b>(<b>900</b>) : <b>견훤</b> → <b>완산주</b>(전주) 도읍<br><b>후고구려</b>(<b>901</b>) : <b>궁예</b> → <b>송악</b>(개성) 도읍 → 철원 천도 · <b>광평성</b> 설치<br>&nbsp;&nbsp;국호 <b>마진 → 태봉</b><br><b>고려</b>(<b>918</b>) : <b>왕건</b> → 송악(개성) 도읍<br><b>발해 멸망(926) → 신라 멸망(935) → 후백제 멸망(936)</b> = <b>후삼국 통일(936)</b></td>
+<td><b>거란</b>족 침입 — 멸망(<b>926</b>)<br><b>대광현</b> 등 고구려 유민은 <b>고려에 흡수</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t6" data-imp="1">
+<h2><span class="no">표 ⑥</span> 통일신라 왕별 총정리 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">왕</th><th style="width:120px">시기</th><th>업적 · 사건</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>무열왕</b></td><td>중대 시작</td><td><b>첫 진골 출신 왕</b> · 신라 <b>중대</b> 시작</td></tr>
+<tr class="per"><td class="biz"><b>문무왕</b></td><td>676</td><td><b>삼국 통일 완성</b></td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">신문왕</span></b></td><td>왕권 절정</td><td><b>김흠돌의 난</b> 진압 → 왕권 전제화 · <b>9주 5소경</b> · <b>9서당 10정</b> 정비 · <b><span class="hl">국학</span></b> 설립 · <b><span class="hl">관료전</span></b> 지급 · <b><span class="hl">녹읍</span> 폐지</b> · <b>달구벌</b>(대구) 천도 시도 · <b>만파식적</b></td></tr>
+<tr class="des"><td class="biz"><b>성덕왕</b></td><td>8C</td><td><b>정전</b> 지급 — 농민에 대한 국가 지배력 강화</td></tr>
+<tr class="mint"><td class="biz"><b>경덕왕</b></td><td>8C 후반</td><td>왕권 약화 · 귀족 반발로 <b><span class="hl">녹읍</span> 부활</b></td></tr>
+<tr class="rose"><td class="biz"><b>선덕왕</b></td><td>하대 시작</td><td><b>내물계 진골</b>의 왕위 세습 시작 = 하대의 기준점</td></tr>
+<tr class="reg"><td class="biz"><b>원성왕</b></td><td>8C 후반</td><td><b>독서삼품과</b> — 관리 선발 제도</td></tr>
+<tr class="per"><td class="biz"><b>9C 왕위 쟁탈전</b></td><td>822 · 846</td><td><b>김헌창의 난</b>(822, 국호 <b>장안</b> · 연호 <b>경운</b>) → 아들 <b>김범문의 난</b> · <b>장보고의 난</b>(846, 거점 <b>청해진</b> — 완도)</td></tr>
+<tr class="not"><td class="biz"><b>진성여왕</b></td><td>신라 말</td><td><b>최치원 시무 10조</b> 건의 · <b>원종 · 애노의 난</b> · <b>적고적의 난</b> 등 농민 봉기</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t7" data-imp="1">
+<h2><span class="no">표 ⑦</span> 발해 왕별 총정리 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">왕</th><th style="width:120px">시기</th><th>업적 · 사건</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>대조영(고왕)</b></td><td>698</td><td><b>동모산</b>에서 건국(고구려 유민 + 말갈) · <b>고구려 계승 의식</b></td></tr>
+<tr class="per"><td class="biz"><b>무왕</b></td><td>8C 전반</td><td>연호 <b>인안</b> · <b>장문휴</b>의 <b>산둥반도 공격</b> · <b>돌궐 · 일본과 친선</b>(신라 견제) · 당과 대립 · 북만주 장악</td></tr>
+<tr class="not"><td class="biz"><b>문왕</b></td><td>8C 후반</td><td>연호 <b>대흥</b> · <b>전륜성왕</b> 자처 · <b>상경 천도</b>(상경성 · <b>주작대로</b> = 당 장안성의 영향) · 당과 친선 · <b>3성 6부</b> 정비 · <b>신라도</b> 개설 · <b>주자감</b> 설치</td></tr>
+<tr class="des"><td class="biz"><b>선왕</b></td><td>9C 전반</td><td><b>요동</b> 지역까지 진출 · <b>최대 영토</b> · <b>해동성국</b> · <b>5경 15부 62주</b> 완비</td></tr>
+<tr class="mint"><td class="biz"><b>멸망</b></td><td>926</td><td><b>거란</b>에 멸망 → 왕족 · 유민 다수가 <b>고려에 흡수</b>(대광현)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t8" data-imp="1">
+<h2><span class="no">표 ⑧</span> <b class="n5">★</b> 신라 말(하대)의 정치적 상황 <span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>출발점</b></td><td>왕위 쟁탈전(진골 귀족) → 왕권 약화 → 지방 통제력 약화 → <b>호족</b> 세력 성장</td></tr>
+<tr class="per"><td class="biz"><b>정치 세력</b></td><td>진골 귀족 세력 강화 · <b><span class="hl">상대등</span></b> 세력 강화 · <b><span class="hl">집사부</span> <span class="hl">시중</span></b> 세력 약화</td></tr>
+<tr class="not"><td class="biz"><b>토지 · 농민</b></td><td><b><span class="hl">녹읍</span> 부활</b> · 대토지 소유 → 농민 몰락 → <b>농민 봉기</b>(원종 · 애노의 난, 적고적의 난 — 진성여왕)</td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">6두품</span></b></td><td>세력 약화 → <b>반 신라적 경향</b> → 개혁 주장(<b>최치원 — 시무 10조</b>, 진성여왕)</td></tr>
+<tr class="mint"><td class="biz"><b>지방 반란</b></td><td><b>김헌창의 난</b>(국호 <b>장안</b>, 연호 <b>경운</b>) · <b>김범문의 난</b> · <b>장보고의 난</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t9">
+<h2><span class="no">표 ⑨</span> <b class="n5">★</b> 신라 말 호족의 출신 유형</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:180px">유형</th><th>대표 인물 · 설명</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>촌주 출신</b></td><td>대부분을 차지</td></tr>
+<tr class="per"><td class="biz"><b>해상 세력</b></td><td><b>장보고</b> — 완도 <b>청해진</b> 거점</td></tr>
+<tr class="not"><td class="biz"><b>군진 세력</b></td><td><b>견훤</b></td></tr>
+<tr class="des"><td class="biz"><b>초적 출신</b></td><td><b>양길</b></td></tr>
+<tr class="mint"><td class="biz"><b>그 외</b></td><td><b>궁예</b> · <b>왕건</b> 등</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t10" data-imp="1">
+<h2><span class="no">표 ⑩</span> 후삼국 ~ 고려 건국</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th style="width:110px">연도</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>후백제</b></td><td>900</td><td><b>견훤</b> → <b>완산주</b>(전주) 도읍</td></tr>
+<tr class="per"><td class="biz"><b>후고구려</b></td><td>901</td><td><b>궁예</b> → <b>송악</b>(개성) 도읍 → <b>철원</b> 천도 · <b>광평성</b> 설치 · 국호 <b>마진 → 태봉</b></td></tr>
+<tr class="not"><td class="biz"><b>고려</b></td><td>918</td><td><b>왕건</b> → <b>송악</b>(개성) 도읍</td></tr>
+<tr class="des"><td class="biz"><b>멸망 순서</b></td><td>926 · 935 · 936</td><td><b>발해 멸망(926)</b> → <b>신라 멸망(935)</b> → <b>후백제 멸망(936)</b> = <b>후삼국 통일(936)</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 관광국사 원본교재 「관광국사 핵심 요약 정리」(세종 관광 통역 가이드 학원, 이현호) 1. 고대의 정치 (2) 고대의 통치 조직 · ★신라 시대 구분 · 골품제도 · (2) 남북국의 정치적 발전 · ★신라 말(하대)의 정치적 상황, 그리고 같은 교재로 만들어 둔 관광국사 4·5단원 학습자료의 총정리표. <b class="n5">★</b>는 교재에 인쇄되어 있는 별표를 그대로 옮긴 것입니다.</p>
+<p>노랑 표시는 산업인력공단·학원 기출 관광국사 11개년 273문항을 세어 붙였습니다. 이 범위는 <b>남북국 29문항(10.6%)</b>이며, 그중 <b>발해는 2017~2025년 9년 연속</b> 출제되었습니다.</p>
+</footer>
+
+</div>
+<script>
+function flt(m){
+  var secs=document.querySelectorAll('section');
+  for(var i=0;i<secs.length;i++){ secs[i].hidden=(m!=='all')&&!secs[i].dataset[m]; }
+  var bs=document.querySelectorAll('.tabbtn');
+  for(var k=0;k<bs.length;k++){ bs[k].classList.toggle('on', bs[k].dataset.f===m); }
+  var toc=document.querySelector('nav.toc'); if(toc) toc.hidden=(m!=='all');
+}
+</script>
+</body></html>

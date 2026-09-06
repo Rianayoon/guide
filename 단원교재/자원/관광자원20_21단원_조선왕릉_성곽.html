@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광자원해설 20·21단원 · 조선 왕릉 &amp; 성곽 건축</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@font-face{font-family:'Pretendard';src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Pretendard Variable','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65;white-space:pre-line}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.stack,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.stack .p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.stack .p b{display:block;font-size:15px;margin-bottom:6px;color:var(--bro)}
+.stack .p span{font-size:12.5px;color:var(--ink-2);display:block}
+@media(max-width:560px){.stack{grid-template-columns:1fr}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광자원해설 · 20·21단원</div>
+<h1>조선 왕릉 &amp; 성곽 건축
+<small>하나는 <b>죽은 왕을 모시는 공간</b>, 하나는 <b>산 사람을 지키는 공간</b>입니다. 둘 다 조선이 남긴 대표적인 건축 관광자원이고, 시험에서는 늘 <b>"어디에 있는가"</b>와 <b>"이 구조물의 이름은 무엇인가"</b>를 묻습니다</small>
+</h1>
+<div class="meta">
+<span class="chip hot">성곽 구조물 ★★★ — 출제 비중 1위</span>
+<span class="chip hot">왕릉 = 행정구역 문제 · 유명 왕 매칭 문제</span>
+<span class="chip">예상문제 12문항</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 조선은 "죽은 자의 집"과 "산 자의 벽"을 함께 지었습니다</h2>
+<p class="sub">20단원과 21단원을 한 페이지에 묶은 이유는 간단합니다. 둘 다 <b>조선이 국가 차원에서 설계해 지은 대형 건축물</b>이고, 시험이 묻는 방식도 똑같습니다 — <b>①이건 어느 행정구역에 있나 ②이 구조물의 이름은 뭔가</b>. 이 두 질문만 머리에 넣고 읽으시면 됩니다.</p>
+
+<div class="flow">
+<b class="hi">왕릉</b><i>왕이 죽으면 → 백리(40km) 안에 모신다</i><i>→</i><b>서울·경기 집중</b><i>예외는 딱 하나, 영월 장릉</i>
+</div>
+<div class="flow">
+<b class="hi">성곽</b><i>지킬 대상이 무엇이냐에 따라</i><i>→</i><b>도성</b><i>수도</i><i>·</i><b>읍성</b><i>지방</i><i>·</i><b>산성</b><i>피난</i><i>·</i><b>행재성</b><i>왕의 임시거처</i><i>·</i><b>장성</b><i>국경</i>
+</div>
+
+<div class="tl">
+<div class="t1"><b>① 신분이 이름을 정한다</b><span>왕·왕비는 <b>능(陵)</b>, 세자는 <b>원(園)</b>, 나머지는 <b>묘(墓)</b>. 주인을 모르면 <b>총</b>과 <b>분</b>으로 부릅니다</span></div>
+<div class="t2"><b>② 위치가 문제로 나온다</b><span>왕릉 문제의 절반은 <b>"서울이냐 경기도냐"</b>입니다. 서울 것만 외우고 나머지는 경기도로 넘기는 것이 강사의 전략입니다</span></div>
+<div class="t3"><b>③ 구조물 이름이 문제로 나온다</b><span>성곽은 <b>여장·적대·치·옹성·암문·해자·노대·공심돈</b> 여덟 개 이름이 시험 출제 비중 1위입니다</span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>먼저 솔직하게 밝힙니다.</b> 이 두 단원은 <b>기출 원문 정리본(2013~2025년 136문항)에 해당 문항이 한 건도 없습니다.</b> 원본 기출 PDF가 "관광자원과 해설 → 유네스코 → 국가지정 문화유산 → 전통건축 → 5대 궁궐 → 불교건축 → 유교건축"까지만 수록되어 있어, 왕릉·성곽 이후 단원의 기출 원문이 없기 때문입니다. 그래서 이 페이지의 문제는 <b>기출이 아니라 예상문제</b>이며, 만들 때 <b>강사가 "이렇게 나온다"고 직접 지목한 출제 유형</b>만 사용했습니다. 문항마다 그 근거를 함께 적어두었습니다. 빈출 등급표도 기출 실측이 아니라 <b>강사의 별표 표시와 발언</b>을 근거로 했고, 그 사실을 표 안에 그대로 적었습니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 이해하기</h2>
+<p class="sub">외우기 전에 "왜 그렇게 됐는지"를 먼저 알면 훨씬 오래 갑니다. 천천히 읽어주세요.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">무덤에도 계급이 있었습니다 — 능·원·묘, 그리고 총·분</div><div class="era">20단원</div></div>
+<div class="body">
+<p>조선은 살아 있을 때만 신분이 있는 나라가 아니었습니다. <b class="k">죽은 뒤에도 신분에 따라 무덤의 이름이 달랐습니다.</b> 회사로 치면 같은 장례식장을 쓰더라도 사장님 빈소와 신입사원 빈소의 호칭이 다른 셈입니다.</p>
+<p>가장 높은 것이 <b class="k">능(陵)</b>입니다. <b>왕과 왕비</b>의 무덤만 능이라고 부릅니다. 그 아래가 <b class="k">원(園)</b>인데, <b>왕세자·왕세자빈, 그리고 왕을 낳은 친어머니(사친)</b>의 무덤이 여기에 해당합니다. 그 밖의 대군·공주·옹주·후궁, 그리고 일반 백성의 무덤은 전부 <b class="k">묘(墓)</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "사친(私親)"은 왕이 된 사람의 <b>친부모</b>를 말합니다. 왕이 양자로 들어가 왕위를 이은 경우, 공식 부모(선왕)와 친부모가 다르기 때문에 친부모를 따로 부르는 말이 필요했던 겁니다.</p></div>
+<p>그래서 <b>연산군과 광해군</b>은 왕이었는데도 무덤이 "능"이 아니라 <b class="k">묘</b>입니다. 폐위되어 왕의 자격을 잃었기 때문입니다. 시험에서 "연산군묘"라는 단어가 보이면 이 이유를 떠올리시면 됩니다.</p>
+<p>여기까지가 <b>주인을 아는</b> 무덤 이야기입니다. 그런데 아주 오래된 무덤은 누가 묻혔는지 모르는 경우가 많습니다. 이럴 때 쓰는 이름이 두 가지 더 있습니다. 발굴했더니 <b>특이한 유물</b>이 나와서 그 유물로 이름을 붙인 것이 <b class="k">총(塚)</b>입니다 — <b>천마총</b>(천마 그림이 나와서), <b>무용총</b>(춤추는 벽화가 있어서), <b>금관총</b>(금관이 나와서)이 그것입니다. 반대로 이렇다 할 특징이 없어 그냥 <b>지역 이름</b>으로만 부르는 것이 <b class="k">분(墳)</b>입니다 — <b>공주 송산리 고분군</b>이 대표적입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>총과 분의 차이는 이렇게 기억하세요. <b>총 = "이름표가 될 만한 물건이 나왔다"</b>(천마·금관·무용), <b>분 = "물건이 없어서 주소로 부른다"</b>(송산리·능산리).</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">왕은 백리 밖으로 나갈 수 없었습니다 — 그래서 왕릉은 서울·경기에 몰려 있습니다</div><div class="era">20단원 · 핵심</div></div>
+<div class="body">
+<p>강사가 이 단원에서 가장 먼저 강조한 것은 <b>거리 규칙</b>이었습니다. 조선에는 <b class="k">"왕은 도성에서 백리(百里) 밖으로 나가면 안 된다"</b>는 원칙이 있었습니다. 살아 있는 왕이 그렇다면, 죽은 왕을 모시는 신하들도 매년 제사를 지내러 그 거리 안을 오갈 수 있어야 했습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 옛날 우리나라에서 <b>10리 ≒ 4km</b>였습니다. 그러니 <b>백리 ≒ 40km</b>. 서울 도심에서 40km면 딱 <b>수도권 안쪽</b>입니다. 왕릉이 서울과 경기도에 집중된 이유가 바로 이 숫자입니다.</p></div>
+<p>그래서 조선 왕릉 <b>42기</b> 중 압도적 다수가 서울·경기도에 있습니다. 그런데 딱 하나, <b>강원도에 있는 왕릉</b>이 있습니다. 바로 <b class="k">영월 장릉(단종)</b>입니다. 단종은 삼촌 세조에게 왕위를 빼앗기고 강원도 영월로 유배되어 그곳에서 세상을 떠났기 때문에, 무덤도 그 자리에 남았습니다.</p>
+<div class="quote">"조선 왕릉 중에 장릉이 세 개가 있어. 그런데 우리한테 필요한 건 누구야? <b>단종</b>이야. 그래서 <b>단종의 장릉만</b> 필요해. 얘만 <b>강원도의 유일한 왕릉</b>이야." — 강사, 7/12 핵심강의 1:36:22경</div>
+<p>여기서 강사가 알려준 <b>암기 전략</b>이 아주 실용적입니다. 왕릉 문제의 절반이 "이건 서울이냐 경기도냐"를 묻는데, <b>경기도가 훨씬 많으니 서울 것만 외우고 나머지는 전부 경기도로 넘기라</b>는 것입니다. 그런데 서울에 있는 왕릉은 대부분 <b>우리가 이미 아는 이름</b>입니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div><b>서울 왕릉은 전철역·유원지·선수촌 이름으로 기억하세요.</b> <b>태릉</b>선수촌 → 태강릉 / <b>정릉</b>유원지 → 정릉 / <b>선정릉</b>역 → 선릉+정릉. 이미 들어본 이름이라 따로 외울 필요가 없습니다.</div></div>
+<p>서울에 있는 왕릉을 정리하면 이렇습니다. <b class="k">정릉</b>은 태조 이성계의 <b>두 번째 부인 신덕왕후 강씨</b>의 능인데, 이 분이 <b>조선의 첫 번째 왕비</b>입니다. 재미있는 건 남편인 태조 이성계의 무덤(건원릉)은 경기도 구리에 따로 있다는 점입니다. <b class="k">태강릉</b>은 태릉과 강릉 두 개를 합쳐 부르는 이름, <b class="k">선정릉</b>은 선릉과 정릉을 합친 이름입니다(여기서 정릉은 태조 왕비의 정릉과 한자가 다른 별개의 능입니다). <b class="k">의릉</b>은 경종의 능으로 <b>동원상하릉</b> 형태이고, <b class="k">헌인릉</b>은 헌릉(태종)과 인릉(순조)을 합친 이름입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 콕 집은 것 —</b> "여러분들이 <b>익숙하지 않은 능이 헌인릉</b>일 거예요. 이건 좀 신경 써서 외우십시오." 나머지는 귀에 익어서 저절로 외워지지만 헌인릉만은 낯설다는 뜻입니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">봉분을 어디에 놓느냐 — 왕릉의 다섯 가지 형태</div><div class="era">20단원</div></div>
+<div class="body">
+<p>왕릉은 <b>평지가 아니라 언덕</b>에 조성합니다. 높으신 분이니 낮은 곳에 모실 수 없다는 발상입니다. 그리고 왕과 왕비의 봉분을 <b>어느 언덕에, 어떤 위치에</b> 놓느냐에 따라 형태 이름이 달라집니다. 이 다섯 가지가 시험 용어로 나올 수 있는 항목입니다.</p>
+<p>가장 단순한 것이 <b class="k">단릉</b>입니다. 왕과 왕비의 능이 <b>아예 다른 장소</b>에 각각 있는 경우입니다. 강사는 농담 삼아 "사이가 안 좋았나 보다"라고 설명했는데, 실제로 태조 이성계와 신덕왕후 강씨가 이 경우입니다.</p>
+<p><b class="k">쌍릉</b>은 <b>하나의 언덕에 왕과 왕비가 나란히</b> 있는 형태입니다. 좌우로 나란히, 위아래 구분이 없습니다.</p>
+<p><b class="k">동원상하릉</b>은 <b>하나의 언덕이지만 위아래로</b> 놓은 형태입니다. 왕의 봉분이 위, 왕비의 봉분이 아래입니다. 죽은 뒤에도 서열을 세운 것입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>동원(同原)</b>"은 <b>같은 장소</b>라는 뜻입니다. 그러니 <b>동원상하릉 = 같은 장소·같은 언덕에 위아래로</b>, <b>동원이강릉 = 같은 장소지만 다른(異) 언덕(岡)에</b>가 됩니다. 한자만 풀면 헷갈릴 일이 없습니다.</p></div>
+<p><b class="k">동원이강릉</b>은 <b>같은 능역 안이지만 계곡이나 지형을 사이에 두고 각각 다른 언덕</b>에 조성한 형태입니다. 이 형태를 <b>최초로 만든 것이 남양주 광릉</b>(세조+정희왕후)입니다 — 강사가 별표 두 개를 준 항목입니다.</p>
+<p>마지막이 <b class="k">삼연릉</b>입니다. 하나의 언덕에 <b>왕 + 첫 번째 왕비 + 계비(두 번째 왕비)</b> 세 봉분이 나란히 있는 형태로, <b>동구릉의 경릉이 유일</b>합니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>계비(繼妃)</b>"는 왕비가 죽은 뒤에 새로 맞이한 <b>두 번째·세 번째 왕비</b>를 말합니다. 예를 들어 숙종은 왕비를 세 명 맞았습니다(인현왕후, 장희빈 등).</p></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사의 경고 —</b> "동원이강릉·삼연릉 같은 <b>용어로 물어보는 문제는 아직 한 번도 나온 적이 없어요.</b> 한 번도 안 나왔다는 얘기는 <b>나올 가능성이 항상 내재되어 있다</b>는 얘기입니다." 즉 버리지 말고 이름과 정의만 확실히 붙잡아 두라는 뜻입니다.</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">누가 어디에 묻혔나 — 이름이 붙은 왕릉들</div><div class="era">20단원 · 가장 잘 나오는 부분</div></div>
+<div class="body">
+<p>강사가 동그라미와 별표를 친 왕릉만 추리면 아래 다섯 곳입니다. 이 다섯 개의 <b>"누가 묻혔는가"</b>만 알면 왕릉 문제의 대부분이 풀립니다.</p>
+<p><b class="k">동구릉</b>(경기 구리)은 이름 그대로 <b>동쪽에 있는 아홉 개의 능</b>이라는 뜻입니다. 조선 왕릉 중 <b>가장 많은 능이 모인 곳</b>입니다. 아홉 개를 다 외우는 것은 "너무 큰 모험"이라며, 강사는 <b>두 개만</b> 외우라고 했습니다 — <b>건원릉(태조 이성계)</b>과 <b>경릉(유일한 삼연릉)</b>입니다.</p>
+<p><b class="k">영릉</b>(경기 여주)은 <b>두 개의 영릉</b>이 붙어 있어서 "영영릉"이라고도 읽습니다. 한자는 다르지만 소리가 같아 한 이름처럼 불리는 것입니다. 하나는 <b>세종대왕</b>의 영릉(英陵), 다른 하나는 <b>효종</b>의 영릉(寧陵)입니다. 시험에는 <b>세종 = 여주 영릉</b>이 압도적으로 자주 나옵니다.</p>
+<p><b class="k">광릉</b>(경기 남양주)은 <b>세조(수양대군)와 정희왕후</b>의 능이며 <b>최초의 동원이강릉</b>입니다. 그리고 이 광릉은 자연 관광자원 단원에서 또 나옵니다 — 능 주변의 <b>광릉숲</b>이 <b>세계 생물권보전지역</b>이고, 그 안에 우리나라 <b>유일한 국립수목원</b>(광릉수목원)과 <b>크낙새 서식지</b>가 있기 때문입니다. 즉 <b>광릉은 문화자원과 자연자원 양쪽에서 출제되는 항목</b>입니다.</p>
+<p><b class="k">융건릉</b>(경기 화성)은 <b>융릉 + 건릉</b>입니다. 융릉의 주인은 <b>추존 장조, 곧 사도세자</b>입니다. 원래 사도세자는 세자 신분이었으므로 무덤 이름이 "<b>현륭원</b>"이었는데(세자의 무덤은 원(園)이라고 했지요), 아들 정조가 왕으로 <b>추존</b>하면서 이름이 <b>융릉</b>으로 격상되었습니다. 그 옆 건릉이 아들 <b>정조</b>의 능입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>추존(追尊)</b>"은 <b>죽은 뒤에 왕으로 높여 부르는 것</b>입니다. 실제로 왕위에 오른 적은 없지만 현재 왕의 아버지이므로 왕의 예우를 해준다는 뜻입니다. 그래서 무덤 이름도 원(園)에서 능(陵)으로 바뀝니다.</p></div>
+<p>마지막이 <b class="k">영월 장릉</b>(강원)입니다. 앞서 본 대로 <b>단종</b>의 능이며 <b>강원도에 있는 유일한 왕릉</b>입니다. 조선 왕릉 중 장릉이라는 이름은 세 곳이지만, 시험에 필요한 것은 단종의 장릉 하나뿐입니다.</p>
+<p>이 밖에 경기도 <b>고양시</b>에는 <b>서오릉</b>(다섯 개)과 <b>서삼릉</b>(세 개)이, <b>파주</b>에는 <b>파주삼릉</b>(세 개)이 있습니다. 강사는 "서오릉은 시험에 한 번 나왔으니 기억에서 떠나지 않을 것"이라고 했습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>세계문화유산 함정 —</b> 조선 왕릉은 총 <b>42기</b>지만, 2009년 세계문화유산으로 등재된 것은 <b>남한에 있는 40기</b>입니다. <b>북한에 있는 2기</b>(태조의 첫 번째 부인 신의왕후의 제릉, 2대 정종의 후릉)와 <b>연산군묘·광해군묘</b>는 제외되었습니다. "42기가 모두 등재됐다"는 문장은 <b class="x">틀린 문장</b>입니다.</div></div>
+</div>
+</div>
+
+<div class="story s1">
+<div class="head"><div class="num">5</div><div class="ttl">왕릉에 가면 무엇이 보이나 — 홍살문에서 정자각까지</div><div class="era">20단원</div></div>
+<div class="body">
+<p>왕이 세상을 떠나면 나라는 <b class="k">산릉도감</b>이라는 임시 관청을 세웁니다. 그리고 <b>관상감</b>(천문·풍수 담당 관청)이 <b>풍수지리</b>를 따져 명당을 찾은 뒤 능을 조성합니다.</p>
+<p>능이 완성되면 주변에 <b class="k">금표</b>를 세웁니다. <b>일반인 출입금지</b> 표시입니다. 그리고 이곳이 신성한 공간임을 알리는 붉은 기둥 문, <b class="k">홍살문</b>을 세웁니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 콕 집은 함정 —</b> "홍살문은 <b>왕릉에만 있는 게 아니에요</b>." 궁궐·사원·향교 같은 <b>신성한 공간의 표시물</b>로 두루 쓰입니다. "홍살문이 있으면 왕릉이다"라는 문장은 틀립니다.</div></div>
+<p>홍살문을 지나면 <b class="k">신도(神道)</b>가 이어집니다. 여기서 <b>향로(香路)</b>는 <b>혼령이 다니는 길</b>, <b>어로(御路)</b>는 <b>왕이 걷는 길</b>입니다. 길 끝에는 제사를 지내는 <b class="k">정자각</b>이 있는데, 건물의 평면이 <b>한자 정(丁)자 모양</b>이라 붙은 이름입니다.</p>
+<p>봉분 주변에는 <b class="k">석물</b>이 배치됩니다 — 문신 모양의 <b>문인석</b>, 무신 모양의 <b>무인석</b>, 양 모양의 <b>석양</b>, 호랑이 모양의 <b>석호</b>, 제물을 올리는 <b>상석</b>, 혼이 노니는 자리인 <b>혼유석</b>, 봉분을 두른 <b>둘레돌(호석)</b>입니다.</p>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">6</div><div class="ttl">성곽 구조물 여덟 개 — 이 단원 출제 비중 1위</div><div class="era">21단원 · ★★★</div></div>
+<div class="body">
+<div class="quote">"성곽에서 시험에 <b>가장 많이 나오는 내용은 성곽에 있는 각종 구조물</b>을 물어보는 문제가 지금까지 <b>출제 비중이 제일 높았습니다.</b>" — 강사, 7/12 핵심강의 1:38:38경</div>
+<p>그러니 이 여덟 개는 그림과 함께 반드시 붙잡아야 합니다. 하나씩 이름의 뜻부터 풀어드리겠습니다.</p>
+<p><b class="k">여장(女墻)</b> — 성벽 <b>위에 얹은 낮은 담장</b>입니다. 한자 요철(凹凸)처럼 들쭉날쭉한 모양인데, 병사가 <b>몸을 숨기면서 동시에 적을 공격</b>할 수 있게 만든 구조물입니다. 여장에 뚫린 동그란 구멍이 <b>총안</b>인데, 말 그대로 <b>총을 쏘는 구멍</b>입니다.</p>
+<p>다음 둘은 <b>성벽 밖으로 튀어나온 구조물</b>인데, 시험이 가장 즐겨 바꿔치기하는 짝입니다.</p>
+<div class="vs"><div class="side a"><b>적대</b>성문 <b>좌우</b>에 튀어나옴<br>성문으로 오는 적을 <b>옆에서</b> 공격</div><div class="mid">VS</div><div class="side b"><b>치(치성)</b>성벽 <b>일부</b>가 튀어나옴<br>적을 <b>정면·측면</b>에서 공격</div></div>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>구분 기준은 딱 하나 — <b>"성문 옆이냐, 성벽 중간이냐"</b>입니다. <b>적대는 문(門) 양옆</b>, <b>치는 벽(壁) 중간</b>. 문 옆에 붙어 있으면 적대라고 외우세요.</div></div>
+<p><b class="k">장대(將臺)</b> — <b>군사 지휘소</b>입니다. 한 단어로 압축됩니다. 전투 전체를 내려다볼 수 있어야 하므로 <b>가장 높은 곳</b>에 세웁니다.</p>
+<p><b class="k">해자(垓字)</b> — 성 주위를 파고 <b>물을 채운 도랑</b>입니다. 강사가 <b>"시험에 여러 번 나왔고 비율이 상대적으로 더 높았다"</b>고 별표를 준 항목입니다. 원리는 단순합니다. 달려오던 적이 물을 만나면 <b>속도가 느려집니다.</b></p>
+<p><b class="k">암문(暗門)</b> — 한자 그대로 <b>"어두운 문"</b>, 즉 <b>비밀 출입구</b>입니다. 적에게는 알리지 않고 성 안 사람만 씁니다. 평소에는 식량·물자를 나르는 통로로 쓰다가, 전쟁이 나면 비밀 통로가 됩니다.</p>
+<p><b class="k">옹성(甕城)</b> — <b>옹(甕)이 "항아리"</b>라는 뜻입니다. 성문 밖을 <b>항아리 모양으로 둥글게 감싼 성벽</b>으로, 목적은 오직 하나 <b>성문 보호</b>입니다.</p>
+<p><b class="k">현안(懸眼)</b> — 성벽 바깥 면을 <b>수직으로 길게 파낸 홈</b>입니다. 성벽에 바짝 붙은 적에게 <b>뜨거운 물이나 기름을 부어</b> 공격하는 시설로, 주로 적대 가운데에 함께 설치됩니다.</p>
+<p><b class="k">노대(弩臺)</b> — <b>쇠뇌</b>를 장치한 높은 대입니다. 쇠뇌는 <b>여러 개의 화살을 한꺼번에 쏘는 장치</b>입니다.</p>
+<p><b class="k">공심돈(空心墩)</b> — <b>적의 동태를 살피는 높은 망루</b>입니다. 벽에 구멍이 뚫려 있어 <b>총과 대포도 쏠 수 있습니다.</b> 다른 말로 <b>돈대</b>라고도 하는데, 돈대는 주로 해안에 설치되고 공심돈은 수원화성이 기준입니다.</p>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">7</div><div class="ttl">한양도성 — 네 개의 산, 네 개의 문, 그리고 유교의 네 글자</div><div class="era">21단원</div></div>
+<div class="body">
+<p>조선은 건국 2년 뒤 개경에서 한양으로 수도를 옮기고 도성을 쌓았습니다. 이것을 설계한 사람이 <b class="k">정도전</b>입니다. 전부 <b>돌로 쌓은 석성</b>이며 <b>사적</b>으로 지정되어 있습니다.</p>
+<p>도성은 <b>네 개의 산을 연결</b>해 쌓았습니다 — 북쪽 <b class="k">백악산(북악산)</b>, 남쪽 <b class="k">목멱산(남산)</b>, 동쪽 <b class="k">낙산</b>, 서쪽 <b class="k">인왕산</b>입니다. 평지와 산을 함께 두르는 형태이므로 <b>평산성</b>에 해당합니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> 성곽은 위치에 따라 <b>평지성</b>(평탄한 땅) / <b>산성</b>(산) / <b>평산성</b>(둘의 절충)으로 나뉩니다. 한양도성은 산을 끼고 있으면서 평지도 지나므로 평산성입니다.</p></div>
+<p>도성 자리를 정할 때 가장 크게 반영된 사상이 <b class="k">풍수지리</b>입니다. 명당의 자리(혈)에 <b>경복궁</b>이 놓이고, 그 앞을 흐르는 <b class="k">청계천</b>이 <b>명당수</b>가 되며, 경복궁 뒤의 <b>백악산이 주산</b>이 됩니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>헷갈리기 쉬운 것 —</b> 명당수는 <b>한강이 아니라 청계천</b>입니다. 한강은 남산 뒤쪽을 흐르고, 그 너머의 산이 관악산입니다.</div></div>
+<p>이제 문 이야기입니다. 4대문의 이름은 정도전이 <b>유교의 다섯 덕목(인·의·예·지·신)</b>을 넣어 지었습니다.</p>
+<div class="stack">
+<div class="p"><b>숭례문(남대문)</b><span>예(禮) · 남 · <b>국보</b><br>우리나라 최대 규모 성문</span></div>
+<div class="p"><b>흥인지문(동대문)</b><span>인(仁) · 동 · <b>보물</b><br>4대문 중 <b>유일하게 옹성</b>이 있음</span></div>
+<div class="p"><b>숙정문(북대문)</b><span>지(智) · 북<br>평소 닫아두고 <b>가뭄에 기우제</b> 때만 개방</span></div>
+</div>
+<p>그리고 서쪽의 <b class="k">돈의문(서대문)</b>은 의(義)에 해당하는데, <b class="x">현재 남아 있지 않습니다.</b> 일제가 도시계획을 이유로 철거했기 때문입니다. 4소문(광희문·혜화문·소의문·창의문) 중에서도 <b>소의문(서소문)</b>이 같은 이유로 사라졌습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>가장 자주 나오는 함정 —</b> <b>"4대문이 모두 현존한다"</b>는 문장은 <b class="x">틀립니다.</b> <b>돈의문(서대문)은 없습니다.</b> 그리고 <b>옹성이 있는 4대문은 흥인지문 하나</b>뿐입니다 — 강사가 동그라미와 별표를 함께 준 항목입니다.</div></div>
+<p>덧붙이자면 <b>숙정문</b>에는 현대사가 하나 붙어 있습니다. 조선시대에도 평소 닫아두었던 문인데, 1968년 <b>김신조 사건</b>(북한 무장간첩 침투) 이후 한동안 다시 폐쇄되었다가 현재는 개방되어 있습니다.</p>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">8</div><div class="ttl">수원화성과 산성·읍성 — 목적이 다르면 이름도 다릅니다</div><div class="era">21단원</div></div>
+<div class="body">
+<p><b class="k">수원화성</b>은 <b>정조</b>가 만든 성곽입니다. 정조는 외척 세력을 견제하기 위해 <b>수도를 아예 옮기려고</b> 했고, 그 계획도시로 지은 것이 수원화성입니다. 결국 천도는 이루어지지 않았지만 성은 남았습니다. <b>정약용의 거중기</b>가 사용되었고, <b>세계문화유산</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>거중기</b>"는 도르래 원리로 <b>무거운 돌을 적은 힘으로 들어 올리는 기계</b>입니다. 정약용이 설계했습니다.</p></div>
+<p>수원화성의 특징 세 가지가 시험 포인트입니다. ①<b>토성과 석성의 절충형</b>(흙과 돌을 함께 씀) ②<b>행정·군사·방어를 겸한 종합 계획도시</b> ③우리나라 성곽 중 <b>유일하게 화포(대포)가 설치</b>되었다는 점입니다. 또한 정조가 아버지 사도세자의 무덤(현륭원)을 참배할 때 <b>행궁</b> 역할도 했습니다.</p>
+<p>수원화성에도 4대문이 있고 <b>전부 옹성을 갖추고 있습니다.</b> 그중 정문이 <b class="k">장안문</b>이고, 나머지는 팔달문·화서문·창룡문입니다. 그리고 축조 과정을 그림과 글로 남긴 기록이 <b class="k">화성성역의궤</b>인데, 이 기록이 있어서 지금도 정확한 보수공사가 가능합니다.</p>
+<p>산성은 목적이 <b>방어와 피난</b>입니다. 쌓는 방식에 따라 둘로 나뉩니다.</p>
+<div class="vs"><div class="side n"><b>포곡식</b>계곡을 <b>감싸고</b> 쌓음<br>물을 얻기 유리 → <b>장기전에 유리</b></div><div class="mid">VS</div><div class="side g"><b>테뫼식</b>산 <b>정상부</b>에만 쌓음<br>물 얻기 어려움 → <b>단기전</b></div></div>
+<p>주요 산성은 이렇습니다. <b class="k">남한산성</b>은 <b>세계문화유산(2014)</b>이자 사적이며 <b>도립공원</b>이기도 합니다. 역사적으로는 <b>병자호란 때 인조가 피난해 항전한 곳</b>입니다. <b class="k">북한산성</b>은 <b>숙종</b> 때 쌓은 <b>한양의 외성</b>입니다. <b class="k">금정산성</b>(부산)은 <b>현존 최대 규모의 석축 산성</b>이며, 부산이 일본 침략의 첫 번째 표적이었기에 <b>피난성</b> 역할을 했습니다. <b class="k">행주산성</b>은 임진왜란 때 <b>권율 장군의 행주대첩</b>으로 유명하며 <b>토성(토축산성)</b>이고 <b>삼국시대</b>에 처음 만들어졌습니다.</p>
+<p>읍성은 <b>지방 행정 중심지</b>를 두른 성입니다. 둘만 외우면 됩니다. <b class="k">낙안읍성</b>은 <b>전남 순천</b>에 있고 <b>시험에 두 번 나왔습니다.</b> 사적이며 세계문화유산 <b>잠정목록</b>에 올라 있습니다. 태조 때 <b>김빈길</b>이 흙으로 처음 쌓았고, 뒤에 돌로 고쳤으며, 인조 때 <b>임경업</b> 장군이 증축했습니다. <b class="k">해미읍성</b>은 <b>충남 서산</b>에 있고, <b>이순신이 근무한 적이 있는 곳</b>이며, <b>천주교 신자들의 순교지</b>로도 유명합니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> "<b>잠정목록</b>"은 세계유산으로 정식 등재되기 전에 <b>후보로 올려둔 목록</b>입니다. 등재된 것이 아니므로 "낙안읍성은 세계문화유산이다"라고 하면 <b class="x">틀립니다.</b></p></div>
+<p>마지막으로 시대별 성곽입니다. 고구려 성곽은 대부분 <b>북한과 중국 땅</b>에 있습니다(요령성 오녀산성, 길림 용담산성, 충북 단양 온달산성). 백제는 <b>풍납토성·몽촌토성</b>(서울 한성기), <b>공산성</b>(공주=웅진), <b>부소산성</b>(부여=사비)으로 <b>수도가 옮겨간 순서대로</b> 성이 이어집니다. 고려는 거란·여진·몽골·홍건적·왜구가 끊임없이 쳐들어와 <b>빨리 쌓아야 했기 때문에 토성이 많습니다.</b></p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표</h2>
+<p class="sub">원본 교재와 강의에 나온 사실을 하나도 빼지 않고 담았습니다.</p>
+
+<h3>① 무덤의 이름 — 신분별 구분</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구분</th><th>대상</th><th>예 · 비고</th></tr></thead>
+<tbody>
+<tr><td class="nm">능(陵)</td><td>왕 · 왕비</td><td>조선 왕릉 42기</td></tr>
+<tr><td class="nm">원(園)</td><td>왕세자 · 왕세자빈 · 왕의 사친</td><td>사도세자의 원래 무덤 = <b>현륭원</b></td></tr>
+<tr><td class="nm">묘(墓)</td><td>대군 · 공주 · 옹주 · 후궁 + 서민</td><td><b>연산군묘 · 광해군묘</b>(폐위되어 능이 아님)</td></tr>
+<tr><td class="nm">총(塚)</td><td>주인 불명 — <b>특이 유물</b>로 명명</td><td>천마총 · 무용총 · 금관총</td></tr>
+<tr><td class="nm">분(墳)</td><td>주인 불명 — <b>지역명</b>으로 명명</td><td>공주 송산리 고분군</td></tr>
+</tbody></table></div>
+
+<h3>② 왕릉의 형태 다섯 가지</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>형태</th><th>배치</th><th>대표 · 비고</th></tr></thead>
+<tbody>
+<tr><td class="nm">단릉</td><td>왕과 왕비가 <b>각각 다른 장소</b>에</td><td>태조 건원릉(구리) ↔ 신덕왕후 정릉(서울)</td></tr>
+<tr><td class="nm">쌍릉</td><td>한 언덕에 <b>나란히</b></td><td>위아래 구분 없음</td></tr>
+<tr><td class="nm">동원상하릉</td><td>한 언덕에 <b>위(왕)·아래(왕비)</b></td><td>서울 <b>의릉</b>(경종) / 여주 영릉(세종)</td></tr>
+<tr><td class="nm">동원이강릉</td><td>같은 능역, <b>다른 언덕</b>(계곡을 사이에 둠)</td><td><b>광릉 = 최초</b>(세조+정희왕후)</td></tr>
+<tr><td class="nm">삼연릉</td><td>한 언덕에 <b>왕+왕비+계비</b> 셋 나란히</td><td><b>동구릉의 경릉이 유일</b></td></tr>
+</tbody></table></div>
+
+<h3>③ 주요 왕릉 — 누가 어디에</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>왕릉</th><th>위치</th><th>주인공 · 핵심</th></tr></thead>
+<tbody>
+<tr><td class="nm">동구릉</td><td class="yr">경기 구리</td><td><b>9릉 — 가장 많음</b>. <b>건원릉=태조 이성계</b>, <b>경릉=유일한 삼연릉</b></td></tr>
+<tr><td class="nm">영릉(영영릉)</td><td class="yr">경기 여주</td><td><b>세종</b>(英陵, 동원상하릉) + <b>효종</b>(寧陵) 두 개의 영릉</td></tr>
+<tr><td class="nm">광릉</td><td class="yr">경기 남양주</td><td><b>세조+정희왕후</b> · <b>최초의 동원이강릉</b> · 주변 <b>광릉숲</b>=생물권보전지역</td></tr>
+<tr><td class="nm">융건릉</td><td class="yr">경기 화성</td><td><b>융릉=추존 장조(사도세자, 원래 현륭원)</b> + <b>건릉=정조</b></td></tr>
+<tr><td class="nm">장릉</td><td class="yr">강원 영월</td><td><b>단종</b> · <b>강원도에 있는 유일한 왕릉</b></td></tr>
+<tr><td class="nm">정릉</td><td class="yr">서울</td><td>태조의 계비 <b>신덕왕후 강씨</b> — <b>조선 최초의 왕비</b>. 정릉유원지</td></tr>
+<tr><td class="nm">태강릉</td><td class="yr">서울</td><td>태릉 + 강릉. <b>태릉선수촌</b>으로 기억</td></tr>
+<tr><td class="nm">선정릉</td><td class="yr">서울</td><td>선릉 + 정릉. <b>선정릉역</b>으로 기억</td></tr>
+<tr><td class="nm">의릉</td><td class="yr">서울</td><td><b>경종</b> · <b>동원상하릉</b></td></tr>
+<tr><td class="nm">헌인릉</td><td class="yr">서울</td><td>헌릉(<b>태종</b>) + 인릉(<b>순조</b>) — <b>가장 낯설어 따로 외울 것</b></td></tr>
+<tr><td class="nm">연산군묘</td><td class="yr">서울</td><td>폐위되어 <b>능이 아니라 묘</b></td></tr>
+<tr><td class="nm">서오릉 · 서삼릉</td><td class="yr">경기 고양</td><td>각각 5릉 · 3릉이 모인 곳</td></tr>
+<tr><td class="nm">파주삼릉</td><td class="yr">경기 파주</td><td>3릉이 모인 곳</td></tr>
+<tr><td class="nm">제릉 · 후릉</td><td class="yr">북한</td><td>태조 첫 부인 <b>신의왕후</b> · 2대 <b>정종</b> — <b>세계유산 제외</b></td></tr>
+</tbody></table></div>
+
+<h3>④ 왕릉의 구조물</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구조물</th><th>기능</th></tr></thead>
+<tbody>
+<tr><td class="nm">산릉도감</td><td>왕이 승하하면 설치하는 <b>능 조성 임시 관청</b>(관상감이 풍수로 명당 선정)</td></tr>
+<tr><td class="nm">금표</td><td><b>일반인 출입금지</b> 표시</td></tr>
+<tr><td class="nm">홍살문</td><td><b>신성한 공간 표시</b> — 왕릉뿐 아니라 <b>궁궐·사원·향교</b>에도 있음</td></tr>
+<tr><td class="nm">신도(향로·어로)</td><td><b>향로=혼령의 길 / 어로=왕이 걷는 길</b></td></tr>
+<tr><td class="nm">정자각</td><td>제사 공간. 평면이 <b>정(丁)자 모양</b></td></tr>
+<tr><td class="nm">석물</td><td>문인석·무인석·석양·석호·상석·혼유석·둘레돌</td></tr>
+</tbody></table></div>
+
+<h3>⑤ 성곽 구조물 여덟 개 (★★★ 출제 비중 1위)</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>구조물</th><th>기능</th><th>기억법</th></tr></thead>
+<tbody>
+<tr><td class="nm">여장</td><td>성벽 <b>위</b>의 낮은 담장(요철 모양). 몸을 보호하며 <b>총안</b>으로 공격</td><td>총안 = 총 쏘는 구멍</td></tr>
+<tr><td class="nm">적대</td><td><b>성문 좌우</b>로 튀어나온 성벽 → 적을 <b>옆에서</b> 공격</td><td><b>문(門) 옆</b></td></tr>
+<tr><td class="nm">치(치성)</td><td><b>성벽 일부</b>를 돌출 → <b>정면·측면</b>에서 공격</td><td><b>벽(壁) 중간</b></td></tr>
+<tr><td class="nm">장대</td><td><b>군사 지휘소</b>. 가장 높은 곳</td><td>장수(將)의 대</td></tr>
+<tr><td class="nm">해자</td><td>성 주위를 파고 <b>물을 채운</b> 방어시설 → 적의 속도를 늦춤</td><td>강사 별표 항목</td></tr>
+<tr><td class="nm">암문</td><td><b>비밀 출입구</b>. 평소엔 물자 운반, 전시엔 비밀 통로</td><td>암(暗)=어두울 암</td></tr>
+<tr><td class="nm">옹성</td><td><b>성문 보호</b>용 <b>항아리 모양</b> 성벽</td><td>옹(甕)=항아리</td></tr>
+<tr><td class="nm">현안</td><td>성벽 외벽을 수직으로 판 홈 → <b>뜨거운 물·기름</b>을 부음</td><td>적대 가운데 함께 설치</td></tr>
+<tr><td class="nm">노대</td><td><b>쇠뇌</b>(여러 화살을 동시에 쏘는 장치)를 둔 높은 대</td><td>노(弩)=쇠뇌</td></tr>
+<tr><td class="nm">공심돈(돈대)</td><td><b>적의 동태를 살피는 망루</b>. 총·대포 사격 가능</td><td>돈대는 주로 해안</td></tr>
+</tbody></table></div>
+
+<h3>⑥ 성곽의 분류</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>기준</th><th>종류</th></tr></thead>
+<tbody>
+<tr><td class="nm">목적·기능</td><td><b>도성</b>(수도·왕궁) / <b>읍성</b>(지방 행정·군사) / <b>산성</b>(방어·피난) / <b>행재성</b>(왕의 군사적 임시 거처) / <b>장성</b>(국경, 예: 고구려 천리장성)</td></tr>
+<tr><td class="nm">재료</td><td>토성(흙) / 목책성(나무) / <b>석성(돌 — 우리나라에 가장 많음)</b> / 전축성(벽돌, 극소수)</td></tr>
+<tr><td class="nm">입지</td><td>평지성 / 산성 / <b>평산성</b>(절충형 — <b>한양도성</b>)</td></tr>
+<tr><td class="nm">산성 축조법</td><td><b>포곡식</b>(계곡을 감쌈, 물 유리 → 장기전) / <b>테뫼식</b>(정상부, 물 불리 → 단기전)</td></tr>
+</tbody></table></div>
+
+<h3>⑦ 주요 성곽</h3>
+<div class="tblwrap"><table>
+<thead><tr><th>성곽</th><th>위치</th><th>핵심</th></tr></thead>
+<tbody>
+<tr><td class="nm">한양도성</td><td class="yr">서울</td><td><b>정도전</b> 설계 · <b>석성 · 평산성</b> · 사적. <b>백악산·목멱산(남산)·낙산·인왕산</b> 연결. 풍수: 혈=경복궁, 명당수=<b>청계천</b>, 주산=백악산</td></tr>
+<tr><td class="nm">4대문</td><td class="yr">서울</td><td><b>숭례문</b>(남, 예, 국보, 최대 규모) / <b>흥인지문</b>(동, 인, 보물, <b>유일하게 옹성</b>) / <b>숙정문</b>(북, 지, 평소 폐쇄·기우제 때 개방) / <b>돈의문</b>(서, 의, <span class="x">현존 X</span>)</td></tr>
+<tr><td class="nm">4소문</td><td class="yr">서울</td><td>광희문 · 혜화문 · <b>소의문(서소문, <span class="x">현존 X</span>)</b> · 창의문</td></tr>
+<tr><td class="nm">수원화성</td><td class="yr">경기 수원</td><td><b>정조</b> · <b>정약용의 거중기</b> · <b>세계문화유산</b> · <b>토성+석성 절충</b> · 종합 계획도시 · <b>유일하게 화포 설치</b> · 행궁 역할 · 4대문 전부 옹성(<b>정문=장안문</b>, 팔달문·화서문·창룡문) · <b>화성성역의궤</b></td></tr>
+<tr><td class="nm">남한산성</td><td class="yr">경기 광주</td><td><b>세계문화유산(2014)</b> · 사적 · <b>도립공원</b> · <b>병자호란 때 인조가 피난·항전</b></td></tr>
+<tr><td class="nm">북한산성</td><td class="yr">서울·경기</td><td><b>숙종</b> 때 축조 · <b>한양의 외성</b></td></tr>
+<tr><td class="nm">금정산성</td><td class="yr">부산</td><td><b>현존 최대 규모 석축 산성</b> · 옛 이름 동래산성 · <b>피난성</b> · 금정산(2025 국립공원)</td></tr>
+<tr><td class="nm">행주산성</td><td class="yr">경기 고양</td><td><b>권율의 행주대첩</b>(임진왜란) · <b>토축산성(토성)</b> · <b>삼국시대</b> 축조</td></tr>
+<tr><td class="nm">낙안읍성</td><td class="yr">전남 순천</td><td><b>시험에 두 번 출제</b> · 사적 · 세계유산 <b>잠정목록</b> · 태조 때 <b>김빈길</b>이 토성으로 축조 → 석성 → 인조 때 <b>임경업</b> 증축</td></tr>
+<tr><td class="nm">해미읍성</td><td class="yr">충남 서산</td><td><b>이순신 근무</b> · <b>천주교 순교지</b> · 해미읍성 역사체험축제</td></tr>
+<tr><td class="nm">삼국시대 성곽</td><td class="yr">—</td><td><b>고구려</b>: 오녀산성(중국 요령성)·용담산성(길림)·<b>온달산성(충북 단양)</b> / <b>백제</b>: 풍납토성·몽촌토성(한성) → <b>공산성</b>(공주=웅진) → <b>부소산성</b>(부여=사비) / <b>고려</b>: 외침이 잦아 <b>토성이 많음</b></td></tr>
+</tbody></table></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 등급표 — 무엇부터 외울 것인가</h2>
+<p class="sub">아래 등급은 <b>기출 실측이 아닙니다.</b> 이 단원은 기출 원문 정리본에 문항이 없어 실측이 불가능하므로, <b>강사가 교재에 표시한 별표 개수와 강의 중 발언</b>을 근거로 매기고 그 근거를 그대로 적었습니다.</p>
+<div class="freq">
+<div class="row"><span class="gr gA">최우선</span><div><b>성곽 구조물 8종</b>(여장·적대·치·장대·해자·암문·옹성·현안·노대·공심돈) — 교재 <b>★★★</b>. 강사: <b>"성곽에서 시험에 가장 많이 나오는 내용이고 출제 비중이 제일 높았다"</b>, <b>"작년엔 안 나왔는데 올해는 또 나왔다"</b></div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>동구릉(태조 건원릉)</b>과 <b>여주 영릉(세종)</b> — 교재에 <b>붉은 동그라미+별표</b>가 겹쳐 표시된 두 곳</div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>광릉 = 최초의 동원이강릉</b>(세조+정희왕후) — 강사가 <b>동그라미+별표 둘</b>을 준 유일한 왕릉</div></div>
+<div class="row"><span class="gr gA">최우선</span><div><b>영월 장릉(단종) = 강원도의 유일한 왕릉</b> — "예외 하나"를 묻는 문제는 시험이 가장 좋아하는 형태</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>왕릉의 행정구역 구분(서울 vs 경기)</b> — 강사: <b>"조선왕릉 시험 문제가 나온 게 두 가지인데, 첫 번째가 서울이냐 경기도냐를 구분하는 문제"</b></div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>흥인지문 = 4대문 중 유일하게 옹성</b> / <b>돈의문 현존 X</b> — 강사 동그라미+별표</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>해자</b> — 강사: <b>"해자가 시험에 여러 번 나왔는데 상대적으로 비율이 더 높았다"</b></div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>수원화성</b>(정조·정약용 거중기·세계문화유산·토성+석성) / <b>남한산성</b>(세계문화유산·병자호란 인조) / <b>낙안읍성</b>(강사: <b>"시험에 두 번이나 나왔다"</b>)</div></div>
+<div class="row"><span class="gr gB">중요</span><div><b>42기 중 40기만 세계문화유산</b>(북한 2기·연산군묘·광해군묘 제외)</div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>왕릉 형태 용어</b>(동원이강릉·동원상하릉·삼연릉) — 강사: <b>"아직 한 번도 나온 적 없다. 한 번도 안 나왔다는 얘기는 나올 가능성이 항상 내재되어 있다는 얘기"</b></div></div>
+<div class="row"><span class="gr gC">챙길 것</span><div><b>헌인릉</b> — 강사: <b>"익숙하지 않은 능이니 좀 신경 써서 외우십시오"</b></div></div>
+<div class="row"><span class="gr gZ">가볍게</span><div>동구릉의 나머지 7릉 이름 / 서오릉·서삼릉의 개별 능 이름 — 강사: <b>"다 외우는 건 너무 큰 모험이고 시간 투자"</b></div></div>
+</div>
+<div class="zero"><b>0회 확인 —</b> 이 두 단원은 기출 원문 정리본(2013~2025년 <b>136문항</b>)에 <b>단 한 문항도 없습니다.</b> 원본 기출 PDF가 유교 건축(Q136)까지만 수록되어 있기 때문이며, 실제로 시험에 안 나왔다는 뜻이 <b>아닙니다.</b> 강사가 "여러 차례 나왔다"고 반복해 말한 항목들이므로 등급을 낮추지 마세요.</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">시험은 이 짝들을 서로 바꿔치기해서 냅니다. 짝으로 붙여 두면 바뀐 순간 눈에 걸립니다.</p>
+<div class="cmp">
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 능 · 원 · 묘</h4>
+<div class="vs"><div class="side a"><b>능(陵)</b>왕 · 왕비</div><div class="mid">≠</div><div class="side b"><b>원(園)</b>세자 · 세자빈 · 사친</div></div>
+<div class="vs"><div class="side n"><b>묘(墓)</b>대군·공주·후궁·서민</div><div class="mid">→</div><div class="side x2"><b>연산군·광해군</b>왕이었지만 <b>묘</b></div></div>
+<p class="why">"왕이면 무조건 능"이 아닙니다. <b>폐위되면 묘</b>가 됩니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 동원상하릉 · 동원이강릉</h4>
+<div class="vs"><div class="side a"><b>동원상하릉</b>같은 언덕<br><b>위·아래</b></div><div class="mid">VS</div><div class="side b"><b>동원이강릉</b>같은 능역<br><b>다른 언덕</b></div></div>
+<p class="why"><b>이(異)=다르다, 강(岡)=언덕.</b> 이름에 "다른 언덕"이라고 쓰여 있습니다. <b>최초는 광릉.</b></p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 적대 · 치(치성)</h4>
+<div class="vs"><div class="side a"><b>적대</b><b>성문 좌우</b><br>옆에서 공격</div><div class="mid">VS</div><div class="side b"><b>치(치성)</b><b>성벽 일부</b><br>정면·측면 공격</div></div>
+<p class="why">둘 다 "밖으로 튀어나온 구조물"이라 헷갈립니다. 기준은 <b>문 옆이냐 벽 중간이냐</b> 하나뿐입니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 옹성 · 암문 · 해자</h4>
+<div class="vs"><div class="side g"><b>옹성</b>성문을 감싼<br><b>항아리 모양 성벽</b></div><div class="mid">≠</div><div class="side b"><b>암문</b><b>비밀 출입구</b></div></div>
+<div class="vs"><div class="side n"><b>해자</b>물을 채운 도랑</div><div class="mid">≠</div><div class="side a"><b>현안</b>뜨거운 물·기름을 붓는 홈</div></div>
+<p class="why">해자는 <b>성 밖의 물</b>, 현안은 <b>성벽의 구멍</b>입니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 포곡식 · 테뫼식</h4>
+<div class="vs"><div class="side n"><b>포곡식</b>계곡을 <b>감쌈</b><br>물 有 → <b>장기전</b></div><div class="mid">VS</div><div class="side g"><b>테뫼식</b><b>정상부</b>만<br>물 無 → <b>단기전</b></div></div>
+<p class="why"><b>포(包)=감싸다, 곡(谷)=계곡.</b> 계곡을 품으면 물이 있으니 오래 버팁니다.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 한양도성 4대문</h4>
+<div class="vs"><div class="side a"><b>숭례문</b>남 · 예 · <b>국보</b><br>최대 규모</div><div class="mid">VS</div><div class="side b"><b>흥인지문</b>동 · 인 · <b>보물</b><br><b>유일하게 옹성</b></div></div>
+<div class="vs"><div class="side g"><b>숙정문</b>북 · 지 · 평소 폐쇄</div><div class="mid">→</div><div class="side x2"><b>돈의문</b>서 · 의 · <b>현존 X</b></div></div>
+<p class="why">"4대문이 모두 남아 있다"는 문장은 <b class="x">틀립니다.</b></p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 조선 왕릉 42 vs 40</h4>
+<div class="vs"><div class="side a"><b>42기</b>조선 왕릉 <b>전체</b></div><div class="mid">≠</div><div class="side n"><b>40기</b><b>세계문화유산(2009)</b></div></div>
+<p class="why">제외된 것 = <b>북한의 2기</b>(제릉·후릉) + <b>연산군묘·광해군묘</b>.</p></div>
+
+<div class="c"><h4><svg class="ic" width="17" height="17"><use href="#i-alert"/></svg> 남한산성 · 수원화성 · 낙안읍성</h4>
+<div class="vs"><div class="side n"><b>남한산성</b>세계문화유산 <b>O</b></div><div class="mid">·</div><div class="side n"><b>수원화성</b>세계문화유산 <b>O</b></div></div>
+<div class="vs"><div class="side x2"><b>낙안읍성</b>세계유산 <b>잠정목록</b>(등재 X)</div><div class="mid">·</div><div class="side x2"><b>북한·행주·금정산성</b>등재 X</div></div>
+<p class="why">"세계문화유산으로 등재된 산성"을 묻는 기출(2015)의 정답은 <b>남한산성</b>이었습니다.</p></div>
+
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars"><ul>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"조선왕릉 시험 문제가 나온 게 두 가지예요."</b> 첫째는 <b>행정구역</b>(서울이냐 경기도냐), 둘째는 <b>유명한 왕과 왕릉의 매칭</b>. 이 두 가지 형태로만 나옵니다. — 7/12 핵심강의 1:24:57경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"서울 것만 외우는 거야."</b> 경기도 왕릉이 훨씬 많으니, 서울에 있는 것만 외우고 나머지는 경기도로 처리하라는 전략. 서울 왕릉은 <b>태릉선수촌·정릉유원지·선정릉역</b>처럼 이미 아는 이름입니다. — 1:25:36경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"광릉에다 동그라미하고 별표 둘."</b> 최초의 동원이강릉이자, 자연 관광자원(광릉숲·국립수목원·크낙새 서식지)에서도 나오는 이중 출제 항목. — 1:34:32경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"동원이강릉·삼연릉 같은 용어로 물어보는 문제는 아직 한 번도 나온 적이 없어요. 한 번도 나오지 않았다는 얘기는 나올 가능성이 항상 내재되어 있다는 얘기입니다."</b> — 1:36:03경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"성곽에 있는 각종 구조물을 물어보는 문제가 지금까지 출제 비중이 제일 높았습니다."</b> 이 단원에서 가장 강한 신호입니다. — 1:38:38경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"해자가 시험에 여러 번 나왔는데 상대적으로 비율이 더 높았어요."</b> 구조물 중에서도 해자가 특히 자주 나온다는 뜻. — 1:42:51경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"성곽 구조물들이 시험에 여러 차례 나왔어요. 작년에는 안 나왔던 것 같은데 올해는 또 나왔어요."</b> 매년 나오는 것은 아니지만 주기적으로 반복된다는 뜻입니다. — 1:48:04경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"흥인지문은 4대문 중 유일하게 옹성이 있다 — 동그라미하고 별표."</b> — 2:00:56경</div></li>
+<li><svg class="ic" width="17" height="17"><use href="#i-star"/></svg><div><b>"낙안읍성은 전남 순천에 있는데, 시험에 두 번이나 나왔었거든요."</b> 읍성 중에서는 낙안읍성이 우선입니다. — 2:06:14경</div></li>
+</ul></div>
+</section>
+
+<section id="quizsec">
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 예상문제 12문항</h2>
+<p class="sub">보기를 눌러 고르고, 다 풀면 <b>채점하기</b>를 누르세요. 채점 후 <b>틀린 문제만 다시 풀기</b>와 <b>오답노트용 기록</b>이 나옵니다.</p>
+
+<div class="notice">
+<b>이 문제들은 기출이 아니라 예상문제입니다.</b> 앞서 밝힌 대로 이 두 단원은 기출 원문 정리본(136문항)에 해당 문항이 없어, 기출 문제를 그대로 실을 수 없었습니다. 대신 <b>강사가 "이런 형태로 나온다"고 직접 지목한 출제 유형</b>(행정구역 구분형 · 구조물 명칭 매칭형 · 최초/유일 항목형)에 맞춰, <b>교재와 강의에 실제로 있는 사실만</b>으로 만들었습니다. 교재·강의에 없는 내용은 보기에도 넣지 않았습니다.
+</div>
+
+<div class="quizbar">
+<svg width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 12 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts"><button class="btn ghost" onclick="reset()">다시 풀기</button><button class="btn ghost" onclick="retryWrong()">틀린 문제만 다시 풀기</button></div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>02_관광자원해설/04_최종교재/관광자원.md</code>의 20단원(조선 왕릉)·21단원(성곽 건축) + <b>강의전사본/핵심강의/7월12일.txt</b> 1:24:27~2:07:48 구간(왕릉 전체 + 성곽 구조물·종류·한양도성·수원화성·산성·읍성).</p>
+<p><b>기출 실측 불가 사유</b> — <code>02_관광자원해설/03_작업자료/관광자원기출.md</code>(2013~2025년 136문항)는 원본 기출 PDF 13쪽을 전량 판독한 것인데, 수록 범위가 "관광자원과 해설 → 유네스코 → 국가지정 문화유산 → 전통건축 → 5대 궁궐 → 불교건축 → 유교건축(Q136)"까지입니다. 왕릉·성곽 단원의 기출 문항은 이 정리본에 존재하지 않아 빈도 실측을 하지 않았고, <b>감으로 등급을 매기는 대신 강사의 별표·발언을 근거로 표기</b>했습니다.</p>
+<p><b>추측 금지</b> — 교재·강의에 없는 내용은 넣지 않았습니다. 동구릉의 나머지 7릉, 서오릉·서삼릉의 개별 능 이름은 강의에서 "외울 필요 없다"고 명시해 생략했고, 4소문 중 혜화문·홍화문의 명칭 차이 등 원본에 두 가지로 적힌 항목은 교재 표기를 따랐습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+</div>
+<script>
+var UNIT='[관광자원해설 20·21단원 — 조선 왕릉 · 성곽 건축]';
+var QS=[
+{n:1,src:"예상 · 신분 구분형",q:"조선 시대 무덤의 명칭에 관한 설명으로 옳지 않은 것은?",o:["왕과 왕비의 무덤은 능(陵)이라 한다.","왕세자와 왕세자빈의 무덤은 원(園)이라 한다.","연산군과 광해군의 무덤은 왕이었으므로 능(陵)이라 한다.","주인을 알 수 없으나 특이한 유물이 출토된 무덤은 총(塚)이라 한다."],a:2,c:"왕릉",e:"<b>연산군과 광해군은 폐위되어 왕의 자격을 잃었기 때문에 무덤이 능이 아니라 「묘」</b>입니다(연산군묘·광해군묘). 그래서 조선 왕릉 세계문화유산 등재 목록에서도 제외되었습니다. 나머지 설명은 모두 맞습니다 — 능=왕·왕비, 원=왕세자·왕세자빈·왕의 사친, 총=천마총·무용총·금관총처럼 특이 유물로 이름 붙인 무덤."},
+{n:2,src:"예상 · 강사 지목형(행정구역)",q:"조선 왕릉 중 유일하게 강원도에 있는 것은?",o:["광릉","장릉","영릉","의릉"],a:1,c:"왕릉",e:"<b>영월 장릉(단종)</b>이 강원도에 있는 유일한 조선 왕릉입니다. 단종이 세조에게 왕위를 빼앗기고 강원도 영월로 유배되어 그곳에서 세상을 떠났기 때문입니다. 광릉은 경기 남양주, 영릉은 경기 여주, 의릉은 서울에 있습니다. 강사는 왕릉 문제의 첫 번째 유형이 <b>“서울이냐 경기도냐”를 구분하는 행정구역 문제</b>라고 했으며, 그 예외가 바로 이 장릉입니다."},
+{n:3,src:"예상 · 최초 항목형",q:"조선 왕릉 중 최초의 동원이강릉(同原異岡陵)으로, 세조와 정희왕후가 잠들어 있는 곳은?",o:["광릉","건원릉","융릉","경릉"],a:0,c:"왕릉",e:"<b>남양주 광릉</b>이 최초의 동원이강릉입니다. 동원이강릉은 같은 능역 안이지만 <b>계곡이나 지형을 사이에 두고 서로 다른 언덕</b>에 왕과 왕비를 각각 조성한 형태입니다. 건원릉은 태조 이성계의 능(동구릉 내), 융릉은 추존 장조(사도세자)의 능, 경릉은 동구릉 안의 유일한 삼연릉입니다."},
+{n:4,src:"예상 · 왕 매칭형",q:"경기도 구리 동구릉에 있는 건원릉의 주인공과, 동구릉의 특징을 바르게 연결한 것은?",o:["태조 이성계 — 조선 왕릉 중 가장 많은 9기의 능이 모여 있다","세종대왕 — 조선 왕릉 중 가장 많은 9기의 능이 모여 있다","태조 이성계 — 조선 왕릉 중 유일한 동원상하릉이다","정조 — 조선 왕릉 중 유일한 삼연릉이다"],a:0,c:"왕릉",e:"<b>건원릉의 주인공은 태조 이성계</b>이고, <b>동구릉은 아홉 기의 능이 모여 있어 조선 왕릉 중 가장 규모가 큽니다.</b> 세종대왕의 능은 여주 영릉이고, 정조의 능은 화성 건릉입니다. 동구릉 안의 <b>경릉</b>이 유일한 삼연릉(왕+왕비+계비 셋이 나란히)입니다."},
+{n:5,src:"예상 · 왕 매칭형",q:"경기도 여주에 있는 영릉(英陵)에 관한 설명으로 옳은 것은?",o:["태종과 순조의 능을 합쳐 부르는 이름이다.","세종대왕과 소헌왕후의 능이며, 봉분을 위아래로 둔 동원상하릉 형태이다.","단종의 능으로 강원도에 있는 유일한 왕릉이다.","사도세자를 왕으로 추존하면서 원(園)에서 능(陵)으로 격상된 무덤이다."],a:1,c:"왕릉",e:"여주 영릉은 <b>세종대왕과 소헌왕후</b>의 능이며 <b>동원상하릉</b>(하나의 언덕에 왕이 위, 왕비가 아래) 형태입니다. 바로 옆에 효종의 영릉(寧陵)이 함께 있어 두 능을 붙여 “영영릉”이라고도 부릅니다. ①은 서울 헌인릉, ③은 영월 장릉, ④는 화성 융릉(추존 장조)에 대한 설명입니다."},
+{n:6,src:"예상 · 숫자 함정형",q:"조선 왕릉의 세계문화유산 등재에 관한 설명으로 옳은 것은?",o:["조선 왕릉 42기가 모두 세계문화유산으로 등재되었다.","남한에 있는 40기가 세계문화유산으로 등재되었고, 북한 소재 2기와 연산군묘·광해군묘는 제외되었다.","북한에 있는 2기를 포함해 42기 전부가 등재되었으나 연산군묘만 제외되었다.","조선 왕릉은 세계문화유산이 아니라 세계기록유산으로 등재되었다."],a:1,c:"왕릉",e:"조선 왕릉은 총 <b>42기</b>이지만, 2009년 세계문화유산으로 등재된 것은 <b>남한에 있는 40기</b>뿐입니다. <b>북한에 있는 2기</b>(태조의 첫 부인 신의왕후의 제릉, 2대 정종의 후릉)와 <b>폐위된 연산군묘·광해군묘</b>는 제외되었습니다. “42기 모두 등재”는 대표적인 함정 문장입니다."},
+{n:7,src:"예상 · 구조물 매칭형(★★★)",q:"다음 설명에 해당하는 성곽 구조물은?\n“성문의 좌우에 성벽을 밖으로 튀어나오게 쌓아, 성문으로 접근하는 적을 옆에서 공격할 수 있게 만든 시설이다.”",o:["치(치성)","적대","옹성","노대"],a:1,c:"성곽",e:"<b>적대</b>입니다. 성벽 밖으로 돌출된 구조물은 두 가지인데, <b>성문 좌우</b>에 있으면 <b>적대</b>, <b>성벽의 일부</b>가 튀어나온 것이면 <b>치(치성)</b>입니다. 치는 적을 정면과 측면에서 함께 공격합니다. 옹성은 성문을 감싼 항아리 모양 성벽, 노대는 쇠뇌를 장치한 높은 대입니다."},
+{n:8,src:"예상 · 구조물 매칭형(★★★)",q:"성곽 구조물과 그 기능의 연결이 옳지 않은 것은?",o:["여장 — 성벽 위에 쌓은 낮은 담장으로, 총안을 통해 적을 공격한다.","암문 — 적에게 알려지지 않은 비밀 출입구로, 평상시에는 물자 운반로로 쓰인다.","옹성 — 성문을 보호하기 위해 성문 밖에 항아리 모양으로 두른 성벽이다.","해자 — 적의 동태를 살피기 위해 높이 쌓은 망루로, 총과 대포를 설치하기도 한다."],a:3,c:"성곽",e:"<b>해자는 성 주위를 파고 물을 채운 방어 시설</b>로, 달려오는 적의 속도를 늦추는 역할을 합니다. ④의 설명(적의 동태를 살피는 높은 망루, 총·포 설치)은 <b>공심돈(돈대)</b>에 해당합니다. 강사는 해자를 두고 “시험에 여러 번 나왔고 상대적으로 비율이 더 높았다”며 별표를 준 항목입니다."},
+{n:9,src:"예상 · 구조물 매칭형(★★★)",q:"다음 중 성벽 외벽을 수직으로 길게 파내어, 성벽에 바짝 붙은 적에게 뜨거운 물이나 기름을 부어 공격하는 시설은?",o:["현안","장대","여장","암문"],a:0,c:"성곽",e:"<b>현안</b>입니다. 주로 적대 가운데에 함께 설치됩니다. <b>장대</b>는 군사 지휘소(가장 높은 곳), <b>여장</b>은 성벽 위의 낮은 담장, <b>암문</b>은 비밀 출입구입니다."},
+{n:10,src:"예상 · 강사 지목형(동그라미+별표)",q:"한양도성의 문에 관한 설명으로 옳지 않은 것은?",o:["4대문의 이름은 정도전이 유교의 덕목을 넣어 지었다.","숭례문은 남대문으로, 우리나라 최대 규모의 성문이다.","흥인지문은 4대문 중 유일하게 옹성을 갖추고 있다.","4대문은 현재 네 곳이 모두 원형대로 남아 있다."],a:3,c:"성곽",e:"<b>서대문인 돈의문은 현재 남아 있지 않습니다</b>(일제의 도시계획으로 철거). 4소문 중 <b>소의문(서소문)</b>도 같은 이유로 사라졌습니다. 나머지는 모두 맞습니다 — 4대문 이름은 <b>정도전</b>이 인·의·예·지를 넣어 지었고, <b>숭례문</b>은 국보이자 최대 규모 성문이며, <b>흥인지문만 옹성</b>을 갖추고 있습니다."},
+{n:11,src:"예상 · 종합 서술형",q:"수원화성에 관한 설명으로 옳지 않은 것은?",o:["정조가 축조하였으며, 정약용이 고안한 거중기가 사용되었다.","흙으로만 쌓은 토성으로, 방어 기능만을 목적으로 하였다.","우리나라 성곽 중 유일하게 화포가 설치되었다.","축조 과정을 기록한 화성성역의궤가 남아 있어 정확한 보수가 가능하다."],a:1,c:"성곽",e:"수원화성은 <b>토성과 석성을 함께 쓴 절충형</b>이며, 방어뿐 아니라 <b>행정·군사 기능을 겸한 종합 계획도시</b>였습니다. 정조는 원래 이곳으로 수도를 옮기려 했고, 아버지 사도세자의 무덤을 참배할 때 <b>행궁</b> 역할도 했습니다. 4대문은 모두 옹성을 갖추었고 정문은 <b>장안문</b>입니다."},
+{n:12,src:"예상 · 위치 매칭형",q:"성곽과 소재지의 연결이 옳지 않은 것은?",o:["낙안읍성 — 전라남도 순천","해미읍성 — 충청남도 서산","금정산성 — 부산","행주산성 — 강원도 영월"],a:3,c:"성곽",e:"<b>행주산성은 경기도 고양</b>에 있으며, 임진왜란 때 <b>권율 장군의 행주대첩</b>으로 유명한 <b>토축산성(토성)</b>입니다. 강원도 영월에 있는 것은 단종의 <b>장릉</b>입니다. 나머지 연결은 모두 맞습니다 — 낙안읍성(전남 순천, 강사가 “시험에 두 번 나왔다”고 언급), 해미읍성(충남 서산, 이순신 근무·천주교 순교지), 금정산성(부산, 현존 최대 규모 석축 산성)."}
+];
+var sel={},graded=false,t0=null,tick=null,active=null;
+function pool(){return active?QS.filter(function(q){return active.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=pool(),h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+pool().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=pool(),right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+lastWrong=wrong.map(function(q){return q.n});
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+' '+wrong[i].o[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';}
+var tx=''+UNIT+' 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] '+q.q.replace(/<[^>]+>/g,' ').replace(/\n/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+var lastWrong=[];
+function reset(){
+active=null;sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function retryWrong(){
+if(!lastWrong.length){reset();return;}
+active=lastWrong.slice();sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>

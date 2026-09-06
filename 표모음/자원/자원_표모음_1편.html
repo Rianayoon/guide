@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광자원해설 표 모음 — 1편 관광자원과 해설</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광자원해설 · 표 모음</div>
+<h1>관광자원해설 표 모음 — 1편 관광자원과 해설
+<small>교재 진도 순서대로 · 표 4개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">I. 관광자원과 해설</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>I. 관광자원과 해설</b>
+<a href="#t1">표 ① 관광자원의 특성</a><a href="#t2">표 ② 관광자원의 분류</a><a href="#t3">표 ③ 유형 관광자원 · 무형 관광자원 (한국관광공사 분류 체계, 1983)</a><a href="#t4">표 ④ 관광자원 해설 방법</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 4개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (4개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n5">★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<section id="t1" data-imp="1">
+<h2><span class="no">표 ①</span> 관광자원의 특성 <span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:170px">특성</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b><span class="hl">유인성 · 매력성</span></b></td><td>관광객의 <b>관광 욕구와 동기를 유발</b>시키는 <b>매력성과 유인성</b>을 지닌다</td></tr>
+<tr class="per"><td class="biz"><b><span class="hl">경제성</span></b></td><td><b>투자 효과가 크다</b></td></tr>
+<tr class="not"><td class="biz"><b><span class="hl">가변성</span></b></td><td>관광자원의 가치는 <b>시대의 흐름과 관광객의 욕구 등에 따라 변한다</b> &nbsp;<span class="dash">창조성(개발성)</span></td></tr>
+<tr class="des"><td class="biz"><b><span class="hl">유한성</span></b></td><td>관광자원은 <b>무분별한 이용과 개발로 파괴되면 회복이 어렵다</b><br>→ <b>보전성</b> : 관광자원은 그 가치가 유지될 수 있도록 <b>지속적인 보호와 보존이 필요</b></td></tr>
+<tr class="mint"><td class="biz"><b><span class="hl">희소성</span></b></td><td>관광자원은 <b>누구나 원하는 만큼 소비할 수 없는 희소성</b>을 지닌다</td></tr>
+<tr class="rose"><td class="biz">기타</td><td><b>다양성(복합성) · 결합성 · 비이동성 · 비소모성</b> 등</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2" data-imp="1">
+<h2><span class="no">표 ②</span> 관광자원의 분류 <span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:140px">분류 기준</th><th style="width:160px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz" rowspan="2"><b>관광 행동 유형</b></td><td>① <b><span class="hl">주유형</span></b></td><td><b>숙박하지 않고 장소를 이동</b>하며 보고 즐길 수 있는 자원 → <b><span class="hl">축제, 쇼핑센터, 토속 음식, 주제 공원</span></b></td></tr>
+<tr class="reg"><td>② <b><span class="hl">체재형</span></b></td><td><b>일정 기간 숙박(체재)하며 그 지역 내에서</b> 보고 즐길 수 있는 자원 → <b><span class="hl">휴양지, 캠프장, 해안 관광목장</span></b></td></tr>
+<tr class="per"><td class="biz" rowspan="3"><b>입지(위치)</b></td><td>① <b><span class="hl">이용자 중심형</span></b></td><td><b>일과 후 일상생활에서 쉽게 접근할 수 있는 소규모 공간·지역</b> → <b><span class="hl">도시공원, 스포츠 센터</span></b></td></tr>
+<tr class="per"><td>② <b><span class="hl">중간형</span></b></td><td>거주지에서 <b>1~2시간 정도 거리</b>에 위치 → <b>당일 또는 주말을 이용</b>하여 즐길 수 있는 관광자원 → <b><span class="hl">수변 레크리에이션 지역, 소규모 도립·군립공원</span></b></td></tr>
+<tr class="per"><td>③ <b><span class="hl">자원 중심형</span></b></td><td>거주지에서 <b>원거리</b>에 위치 → 자원의 <b>질적 가치와 매력의 보호·보존이 우선</b>인 관광자원 → <b><span class="hl">역사 유물·유적지가 위치한 지역, 국립공원, 산림, 원시 야생지</span></b></td></tr>
+<tr class="not"><td class="biz" rowspan="2"><b>자원 생성 과정</b></td><td>① <b><span class="hl">자연 관광자원</span></b></td><td><b>산악, 구릉, 해양, 도서, 하천, 호수, 산림, 수목, 화초, 동물, 온천</b> 등</td></tr>
+<tr class="not"><td>② <b><span class="hl">인문 관광자원</span></b></td><td><b>건조물, 사적, 예술품, 민속문화적 시설, 관광 시설, 유형·무형 유산(문화재)</b> 등</td></tr>
+<tr class="des"><td class="biz"><b>자원의 가시성</b></td><td colspan="2"><b><span class="hl">유형 관광자원 · 무형 관광자원</span></b></td></tr>
+<tr class="mint"><td class="biz"><b>분류 기준</b></td><td colspan="2"><b><span class="hl">한국관광공사의 분류 체계(1983)</span></b> 기준 → <b>유형 관광자원 · 무형 관광자원</b>으로 분류</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t3" data-imp="1">
+<h2><span class="no">표 ③</span> 유형 관광자원 · 무형 관광자원 <span class="sm">(한국관광공사 분류 체계, 1983)</span> <span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:140px">구분</th><th style="width:200px">종류</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz" rowspan="5"><b><span class="hl">유형<br>관광자원</span></b></td><td><b><span class="hl">자연적 관광자원</span></b></td><td><b><span class="hl">천연자원, 천문 자원, 동·식물</span></b></td></tr>
+<tr class="reg"><td><b><span class="hl">문화적 관광자원</span></b></td><td><b><span class="hl">고고학적 유적, 사적, 사찰, 공원</span></b></td></tr>
+<tr class="reg"><td><b><span class="hl">사회적 관광자원</span></b></td><td><b><span class="hl">풍속, 행사, 생활, 예술, 교육, 스포츠</span></b> → <b>관광객의 자아 확대 욕구 충족</b></td></tr>
+<tr class="reg"><td><b><span class="hl">산업적 관광자원</span></b></td><td><b><span class="hl">공업 단지, 유통 단지, 광업소, 농장, 목장, 백화점, 전통 시장</span></b></td></tr>
+<tr class="reg"><td><b><span class="hl">레크리에이션<br>(위락적) 관광자원</span></b></td><td><b><span class="hl">캠프장, 수영장, 놀이 시설, 스키장, 골프장</span></b> → <b>동태적 관광자원</b></td></tr>
+<tr class="per"><td class="biz" rowspan="2"><b><span class="hl">무형<br>관광자원</span></b></td><td><b><span class="hl">인적 관광자원</span></b></td><td><b><span class="hl">국민성, 풍속, 관습, 예절</span></b></td></tr>
+<tr class="per"><td><b><span class="hl">비인적 관광자원</span></b></td><td><b><span class="hl">고유 종교, 사상, 철학, 역사, 음악, 가곡</span></b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t4" data-imp="1">
+<h2><span class="no">표 ④</span> 관광자원 해설 방법 <span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:100px">구분</th><th>인적 해설 방법 <span class="dash">(안내자 · 쌍방향 해설)</span></th><th>비인적 해설 방법 <span class="dash">(단방향 해설)</span></th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><b>종류</b></td><td>① <b><span class="hl">동행(이동식) 해설</span></b> : 관광객들과 <b>함께 움직이며</b> 관광자원에 대한 해설<br>② <b><span class="hl">담화(거점식·정지식) 해설</span></b> : <b>동굴, 박물관, 관광객 안내소</b> 등 관광객이 많은 곳에 <b>해설사가 고정 배치</b>되어 해설<br>③ <b><span class="hl">재현 해설</span></b> : <b>역사적 사실을 재현</b></td><td>① <b><span class="hl">자기 안내(길잡이식) 해설</span></b> : 관광객이 <b>해설사의 도움 없이 독자적으로 제시된 안내문에 따라</b> 그 내용을 이해하고 인식<br>② <b><span class="hl">매체(전자 장치) 이용 해설</span></b> : <b>멀티미디어시스템 안내판, 비디오, 무인 정보 안내(kiosk), 슬라이드</b> 등 매체를 이용하여 안내</td></tr>
+<tr class="per"><td class="biz"><b>장점</b></td><td><b><span class="hl">신뢰도 높음</span></b> · <b><span class="hl">쌍방향 질의·응답 가능</span></b> · <b>관광자원 보호</b></td><td><b><span class="hl">비용 감소</span></b> · <b><span class="hl">관광객의 체험 기회 확대</span></b></td></tr>
+<tr class="not"><td class="biz"><b>단점</b></td><td>① 잘못되었을 경우 <b>분위기가 산만해지고 외면</b><br>② <b><span class="hl">비용 부담이 크다</span></b></td><td>① <b><span class="hl">고학력자·전문직 종사자 등에게 적합</span></b><br>② <b><span class="hl">쌍방향 질의·응답 불가능</span></b> · <b>관광자원 훼손</b></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 관광자원해설 원본교재 「관광자원 해설 핵심 요약 정리」(세종 관광 통역 가이드 학원, 이현호) I. 관광자원과 해설, 1쪽.</p>
+<p>「최빈출」 배지와 노랑 표시는 산업인력공단·학원 기출 관광자원해설 11개년 273문항을 세어 붙였습니다.</p>
+</footer>
+
+</div>
+<script>
+function flt(m){
+  var secs=document.querySelectorAll('section');
+  for(var i=0;i<secs.length;i++){ secs[i].hidden=(m!=='all')&&!secs[i].dataset[m]; }
+  var bs=document.querySelectorAll('.tabbtn');
+  for(var k=0;k<bs.length;k++){ bs[k].classList.toggle('on', bs[k].dataset.f===m); }
+  var toc=document.querySelector('nav.toc'); if(toc) toc.hidden=(m!=='all');
+}
+</script>
+</body></html>

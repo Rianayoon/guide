@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광자원해설 표 모음</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+
+.card{display:block;background:var(--card);border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px 18px;margin:12px 0;text-decoration:none;color:var(--ink)}
+.card:hover{border-color:var(--gold)}
+.ct{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.cs{font-size:13px;color:var(--ink-2);margin-top:6px;line-height:1.55}
+.cm{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+</style>
+</head><body>
+<div class="wrap">
+
+
+<header class="top">
+<div class="kicker">2026 관광통역안내사 필기</div>
+<h1>관광자원해설 표 모음 — 전 11편
+<small>원본교재 진도 순서대로 · 표 98개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">문화 · 자연 · 사회 · 산업·위락 관광자원</span>
+<span class="chip">11개년 기출 273문항</span>
+</div>
+</header>
+
+<a class="card" href="https://claude.ai/code/artifact/8264dc1e-9fd0-41a3-a1e8-93bd7d8bf2d5" target="_blank"><div class="ct">1편 관광자원과 해설</div>
+<div class="cs">관광자원의 특성(유인성·경제성·가변성·유한성·희소성) · 관광 행동 유형/입지/생성 과정별 분류 · 유형 관광자원 5종과 무형 관광자원 · 인적 해설과 비인적 해설의 종류·장점·단점</div>
+<div class="cm"><span class="chip">I. 관광자원과 해설</span><span class="chip">표 4개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/ed969200-af35-45c8-9d56-d3072d75c808" target="_blank"><div class="ct">2편 유네스코 지정 세계유산</div>
+<div class="cs">세계 문화유산 15개(석굴암·불국사 1995 ~ 울주 반구천 암각화 2025) · 세계 기록 유산 20개(훈민정음 1997 ~ 제주 4·3·산림 녹화 2025) · 명칭·연도·내용 전부</div>
+<div class="cm"><span class="chip">교재 2~3쪽</span><span class="chip">표 2개</span><span class="chip">기출 31문항 · 자원해설 최다</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/c3bb71a3-c0a3-4764-b292-eb29cb890653" target="_blank"><div class="ct">3편 문화유산 지정 · 전통 건축</div>
+<div class="cs">국가/시·도 지정 · 국보·보물·사적 1~3호 · 국가 민속·무형유산 · 지붕 4종(맞배·우진각·팔작·모임)과 마루 구분 · 기와와 장식기와 · 기둥·초석·기단·월대 · 천장·단청·문·대문 · 공포 양식(주심포·다포·익공·하앙) · 온돌</div>
+<div class="cm"><span class="chip">교재 4~8쪽</span><span class="chip">표 9개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/95ce4098-5c81-4546-a2b1-455c7b4c3019" target="_blank"><div class="ct">4편 5대 궁궐</div>
+<div class="cs">정전·편전·정문·국보 한눈에 비교표 · 궁궐 구조와 위계 · 건물 서열(전당합각재헌누정) · 전조후침·좌묘우사 · 경복궁(품계석 24개) · 창덕궁(후원) · 창경궁 · 덕수궁 · 경희궁</div>
+<div class="cm"><span class="chip">교재 9~10쪽</span><span class="chip">표 7개</span><span class="chip">교재 「필수 암기」</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/df877e67-9955-42c9-83a1-842af8672751" target="_blank"><div class="ct">5편 불교 건축 · 불탑 · 불상</div>
+<div class="cs">사찰의 문 4개 · 불전(대웅전·극락전·대적광전 등)과 5대 적멸보궁 · 범음구 · 삼보사찰(통도사·해인사·송광사) · 주요 사찰 · 불탑의 구조와 시대별 불탑 · 불상(수인·광배) · 승탑·석등·탑비·범종·당간지주</div>
+<div class="cm"><span class="chip">교재 11~13쪽</span><span class="chip">표 8개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/6e1f9d29-90d8-4be1-948a-6bd98978b5bf" target="_blank"><div class="ct">6편 유교 건축물 · 조선 왕릉 · 성곽</div>
+<div class="cs">종묘·사직단 · 문묘(전묘후학)와 향교(전학후묘) · 서원과 사액서원 · 서원 행정 구역별 정리 · 분묘 양식(능원묘총분) · 조선 왕릉 42기 중 40기와 지역별 정리 · 성곽 구조물(여장·옹성·치·공심돈) · 한양 도성 4대문 · 수원 화성 · 산성 · 읍성</div>
+<div class="cm"><span class="chip">교재 13~17쪽</span><span class="chip">표 10개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/c8fc0bbf-74e7-4424-9aed-f6a8e2f8bec7" target="_blank"><div class="ct">7편 자연 관광자원 ① 유네스코 · 자연공원 · 천연기념물</div>
+<div class="cs">세계 자연유산·생물권 보전지역·지질공원 · 람사르 습지 26개소 · 국립/도립/군립공원 · 국립공원 지정 순서(1967 지리산 ~ 2025 금정산) · 국가 지질 공원 · 천연기념물 · 명승·관동팔경·단양팔경 · 코리아 둘레길 4개 · 지형 용어와 화산 지형</div>
+<div class="cm"><span class="chip">교재 18~20쪽</span><span class="chip">표 9개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/88fdefb2-0a91-4c4c-be9a-9ae64c5b5a7b" target="_blank"><div class="ct">8편 자연 관광자원 ② 산악 · 하천 · 해안 · 동굴 · 호수 · 온천</div>
+<div class="cs">산악 국립공원 18개 위치·자연문화유산 · 하천 침식/퇴적 지형 · 5대 강 발원지와 댐 · 유로 길이·유역 면적 순서 · 해안 지형(해식애·시스택·사주·석호) · 해상 국립공원 4개 · 해수욕장 행정 구역별 · 석회/용암/해식 동굴 · 호수 · 온천과 관광특구 5곳</div>
+<div class="cm"><span class="chip">교재 21~26쪽</span><span class="chip">표 9개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/3f6e87e8-f562-4628-90bb-5487ec491ab8" target="_blank"><div class="ct">9편 인류무형문화유산 · 가옥 · 취락 · 슬로시티 · 의례 · 국악</div>
+<div class="cs">세계 인류 무형 문화유산 23개 전부 · 가옥 유형(너와집·굴피집·관북형·울릉도형·제주도형)과 한옥 · 민속 마을과 한옥마을 · 슬로시티 15개 지역 특산물 · 관혼상제와 국가 의례 6종 · 무속 의식 · 전통 음악(정악·판소리·산조·시나위)</div>
+<div class="cm"><span class="chip">교재 27~32쪽</span><span class="chip">표 7개</span><span class="chip">교재 「23개 무조건 암기」</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/8a3f43c2-6849-4c81-9f69-58b51fe5271f" target="_blank"><div class="ct">10편 전통무용 · 세시풍속 · 민속놀이 · 탈춤 · 도자기 · 회화 · 축제</div>
+<div class="cs">궁중무용·작법무·민속무 · 세시풍속 12달 · 민속놀이(차전놀이·놋다리밟기·고싸움) · 전통 가면극과 오광대·야류 · 청자·분청사기·백자와 분장 기법 · 공예 5종 · 조선 시대 회화와 3원·3대 풍속화가 · 향토 축제 · 문화 관광 축제 27개 · 전통주 · 도시공원 · 안보 관광자원</div>
+<div class="cm"><span class="chip">교재 32~38쪽</span><span class="chip">표 12개</span></div></a>
+
+<a class="card" href="https://claude.ai/code/artifact/7dc03226-9a19-49b0-afad-589b1f1e0635" target="_blank"><div class="ct">11편 산업 · 위락 관광자원 · 관광자원 개발</div>
+<div class="cs">특산물 주산지와 전통 수공업 · 국가 중요 농업유산 19개·어업유산 16개·세계 농업유산 9개 · 농어촌 관광 휴양 사업 · 재래시장 · MICE와 컨벤션 센터 · 카지노와 강원랜드 · 스키장 · 7대 광역 관광권 · 관광단지·관광지 · 관광특구 36개 지역 · 관광 거점 도시 · 관광두레 · 3·4차 관광 개발 기본계획</div>
+<div class="cm"><span class="chip">교재 39~43쪽</span><span class="chip">표 11개</span></div></a>
+
+<footer>
+<p><b>표 읽는 법</b> — <span class="hl">노랑 형광펜</span>은 기출(2013·2016·2018~2025년)에 실제로 정답이나 보기로 나온 단어입니다. <b class="n5">★</b>은 교재에 인쇄된 별을 그대로 옮긴 것이고, <b class="n5">★★★★★</b>짜리 표는 빨간 테두리를 둘렀습니다. 기출에 나온 표에는 <span class="badge">최빈출</span> 배지가 붙습니다.</p>
+<p>각 페이지 맨 위 <b>「중요」 탭</b>을 누르면 별표·최빈출 표만 남습니다. <b>인쇄 버튼</b>은 화면에 보이는 것만 A4 가로로 뽑습니다.</p>
+<p>근거 — 관광자원해설 원본교재 「관광자원 해설 핵심 요약 정리」(세종 관광 통역 가이드 학원, 이현호) 1~43쪽 · 기출 11개년 273문항 실측(문화관광자원 65 · 자연 44 · 무형 36 · 유네스코 31)</p>
+<p>교재 44쪽 이후의 「정답 및 해설」은 기출문제 풀이 부분이라 표로 만들지 않았습니다. 필요하시면 말씀해 주세요.</p>
+</footer>
+
+</div></body></html>

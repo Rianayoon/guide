@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>국사 1단원 선사시대 암기카드</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#A8822C;--w:#9C2F2F;--neo:#5F7F52;--bro:#A85436;--iro:#46525F;--pal:#7A6A5A;--gL:#7E611D;--iroL:#323C46;--broL:#83402A;--neoL:#47603D;--palL:#5A4E43;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#D8B45C;--w:#D97070;--neo:#8FB07E;--bro:#C97F5E;--iro:#7E93A6;--gL:#E8C979;--iroL:#9FB3C4;--broL:#DE9878;--neoL:#A8C795;--palL:#C0AF9C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px;margin-bottom:14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r3b{grid-template-columns:1fr 1fr 1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.bt{font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--i2);font-weight:800;margin:0 7px}
+.big+.big{margin-top:5px}
+.big small,ul.rel small{font-size:.7em;font-weight:600;color:var(--i2)}
+ul.rel small{margin-left:9px}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.trap{background:var(--p2);border:1px solid var(--l);border-left:3px solid var(--w);border-radius:11px;padding:10px 12px;font-size:15px;font-weight:700;line-height:1.55;margin-bottom:9px}
+.trap .tl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--w);margin-right:9px}
+.trap b{color:var(--w);font-weight:800}
+.trap .sep{color:var(--l);font-weight:400;margin:0 4px}
+@media (max-width:960px){
+ .r3,.r3b,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .chip{font-size:15px}
+ .trap{font-size:17px}
+ .eq{font-size:15px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none}}
+</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<div class="card">
+<div class="hd">
+  <h1>구 석 기</h1>
+  <span class="tag">국사 1단원</span>
+  <span class="tag">선사시대</span>
+</div>
+
+<div class="row r2">
+  <div class="box">
+    <div class="bt">도구</div>
+    <div class="big">뗀석기 · 주먹도끼 · 슴베찌르개</div>
+  </div>
+  <div class="box b2">
+    <div class="bt">생활</div>
+    <div class="big">사냥 · 채집 · 이동생활 · 막집 · 동굴 · 바위그늘</div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b3">
+    <div class="bt">사회</div>
+    <div class="big">평등한 무리사회</div>
+  </div>
+  <div class="box b4">
+    <div class="bt">유적</div>
+    <div class="big">연천 전곡리 <small>(아슐리안 주먹도끼)</small> · 검은모루동굴 · 공주 석장리 · 청원 두루봉동굴 <small>(흥수아이)</small></div>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>신 석 기</h1>
+  <span class="tag">국사 1단원</span>
+  <span class="tag">선사시대</span>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">도구</div>
+    <div class="big">간석기</div>
+  </div>
+  <div class="box b2">
+    <div class="bt">경제</div>
+    <div class="big">밭농사 <small>(조 · 피 · 수수)</small> · 목축</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">생활</div>
+    <div class="big">정착생활 · 움집 · 화덕 <small>(가운데)</small> · 강가 · 바닷가</div>
+  </div>
+</div>
+
+<div class="row r3">
+  <div class="box b4">
+    <div class="bt">도구</div>
+    <div class="big">가락바퀴 · 뼈바늘</div>
+  </div>
+  <div class="box b5">
+    <div class="bt">토기</div>
+    <div class="big">이른민무늬토기 · 덧무늬토기</div>
+  </div>
+  <div class="box">
+    <div class="bt">신앙</div>
+    <div class="big">애니미즘 <small>(해 · 물 · 바위)</small> · 토테미즘 <small>(동식물)</small> · 샤머니즘 <small>(무당)</small></div>
+  </div>
+</div>
+
+<div class="row r2">
+  <div class="box b2">
+    <div class="bt">사회</div>
+    <div class="big">평등한 씨족사회</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">유적</div>
+    <div class="big">서울 암사동 · 양양 오산리 · 봉산 지탑리 · 부산 동삼동 · 인천 소야도</div>
+  </div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="hd">
+  <h1>청 동 기</h1>
+  <span class="tag">국사 1단원</span>
+  <span class="tag">선사시대</span>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">생활</div>
+    <div class="big">벼농사 · 잉여생산물 · 움집 <small>(벽쪽 화덕)</small></div>
+  </div>
+  <div class="box b2">
+    <div class="bt">사회</div>
+    <div class="big">사유재산 · 계급사회 · 군장 <small>(족장)</small></div>
+  </div>
+  <div class="box b3">
+    <div class="bt">사상 · 방어</div>
+    <div class="big">선민사상 <small>(천손)</small> · 목책 · 환호</div>
+  </div>
+</div>
+
+<div class="row r3">
+  <div class="box b4">
+    <div class="bt">청동</div>
+    <div class="big">무기 · 제사</div>
+  </div>
+  <div class="box b5">
+    <div class="bt">유물</div>
+    <div class="big">반달돌칼 · 비파형동검 · 거친무늬거울 · 민무늬토기 · 미송리식토기 · 붉은간토기 · 고인돌 · 돌널무덤</div>
+  </div>
+  <div class="box">
+    <div class="bt">유적</div>
+    <div class="big">부여 송국리 · 미송리 · 화순 대곡리</div>
+  </div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>철 기</h1>
+  <span class="tag">국사 1단원</span>
+  <span class="tag">선사시대</span>
+</div>
+
+<div class="row r3">
+  <div class="box">
+    <div class="bt">유물</div>
+    <div class="big">세형동검 · 잔무늬거울 · 검은간토기 · 중국돈 <small>(명도전 · 반량전 · 오수전)</small> · 붓 <small>(다호리)</small></div>
+  </div>
+  <div class="box b2">
+    <div class="bt">무덤</div>
+    <div class="big">널무덤 <small>(나무관)</small> · 독무덤</div>
+  </div>
+  <div class="box b3">
+    <div class="bt">유적</div>
+    <div class="big">창원 다호리 <small>(붓)</small></div>
+  </div>
+</div>
+</div>
+
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

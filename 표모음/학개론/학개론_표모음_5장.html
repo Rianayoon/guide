@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관광학개론 표 모음 제5장 — 관광정책론</title>
+<style>
+@page{size:A4 landscape;margin:10mm 8mm}
+:root{--paper:#FDFBF6;--paper-2:#F2EFE7;--card:#FFFFFF;--ink:#232019;--ink-2:#4F473C;--line:#D8D2C4;--line-2:#B6AC97;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;
+--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;
+--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;
+--red:#C8232C;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--radius:12px;--shadow:0 1px 2px rgba(60,45,25,.06),0 8px 24px rgba(60,45,25,.07)}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1815;--paper-2:#211E1A;--card:#232019;--ink:#EFE7D7;--ink-2:#B3A894;--line:#3B352C;--line-2:#544B3D;--gold:#D8B45C;--warn:#E4837F;--ok:#7FC593;--bro:#DE8C6B;--pur:#C9B6E0;
+--g-reg:#5A3D28;--g-per:#5A4C22;--g-not:#2E4E24;--g-des:#42345A;--g-mint:#1F4A45;--g-rose:#4E2735;
+--g-reg-b:#A0714C;--g-per-b:#A18939;--g-not-b:#5C8253;--g-des-b:#7B6699;--g-mint-b:#4E9990;--g-rose-b:#A56A7C;
+--red:#F0757C;--hl-y:#5C4E14;--hl-g:#2C4522;--hl-p:#4E2536;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+header.top{padding:14px 0 10px;border-bottom:2px solid var(--line);margin-bottom:22px}
+.kicker{font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:30px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14.5px;font-weight:500;color:var(--ink-2);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:0;font-size:13.5px}
+.toc b{display:block;font-size:13px;color:var(--gold);margin:9px 0 3px;letter-spacing:.02em}
+.toc b:first-child{margin-top:0}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);margin-right:14px;display:inline-block;padding:1px 0}
+.toc a:hover{border-color:var(--gold);color:var(--gold)}
+.part{margin:44px 0 0;padding:9px 16px;border-radius:10px;background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--gold);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.part .pn{font-size:12.5px;font-weight:800;color:var(--gold);letter-spacing:.04em}
+.part .pt{font-size:17px;font-weight:800;letter-spacing:-.01em}
+.part .pj{font-size:12.5px;color:var(--ink-2);margin-left:auto}
+section{margin:22px 0 34px}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.01em}
+h2 .no{font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:.02em;margin-right:2px;vertical-align:2px}
+h2 .sm{font-size:13px;font-weight:400;color:var(--ink-2)}
+.tblwrap{overflow-x:auto;border:1.5px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 9px;text-align:left;vertical-align:middle;border:1px solid var(--line);line-height:1.5}
+thead th{background:var(--paper-2);font-size:12.5px;color:var(--ink-2);text-align:center;white-space:nowrap;border-color:var(--line-2)}
+.mtbl{min-width:860px}
+#big{min-width:1080px}
+td.gu{text-align:center;font-weight:800;font-size:15px;letter-spacing:.06em;width:48px;padding:4px}
+td.biz{font-weight:800;text-align:center;width:96px}
+td.mid{font-weight:700;text-align:center;width:84px;font-size:12.5px}
+td.kind{font-weight:700;width:126px;font-size:12.5px}
+td.org{text-align:center;width:120px;font-size:12px;color:var(--ink-2)}
+td.std{width:230px;font-size:12px}
+td.who{width:160px;font-size:12.5px;font-weight:700;background:color-mix(in srgb,var(--hl-p) 22%,transparent)}
+td.what{width:250px;font-size:12.5px}
+td.h{font-weight:800;text-align:center;width:120px}
+tr.reg td.gu{background:var(--g-reg);border-color:var(--g-reg-b);color:var(--bro)}
+tr.per td.gu{background:var(--g-per);border-color:var(--g-per-b);color:var(--gold)}
+tr.not td.gu{background:var(--g-not);border-color:var(--g-not-b);color:var(--ok)}
+tr.des td.gu{background:var(--g-des);border-color:var(--g-des-b);color:var(--pur)}
+tr.reg td.biz{background:color-mix(in srgb,var(--g-reg) 45%,transparent)}
+tr.per td.biz{background:color-mix(in srgb,var(--g-per) 45%,transparent)}
+tr.not td.biz{background:color-mix(in srgb,var(--g-not) 45%,transparent)}
+tr.des td.biz{background:color-mix(in srgb,var(--g-des) 45%,transparent)}
+tr.mint td.gu{background:var(--g-mint);border-color:var(--g-mint-b);color:#2A6B63}
+tr.mint td.biz{background:color-mix(in srgb,var(--g-mint) 45%,transparent)}
+tr.rose td.gu{background:var(--g-rose);border-color:var(--g-rose-b);color:#96455F}
+tr.rose td.biz{background:color-mix(in srgb,var(--g-rose) 45%,transparent)}
+@media (prefers-color-scheme:dark){tr.mint td.gu{color:#8FD8CE}tr.rose td.gu{color:#EFA9BE}}
+td.mid,td.kind,td.h{background:color-mix(in srgb,var(--paper-2) 60%,transparent)}
+.hl{background:var(--hl-y);padding:0 2px;border-radius:2px;font-weight:700}
+.hg{background:var(--hl-g);padding:0 2px;border-radius:2px;font-weight:700}
+.hp{background:var(--hl-p);padding:0 2px;border-radius:2px;font-weight:700}
+.n{color:var(--warn);font-weight:800}
+.org2{color:var(--warn);font-weight:800}
+.dash{color:var(--ink-2)}
+.note{font-size:12.5px;color:var(--ink-2);margin-top:9px}
+.note b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;font-size:12.5px}
+.legend span{padding:3px 10px;border-radius:999px;border:1px solid var(--line)}
+.legend .l1{background:var(--g-reg);border-color:var(--g-reg-b)}
+.legend .l2{background:var(--g-per);border-color:var(--g-per-b)}
+.legend .l3{background:var(--g-not);border-color:var(--g-not-b)}
+.legend .l4{background:var(--g-des);border-color:var(--g-des-b)}
+.legend .l5{background:var(--hl-y);border-color:var(--gold)}
+.legend .l6{background:var(--hl-p);border-color:var(--g-des-b)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 10px}
+.tabbtn{border:1px solid var(--line-2);background:var(--paper-2);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.tabbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:3px;letter-spacing:.02em}
+.tblwrap.hot5{border:2.5px solid var(--red)}
+.n5{color:var(--red);font-weight:800}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bar{display:flex;gap:10px;align-items:center;margin:14px 0 6px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{
+/*PRINTBREAK*/
+section{break-inside:auto;page-break-inside:auto}
+h2{break-after:avoid-page;page-break-after:avoid}
+.part{break-after:avoid-page;page-break-after:avoid}
+.tblwrap{border-radius:0;break-inside:auto;page-break-inside:auto}
+table{page-break-inside:auto;break-inside:auto}
+thead{display:table-header-group}
+tbody{break-inside:auto}
+tr{page-break-inside:avoid;break-inside:avoid;page-break-after:auto}
+td,th{page-break-inside:avoid;break-inside:avoid}
+td[rowspan]{page-break-inside:auto;break-inside:auto;vertical-align:top}
+p.note{break-before:avoid;page-break-before:avoid}
+
+.bar,.noprint{display:none!important}
+:root{--paper:#fff;--paper-2:#F3EBDA;--card:#fff;--ink:#2B2724;--ink-2:#5C5349;--line:#DED2BB;--line-2:#C4B393;--gold:#A8822C;--warn:#9C2F2F;--ok:#3E7A4E;--bro:#A85436;--pur:#6A5580;--g-reg:#F8DCC6;--g-per:#FAEBB6;--g-not:#CFE8CF;--g-des:#DED2EF;--g-mint:#C8E9E3;--g-rose:#F7D9E2;--g-reg-b:#D89460;--g-per-b:#CDB144;--g-not-b:#79B079;--g-des-b:#A187C4;--g-mint-b:#6FBFB4;--g-rose-b:#DE9BB0;--hl-y:#FFF3B0;--hl-g:#D7F0C8;--hl-p:#FBD9E6;--red:#C8232C;--shadow:none}
+body{background:#fff!important;color:#2B2724!important;font-size:11px}
+.tblwrap{background:#fff}
+th,td{border-color:#C4B393}
+
+.wrap{max-width:none;padding:0}
+.tblwrap{overflow:visible!important;box-shadow:none;border-radius:0}
+table{min-width:0!important;font-size:9.4px}
+th,td{padding:3px 4px;line-height:1.35}
+td.std,td.what,td.who,td.org{width:auto}
+h1{font-size:20px}h2{font-size:14px}h2 .no{font-size:10.5px}h2 .sm{font-size:10px}
+.part{margin:12px 0 0;padding:5px 10px;break-after:avoid;page-break-after:avoid}
+.part .pt{font-size:12px}.part .pn{font-size:9.5px}.part .pj{font-size:9.5px}
+section{margin:10px 0 16px}
+h2{break-after:avoid;page-break-after:avoid}
+*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</head><body>
+<div class="wrap">
+
+<header class="top">
+<div class="kicker">관광학개론 · 표 모음</div>
+<h1>관광학개론 표 모음 — 제5장 관광정책론
+<small>교재 단원 순서대로 3개 부 · 표 13개 · A4 가로 인쇄용</small></h1>
+<div class="meta">
+<span class="chip hot">2026 관광통역안내사 필기</span>
+<span class="chip">제5장 관광정책론 (교재 52~59쪽)</span>
+<span class="chip">기출 9개년 17문항</span>
+</div>
+</header>
+
+<nav class="toc noprint">
+<b>1부 &nbsp;제1절 관광정책의 개념 &nbsp;(교재 52~53쪽)</b>
+<a href="#t1">표 ① 관광정책의 개념과 이념</a><a href="#t2">표 ② 관광정책 과정 4단계</a><a href="#t3">표 ③ 관광정책의 특성 6가지</a>
+<b>2부 &nbsp;제2절 관광행정조직 및 관광단체 &nbsp;(교재 54~55쪽)</b>
+<a href="#t4">표 ④ 관광행정기관과 관광기구 6종</a><a href="#t5">표 ⑤ 문화체육관광부 연혁</a><a href="#t6">표 ⑥ 한국관광공사</a><a href="#t7">표 ⑦ 관광사업자단체 3종</a>
+<b>3부 &nbsp;제3절 국제관광기구 &nbsp;(교재 56~59쪽)</b>
+<a href="#t8">표 ⑧ UNWTO 세계관광기구</a><a href="#t9">표 ⑨ 지역 관광개발 기구 — PATA · ATMA · ASEAN</a><a href="#t10">표 ⑩ 여행업자 기구 — ASTA · UFTAA · WATA</a><a href="#t11">표 ⑪ 국제회의 기구 — ICCA · UIA · AACVB · IACVB</a><a href="#t12">표 ⑫ 항공 관련 국제기구 — ICAO · IATA</a><a href="#t13">표 ⑬ 기타 관광관련 기구 — WTTC · SKAL · APEC · OECD</a>
+</nav>
+
+<div class="tabs noprint">
+<button class="tabbtn on" data-f="all" onclick="flt('all')">전체 (표 13개)</button>
+<button class="tabbtn" data-f="imp" onclick="flt('imp')">중요 (8개)</button>
+</div>
+<div class="bar noprint"><button class="btn" onclick="window.print()">인쇄 / PDF로 저장 (A4 가로)</button></div>
+
+<div class="legend">
+<span class="l5">노랑 = 기출에 실제로 나온 것</span>
+<span><b class="n5">★★★★★</b> = 교재에 인쇄된 별</span>
+</div>
+
+<div class="part"><span class="pn">1부</span><span class="pt">제1절 관광정책의 개념</span><span class="pj">교재 52~53쪽</span></div>
+
+<section id="t1">
+<h2><span class="no">표 ①</span> 관광정책의 개념과 이념</h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:130px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">개념</td><td>관광정책이란 한 나라의 <b>관광행정 활동을 종합적으로 조정하고 추진하기 위한 기본방향</b>을 명시하는 여러 가지 방책이며, 관광을 촉진하기 위하여 조직체가 취하는 여러 가지 방안이다</td></tr>
+<tr class="per"><td class="biz">공익성</td><td>· 관광자원의 개발과 관광정책 결정자의 <b>도덕적 행위</b>를 규정<br>· 국민 모두의 <b>생활의 질 향상</b>이라는 공익과 복지적 성격</td></tr>
+<tr class="per"><td class="biz">민주성</td><td>· 관광정책에 참여하는 <b>참여 주체, 참여 범위, 참여 방법</b>과 관계 규정<br>· 관광정책의 수립 및 시행에 있어서 <b>공개성과 투명성</b>이 요구됨</td></tr>
+<tr class="per"><td class="biz">효율성</td><td>· <b>효과성과 능률성</b>의 복합적 개념<br>· 관광정책으로 설정된 목표가 실현되기까지에는 많은 비용과 노력이 소요되므로 효율성을 높여 나가며 이해관계자와의 대응과 갈등을 조절해나가야 한다</td></tr>
+<tr class="per"><td class="biz">지역성</td><td>· 지역의 <b>문화성, 역사성, 독자성, 지리적 특성</b>을 바탕으로 지역 실정에 부합되는 정책이 요구된다</td></tr>
+<tr class="per"><td class="biz">형평성</td><td>· 가치와 기회를 배분함에 있어 <b>사회적 단층현상을 제거</b>하고 사회적 형평에 기초하여야 함을 말한다</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t2">
+<h2><span class="no">표 ②</span> 관광정책 과정 4단계 <span class="sm"><b style="color:var(--gold)">★★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:210px">단계</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">① 관광정책 <b>의제설정</b> 단계</td><td>관광행정기관이 관광정책의 추진과 문제의 심각성을 고려하여 관광정책에 관한 <b>문제를 채택</b>하는 것</td></tr>
+<tr class="per"><td class="biz">② 관광정책 <b>결정</b> 단계</td><td>관광과 관련된 여러 가지 사회문제의 <b>바람직한 해결방향을 정하는</b> 행위</td></tr>
+<tr class="not"><td class="biz">③ 관광정책 <b>집행</b> 단계</td><td>관광행정기관이 관광의 문제를 해결하거나 미래의 여건에 대응하기 위하여 <b>결정된 정책을 구체적으로 실천</b>하는 것</td></tr>
+<tr class="des"><td class="biz">④ 관광정책 <b>평가</b> 단계</td><td>관광정책이 의도한 <b>목표달성 정도와 효과</b>를 관광정책집행 결과에 대하여 <b>사후적으로 평가·분석</b>하는 것을 의미함</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t3">
+<h2><span class="no">표 ③</span> 관광정책의 특성 6가지 <span class="sm"><b style="color:var(--gold)">★★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">특성</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">변동성</td><td>관광정책은 <b>결정 당시의 상황과 집행 당시의 상황이 서로 다르기 때문에</b> 보다 효율적인 집행을 위해서는 시간과 장소에 따라 적절히 조정·변화</td></tr>
+<tr class="reg"><td class="biz">규범성</td><td>관광정책은 <b>공적 권위</b>를 가지고 있으며 <b>공권력에 의해 강제성</b>을 가지는 경우가 많아 규범성이 있어야 한다</td></tr>
+<tr class="reg"><td class="biz">공공성</td><td>관광정책은 그 <b>추진주체가 개인이나 사적 집단이 아니라 공공기관</b>이라는 점에서 공공성을 지니고 있다</td></tr>
+<tr class="reg"><td class="biz">행동지향성</td><td>관광정책은 주변 환경으로부터 야기되고 있는 각종 지지와 요구를 통하여 발생하는 문제를 <b>정부가 해결하기 위해 선택하는 일정한 유형의 행동과정</b>을 나타내는 지침</td></tr>
+<tr class="reg"><td class="biz">미래지향성</td><td>관광정책은 관광사업의 진흥을 통해 국가 및 지역사회의 경제·사회·문화적 발전을 도모하고자 하는 <b>공공기관의 미래지향적인 활동 방침</b>이다</td></tr>
+<tr class="reg"><td class="biz">가치지향성</td><td>관광정책에는 <b>그 시대에 두드러지게 나타나는 가치</b>가 반영되고 있다. 따라서 가치는 공공정책은 물론 관광정책의 핵심이며, 관광정책 활동에 대하여 지침과 방향을 제시해 준다</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="part"><span class="pn">2부</span><span class="pt">제2절 관광행정조직 및 관광단체</span><span class="pj">교재 54~55쪽</span></div>
+
+<section id="t4">
+<h2><span class="no">표 ④</span> 관광행정기관과 관광기구 6종 <span class="sm"><b style="color:var(--gold)">★★★</b></span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:170px">관광행정기관</th><th style="width:270px">약자와 원어</th><th style="width:170px">관광기구</th><th>약자와 원어</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">중앙관광행정기관</td><td class="kind"><span class="hl">NTA</span><br>(National Tourism Administration)</td><td class="biz">중앙관광기구</td><td><span class="hl">NTO</span><br>(National Tourism Organization)</td></tr>
+<tr class="per"><td class="biz">광역관광행정기관</td><td class="kind"><span class="hl">RTA</span><br>(Regional Tourism Administration)</td><td class="biz">광역관광기구</td><td><span class="hl">RTO</span><br>(Regional Tourism Organization)</td></tr>
+<tr class="not"><td class="biz">기초자치관광행정기관</td><td class="kind"><span class="hl">LTA</span><br>(Local Tourism Administration)</td><td class="biz">기초자치단체 관광기구</td><td><span class="hl">LTO</span><br>(Local Tourism Organization)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t5">
+<h2><span class="no">표 ⑤</span> 문화체육관광부 연혁 <span class="sm">— 중앙 관광행정기관</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:170px">시기</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">1954년 2월 17일</span></td><td><span class="hl">교통부 육운국에 관광과를 설치</span> — 국가차원에서 관광에 관한 업무를 시작</td></tr>
+<tr class="reg"><td class="biz">1963년 3월 11일</td><td>관광공로국에서 <b>관광국이 분리</b></td></tr>
+<tr class="reg"><td class="biz">1994년 12월 23일</td><td>정부조직 개편에 따라 <b>건설교통부 관광국의 기능이 문화체육부로 이관</b></td></tr>
+<tr class="reg"><td class="biz">1998년</td><td>정부조직 개편으로 <b>문화관광부로 개칭</b> — 관광이 정부부처 명칭에 처음으로 들어감</td></tr>
+<tr class="reg"><td class="biz">2008년</td><td><span class="hl">문화체육관광부</span>가 되었다</td></tr>
+<tr class="per"><td class="biz">2026년 조직</td><td>문화체육관광부 <b>제2차관 소속 관광정책실</b>에 <b>관광정책관</b>(관광정책과, 관광산업진흥과, 지역관광개발과, 국민관광진흥과) · <b>국제관광정책관</b>(국제관광정책과, 국제관광서비스과, 융복합관광과)로 구성</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t6" data-imp="1">
+<h2><span class="no">표 ⑥</span> 한국관광공사 (KTO) <span class="sm"><b style="color:var(--gold)">★★★★</b> · 중앙관광기구</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:150px">구분</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">연혁</td><td><span class="hl">1962년 설립된 국제관광공사</span>로부터 출발하여 한국의 관광 발전에 중추적인 역할<br><span class="hl">1982년 국제관광공사법을 폐지하고 한국관광공사법으로 명칭 개칭</span></td></tr>
+<tr class="per"><td class="biz">설립 목적<br><span class="dash" style="font-weight:400">(한국관광공사법)</span></td><td><span class="hl">관광진흥, 관광자원개발, 관광산업의 연구개발 및 관광 요원의 양성·훈련</span>에 관한 사업을 수행하게 함으로써 <b>국가 경제발전과 국민복지증진</b>에 이바지하게 함을 목적으로 한다</td></tr>
+<tr class="not"><td class="biz">자본금</td><td>· 한국관광공사의 자본금은 <span class="hl">500억원</span> (<span class="hl">2분의 1 이상을 정부가 출자</span>)<br>· 정부는 토지, 시설 및 물품 등을 공사에 <b>현물로 출자 가능</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="note" style="margin-top:10px">사업 내용 6가지 <b style="color:var(--gold)">★★★★</b></p>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:230px">사업내용</th><th>세부 사업 내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz">1. <span class="hl">국제관광진흥사업</span></td><td>· <span class="hl">외국인 관광객 유치·선전</span> &nbsp;· 국제관광시장의 조사·개척 &nbsp;· 관광에 관한 국제협력증진 관한 지도 및 계몽</td></tr>
+<tr class="per"><td class="biz">2. <span class="hl">국민관광진흥사업</span></td><td>· 국민관광의 홍보 &nbsp;· 국민관광의 동태조사 &nbsp;· 국민관광에 관한 지도·계몽</td></tr>
+<tr class="not"><td class="biz">3. <span class="hl">관광자원개발사업</span></td><td>· 관광단지의 조성과 관리·운영·처분 &nbsp;· 관광자원 및 관광시설의 개발을 위한 선도사업 &nbsp;· 관광자원의 조사</td></tr>
+<tr class="des"><td class="biz">4. <span class="hl">관광산업의 연구 개발사업</span></td><td>· 관광산업에 관한 정보의 수집·분석·연구 &nbsp;· 관광산업의 연구에 관한 용역사업</td></tr>
+<tr class="mint"><td class="biz">5. <span class="hl">관광요원의 양성과 훈련</span></td><td>· 관광종사원 양성 및 연수교육 &nbsp;· <b>통역안내원 및 호텔지배인 자격시험관리</b> &nbsp;· 해외관광여행자의 소양교육</td></tr>
+<tr class="reg"><td class="biz">6. 관광사업의 발전을 위하여 필요한 물품의 수출입을 비롯한 부대사업</td><td>· <b>국제공항 내 면세점 운영</b> &nbsp;· 관광업체의 외국산 주류수입 공급</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t7" data-imp="1">
+<h2><span class="no">표 ⑦</span> 관광사업자단체 3종 <span class="sm">— 관광진흥법 제41조 근거</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:210px">관광사업자단체</th><th>설립 절차</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">한국관광협회중앙회</span></td><td>· 우리나라 <b>관광업계를 대표</b>하는 관광사업자단체<br>· <span class="hl">문화체육관광부장관 허가</span></td></tr>
+<tr class="per"><td class="biz"><span class="hl">업종별관광협회</span></td><td>· <span class="hl">문화체육관광부장관 허가</span><br>· <b>전국 단위</b>로 설립<br>· 예) 한국여행업협회, 한국카지노협회</td></tr>
+<tr class="not"><td class="biz"><span class="hl">지역별관광협회</span></td><td>· <span class="hl">시·도지사 허가</span><br>· <b>시·도 단위</b>로 설립 (전국 17개)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="part"><span class="pn">3부</span><span class="pt">제3절 국제관광기구</span><span class="pj">교재 56~59쪽</span></div>
+
+<section id="t8" data-imp="1">
+<h2><span class="no">표 ⑧</span> UNWTO 세계관광기구 <span class="sm"><b class="n5">★★★★★</b> · 관광정책 및 관광 발전 도모를 위한 기구</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:190px">기구명</th><th style="width:230px">설립 목적</th><th style="width:130px">본부소재지</th><th style="width:190px">회원</th><th>기구 활동</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">UNWTO</span><br>(UN World Tourism Organization)<br>세계관광기구<br><span class="dash" style="font-weight:400"><span class="hl">1975년 설립</span></span></td><td>1. 세계관광정책 조정<br>2. 가맹국의 관광경제 발전 도모<br>3. 각 국의 사회문화적 우호관계 증진</td><td class="org"><span class="hl">Madrid<br>Spain</span></td><td class="kind">158개국<br>정회원 : 문화체육관광부<br><br>찬조회원 : 500여개 유관기관 (한국관광공사)</td><td>1. 세계관광통계 자료 제공<br>2. 정기간행물 (WTO News)<br>3. 교육훈련 및 세미나</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t9" data-imp="1">
+<h2><span class="no">표 ⑨</span> 지역 관광개발 기구 — PATA · ATMA · ASEAN <span class="sm">근접 국가군 상호간의 관광진흥·개발 및 선전을 통한 관광개발 위한 기구</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:190px">기구명</th><th style="width:230px">설립 목적</th><th style="width:150px">본부소재지</th><th style="width:150px">회원</th><th>기구 활동</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">PATA</span><br>(Pacific Asia Travel Association)<br><span class="hl">아시아태평양관광협회</span><br><span class="dash" style="font-weight:400"><span class="hl">1951년 설립</span> · <b class="n5">★★★★★</b></span></td><td>1. 아시아·태평양 지역의 관광진흥 개발<br>2. 구미관광자 유치를 위한 공동선전활동<br>3. 지역관광개발</td><td class="org"><span class="hl">태국 방콕</span><br><span class="dash">북미, 태평양, 유럽, 중국, 중동에 지역 본부</span></td><td class="kind">73개국<br>1,000개 업체</td><td>1. 39개 지부활동 (한국지부 포함)<br>2. 관광통계조사 연구<br>3. 관광전문지 (PTN) 발간</td></tr>
+<tr class="per"><td class="biz"><span class="hl">ATMA</span><br>(Asia Travel Marketing Association)<br><span class="hl">아시아관광마케팅협회</span><br><span class="dash" style="font-weight:400"><span class="hl">1966년 설립</span> · <b style="color:var(--gold)">★★★</b></span></td><td>1. 동아시아 지역의 관광진흥개발<br>2. 구·미주 선진국을 대상으로 공동마케팅 활동</td><td class="org"><span class="hl">Tokyo, Japan</span></td><td class="kind">5개국<br>한국, 일본, 태국, 대만, 필리핀</td><td>1. 9개지역 지부 활동<br>2. EATA Manual 공동 포스터 및 선전영화 제작</td></tr>
+<tr class="not"><td class="biz"><span class="hl">ASEAN</span><br>(Association of Southeast Asian Nations)<br><span class="hl">아세안 — 동남아시아국가연합</span></td><td>1. ASEAN 역내 관광진흥을 위한 관광정책 공동 수립<br>2. 공동선전활동</td><td class="org"><span class="hl">Philippine</span></td><td class="kind">10개국</td><td class="dash">―</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t10" data-imp="1">
+<h2><span class="no">표 ⑩</span> 여행업자 기구 — ASTA · UFTAA · WATA <span class="sm">여행관련업자 상호간의 이익 보호를 위한 기구</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:190px">기구명</th><th style="width:230px">설립 목적</th><th style="width:150px">본부소재지</th><th style="width:150px">회원</th><th>기구 활동</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">ASTA</span><br>(American Society of Travel Agent Association)<br><span class="hl">미주여행업자협회</span><br><span class="dash" style="font-weight:400"><span class="hl">1931년 설립</span> · <b class="n5">★★★★★</b></span></td><td>1. 회원상호간의 이익 옹호<br>2. 회원교육 실시<br>3. 과당경쟁의 억제</td><td class="org"><span class="hl">Washington, D.C<br>U.S.A</span></td><td class="kind">140여개국 (26,500)<br>한국 : 90회원</td><td>1. ASTA Trade Show<br>2. IDA(ASTA국제부) 총회<br>3. ASTA Trade News지 발간</td></tr>
+<tr class="per"><td class="biz"><span class="hl">UFTAA</span><br>(Universal Federation of Travel Agent Association)<br><span class="hl">여행업자협회세계연맹</span><br><span class="dash" style="font-weight:400"><span class="hl">1966년 설립</span></span></td><td>1. 여행업자 지위 확립<br>2. 정부관광기관과의 교섭기관으로서 역할</td><td class="org"><span class="hl">Brussels<br>Belgium</span></td><td class="kind">80개국 (35,000회원)</td><td>1. 관광전시회<br>2. 연합회보 'COURRIER' 발간<br>3. 회원간 분쟁조정</td></tr>
+<tr class="not"><td class="biz"><span class="hl">WATA</span><br>(World Association of Travel Agency)<br><span class="hl">세계여행업자협회</span><br><span class="dash" style="font-weight:400"><span class="hl">1948년 설립</span> · <b style="color:var(--gold)">★★</b></span></td><td>1. 회원여행업자의 보호<br>2. 세계의 관광자 왕래 촉진</td><td class="org"><span class="hl">스위스 제네바</span><br>Geneva Switzerland</td><td class="kind">100개국 (197업체)</td><td>1. 지역분과위원회 활동<br>2. 공동판매촉진 활동<br>3. 정기간행물의 발간 (Master-key)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t11" data-imp="1">
+<h2><span class="no">표 ⑪</span> 국제회의 협력을 위한 기구 <span class="sm"><b class="n5">★★★★★</b> · ICCA · UIA · AACVB · IACVB</span><span class="badge">최빈출</span></h2>
+<div class="tblwrap hot5">
+<table class="mtbl" id="big">
+<thead><tr><th style="width:190px">기구명</th><th style="width:230px">설립 목적</th><th style="width:150px">본부소재지</th><th style="width:150px">회원</th><th>기구 활동</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">ICCA</span><br>(International Congress &amp; Convention Association)<br><span class="hl">국제컨벤션협회</span><br><span class="dash" style="font-weight:400"><span class="hl">1963년 설립</span></span></td><td>1. 각종 국제회의 유치 및 편의제공<br>2. 국제회의에 관한 전문적인 서비스 제공</td><td class="org"><span class="hl">네덜란드 암스테르담</span><br>(Netherlands Amsterdam)</td><td class="kind">66개국 (417회원)</td><td>1. 세계적인 주요회의 기록 유지<br>2. 정기간행물 발간<br>3. 회원간 전문서비스 교환 도모</td></tr>
+<tr class="per"><td class="biz"><span class="hl">UIA</span><br>(Union of International Association)<br><span class="hl">국제협회연합</span><br><span class="dash" style="font-weight:400"><span class="hl">1910년 설립</span></span></td><td>1. 국제회의 활동에 관한 자료 센터<br>2. 국제회의 조직에 관한 법률적·기술적 문제의 기획 및 조사연구 촉진</td><td class="org"><span class="hl">Belgium<br>Brussels</span></td><td class="kind">54개국 (195회원)</td><td>1. 국제회의 조직에 관한 문헌 발간<br>2. 국제연합 경제사회 이사회에 대한 자문</td></tr>
+<tr class="not"><td class="biz"><span class="hl">AACVB</span><br>(Asian Association of Convention &amp; Visitors Bureau)<br><span class="hl">아세아컨벤션뷰로협회</span><br><span class="dash" style="font-weight:400"><span class="hl">1983년 설립</span></span></td><td>1. 각종 국제회의의 아세아지역으로 유치<br>2. 국제회의 유치에 따른 자료 및 정보 제공</td><td class="org"><span class="hl">Macau</span></td><td class="kind">15개국 (47회원)</td><td>1. Data Bank 설치·운영<br>2. 국제회의 유치를 위한 공동선전활동 전개<br>3. 교육프로그램</td></tr>
+<tr class="des"><td class="biz"><span class="hl">IACVB</span><br>(International Association of Convention &amp; Visitors Bureau)<br><span class="hl">국제컨벤션뷰로협회</span></td><td colspan="4">① 설립 : <span class="hl">1914년</span><br>② 회원수 : 전 세계 <span class="hl">30여개국 530개 CVB</span>와 <span class="hl">1,200명 이상</span>의 전문가</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t12" data-imp="1">
+<h2><span class="no">표 ⑫</span> 항공 관련 국제기구 — ICAO · IATA<span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:210px">기구명</th><th style="width:110px">설립연도</th><th style="width:190px">설립 배경</th><th style="width:150px">본부</th><th style="width:170px">정회원</th><th>기타</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">ICAO</span><br><span class="hl">국제민간항공기구</span><br><span class="dash" style="font-weight:400">(International Civil Aviation Organization)</span></td><td class="org"><span class="hl">1947년</span></td><td class="kind"><span class="hl">1944년 시카고 회의</span></td><td class="org"><span class="hl">캐나다 몬트리올</span></td><td class="kind">각 국 정부<br>(국토교통부)</td><td><span class="hl">UN 산하기구</span></td></tr>
+<tr class="per"><td class="biz"><span class="hl">IATA</span><br><span class="hl">국제항공운송협회</span><br><span class="dash" style="font-weight:400">(= 국제항공운송업자협회)<br>(International Air Transport Association)</span></td><td class="org"><span class="hl">1945년</span></td><td class="kind"><span class="hl">1945년 쿠바 하바나</span></td><td class="org"><span class="hl">캐나다 몬트리올</span></td><td class="kind"><span class="hl">정기 항공사</span></td><td><span class="hl">NTO 준회원</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="t13" data-imp="1">
+<h2><span class="no">표 ⑬</span> 기타 관광관련 기구 — WTTC · SKAL · APEC · OECD<span class="badge">최빈출</span></h2>
+<div class="tblwrap">
+<table class="mtbl">
+<thead><tr><th style="width:190px">기구명</th><th style="width:130px">설립연도</th><th style="width:150px">본부</th><th>내용</th></tr></thead>
+<tbody>
+<tr class="reg"><td class="biz"><span class="hl">WTTC</span><br><span class="hl">세계여행관광협회</span><br><span class="dash" style="font-weight:400">(World Travel and Tourism Council)</span></td><td class="org"><span class="hl">1990년</span> 설립</td><td class="org"><span class="hl">영국 런던</span></td><td>관광분야에서 가장 유망한 <b>100여 개 업계 리더</b>들이 회원으로 가입되어 있는 대표적인 <b>관광관련 민간기구</b><br>주요 활동 — 관광 잠재력이 큰 지역에 대한 <b>관광자문 제공 및 협력사업</b> 전개, <b>'Tourism For Tomorrow Awards' 주관</b>, <b>세계관광정상회의(Global Travel and Tourism Council)</b> 개최<br>매년 <b>5월</b> 개최되는 관광정상회의는 개최국의 대통령, 국무총리를 비롯한 각국의 관광장관, 호텔 및 항공사 CEO 등이 대거 참석</td></tr>
+<tr class="per"><td class="biz"><span class="hl">SKAL</span><br><span class="dash" style="font-weight:400">(Sundhet, Karlek, Aiderdom, Lycka<br>= 건강, 우정, 장수, 행복)</span></td><td class="org"><span class="hl">1934년</span> 설립</td><td class="org"><span class="hl">스페인<br>토레몰리노스</span></td><td>관광업계 중진들의 <b>친선모임</b><br><b>국제관광여행전문가협회</b>(International Association of Travel and Tourism Professionals)의 이칭<br>세계 <b>90여개국 500여 클럽</b>에서 <b>2만여 명</b>의 항공, 철도, 크루즈, 호텔, 리조트, 여행업 전문가들이 참여</td></tr>
+<tr class="not"><td class="biz"><span class="hl">APEC</span><br><span class="hl">아시아·태평양 경제협력체</span><br><span class="dash" style="font-weight:400">(Asia Pacific Economic Cooperation)</span></td><td class="org"><span class="hl">1989년</span><br>호주 캔버라 제1차 각료회의</td><td class="org" colspan="1">―</td><td>역내 경제협력관계 강화의 구심점<br><b>11개 실무그룹(Working Group)</b>을 두고 있는데, <b>관광실무그룹회의는 1991년 하와이</b>에서 회의를 가진 이후 역내 관광발전을 저해하는 각종 제한조치 완화, 환경적으로 지속가능한 관광개발 등의 현안에 대해서 협의</td></tr>
+<tr class="des"><td class="biz"><span class="hl">OECD</span><br><span class="hl">경제협력개발기구</span><br><span class="dash" style="font-weight:400">(Organization for Economic Cooperation and Development)</span></td><td class="org"><span class="hl">1961년</span><br>선진 20개국</td><td class="org"><span class="hl">프랑스 파리</span></td><td><b>관광위원회</b>는 관광 분야에 대한 <b>각국의 정책연구 및 관광진흥 정책연구</b> 등을 주요 기능으로 하고 있으며 위원회 산하에 <b>통계작업반</b>을 두고 있다</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<footer>
+<p><b>근거</b> — 학원교재 「2026 관광통역안내사 수험서 관광학개론」(오민철 편저) 제5장 관광정책론, 교재 52~59쪽 원문 · 제1절 관광정책의 개념(52~53쪽) · 제2절 관광행정조직 및 관광단체(54~55쪽) · 제3절 국제관광기구(56~59쪽)</p>
+<p><b>뺀 것 없음</b> — 국제기구는 기출 9개년에서 약자·명칭·본부소재지 연결 문제로 반복 출제되어(2023-91 BIE / 2024-82 ASTA·WTTC·EATA·IATA 연결 / 2025-80 UFTAA) 별표가 없는 기구도 전부 넣었습니다.</p>
+<p><b>색 읽는 법</b> — <span class="hl">노랑</span> = 기출에 실제로 나온 것 / <b class="n5">★★★★★</b> = 교재에 인쇄된 별</p>
+<p>2026 관광통역안내사 필기 대비 · 관광학개론 표 모음 제5장 · 2026-08-30</p>
+</footer>
+
+</div>
+</body>
+</html>

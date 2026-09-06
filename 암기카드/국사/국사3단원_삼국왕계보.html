@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>삼국 왕 계보 암기카드</title><style>
+@page{size:A4 landscape;margin:8mm}
+:root{--p:#FAF5EA;--p2:#F3EBDA;--c:#FFFDF7;--i:#2B2724;--i2:#5C5349;--l:#DED2BB;--g:#C6871A;--w:#C4272B;--neo:#2E8B4F;--bro:#C2491E;--iro:#1F4E70;--pal:#6B5738;--gL:#8F6510;--iroL:#1B3A52;--broL:#963012;--neoL:#1F6B34;--palL:#4A3B26;--sh:0 1px 2px rgba(43,39,36,.05),0 4px 14px rgba(43,39,36,.07)}
+html[data-t="d"]{--p:#1A1815;--p2:#211E1A;--c:#232019;--i:#EFE7D7;--i2:#B3A894;--l:#3B352C;--g:#F0C040;--w:#F0524F;--neo:#5FCB7E;--bro:#E8703D;--iro:#4A8FC2;--gL:#F5C93A;--iroL:#6FA8D0;--broL:#F08050;--neoL:#7ED98F;--palL:#B08A5C;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--p);color:var(--i);word-break:keep-all;line-height:1.5;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:10px 12px}
+.tools{width:100%;max-width:1180px;display:flex;justify-content:flex-end;gap:6px;margin-bottom:6px}
+.btn{border:1px solid var(--l);background:var(--c);color:var(--i2);border-radius:8px;padding:5px 10px;font-size:11.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.card{width:100%;max-width:1180px;background:var(--c);border:1px solid var(--l);border-radius:16px;box-shadow:var(--sh);padding:16px 18px 14px;margin-bottom:14px}
+.hd{display:flex;align-items:flex-end;gap:12px;border-bottom:2px solid var(--i);padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.hd h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.hd .sub{font-size:13px;color:var(--i2);flex:1;min-width:120px;font-weight:700}
+.hd .sub em{font-style:normal;color:var(--w);font-weight:800}
+.tag{background:var(--i);color:var(--p);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:700}
+html[data-t="d"] .tag{background:var(--g);color:#1A1815}
+.row{display:grid;gap:9px;margin-bottom:9px}
+.r3{grid-template-columns:1fr 1fr 1fr}
+.r2{grid-template-columns:1fr 1fr}
+.r3b{grid-template-columns:1fr 1fr 1fr}
+.box{background:var(--p2);border:1px solid var(--l);border-radius:11px;padding:10px 12px;border-left:3px solid var(--g)}
+.box.b2{border-left-color:var(--iro)}.box.b3{border-left-color:var(--bro)}.box.b4{border-left-color:var(--neo)}.box.b5{border-left-color:var(--pal)}
+.bt{font-size:16.5px;font-weight:900;letter-spacing:.02em;color:var(--gL);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.box.b2 .bt{color:var(--iroL)}.box.b3 .bt{color:var(--broL)}.box.b4 .bt{color:var(--neoL)}.box.b5 .bt{color:var(--palL)}
+.big{font-size:17px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.big .sep{color:var(--i2);font-weight:800;margin:0 7px}
+.big+.big{margin-top:5px}
+.big small,ul.rel small{font-size:.7em;font-weight:600;color:var(--i2)}
+ul.rel small{margin-left:9px}
+.eq{font-size:13.5px;color:var(--i2);margin-top:5px;line-height:1.5}
+.eq b{color:var(--i);font-weight:800}
+ul.rel{margin:0;padding-left:0;list-style:none}
+ul.rel li{font-size:17px;font-weight:800;line-height:1.4;padding:5px 0;border-bottom:1px dashed var(--l);display:flex;gap:8px;align-items:center}
+ul.rel li:first-child{padding-top:0}
+ul.rel li:last-child{border-bottom:0}
+ul.rel .n{font-size:11px;font-weight:800;color:#fff;background:var(--bro);border-radius:5px;width:20px;height:20px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.grade{font-size:10px;font-weight:800;color:#fff;border-radius:4px;width:16px;height:16px;padding:0;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none}
+html[data-t="d"] ul.rel .n{color:#1A1815}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--c);border:1px solid var(--l);border-radius:999px;padding:4px 10px;font-size:13.5px;font-weight:700}
+.trap{background:var(--p2);border:1px solid var(--l);border-left:3px solid var(--w);border-radius:11px;padding:10px 12px;font-size:15px;font-weight:700;line-height:1.55;margin-bottom:9px}
+.trap .tl{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--w);margin-right:9px}
+.trap b{color:var(--w);font-weight:800}
+.trap .sep{color:var(--l);font-weight:400;margin:0 4px}
+@media (max-width:960px){
+ .r3,.r3b,.r2{grid-template-columns:1fr}
+ .card{padding:20px}
+ .hd h1{font-size:38px}
+ .big{font-size:20px}
+ ul.rel li{font-size:20px}
+ ul.rel .n{width:23px;height:23px;font-size:12.5px}
+ .grade{width:18px;height:18px;font-size:11px}
+ .bt{font-size:19px}
+ .chip{font-size:15px}
+ .trap{font-size:17px}
+ .eq{font-size:15px}
+ .bt{font-size:14.5px}
+ .row{gap:12px;margin-bottom:12px}
+}
+@media print{.tools{display:none}body{background:#fff;padding:0}.card{border:0;box-shadow:none}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:10mm}.card{break-inside:auto;page-break-inside:auto}.row,.box,.hd,tr,td,th{break-inside:avoid;page-break-inside:avoid}.hd{break-after:avoid;page-break-after:avoid}}</style></head><body>
+<div class="tools"><button class="btn" id="bT">야간</button><button class="btn" id="bP">인쇄</button></div>
+
+<div class="card">
+<div class="hd">
+  <h1>고 구 려 왕 계 보</h1>
+  <span class="tag">국사 3단원</span>
+  <span class="tag">왕 9명</span>
+</div>
+
+<div class="row r3">
+  <div class="box"><div class="bt">1세기 후반 · 태조왕 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big">옥저 복속 · <b>계루부 고씨 왕위 세습</b></div></div>
+  <div class="box"><div class="bt">2세기 후반 · 고국천왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>진대법</b>(춘대추납) · <b>부자상속제</b>로 전환</div></div>
+  <div class="box"><div class="bt">4세기 초 · 미천왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>낙랑군 축출</b></div></div>
+</div>
+<div class="row r3">
+  <div class="box"><div class="bt">4세기 중 · 고국원왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>국가적 위기</b>(선비족 침입) · 평양성 전사(근초고왕)</div></div>
+  <div class="box"><div class="bt">4세기 후 · 소수림왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>불교 공인</b>(372) · <b>율령 반포</b> · <b>태학 설립</b>(최초 국립대학)</div></div>
+  <div class="box"><div class="bt">4세기 말~5세기 초 · 광개토대왕 <span class="grade" style="background:#C6871A">A</span></div><div class="big">요동 정벌 · 독자 연호 <b>'영락'</b> 사용</div><div class="big"><b>왜·가야 격퇴</b> · <b>금관가야 쇠퇴</b>시킴 <small>(증거: 호우명 그릇·광개토대왕릉비)</small></div></div>
+</div>
+<div class="row r3">
+  <div class="box" style="border-left-color:var(--w)"><div class="bt">5세기 = 전성기 · 장수왕 <span class="grade" style="background:#C6871A">A</span></div><div class="big"><b>평양 천도</b>(427) · <b>나제동맹 유발</b>(433)</div><div class="big"><b>한성 함락</b>(475, 개로왕 전사)</div><div class="big">중원고구려비 · 등거리외교</div></div>
+  <div class="box"><div class="bt">6세기 초 · 문자왕 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big">부여 복속 · <b>최대 영토</b></div></div>
+  <div class="box"><div class="bt">7세기 · 보장왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big">고구려 <b>마지막 왕</b> · 668년 나당연합에 멸망</div></div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>백 제 왕 계 보</h1>
+  <span class="tag">국사 3단원</span>
+  <span class="tag">왕 11명 + 부흥운동</span>
+</div>
+
+<div class="row r3">
+  <div class="box b2"><div class="bt">BC 18 · 온조 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big"><b>하남위례성</b> 건국(한강)</div></div>
+  <div class="box b2"><div class="bt">3세기 · 고이왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>목지국 병합</b></div><div class="big"><b>6좌평</b> · <b>16관등제</b>(관복색 등급)</div></div>
+  <div class="box" style="border-left-color:var(--w)"><div class="bt">4세기 = 전성기 · 근초고왕 <span class="grade" style="background:#C6871A">A</span></div><div class="big"><b>마한 통합</b> · 요서·산둥·규슈 진출</div><div class="big"><b>칠지도</b>(왜와 교류) · 왕위 부자상속</div><div class="big"><b>『서기』</b> 편찬</div></div>
+</div>
+<div class="row r3">
+  <div class="box b2"><div class="bt">4세기 후 · 침류왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>불교 수용</b>(384, 동진)</div></div>
+  <div class="box b2"><div class="bt">5세기 · 비유왕 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big"><b>나제동맹</b>(433) 체결</div></div>
+  <div class="box b2"><div class="bt">5세기 후 · 개로왕 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big"><b>한성 함락</b>(475) · 전사</div></div>
+</div>
+<div class="row r3">
+  <div class="box b2"><div class="bt">5세기 후 · 문주왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>웅진(공주) 천도</b></div></div>
+  <div class="box b2"><div class="bt">5세기 말 · 동성왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>탐라 복속</b> · 신라 결혼동맹</div></div>
+  <div class="box b2"><div class="bt">6세기 초 · 무령왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>22담로</b> 설치(왕족 파견)</div><div class="big">중국 남조 교류 · <b>무령왕릉</b>(벽돌무덤)</div></div>
+</div>
+<div class="row r3">
+  <div class="box b2"><div class="bt">6세기 중 · 성왕 <span class="grade" style="background:#C4272B">S</span></div><div class="big"><b>사비(부여) 천도</b>(538) · <b>남부여</b></div><div class="big">22부·5방 정비 · <b>노리사치계</b>(일본 불교 전파)</div><div class="big"><b>관산성 전투</b> 전사(554, 김무력에게)</div></div>
+  <div class="box b2"><div class="bt">7세기 · 의자왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big">백제 <b>마지막 왕</b> · <b>대야성 함락</b></div><div class="big"><b>황산벌 전투</b>(계백) 패배</div></div>
+  <div class="box b2"><div class="bt">멸망 후 · 부흥운동 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>흑치상지</b>(임존성) · 복신·도침(주류성) · 풍 왕 추대</div><div class="big"><b>백강전투</b>(663) 패배</div></div>
+</div>
+</div>
+
+<div class="card">
+<div class="hd">
+  <h1>신 라 왕 계 보</h1>
+  <span class="tag">국사 3단원</span>
+  <span class="tag">왕 11명</span>
+</div>
+
+<div class="row r3">
+  <div class="box b3"><div class="bt">BC 57 · 박혁거세 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big">건국 — <b>사로국</b></div></div>
+  <div class="box b3"><div class="bt">1세기~ · 석탈해 등장 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big">박·석·김 3성이 교대로 <b>왕(이사금)</b> 맡음</div></div>
+  <div class="box b3"><div class="bt">4세기 · 내물왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>진한 병합</b> · <b>김씨 왕위 세습</b> 확립 · 왕호 <b>마립간</b> 사용</div></div>
+</div>
+<div class="row r3">
+  <div class="box b3"><div class="bt">5세기 · 눌지왕 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big"><b>왕위 부자상속제</b> · <b>나제동맹</b>(433) 체결 · 불교 <b>전래</b></div></div>
+  <div class="box b3"><div class="bt">5세기 말 · 소지왕 <span class="grade" style="background:#8A6D3B">C</span></div><div class="big">백제 결혼동맹</div></div>
+  <div class="box b3"><div class="bt">6세기 초 · 지증왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big">국호 <b>'신라'</b>로 변경 · 왕호 <b>'왕'</b>으로 변경(중국식)</div><div class="big"><b>우경</b> 실시 · <b>우산국 복속</b></div></div>
+</div>
+<div class="row r3">
+  <div class="box b3"><div class="bt">6세기 전반 = 중앙집권체제 완비 · 법흥왕 <span class="grade" style="background:#C6871A">A</span></div><div class="big"><b>율령 반포</b>(527) · <b>불교 공인</b>(527, 이차돈)</div><div class="big"><b>금관가야 병합</b>(532)</div><div class="big"><b>상대등·병부</b> 설치 · 독자 연호 <b>'건원'</b> 제정</div></div>
+  <div class="box" style="border-left-color:var(--w)"><div class="bt">6세기 후반 = 전성기 · 진흥왕 <span class="grade" style="background:#C4272B">S</span></div><div class="big"><b>한강 완전 차지</b> · <b>대가야 정복</b>(562)</div><div class="big"><b>화랑도</b> 개편 · 함경도 진출(황초령비·마운령비)</div><div class="big"><b>『국사』</b> 편찬 · 황룡사 건립</div></div>
+  <div class="box b3"><div class="bt">7세기 전반 · 선덕여왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>첨성대</b> · <b>황룡사 9층 목탑</b></div></div>
+</div>
+<div class="row r2">
+  <div class="box b3"><div class="bt">7세기 중 · 무열왕(김춘추) <span class="grade" style="background:#2E8B4F">B</span></div><div class="big">최초 <b>진골 왕</b> · <b>나당동맹</b>(648) 체결</div></div>
+  <div class="box b3"><div class="bt">7세기 후 · 문무왕 <span class="grade" style="background:#2E8B4F">B</span></div><div class="big"><b>삼국통일 완성</b>(676)</div></div>
+</div>
+</div>
+
+
+<script>
+var b=document.getElementById('bT');
+b.onclick=function(){var d=document.documentElement.getAttribute('data-t')==='d';document.documentElement.setAttribute('data-t',d?'':'d');b.textContent=d?'야간':'주간';};
+document.getElementById('bP').onclick=function(){window.print();};
+</script></body></html>

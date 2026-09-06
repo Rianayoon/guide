@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>관광국사 14단원 · 조선 후기의 정치</title>
+<style>
+
+@font-face{font-family:'Pretendard';src:url('fonts/PretendardVariable.woff2') format('woff2-variations'),url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');font-weight:100 900;font-display:swap;font-style:normal}
+@page{size:A4;margin:14mm 12mm}
+
+:root{
+--paper:#FAF5EA; --paper-2:#F3EBDA; --card:#FFFDF7; --ink:#2B2724; --ink-2:#5C5349; --line:#DED2BB;
+--pal:#7A6A5A; --neo:#5F7F52; --bro:#A85436; --iro:#46525F;
+--gold:#A8822C; --warn:#9C2F2F; --ok:#3E7A4E;
+--radius:14px; --shadow:0 1px 2px rgba(60,45,25,.06), 0 8px 24px rgba(60,45,25,.07);
+}
+@media (prefers-color-scheme: dark){
+:root{
+--paper:#1A1815; --paper-2:#211E1A; --card:#232019; --ink:#EFE7D7; --ink-2:#B3A894; --line:#3B352C;
+--pal:#B3A08B; --neo:#93B383; --bro:#DE8C6B; --iro:#93A6B8;
+--gold:#D8B45C; --warn:#E4837F; --ok:#7FC593;
+--shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+.back{display:inline-block;font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 13px;margin-bottom:14px}
+.back:hover{border-color:var(--gold);color:var(--gold)}
+header.top{padding:16px 0 8px;border-bottom:2px solid var(--line);margin-bottom:28px}
+.kicker{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.04em;color:var(--gold);font-weight:700}
+h1{font-size:34px;line-height:1.25;margin:8px 0 6px;letter-spacing:-.02em}
+h1 small{display:block;font-size:15px;font-weight:500;color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink-2)}
+.chip.hot{border-color:var(--gold);color:var(--gold);font-weight:700}
+section{margin:44px 0}
+h2{font-size:22px;margin:0 0 4px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h2 .ic{color:var(--gold)}
+.sub{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px;margin:16px 0;font-size:14.5px;justify-content:center}
+.flow b{background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:800;white-space:nowrap}
+.flow b.hi{border-color:var(--gold);color:var(--gold)}
+.flow i{color:var(--ink-2);font-style:normal}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.tl div{padding:14px 12px;background:var(--card);border-right:1px solid var(--line);position:relative}
+.tl div:last-child{border-right:0}
+.tl > div > b{display:block;font-size:15px}
+.tl span{font-size:12px;color:var(--ink-2);display:block;margin-top:2px}
+.tl span b{font-weight:800}
+.tl div::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%}
+.tl .t1::before{background:var(--neo)} .tl .t2::before{background:var(--bro)} .tl .t3::before{background:var(--iro)}
+.tl .t1 b{color:var(--neo)} .tl .t2 b{color:var(--bro)} .tl .t3 b{color:var(--iro)}
+@media(max-width:640px){.tl{grid-template-columns:1fr} .tl div{border-right:0;border-bottom:1px solid var(--line)}}
+.story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:18px 0;overflow:hidden}
+.story > .head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.story .num{width:34px;height:34px;flex:0 0 34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px}
+.story .ttl{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.story .era{margin-left:auto;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.story .body{padding:18px 22px 22px}
+.story p{margin:0 0 13px}
+.s1 .num{background:var(--neo)} .s1 .ttl{color:var(--neo)} .s1{border-top:3px solid var(--neo)}
+.s2 .num{background:var(--bro)} .s2 .ttl{color:var(--bro)} .s2{border-top:3px solid var(--bro)}
+.s3 .num{background:var(--iro)} .s3 .ttl{color:var(--iro)} .s3{border-top:3px solid var(--iro)}
+.s4 .num{background:var(--gold)} .s4 .ttl{color:var(--gold)} .s4{border-top:3px solid var(--gold)}
+.s5 .num{background:var(--pal)} .s5 .ttl{color:var(--pal)} .s5{border-top:3px solid var(--pal)}
+.s6 .num{background:var(--neo)} .s6 .ttl{color:var(--neo)} .s6{border-top:3px solid var(--neo)}
+.term{background:var(--paper-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin:14px 0;font-size:14.5px;color:var(--ink-2)}
+.term b{color:var(--ink)}
+.simile{display:flex;gap:10px;background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 14px;margin:14px 0;font-size:14.5px;color:var(--ink-2);font-style:italic}
+.simile .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+.quote{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:12px 0;color:var(--ink);font-style:italic}
+.pick{display:flex;gap:10px;align-items:flex-start;background:rgba(168,130,44,.08);border:1px solid var(--gold);border-radius:10px;padding:12px 14px;margin:16px 0;font-size:14.5px}
+.pick .ic{flex:0 0 auto;color:var(--gold);margin-top:3px}
+b.k{color:var(--bro);font-weight:800}
+.s1 b.k{color:var(--neo)} .s3 b.k{color:var(--iro)} .s4 b.k{color:var(--gold)} .s5 b.k{color:var(--pal)} .s6 b.k{color:var(--neo)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);background:var(--card);margin-bottom:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--paper-2);font-size:12.5px;letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.nm{font-weight:800;white-space:nowrap;color:var(--bro)}
+td.yr{white-space:nowrap;font-weight:700;color:var(--gold)}
+.o{color:var(--ok);font-weight:800}
+.x{color:var(--warn);font-weight:800}
+h3{font-size:16px;margin:26px 0 10px;color:var(--ink)}
+.cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:14px}
+.cmp .c{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.cmp h4{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+.cmp h4 .ic{color:var(--warn)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;margin:8px 0}
+.vs .side{border-radius:9px;padding:9px 10px;font-size:13.5px;text-align:center;line-height:1.5}
+.vs .side b{display:block;font-size:14.5px}
+.vs .mid{font-size:11px;color:var(--ink-2);font-weight:700}
+.side.a{background:rgba(168,84,54,.12);border:1px solid var(--bro);color:var(--bro)}
+.side.b{background:rgba(70,82,95,.12);border:1px solid var(--iro);color:var(--iro)}
+.side.n{background:rgba(95,127,82,.12);border:1px solid var(--neo);color:var(--neo)}
+.side.g{background:rgba(168,130,44,.12);border:1px solid var(--gold);color:var(--gold)}
+.side.x2{background:rgba(156,47,47,.1);border:1px solid var(--warn);color:var(--warn)}
+.cmp .why{font-size:13.5px;color:var(--ink-2);margin:8px 0 0}
+.stars{background:var(--card);border:1px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:4px 20px 16px}
+.stars ul{margin:0;padding:0;list-style:none}
+.stars li{padding:13px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;font-size:14.5px}
+.stars li:last-child{border-bottom:0}
+.stars .ic{flex:0 0 auto;color:var(--gold);margin-top:4px}
+.freq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:6px 20px 18px;margin-bottom:14px}
+.freq .row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+.freq .row:last-child{border-bottom:0}
+.gr{flex:0 0 auto;font-weight:800;font-size:12px;border-radius:6px;padding:3px 9px;white-space:nowrap;margin-top:2px}
+.gA{background:rgba(156,47,47,.12);color:var(--warn);border:1px solid var(--warn)}
+.gB{background:rgba(168,130,44,.12);color:var(--gold);border:1px solid var(--gold)}
+.gC{background:rgba(70,82,95,.12);color:var(--iro);border:1px solid var(--iro)}
+.gZ{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.zero{background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
+.zero b{color:var(--ink)}
+.quizbar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px;color:var(--gold)}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.prog{font-size:13.5px;color:var(--ink-2)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin:14px 0}
+.q.hide{display:none}
+.q .qh{display:flex;gap:10px;align-items:baseline;margin-bottom:4px}
+.q .qn{font-weight:800;color:var(--gold);font-size:14px;white-space:nowrap}
+.q .qt{font-weight:700;font-size:15.5px;line-height:1.65}
+.q .tag{font-size:11.5px;margin-left:auto;white-space:nowrap;border-radius:999px;padding:2px 9px;border:1px solid var(--line);color:var(--ink-2)}
+.q .tag.real{border-color:var(--warn);color:var(--warn);font-weight:800}
+.opts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.opts li{border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:14.5px;cursor:pointer;display:flex;gap:10px;align-items:flex-start;background:var(--paper);transition:.12s}
+.opts li:hover{border-color:var(--gold)}
+.opts li .no{font-weight:800;color:var(--ink-2);flex:0 0 auto}
+.opts li.sel{border-color:var(--gold);background:rgba(168,130,44,.1)}
+.graded .opts li{cursor:default}
+.graded .opts li:hover{border-color:var(--line)}
+.graded .opts li.correct{border-color:var(--ok);background:rgba(62,122,78,.12)}
+.graded .opts li.correct .no{color:var(--ok)}
+.graded .opts li.wrong{border-color:var(--warn);background:rgba(156,47,47,.1)}
+.graded .opts li.wrong .no{color:var(--warn)}
+.mark{margin-left:auto;font-size:12px;font-weight:800;white-space:nowrap}
+.mark.mo{color:var(--ok)} .mark.mx{color:var(--warn)}
+.exp{display:none;margin-top:13px;border-left:3px solid var(--ok);background:var(--paper-2);padding:11px 14px;border-radius:0 9px 9px 0;font-size:14.5px}
+.graded .exp{display:block}
+.exp b{color:var(--ink)}
+.score{display:none;background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;text-align:center;margin:22px 0}
+.score.on{display:block}
+.score .big{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.score .lab{font-size:14px;color:var(--ink-2);margin-top:6px}
+.score .brk{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13.5px}
+.score .brk span{padding:5px 12px;border:1px solid var(--line);border-radius:999px}
+.score .acts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.exportbox{margin-top:20px;text-align:left;border-top:1px dashed var(--line);padding-top:16px}
+.exportbox .lb{font-size:13.5px;font-weight:800;margin-bottom:8px;color:var(--ink)}
+.exportbox textarea{width:100%;min-height:118px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.65;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--ink)}
+.exportbox .hint{font-size:12.5px;color:var(--ink-2);margin:8px 0 0}
+.wronglist{margin-top:14px;text-align:left;font-size:14px;background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:10px;padding:12px 15px}
+.wronglist b{color:var(--warn)}
+.wronglist ul{margin:8px 0 0;padding-left:18px}
+.wronglist li{margin:4px 0}
+.notice{background:rgba(156,47,47,.07);border:1px solid var(--warn);border-radius:var(--radius);padding:14px 18px;margin:16px 0;font-size:14px}
+.notice b{color:var(--warn)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+footer p{margin:5px 0}
+@media print{.quizbar,.score,.back{display:none !important}section:has(#quiz){display:none !important}body{background:#fff;font-size:13.5px}.wrap{max-width:none;padding:0}@page{size:A4;margin:14mm 12mm}.cmp .c,.pick,.term,.simile,.zero,.flow,.tl,.color5,.rank,.q{break-inside:avoid}.story,.tblwrap,.freq,.stars{break-inside:auto}tr,.story .head,.freq .row,.stars li{break-inside:avoid}h2,h3{break-after:avoid}table{font-size:12.5px}header.top{padding-top:0}}
+
+.color5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.color5 .c5{border-radius:12px;border:1px solid var(--line);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.color5 .sw{height:46px}
+.color5 .lb{padding:9px 8px;text-align:center;font-size:13px;line-height:1.45}
+.color5 .lb b{display:block;font-size:14.5px}
+.color5 .lb span{font-size:11.5px;color:var(--ink-2)}
+@media(max-width:560px){.color5{grid-template-columns:repeat(2,1fr)}}
+.rank{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0}
+.rank .r{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;box-shadow:var(--shadow)}
+.rank .r b{display:block;font-size:15px;color:var(--bro);margin-bottom:5px}
+.rank .r span{font-size:12px;color:var(--ink-2);display:block;line-height:1.5}
+.rank .r.top{border-color:var(--gold)}
+.rank .r.top b{color:var(--gold)}
+@media(max-width:560px){.rank{grid-template-columns:repeat(2,1fr)}}
+/*PRINTFIX-2026-08-23*/@media print{@page{size:A4;margin:13mm 12mm}.story,.tblwrap,.freq,.stars,.pick,.term,.simile,.redo,.zero,.cmp,.q{break-inside:auto;page-break-inside:auto}.story>.head,.cmp .c,.tl,.stars li,tr,td,th{break-inside:avoid;page-break-inside:avoid}h2,h4,.story>.head{break-after:avoid;page-break-after:avoid}p{orphans:2;widows:2}.tblwrap,.freq{overflow:visible !important}table{min-width:0 !important}.story .num,.badge{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17h15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.4.3.5.7.5 1.1v1h6v-1c0-.4.1-.8.5-1.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></symbol>
+<symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19z"/><path d="M12 10v4"/><path d="M12 17.5h.01"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></symbol>
+<symbol id="i-quiz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.8.3-1.4 1-1.4 1.9v.3"/><path d="M11.5 17.5h.01"/><circle cx="12" cy="12" r="9"/></symbol>
+<symbol id="i-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-4 4-4 4-8s-4-4-4-8"/><path d="M20 4c0 4-4 4-4 8s4 4 4 8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+</svg>
+<div class="wrap">
+<a class="back" href="https://gwantongsa-hub.vercel.app">← 학습 허브</a>
+<header class="top">
+<div class="kicker"><svg class="ic" width="16" height="16"><use href="#i-book"/></svg> 관광국사 · 14단원</div>
+<h1>조선 후기의 정치
+<small>예송 논쟁 → 환국 → 탕평책(영조·정조) → 세도 정치 → 삼정의 문란 → 농민 봉기</small>
+</h1>
+<div class="meta">
+<span class="chip hot">기출 원문 18문항 그대로 수록 — 이 단원은 기출이 가장 많은 구간 중 하나</span>
+<span class="chip">2013~2025년 215문항 중 14단원 태그 20문항 실측</span>
+<span class="chip">보기 기록이 불완전한 2문항(Q203·Q205)은 추측 없이 예상문제로 재구성</span>
+<span class="chip">시험 D-19</span>
+</div>
+</header>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-path"/></svg> 큰 그림 — 이 단원을 관통하는 한 줄</h2>
+<p class="sub">이 단원을 관통하는 한 줄은 이것입니다 — <b>붕당은 원래 "서로 견제하며 협력하라"고 생긴 것인데, 예송 논쟁과 환국을 거치며 한 붕당(노론)의 독재로 변질되었고, 영조·정조가 탕평책으로 억눌러 보지만, 정조가 죽자마자 외척 몇 집안이 나라를 통째로 삼켜(세도 정치) 삼정의 문란과 농민 봉기로 이어진다</b>는 것입니다. 즉 <b>붕당의 변질 → 왕의 반격(탕평) → 왕권 붕괴(세도)</b>라는 세 박자로 외우면 이 단원은 절반이 끝납니다.</p>
+
+<div class="flow">
+<b>붕당 성립(선조)</b><i>→</i><b>예송 논쟁(현종)</b><i>→</i><b>환국(숙종)</b><i>→</i><b>노론 일당 독재</b><i>→</i><b class="hi">탕평책(영조·정조)</b><i>→</i><b>세도 정치(순조·헌종·철종)</b><i>→</i><b>삼정의 문란</b><i>→</i><b>농민 봉기</b>
+</div>
+
+<div class="tl">
+<div class="t1"><b>17세기 — 붕당·환국기</b><span>현종: <b>예송 논쟁</b>(기해예송·갑인예송, 서인 vs 남인)<br>숙종: <b>환국</b> 3연발(경신→기사→갑술) → 서인(노론) 일당 독재 · <b>백두산정계비</b> · 안용복의 독도 수호</span></div>
+<div class="t2"><b>18세기 — 탕평기</b><span>영조: <b>탕평비</b>·<b>균역법</b>·서원 정리·<b>속대전</b>·증수무원록·고문 폐지<br>정조: <b>규장각</b>·<b>장용영</b>·<b>초계문신제</b>·<b>수원 화성</b>·신해통공·<b>대전통편</b>·일성록</span></div>
+<div class="t3"><b>19세기 — 세도 정치기</b><span>순조·헌종·철종: <b>안동 김씨·풍양 조씨</b>의 권력 독점 → 매관매직 → <b>삼정의 문란</b>(전정·군정·환곡)<br><b>홍경래의 난</b>(1811, 평안도) · <b>임술 농민 봉기</b>(1862, 진주) → <b>삼정이정청</b></span></div>
+</div>
+
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>이 단원의 위치를 먼저 알려드립니다.</b> 붕당이 처음 생긴 것(선조)은 <b>11단원</b>, 광해군·인조·효종의 호란과 북벌은 <b>12단원</b>에서 이미 다뤘습니다. 이 단원은 그 <b>다음 이야기</b>, 즉 <b>현종의 예송 논쟁부터 철종 때 세도 정치까지</b>입니다. 다만 기출 문제집이 이 구간을 "조선 후기 정치"로 크게 묶어 놓아서, 광해군·나선정벌·통신사·교육 기관 문항도 같이 들어와 있습니다 — 그래서 페이지 뒤쪽에 그 부분도 함께 정리했습니다.</div></div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-bulb"/></svg> 이야기로 읽는 조선 후기의 정치</h2>
+<p class="sub">외우기 전에 먼저 이야기로 한 번 읽어 주세요. "왜 이런 일이 벌어졌는가"를 알면 왕 이름과 제도 이름은 저절로 붙습니다.</p>
+
+<div class="story s1">
+<div class="head"><div class="num">1</div><div class="ttl">상복을 몇 년 입느냐로 나라가 두 쪽 나다</div><div class="era">현종</div></div>
+<div class="body">
+<p>효종이 세상을 떠났습니다. 그런데 조정에서 벌어진 논쟁이 참 이상합니다. <b class="k">"효종의 새어머니뻘인 자의대비가 상복을 몇 년 입어야 하는가?"</b> 이것을 두고 서인과 남인이 목숨을 걸고 싸웁니다. 이게 <b class="k">예송 논쟁</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>예송(禮訟)</b>은 "예법(禮)을 둘러싼 소송(訟)"이라는 뜻입니다. 겉으로는 상복 입는 기간을 따지는 것이지만, 속뜻은 완전히 다릅니다.</div>
+<p>왜 상복 기간이 그렇게 중요했을까요? 조선의 예법에서는 <b>적장자(맏아들)</b>가 죽었을 때와 <b>둘째 아들 이하</b>가 죽었을 때 어머니가 입는 상복 기간이 달랐습니다. 그런데 효종은 인조의 <b>둘째 아들</b>이었습니다(형인 소현세자가 먼저 죽어서 왕이 된 것입니다). 그러니 "상복을 몇 년 입느냐"를 정하는 순간, <b class="k">"효종은 적장자로 인정되는 정통성 있는 왕인가, 아니면 그냥 둘째 아들인가"</b>가 자동으로 결정되어 버립니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>회사로 치면 "장례식장 화환에 뭐라고 쓰느냐"를 두고 싸우는 것 같지만, 실제로는 "돌아가신 분을 정식 창업주로 인정할 것이냐, 대행 사장으로 볼 것이냐"를 정하는 싸움입니다. 호칭 하나에 회사 지분 구조가 걸려 있는 셈이죠.</div></div>
+<p>이 싸움은 두 번 벌어졌습니다 — <b class="k">기해예송</b>과 <b class="k">갑인예송</b>. 서인과 남인이 한 번씩 이기고 지면서 팽팽하게 맞섭니다. 아직까지는 "논쟁"이었습니다. 서로 말싸움으로 겨루고, 진 쪽도 조정에 남아 있었습니다. 붕당 정치가 그럭저럭 굴러가던 시기입니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시험 포인트 —</b> 예송 논쟁 = <b>현종</b> 때 · <b>서인 vs 남인</b> · 쟁점은 <b>효종의 적장자 자격 인정 여부</b>. 이 세 가지가 그대로 2019년 기출 선택지에 나왔습니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">2</div><div class="ttl">왕이 판을 통째로 갈아엎다 — 환국 3연발</div><div class="era">숙종</div></div>
+<div class="body">
+<p>다음 왕인 <b>숙종</b>은 성격이 전혀 달랐습니다. 논쟁으로 승부를 가리게 두지 않고, <b class="k">왕이 직접 나서서 집권 붕당을 통째로 갈아치웁니다.</b> 이것이 <b class="k">환국(換局)</b>입니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>환국(換局)</b>은 "판(局)을 바꾼다(換)"는 뜻입니다. 정권을 조금씩 나눠 주는 게 아니라, 어제까지 집권하던 붕당을 하루아침에 몰아내고 반대편 붕당을 통째로 앉히는 방식입니다.</div>
+<p>숙종은 이 판갈이를 세 번 합니다 — <b class="k">경신환국</b>(서인 집권) → <b class="k">기사환국</b>(남인 집권) → <b class="k">갑술환국</b>(서인 집권). 순서를 외울 때는 <b>"경-기-갑"</b>으로 앞 글자만 따서 외우세요.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>사장이 "이번 분기는 A팀이 전부 다 해" 했다가, 다음 분기엔 A팀을 통째로 해고하고 "이제 B팀이 전부 다 해"라고 하는 식입니다. 팀들은 살아남으려고 점점 더 독해지고, 결국 마지막에 살아남은 팀이 회사를 독차지합니다.</div></div>
+<p>결과가 중요합니다. 마지막에 이긴 <b class="k">서인, 그중에서도 노론</b>이 권력을 독점하게 됩니다. 그러면서 붕당은 "서로 견제하며 협력한다"는 원래 취지를 잃고 <b class="k">변질</b>되었고, 역설적으로 <b class="k">왕권도 함께 약해집니다</b>. 왕이 판을 흔든 대가로, 한 붕당이 너무 커져 버린 것입니다.</p>
+<p>숙종 때는 나라 밖 경계선을 정리한 일도 있었습니다. 청과 국경을 확정한 <b class="k">백두산정계비</b>를 세웠고, <b class="k">안용복</b>이 일본에 건너가 <b>독도가 우리 땅임을 확인</b>받고 돌아왔습니다. 이 두 가지는 <b>숙종</b> 때 일이라는 것만 확실히 붙잡아 두세요 — 영조·정조 때로 착각하게 만드는 문제가 실제로 나왔습니다(2021년 기출).</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>가장 잦은 함정 —</b> "환국은 여러 붕당이 골고루 정권에 참여하게 한 제도다" → <b class="x">틀림</b>. 환국은 정반대로 <b>한 붕당을 몰아내고 다른 붕당을 전적으로 앉히는</b> 방식이라, 결과는 노론 일당 독재였습니다.</div></div>
+</div>
+</div>
+
+<div class="story s3">
+<div class="head"><div class="num">3</div><div class="ttl">"싸움을 멈춰라" — 영조의 탕평과 균역법</div><div class="era">영조</div></div>
+<div class="body">
+<p>붕당 싸움이 나라를 갉아먹는 것을 본 <b>영조</b>는 결심합니다. <b class="k">"어느 붕당이든 능력만 있으면 골고루 쓰겠다."</b> 이것이 <b class="k">탕평책</b>입니다. 영조는 성균관 앞에 그 뜻을 새긴 <b class="k">탕평비</b>를 세워 젊은 유생들에게 못을 박습니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>탕평(蕩平)</b>은 "어느 쪽으로도 치우치지 않고 평평하게 한다"는 뜻입니다. 어느 붕당 편도 들지 않겠다는 선언입니다.</div>
+<p>영조는 붕당의 뿌리도 건드립니다. 붕당은 지방 <b class="k">서원</b>을 근거지로 세력을 키웠기 때문에, 영조는 서원을 대대적으로 <b>정리</b>합니다. 그리고 백성 쪽으로는 <b class="k">균역법</b> — 그동안 1년에 군포(군대 대신 내는 옷감) 2필을 내던 것을 <b>1필로 줄여</b> 부담을 절반으로 깎아 줍니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>"군대 안 가는 대신 내는 회비를 연 2필에서 1필로 반값 할인" — 이게 균역법입니다. 백성 입장에서 체감이 가장 큰 정책이라, 영조 하면 제일 먼저 떠오르게 만들어야 합니다.</div></div>
+<p>법전과 형벌도 정비합니다. 통치 규범을 다시 정리한 <b class="k">속대전</b>을 편찬했고, 검시(시체 검사) 지침서인 <b class="k">증수무원록</b>을 간행했으며, <b>낙형·압슬형·주리형</b> 같은 <b class="k">지나친 고문을 폐지</b>했습니다.</p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사가 두 번 짚은 것 —</b> "영조와 관련된 문제가 나올 때 <b>가장 많이 나온 내용이 균역법</b>"입니다(7/26 필기반 약 4시간51분경, 7/31 기출풀이 약 2시간32분경 복습). <b>영조 = 균역법 + 속대전</b>, 이 두 단어만 보이면 답은 영조라고 생각하세요.</div></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>또 하나의 단골 함정 —</b> "영조는 노론과 소론의 <b>강경파</b>를 등용하여 서로 견제하게 하는 탕평책을 실시하였다" → <b class="x">틀림</b>. 영조는 강경파가 아니라 <b>타협적·온건한 인물(온건파)</b>을 등용하는 방식이었습니다. 강경파까지 등용해 격론시키는 강력한 탕평은 <b>정조</b> 쪽입니다(2019년 기출 정답 선지).</div></div>
+</div>
+</div>
+
+<div class="story s4">
+<div class="head"><div class="num">4</div><div class="ttl">"내 사람을 내가 키운다" — 정조의 자기 세력 만들기</div><div class="era">정조</div></div>
+<div class="body">
+<p>영조의 손자 <b>정조</b>는 할아버지의 탕평을 <b>계승</b>하면서 한 발 더 나갑니다. 영조가 "싸우지 마라"고 말렸다면, 정조는 <b class="k">"내 편을 내가 직접 키운다"</b>는 쪽이었습니다. 그래서 정조의 업적은 전부 <b>왕권을 뒷받침할 자기 조직</b>을 만드는 이야기로 묶입니다.</p>
+<ul>
+<li><b class="k">규장각</b> — 원래 역대 왕의 글과 책을 보관하는 <b>왕실 도서관</b>이었는데, 정조가 여기에 <b>비서실 기능과 문한(글쓰기) 기능</b>을 통합하고, 나아가 <b>과거시험 주관과 문신 교육</b>까지 맡겼습니다. 도서관을 국왕 직속 싱크탱크이자 인사부로 키운 셈입니다.</li>
+<li><b class="k">장용영</b> — 왕의 <b>친위 부대</b>입니다. 자기 말을 듣는 군대를 따로 가진 것입니다.</li>
+<li><b class="k">초계문신제</b> — <b>신진 인물이나 중·하급 관리 중 유능한 인사를 뽑아 재교육</b>하는 제도입니다. 자기가 직접 인재를 길러 쓰겠다는 것입니다.</li>
+<li><b class="k">수원 화성</b> — 1789년 아버지 <b>사도세자</b>의 묘를 수원으로 옮기고, 원래의 수원 읍성은 오늘날의 수원으로 옮겨 <b>화성부</b>라 했습니다. 정약용이 <b>거중기</b>를 만들어 공사에 썼습니다. 정치·군사 개혁의 새 거점이었습니다.</li>
+<li><b class="k">신해통공</b> — 시전 상인이 독점하던 특권(<b>금난전권</b>)을 폐지해 아무나 장사할 수 있게 했습니다.</li>
+<li><b class="k">대전통편</b>·<b>일성록</b> 편찬, 그리고 원래 사림 양반이 운영하던 <b>향약을 수령(지방관)이 주관</b>하게 바꿔 지방 사림의 영향력을 줄였습니다.</li>
+</ul>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>정조는 "기존 팀장들(붕당)이 말을 안 들으니, 내 직속 기획실(규장각)·내 경호팀(장용영)·내 신입 사원 연수원(초계문신제)·내 신사옥(수원 화성)을 다 따로 만들겠다"고 한 사장입니다. 전부 <b>"내 것"</b>으로 묶으면 하나도 안 헷갈립니다.</div></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>강사 표현 그대로 —</b> 영조와 정조 두 왕은 <b>"베리 임포턴트"</b>입니다(7/26 필기반 약 4시간42분경). 특히 정조는 각종 시험에 무조건이라 할 만큼 자주 나오고, 영조도 꾸준히 나옵니다. 시간이 부족하면 <b>이 두 왕부터</b> 확실히 잡으세요.</div></div>
+</div>
+</div>
+
+<div class="story s5">
+<div class="head"><div class="num">5</div><div class="ttl">왕의 처가가 나라를 삼키다 — 세도 정치</div><div class="era">순조·헌종·철종</div></div>
+<div class="body">
+<p>정조가 죽고 나서가 진짜 문제였습니다. 다음 왕들(<b>순조·헌종·철종</b>)이 어리거나 힘이 약했습니다. 그러자 왕의 <b>외척</b>(왕비의 친정), 즉 <b class="k">안동 김씨</b>와 <b class="k">풍양 조씨</b> 몇 집안이 권력을 독차지합니다. 이것이 <b class="k">세도 정치</b>이고, 무려 <b>60여 년</b> 이어집니다.</p>
+<div class="term"><b>이게 뭐냐면 —</b> <b>외척(外戚)</b>은 어머니·아내 쪽 친척을 말합니다. 즉 "왕의 처가·외갓집이 나라를 운영했다"는 뜻입니다.</div>
+<p>이들은 <b class="k">비변사</b>와 <b class="k">훈련도감</b> 같은 핵심 기구를 장악해 권력을 휘둘렀습니다. 그 결과 <b>왕권은 약해지고</b> 정치 기강이 무너지며, 돈을 받고 벼슬을 파는 <b class="k">매관매직</b>이 성행합니다.</p>
+<div class="simile"><svg class="ic" width="18" height="18"><use href="#i-bulb"/></svg><div>벼슬을 <b>돈 주고 산</b> 사람은 부임하자마자 <b>본전을 뽑으려</b> 합니다. 그 본전은 결국 백성 주머니에서 나옵니다. 세도 정치의 폐단이 곧바로 백성 수탈로 이어지는 이유가 이것입니다.</div></div>
+<p>그래서 나라의 3대 수취 제도가 모조리 망가집니다 — 이것이 <b class="k">삼정의 문란</b>입니다.</p>
+<div class="term"><b>삼정이 뭐냐면 —</b> <b>전정</b>(토지에 매기는 세금) · <b>군정</b>(군대 대신 내는 군포) · <b>환곡</b>(봄에 곡식을 빌려주고 가을에 갚게 하는 빈민 구제 제도)의 셋입니다. 특히 환곡은 원래 <b>구제 제도</b>였는데, 강제로 빌려주고 이자를 뜯는 <b>고리대</b>로 변질된 것이 가장 심각했습니다.</div>
+</div>
+</div>
+
+<div class="story s6">
+<div class="head"><div class="num">6</div><div class="ttl">백성이 일어나다 — 홍경래의 난과 임술 농민 봉기</div><div class="era">1811 · 1862</div></div>
+<div class="body">
+<p>견디다 못한 백성들이 결국 들고일어납니다. 대표적인 두 사건의 <b>연도·지역·원인</b>을 세트로 외우세요.</p>
+<p><b class="k">홍경래의 난(1811, 평안도)</b> — 가장 중요한 원인은 <b>평안도(서북) 지역에 대한 차별</b>입니다. 평안도 사람은 아무리 능력이 있어도 높은 벼슬에 오르기 어려웠습니다. 강사가 특별히 짚은 것은, 이때는 아직 <b>세도 정치 초반기</b>라 삼정의 문란이 전국적으로 심해지기 <b>전</b>이었다는 점입니다 — 그래서 "삼정의 문란 때문에 홍경래의 난이 일어났다"고 단순하게 연결하면 안 됩니다.</p>
+<p><b class="k">임술 농민 봉기(1862, 진주 → 전국)</b> — 이때는 삼정의 문란이 극에 달한 때입니다. 진주에서 시작해 전국으로 번졌습니다. 세부 인물까지 강사가 짚었습니다 — 백성을 수탈한 지방관은 <b>백낙신</b>, 봉기를 주도한 몰락 양반은 <b>유계춘</b>, 농민들이 흰 수건을 머리에 둘러 <b>"백건당의 난"</b>이라고도 불렸고, 관리 <b>박규수</b>가 파견되어 진압했습니다.</p>
+<p>정부는 <b>안핵사</b>를 파견해 실정을 조사하고, 삼정을 바로잡겠다며 <b class="k">삼정이정청</b>이라는 기구를 설치합니다. 하지만 <b>근본적인 문제는 끝내 해결하지 못했습니다.</b></p>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>순서 함정 —</b> "홍경래의 난이 임술 농민 봉기보다 <b>나중</b>에 일어났다" → <b class="x">틀림</b>. <b>홍경래(1811) 먼저, 임술(1862) 나중</b>입니다. 숫자 <b>1811 → 1862</b>를 그림처럼 외워 두세요.</div></div>
+<div class="pick"><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg><div><b>시대 혼동 함정 —</b> <b>삼정이정청</b>은 <b>세도 정치기(철종)</b>에 만든 기구입니다. 2021년 기출에서 "정조 때의 사실"을 묻는 문제의 <b>오답 선지</b>로 나왔습니다 — 정조와는 아무 관계가 없습니다.</div></div>
+</div>
+</div>
+
+<div class="story s2">
+<div class="head"><div class="num">7</div><div class="ttl">이 단원에 함께 묶여 나오는 것들 — 대외 관계와 교육 기관</div><div class="era">기출 묶음</div></div>
+<div class="body">
+<p>기출 문제집이 "조선 후기 정치"라는 큰 묶음 안에 <b>대외 관계</b>와 <b>교육 기관</b> 문항도 함께 넣어 두었습니다. 시대는 조선 전기·중기에 걸쳐 있지만, 이 단원 문제로 출제되었으므로 여기서 같이 정리합니다.</p>
+<p><b class="k">통신사</b> — 일본(에도 막부)에 보낸 사절입니다. <b>매년 정기적으로 보낸 것이 아니라</b>, 일본의 <b>요청이 있을 때만</b> 보냈습니다(총 12회). 동시에 <b>조선의 선진 문화를 전파</b>하는 문화 사절 역할도 했습니다.</p>
+<p><b class="k">나선정벌</b> — <b>효종</b> 때입니다. 여기서 "나선(羅禪)"은 <b>러시아</b>를 가리킵니다. "나선정벌 = 여진 정벌"이라고 짝지어 놓으면 <b class="x">틀린 연결</b>입니다(2014년 기출 정답). 함께 나온 연결은 모두 옳습니다 — 신미양요=고종 대 미국의 강화도 공격, 대마도 정벌=세종 대 왜구 근거지 소탕, 병자호란=인조 대 청의 침입.</p>
+<p><b class="k">제주도</b> — 두 사건의 공통 무대입니다. ①삼별초가 <b>마지막으로</b> 항쟁하다 원과 고려 정부군에게 토벌된 곳(강화도→진도→제주도 순), 그 뒤 원의 직할령이 됨. ②네덜란드 동인도회사 선원 <b>하멜</b>이 1653년 일본 나가사키로 가다 표류한 곳. 하멜보다 먼저 표류해 조선에 정착한 <b>벨테브레(박연)</b>도 제주도였습니다.</p>
+<p><b class="k">교육 기관</b> — 이건 위치를 반대로 써 놓는 함정이 실제로 나왔습니다.</p>
+<div class="vs">
+<div class="side a"><b>중앙(한양)</b>4부 학당(사부학당)<br>동학·서학·남학·중학</div>
+<div class="mid">≠</div>
+<div class="side b"><b>지방</b>향교</div>
+</div>
+<p><b>성균관</b>은 조선 <b>최고(最高)의 국립 교육 기관</b>으로, 입학 자격은 원칙적으로 소과 합격자인 <b>생원·진사</b>였고, 도서관으로 <b>존경각</b>을 두었습니다. <b>서원과 서당</b>은 <b>사립</b> 교육 기관이며, <b>잡학</b>(기술학)은 <b>해당 기술 관청</b>이 직접 교육을 맡았습니다.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-grid"/></svg> 총정리표 — 교재의 사실을 하나도 빼지 않고</h2>
+<p class="sub">관광국사.md 14단원 「반드시 암기」 표를 한 줄도 빼지 않고 옮기고, 「시험 포인트」·「기출 연결」에 흩어져 있던 사실을 붙였습니다.</p>
+
+<h3>조선 후기 정치 변천 — 왕별 총정리</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>왕</th><th>시기 구분</th><th>핵심 사건·업적</th></tr></thead>
+<tbody>
+<tr><td class="nm">현종</td><td class="yr">붕당 정치기</td><td><b>예송 논쟁</b>(서인 vs 남인, 쟁점=효종의 적장자 정통성) — <b>기해예송·갑인예송</b></td></tr>
+<tr><td class="nm">숙종</td><td class="yr">환국기</td><td><b>환국</b>(경신환국〈서인〉 → 기사환국〈남인〉 → 갑술환국〈서인〉) → <b>서인(노론) 일당 독재</b>, 붕당 정치 변질·<b>왕권 약화</b> / <b>백두산정계비</b>(청과 국경 확정) / <b>안용복</b>의 독도 수호 / 금위영 설치(5군영 완성)</td></tr>
+<tr><td class="nm">영조</td><td class="yr">탕평 정치</td><td>탕평책(<b>탕평비</b> 건립, <b>온건파</b> 등용) · <b>균역법</b>(군포 2필→1필) · <b>서원 정리</b> · <b>속대전</b> 편찬 · <b>증수무원록</b> 간행 · <b>낙형·압슬형·주리형 등 고문 폐지</b> · 속오례의</td></tr>
+<tr><td class="nm">정조</td><td class="yr">탕평 정치</td><td><b>규장각</b>(왕실 도서관 → 비서실·문한 기능 통합, 과거 주관·문신 교육) · <b>장용영</b>(친위 부대) · <b>초계문신제</b>(중·하급 관리 재교육) · <b>수원 화성</b>(1789 사도세자 묘 이장, 정약용의 거중기) · <b>신해통공</b>(금난전권 폐지) · <b>대전통편</b>·<b>일성록</b> 편찬 · <b>향약을 수령이 주관</b>하게 함(지방 사림 영향력 축소) · 영조의 탕평책 계승·강화</td></tr>
+<tr><td class="nm">순조·헌종·철종</td><td class="yr">세도 정치</td><td><b>안동 김씨·풍양 조씨</b>의 권력 독점(<b>비변사·훈련도감</b> 장악) → 왕권 약화·<b>매관매직</b> → <b>삼정의 문란</b>(전정·군정·환곡) → <b>홍경래의 난</b>(1811, 평안도) → <b>임술 농민 봉기</b>(1862, 진주→전국) → 안핵사 파견·<b>삼정이정청</b> 설치(근본 해결 실패)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>법전 계보 — 가장 잦은 출제 포인트</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>법전</th><th>왕</th><th>메모</th></tr></thead>
+<tbody>
+<tr><td class="nm">경국대전</td><td class="yr">세조 편찬 시작 → 성종 완성</td><td>조선의 기본 법전</td></tr>
+<tr><td class="nm">속대전</td><td class="yr">영조</td><td>통치 규범 재정리 — "속대전 보이면 영조"</td></tr>
+<tr><td class="nm">대전통편</td><td class="yr">정조</td><td>"통편 = 정조"</td></tr>
+<tr><td class="nm">대전회통</td><td class="yr">흥선대원군(고종 대)</td><td>조선 최후의 법전</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>이 단원에 함께 묶여 나온 대외 관계·교육 기관</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>항목</th><th>핵심</th></tr></thead>
+<tbody>
+<tr><td class="nm">통신사</td><td>일본(에도 막부)의 <b>요청이 있을 때만</b> 파견(총 12회, <b class="x">매년 정기 파견 아님</b>) · 조선의 <b>선진 문화 전파</b> 역할</td></tr>
+<tr><td class="nm">나선정벌</td><td><b>효종</b> 대 · 나선(羅禪)=<b>러시아</b> (<b class="x">여진 정벌 아님</b>)</td></tr>
+<tr><td class="nm">신미양요</td><td><b>고종</b> 대 미국의 강화도 공격</td></tr>
+<tr><td class="nm">대마도 정벌</td><td><b>세종</b> 대 왜구 근거지 소탕</td></tr>
+<tr><td class="nm">병자호란</td><td><b>인조</b> 대 청의 조선 침입</td></tr>
+<tr><td class="nm">제주도</td><td><b>삼별초 최후 항쟁지</b>(강화도→진도→제주도) → 원의 직할령 / <b>하멜</b> 표류지(1653) / 벨테브레(박연) 표류지</td></tr>
+<tr><td class="nm">성균관</td><td>조선 <b>최고(最高)</b>의 국립 교육 기관 · 입학 자격 원칙 <b>생원·진사</b> · 도서관 <b>존경각</b></td></tr>
+<tr><td class="nm">4부 학당(사부학당)</td><td><b>중앙(한양)</b>에 설치 — 동학·서학·남학·중학</td></tr>
+<tr><td class="nm">향교</td><td><b>지방</b>에 설치 (중앙 아님 — 위치를 바꿔 묻는 함정)</td></tr>
+<tr><td class="nm">서원·서당</td><td><b>사립</b> 교육 기관</td></tr>
+<tr><td class="nm">잡학</td><td><b>해당 기술 관청</b>이 직접 교육 담당</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-chart"/></svg> 빈출 핵심 암기표 — 감이 아니라 실측입니다</h2>
+<p class="sub">2013~2025년 기출 <b>215문항</b> 중 이 단원으로 태그된 <b>20문항</b>의 <b>문제·선택지 원문</b>에서 키워드가 등장한 <b>문항 수</b>를 직접 세었습니다. 괄호 안 숫자가 실측값입니다.</p>
+
+<div class="freq">
+<div class="row"><span class="gr gA">S급</span><div><b>정조의 업적 세트 (정답 근거 6문항 / 언급 7문항)</b> — 장용영(3) · 규장각(2) · 초계문신제(2) · 수원 화성(2) · 대전통편(2) · 금난전권 폐지(1) · 향약의 수령 주관(1). <b>이 단원 최다 출제.</b> 정조 하나만 완벽히 잡아도 이 단원 문제의 1/3을 가져갑니다.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>영조의 업적 세트 (정답 근거 5문항 / 언급 7문항)</b> — 속대전(5) · 균역법(4) · 탕평(2) · 증수무원록·고문 폐지(1) · 서원 정리. <b>속대전과 균역법 두 단어만 보이면 영조</b>로 바로 찍을 수 있게 만들어 두세요.</div></div>
+<div class="row"><span class="gr gA">S급</span><div><b>법전 계보 (5문항)</b> — 속대전(5)·대전통편(2)·경국대전(2)·대전회통(2). 2015년·2024년에는 <b>법전 이름만 4개 늘어놓고 왕을 묻는 단순 문항</b>으로 두 번 출제되었습니다. 가장 확실한 득점처입니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>교육 기관 (2문항)</b> — 성균관(2)·향교(2)·서원(2). 2014년·2018년 출제. <b>중앙=4부 학당 / 지방=향교</b>의 위치를 반대로 써 놓는 함정이 정답이었습니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>대외 관계 연결 (2문항)</b> — 나선정벌(1)·통신사(1). 나선=러시아, 통신사=일본 요청 시 파견. 짧은 문항이라 놓치면 아깝습니다.</div></div>
+<div class="row"><span class="gr gB">A급</span><div><b>숙종 (3문항에 선택지로 등장)</b> — 백두산정계비(2)·금위영. 정조·영조 문항의 <b>오답 선지</b>로 반복 등장합니다. "백두산정계비=숙종"만 확실하면 오답을 걸러낼 수 있습니다.</div></div>
+<div class="row"><span class="gr gC">B급</span><div><b>붕당·예송 (1문항)</b> — 예송(1)·붕당(1)·호락논쟁(1). 2019년 한 문항이지만, <b>영조 탕평=온건파</b> 함정이 정답이라 개념 자체는 반드시 알아야 합니다.</div></div>
+<div class="row"><span class="gr gC">B급</span><div><b>세도 정치·농민 봉기 (1문항)</b> — 삼정이정청(1)·임술 농민 봉기(1). 2025년(가장 최근) 출제 — <b>최신 경향</b>이라는 점에서 가치가 높습니다.</div></div>
+<div class="row"><span class="gr gZ">참고</span><div><b>기타 (각 1문항)</b> — 제주도·하멜·삼별초(2013) · 광해군·대동법(2021) · 연표 문제(2025).</div></div>
+</div>
+
+<div class="zero"><b>기출 원문 20문항 중 0회로 나온 것</b> — <b>환국(0회)</b>·<b>홍경래의 난(0회)</b>·<b>안용복(0회)</b>·<b>신해통공(0회)</b>·<b>세도 정치(0회)</b>·<b>사부학당(0회)</b>. 다만 <b>버리지는 마세요</b> — 환국·세도 정치는 이 단원 흐름을 설명하는 뼈대이고, 홍경래의 난은 강사가 7/26 강의에서 원인(서북 차별)까지 따로 짚은 항목입니다. "지금까지 안 나왔을 뿐"이지 안전한 항목은 아닙니다.</div>
+
+<div class="notice">
+<b>집계 기준을 밝힙니다.</b> ①대상은 <code>관광국사기출.md</code>에서 <b>「14단원(조선 후기의 정치)」로 태그된 20문항</b>(Q195~Q205, Q207~Q215)입니다. ②세는 대상은 <b>문제 지문과 선택지 원문</b>이며, <b>오답 선지에 등장한 것도 포함</b>했습니다(그래서 "숙종 3문항"처럼 정답이 아닌 등장도 잡힙니다). ③해설·강사 발언은 세지 않았습니다. ④전체 215문항 대비 이 단원은 <b>20문항(약 9.3%)</b>으로, 11단원(39문항)·8단원과 함께 <b>출제 상위권 단원</b>입니다.
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-alert"/></svg> 자주 틀리는 것 — 짝으로 외우세요</h2>
+<p class="sub">이 단원은 "누구 업적인지 바꿔치기"가 함정의 90%입니다. 하나씩 외우지 말고 <b>반드시 짝으로</b> 외우세요.</p>
+
+<div class="cmp">
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 영조 vs 정조 — 최대 빈출</h4>
+<div class="vs">
+<div class="side a"><b>영조</b>탕평비 · <b>균역법</b><br>서원 정리 · <b>속대전</b><br>증수무원록 · 고문 폐지</div>
+<div class="mid">vs</div>
+<div class="side b"><b>정조</b>규장각 · 장용영<br>초계문신제 · 수원 화성<br>신해통공 · <b>대전통편</b></div>
+</div>
+<p class="why">가르는 기준 한 줄 — <b>"제도를 손봐 부담을 줄인 쪽"이 영조</b>, <b>"내 사람·내 조직을 새로 만든 쪽"이 정조</b>입니다. 법전은 <b>속(續)대전=영조 / (대전)통편=정조</b>로 글자를 붙여 외우세요.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 예송 논쟁 vs 환국</h4>
+<div class="vs">
+<div class="side n"><b>예송 논쟁(현종)</b>신하들끼리 <b>논쟁</b><br>서인 vs 남인<br>쟁점=효종의 적장자 자격</div>
+<div class="mid">vs</div>
+<div class="side g"><b>환국(숙종)</b><b>왕이 직접</b> 판 갈이<br>경신→기사→갑술<br>결과=노론 일당 독재</div>
+</div>
+<p class="why">한 글자로 — <b>예송은 "말싸움", 환국은 "갈아엎기"</b>입니다. "환국은 여러 붕당이 골고루 참여하게 한 제도"라는 서술은 <b class="x">틀림</b>입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 영조의 탕평 — 온건파 vs 강경파</h4>
+<div class="vs">
+<div class="side n"><b>영조 ○</b><b>온건파</b>(타협적 인물) 등용</div>
+<div class="mid">≠</div>
+<div class="side x2"><b>"강경파 등용" ✕</b>2019년 기출 <b>정답 선지</b></div>
+</div>
+<p class="why">강경파까지 등용해 격론시키는 <b>강력한 탕평</b>은 <b>정조</b> 쪽입니다. 선택지에 "강경파"가 보이면 영조 문장은 틀린 것입니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 홍경래의 난 vs 임술 농민 봉기</h4>
+<div class="vs">
+<div class="side a"><b>홍경래의 난</b><b>1811</b> · 평안도<br>원인=<b>서북 지역 차별</b><br>세도 정치 <b>초반기</b></div>
+<div class="mid">vs</div>
+<div class="side b"><b>임술 농민 봉기</b><b>1862</b> · 진주→전국<br>원인=<b>삼정의 문란</b><br>백낙신·유계춘·박규수</div>
+</div>
+<p class="why">순서를 반대로 묻는 함정이 잦습니다 — <b>1811 먼저, 1862 나중</b>. 원인도 다릅니다(차별 vs 수탈).</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 시대 바꿔치기 3종 — 정조 문항의 단골 오답</h4>
+<div class="vs">
+<div class="side g"><b>정조 ○</b>장용영</div>
+<div class="mid">vs</div>
+<div class="side x2"><b>정조 ✕</b>백두산정계비(<b>숙종</b>)<br>속오례의(<b>영조</b>)<br>삼정이정청(<b>세도 정치기</b>)<br>동국여지승람(<b>성종</b>)<br>의정부·삼군부 회복(<b>흥선대원군</b>)</div>
+</div>
+<p class="why">2021년·2014년·2013년 기출에서 실제로 이렇게 섞어 냈습니다. <b>오른쪽 다섯 개는 정조가 아니다</b>만 외워도 3문항이 풀립니다.</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 교육 기관 — 중앙 vs 지방</h4>
+<div class="vs">
+<div class="side a"><b>중앙(한양)</b>4부 학당<br>동·서·남·중학<br>+ 성균관(최고 학부)</div>
+<div class="mid">≠</div>
+<div class="side b"><b>지방</b>향교<br>+ 서원·서당(사립)</div>
+</div>
+<p class="why">2018년 기출은 이 둘을 <b>완전히 반대로</b> 써 놓은 선지가 정답이었습니다("중앙에 향교, 지방에 4부 학당" → 틀림).</p>
+</div>
+
+<div class="c">
+<h4><svg class="ic" width="18" height="18"><use href="#i-alert"/></svg> 계미자·갑인자 — 조선 후기 문항의 단골 오답</h4>
+<div class="vs">
+<div class="side a"><b>태종</b>주자소 설치<br><b>계미자</b> 주조</div>
+<div class="mid">vs</div>
+<div class="side b"><b>세종</b><b>갑인자</b> 주조<br>조지서(종이 관청)</div>
+</div>
+<p class="why">2014년 "영조와 정조 시대의 사회상" 문항에서 <b>"주자소를 설치하고 처음으로 계미자를 주조"</b>가 정답(틀린 것)이었습니다 — 조선 <b>전기(태종)</b> 일이 조선 후기 문항에 섞여 들어옵니다.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-star"/></svg> 강사가 콕 집은 것</h2>
+<div class="stars">
+<ul>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"베리 임포턴트"</b> — 영조와 정조 두 왕(7/26 필기반 약 4시간42분경). 정조는 각종 시험에 무조건이라 할 만큼 자주 나오고, 영조도 꾸준히 나옵니다. <b>시간이 부족하면 이 두 왕부터</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"영조 관련 문제에서 가장 많이 나온 내용이 균역법"</b>(7/26 필기반 약 4시간51분경, 7/31 기출풀이 약 2시간32분경 복습). 영조 하면 균역법을 제일 먼저 떠올리세요.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"속대전, 균역법 나오면 끝난 것이다"</b>(7/31 기출풀이) — 즉답으로 영조를 고르라는 뜻입니다. 반대로 <b>"규장각은 무조건 정조"</b>, <b>"수원화성·정약용이 나오면 무조건 정조"</b>, <b>"사도세자·수원화성이면 정조"</b>도 같은 즉답 세트입니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>홍경래의 난(1811)의 가장 중요한 원인은 평안도(서북) 지역 차별</b>(7/26 필기반 약 5시간9분경). 이때는 세도 정치 초반기라 삼정의 문란이 아직 전국적으로 심하지는 않았습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>임술 농민 봉기(진주 민란) 세부 인물</b>(7/24 기출풀이 약 3시간20분경) — 수탈한 지방관 <b>백낙신</b>, 주도한 몰락 양반 <b>유계춘</b>, 흰 수건을 둘러 <b>"백건당의 난"</b>, 진압하러 파견된 관리 <b>박규수</b>.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"삼정이정청은 세도정치 때 만든 관청이라 정조와 관련 없다"</b>(7/31 기출풀이) — 인접 문항(203번 정조, 205번 세도정치기)의 시대를 헷갈리지 말라고 특별히 짚었습니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>"나선(羅禪)이 어디냐면 러시아다"</b>(7/31 기출풀이) — 나선정벌을 "여진 정벌"로 짝지어 놓으면 틀린 연결입니다.</div></li>
+<li><svg class="ic" width="18" height="18"><use href="#i-star"/></svg><div><b>영조 탕평 = 온건파(부탕평파) 중심</b>(7/31 기출풀이) — "강경파까지 등용해 격론시키는 강력한 탕평책은 영조가 아니라 정조"라고 못 박았습니다.</div></li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2><svg class="ic" width="20" height="20"><use href="#i-quiz"/></svg> 문제 풀기 — 25문항</h2>
+<p class="sub"><b>기출 원문 18문항 + 예상문제 7문항</b>입니다. 기출은 문제·보기 4개·정답·강사 해설을 <b>그대로</b> 실었고, 예상문제도 전부 관광국사.md·기출 해설에서 확인된 사실로만 만들었습니다. 보기를 눌러 답을 고르고 마지막에 채점하세요.</p>
+
+<div class="notice">
+<b>구성을 밝힙니다.</b> 2013~2025년 215문항 중 이 단원으로 태그된 문항은 <b>20개</b>입니다. 그중 <b>보기 4개가 온전히 기록된 18문항을 그대로 수록</b>했고, <b>Q203(초계문신제)·Q205(삼정이정청) 2문항은 원 자료에 선택지가 기록돼 있지 않아</b> 추측으로 채우지 않고 <b>같은 개념의 예상문제로 다시 만들었습니다.</b> 여기에 교재 본문 기준 예상문제 5개(예송 논쟁·환국·숙종·세도 정치·농민 봉기)를 더해 총 <b>25문항</b>입니다.
+</div>
+
+<div class="quizbar">
+<svg class="ic" width="18" height="18" style="color:var(--gold)"><use href="#i-clock"/></svg>
+<span class="timer" id="tm">00:00</span>
+<span class="prog" id="pg">0 / 25 선택</span>
+<button class="btn" id="gradeBtn" onclick="grade()">채점하기</button>
+<button class="btn ghost" id="wrongBtn" onclick="onlyWrong()" style="display:none">틀린 문제만 다시</button>
+<button class="btn ghost" id="resetBtn" onclick="reset()">다시 풀기</button>
+</div>
+
+<div id="quiz"></div>
+
+<div class="score" id="score">
+<div class="big" id="scoreBig">0점</div>
+<div class="lab" id="scoreLab"></div>
+<div class="brk" id="scoreBrk"></div>
+<div class="wronglist" id="wrongBox" style="display:none"></div>
+<div class="acts">
+<button class="btn" onclick="onlyWrong()">틀린 문제만 다시 풀기</button>
+<button class="btn ghost" onclick="reset()">전체 다시 풀기</button>
+</div>
+<div class="exportbox">
+<div class="lb">오답노트용 — 아래 내용을 복사해서 채팅에 붙여넣으세요</div>
+<textarea id="exp" readonly></textarea>
+<p class="hint">「복사하기」를 누르면 클립보드에 담깁니다. 안 되면 직접 드래그해서 복사하세요.</p>
+<div style="margin-top:10px"><button class="btn" onclick="copyExp()">복사하기</button></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><b>출처</b> — 내용: <code>01_관광국사/04_최종교재/관광국사.md</code> 14단원(핵심.pdf 13페이지〈인쇄 쪽번호 "-12-", "6.조선 후기의 정치적 변천(17~19세기)"〉) / 문항: <code>03_작업자료/관광국사기출.md</code> 14단원 구간(Q195~Q205, Q207~Q215) / 강의: 필기반 <b>7/26</b> 약 4시간42분·4시간51분·5시간9분경, 기출문제풀이 <b>7/24</b> 약 3시간20분경·<b>7/31</b> 전반.</p>
+<p><b>실측 방법</b> — 215문항 중 「14단원」으로 태그된 20문항의 <b>문제·선택지 원문</b>만을 대상으로 키워드가 등장한 문항 수를 셌습니다(오답 선지 포함, 해설·강사 발언 제외).</p>
+<p><b>추측 금지</b> — 보기 4개가 온전히 기록되지 않은 Q203·Q205는 기출 원문으로 싣지 않고 같은 개념의 예상문제로 재구성했습니다. 교재·기출 해설·확인한 강의 구간에 없는 내용은 넣지 않았습니다.</p>
+<p>이해가 안 되는 부분이 있으면 물어보세요. 해당 강의 위치를 찾아 드립니다.</p>
+</footer>
+
+</div>
+<script>
+var QS=[
+{n:1,c:"붕당·예송·환국",src:"예상문제",q:"예송 논쟁에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["현종 때 두 차례(기해예송·갑인예송) 전개되었다","서인과 남인 사이에서 벌어졌다","효종의 적장자 자격 인정 여부가 쟁점이었다","왕이 직접 집권 붕당을 교체한 사건이다"],a:3,e:"왕이 직접 집권 붕당을 통째로 교체한 것은 <b>환국</b>(숙종)입니다. 예송 논쟁은 <b>현종</b> 때 자의대비의 상복 기간을 두고 <b>서인과 남인</b>이 벌인 <b>논쟁</b>이며, 실질적 쟁점은 <b>효종의 적장자 자격(정통성) 인정 여부</b>였습니다."},
+{n:2,c:"붕당·예송·환국",src:"예상문제",q:"숙종 때의 환국에 관한 설명으로 옳은 것은?",o:["경신환국 → 기사환국 → 갑술환국 순으로 전개되어 서인(노론)의 일당 독재로 이어졌다","여러 붕당이 골고루 정권에 참여하도록 한 제도이다","환국의 결과 왕권이 크게 강화되었다","기사환국 → 경신환국 → 갑술환국 순으로 전개되었다"],a:0,e:"환국은 <b>경신환국(서인) → 기사환국(남인) → 갑술환국(서인)</b> 순으로 세 차례 있었고, 마지막에 이긴 <b>서인(노론)의 일당 독재</b>로 귀결되었습니다. 여러 붕당이 골고루 참여하는 제도가 아니라 한 붕당을 통째로 갈아치우는 방식이었고, 붕당 정치가 변질되면서 <b>왕권도 함께 약해졌습니다</b>."},
+{n:3,c:"붕당·예송·환국",src:"기출 2019년",q:"조선시대 붕당에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["척신 정치의 잔재 청산과 이조 전랑 임명 문제를 둘러싸고 동인과 서인으로 분열되었다","효종의 적장자 자격 인정 여부를 둘러싸고 서인과 남인 사이에 예송논쟁이 전개되었다","영조는 노론과 소론의 강경파를 등용하여 서로 견제하게 하는 탕평책을 실시하였다","사람과 짐승의 본성이 같은지 여부를 둘러싸고 노론이 낙론과 호론으로 나뉘었다"],a:2,e:"강사 해설(7/31) — 영조는 타협적이고 온순하며 왕권에 순종하는 <b>온건파(부탕평파)</b> 중심으로 탕평 정치를 운영했습니다. 강경파까지 등용해 격론시키는 강력한 탕평책은 영조가 아니라 <b>정조</b>입니다. 척신 정치 잔재(선조 대), 예송논쟁(현종 대), 호락논쟁(노론 내부 사상 논쟁)은 모두 옳은 설명입니다."},
+{n:4,c:"붕당·예송·환국",src:"예상문제",q:"다음 두 가지 일이 모두 있었던 국왕은? — 청과의 국경을 확정한 백두산정계비를 세웠다 / 안용복이 일본에 건너가 독도가 우리 땅임을 확인받았다",o:["현종","숙종","영조","정조"],a:1,e:"백두산정계비와 안용복의 독도 수호 활동은 모두 <b>숙종</b> 때 일입니다. 영조·정조 때로 착각하게 만드는 함정이 실제 기출(2021년)에 오답 선지로 나왔습니다."},
+{n:5,c:"영조",src:"기출 2016년",q:"다음의 업적과 관련된 왕으로 옳은 것은? — 속대전을 편찬하였다 / 지나친 형벌이나 악형을 금지하였다 / 백성의 부담을 줄여주기 위해 균역법을 시행하였다",o:["성종","숙종","영조","정조"],a:2,e:"강사 해설(7/31) — 「속대전, 균역법 나오면 끝난 것이다」라며 즉답으로 <b>영조</b>를 골랐습니다. 이 두 단어는 영조의 상징입니다."},
+{n:6,c:"영조",src:"기출 2020년",q:"다음 내용과 관련된 국왕은? — 속대전을 반포하였다 / 증수무원록을 간행하였다 / 낙형, 압슬형, 주리형 등 고문을 폐지하였다",o:["숙종","영조","정조","고종"],a:1,e:"강사 해설(7/31) — 「속대전만 봐도 알아, 영조」. 증수무원록 간행과 가혹한 고문(낙형·압슬형·주리형) 폐지도 <b>영조</b>의 업적입니다."},
+{n:7,c:"영조",src:"기출 2022년",q:"조선시대 균역법을 시행한 국왕은?",o:["태종","숙종","영조","정조"],a:2,e:"강사 해설(7/31) — 「균역법은 영조」. 군포를 1년에 2필에서 <b>1필로 줄여</b> 백성의 군역 부담을 덜어 준 제도입니다."},
+{n:8,c:"영조",src:"기출 2024년",q:"조선 영조 대에 편찬된 법전은?",o:["속대전","경국대전","대전통편","대전회통"],a:0,e:"<b>속대전=영조</b>입니다. 경국대전은 세조 때 편찬을 시작해 성종 때 완성, 대전통편은 정조, 대전회통은 흥선대원군(고종 대)입니다."},
+{n:9,c:"정조",src:"기출 2013년",q:"밑줄 친 ㉠왕의 업적으로 옳은 것은? — 「규장각은 본래 역대 왕의 글과 책을 수집, 보관하기 위한 왕실 도서관의 기능을 수행하기 위해 설치되었다. ㉠왕은 비서실의 기능과 문한 기능을 통합적으로 부여하고, 과거시험의 주관과 문신 교육의 임무까지 부여하였다.」",o:["의정부와 삼군부의 기능을 회복하였다","군역의 부담을 줄여주기 위해 균역법을 시행하였다","왕조의 통치 규범을 재정리하기 위해 속대전을 편찬하였다","수령이 군현 단위 향약을 주관하여 지방 사림의 영향력을 줄였다"],a:3,e:"강사 해설(7/31) — 「규장각은 무조건 정조」입니다. 의정부·삼군부 기능 회복은 <b>흥선대원군</b>, 균역법과 속대전은 <b>영조</b>라 모두 틀립니다. 원래 사림 양반이 운영하던 향약을 국가가 파견한 <b>수령</b>이 주관하도록 바꾼 것이 정조 때 일입니다."},
+{n:10,c:"정조",src:"기출 2014년",q:"다음은 수원화성과 정약용이 제작한 거중기이다. 이 시설과 장치가 만들어질 당시의 역사적 사실로 옳지 <b>않은</b> 것은?",o:["친위부대인 장용영을 설치하여 왕권을 강화하였다","국토 경영의 효율성을 높이기 위하여 동국여지승람을 편찬하였다","영조의 탕평책을 계승·강화하였다","규장각에 젊은 학자들을 모아 학문과 정책을 연구하도록 하였다"],a:1,e:"강사 해설(7/31) — 「수원화성·정약용이 나오면 이 시기는 무조건 정조」입니다. 장용영·탕평책 계승·규장각은 모두 정조의 업적이 맞지만, <b>동국여지승람</b>은 정조가 아니라 <b>성종</b> 때 편찬한 지리서입니다."},
+{n:11,c:"정조",src:"기출 2021년",q:"정조 때의 역사적 사실로 옳은 것은?",o:["장용영 설치","속오례의 편찬","삼정이정청 설치","백두산 정계비 설치"],a:0,e:"강사 해설(7/31) — <b>삼정이정청</b>은 세도정치 시기에 만든 관청이라 정조와 관련이 없고, <b>속오례의</b>는 영조, <b>백두산 정계비</b>는 숙종 때 세운 것입니다. 정조의 것은 친위 부대 <b>장용영</b>입니다."},
+{n:12,c:"정조",src:"기출 2016년",q:"다음에 해당하는 국왕의 업적으로 옳은 것은? — 「1789년 아버지인 사도세자의 묘를 당시 수원 읍성이 있던 지역으로 옮겼다. 그 대신 수원 읍성은 오늘날의 수원으로 옮기고 이름을 화성부라 하였다.」",o:["장용영 설치","별기군 설치","금위영 설치","훈련도감 설치"],a:0,e:"강사 해설(7/31) — 「사도세자·수원화성이면 정조」입니다. <b>금위영</b>은 숙종 때 만든 5군영의 마지막, <b>별기군</b>은 고종 때 신식 군대, <b>훈련도감</b>은 선조(임진왜란) 때라 모두 시대가 다릅니다."},
+{n:13,c:"정조",src:"예상문제",q:"「신진 인물이나 중·하급 관리 중에서 유능한 인사를 재교육하는 초계문신제를 실시하였다.」 이 제도를 실시한 국왕은?",o:["숙종","영조","순조","정조"],a:3,e:"초계문신제는 <b>정조</b>가 실시한 제도입니다(2024년 기출로 출제되었으나 원 자료에 선택지 4개가 기록돼 있지 않아 같은 개념의 예상문제로 재구성했습니다). 정조가 자기 사람을 직접 길러 쓰려 한 정책 세트(규장각·장용영·초계문신제) 중 하나입니다."},
+{n:14,c:"정조",src:"기출 2015년",q:"조선 정조대에 편찬된 법전은?",o:["속대전","경국대전","대전통편","대전회통"],a:2,e:"강사 해설(7/31) — 속대전=영조, 경국대전=세조 편찬 시작·성종 완성, <b>대전통편=정조</b>, 대전회통=흥선대원군(고종 대)입니다."},
+{n:15,c:"정조",src:"기출 2014년",q:"영조와 정조 시대의 사회상에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["초계문신제도를 시행하였다","시전 상인이 가지고 있던 금난전권이 폐지되었다","군역의 부담을 줄여주기 위하여 균역법을 시행하였다","주자소를 설치하고 처음으로 계미자를 주조하였다"],a:3,e:"강사 해설(7/31) — 초계문신제·금난전권 폐지는 정조, 균역법은 영조로 모두 맞습니다. 그러나 <b>주자소 설치와 계미자 주조는 태종(이방원)</b> 때 일입니다. 세종 때 만든 금속활자는 <b>갑인자</b>, 종이 만드는 관청은 <b>조지서</b>로 구분해 외우라고 짚었습니다."},
+{n:16,c:"세도 정치·농민 봉기",src:"예상문제",q:"세도 정치에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["순조·헌종·철종 대에 걸쳐 60여 년간 이어졌다","안동 김씨·풍양 조씨 등 왕의 외척 가문이 권력을 독점하였다","비변사와 훈련도감 등 핵심 기구를 장악하였다","왕권이 강화되고 정치 기강이 확립되었다"],a:3,e:"세도 정치기에는 오히려 <b>왕권이 약해지고</b> 정치 기강이 무너져 <b>매관매직</b>이 성행했고, 그 결과 전정·군정·환곡의 <b>삼정의 문란</b>으로 이어졌습니다. 나머지 세 설명은 모두 옳습니다."},
+{n:17,c:"세도 정치·농민 봉기",src:"예상문제",q:"홍경래의 난과 임술 농민 봉기에 관한 설명으로 옳은 것은?",o:["홍경래의 난(1811, 평안도)이 임술 농민 봉기(1862, 진주)보다 먼저 일어났다","임술 농민 봉기가 홍경래의 난보다 먼저 일어났다","홍경래의 난은 진주에서, 임술 농민 봉기는 평안도에서 일어났다","두 사건 모두 삼정의 문란이 전국적으로 극심하던 같은 시기에 일어났다"],a:0,e:"<b>홍경래의 난(1811, 평안도) → 임술 농민 봉기(1862, 진주→전국)</b> 순입니다. 홍경래의 난의 가장 중요한 원인은 <b>평안도(서북) 지역 차별</b>이며, 이때는 세도 정치 초반기라 삼정의 문란이 아직 전국적으로 심하지는 않았습니다(강사, 7/26 약 5시간9분경)."},
+{n:18,c:"세도 정치·농민 봉기",src:"예상문제",q:"「임술 농민 봉기는 진주 지방을 비롯한 여러 지역에서 일어났다. 정부에서는 안핵사 등을 파견하여 실정을 조사하고, ( )를(을) 설치하는 등 농민 부담을 완화하려 하였지만 그 근본적인 문제를 해결하지는 못하였다.」 괄호에 들어갈 기구는?",o:["규장각","장용영","삼정이정청","비변사"],a:2,e:"괄호에 들어갈 기구는 <b>삼정이정청</b>입니다(2025년 기출로 출제되었으나 원 자료에 선택지 4개가 기록돼 있지 않아 같은 개념의 예상문제로 재구성했습니다). 강사는 삼정이정청이 <b>세도 정치 때 삼정의 문란을 해결하기 위해 만든 관청</b>이라 정조와는 관련이 없다고 특별히 짚었습니다."},
+{n:19,c:"대외관계·교육기관 등",src:"기출 2025년",q:"다음 연표(조선 건국 → (가) → 중종반정 → (나) → 정조 즉위)에서 (가), (나)에 들어갈 역사적 사실로 옳지 <b>않은</b> 것은?",o:["(가) - 4군 6진 설치","(가) - 임진왜란 발발","(나) - 백두산정계비 설치","(나) - 송시열 등의 북벌론 주장"],a:1,e:"<b>임진왜란(1592)</b>은 <b>중종반정(1506)</b>보다 나중이므로 (가)가 아니라 (나) 구간에 들어가야 합니다. 4군 6진(세종)은 중종반정 이전이라 (가)가 맞고, 백두산정계비(숙종)·송시열의 북벌론(효종~현종)은 중종반정과 정조 즉위 사이라 (나)가 맞습니다."},
+{n:20,c:"대외관계·교육기관 등",src:"기출 2021년",q:"광해군 때의 역사적 사실에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["대동법이 시행되었다","북벌 운동이 전개되었다","북인 세력이 왕을 지지하였다","동의보감의 편찬이 완성되었다"],a:1,e:"강사 해설(7/31) — 대동법 시행, 북인 집권, 동의보감 편찬은 모두 광해군 때가 맞습니다. 그러나 <b>북벌 운동</b>은 광해군이 아니라 <b>효종</b> 때부터 시작된 것입니다."},
+{n:21,c:"대외관계·교육기관 등",src:"기출 2014년",q:"조선시대 대외 관계 중 그 내용이 잘못 연결된 것은?",o:["나선정벌(羅禪征伐) - 효종 대 여진 정벌","신미양요(辛未洋擾) - 고종 대 미국의 강화도 공격","대마도 정벌(對馬島 征伐) - 세종 대 왜구 근거지 소탕","병자호란(丙子胡亂) - 인조 대 청의 조선 침입"],a:0,e:"강사 해설(7/31) — 「나선(羅禪)이 어디냐면 <b>러시아</b>다. 그런데 '여진 정벌'이라고 짝지어 놨으니 틀려서 정답」. 나선정벌은 효종 대인 것은 맞지만 상대는 <b>러시아</b>입니다. 나머지 세 연결은 모두 옳습니다."},
+{n:22,c:"대외관계·교육기관 등",src:"기출 2016년",q:"조선시대 통신사에 관한 설명으로 옳은 것을 모두 고른 것은? — ㄱ.매년 정기적으로 파견하였다 / ㄴ.일본의 요청에 의해 파견이 이루어졌다 / ㄷ.조선의 선진 문화를 전파하는 역할을 하였다",o:["ㄷ","ㄱ, ㄴ","ㄱ, ㄷ","ㄴ, ㄷ"],a:3,e:"강사 해설(7/31) — 통신사는 매년 정기적으로 파견한 것이 아니라 <b>일본(에도 막부)의 요청이 있을 때만</b>(총 12회) 보낸 사절이라 ㄱ은 틀립니다. 동시에 <b>조선의 선진 문물을 전파</b>하는 문화 사절 역할도 했으므로 ㄴ·ㄷ이 옳습니다."},
+{n:23,c:"대외관계·교육기관 등",src:"기출 2013년",q:"다음에서 공통적으로 설명하고 있는 섬은? — 「이곳에 있었던 삼별초는 원나라의 군대와 고려 정부군에 의해 토벌되었으며, 이곳은 원나라의 직할령이 되었다.」 / 「네덜란드 동인도회사 소속 선박 선원이었던 헨드릭 하멜은 1653년 일본 나가사키로 가던 도중에 태풍을 만나 일행 36명과 함께 이곳에 표류하였다.」",o:["진도","거문도","제주도","거제도"],a:2,e:"강사 해설(7/31) — 삼별초가 싸운 곳은 <b>강화도→진도→제주도</b> 순인데, 그중 '진압됐다'는 것은 마지막 항쟁지인 <b>제주도</b>입니다. 하멜의 표류지도 제주도이고, 하멜보다 먼저 표류해 조선에 정착한 <b>벨테브레(박연)</b>도 제주도였습니다."},
+{n:24,c:"대외관계·교육기관 등",src:"기출 2014년",q:"다음 내용과 관련된 것은? — 「조선시대 최고(最高)의 국립 교육 기관으로 입학 자격은 생원, 진사를 원칙으로 하였다. 도서관으로 존경각을 두었다.」",o:["향교","성균관","서원","동약"],a:1,e:"강사 해설(7/31) — 조선 최고(最高)의 교육기관이자 원칙적으로 소과 합격자(<b>생원·진사</b>)만 갈 수 있는 학교는 <b>성균관</b>입니다. 도서관으로 존경각을 두었습니다."},
+{n:25,c:"대외관계·교육기관 등",src:"기출 2018년",q:"조선시대 교육 기관에 관한 설명으로 옳지 <b>않은</b> 것은?",o:["서원과 서당은 사립 교육 기관이었다","성균관의 입학 자격은 생원과 진사를 원칙으로 하였다","잡학은 해당 기술 관청에서 직접 교육을 담당하였다","중앙에 향교를 두고 지방에 서학, 동학, 남학, 중학의 4부 학당을 두었다"],a:3,e:"강사 해설(7/31) — 「완전히 반대로 써놨다」. 조선시대 <b>중앙(한양)에는 4부 학당(동·서·남·중학)</b>이 있었고, <b>지방에 향교</b>가 설치되었습니다. 서원·서당(사립), 성균관 입학 자격(생원·진사), 잡학(해당 기술 관청 교육)은 모두 옳은 설명입니다."}
+];
+var sel={},graded=false,t0=null,tick=null;
+var live=null,lastWrong=[];
+function visible(){return live?QS.filter(function(q){return live.indexOf(q.n)>=0}):QS;}
+function render(){
+var L=visible();var h='';
+for(var i=0;i<L.length;i++){var q=L[i];
+h+='<div class="q" id="q'+q.n+'"><div class="qh"><span class="qn">Q'+q.n+'</span><span class="tag'+(q.src.indexOf('기출')===0?' real':'')+'">'+q.src+'</span></div><div class="qt">'+q.q+'</div><ul class="opts">';
+for(var j=0;j<q.o.length;j++){h+='<li onclick="pick('+q.n+','+j+')" id="o'+q.n+'_'+j+'"><span class="no">'+'①②③④'[j]+'</span><span>'+q.o[j]+'</span></li>';}
+h+='</ul><div class="exp"><b>해설</b> — '+q.e+'</div></div>';}
+document.getElementById('quiz').innerHTML=h;
+}
+function pick(n,j){
+if(graded)return;
+if(!t0){t0=Date.now();tick=setInterval(tm,1000);}
+var q=QS.filter(function(x){return x.n===n})[0];
+for(var k=0;k<q.o.length;k++){var el=document.getElementById('o'+n+'_'+k);if(el)el.classList.remove('sel');}
+document.getElementById('o'+n+'_'+j).classList.add('sel');
+sel[n]=j;prog();
+}
+function prog(){document.getElementById('pg').textContent=Object.keys(sel).length+' / '+visible().length+' 선택';}
+function tm(){if(!t0)return;var s=Math.floor((Date.now()-t0)/1000);var m=Math.floor(s/60);s=s%60;document.getElementById('tm').textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+function grade(){
+if(graded)return;
+graded=true;if(tick){clearInterval(tick);tick=null;}
+var L=visible();var right=0,wrong=[],cat={};
+for(var i=0;i<L.length;i++){var q=L[i];var box=document.getElementById('q'+q.n);box.classList.add('graded');
+if(!cat[q.c])cat[q.c]={r:0,t:0};cat[q.c].t++;
+var my=(q.n in sel)?sel[q.n]:-1;
+for(var j=0;j<q.o.length;j++){var el=document.getElementById('o'+q.n+'_'+j);
+if(j===q.a){el.classList.add('correct');el.innerHTML+='<span class="mark mo">정답</span>';}
+else if(j===my){el.classList.add('wrong');el.innerHTML+='<span class="mark mx">내 선택</span>';}}
+if(my===q.a){right++;cat[q.c].r++;}else{wrong.push(q);}
+}
+var pct=Math.round(right/L.length*100);
+document.getElementById('scoreBig').textContent=pct+'점';
+document.getElementById('scoreLab').textContent=L.length+'문항 중 '+right+'문항 정답 · 소요시간 '+document.getElementById('tm').textContent;
+var b='';for(var c in cat){b+='<span>'+c+' '+cat[c].r+'/'+cat[c].t+'</span>';}
+document.getElementById('scoreBrk').innerHTML=b;
+var wb=document.getElementById('wrongBox');
+if(wrong.length){var w='<b>틀린 문항 '+wrong.length+'개</b><ul>';
+for(var i=0;i<wrong.length;i++){var my2=(wrong[i].n in sel)?'①②③④'[sel[wrong[i].n]]:'무응답';
+w+='<li>Q'+wrong[i].n+' ('+wrong[i].c+') — 내 답 '+my2+' / 정답 '+'①②③④'[wrong[i].a]+'</li>';}
+w+='</ul>';wb.innerHTML=w;wb.style.display='block';
+lastWrong=wrong.map(function(q){return q.n});
+document.getElementById('wrongBtn').style.display='';
+}else{wb.innerHTML='<b>전부 맞혔습니다.</b>';wb.style.display='block';lastWrong=[];document.getElementById('wrongBtn').style.display='none';}
+var tx='[관광국사 14단원 — 조선 후기의 정치] 테스트 결과\n';
+tx+='점수: '+pct+'점 ('+right+'/'+L.length+') · 소요시간 '+document.getElementById('tm').textContent+'\n';
+tx+='항목별: ';for(var c in cat){tx+=c+' '+cat[c].r+'/'+cat[c].t+'  ';}
+tx+='\n\n[틀린 문항]\n';
+if(wrong.length===0){tx+='없음\n';}
+for(var i=0;i<wrong.length;i++){var q=wrong[i];var my=(q.n in sel)?'①②③④'[sel[q.n]]:'무응답';
+tx+='Q'+q.n+' ['+q.c+'] ('+q.src+') '+q.q.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ')+'\n  내 답: '+my+' / 정답: '+'①②③④'[q.a]+' '+q.o[q.a]+'\n';}
+document.getElementById('exp').value=tx;
+document.getElementById('score').classList.add('on');
+document.getElementById('gradeBtn').disabled=true;
+document.getElementById('score').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function onlyWrong(){
+if(!lastWrong.length){return;}
+live=lastWrong.slice();
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function reset(){
+live=null;lastWrong=[];
+sel={};graded=false;t0=null;if(tick){clearInterval(tick);tick=null;}
+document.getElementById('tm').textContent='00:00';
+document.getElementById('score').classList.remove('on');
+document.getElementById('gradeBtn').disabled=false;
+document.getElementById('wrongBtn').style.display='none';
+render();prog();
+window.scrollTo({top:document.getElementById('quiz').offsetTop-120,behavior:'smooth'});
+}
+function copyExp(){var t=document.getElementById('exp');t.select();try{document.execCommand('copy');}catch(e){}}
+render();prog();
+</script>
+</body>
+</html>
