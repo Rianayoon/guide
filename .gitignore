@@ -6,7 +6,6 @@
 *.m4a
 *.zip
 *.tar.gz
-*.srt
 .DS_Store
 pages/
 ocr/
