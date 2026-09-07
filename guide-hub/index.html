@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>guide-hub — 관광통역안내사 2027</title>
+<title>학습허브 — 관광통역안내사</title>
 <meta name="description" content="관광통역안내사 필기 4과목 학습허브 — 단원별 자료 · 문제지 · 모의고사 · 최빈출 분석">
 <meta name="theme-color" content="#0C1634">
 <link rel="manifest" href="./manifest.webmanifest">
@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="./icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="guide-hub">
+<meta name="apple-mobile-web-app-title" content="학습허브">
 <script src="./support.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
@@ -46,13 +46,16 @@
     <div style="position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:24px;background:rgb(12,22,52)">
       <div style="display:flex;flex-direction:column;gap:20px;width:100%;max-width:380px;padding:24px;border-radius:16px;background:rgb(255,255,255)">
         <div style="display:flex;flex-direction:column;gap:4px">
-          <span style="font-weight:700;font-size:24px;line-height:1.2;letter-spacing:-0.016em;color:rgb(12,22,52)">guide-hub</span>
-          <span style="font-weight:500;font-size:12px;line-height:1.4;letter-spacing:0.04em;color:rgb(112,115,124)">관광통역안내사 2027 · 학습허브</span>
+          <span style="font-weight:700;font-size:24px;line-height:1.2;letter-spacing:-0.016em;color:rgb(12,22,52)">학습허브</span>
+          <span style="font-weight:500;font-size:12px;line-height:1.4;letter-spacing:0.04em;color:rgb(112,115,124)">관광통역안내사 필기 4과목</span>
         </div>
 
         <div style="display:flex;flex-direction:column;gap:8px">
           <span style="font-weight:600;font-size:12px;line-height:1.4;letter-spacing:0.03em;color:rgb(112,115,124)">{{ pwPlaceholder }}</span>
-          <input type="password" value="{{ pw }}" onInput="{{ onPw }}" onKeyDown="{{ onPwKey }}" placeholder="{{ pwPlaceholder }}" style="height:46px;padding:0 16px;border:none;border-radius:9px;outline:none;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.4;color:rgb(23,23,25)">
+          <div style="position:relative;display:flex;align-items:center">
+            <input type="{{ pwType }}" value="{{ pw }}" onInput="{{ onPw }}" onKeyDown="{{ onPwKey }}" placeholder="{{ pwPlaceholder }}" style="flex:1 1 auto;min-width:0;width:100%;height:46px;padding:0 84px 0 16px;border:none;border-radius:9px;outline:none;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.4;color:rgb(23,23,25)">
+            <button type="button" onClick="{{ pwToggle }}" style="position:absolute;right:6px;display:inline-flex;align-items:center;height:34px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:12px;line-height:1.4;letter-spacing:0.03em;background:rgba(112,115,124,0.12);color:rgb(46,47,51)" style-hover="background:rgba(112,115,124,0.2)">{{ pwToggleLabel }}</button>
+          </div>
           <span style="{{ pwErrStyle }}">{{ pwErr }}</span>
         </div>
 
@@ -69,8 +72,8 @@
   <aside style="{{ sideStyle }}">
     <div style="{{ brandRowStyle }}">
       <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
-        <span style="{{ brandStyle }}">guide-hub</span>
-        <span style="{{ brandSubStyle }}">관광통역안내사 2027</span>
+        <span style="{{ brandStyle }}">학습허브</span>
+        <span style="{{ brandSubStyle }}">{{ brandSub }}</span>
       </div>
       <button type="button" onClick="{{ toggleNav }}" style="{{ menuBtnStyle }}">{{ menuBtnLabel }}</button>
     </div>
@@ -1194,22 +1197,60 @@
                 <span style="{{ photoBadge }}">바꾸기</span>
               </button>
               <div style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0">
-                <span style="font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-0.016em;color:rgb(255,255,255)">리아나</span>
-                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgba(255,255,255,0.66)">2027년 관광통역안내사 · 영어</span>
+                <span style="font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-0.016em;color:rgb(255,255,255)">{{ profName }}</span>
+                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgba(255,255,255,0.66)">{{ profSub }}</span>
               </div>
               <span style="display:inline-flex;align-items:center;height:30px;padding:0 11px;border-radius:6px;background:rgba(255,255,255,0.12);font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgba(255,255,255,0.72);white-space:nowrap">공용 계정</span>
+              <button type="button" onClick="{{ profToggle }}" style="display:inline-flex;align-items:center;height:30px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.03em;background:rgb(255,214,0);color:rgb(12,22,52);white-space:nowrap">{{ profEditLabel }}</button>
             </div>
             <span style="{{ ctlHint }}">{{ examLabelFull }}까지 D-{{ dday }} · 오답 {{ myWrongCount }}문항 · 응시 기록 {{ myRoundCount }}회</span>
           </section>
 
+          <sc-if value="{{ profEdit }}" hint-placeholder-val="{{ false }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <div style="display:flex;align-items:baseline;gap:8px">
+                <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.011em;color:rgb(23,23,25);white-space:nowrap">내 정보 고치기</span>
+                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">고치는 대로 바로 저장됩니다</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:12px">
+                <label style="display:flex;flex-direction:column;gap:4px;flex:1 1 100%;min-width:min(220px,100%);max-width:280px">
+                  <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.04em;color:rgb(112,115,124)">이름</span>
+                  <input type="text" value="{{ profName }}" onChange="{{ setProfName }}" onInput="{{ setProfName }}" placeholder="이름" style="width:100%;height:38px;padding:0 12px;border:none;border-radius:9px;outline:none;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.4;color:rgb(23,23,25)">
+                </label>
+                <div style="display:flex;flex-direction:column;gap:8px;flex:1 1 100%;min-width:0">
+                  <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.04em;color:rgb(112,115,124)">관통사 언어</span>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    <sc-for list="{{ langOpts }}" as="lo" hint-placeholder-count="4">
+                      <button type="button" onClick="{{ lo.go }}" style="{{ lo.style }}">{{ lo.label }}</button>
+                    </sc-for>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:8px;flex:1 1 100%;min-width:0">
+                  <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.04em;color:rgb(112,115,124)">응시 연도</span>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    <sc-for list="{{ yearOpts }}" as="yo" hint-placeholder-count="4">
+                      <button type="button" onClick="{{ yo.go }}" style="{{ yo.style }}">{{ yo.label }}</button>
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </sc-if>
+
           <section style="display:flex;flex-direction:column;gap:12px">
             <span style="{{ panelTitle }}">학습 설정</span>
             <div style="display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-              <div style="display:flex;align-items:center;gap:16px;padding:16px 20px">
-                <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0">
+              <div style="display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 20px">
+                <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 160px;min-width:0">
                   <span style="font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(23,23,25)">시험일</span>
                   <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ examLabelFull }}</span>
                 </span>
+                <div style="display:flex;gap:8px">
+                  <sc-for list="{{ examKindOpts }}" as="ek" hint-placeholder-count="2">
+                    <button type="button" onClick="{{ ek.go }}" style="{{ ek.style }}">{{ ek.label }}</button>
+                  </sc-for>
+                </div>
+                <input type="date" value="{{ profExamDate }}" onChange="{{ setExamDate }}" style="height:38px;padding:0 12px;border:none;border-radius:9px;outline:none;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.4;color:rgb(23,23,25)">
                 <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:12px;color:rgb(12,22,52);white-space:nowrap">D-{{ dday }}</span>
               </div>
               <sc-for list="{{ settings }}" as="opt" hint-placeholder-count="4">
@@ -1236,11 +1277,12 @@
                 </div>
               </div>
               <sc-for list="{{ routineRows }}" as="rr" hint-placeholder-count="3">
-                <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;border-top:1px solid rgba(112,115,124,0.1)">
-                  <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0">
+                <div style="display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 20px;border-top:1px solid rgba(112,115,124,0.1)">
+                  <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 140px;min-width:0">
                     <span style="font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(23,23,25)">{{ rr.label }}</span>
                     <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ rr.hint }}</span>
                   </span>
+                  <input type="time" value="{{ rr.time }}" onChange="{{ rr.setTime }}" style="height:38px;padding:0 10px;border:none;border-radius:9px;outline:none;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.4;color:rgb(23,23,25)">
                   <button type="button" onClick="{{ rr.toggle }}" style="{{ rr.switchTrack }}"><span style="{{ rr.switchKnob }}"></span></button>
                 </div>
               </sc-for>
@@ -1312,6 +1354,9 @@ class Component extends DCLogic {
     filter: '전체',
     query: '팔만대장경',
     toggles: { alarm: true, weekend: false, autoReview: true, sound: false },
+    prof: { name: '리아나', lang: '영어', year: '2027', examDate: '2026-11-14', examKind: '2차 면접' },
+    routineTimes: { morning: '07:30', noon: '12:30', night: '21:00' },
+    profEdit: false,
     ready: false,
     narrow: false,
     navOpen: false,
@@ -1327,6 +1372,7 @@ class Component extends DCLogic {
     pw: '',
     pwErr: '',
     pwMode: 'pass',
+    pwShow: false,
     w: 1200,
     lang: 'ja',
     topic: 0,
@@ -1450,7 +1496,9 @@ class Component extends DCLogic {
       const lg = localStorage.getItem('gwantongsa-hub-log-v1');
       if (lg) this.setState({ log: JSON.parse(lg) || [] });
       const rt = localStorage.getItem('gwantongsa-hub-routine-v1');
-      if (rt) { const r = JSON.parse(rt) || {}; this.setState({ routines: r.routines || this.state.routines, routineKind: r.kind || 'quiz' }); }
+      if (rt) { const r = JSON.parse(rt) || {}; this.setState({ routines: r.routines || this.state.routines, routineKind: r.kind || 'quiz', routineTimes: Object.assign({}, this.state.routineTimes, r.times || {}) }); }
+      const pf = localStorage.getItem('gwantongsa-hub-profile-v1');
+      if (pf) { const p = JSON.parse(pf) || {}; this.setState({ prof: Object.assign({}, this.state.prof, p) }); }
       if (window.Notification) this.setState({ notifPerm: Notification.permission });
     } catch (e) { /* storage 불가 */ }
     try {
@@ -1723,6 +1771,7 @@ class Component extends DCLogic {
 
     (this.state.linkDocs || []).forEach((x) => {
       if (!ok(x.s)) return;
+      if (x.dead) return;
       if (!this.nHit(x.txt || '', nkey)) return;
       G['링크'].push({ head: (x.s || '') + (x.k ? ' · ' + x.k : ''), title: (x.txt || '').split(' — ')[0].slice(0, 70), body: (x.txt || '').slice(0, 150), meta: '', url: x.url || '', vkind: 'doc' });
     });
@@ -2366,10 +2415,13 @@ class Component extends DCLogic {
   }
 
   static ROUTINES = [
-    ['morning', '아침 07:30', 7, 30],
-    ['noon', '점심 12:30', 12, 30],
-    ['night', '저녁 21:00', 21, 0]
+    ['morning', '아침'],
+    ['noon', '점심'],
+    ['night', '저녁']
   ];
+
+  static LANGS = ['영어', '일본어', '중국어', '프랑스어', '독일어', '스페인어', '러시아어', '이탈리아어', '태국어', '베트남어', '말레이·인도네시아어', '아랍어'];
+  static EXAM_KINDS = ['필기', '2차 면접'];
 
   static KINDS = [
     ['quiz', '랜덤 문제 1문항'],
@@ -2379,8 +2431,26 @@ class Component extends DCLogic {
 
   routineSave() {
     try {
-      localStorage.setItem('gwantongsa-hub-routine-v1', JSON.stringify({ routines: this.state.routines, kind: this.state.routineKind }));
+      localStorage.setItem('gwantongsa-hub-routine-v1', JSON.stringify({ routines: this.state.routines, kind: this.state.routineKind, times: this.state.routineTimes }));
     } catch (e) { /* noop */ }
+  }
+
+  profSave() {
+    try { localStorage.setItem('gwantongsa-hub-profile-v1', JSON.stringify(this.state.prof)); } catch (e) { /* noop */ }
+  }
+
+  profSet(k, v) {
+    this.setState((p) => ({ prof: Object.assign({}, p.prof, { [k]: v }) }), () => this.profSave());
+  }
+
+  timeSet(k, v) {
+    if (!/^\d{1,2}:\d{2}$/.test(v || '')) return;
+    this.setState((p) => ({ routineTimes: Object.assign({}, p.routineTimes, { [k]: v }) }), () => this.routineSave());
+  }
+
+  routineHM(k) {
+    const t = (this.state.routineTimes || {})[k] || '00:00';
+    return [parseInt(t.slice(0, 2), 10) || 0, parseInt(t.slice(3, 5), 10) || 0];
   }
 
   askNotif() {
@@ -2395,14 +2465,16 @@ class Component extends DCLogic {
       const hh = now.getHours(), mm = now.getMinutes();
       Component.ROUTINES.forEach((r) => {
         if (!this.state.routines[r[0]]) return;
-        if (hh !== r[2] || mm !== r[3]) return;
+        const hm = this.routineHM(r[0]);
+        if (hh !== hm[0] || mm !== hm[1]) return;
         const tag = this.dayKey(now.getFullYear(), now.getMonth(), now.getDate()) + '/' + r[0];
         if (this.state.fired.indexOf(tag) >= 0) return;
         this.setState((p) => ({ fired: p.fired.concat([tag]) }));
         const kind = (Component.KINDS.find((k) => k[0] === this.state.routineKind) || Component.KINDS[0])[1];
-        this.logAdd('routine', r[1] + ' 루틴 알림', kind);
+        const rlab = r[1] + ' ' + (this.state.routineTimes || {})[r[0]];
+        this.logAdd('routine', rlab + ' 루틴 알림', kind);
         if (window.Notification && Notification.permission === 'granted') {
-          try { new Notification('guide-hub · ' + r[1], { body: kind + ' 시간입니다' }); } catch (e) { /* noop */ }
+          try { new Notification('학습허브 · ' + rlab, { body: kind + ' 시간입니다' }); } catch (e) { /* noop */ }
         }
       });
     }, 30000);
@@ -2677,9 +2749,11 @@ class Component extends DCLogic {
     const poolSpan = this.yearSpan(s.pool || []);
     const poolCount = (s.pool || []).length;
     const th = this.th();
-    const examDate = this.props.examDate ?? '2026-11-14';
+    const prof = s.prof || {};
+    const examDate = prof.examDate || this.props.examDate || '2026-11-14';
     const exam = new Date(examDate + 'T00:00:00');
-    const today = new Date(2026, 8, 6);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
     const dday = Math.max(0, Math.round((exam - today) / 86400000));
     const totalSpan = 240;
     const elapsed = Math.min(100, Math.max(0, Math.round(((totalSpan - dday) / totalSpan) * 100)));
@@ -2834,7 +2908,7 @@ class Component extends DCLogic {
     }
 
     const settingsDef = [
-      ['alarm', '학습 알림', '매일 오후 9시 복습 알림'],
+      ['alarm', '학습 알림', '저녁 ' + ((s.routineTimes || {}).night || '21:00') + ' 복습 알림'],
       ['autoReview', '자동 복습 배치', '망각곡선에 맞춰 1·3·7일 후 재출제'],
       ['weekend', '주말 학습 포함', '토·일에도 진도 목표를 계산'],
       ['sound', '정답 효과음', '문제 풀이 중 효과음 재생']
@@ -2854,6 +2928,9 @@ class Component extends DCLogic {
       pwHint: s.pwMode === 'pass' ? '학원에서 받은 공용 비밀번호를 넣으세요' : '리아나 님께 받은 복구 비밀번호를 넣으세요',
       pwSwitchLabel: s.pwMode === 'pass' ? '비밀번호를 잊었어요' : '공용 비밀번호로 입력',
       pwSwitch: () => this.setState({ pwMode: s.pwMode === 'pass' ? 'recover' : 'pass', pw: '', pwErr: '' }),
+      pwType: s.pwShow ? 'text' : 'password',
+      pwToggleLabel: s.pwShow ? '안 보기' : '보기',
+      pwToggle: () => this.setState((p) => ({ pwShow: !p.pwShow })),
       onPw: (e) => this.setState({ pw: e.target.value, pwErr: '' }),
       onPwKey: (e) => { if (e.key === 'Enter') this.submitPass(); },
       submitPw: () => this.submitPass(),
@@ -2875,9 +2952,12 @@ class Component extends DCLogic {
       goMy: this.go('my'),
       routineRows: Component.ROUTINES.map((r) => {
         const on = !!s.routines[r[0]];
+        const tv = (s.routineTimes || {})[r[0]] || '00:00';
         return {
-          label: r[1],
-          hint: on ? '알림을 보냅니다' : '꺼져 있습니다',
+          label: r[1] + ' ' + tv,
+          time: tv,
+          setTime: (e) => this.timeSet(r[0], e.target.value),
+          hint: on ? '이 시간에 리마인드를 받습니다' : '리마인드 안 받습니다',
           switchTrack: 'position:relative;display:inline-flex;align-items:center;flex-shrink:0;width:52px;height:32px;padding:0;border:none;border-radius:16px;cursor:pointer;font-family:inherit;transition:background 140ms;background:' +
             (on ? 'rgb(0,102,255)' : 'rgba(112,115,124,0.28)'),
           switchKnob: 'position:absolute;top:3px;left:' + (on ? '23px' : '3px') + ';width:26px;height:26px;border-radius:13px;background:rgb(255,255,255);box-shadow:0 1px 3px rgba(0,0,0,0.18);transition:left 140ms;display:block',
@@ -2892,6 +2972,24 @@ class Component extends DCLogic {
       notifPermLabel: s.notifPerm === 'granted' ? '브라우저 알림 켜짐' : s.notifPerm === 'denied' ? '브라우저 알림 차단됨' : '브라우저 알림 허용하기',
       notifPermAsk: () => this.askNotif(),
       myPassLabel: Component.PASS,
+      brandSub: '관광통역안내사 ' + (prof.year || '2027'),
+      profName: prof.name || '리아나',
+      profSub: (prof.year || '2027') + '년 관광통역안내사 · ' + (prof.lang || '영어'),
+      profLang: prof.lang || '영어',
+      profYear: String(prof.year || '2027'),
+      profExamDate: examDate,
+      profExamKind: prof.examKind || '2차 면접',
+      profEdit: s.profEdit ? true : undefined,
+      profEditLabel: s.profEdit ? '닫기' : '고치기',
+      profToggle: () => this.setState((p) => ({ profEdit: !p.profEdit })),
+      setProfName: (e) => this.profSet('name', e.target.value),
+      setProfLang: (e) => this.profSet('lang', e.target.value),
+      setProfYear: (e) => this.profSet('year', e.target.value),
+      setExamDate: (e) => { if (e.target.value) this.profSet('examDate', e.target.value); },
+      setExamKind: (e) => this.profSet('examKind', e.target.value),
+      langOpts: Component.LANGS.map((v) => ({ label: v, style: this.chipLight(v === (prof.lang || '영어')), go: () => this.profSet('lang', v) })),
+      yearOpts: ['2026', '2027', '2028', '2029', '2030'].map((v) => ({ label: v + '년', style: this.chipLight(v === String(prof.year || '2027')), go: () => this.profSet('year', v) })),
+      examKindOpts: Component.EXAM_KINDS.map((v) => ({ label: v, style: this.chipLight(v === (prof.examKind || '2차 면접')), go: () => this.profSet('examKind', v) })),
       myWrongCount: String(new Set(s.emWrong || []).size),
       myRoundCount: String((s.emHistory || []).length),
       screenColStyle: 'display:flex;flex-direction:column;gap:' + (s.narrow ? '16px' : '20px') + ';max-width:880px;width:100%',
@@ -2938,8 +3036,7 @@ class Component extends DCLogic {
       menuBtnLabel: s.navOpen ? '닫기' : '메뉴',
       menuBtnStyle: s.narrow
         ? 'display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;letter-spacing:0.009em;background:' +
-          (s.navOpen ? 'rgb(255,214,0)' : 'rgba(255,255,255,0.16)') + ';color:' +
-          (s.navOpen ? 'rgb(12,22,52)' : 'rgb(255,255,255)')
+          'rgb(255,214,0);color:rgb(12,22,52)'
         : 'display:none',
       navWrapStyle: s.narrow
         ? (s.navOpen ? 'display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding-top:4px' : 'display:none')
@@ -2982,8 +3079,8 @@ class Component extends DCLogic {
       pageTitle: t[0],
       pageSub: t[1],
       dday: dday,
-      examLabel: '2차 면접',
-      examLabelFull: examDate.replace(/-/g, '. ') + ' · 2차 면접',
+      examLabel: prof.examKind || '2차 면접',
+      examLabelFull: examDate.replace(/-/g, '. ') + ' · ' + (prof.examKind || '2차 면접'),
       ddayBar: 'height:100%;border-radius:3px;background:' + th.accent + ';width:' + elapsed + '%',
 
       nav: navDef.map((n) => ({

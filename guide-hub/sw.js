@@ -1,4 +1,4 @@
-const V = 'guide-hub-v1';
+const V = 'guide-hub-v2';
 const CDN = [
   'https://unpkg.com/react@18.3.1/umd/react.production.min.js',
   'https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js',
