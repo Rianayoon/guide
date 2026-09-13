@@ -1567,7 +1567,7 @@ class Component extends DCLogic {
     filter: '전체',
     query: '팔만대장경',
     toggles: { alarm: true, weekend: false, autoReview: true, sound: false },
-    prof: { name: '리아나', lang: '영어', year: '2027', examDate: '2026-11-14', examKind: '2차 면접' },
+    prof: { name: '리아나', lang: '영어', year: '2027', examDate: '2026-11-14', examKind: '필기' },
     routineTimes: { morning: '07:30', noon: '12:30', night: '21:00' },
     profEdit: false,
     ready: false,
@@ -2706,7 +2706,7 @@ class Component extends DCLogic {
   ];
 
   static LANGS = ['영어', '일본어', '중국어', '프랑스어', '독일어', '스페인어', '러시아어', '이탈리아어', '태국어', '베트남어', '말레이·인도네시아어', '아랍어'];
-  static EXAM_KINDS = ['필기', '2차 면접'];
+  static EXAM_KINDS = ['필기'];
 
   static KINDS = [
     ['quiz', '랜덤 문제 1문항'],
@@ -3784,7 +3784,6 @@ class Component extends DCLogic {
       ['units', '단원별 집합', 'IconNormalListCategoryNameListCategory', null],
       ['freq', '최빈출 분석', 'IconNormalListOrderedNameListOrdered', null],
       ['wrong', '오답노트', 'IconNormalCircleExclamationNameCircleExclamation', wrongU.length ? String(wrongU.length) : null],
-      ['interview', '2차 면접', 'IconNormalMicrophoneNameMicrophoneFillFalse', 'NEW'],
       ['progress', '진도 / 성취', 'IconNormalTrophyNameTrophyFillFalse', null],
       ['search', '검색', 'IconNormalSearchNameSearchThickFalse', null],
       ['my', '마이페이지', 'IconNormalSettingNameSetting', null]
@@ -3966,7 +3965,7 @@ class Component extends DCLogic {
       profLang: prof.lang || '영어',
       profYear: String(prof.year || '2027'),
       profExamDate: examDate,
-      profExamKind: prof.examKind || '2차 면접',
+      profExamKind: prof.examKind || '필기',
       profEdit: s.profEdit ? true : undefined,
       profEditLabel: s.profEdit ? '닫기' : '고치기',
       profToggle: () => this.setState((p) => ({ profEdit: !p.profEdit })),
@@ -3977,7 +3976,7 @@ class Component extends DCLogic {
       setExamKind: (e) => this.profSet('examKind', e.target.value),
       langOpts: Component.LANGS.map((v) => ({ label: v, style: this.chipLight(v === (prof.lang || '영어')), go: () => this.profSet('lang', v) })),
       yearOpts: ['2026', '2027', '2028', '2029', '2030'].map((v) => ({ label: v + '년', style: this.chipLight(v === String(prof.year || '2027')), go: () => this.profSet('year', v) })),
-      examKindOpts: Component.EXAM_KINDS.map((v) => ({ label: v, style: this.chipLight(v === (prof.examKind || '2차 면접')), go: () => this.profSet('examKind', v) })),
+      examKindOpts: Component.EXAM_KINDS.map((v) => ({ label: v, style: this.chipLight(v === (prof.examKind || '필기')), go: () => this.profSet('examKind', v) })),
       myWrongCount: String(new Set(s.emWrong || []).size),
       myRoundCount: String((s.emHistory || []).length),
       screenColStyle: 'display:flex;flex-direction:column;gap:' + (s.narrow ? '16px' : '20px') + ';max-width:880px;width:100%',
@@ -4070,8 +4069,8 @@ class Component extends DCLogic {
       pageTitle: t[0],
       pageSub: t[1],
       dday: dday,
-      examLabel: prof.examKind || '2차 면접',
-      examLabelFull: examDate.replace(/-/g, '. ') + ' · ' + (prof.examKind || '2차 면접'),
+      examLabel: prof.examKind || '필기',
+      examLabelFull: examDate.replace(/-/g, '. ') + ' · ' + (prof.examKind || '필기'),
       ddayBar: 'height:100%;border-radius:3px;background:' + th.accent + ';width:' + elapsed + '%',
 
       nav: navDef.map((n) => ({
