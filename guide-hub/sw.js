@@ -1,4 +1,4 @@
-const V = 'guide-hub-v2';
+const V = 'guide-hub-v4';
 const CDN = [
   'https://unpkg.com/react@18.3.1/umd/react.production.min.js',
   'https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js',
@@ -48,8 +48,15 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  if (req.mode === 'navigate') {
-    e.respondWith(fetch(req).catch(() => caches.match('./index.html')));
+  // HTML·스크립트는 항상 네트워크 먼저 — 새 버전을 올리면 바로 갈립니다
+  if (req.mode === 'navigate' || req.destination === 'document' || /\.(html|js)$/.test(url.pathname)) {
+    e.respondWith(
+      fetch(req).then((r) => {
+        const copy = r.clone();
+        caches.open(V).then((c) => c.put(req, copy));
+        return r;
+      }).catch(() => caches.match(req).then((hit) => hit || caches.match('./index.html')))
+    );
     return;
   }
 

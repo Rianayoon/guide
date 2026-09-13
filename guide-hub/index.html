@@ -108,6 +108,9 @@
   <main style="display:flex;flex-direction:column;min-width:0">
 
     <header style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(112,115,124,0.16);position:sticky;top:0;z-index:10">
+      <button type="button" onClick="{{ backTap }}" title="뒤로" style="{{ backStyle }}">
+        <x-import component-from-global-scope="FigIcon" name="IconNormalChevronLeftNameChevronLeftTightFalseThick" size="20" hint-size="20px,20px"></x-import>
+      </button>
       <div style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0">
         <span style="font-weight:600;font-size:17px;line-height:1.412;letter-spacing:-0.004em;color:rgb(23,23,25)">{{ pageTitle }}</span>
         <span style="font-weight:500;font-size:12px;color:rgb(112,115,124)">{{ pageSub }}</span>
@@ -146,7 +149,7 @@
         <div style="display:flex;flex-direction:column;gap:24px">
 
           <section style="{{ heroStyle }}">
-            <div style="display:flex;flex-direction:column;gap:12px;flex:1 1 320px;min-width:0">
+            <div style="display:flex;flex-direction:column;justify-content:space-between;gap:12px;flex:1 1 320px;min-width:0;padding:20px 0">
               <span style="{{ heroEyebrow }}">오늘의 학습</span>
               <span style="font-weight:700;font-size:30px;line-height:1.22;letter-spacing:-0.028em;color:rgb(255,255,255)">{{ todayUnit }}</span>
               <span style="font-weight:500;font-size:14px;line-height:1.571;color:rgba(255,255,255,0.72)">{{ todayHint }}</span>
@@ -155,7 +158,7 @@
                 <button type="button" onClick="{{ goQuiz }}" style="{{ ctaSecondary }}" style-hover="{{ ctaSecondaryHover }}">복습 문제 풀기</button>
               </div>
             </div>
-            <div style="display:flex;flex-direction:column;gap:8px;flex:1 1 220px;min-width:min(220px,100%);padding:20px;border-radius:16px;background:rgba(255,255,255,0.08)">
+            <div style="display:flex;flex-direction:column;justify-content:space-between;gap:8px;flex:1 1 220px;min-width:min(220px,100%);padding:20px;border-radius:16px;background:rgba(255,255,255,0.08)">
               <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgba(255,255,255,0.72)">연속 학습</span>
               <div style="display:flex;align-items:center;gap:8px">
                 <span style="color:rgb(255,145,0);display:inline-flex"><x-import component-from-global-scope="FigIcon" name="IconNormalFireNameFireFillFillTrue" size="24" hint-size="24px,24px"></x-import></span>
@@ -249,7 +252,7 @@
 
           <div style="display:flex;flex-direction:column;gap:12px">
             <sc-for list="{{ units }}" as="u" hint-placeholder-count="6">
-              <button type="button" onClick="{{ goDetail }}" style="display:flex;align-items:center;gap:20px;padding:20px;border:none;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);cursor:pointer;text-align:left;font-family:inherit" style-hover="box-shadow:inset 0 0 0 1px rgb(12,22,52)">
+              <button type="button" onClick="{{ u.go }}" style="display:flex;align-items:center;gap:20px;padding:20px;border:none;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);cursor:pointer;text-align:left;font-family:inherit" style-hover="box-shadow:inset 0 0 0 1px rgb(12,22,52)">
                 <span style="{{ u.iconWrap }}"><x-import component-from-global-scope="FigIcon" name="{{ u.icon }}" size="22" hint-size="22px,22px"></x-import></span>
                 <span style="display:flex;flex-direction:column;gap:8px;flex:1 1 auto;min-width:0">
                   <span style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
@@ -331,36 +334,68 @@
                         <sc-for list="{{ rw.items }}" as="it" hint-placeholder-count="0">
                           <span style="font-weight:500;font-size:12px;line-height:1.5;color:rgb(112,115,124);text-align:left">{{ it }}</span>
                         </sc-for>
-                        <span style="display:flex;flex-wrap:wrap;gap:4px">
-                          <sc-for list="{{ rw.slots }}" as="sl" hint-placeholder-count="5">
-                            <span style="{{ sl.style }}">{{ sl.key }}</span>
+                        <span style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+                          <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(12,22,52);white-space:nowrap">{{ rw.fill }}</span>
+                          <sc-for list="{{ rw.dots }}" as="dd" hint-placeholder-count="6">
+                            <span style="{{ dd.style }}"></span>
                           </sc-for>
                         </span>
-                        <sc-for list="{{ rw.lecs }}" as="lc" hint-placeholder-count="0">
-                          <span style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
-                            <sc-for list="{{ lc.play }}" as="lp" hint-placeholder-count="0">
-                              <a href="{{ lp.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:4px 10px;border-radius:6px;background:rgb(12,22,52);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:11px;color:rgb(255,255,255);text-decoration:none;white-space:nowrap">{{ lp.label }}</a>
-                            </sc-for>
-                            <span style="font-weight:600;font-size:12px;color:rgb(23,23,25);white-space:nowrap">{{ lc.label }}</span>
-                            <span style="font-weight:500;font-size:11px;letter-spacing:0.03em;color:rgb(12,22,52);white-space:nowrap">{{ lc.page }}</span>
-                          </span>
-                        </sc-for>
-                        <sc-for list="{{ rw.detail }}" as="dt" hint-placeholder-count="0">
-                          <span style="display:flex;align-items:center;gap:8px">
-                            <span style="{{ dt.dot }}"></span>
-                            <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(55,56,60);width:32px;flex-shrink:0">{{ dt.key }}</span>
-                            <span style="font-weight:500;font-size:12px;line-height:1.5;color:rgb(112,115,124);flex:1 1 auto;min-width:0;text-align:left">{{ dt.note }}</span>
-                          </span>
-                        </sc-for>
                       </button>
-                      <span style="display:flex;flex-wrap:wrap;gap:8px;padding:0 20px">
-                        <sc-for list="{{ rw.links }}" as="lk" hint-placeholder-count="0">
-                          <a href="{{ lk.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:8px;height:30px;margin-bottom:16px;padding:0 11px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:12px;letter-spacing:0.03em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap">
-                            <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(0,78,196)">{{ lk.kind }}</span>
-                            <span>{{ lk.label }}</span>
-                          </a>
-                        </sc-for>
+                      <span style="{{ rw.panelBox }}">
+                        <span style="display:flex;flex-wrap:wrap;gap:8px">
+                          <sc-for list="{{ rw.chips }}" as="ch" hint-placeholder-count="0">
+                            <button type="button" onClick="{{ ch.go }}" style="{{ ch.style }}">
+                              <span>{{ ch.key }}</span>
+                              <span style="{{ ch.countStyle }}">{{ ch.count }}</span>
+                            </button>
+                          </sc-for>
+                        </span>
+                        <span style="{{ rw.panelInner }}">
+                          <span style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding-bottom:4px">
+                            <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);white-space:nowrap">{{ rw.panelTitle }}</span>
+                            <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ rw.panelNote }}</span>
+                          </span>
+                          <sc-for list="{{ rw.panelRows }}" as="pr" hint-placeholder-count="0">
+                            <span style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:10px 0;border-top:1px solid rgba(112,115,124,0.1)">
+                              <span style="font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(23,23,25);flex:1 1 auto;min-width:0;text-align:left">{{ pr.label }}</span>
+                              <sc-for list="{{ pr.play }}" as="pp" hint-placeholder-count="0">
+                                <a href="{{ pp.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(12,22,52);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:12px;color:rgb(255,255,255);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ pp.label }}</a>
+                              </sc-for>
+                              <sc-for list="{{ pr.open }}" as="po" hint-placeholder-count="0">
+                                <a href="{{ po.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ po.label }}</a>
+                              </sc-for>
+                              <sc-for list="{{ pr.btns }}" as="pb" hint-placeholder-count="0">
+                                <button type="button" onClick="{{ pb.go }}" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;background:rgb(255,214,0);color:rgb(12,22,52);white-space:nowrap;flex-shrink:0">{{ pb.label }}</button>
+                              </sc-for>
+                            </span>
+                          </sc-for>
+                        </span>
                       </span>
+                          </span>
+                          <sc-for list="{{ pw.panel }}" as="pn" hint-placeholder-count="0">
+                            <span style="display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                              <span style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding-bottom:4px">
+                                <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);white-space:nowrap">{{ pn.title }}</span>
+                                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ pn.note }}</span>
+                              </span>
+                              <sc-for list="{{ pn.rows }}" as="pr" hint-placeholder-count="0">
+                                <span style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:10px 0;border-top:1px solid rgba(112,115,124,0.1)">
+                                  <span style="font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(23,23,25);flex:1 1 auto;min-width:0;text-align:left">{{ pr.label }}</span>
+                                  <sc-for list="{{ pr.play }}" as="pp" hint-placeholder-count="0">
+                                    <a href="{{ pp.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(12,22,52);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:12px;color:rgb(255,255,255);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ pp.label }}</a>
+                                  </sc-for>
+                                  <sc-for list="{{ pr.open }}" as="po" hint-placeholder-count="0">
+                                    <a href="{{ po.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ po.label }}</a>
+                                  </sc-for>
+                                  <sc-for list="{{ pr.btns }}" as="pb" hint-placeholder-count="0">
+                                    <button type="button" onClick="{{ pb.go }}" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;background:rgb(255,214,0);color:rgb(12,22,52);white-space:nowrap;flex-shrink:0">{{ pb.label }}</button>
+                                  </sc-for>
+                                </span>
+                              </sc-for>
+                            </span>
+                          </sc-for>
+                        </span>
+                      </sc-for>
                     </sc-for>
                   </div>
                 </sc-for>
@@ -380,36 +415,68 @@
                         <sc-for list="{{ rw.items }}" as="it" hint-placeholder-count="0">
                           <span style="font-weight:500;font-size:12px;line-height:1.5;color:rgb(112,115,124);text-align:left">{{ it }}</span>
                         </sc-for>
-                        <span style="display:flex;flex-wrap:wrap;gap:4px">
-                          <sc-for list="{{ rw.slots }}" as="sl" hint-placeholder-count="5">
-                            <span style="{{ sl.style }}">{{ sl.key }}</span>
+                        <span style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+                          <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(12,22,52);white-space:nowrap">{{ rw.fill }}</span>
+                          <sc-for list="{{ rw.dots }}" as="dd" hint-placeholder-count="6">
+                            <span style="{{ dd.style }}"></span>
                           </sc-for>
                         </span>
-                        <sc-for list="{{ rw.lecs }}" as="lc" hint-placeholder-count="0">
-                          <span style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 12px;border-radius:9px;background:rgb(247,247,248)">
-                            <sc-for list="{{ lc.play }}" as="lp" hint-placeholder-count="0">
-                              <a href="{{ lp.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;padding:4px 10px;border-radius:6px;background:rgb(12,22,52);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:11px;color:rgb(255,255,255);text-decoration:none;white-space:nowrap">{{ lp.label }}</a>
-                            </sc-for>
-                            <span style="font-weight:600;font-size:12px;color:rgb(23,23,25);white-space:nowrap">{{ lc.label }}</span>
-                            <span style="font-weight:500;font-size:11px;letter-spacing:0.03em;color:rgb(12,22,52);white-space:nowrap">{{ lc.page }}</span>
-                          </span>
-                        </sc-for>
-                        <sc-for list="{{ rw.detail }}" as="dt" hint-placeholder-count="0">
-                          <span style="display:flex;align-items:center;gap:8px;padding-top:4px">
-                            <span style="{{ dt.dot }}"></span>
-                            <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(55,56,60);width:32px;flex-shrink:0">{{ dt.key }}</span>
-                            <span style="font-weight:500;font-size:12px;line-height:1.5;color:rgb(112,115,124);flex:1 1 auto;min-width:0;text-align:left">{{ dt.note }}</span>
-                          </span>
-                        </sc-for>
                       </button>
-                      <span style="display:flex;flex-wrap:wrap;gap:8px;padding:0 20px">
-                        <sc-for list="{{ rw.links }}" as="lk" hint-placeholder-count="0">
-                          <a href="{{ lk.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:8px;height:30px;margin-bottom:16px;padding:0 11px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:12px;letter-spacing:0.03em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap">
-                            <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(0,78,196)">{{ lk.kind }}</span>
-                            <span>{{ lk.label }}</span>
-                          </a>
-                        </sc-for>
+                      <span style="{{ rw.panelBox }}">
+                        <span style="display:flex;flex-wrap:wrap;gap:8px">
+                          <sc-for list="{{ rw.chips }}" as="ch" hint-placeholder-count="0">
+                            <button type="button" onClick="{{ ch.go }}" style="{{ ch.style }}">
+                              <span>{{ ch.key }}</span>
+                              <span style="{{ ch.countStyle }}">{{ ch.count }}</span>
+                            </button>
+                          </sc-for>
+                        </span>
+                        <span style="{{ rw.panelInner }}">
+                          <span style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding-bottom:4px">
+                            <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);white-space:nowrap">{{ rw.panelTitle }}</span>
+                            <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ rw.panelNote }}</span>
+                          </span>
+                          <sc-for list="{{ rw.panelRows }}" as="pr" hint-placeholder-count="0">
+                            <span style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:10px 0;border-top:1px solid rgba(112,115,124,0.1)">
+                              <span style="font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(23,23,25);flex:1 1 auto;min-width:0;text-align:left">{{ pr.label }}</span>
+                              <sc-for list="{{ pr.play }}" as="pp" hint-placeholder-count="0">
+                                <a href="{{ pp.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(12,22,52);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:12px;color:rgb(255,255,255);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ pp.label }}</a>
+                              </sc-for>
+                              <sc-for list="{{ pr.open }}" as="po" hint-placeholder-count="0">
+                                <a href="{{ po.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ po.label }}</a>
+                              </sc-for>
+                              <sc-for list="{{ pr.btns }}" as="pb" hint-placeholder-count="0">
+                                <button type="button" onClick="{{ pb.go }}" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;background:rgb(255,214,0);color:rgb(12,22,52);white-space:nowrap;flex-shrink:0">{{ pb.label }}</button>
+                              </sc-for>
+                            </span>
+                          </sc-for>
+                        </span>
                       </span>
+                          </span>
+                          <sc-for list="{{ pw.panel }}" as="pn" hint-placeholder-count="0">
+                            <span style="display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                              <span style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding-bottom:4px">
+                                <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);white-space:nowrap">{{ pn.title }}</span>
+                                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ pn.note }}</span>
+                              </span>
+                              <sc-for list="{{ pn.rows }}" as="pr" hint-placeholder-count="0">
+                                <span style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:10px 0;border-top:1px solid rgba(112,115,124,0.1)">
+                                  <span style="font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(23,23,25);flex:1 1 auto;min-width:0;text-align:left">{{ pr.label }}</span>
+                                  <sc-for list="{{ pr.play }}" as="pp" hint-placeholder-count="0">
+                                    <a href="{{ pp.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(12,22,52);font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:12px;color:rgb(255,255,255);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ pp.label }}</a>
+                                  </sc-for>
+                                  <sc-for list="{{ pr.open }}" as="po" hint-placeholder-count="0">
+                                    <a href="{{ po.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ po.label }}</a>
+                                  </sc-for>
+                                  <sc-for list="{{ pr.btns }}" as="pb" hint-placeholder-count="0">
+                                    <button type="button" onClick="{{ pb.go }}" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;letter-spacing:0.009em;background:rgb(255,214,0);color:rgb(12,22,52);white-space:nowrap;flex-shrink:0">{{ pb.label }}</button>
+                                  </sc-for>
+                                </span>
+                              </sc-for>
+                            </span>
+                          </sc-for>
+                        </span>
+                      </sc-for>
                     </sc-for>
                   </div>
                 </div>
@@ -828,30 +895,36 @@
           <div style="display:flex;flex-direction:column;gap:24px;flex:1 1 420px;min-width:min(420px,100%)">
             <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
               <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
-                <x-import component-from-global-scope="ContentBadgeContentBadge" from="./components/Components.bundle.js" variant="solid" size="sm" color="accent" text="관광국사" hint-size="60px,22px"></x-import>
-                <span style="font-weight:500;font-size:12px;color:rgb(112,115,124)">4단원 · 고려의 문화유산</span>
+                <span style="display:inline-flex;align-items:center;height:30px;padding:0 11px;border-radius:6px;background:rgb(12,22,52);font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(255,255,255);white-space:nowrap">{{ dtSubject }}</span>
+                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ dtMeta }}</span>
               </div>
-              <h1 style="margin:0;font-weight:700;font-size:30px;line-height:1.25;letter-spacing:-0.025em;color:rgb(0,0,0)">고려 불교문화와 대장경</h1>
-              <p style="margin:0;font-weight:500;font-size:14px;line-height:1.6;letter-spacing:0.006em;color:rgba(46,47,51,0.88);text-wrap:pretty">팔만대장경이 왜 강화도에서 만들어졌는지부터 따라가면, 고려 불교문화 문제는 연표를 외우지 않아도 풀립니다. 이 단원은 스토리 → 총정리표 → 빈출등급표 → 비교카드 → 예상문제 순서로 이어집니다.</p>
+              <h1 style="margin:0;font-weight:700;font-size:30px;line-height:1.25;letter-spacing:-0.025em;color:rgb(0,0,0)">{{ dtTitle }}</h1>
+              <p style="margin:0;font-weight:500;font-size:14px;line-height:1.6;letter-spacing:0.006em;color:rgba(46,47,51,0.88);text-wrap:pretty">{{ dtDesc }}</p>
               <div style="display:flex;flex-wrap:wrap;gap:8px">
-                <x-import component-from-global-scope="ButtonButton" from="./components/Components.bundle.js" size="lg" variant="solid" color="primary" label="교재 학습 시작" hint-size="150px,52px"></x-import>
-                <button type="button" onClick="{{ goQuiz }}" style="display:inline-flex;align-items:center;border:none;background:transparent;padding:0;cursor:pointer;font-family:inherit"><x-import component-from-global-scope="ButtonButton" from="./components/Components.bundle.js" size="lg" variant="outlined" color="assistive" label="예상문제 먼저 풀기" hint-size="160px,52px"></x-import></button>
+                <sc-for list="{{ dtStart }}" as="ds" hint-placeholder-count="1">
+                  <a href="{{ ds.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 22px;border-radius:9px;background:rgb(255,214,0);font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.006em;color:rgb(12,22,52);text-decoration:none;white-space:nowrap">{{ ds.label }}</a>
+                </sc-for>
+                <button type="button" onClick="{{ dtGoQuiz }}" style="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 22px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.006em;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgb(23,23,25);white-space:nowrap">예상문제 먼저 풀기</button>
+                <button type="button" onClick="{{ dtGoUnits }}" style="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 22px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.006em;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgb(23,23,25);white-space:nowrap">단원별 집합에서 보기</button>
               </div>
             </section>
 
             <section style="display:flex;flex-direction:column;gap:12px">
               <span style="font-weight:600;font-size:17px;letter-spacing:-0.004em;color:rgb(23,23,25)">단원 구성</span>
               <div style="display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-                <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="5">
-                  <div style="display:flex;align-items:center;gap:12px;padding:20px;border-bottom:1px solid rgba(112,115,124,0.1)">
+                <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="6">
+                  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(112,115,124,0.1)">
                     <span style="{{ sec.dot }}"></span>
-                    <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0">
-                      <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">{{ sec.title }}</span>
-                      <span style="font-weight:500;font-size:12px;color:rgb(112,115,124)">{{ sec.meta }}</span>
+                    <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 200px;min-width:0">
+                      <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25)">{{ sec.title }}</span>
+                      <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ sec.meta }}</span>
                     </span>
-                    <sc-if value="{{ sec.done }}" hint-placeholder-val="{{ true }}">
-                      <span style="color:rgb(0,102,255);display:inline-flex"><x-import component-from-global-scope="FigIcon" name="IconNormalCircleCheckNameCircleCheck" size="20" hint-size="20px,20px"></x-import></span>
-                    </sc-if>
+                    <sc-for list="{{ sec.open }}" as="so" hint-placeholder-count="0">
+                      <a href="{{ so.url }}" target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);text-decoration:none;white-space:nowrap;flex-shrink:0">{{ so.label }}</a>
+                    </sc-for>
+                    <sc-for list="{{ sec.btns }}" as="sb" hint-placeholder-count="0">
+                      <button type="button" onClick="{{ sb.go }}" style="display:inline-flex;align-items:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgb(23,23,25);white-space:nowrap;flex-shrink:0">{{ sb.label }}</button>
+                    </sc-for>
                   </div>
                 </sc-for>
               </div>
@@ -860,24 +933,26 @@
 
           <aside style="display:flex;flex-direction:column;gap:16px;flex:1 1 300px;min-width:min(300px,100%)">
             <div style="display:flex;flex-direction:column;gap:12px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-              <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">기출 빈출등급</span>
-              <sc-for list="{{ freq }}" as="fr" hint-placeholder-count="4">
+              <div style="display:flex;align-items:baseline;gap:8px">
+                <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);white-space:nowrap">이 단원 기출</span>
+                <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ dtExamNote }}</span>
+              </div>
+              <sc-for list="{{ freq }}" as="fr" hint-placeholder-count="2">
                 <div style="display:flex;align-items:center;gap:8px">
                   <span style="{{ fr.grade }}">{{ fr.g }}</span>
-                  <span style="flex:1 1 auto;min-width:0;font-weight:500;font-size:14px;letter-spacing:0.009em;color:rgba(46,47,51,0.88)">{{ fr.topic }}</span>
-                  <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(112,115,124);white-space:nowrap">{{ fr.count }}</span>
+                  <span style="flex:1 1 auto;min-width:0;font-weight:500;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgba(46,47,51,0.88)">{{ fr.topic }}</span>
+                  <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:700;font-size:12px;color:rgb(12,22,52);white-space:nowrap">{{ fr.count }}</span>
                 </div>
               </sc-for>
-              <span style="font-weight:500;font-size:11px;line-height:1.45;letter-spacing:0.03em;color:rgb(112,115,124)">최근 10회 기출 실측 기준</span>
             </div>
 
-            <div style="display:flex;flex-direction:column;gap:12px;padding:20px;border-radius:16px;background:rgb(247,247,248)">
-              <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">복습 예정</span>
-              <sc-for list="{{ reviewPlan }}" as="rp" hint-placeholder-count="3">
-                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
-                  <span style="font-weight:500;font-size:14px;letter-spacing:0.009em;color:rgba(46,47,51,0.88)">{{ rp.when }}</span>
-                  <span style="font-weight:600;font-size:12px;color:rgb(0,102,255)">{{ rp.what }}</span>
-                </div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:16px;background:rgb(247,247,248)">
+              <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25)">단원 넘기기</span>
+              <sc-for list="{{ dtMove }}" as="dm" hint-placeholder-count="2">
+                <button type="button" onClick="{{ dm.go }}" style="{{ dm.style }}">
+                  <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.04em;color:rgb(112,115,124)">{{ dm.dir }}</span>
+                  <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25);text-align:left">{{ dm.title }}</span>
+                </button>
               </sc-for>
             </div>
           </aside>
@@ -960,119 +1035,75 @@
       </sc-if>
 
       <sc-if value="{{ isInterview }}" hint-placeholder-val="{{ true }}">
-        <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
-          <div style="display:flex;flex-direction:column;gap:24px;flex:1 1 420px;min-width:min(420px,100%)">
+        <div style="display:flex;flex-direction:column;gap:16px;width:100%;max-width:580px;margin:0 auto">
 
-            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
-                <x-import component-from-global-scope="ContentBadgeContentBadge" from="./components/Components.bundle.js" variant="solid" size="sm" color="accent" text="{{ langLabel }}" hint-size="56px,22px"></x-import>
-                <span style="font-weight:500;font-size:12px;color:rgb(112,115,124)">{{ topicMeta }}</span>
-              </div>
-              <h1 style="margin:0;font-weight:700;font-size:24px;line-height:1.34;letter-spacing:-0.023em;color:rgb(0,0,0)">{{ topicTitle }}</h1>
-              <p style="margin:0;font-weight:500;font-size:14px;line-height:1.571;letter-spacing:0.009em;color:rgba(46,47,51,0.88)">{{ topicPrompt }}</p>
-              <div style="display:flex;align-items:flex-start;gap:12px;padding:20px;border-radius:9px;background:rgb(247,247,248)">
-                <span style="color:rgb(0,102,255);display:inline-flex;flex-shrink:0;padding-top:2px"><x-import component-from-global-scope="FigIcon" name="IconNormalMusicMicrophoneNameMusicMicrophone" size="18" hint-size="18px,18px"></x-import></span>
-                <span style="flex:1 1 auto;min-width:0;font-weight:500;font-size:14px;line-height:1.65;letter-spacing:0.006em;color:rgb(23,23,25)">{{ questionText }}</span>
-              </div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px">
-                <sc-for list="{{ keywords }}" as="k" hint-placeholder-count="5">
-                  <span style="{{ k.style }}">{{ k.word }}</span>
-                </sc-for>
-              </div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px">
-                <button type="button" onClick="{{ askQuestion }}" style="display:inline-flex;align-items:center;border:none;background:transparent;padding:0;cursor:pointer;font-family:inherit"><x-import component-from-global-scope="ButtonButton" from="./components/Components.bundle.js" size="md" variant="outlined" color="primary" label="{{ askLabel }}" hint-size="110px,44px"></x-import></button>
-                <button type="button" onClick="{{ startMock }}" style="display:inline-flex;align-items:center;border:none;background:transparent;padding:0;cursor:pointer;font-family:inherit"><x-import component-from-global-scope="ButtonButton" from="./components/Components.bundle.js" size="md" variant="solid" color="primary" label="{{ mockLabel }}" hint-size="130px,44px"></x-import></button>
-              </div>
-              <span style="font-weight:500;font-size:11px;line-height:1.45;letter-spacing:0.03em;color:rgb(112,115,124)">{{ mockNote }}</span>
-            </section>
-
-            <section style="display:flex;flex-direction:column;gap:20px;padding:20px;border-radius:16px;background:rgb(247,247,248)">
-              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px">
-                <button type="button" onClick="{{ toggleRec }}" style="{{ recBtnStyle }}">
-                  <x-import component-from-global-scope="FigIcon" name="{{ recIcon }}" size="24" hint-size="24px,24px"></x-import>
-                  <span>{{ recLabel }}</span>
-                </button>
-                <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:600;font-size:14px;color:rgb(55,56,60)">{{ elapsed }}</span>
-                <div style="display:flex;align-items:center;gap:4px;height:32px;flex:1 1 120px;min-width:0">
-                  <sc-for list="{{ wave }}" as="bar" hint-placeholder-count="28">
-                    <div style="{{ bar.style }}"></div>
-                  </sc-for>
-                </div>
-              </div>
-
-              <div style="display:flex;flex-direction:column;gap:8px">
-                <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(112,115,124)">실시간 전사</span>
-                <div style="min-height:96px;padding:20px;border-radius:9px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-weight:500;font-size:14px;line-height:1.7;letter-spacing:0.006em;color:rgb(23,23,25)">{{ transcript }}<span style="color:rgb(112,115,124)">{{ interim }}</span></div>
-                <span style="font-weight:500;font-size:11px;letter-spacing:0.03em;color:rgb(112,115,124)">{{ recHint }}</span>
-              </div>
-
-              <div style="display:flex;flex-wrap:wrap;gap:8px">
-                <button type="button" onClick="{{ grade }}" style="display:inline-flex;align-items:center;border:none;background:transparent;padding:0;cursor:pointer;font-family:inherit"><x-import component-from-global-scope="ButtonButton" from="./components/Components.bundle.js" size="md" variant="solid" color="primary" label="{{ gradeLabel }}" disable="{{ gradeDisabled }}" loading="{{ grading }}" hint-size="150px,44px"></x-import></button>
-                <button type="button" onClick="{{ resetRec }}" style="display:inline-flex;align-items:center;border:none;background:transparent;padding:0;cursor:pointer;font-family:inherit"><x-import component-from-global-scope="ButtonButton" from="./components/Components.bundle.js" size="md" variant="outlined" color="assistive" label="다시 말하기" hint-size="110px,44px"></x-import></button>
-              </div>
-            </section>
-
-            <sc-if value="{{ hasFeedback }}" hint-placeholder-val="{{ true }}">
-              <section style="display:flex;flex-direction:column;gap:24px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-                <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px">
-                  <span style="font-weight:600;font-size:17px;letter-spacing:-0.004em;color:rgb(23,23,25)">AI 평가</span>
-                  <span style="font-weight:500;font-size:12px;color:rgb(112,115,124)">{{ fbModel }}</span>
-                </div>
-
-                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px">
-                  <sc-for list="{{ scores }}" as="sc" hint-placeholder-count="4">
-                    <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:9px;background:rgb(247,247,248)">
-                      <span style="font-weight:600;font-size:11px;letter-spacing:0.03em;color:rgb(112,115,124)">{{ sc.label }}</span>
-                      <span style="{{ sc.valueStyle }}">{{ sc.value }}</span>
-                      <div style="height:5px;border-radius:3px;background:rgba(112,115,124,0.12);overflow:hidden"><div style="{{ sc.bar }}"></div></div>
-                    </div>
-                  </sc-for>
-                </div>
-
-                <div style="display:flex;flex-direction:column;gap:12px">
-                  <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">문장 교정</span>
-                  <sc-for list="{{ corrections }}" as="c" hint-placeholder-count="3">
-                    <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:9px;background:rgb(247,247,248)">
-                      <span style="font-weight:500;font-size:14px;line-height:1.6;letter-spacing:0.009em;color:rgb(112,115,124);text-decoration:line-through;text-decoration-color:rgba(255,66,66,0.5)">{{ c.before }}</span>
-                      <span style="font-weight:600;font-size:14px;line-height:1.6;letter-spacing:0.006em;color:rgb(23,23,25)">{{ c.after }}</span>
-                      <span style="font-weight:500;font-size:12px;line-height:1.5;color:rgb(12,22,52)">{{ c.why }}</span>
-                    </div>
-                  </sc-for>
-                </div>
-
-                <div style="display:flex;flex-direction:column;gap:12px">
-                  <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">발음 교정</span>
-                  <div style="display:flex;flex-wrap:wrap;gap:8px">
-                    <sc-for list="{{ pronun }}" as="p" hint-placeholder-count="4">
-                      <div style="display:flex;flex-direction:column;gap:4px;padding:20px;border-radius:9px;background:rgba(255,66,66,0.06);box-shadow:inset 0 0 0 1px rgba(255,66,66,0.24)">
-                        <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">{{ p.word }}</span>
-                        <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:500;font-size:11px;color:rgb(196,20,20)">{{ p.said }} → {{ p.correct }}</span>
-                        <span style="font-weight:500;font-size:11px;line-height:1.4;color:rgb(112,115,124)">{{ p.tip }}</span>
-                      </div>
-                    </sc-for>
-                  </div>
-                </div>
-
-                <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:9px;background:rgb(234,242,254)">
-                  <span style="font-weight:600;font-size:12px;letter-spacing:0.03em;color:rgb(12,22,52)">모범 답안</span>
-                  <span style="font-weight:500;font-size:14px;line-height:1.75;letter-spacing:0.006em;color:rgb(23,23,25)">{{ modelAnswer }}</span>
-                </div>
-              </section>
-            </sc-if>
+          <div style="display:flex;align-items:center;gap:8px">
+            <button type="button" onClick="{{ ivBack }}" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:17px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">‹</button>
+            <span style="display:flex;flex-direction:column;gap:2px;flex:1 1 auto;min-width:0">
+              <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25)">{{ ivCardTitle }}</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ ivCardSub }}</span>
+            </span>
+            <button type="button" onClick="{{ ivUserTap }}" style="display:inline-flex;align-items:center;height:30px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivUser }}</button>
           </div>
 
-          <aside style="display:flex;flex-direction:column;gap:16px;flex:1 1 300px;min-width:min(300px,100%)">
-            <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-              <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">답변 언어</span>
-              <div style="display:flex;gap:8px">
-                <sc-for list="{{ langs }}" as="lg" hint-placeholder-count="3">
-                  <button type="button" onClick="{{ lg.go }}" style="{{ lg.style }}">{{ lg.label }}</button>
+          <div style="display:flex;align-items:center;gap:4px">
+            <sc-for list="{{ ivDots }}" as="d" hint-placeholder-count="5">
+              <span style="{{ d.style }}"></span>
+            </sc-for>
+          </div>
+
+          <sc-if value="{{ ivCardUser }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">사용자 고르기</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">프로필 · 경어 · 최적답안 · 녹음 · 진행도가 사용자마다 따로 저장됩니다</span>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <sc-for list="{{ ivUsers }}" as="u" hint-placeholder-count="2">
+                  <button type="button" onClick="{{ u.go }}" style="{{ u.style }}">{{ u.label }}</button>
                 </sc-for>
               </div>
-            </div>
+              <button type="button" onClick="{{ ivAddUser }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">+ 새 사용자</button>
+              <button type="button" onClick="{{ ivGoSetup }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">내 프로필 · 경어 고치기</button>
+            </section>
+          </sc-if>
 
-            <div style="display:flex;flex-direction:column;gap:12px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
-              <span style="font-weight:600;font-size:14px;letter-spacing:0.009em;color:rgb(23,23,25)">면접 주제</span>
+          <sc-if value="{{ ivCardProfile }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(12,22,52)">
+              <span style="font-weight:700;font-size:24px;line-height:1.2;letter-spacing:-0.023em;color:rgb(255,255,255)">본인 이야기를 자유롭게 해주세요</span>
+              <span style="font-weight:500;font-size:14px;line-height:1.6;letter-spacing:0.009em;color:rgb(255,255,255)">면접 답변에 반영했으면 하는 이야기면 뭐든 좋습니다. 경험, 생각, 성격, 경력, 가치관, 강조하고 싶은 점.</span>
+              <span style="font-weight:500;font-size:11px;line-height:1.45;letter-spacing:0.03em;color:rgba(255,255,255,0.72)">항목을 나눠 묻지 않습니다. 여기 적힌 것만 답안에 쓰고, 말하지 않은 경험은 만들지 않습니다.</span>
+              <textarea value="{{ ivProfDraft }}" onInput="{{ ivProfInput }}" placeholder="예) 호텔에서 3년 일했고 일본 손님을 많이 만났어요. 사람 앞에서 말하는 걸 좋아하고…" style="width:100%;padding:16px;border:none;border-radius:9px;outline:none;resize:vertical;box-sizing:border-box;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.65;letter-spacing:0.006em;color:rgb(23,23,25);min-height:170px;background:rgb(255,255,255);box-shadow:none"></textarea>
+              <button type="button" onClick="{{ ivProfMic }}" style="{{ ivMicBig }}">{{ ivProfMicLabel }}</button>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgba(255,255,255,0.72)">{{ ivProfHint }}</span>
+              <button type="button" onClick="{{ ivProfNext }}" style="{{ ivPrimary }}">다음 · 경어 고르기</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardKeigo }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">말투는 어느 쪽이 편하세요</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">실력 등급이 아니라 취향입니다 · 같은 뜻의 실제 투어 안내문</span>
+              <sc-for list="{{ ivKeigoOpts }}" as="k" hint-placeholder-count="3">
+                <button type="button" onClick="{{ k.go }}" style="{{ k.style }}">
+                  <span style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px">
+                    <span style="{{ k.badge }}">{{ k.key }}</span>
+                    <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25)">{{ k.name }}</span>
+                  </span>
+                  <span style="font-weight:500;font-size:14px;line-height:1.8;letter-spacing:0.006em;color:rgb(23,23,25);text-align:left">{{ k.ja }}</span>
+                  <span style="display:flex;gap:8px">
+                    <span style="{{ k.playStyle }}" onClick="{{ k.play }}">🔊 들어보기</span>
+                    <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ k.diff }}</span>
+                  </span>
+                </button>
+              </sc-for>
+              <button type="button" onClick="{{ ivKeigoDone }}" style="{{ ivPrimary }}">이 말투로 시작하기</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardList }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <div style="display:flex;align-items:center;gap:8px;padding:0 12px;height:46px;border-radius:9px;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+                <input type="search" value="{{ ivSearch }}" onInput="{{ ivSearchInput }}" placeholder="문항 검색" style="flex:1 1 auto;min-width:0;width:100%;border:none;outline:none;background:transparent;font-family:inherit;font-weight:500;font-size:14px;color:rgb(23,23,25)" />
+              </div>
               <div style="display:flex;flex-wrap:wrap;gap:4px">
                 <sc-for list="{{ ivCatChips }}" as="cc" hint-placeholder-count="6">
                   <button type="button" onClick="{{ cc.go }}" style="{{ cc.style }}">
@@ -1081,26 +1112,205 @@
                   </button>
                 </sc-for>
               </div>
-              <span style="font-weight:500;font-size:11px;line-height:1.45;letter-spacing:0.03em;color:rgb(112,115,124)">{{ ivBankNote }}</span>
-              <div style="display:flex;flex-direction:column;gap:4px;max-height:420px;overflow-y:auto">
-              <sc-for list="{{ topics }}" as="tp" hint-placeholder-count="6">
-                <button type="button" onClick="{{ tp.go }}" style="{{ tp.style }}">
-                  <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0;text-align:left">
-                    <span style="font-weight:600;font-size:14px;letter-spacing:0.009em">{{ tp.title }}</span>
-                    <span style="font-weight:500;font-size:11px;letter-spacing:0.03em;color:rgb(112,115,124)">{{ tp.meta }}</span>
-                  </span>
-                  <span style="font-weight:600;font-size:11px;color:rgb(0,78,196);white-space:nowrap">{{ tp.score }}</span>
-                </button>
-              </sc-for>
+              <button type="button" onClick="{{ ivRandomQ }}" style="{{ ivPrimary }}">아무 문항이나 랜덤으로</button>
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <sc-for list="{{ ivList }}" as="tp" hint-placeholder-count="8">
+                  <button type="button" onClick="{{ tp.go }}" style="{{ tp.style }}">
+                    <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0;text-align:left">
+                      <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em">{{ tp.title }}</span>
+                      <span style="font-weight:500;font-size:11px;line-height:1.4;letter-spacing:0.03em;color:rgb(112,115,124)">{{ tp.meta }}</span>
+                    </span>
+                    <span style="{{ tp.badgeStyle }}">{{ tp.badge }}</span>
+                  </button>
+                </sc-for>
               </div>
-            </div>
+            </section>
 
-            <div style="display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:16px;background:rgb(247,247,248)">
-              <span style="font-weight:600;font-size:12px;letter-spacing:0.03em;color:rgb(112,115,124)">연습 기록</span>
-              <span style="font-weight:700;font-size:24px;letter-spacing:-0.023em;color:rgb(0,0,0)">{{ practiceCount }}회</span>
-              <span style="font-weight:500;font-size:11px;line-height:1.45;letter-spacing:0.03em;color:rgb(112,115,124)">{{ practiceHint }}</span>
-            </div>
-          </aside>
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">문항 직접 넣기</span>
+              <textarea value="{{ ivNewQ }}" onInput="{{ ivNewQInput }}" placeholder="학원에서 받은 질문을 붙여 넣으세요. 줄바꿈으로 여러 개도 됩니다." style="width:100%;padding:16px;border:none;border-radius:9px;outline:none;resize:vertical;box-sizing:border-box;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.65;letter-spacing:0.006em;color:rgb(23,23,25);min-height:80px"></textarea>
+              <button type="button" onClick="{{ ivAddQ }}" style="{{ ivAddQStyle }}">문항 추가</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardAsk }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:24px 20px;border-radius:16px;background:rgb(12,22,52)">
+              <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.03em;color:rgba(255,255,255,0.72)">{{ ivQMeta }}</span>
+              <span style="font-weight:700;font-size:26px;line-height:1.35;letter-spacing:-0.023em;color:rgb(255,255,255)">{{ ivQText }}</span>
+              <span style="font-weight:500;font-size:17px;line-height:1.7;letter-spacing:0.006em;color:rgb(255,214,0)">{{ ivQJa }}</span>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <button type="button" onClick="{{ ivSpeak }}" style="{{ ivSpeakStyle }}">{{ ivSpeakLabel }}</button>
+                <button type="button" onClick="{{ ivSpeakKo }}" style="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:rgba(255,255,255,0.16);color:rgb(255,255,255)">🔊 한국어</button>
+              </div>
+            </section>
+
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">내 답을 말해 보세요</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">교재 답안은 내 답을 낸 뒤에 열립니다 · 한국어 생각도 괜찮습니다</span>
+              <button type="button" onClick="{{ ivRecTap }}" style="{{ ivRecStyle }}">{{ ivRecLabel }}</button>
+              <div style="display:flex;align-items:center;gap:8px">
+                <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:600;font-size:14px;color:rgb(55,56,60)">{{ elapsed }}</span>
+                <div style="display:flex;align-items:center;gap:4px;height:30px;flex:1 1 100px;min-width:0">
+                  <sc-for list="{{ wave }}" as="bar" hint-placeholder-count="28">
+                    <div style="{{ bar.style }}"></div>
+                  </sc-for>
+                </div>
+                <sc-for list="{{ ivLocOpts }}" as="lo" hint-placeholder-count="2">
+                  <button type="button" onClick="{{ lo.go }}" style="{{ lo.style }}">{{ lo.label }}</button>
+                </sc-for>
+              </div>
+              <sc-if value="{{ ivHasClip }}" hint-placeholder-val="{{ true }}">
+                <div style="display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                  <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.03em;color:rgb(112,115,124)">내 녹음 다시 듣기</span>
+                  <button type="button" onClick="{{ ivPlayClip }}" style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivPlayLabel }}</button>
+                </div>
+              </sc-if>
+              <textarea value="{{ ivAnsDraft }}" onInput="{{ ivAnsInput }}" placeholder="말한 내용이 여기 옮겨집니다. 직접 적어도 됩니다." style="width:100%;padding:16px;border:none;border-radius:9px;outline:none;resize:vertical;box-sizing:border-box;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.65;letter-spacing:0.006em;color:rgb(23,23,25);min-height:140px"></textarea>
+              <span style="font-weight:500;font-size:11px;line-height:1.45;letter-spacing:0.03em;color:rgb(112,115,124)">{{ ivAnsHint }}</span>
+              <button type="button" onClick="{{ ivSubmit }}" style="{{ ivSubmitStyle }}">{{ ivSubmitLabel }}</button>
+              <button type="button" onClick="{{ ivAnsClear }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">지우고 다시</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardProbe }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">짧게 몇 가지만 더</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ ivProbeWhy }}</span>
+              <sc-for list="{{ ivProbes }}" as="pb" hint-placeholder-count="2">
+                <div style="display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                  <span style="font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;color:rgb(23,23,25)">{{ pb.q }}</span>
+                  <textarea value="{{ pb.v }}" onInput="{{ pb.set }}" placeholder="한 줄이면 충분합니다" style="width:100%;padding:16px;border:none;border-radius:9px;outline:none;resize:vertical;box-sizing:border-box;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.65;letter-spacing:0.006em;color:rgb(23,23,25);min-height:62px;background:rgb(255,255,255)"></textarea>
+                </div>
+              </sc-for>
+              <button type="button" onClick="{{ ivBuild }}" style="{{ ivBuildStyle }}">{{ ivBuildLabel }}</button>
+              <button type="button" onClick="{{ ivSkipProbe }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">건너뛰기</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardResult }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">점검 결과</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">점수 대신 무엇을 남기고 무엇을 고칠지부터 봅니다</span>
+              <sc-for list="{{ ivFbRows }}" as="f" hint-placeholder-count="5">
+                <div style="display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                  <span style="{{ f.numStyle }}">{{ f.num }}</span>
+                  <span style="display:flex;flex-direction:column;gap:4px;flex:1 1 auto;min-width:0">
+                    <span style="font-weight:600;font-size:12px;line-height:1.4;letter-spacing:0.03em;color:rgb(112,115,124)">{{ f.label }}</span>
+                    <span style="font-weight:500;font-size:14px;line-height:1.6;letter-spacing:0.009em;color:rgb(23,23,25);white-space:pre-line">{{ f.body }}</span>
+                  </span>
+                </div>
+              </sc-for>
+              <sc-for list="{{ ivSuggests }}" as="sg" hint-placeholder-count="2">
+                <div style="display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                  <span style="font-weight:600;font-size:12px;line-height:1.4;letter-spacing:0.03em;color:rgb(112,115,124)">수정 제안 — 고를 수 있습니다</span>
+                  <span style="font-weight:500;font-size:14px;line-height:1.6;color:rgb(112,115,124);text-decoration:line-through;text-decoration-color:rgba(112,115,124,0.5)">{{ sg.before }}</span>
+                  <span style="font-weight:600;font-size:14px;line-height:1.6;letter-spacing:0.006em;color:rgb(23,23,25)">{{ sg.after }}</span>
+                  <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ sg.why }}</span>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    <button type="button" onClick="{{ sg.take }}" style="{{ sg.takeStyle }}">이 표현 채택</button>
+                    <button type="button" onClick="{{ sg.keep }}" style="display:inline-flex;align-items:center;height:30px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:11px;letter-spacing:0.03em;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgb(112,115,124)">원문 유지</button>
+                  </div>
+                </div>
+              </sc-for>
+            </section>
+
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">답안 보기</span>
+              <div style="display:flex;flex-wrap:wrap;gap:4px">
+                <sc-for list="{{ ivViews }}" as="v" hint-placeholder-count="4">
+                  <button type="button" onClick="{{ v.go }}" style="{{ v.style }}">{{ v.label }}</button>
+                </sc-for>
+              </div>
+              <textarea value="{{ ivViewText }}" onInput="{{ ivViewInput }}" readOnly="{{ ivViewRead }}" style="width:100%;padding:16px;border:none;border-radius:9px;outline:none;resize:vertical;box-sizing:border-box;background:rgb(247,247,248);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);font-family:inherit;font-weight:500;font-size:14px;line-height:1.65;letter-spacing:0.006em;color:rgb(23,23,25);min-height:150px;line-height:1.8"></textarea>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <button type="button" onClick="{{ ivSpeakView }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">🔊 이 답안 듣기</button>
+                <button type="button" onClick="{{ ivSaveBest }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">최적답안 저장</button>
+              </div>
+              <span style="font-weight:500;font-size:12px;line-height:1.6;color:rgb(112,115,124);white-space:pre-line">{{ ivViewSub }}</span>
+              <button type="button" onClick="{{ ivGoLv1 }}" style="{{ ivPrimary }}">LEVEL 1 연습 시작</button>
+              <button type="button" onClick="{{ ivRedo }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">다시 답변하기</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardLv1 }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">LEVEL 1 · 구조카드</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">말할 내용과 순서가 다 보입니다 · 소리 내어 두 번 읽어 보세요</span>
+              <sc-for list="{{ ivLv1 }}" as="c" hint-placeholder-count="4">
+                <div style="display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                  <span style="{{ c.roleStyle }}">{{ c.role }}</span>
+                  <span style="font-weight:600;font-size:17px;line-height:1.8;letter-spacing:0.006em;color:rgb(23,23,25)">{{ c.ja }}</span>
+                  <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">{{ c.ko }}</span>
+                </div>
+              </sc-for>
+              <button type="button" onClick="{{ ivRecTap }}" style="{{ ivRecStyle }}">{{ ivRecLabel }}</button>
+              <sc-if value="{{ ivHasClip }}" hint-placeholder-val="{{ true }}">
+                <button type="button" onClick="{{ ivPlayClip }}" style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivPlayLabel }}</button>
+              </sc-if>
+              <button type="button" onClick="{{ ivGoLv2 }}" style="{{ ivPrimary }}">외웠어요 · LEVEL 2로</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardLv2 }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">LEVEL 2 · 키워드만</span>
+              <span style="font-weight:500;font-size:12px;line-height:1.4;color:rgb(112,115,124)">이 단어와 순서만 보고 답안을 말해 보세요</span>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <sc-for list="{{ ivLv2 }}" as="k" hint-placeholder-count="6">
+                  <span style="{{ k.style }}">{{ k.n }}. {{ k.w }}</span>
+                </sc-for>
+              </div>
+              <button type="button" onClick="{{ ivRecTap }}" style="{{ ivRecStyle }}">{{ ivRecLabel }}</button>
+              <sc-if value="{{ ivHasClip }}" hint-placeholder-val="{{ true }}">
+                <button type="button" onClick="{{ ivPlayClip }}" style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivPlayLabel }}</button>
+              </sc-if>
+              <button type="button" onClick="{{ ivPeek }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivPeekLabel }}</button>
+              <span style="font-weight:500;font-size:14px;line-height:1.8;color:rgb(23,23,25);white-space:pre-line">{{ ivPeekText }}</span>
+              <button type="button" onClick="{{ ivGoLv3 }}" style="{{ ivPrimary }}">말할 수 있어요 · LEVEL 3로</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardLv3 }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:24px 20px;border-radius:16px;background:rgb(12,22,52)">
+              <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.03em;color:rgba(255,255,255,0.72)">LEVEL 3 · 실전 · {{ ivQMeta }}</span>
+              <span style="font-weight:700;font-size:26px;line-height:1.35;letter-spacing:-0.023em;color:rgb(255,255,255)">{{ ivQText }}</span>
+              <span style="font-weight:500;font-size:17px;line-height:1.7;letter-spacing:0.006em;color:rgb(255,214,0)">{{ ivQJa }}</span>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <button type="button" onClick="{{ ivSpeak }}" style="{{ ivSpeakStyle }}">{{ ivSpeakLabel }}</button>
+                <button type="button" onClick="{{ ivRandomQ }}" style="display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:rgba(255,255,255,0.16);color:rgb(255,255,255)">다른 질문</button>
+              </div>
+            </section>
+
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <button type="button" onClick="{{ ivRecTap }}" style="{{ ivRecStyle }}">{{ ivRecLabel }}</button>
+              <div style="display:flex;align-items:center;gap:8px">
+                <span style="font-family:ui-monospace,'SF Mono',Menlo,monospace;font-weight:600;font-size:14px;color:rgb(55,56,60)">{{ elapsed }}</span>
+                <div style="display:flex;align-items:center;gap:4px;height:30px;flex:1 1 100px;min-width:0">
+                  <sc-for list="{{ wave }}" as="bar" hint-placeholder-count="28">
+                    <div style="{{ bar.style }}"></div>
+                  </sc-for>
+                </div>
+              </div>
+              <sc-if value="{{ ivHasClip }}" hint-placeholder-val="{{ true }}">
+                <div style="display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)">
+                  <span style="font-weight:600;font-size:11px;line-height:1.4;letter-spacing:0.03em;color:rgb(112,115,124)">내 녹음 다시 듣기</span>
+                  <button type="button" onClick="{{ ivPlayClip }}" style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivPlayLabel }}</button>
+                </div>
+              </sc-if>
+              <span style="font-weight:500;font-size:14px;line-height:1.7;color:rgb(23,23,25);white-space:pre-line">{{ transcript }}<span style="color:rgb(112,115,124)">{{ interim }}</span></span>
+              <button type="button" onClick="{{ ivPeek }}" style="display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:transparent;box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgba(46,47,51,0.88)">{{ ivPeekLabel }}</button>
+              <span style="font-weight:500;font-size:14px;line-height:1.8;color:rgb(23,23,25);white-space:pre-line">{{ ivPeekText }}</span>
+              <button type="button" onClick="{{ ivLv3Done }}" style="{{ ivPrimary }}">이 문항 마치기</button>
+            </section>
+          </sc-if>
+
+          <sc-if value="{{ ivCardEmpty }}" hint-placeholder-val="{{ true }}">
+            <section style="display:flex;flex-direction:column;gap:16px;padding:20px;border-radius:16px;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22)">
+              <span style="font-weight:600;font-size:17px;line-height:1.2;letter-spacing:-0.004em;color:rgb(23,23,25)">{{ ivEmptyTitle }}</span>
+              <span style="font-weight:500;font-size:14px;line-height:1.6;letter-spacing:0.009em;color:rgba(46,47,51,0.88)">{{ ivEmptyBody }}</span>
+              <button type="button" onClick="{{ ivGoAsk }}" style="{{ ivPrimary }}">내 답변부터 내기</button>
+            </section>
+          </sc-if>
         </div>
       </sc-if>
 
@@ -1351,6 +1561,9 @@
 class Component extends DCLogic {
   state = {
     screen: 'home',
+    hist: [],
+    dtSub: '관광국사',
+    dtSeq: 1,
     filter: '전체',
     query: '팔만대장경',
     toggles: { alarm: true, weekend: false, autoReview: true, sound: false },
@@ -1442,6 +1655,7 @@ class Component extends DCLogic {
     tbSubject: '관광국사',
     tbOpen: '1',
     tbPick: null,
+    tbSlot: null,
     freqSubject: '관광국사',
     freqPick: null,
     freqUnitPick: null,
@@ -1491,6 +1705,7 @@ class Component extends DCLogic {
     };
     attach(0);
     this.startRoutineTimer();
+    this.ivBoot();
     try {
       if (localStorage.getItem('gwantongsa-hub-unlock') === 'ok') this.setState({ locked: false });
       const lg = localStorage.getItem('gwantongsa-hub-log-v1');
@@ -1550,6 +1765,11 @@ class Component extends DCLogic {
       })
       .catch(() => { /* map unavailable */ });
     this.loadPhoto();
+    try {
+      window.history.replaceState({ h: 0 }, '', '#home');
+      this._pop = () => this.back();
+      window.addEventListener('popstate', this._pop);
+    } catch (e) { /* history 불가 */ }
     fetch('./timeline-index.json')
       .then((r) => r.json())
       .then((d) => this.setState({ tlDocs: d.docs || [] }))
@@ -1632,10 +1852,71 @@ class Component extends DCLogic {
       if (label) return label;
       return String(f).replace(/^.*\//, '').replace(/\)\s*$/, '');
     };
-    return ['강의', '교재', '표', '연표', '카드'].map((k) => {
+    return ['강의', '교재', '표', '연표', '카드', '기출'].map((k) => {
       const list = sl[k] || [];
       return { key: k, on: list.length > 0, note: list.length ? list.map(short).join(' · ') : empty[k] };
     });
+  }
+
+  slotPanel(u, sub, pad) {
+    const s = this.state;
+    const st = this.slotState(u);
+    const sel = s.tbSlot;
+    const rowsFor = (key) => {
+      if (key === '강의') {
+        return (u.lectureLinks || []).map((x) => ({
+          label: x.label + (x.page ? ' · ' + x.page : '') + (x.amb ? ' · 쪽 겹침' : ''),
+          play: x.url ? [{ label: '▶ ' + x.ts, url: x.url }] : [], open: [], btns: []
+        }));
+      }
+      if (key === '기출') {
+        return (u.examTags || []).map((tag) => {
+          const n = this.poolFor(sub).filter((q) => q.unit === tag).length;
+          return {
+            label: tag + ' · ' + n + '문항',
+            play: [], open: [],
+            btns: n ? [{ label: '문제 풀기', go: () => this.nav({ screen: 'quiz', qSubject: sub, qUnit: tag, qIndex: 0, qPick: -1, qChecked: false, qTableOpen: false }) }] : []
+          };
+        });
+      }
+      return ((u.slotLinks || {})[key] || []).map((x) => ({
+        label: x.label, play: [], btns: [],
+        open: x.url ? [{ label: '열기 ↗', url: x.url }] : []
+      }));
+    };
+    const countFor = (key) => {
+      if (key === '강의') return (u.lectureLinks || []).length;
+      if (key === '기출') return (u.examTags || []).length;
+      return ((u.slotLinks || {})[key] || []).length;
+    };
+    const chips = st.map((sl) => {
+      const on = !!sl.on;
+      const picked = sel === sl.key;
+      const c = countFor(sl.key);
+      return {
+        key: sl.key,
+        count: c ? String(c) : '–',
+        countStyle: 'font-family:ui-monospace,\'SF Mono\',Menlo,monospace;font-weight:700;font-size:11px;letter-spacing:0.02em;color:' +
+          (picked ? 'rgb(255,214,0)' : on ? 'rgb(0,78,196)' : 'rgb(174,176,182)'),
+        style: 'display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;line-height:1.4;letter-spacing:0.009em;white-space:nowrap;background-color:' +
+          (picked ? 'rgb(12,22,52)' : 'rgb(255,255,255)') + ';box-shadow:inset 0 0 0 1px ' +
+          (picked ? 'rgb(12,22,52)' : on ? 'rgba(0,102,255,0.28)' : 'rgba(112,115,124,0.22)') + ';color:' +
+          (picked ? 'rgb(255,255,255)' : on ? 'rgb(23,23,25)' : 'rgb(112,115,124)'),
+        go: () => this.setState({ tbSlot: sel === sl.key ? null : sl.key })
+      };
+    });
+    const cur = st.find((x) => x.key === sel);
+    const rows = cur ? rowsFor(sel) : [];
+    return {
+      chips: chips,
+      panelBox: 'display:flex;flex-direction:column;gap:12px;padding:0 20px 20px ' + (pad || '20px'),
+      panelInner: cur
+        ? 'display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:9px;background:rgb(247,247,248)'
+        : 'display:none',
+      panelTitle: cur ? sel : '',
+      panelNote: cur ? (rows.length ? (rows.length + '개 · 눌러서 엽니다') : '이 단원에는 아직 없습니다') : '',
+      panelRows: rows
+    };
   }
 
   slotLinkList(u) {
@@ -2230,16 +2511,14 @@ class Component extends DCLogic {
       unitOn: u ? true : undefined,
       goUnit: () => {
         if (!u) return;
-        this.setState({ screen: 'units', tbSubject: sub, tbOpen: String(u.part), tbPick: u.seq });
+        this.nav({ screen: 'units', tbSubject: sub, tbOpen: String(u.part), tbPick: u.seq });
         this.logAdd('routine', '단원 열기', sub + ' ' + u.no + ' ' + u.title);
-        try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
       },
       tableLabel: tblName ? ((String(tblName).match(/^(\d+\s*(?:편|장|단원))/) || [])[1] || this.shortUnit(tblName)).replace(/\s+/g, '') : '표 없음',
       tableOn: tblName ? true : undefined,
       goTable: () => {
         if (!tblName) return;
-        this.setState({ screen: 'search', query: tblName, srSubject: '전체' });
-        try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
+        this.nav({ screen: 'search', query: tblName, srSubject: '전체' });
       },
       candCount: cands.length,
       needPick: cands.length > 1 && !u ? true : undefined,
@@ -2253,8 +2532,7 @@ class Component extends DCLogic {
       })),
       examCount: this.poolFor(sub).filter((q) => q.unit === tag).length,
       goExam: () => {
-        this.setState({ screen: 'quiz', qSubject: sub, qUnit: tag, qIndex: 0, qPick: -1, qChecked: false, qTableOpen: false });
-        try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
+        this.nav({ screen: 'quiz', qSubject: sub, qUnit: tag, qIndex: 0, qPick: -1, qChecked: false, qTableOpen: false });
       }
     };
   }
@@ -2414,6 +2692,13 @@ class Component extends DCLogic {
     };
   }
 
+  static SUBJ_ICON = {
+    '관광국사': 'IconNormalCertificateNameCertificate',
+    '관광자원해설': 'IconNormalTelescopeNameTelescope',
+    '관광법규': 'IconNormalDocumentTextNameDocumentTextFillFalse',
+    '관광학개론': 'IconNormalBulbNameBulb'
+  };
+
   static ROUTINES = [
     ['morning', '아침'],
     ['noon', '점심'],
@@ -2484,13 +2769,13 @@ class Component extends DCLogic {
     if (kind === 'quiz') {
       const pool = this.poolFor(this.state.qSubject) || [];
       const pick = pool.length ? Math.floor(Math.random() * pool.length) : 0;
-      this.setState({ screen: 'quiz', qIndex: pick, qPick: -1, qChecked: false, notifOpen: false, navOpen: false });
+      this.nav({ screen: 'quiz', qIndex: pick, qPick: -1, qChecked: false });
       this.logAdd('routine', '랜덤 문제 시작', this.state.qSubject);
     } else if (kind === 'video') {
-      this.setState({ screen: 'list', notifOpen: false, navOpen: false });
+      this.nav({ screen: 'list' });
       this.logAdd('routine', '강의 이어보기', '강의 목록에서 이어보기');
     } else {
-      this.setState({ screen: 'units', notifOpen: false, navOpen: false });
+      this.nav({ screen: 'units' });
       this.logAdd('routine', '표 암기', '단원별 집합의 표 칸');
     }
     try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
@@ -2549,10 +2834,43 @@ class Component extends DCLogic {
   }
 
   go(screen) {
-    return () => {
-      this.setState({ screen: screen, navOpen: false });
-      try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
+    return () => this.nav({ screen: screen });
+  }
+
+  viewSnap() {
+    const s = this.state;
+    return {
+      screen: s.screen, filter: s.filter, page: s.page,
+      tbSubject: s.tbSubject, tbOpen: s.tbOpen, tbPick: s.tbPick,
+      dtSub: s.dtSub, dtSeq: s.dtSeq,
+      qSubject: s.qSubject, qUnit: s.qUnit, qIndex: s.qIndex,
+      query: s.query, srSubject: s.srSubject
     };
+  }
+
+  nav(patch) {
+    const cur = this.viewSnap();
+    this.setState(
+      (p) => Object.assign({ hist: (p.hist || []).concat([cur]).slice(-40), navOpen: false, notifOpen: false }, patch),
+      () => {
+        try { window.history.pushState({ h: (this.state.hist || []).length }, '', '#' + this.state.screen); } catch (e) { /* noop */ }
+        try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
+      }
+    );
+  }
+
+  back() {
+    const hs = this.state.hist || [];
+    if (!hs.length) { this.setState({ screen: 'home', navOpen: false, notifOpen: false }); return; }
+    const prev = hs[hs.length - 1];
+    this.setState(Object.assign({}, prev, { hist: hs.slice(0, -1), navOpen: false, notifOpen: false }), () => {
+      try { window.scrollTo(0, 0); } catch (e) { /* noop */ }
+    });
+  }
+
+  backTap() {
+    if (!(this.state.hist || []).length) return;
+    try { window.history.back(); } catch (e) { this.back(); }
   }
 
   speak(text, onDone, forceKo) {
@@ -2593,7 +2911,7 @@ class Component extends DCLogic {
 
   startRec() {
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-    const locale = { ja: 'ja-JP', en: 'en-US', zh: 'zh-CN' }[this.state.lang];
+    const locale = this.state.recLoc || { ja: 'ja-JP', en: 'en-US', zh: 'zh-CN' }[this.state.lang];
     if (!SR) {
       this.setState({ recording: true, recError: '이 브라우저는 음성 인식을 지원하지 않아 직접 입력으로 진행합니다.' });
       this.tick();
@@ -2660,6 +2978,605 @@ class Component extends DCLogic {
     } catch (err) {
       this.setState({ grading: false, fbError: '평가를 불러오지 못했습니다. 다시 시도해 주세요.' });
     }
+  }
+
+
+  // ===== 2차 면접 =====
+  static IV_KEIGO = [
+    { key: 'A', name: '자연스럽고 쉬운 표현', diff: '이해와 발화가 쉬움',
+      ja: 'これから皆さんが安心して楽しく観光できるようにご案内しますので、分からないことや困ったことがあれば、いつでも気軽に声をかけてください。' },
+    { key: 'B', name: '실제 가이드에게 무난한 경어', diff: '투어 안내에 무난한 서비스 경어',
+      ja: 'これから皆さまに安心して楽しく観光していただけるようご案内いたしますので、ご不明な点やお困りのことがございましたら、いつでもお気軽にお声がけください。' },
+    { key: 'C', name: '격식 있는 서비스 표현', diff: '상당히 격식 있고 정중함',
+      ja: 'これから皆さまに安心して快適に観光をお楽しみいただけますよう、心を込めてご案内させていただきますので、何かご不明な点やお困りのことがございましたら、どうぞご遠慮なくお申し付けください。' }
+  ];
+
+  static IV_RULES =
+    '규칙:\n' +
+    '1. 수험생이 말하지 않은 경험·경력·개인 사실을 절대 만들지 않는다.\n' +
+    '2. 수험생 답변이 교재와 달라도 사실이 정확하고 질문에 맞으면 수험생 답을 우선한다.\n' +
+    '3. 개인 의견형은 수험생 생각·경험을 우선하고, 사실형은 정확한 사실을 우선하며, 상황대처형은 수험생 판단을 살리되 안전·보고·절차 오류만 교정한다.\n' +
+    '4. 일본어는 선호 경어 수준에 맞추고, 불필요하게 어려운 경어를 쓰지 않는다.\n' +
+    '5. 점수를 매기지 않는다.\n' +
+    '반드시 JSON만 출력한다.';
+
+  ivUserKey() { return 'gwantongsa-iv-v1:' + (this.state.ivUser || '기본'); }
+  ivBlank() { return { profile: '', keigo: 'B', ans: {}, prog: {}, custom: [], adopted: [], ja: {} }; }
+
+  ivBoot() {
+    let users = ['기본'];
+    let cur = '기본';
+    try {
+      const u = JSON.parse(localStorage.getItem('gwantongsa-iv-users') || 'null');
+      if (Array.isArray(u) && u.length) users = u;
+      const c = localStorage.getItem('gwantongsa-iv-current');
+      if (c && users.indexOf(c) >= 0) cur = c;
+    } catch (e) { /* first run */ }
+    this.setState({ ivUsers: users, ivUser: cur }, () => this.ivLoad());
+  }
+
+  ivLoad() {
+    let db = this.ivBlank();
+    try {
+      const raw = localStorage.getItem(this.ivUserKey());
+      if (raw) db = Object.assign(this.ivBlank(), JSON.parse(raw) || {});
+    } catch (e) { /* noop */ }
+    try { localStorage.setItem('gwantongsa-iv-current', this.state.ivUser || '기본'); } catch (e) {}
+    this.setState({
+      ivDB: db, ivCard: db.profile ? 'list' : 'profile', ivProfDraft: db.profile || '',
+      ivQid: null, ivDraft: '', ivRes: null, ivProbeQ: [], ivView: 'best', ivBest: '',
+      ivPeekOn: false, ivBusy: '', ivErr: '', ivClipUrl: '', ivType: '', ivWhy: '',
+      transcript: '', interim: '', seconds: 0
+    });
+  }
+
+  ivSave(patch, done) {
+    this.setState((p) => {
+      const db = Object.assign({}, p.ivDB || this.ivBlank(), patch || {});
+      try { localStorage.setItem(this.ivUserKey(), JSON.stringify(db)); } catch (e) {}
+      return { ivDB: db };
+    }, done);
+  }
+
+  ivSwitchUser(name) { this.setState({ ivUser: name }, () => this.ivLoad()); }
+
+  ivNewUser() {
+    const n = (window.prompt('새 사용자 이름 (기기 안에서만 구분됩니다)') || '').trim();
+    if (!n) return;
+    this.setState((p) => {
+      const users = (p.ivUsers || []).indexOf(n) >= 0 ? p.ivUsers : (p.ivUsers || []).concat([n]);
+      try { localStorage.setItem('gwantongsa-iv-users', JSON.stringify(users)); } catch (e) {}
+      return { ivUsers: users, ivUser: n };
+    }, () => this.ivLoad());
+  }
+
+  ivQuestions() {
+    const db = this.state.ivDB || this.ivBlank();
+    const bank = (this.state.ivBank || []).map((b, i) => ({ id: 'q' + i, q: b.q, cat: b.cat }));
+    const mine = (db.custom || []).map((c, i) => ({ id: 'c' + i, q: c.q, cat: '내가 넣은 문항' }));
+    return mine.concat(bank);
+  }
+
+  ivCur() {
+    const id = this.state.ivQid;
+    if (!id) return null;
+    return this.ivQuestions().filter((x) => x.id === id)[0] || null;
+  }
+
+  // ---- 오디오 ----
+  ivIdb() {
+    if (this._idb) return Promise.resolve(this._idb);
+    return new Promise((res, rej) => {
+      const r = indexedDB.open('gwantongsa-iv-audio', 1);
+      r.onupgradeneeded = () => { r.result.createObjectStore('clips'); };
+      r.onsuccess = () => { this._idb = r.result; res(r.result); };
+      r.onerror = () => rej(r.error);
+    });
+  }
+
+  ivClipKey() {
+    const c = this.ivCur();
+    return (this.state.ivUser || '기본') + '|' + (c ? c.id : 'none') + '|' + (this.state.ivCard || 'ask');
+  }
+
+  async ivClipSave(blob) {
+    const key = this.ivClipKey();
+    try {
+      const d = await this.ivIdb();
+      const tx = d.transaction('clips', 'readwrite');
+      tx.objectStore('clips').put(blob, key);
+    } catch (e) { /* no idb */ }
+    try {
+      if (this.state.ivClipUrl) URL.revokeObjectURL(this.state.ivClipUrl);
+      this.setState({ ivClipUrl: URL.createObjectURL(blob) });
+    } catch (e) {}
+  }
+
+  async ivClipLoad() {
+    const key = this.ivClipKey();
+    try {
+      const d = await this.ivIdb();
+      const tx = d.transaction('clips', 'readonly');
+      const rq = tx.objectStore('clips').get(key);
+      rq.onsuccess = () => {
+        if (this.state.ivClipUrl) { try { URL.revokeObjectURL(this.state.ivClipUrl); } catch (e) {} }
+        this.setState({ ivClipUrl: rq.result ? URL.createObjectURL(rq.result) : '' });
+      };
+      rq.onerror = () => this.setState({ ivClipUrl: '' });
+    } catch (e) { this.setState({ ivClipUrl: '' }); }
+  }
+
+  async ivRecStart() {
+    this.setState({ transcript: '', interim: '', seconds: 0, recError: '' });
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      this.astream = stream;
+      const mr = new MediaRecorder(stream);
+      this.chunks = [];
+      mr.ondataavailable = (e) => { if (e.data && e.data.size) this.chunks.push(e.data); };
+      mr.onstop = () => {
+        if (this.chunks.length) this.ivClipSave(new Blob(this.chunks, { type: this.chunks[0].type || 'audio/webm' }));
+        if (this.astream) { this.astream.getTracks().forEach((t) => t.stop()); this.astream = null; }
+      };
+      mr.start();
+      this.mr = mr;
+    } catch (e) {
+      this.setState({ recError: '마이크를 쓸 수 없습니다 — 브라우저 주소창의 마이크 권한을 확인해 주세요.' });
+    }
+    this.startRec();
+  }
+
+  ivRecStop() {
+    clearInterval(this.timer);
+    if (this.mr && this.mr.state !== 'inactive') { try { this.mr.stop(); } catch (e) {} }
+    this.mr = null;
+    if (this.rec) { try { this.rec.stop(); } catch (e) {} this.rec = null; }
+    this.setState((p) => {
+      const said = (p.transcript + ' ' + p.interim).trim();
+      if (p.ivCard !== 'ask') return { recording: false, transcript: said, interim: '' };
+      const d = ((p.ivDraft ? p.ivDraft.trim() + ' ' : '') + said).trim();
+      return { recording: false, transcript: '', interim: '', ivDraft: d };
+    });
+  }
+
+  ivPlayClip() {
+    if (this._au) { try { this._au.pause(); } catch (e) {} this._au = null; this.setState({ ivPlaying: false }); return; }
+    const u = this.state.ivClipUrl;
+    if (!u) return;
+    const a = new Audio(u);
+    a.onended = () => { this._au = null; this.setState({ ivPlaying: false }); };
+    a.onerror = () => { this._au = null; this.setState({ ivPlaying: false }); };
+    this._au = a;
+    this.setState({ ivPlaying: true });
+    a.play().catch(() => { this._au = null; this.setState({ ivPlaying: false }); });
+  }
+
+  ivRecTap() {
+    if (this.state.recording) { this.ivRecStop(); return; }
+    this.setState({ recLoc: this.state.recLoc || 'ko-KR' }, () => this.ivRecStart());
+  }
+
+  // ---- 듣기 ----
+  ivSay(text, lang) {
+    if (!text) return;
+    try {
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = lang;
+      u.rate = lang === 'ja-JP' ? 0.92 : 1;
+      const vs = window.speechSynthesis.getVoices() || [];
+      const v = vs.filter((x) => x.lang && x.lang.indexOf(lang.slice(0, 2)) === 0)[0];
+      if (v) u.voice = v;
+      window.speechSynthesis.speak(u);
+    } catch (e) { /* no tts */ }
+  }
+
+  async ivJaFor(id, text) {
+    const db = this.state.ivDB || this.ivBlank();
+    if ((db.ja || {})[id]) return (db.ja || {})[id];
+    if (this.state.ivBusy === 'ja') return '';
+    this.setState({ ivBusy: 'ja' });
+    try {
+      const raw = await window.claude.complete({
+        model: 'claude-sonnet-4-5', max_tokens: 400,
+        system: '한국 관광통역안내사 2차 일본어 면접의 실제 시험관 말투로 옮긴다. 질문만 자연스러운 일본어 경어체 한 문장으로 바꾸고 JSON만 출력한다. 형식: {"ja":"..."}',
+        messages: [{ role: 'user', content: text }]
+      });
+      const m = raw.match(/\{[\s\S]*\}/);
+      const ja = (JSON.parse(m ? m[0] : raw).ja || '').trim();
+      const map = Object.assign({}, db.ja || {});
+      map[id] = ja;
+      this.ivSave({ ja: map });
+      this.setState({ ivBusy: '' });
+      return ja;
+    } catch (e) {
+      this.setState({ ivBusy: '' });
+      return '';
+    }
+  }
+
+  async ivSpeakJa() {
+    const c = this.ivCur();
+    if (!c) return;
+    const db = this.state.ivDB || this.ivBlank();
+    let ja = (db.ja || {})[c.id];
+    if (!ja) ja = await this.ivJaFor(c.id, c.q);
+    this.ivSay(ja || c.q, ja ? 'ja-JP' : 'ko-KR');
+  }
+
+  ivPickQ(id) {
+    if (this.state.recording) this.ivRecStop();
+    const db = this.state.ivDB || this.ivBlank();
+    const rec = (db.ans || {})[id];
+    this.setState({
+      ivQid: id, ivCard: 'ask',
+      ivRes: rec ? rec.res : null, ivBest: rec ? (rec.best || '') : '',
+      ivDraft: rec ? (rec.mine || '') : '',
+      ivProbeQ: [], ivView: 'best', ivPeekOn: false, ivType: '', ivWhy: '',
+      transcript: '', interim: '', seconds: 0, ivErr: '', ivClipUrl: ''
+    }, () => {
+      this.ivClipLoad();
+      const q = this.ivQuestions().filter((x) => x.id === id)[0];
+      if (q && !(db.ja || {})[id]) this.ivJaFor(id, q.q);
+    });
+  }
+
+  ivGo(card) {
+    if (this.state.recording) this.ivRecStop();
+    this.setState({ ivCard: card, ivPeekOn: false, ivClipUrl: '', transcript: '', interim: '', seconds: 0 },
+      () => { if (['ask', 'lv1', 'lv2', 'lv3'].indexOf(card) >= 0) this.ivClipLoad(); });
+  }
+
+  async ivAsk(system, user, max) {
+    const raw = await window.claude.complete({
+      model: 'claude-sonnet-4-5', max_tokens: max || 2200, system: system,
+      messages: [{ role: 'user', content: user }]
+    });
+    const m = raw.match(/\{[\s\S]*\}/);
+    return JSON.parse(m ? m[0] : raw);
+  }
+
+  ivContext() {
+    const db = this.state.ivDB || this.ivBlank();
+    const k = Component.IV_KEIGO.filter((x) => x.key === (db.keigo || 'B'))[0];
+    return '[수험생 자유 프로필 — 여기 적힌 사실만 쓸 수 있음]\n' + (db.profile || '(없음)') +
+      '\n\n[선호 경어 수준] ' + k.key + ' — ' + k.name + '\n기준 문장: ' + k.ja +
+      (db.adopted && db.adopted.length ? '\n\n[수험생이 직접 채택한 표현 — 최우선 반영]\n' + db.adopted.slice(-12).join('\n') : '');
+  }
+
+  async ivSubmit() {
+    const s = this.state;
+    const c = this.ivCur();
+    const ans = (s.ivDraft || '').trim();
+    if (!c || !ans || s.ivBusy) return;
+    this.setState({ ivBusy: 'probe', ivErr: '' });
+    const sys = '당신은 한국 관광통역안내사 2차 일본어 면접 코치입니다.\n' + Component.IV_RULES + '\n' +
+      '형식: {"type":"개인 의견형|사실형|상황대처형","why":"한국어 한 줄","probes":["수험생에게 물어볼 짧은 추가 질문"]}\n' +
+      'probes는 0~3개. 답안을 만들기 위해 꼭 필요한 것만 묻는다. 사실형은 보통 0개다.';
+    const usr = this.ivContext() + '\n\n[면접 질문]\n' + c.q + '\n\n[수험생 답변 — 한국어 생각일 수도 있음]\n' + ans;
+    try {
+      const r = await this.ivAsk(sys, usr, 700);
+      const pr = (r.probes || []).slice(0, 3).map((q) => ({ q: q, a: '' }));
+      if (!pr.length) { this.setState({ ivType: r.type, ivWhy: r.why, ivProbeQ: [] }, () => this.ivBuild()); return; }
+      this.setState({ ivBusy: '', ivType: r.type, ivWhy: r.why, ivProbeQ: pr, ivCard: 'probe' });
+    } catch (e) {
+      this.setState({ ivBusy: '', ivErr: '점검을 불러오지 못했습니다. 다시 눌러 주세요.' });
+    }
+  }
+
+  async ivBuild() {
+    const s = this.state;
+    const c = this.ivCur();
+    if (!c || s.ivBusy === 'build') return;
+    this.setState({ ivBusy: 'build', ivErr: '' });
+    const probes = (s.ivProbeQ || []).filter((p) => (p.a || '').trim()).map((p) => 'Q. ' + p.q + '\nA. ' + p.a).join('\n');
+    const sys = '당신은 한국 관광통역안내사 2차 일본어 면접 코치입니다.\n' + Component.IV_RULES + '\n' +
+      '형식:\n{"type":"개인 의견형|사실형|상황대처형",' +
+      '"fit":"질문에 직접 답했는지 한국어 1~2문장",' +
+      '"content":"빠진 핵심·불필요한 내용·사실 오류를 한국어로. 없으면 없다고 쓴다",' +
+      '"structure":"답변 순서와 연결에 대한 한국어 1~2문장",' +
+      '"japanese":"문법·어휘·경어·자연스러움에 대한 한국어 1~2문장",' +
+      '"keep":["수험생이 잘 말해 그대로 써도 되는 표현"],' +
+      '"suggest":[{"before":"수험생 표현 또는 어색한 부분","after":"말하기 쉬운 대안","why":"한국어 한 줄"}],' +
+      '"best":"나의 최적답안 — 일본어 30초~1분 분량",' +
+      '"bestKo":"최적답안의 한국어 뜻",' +
+      '"fixed":"수험생 답변을 최소한만 고친 일본어",' +
+      '"ref":"교재 수준의 참고답안 일본어",' +
+      '"level1":[{"role":"필수 핵심|선택·보조|미확정|선택 마무리","ja":"","ko":""}],' +
+      '"level2":["초압축 키워드"]}\n' +
+      'suggest는 1~2개. level2는 4~7개.';
+    const usr = this.ivContext() + '\n\n[면접 질문]\n' + c.q + '\n\n[수험생 답변]\n' + (s.ivDraft || '') +
+      (probes ? '\n\n[추가 인터뷰]\n' + probes : '');
+    try {
+      const r = await this.ivAsk(sys, usr, 3000);
+      const db = this.state.ivDB || this.ivBlank();
+      const ansMap = Object.assign({}, db.ans || {});
+      ansMap[c.id] = { mine: s.ivDraft || '', best: r.best || '', res: r, at: Date.now() };
+      this.ivSave({ ans: ansMap });
+      this.setState({ ivBusy: '', ivRes: r, ivType: r.type, ivBest: r.best || '', ivCard: 'result', ivView: 'best' });
+    } catch (e) {
+      this.setState({ ivBusy: '', ivErr: '답안을 만들지 못했습니다. 다시 눌러 주세요.' });
+    }
+  }
+
+  ivTake(sg) {
+    const cur = this.state.ivBest || '';
+    const next = sg.before && cur.indexOf(sg.before) >= 0 ? cur.split(sg.before).join(sg.after) : (cur + (cur ? ' ' : '') + sg.after);
+    const db = this.state.ivDB || this.ivBlank();
+    this.ivSave({ adopted: (db.adopted || []).concat([sg.after]).slice(-40) });
+    this.setState({ ivBest: next, ivView: 'best' });
+  }
+
+  ivStoreBest() {
+    const c = this.ivCur();
+    if (!c) return;
+    const db = this.state.ivDB || this.ivBlank();
+    const ansMap = Object.assign({}, db.ans || {});
+    ansMap[c.id] = Object.assign({}, ansMap[c.id] || {}, { best: this.state.ivBest || '' });
+    this.ivSave({ ans: ansMap });
+  }
+
+  ivSetLevel(n) {
+    const c = this.ivCur();
+    if (!c) return;
+    const db = this.state.ivDB || this.ivBlank();
+    const prog = Object.assign({}, db.prog || {});
+    if ((prog[c.id] || 0) < n) prog[c.id] = n;
+    this.ivSave({ prog: prog });
+  }
+
+  ivAddQuestions() {
+    const raw = (this.state.ivNewQ || '').trim();
+    if (!raw) return;
+    const lines = raw.split('\n').map((x) => x.trim()).filter(Boolean);
+    const db = this.state.ivDB || this.ivBlank();
+    this.ivSave({ custom: lines.map((q) => ({ q: q })).concat(db.custom || []) });
+    this.setState({ ivNewQ: '', ivCat: '내가 넣은 문항' });
+  }
+
+  ivVals() {
+    const s = this.state;
+    const db = s.ivDB || this.ivBlank();
+    const mmss = String(Math.floor(s.seconds / 60)).padStart(2, '0') + ':' + String(s.seconds % 60).padStart(2, '0');
+    const waveBars = [];
+    for (let i = 0; i < 28; i++) {
+      const base = [30, 62, 44, 88, 52, 70, 36, 96, 58, 42, 76, 34, 66, 50][i % 14];
+      const h = s.recording ? Math.max(14, Math.round(base * (0.55 + 0.45 * Math.abs(Math.sin((i + s.phase) * 0.7))))) : 14;
+      waveBars.push({ style: 'flex:1 1 0;min-width:0;border-radius:3px;background:' + (s.recording ? 'rgb(0,102,255)' : 'rgba(112,115,124,0.28)') + ';height:' + h + '%' });
+    }
+    const list = this.ivQuestions();
+    const cur = this.ivCur();
+    const res = s.ivRes;
+    const card = s.ivCard || (db.profile ? 'list' : 'profile');
+    const on = (b) => 'display:inline-flex;align-items:center;gap:4px;height:30px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:' +
+      (b ? 'rgb(12,22,52)' : 'transparent') + ';box-shadow:inset 0 0 0 1px ' + (b ? 'rgb(12,22,52)' : 'rgba(112,115,124,0.22)') + ';color:' + (b ? 'rgb(255,255,255)' : 'rgba(46,47,51,0.88)');
+    const primary = 'display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;padding:0 22px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:rgb(255,214,0);color:rgb(12,22,52)';
+
+    const cats = ['전체'].concat((db.custom || []).length ? ['내가 넣은 문항'] : []).concat(s.ivCats || []);
+    const cat = s.ivCat || '전체';
+    const term = (s.ivSearch || '').trim();
+    const filtered = list.filter((x) => (cat === '전체' || x.cat === cat) && (!term || x.q.indexOf(term) >= 0));
+    const prog = db.prog || {};
+    const ansMap = db.ans || {};
+    const rec = cur ? ansMap[cur.id] : null;
+
+    const suggests = (res && Array.isArray(res.suggest) ? res.suggest : []);
+    const keepList = (res && Array.isArray(res.keep) ? res.keep : []);
+    const fbRows = res ? [
+      ['1', '질문 적합성', res.fit || ''],
+      ['2', '내용 — 빠진 핵심 · 불필요 · 사실 오류', res.content || ''],
+      ['3', '구조', res.structure || ''],
+      ['4', '일본어', res.japanese || ''],
+      ['5', '유지할 표현', keepList.length ? keepList.join('\n') : '—']
+    ] : [];
+
+    const viewKey = s.ivView || 'best';
+    const viewText = viewKey === 'best' ? (s.ivBest || '')
+      : viewKey === 'mine' ? ((rec && rec.mine) || s.ivDraft || '')
+        : viewKey === 'fixed' ? ((res && res.fixed) || '') : ((res && res.ref) || '');
+    const viewSub = viewKey === 'best' ? ((res && res.bestKo) || '고쳐서 저장할 수 있습니다. 이 답안이 LEVEL 1~3의 기준이 됩니다.')
+      : viewKey === 'mine' ? '실제로 말한 그대로입니다 — 고치지 않습니다.'
+        : viewKey === 'fixed' ? '내 말투를 최대한 살리고 최소한만 고친 것입니다.'
+          : '참고용입니다. 정답이 아니라 사실 확인용으로만 보세요.';
+
+    const titles = {
+      user: ['사용자', '기기 안에서 계정을 나눕니다'],
+      profile: ['최초 설정 1/2', '자유 프로필'],
+      keigo: ['최초 설정 2/2', '경어 수준'],
+      list: ['면접 문항', '기출 ' + (s.ivBank || []).length + '개 + 내 문항 ' + (db.custom || []).length + '개'],
+      ask: ['내 답변', cur ? cur.cat : ''],
+      probe: ['추가 인터뷰', s.ivWhy || ''],
+      result: ['점검 · 최적답안', s.ivType || ''],
+      lv1: ['LEVEL 1', '구조카드'],
+      lv2: ['LEVEL 2', '키워드만'],
+      lv3: ['LEVEL 3', '질문만 보고 실전']
+    };
+    const t = titles[card] || ['2차 면접', ''];
+    const order = ['ask', 'probe', 'result', 'lv1', 'lv2', 'lv3'];
+    const at = order.indexOf(card);
+    const backMap = { user: 'list', profile: 'list', keigo: 'profile', list: 'user', ask: 'list', probe: 'ask', result: 'ask', lv1: 'result', lv2: 'lv1', lv3: 'lv2' };
+    const locked = !res && (card === 'result' || card === 'lv1' || card === 'lv2');
+
+    return {
+      elapsed: mmss, wave: waveBars, transcript: s.transcript, interim: s.interim,
+      ivTrue: true,
+      ivPrimary: primary,
+      ivBack: () => this.ivGo(backMap[card] || 'list'),
+      ivCardTitle: t[0],
+      ivCardSub: s.ivErr || t[1],
+      ivUser: s.ivUser || '기본',
+      ivUserTap: () => this.ivGo('user'),
+      ivDots: (at < 0 ? [] : order).map((k, i) => ({
+        style: 'flex:1 1 0;height:5px;border-radius:3px;background:' + (i <= at ? 'rgb(255,214,0)' : 'rgba(112,115,124,0.18)')
+      })),
+
+      ivCardUser: card === 'user' ? true : undefined,
+      ivCardProfile: card === 'profile' ? true : undefined,
+      ivCardKeigo: card === 'keigo' ? true : undefined,
+      ivCardList: card === 'list' ? true : undefined,
+      ivCardAsk: card === 'ask' && cur ? true : undefined,
+      ivCardProbe: card === 'probe' ? true : undefined,
+      ivCardResult: card === 'result' && res ? true : undefined,
+      ivCardLv1: card === 'lv1' && res ? true : undefined,
+      ivCardLv2: card === 'lv2' && res ? true : undefined,
+      ivCardLv3: card === 'lv3' && cur ? true : undefined,
+      ivCardEmpty: (locked || ((card === 'ask' || card === 'lv3') && !cur)) ? true : undefined,
+      ivEmptyTitle: !cur ? '먼저 문항을 고르세요' : '아직 최적답안이 없습니다',
+      ivEmptyBody: !cur ? '「면접 문항」에서 하나 고르면 질문이 크게 뜹니다.'
+        : '이 앱은 교재 답안을 먼저 보여주지 않습니다. 생각나는 대로 먼저 답하면 점검을 거쳐 나의 최적답안이 만들어지고, 그다음 LEVEL 1 → 2 → 3이 열립니다.',
+      ivGoAsk: () => this.ivGo(cur ? 'ask' : 'list'),
+
+      ivUsers: (s.ivUsers || ['기본']).map((u) => ({
+        label: u, go: () => this.ivSwitchUser(u),
+        style: 'display:flex;align-items:center;height:46px;padding:0 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;text-align:left;background:' +
+          (u === s.ivUser ? 'rgb(12,22,52)' : 'rgb(247,247,248)') + ';color:' + (u === s.ivUser ? 'rgb(255,255,255)' : 'rgb(23,23,25)')
+      })),
+      ivAddUser: () => this.ivNewUser(),
+      ivGoSetup: () => this.setState({ ivCard: 'profile', ivProfDraft: db.profile || '' }),
+
+      ivProfDraft: s.ivProfDraft || '',
+      ivProfInput: (e) => this.setState({ ivProfDraft: e.target.value }),
+      ivProfMic: () => {
+        if (s.recording) {
+          clearInterval(this.timer);
+          if (this.rec) { try { this.rec.stop(); } catch (e) {} this.rec = null; }
+          this.setState((p) => ({ recording: false, interim: '', transcript: '', ivProfDraft: ((p.ivProfDraft ? p.ivProfDraft.trim() + ' ' : '') + (p.transcript + ' ' + p.interim).trim()).trim() }));
+          return;
+        }
+        this.setState({ recLoc: 'ko-KR', transcript: '', interim: '', seconds: 0 }, () => this.startRec());
+      },
+      ivProfMicLabel: s.recording ? '● 듣는 중 · 눌러서 멈추기' : '🎙 말로 하기',
+      ivMicBig: 'display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:' +
+        (s.recording ? 'rgb(255,214,0)' : 'rgba(255,255,255,0.16)') + ';color:' + (s.recording ? 'rgb(12,22,52)' : 'rgb(255,255,255)'),
+      ivProfHint: s.recError || (s.recording ? '말한 내용이 위 칸에 이어 붙습니다' : '말하기와 입력 중 편한 쪽으로 하세요'),
+      ivProfNext: () => {
+        const v = (s.ivProfDraft || '').trim();
+        if (!v) return;
+        this.ivSave({ profile: v }, () => this.setState({ ivCard: 'keigo' }));
+      },
+
+      ivKeigoOpts: Component.IV_KEIGO.map((k) => ({
+        key: k.key, name: k.name, diff: k.diff, ja: k.ja,
+        go: () => this.ivSave({ keigo: k.key }),
+        play: (e) => { if (e && e.stopPropagation) e.stopPropagation(); this.ivSay(k.ja, 'ja-JP'); },
+        playStyle: 'display:inline-flex;align-items:center;height:30px;padding:0 11px;border-radius:9px;font-weight:600;font-size:11px;letter-spacing:0.03em;background:rgba(0,102,255,0.1);color:rgb(0,78,196)',
+        badge: 'display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;border-radius:6px;font-weight:700;font-size:11px;background:' +
+          (db.keigo === k.key ? 'rgb(255,214,0)' : 'rgba(112,115,124,0.12)') + ';color:rgb(12,22,52)',
+        style: 'display:flex;flex-direction:column;gap:8px;padding:16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;text-align:left;background:' +
+          (db.keigo === k.key ? 'rgba(255,214,0,0.16)' : 'rgb(247,247,248)') + ';box-shadow:inset 0 0 0 ' + (db.keigo === k.key ? '2px rgb(12,22,52)' : '1px rgba(112,115,124,0.22)')
+      })),
+      ivKeigoDone: () => this.ivGo('list'),
+
+      ivQText: cur ? cur.q : '',
+      ivQJa: cur ? ((db.ja || {})[cur.id] || (s.ivBusy === 'ja' ? '일본어로 옮기는 중…' : '')) : '',
+      ivQMeta: cur ? (cur.cat + (prog[cur.id] ? ' · LEVEL ' + prog[cur.id] + ' 완료' : '')) : '',
+      ivSpeak: () => this.ivSpeakJa(),
+      ivSpeakLabel: s.ivBusy === 'ja' ? '준비 중…' : '🔊 일본어로 듣기',
+      ivSpeakStyle: 'display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 22px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;white-space:nowrap;background:rgb(255,214,0);color:rgb(12,22,52)',
+      ivSpeakKo: () => this.ivSay(cur ? cur.q : '', 'ko-KR'),
+      ivSpeakView: () => this.ivSay(viewText, 'ja-JP'),
+
+      ivRecTap: () => this.ivRecTap(),
+      ivRecLabel: s.recording ? '● 녹음 중 · 눌러서 멈추기' : '🎙 녹음하며 답하기',
+      ivRecStyle: 'display:inline-flex;align-items:center;justify-content:center;width:100%;height:46px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:' +
+        (s.recording ? 'rgb(199,32,32)' : 'rgb(0,102,255)') + ';color:rgb(255,255,255)',
+      ivHasClip: s.ivClipUrl ? true : undefined,
+      ivPlayLabel: s.ivPlaying ? '■ 멈추기' : '▶ 내 녹음 다시 듣기',
+      ivPlayClip: () => this.ivPlayClip(),
+      ivLocOpts: [['ko-KR', '한'], ['ja-JP', '日']].map((l) => ({
+        label: l[1], go: () => this.setState({ recLoc: l[0] }), style: on((s.recLoc || 'ko-KR') === l[0])
+      })),
+      ivAnsDraft: s.ivDraft || '',
+      ivAnsInput: (e) => this.setState({ ivDraft: e.target.value }),
+      ivAnsClear: () => this.setState({ ivDraft: '', transcript: '', interim: '' }),
+      ivAnsHint: s.recError || s.ivErr || ((s.ivDraft || '').length + '자 · 문장이 안 맞아도 그대로 내세요'),
+      ivSubmit: () => this.ivSubmit(),
+      ivSubmitLabel: s.ivBusy === 'probe' || s.ivBusy === 'build' ? '점검 중…' : '답변 내고 점검받기',
+      ivSubmitStyle: primary + (!(s.ivDraft || '').trim() || s.ivBusy ? ';opacity:0.5;pointer-events:none' : ''),
+
+      ivProbeWhy: s.ivWhy || '답안에 꼭 필요한 것만 묻습니다',
+      ivProbes: (s.ivProbeQ || []).map((p, i) => ({
+        q: p.q, v: p.a,
+        set: (e) => {
+          const v = e.target.value;
+          this.setState((st) => { const n = (st.ivProbeQ || []).slice(); n[i] = { q: n[i].q, a: v }; return { ivProbeQ: n }; });
+        }
+      })),
+      ivBuild: () => this.ivBuild(),
+      ivBuildLabel: s.ivBusy === 'build' ? '만드는 중…' : '이걸로 최적답안 만들기',
+      ivBuildStyle: primary + (s.ivBusy ? ';opacity:0.5;pointer-events:none' : ''),
+      ivSkipProbe: () => this.ivBuild(),
+
+      ivFbRows: fbRows.map((r) => ({
+        num: r[0], label: r[1], body: r[2] || '—',
+        numStyle: 'display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;flex-shrink:0;font-weight:700;font-size:11px;background:rgb(12,22,52);color:rgb(255,255,255)'
+      })),
+      ivSuggests: suggests.map((sg) => ({
+        before: sg.before || '', after: sg.after || '', why: sg.why || '',
+        take: () => this.ivTake(sg),
+        takeStyle: 'display:inline-flex;align-items:center;height:30px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:11px;letter-spacing:0.03em;background:rgb(255,214,0);color:rgb(12,22,52)',
+        keep: () => this.setState({ ivPeekOn: s.ivPeekOn })
+      })),
+
+      ivViews: [['best', '⭐ 최적답안'], ['mine', '내가 말한 것'], ['fixed', '내 답 수정본'], ['ref', '교재 참고']].map((v) => ({
+        label: v[1], go: () => this.setState({ ivView: v[0] }), style: on(viewKey === v[0])
+      })),
+      ivViewText: viewText,
+      ivViewRead: viewKey === 'best' ? undefined : true,
+      ivViewInput: (e) => { if (viewKey === 'best') this.setState({ ivBest: e.target.value }); },
+      ivViewSub: viewSub,
+      ivSaveBest: () => this.ivStoreBest(),
+      ivGoLv1: () => { this.ivStoreBest(); this.ivSetLevel(1); this.ivGo('lv1'); },
+      ivRedo: () => { this.setState({ ivRes: null, ivProbeQ: [], ivType: '' }, () => this.ivGo('ask')); },
+
+      ivLv1: (res && Array.isArray(res.level1) ? res.level1 : []).map((c2) => ({
+        role: c2.role || '', ja: c2.ja || '', ko: c2.ko || '',
+        roleStyle: 'display:inline-flex;align-items:center;align-self:flex-start;padding:4px 10px;border-radius:6px;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:' +
+          ((c2.role || '').indexOf('필수') >= 0 ? 'rgb(12,22,52)' : (c2.role || '').indexOf('미확정') >= 0 ? 'rgba(112,115,124,0.16)' : 'rgba(0,102,255,0.12)') +
+          ';color:' + ((c2.role || '').indexOf('필수') >= 0 ? 'rgb(255,255,255)' : (c2.role || '').indexOf('미확정') >= 0 ? 'rgb(112,115,124)' : 'rgb(0,78,196)')
+      })),
+      ivGoLv2: () => { this.ivSetLevel(2); this.ivGo('lv2'); },
+      ivLv2: (res && Array.isArray(res.level2) ? res.level2 : []).map((w, i) => ({
+        n: i + 1, w: w,
+        style: 'display:inline-flex;align-items:center;padding:4px 10px;border-radius:6px;font-weight:600;font-size:17px;background:rgba(0,102,255,0.1);color:rgb(12,22,52)'
+      })),
+      ivPeek: () => this.setState((p) => ({ ivPeekOn: !p.ivPeekOn })),
+      ivPeekLabel: s.ivPeekOn ? '최적답안 숨기기' : '최적답안 보기',
+      ivPeekText: s.ivPeekOn ? (s.ivBest || (rec && rec.best) || '이 문항은 아직 최적답안이 없습니다.') : '',
+      ivGoLv3: () => { this.ivSetLevel(3); this.ivGo('lv3'); },
+      ivRandomQ: () => {
+        const pool = filtered.length ? filtered : list;
+        if (!pool.length) return;
+        this.ivPickQ(pool[Math.floor(Math.random() * pool.length)].id);
+      },
+      ivLv3Done: () => { this.ivSetLevel(3); this.ivGo('result'); },
+
+      ivSearch: s.ivSearch || '',
+      ivSearchInput: (e) => this.setState({ ivSearch: e.target.value }),
+      ivCatChips: cats.map((c2) => ({
+        label: c2,
+        count: String(c2 === '전체' ? list.length : list.filter((x) => x.cat === c2).length),
+        go: () => this.setState({ ivCat: c2 }),
+        style: on(cat === c2),
+        countStyle: 'font-family:ui-monospace,\'SF Mono\',Menlo,monospace;font-weight:600;font-size:11px;color:' + (cat === c2 ? 'rgba(255,255,255,0.72)' : 'rgb(112,115,124)')
+      })),
+      ivList: filtered.slice(0, 300).map((x) => {
+        const lv = prog[x.id] || 0;
+        return {
+          title: x.q, meta: x.cat,
+          badge: lv ? 'L' + lv : (ansMap[x.id] ? '답안' : ''),
+          badgeStyle: 'display:inline-flex;align-items:center;padding:4px 10px;border-radius:6px;flex-shrink:0;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:' +
+            (lv >= 3 ? 'rgb(255,214,0)' : lv ? 'rgba(0,102,255,0.12)' : 'transparent') + ';color:' + (lv >= 3 ? 'rgb(12,22,52)' : 'rgb(0,78,196)'),
+          go: () => this.ivPickQ(x.id),
+          style: 'display:flex;align-items:center;gap:8px;padding:14px 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;text-align:left;background:' +
+            (cur && cur.id === x.id ? 'rgba(255,214,0,0.22)' : 'rgb(247,247,248)') + ';color:rgb(23,23,25)'
+        };
+      }),
+      ivNewQ: s.ivNewQ || '',
+      ivNewQInput: (e) => this.setState({ ivNewQ: e.target.value }),
+      ivAddQ: () => this.ivAddQuestions(),
+      ivAddQStyle: primary + (!(s.ivNewQ || '').trim() ? ';opacity:0.5;pointer-events:none' : '')
+    };
   }
 
   topicList() {
@@ -2757,6 +3674,77 @@ class Component extends DCLogic {
     const dday = Math.max(0, Math.round((exam - today) / 86400000));
     const totalSpan = 240;
     const elapsed = Math.min(100, Math.max(0, Math.round(((totalSpan - dday) / totalSpan) * 100)));
+
+    const tbAllU = s.tbAll || {};
+    const SUBJ_ALL = ['관광국사', '관광자원해설', '관광법규', '관광학개론'];
+    const lsAll = [];
+    SUBJ_ALL.forEach((sub) => ((tbAllU[sub] || {}).units || []).forEach((u) => lsAll.push({ sub: sub, u: u })));
+    lsAll.forEach((r) => {
+      const st = this.slotState(r.u);
+      r.fill = st.filter((x) => x.on).length;
+      r.pct = Math.round((r.fill / 6) * 100);
+    });
+    const lsRows = lsAll.filter((r) => s.filter === '전체' || r.sub === s.filter);
+    const lsPer = 12;
+    const lsPages = Math.max(1, Math.ceil(lsRows.length / lsPer));
+    const lsPage = Math.min(Math.max(1, s.page), lsPages);
+    const lsPageRows = lsRows.slice((lsPage - 1) * lsPer, lsPage * lsPer);
+
+    const dtSub = s.dtSub || '관광국사';
+    const dtList = (tbAllU[dtSub] || {}).units || [];
+    const dtIdx = dtList.findIndex((x) => x.seq === s.dtSeq);
+    const dt = dtIdx >= 0 ? dtList[dtIdx] : (dtList[0] || null);
+    const dtSlots = dt ? this.slotState(dt) : [];
+    const dtFill = dtSlots.filter((x) => x.on).length;
+    const dtSlotCount = (key) => {
+      if (!dt) return 0;
+      if (key === '강의') return (dt.lectureLinks || []).length;
+      if (key === '기출') return (dt.examTags || []).length;
+      return ((dt.slotLinks || {})[key] || []).length;
+    };
+    const dtSections = dtSlots.map((sl) => {
+      const links = ((dt.slotLinks || {})[sl.key] || []).filter((x) => x.url);
+      const lecs = sl.key === '강의' ? (dt.lectureLinks || []).filter((x) => x.url) : [];
+      return {
+        title: sl.key,
+        meta: sl.on ? (sl.note || (dtSlotCount(sl.key) + '개')) : '아직 없습니다',
+        dot: 'width:8px;height:8px;border-radius:3px;flex-shrink:0;background:' + (sl.on ? 'rgb(0,102,255)' : 'rgba(112,115,124,0.28)'),
+        open: sl.key === '강의'
+          ? lecs.slice(0, 2).map((x) => ({ label: '▶ ' + x.ts, url: x.url }))
+          : links.slice(0, 2).map((x) => ({ label: '열기 ↗', url: x.url })),
+        btns: sl.key === '기출' && (dt.examTags || []).length
+          ? [{ label: '문제 풀기', go: () => this.nav({ screen: 'quiz', qSubject: dtSub, qUnit: (dt.examTags || [])[0], qIndex: 0, qPick: -1, qChecked: false }) }]
+          : []
+      };
+    });
+    const dtTagCounts = dt ? (dt.examTags || []).map((tag) => ({ tag: tag, n: this.poolFor(dtSub).filter((q) => q.unit === tag).length })) : [];
+    const dtMax = dtTagCounts.reduce((a, b) => Math.max(a, b.n), 0);
+    const dtFreq = dtTagCounts.map((x) => {
+      const g = dtMax && x.n >= dtMax * 0.7 ? 'A' : dtMax && x.n >= dtMax * 0.4 ? 'B' : 'C';
+      return {
+        g: g, topic: x.tag, count: x.n + '문항',
+        grade: 'display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;font-weight:700;font-size:11px;background:' +
+          (g === 'A' ? 'rgb(12,22,52)' : g === 'B' ? 'rgb(0,102,255)' : 'rgba(112,115,124,0.16)') + ';color:' +
+          (g === 'C' ? 'rgb(112,115,124)' : 'rgb(255,255,255)')
+      };
+    });
+    const dtExamNote = dtTagCounts.length
+      ? dtTagCounts.reduce((a, b) => a + b.n, 0) + '문항 · 태그 ' + dtTagCounts.length + '개'
+      : '연결된 기출 태그가 없습니다';
+    const dtBookLink = dt ? (((dt.slotLinks || {})['교재'] || []).find((x) => x.url) || null) : null;
+    const dtAnyLink = dt ? (['교재', '표', '카드', '연표'].map((k) => ((dt.slotLinks || {})[k] || []).find((x) => x.url)).find(Boolean) || null) : null;
+    const dtStart = dtBookLink
+      ? [{ label: '교재 학습 시작 ↗', url: dtBookLink.url }]
+      : (dtAnyLink ? [{ label: '자료 열기 ↗', url: dtAnyLink.url }] : []);
+    const dtDesc = dt
+      ? ('학원 교재 ' + (dt.pages || '쪽 미정') + ' · ' + (dt.partTitle || '') + '. 이 단원에 붙은 자료는 ' + dtFill + '칸(' +
+         dtSlots.filter((x) => x.on).map((x) => x.key).join(' · ') + ')이고, 연결된 기출은 ' + dtExamNote + '입니다.' +
+         (dtBookLink ? '' : ' 교재 페이지가 아직 없어 다른 자료로 시작합니다.'))
+      : '단원 데이터를 불러오는 중입니다.';
+    const dtMoveStyle = 'display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);width:100%';
+    const dtMove = [];
+    if (dtIdx > 0) dtMove.push({ dir: '이전 단원', title: dtList[dtIdx - 1].no + ' ' + dtList[dtIdx - 1].title, style: dtMoveStyle, go: () => this.nav({ screen: 'detail', dtSub: dtSub, dtSeq: dtList[dtIdx - 1].seq }) });
+    if (dtIdx >= 0 && dtIdx < dtList.length - 1) dtMove.push({ dir: '다음 단원', title: dtList[dtIdx + 1].no + ' ' + dtList[dtIdx + 1].title, style: dtMoveStyle, go: () => this.nav({ screen: 'detail', dtSub: dtSub, dtSeq: dtList[dtIdx + 1].seq }) });
 
     const titles = {
       home: ['홈', '오늘의 학습과 진도를 한눈에'],
@@ -3076,6 +4064,9 @@ class Component extends DCLogic {
       isProgress: s.screen === 'progress',
       isMy: s.screen === 'my',
 
+      backTap: () => this.backTap(),
+      backStyle: 'display:' + ((s.hist || []).length ? 'inline-flex' : 'none') +
+        ';align-items:center;justify-content:center;flex-shrink:0;width:38px;height:38px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;background:rgb(255,255,255);box-shadow:inset 0 0 0 1px rgba(112,115,124,0.22);color:rgb(23,23,25)',
       pageTitle: t[0],
       pageSub: t[1],
       dday: dday,
@@ -3094,8 +4085,8 @@ class Component extends DCLogic {
           (s.screen === n[0] ? 'rgb(12,22,52)' : 'rgba(255,255,255,0.72)')
       })),
 
-      todayUnit: '고려 불교문화와 대장경',
-      todayHint: '어제 멈춘 지점부터 · 남은 분량 12분',
+      todayUnit: dt ? dt.title : '단원을 고르면 여기에 표시됩니다',
+      todayHint: dt ? (dtSub + ' ' + dt.no + (dt.pages ? ' · 교재 ' + dt.pages : '') + ' · 자료 ' + dtFill + '/6칸') : '강의 목록에서 단원을 골라 보세요',
       streak: 5,
       weekLabel: '이번 주 5일 학습 · 목표 6일',
       week: week.map((d, i) => ({
@@ -3139,42 +4130,30 @@ class Component extends DCLogic {
         style: this.chipNavy(s.filter === n)
       })),
 
-      units: unitDef
-        .filter((u) => s.filter === '전체' || u[1].indexOf(s.filter) === 0)
-        .map((u) => ({
-          title: u[0],
-          meta: u[1],
-          pct: u[2],
-          badge: u[3],
-          badgeStyle: 'display:inline-flex;align-items:center;padding:4px 10px;border-radius:6px;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:' +
-            (u[3] === '학습중' ? 'rgb(0,102,255)' : u[3] === '완료' ? 'rgb(12,22,52)' : 'rgb(255,255,255)') + ';box-shadow:' +
-            (u[3] === '시작 전' ? 'inset 0 0 0 1px rgba(112,115,124,0.22)' : 'none') + ';color:' +
-            (u[3] === '시작 전' ? 'rgb(112,115,124)' : 'rgb(255,255,255)'),
-          icon: u[6],
-          iconWrap: this.tint(u[5]),
-          bar: this.bar(u[2], this.hueBar(u[5]))
-        })),
+      units: lsPageRows.map((r) => ({
+        title: r.u.title,
+        meta: r.sub + ' ' + r.u.no + ' · ' + (r.u.partTitle || '') + (r.u.pages ? ' · ' + r.u.pages : ''),
+        pct: r.pct,
+        badge: r.fill + '/6칸',
+        badgeColor: r.fill >= 5 ? 'accent' : 'neutral',
+        icon: Component.SUBJ_ICON[r.sub] || 'IconNormalCertificateNameCertificate',
+        iconWrap: this.tint('blue'),
+        bar: this.bar(r.pct, this.hueBar('blue')),
+        go: () => this.nav({ screen: 'detail', dtSub: r.sub, dtSeq: r.u.seq })
+      })),
 
-      sections: [
-        { title: '스토리텔링 교재', meta: '읽기 12분 · 완독', done: true, dot: 'width:8px;height:8px;border-radius:3px;flex-shrink:0;background:rgb(0,102,255)' },
-        { title: '총정리표', meta: '조성 시기 · 보관처 · 등재 연도', done: true, dot: 'width:8px;height:8px;border-radius:3px;flex-shrink:0;background:rgb(0,102,255)' },
-        { title: '빈출등급표', meta: '최근 10회 기출 실측 근거 표기', done: false, dot: 'width:8px;height:8px;border-radius:3px;flex-shrink:0;background:rgb(0,102,255)' },
-        { title: '비교카드', meta: '초조대장경 vs 팔만대장경 외 3', done: false, dot: 'width:8px;height:8px;border-radius:3px;flex-shrink:0;background:rgba(112,115,124,0.28)' },
-        { title: '예상문제 20문항', meta: '인터랙티브 · 오답 자동 기록', done: false, dot: 'width:8px;height:8px;border-radius:3px;flex-shrink:0;background:rgba(112,115,124,0.28)' }
-      ],
+      sections: dtSections,
 
-      freq: [
-        { g: 'A', topic: '팔만대장경 조성과 보관처', count: '8회', grade: 'display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background:rgb(199,32,32);color:rgb(255,255,255);font-weight:600;font-size:11px' },
-        { g: 'A', topic: '해인사 장경판전 유산 등재', count: '6회', grade: 'display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background:rgb(199,32,32);color:rgb(255,255,255);font-weight:600;font-size:11px' },
-        { g: 'B', topic: '고려 석탑과 불상 양식', count: '4회', grade: 'display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background:rgb(176,96,0);color:rgb(255,255,255);font-weight:600;font-size:11px' },
-        { g: 'C', topic: '초조대장경 소실 경위', count: '2회', grade: 'display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0;border-radius:6px;background:rgb(94,97,105);color:rgb(255,255,255);font-weight:600;font-size:11px' }
-      ],
-
-      reviewPlan: [
-        { when: '내일 (9. 7)', what: '예상문제 20' },
-        { when: '3일 후 (9. 9)', what: '오답 4문항' },
-        { when: '7일 후 (9. 13)', what: '빈출등급 A' }
-      ],
+      freq: dtFreq,
+      dtExamNote: dtExamNote,
+      dtSubject: dtSub,
+      dtMeta: dt ? (dt.no + ' · ' + (dt.partTitle || '') + (dt.pages ? ' · 교재 ' + dt.pages : '')) : '',
+      dtTitle: dt ? dt.title : '단원을 고르세요',
+      dtDesc: dtDesc,
+      dtStart: dtStart,
+      dtGoQuiz: () => this.nav({ screen: 'quiz', qSubject: dtSub, qUnit: (dt && (dt.examTags || [])[0]) || null, qIndex: 0, qPick: -1, qChecked: false }),
+      dtGoUnits: () => { if (dt) this.nav({ screen: 'units', tbSubject: dtSub, tbOpen: String(dt.part), tbPick: dt.seq }); },
+      dtMove: dtMove,
 
       query: s.query,
       onQuery: (e) => this.setState({ query: e.target.value, resKind: '전체' }),
@@ -3494,7 +4473,7 @@ class Component extends DCLogic {
       tbExamCard: {
         label: s.tbSubject + ' 문제지 ' + this.poolFor(s.tbSubject).length + '문항',
         desc: '빈출 단원 순 · 바로채점 · 오답만 다시 풀기 · 문제마다 표 찾아보기',
-        go: () => this.setState({ screen: 'quiz', qSubject: s.tbSubject, qIndex: 0, qPick: -1, qChecked: false })
+        go: () => this.nav({ screen: 'quiz', qSubject: s.tbSubject, qIndex: 0, qPick: -1, qChecked: false })
       },
       tbSlotSummary: ['강의', '교재', '표', '연표', '카드'].map((k) => ({
         key: k,
@@ -3509,27 +4488,17 @@ class Component extends DCLogic {
         title: u.title,
         pages: u.pages || '',
         items: (u.note ? [u.note] : []).concat(u.items || []),
-        go: () => this.setState({ tbPick: s.tbPick === u.seq ? null : u.seq }),
+        go: () => this.setState({ tbPick: s.tbPick === u.seq ? null : u.seq, tbSlot: s.tbPick === u.seq ? null : (s.tbSlot || null) }),
         rowStyle: 'display:flex;flex-direction:column;gap:8px;padding:16px 20px;border:none;border-top:1px solid rgba(112,115,124,0.1);cursor:pointer;font-family:inherit;width:100%;background:' +
           (s.tbPick === u.seq ? 'rgb(247,247,248)' : 'rgb(255,255,255)'),
-        slots: this.slotState(u).map((sl) => ({
-          key: sl.key,
-          style: 'display:inline-flex;align-items:center;height:26px;padding:0 11px;border-radius:6px;font-weight:600;font-size:12px;letter-spacing:0.03em;white-space:nowrap;background:' +
-            (sl.on ? 'rgba(0,102,255,0.1)' : 'rgb(255,255,255)') + ';box-shadow:inset 0 0 0 1px ' +
-            (sl.on ? 'rgba(0,102,255,0.24)' : 'rgba(112,115,124,0.22)') + ';color:' +
-            (sl.on ? 'rgb(0,78,196)' : 'rgb(112,115,124)')
-        })),
-        lecs: (s.tbPick === u.seq ? (u.lectureLinks || []) : []).map((x) => ({
-          label: x.label, page: x.page,
-          play: x.url ? [{ label: '▶ ' + x.ts, url: x.url }] : []
-        })),
-        links: s.tbPick === u.seq ? this.slotLinkList(u) : [],
-        hasLinks: s.tbPick === u.seq && this.slotLinkList(u).length ? true : undefined,
-        detail: (s.tbPick === u.seq ? this.slotState(u) : []).map((sl) => ({
-          key: sl.key, note: sl.note,
-          dot: 'width:7px;height:7px;border-radius:3px;flex-shrink:0;background:' + (sl.on ? 'rgb(12,22,52)' : 'rgba(112,115,124,0.28)')
+        fill: '자료 ' + this.slotState(u).filter((x) => x.on).length + ' / 6칸',
+        dots: this.slotState(u).map((sl) => ({
+          style: 'width:7px;height:7px;border-radius:3px;flex-shrink:0;display:block;background:' + (sl.on ? 'rgb(0,102,255)' : 'rgba(112,115,124,0.28)')
         }))
-      })),
+      })).map((r, i) => {
+        const u = (tbParts.find((p) => p.rom === s.tbOpen) || { rows: [] }).rows[i];
+        return Object.assign(r, s.tbPick === u.seq ? this.slotPanel(u, s.tbSubject, '20px') : { chips: [], panelBox: 'display:none', panelInner: 'display:none', panelTitle: '', panelNote: '', panelRows: [] });
+      }),
       tbNever: undefined,
       tbParts: tbParts.map((p) => ({
         rows: (s.tbOpen === p.rom ? p.rows : []).map((u) => ({
@@ -3582,29 +4551,17 @@ class Component extends DCLogic {
           pages: u.pages || '',
           items: (u.note ? [u.note] : []).concat(u.items || []),
           go: () => this.setState({ tbPick: s.tbPick === u.seq ? null : u.seq }),
-          rowStyle: 'display:flex;flex-direction:column;gap:8px;padding:16px 20px;border:none;border-top:1px solid rgba(112,115,124,0.1);background:' +
-            (s.tbPick === u.seq ? 'rgba(0,102,255,0.05)' : 'rgb(255,255,255)') + ';cursor:pointer;text-align:left;font-family:inherit;width:100%',
-          slots: this.slotState(u).map((sl) => ({
-            key: sl.key,
-            style: 'display:inline-flex;align-items:center;height:24px;padding:0 11px;border-radius:6px;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:' +
-              (sl.on ? 'rgb(12,22,52)' : 'rgb(255,255,255)') + ';box-shadow:inset 0 0 0 1px ' +
-              (sl.on ? 'rgb(12,22,52)' : 'rgba(112,115,124,0.28)') + ';color:' +
-              (sl.on ? 'rgb(255,255,255)' : 'rgb(112,115,124)')
+          rowStyle: 'display:flex;flex-direction:column;gap:8px;padding:16px 20px 16px 48px;border:none;border-top:1px solid rgba(112,115,124,0.1);background:' +
+            (s.tbPick === u.seq ? 'rgb(247,247,248)' : 'rgb(255,255,255)') + ';cursor:pointer;text-align:left;font-family:inherit;width:100%',
+          fill: '자료 ' + this.slotState(u).filter((x) => x.on).length + ' / 6칸',
+          dots: this.slotState(u).map((sl) => ({
+            style: 'width:7px;height:7px;border-radius:3px;flex-shrink:0;display:block;background:' + (sl.on ? 'rgb(0,102,255)' : 'rgba(112,115,124,0.28)')
           })),
-          lecs: (s.tbPick === u.seq ? (u.lectureLinks || []) : []).map((x) => ({
-            label: x.label + (x.amb ? ' · 쪽 겹침' : ''),
-            page: x.page,
-            ctx: x.ctx || '',
-            play: x.url ? [{ label: '▶ ' + x.ts, url: x.url }] : []
-          })),
-          links: s.tbPick === u.seq ? this.slotLinkList(u) : [],
-          hasLinks: s.tbPick === u.seq && this.slotLinkList(u).length ? true : undefined,
-          detail: (s.tbPick === u.seq ? this.slotState(u) : []).map((sl) => ({
-            key: sl.key,
-            note: sl.note,
-            dot: 'width:7px;height:7px;border-radius:3px;flex-shrink:0;background:' + (sl.on ? 'rgb(12,22,52)' : 'rgba(112,115,124,0.28)')
-          }))
-        }))
+          panel: null
+        })).map((r, i) => {
+          const uu = (s.tbOpen === p.rom ? p.rows : [])[i];
+          return Object.assign(r, s.tbPick === uu.seq ? this.slotPanel(uu, s.tbSubject, '48px') : { chips: [], panelBox: 'display:none', panelInner: 'display:none', panelTitle: '', panelNote: '', panelRows: [] });
+        })
       })),
 
       isFreq: s.screen === 'freq',
@@ -3680,15 +4637,17 @@ class Component extends DCLogic {
       freqTitle: s.freqSubject + ' 최빈출 분석',
       freqCount: this.poolFor(s.freqSubject).length + '문항 집계',
 
-      pageItems: [1, 2, 3, 4, 5].map((n) => ({
-        n: String(n),
-        go: () => this.setState({ page: n }),
-        style: this.pageBtn(s.page === n, true)
-      })),
-      pagePrev: () => this.setState({ page: Math.max(1, s.page - 1) }),
-      pageNext: () => this.setState({ page: Math.min(5, s.page + 1) }),
-      pagePrevStyle: this.pageBtn(false, s.page > 1),
-      pageNextStyle: this.pageBtn(false, s.page < 5),
+      pageItems: Array.from({ length: lsPages }, (_, i) => i + 1)
+        .filter((n) => lsPages <= 7 || Math.abs(n - lsPage) <= 2 || n === 1 || n === lsPages)
+        .map((n) => ({
+          n: String(n),
+          go: () => this.setState({ page: n }, () => { try { window.scrollTo(0, 0); } catch (e) { /* noop */ } }),
+          style: this.pageBtn(lsPage === n, true)
+        })),
+      pagePrev: () => this.setState({ page: Math.max(1, lsPage - 1) }),
+      pageNext: () => this.setState({ page: Math.min(lsPages, lsPage + 1) }),
+      pagePrevStyle: this.pageBtn(false, lsPage > 1),
+      pageNextStyle: this.pageBtn(false, lsPage < lsPages),
 
       qSubjectChips: Component.SUBJECTS.map((n) => ({
         name: n,
@@ -3893,96 +4852,7 @@ class Component extends DCLogic {
         dueStyle: 'display:inline-flex;align-items:center;padding:4px 10px;border-radius:6px;background:transparent;box-shadow:inset 0 0 0 1px ' + (wr.asked ? 'rgba(255,214,0,0.7)' : 'rgba(112,115,124,0.22)') + ';font-weight:600;font-size:11px;letter-spacing:0.03em;color:' + (wr.asked ? 'rgb(12,22,52)' : 'rgb(112,115,124)') + ';white-space:nowrap'
       })),
 
-      langLabel: { ja: '일본어', en: '영어', zh: '중국어' }[s.lang],
-      topicTitle: topic.title,
-      topicMeta: topic.meta,
-      topicPrompt: topic.prompt,
-      questionText: topic.q[s.lang],
-      askLabel: s.asking ? '질문 읽는 중…' : '질문 듣기',
-      askQuestion: () => this.askQuestion(false),
-      startMock: () => this.startMock(),
-      mockLabel: s.mock ? '다음 문제 받기' : '모의면접 시작',
-      mockNote: s.mock
-        ? '모의면접 중 · 질문을 듣고 바로 답변하면 자동으로 녹음됩니다'
-        : '질문을 무작위로 읽어주고, 끝나면 녹음이 자동으로 시작됩니다',
-      keywords: topic.keywords.map((w) => ({
-        word: w,
-        style: 'display:inline-flex;align-items:center;padding:4px 10px;border-radius:9px;background:rgba(0,102,255,0.08);font-weight:600;font-size:12px;color:rgb(12,22,52)'
-      })),
-      langs: [['ja', '일본어'], ['en', '영어'], ['zh', '중국어']].map((l) => ({
-        label: l[1],
-        go: () => this.setState({ lang: l[0], feedback: null }),
-        style: 'flex:1 1 0;min-width:0;padding:8px 0;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;background:' +
-          (s.lang === l[0] ? 'rgb(23,23,25)' : 'rgba(112,115,124,0.08)') + ';color:' +
-          (s.lang === l[0] ? 'rgb(255,255,255)' : 'rgba(46,47,51,0.88)')
-      })),
-      topics: this.visibleTopics().map((i) => {
-        const tp = topicList[i];
-        return {
-          title: tp.title,
-          meta: tp.meta,
-          score: tp.score || '',
-          go: () => this.setState({ topic: i, transcript: '', interim: '', seconds: 0, feedback: null }),
-          style: 'display:flex;align-items:center;gap:8px;padding:20px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;text-align:left;background:' +
-            (s.topic === i ? 'rgba(255,214,0,0.22)' : 'transparent') + ';color:' +
-            (s.topic === i ? 'rgb(12,22,52)' : 'rgb(23,23,25)')
-        };
-      }),
-      ivCatChips: ['전체', '추천 문항'].concat(s.ivCats).map((c) => ({
-        label: c,
-        count: c === '전체' ? String(topicList.length) : String(topicList.filter((t) => t.cat === c).length),
-        go: () => this.setState({ ivCat: c }),
-        style: 'display:inline-flex;align-items:center;gap:4px;height:30px;padding:0 11px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:11px;letter-spacing:0.03em;white-space:nowrap;background:' +
-          (s.ivCat === c ? 'rgba(255,214,0,0.22)' : 'transparent') + ';box-shadow:inset 0 0 0 1px ' +
-          (s.ivCat === c ? 'rgba(255,214,0,0.7)' : 'rgba(112,115,124,0.22)') + ';color:' +
-          (s.ivCat === c ? 'rgb(12,22,52)' : 'rgba(46,47,51,0.88)'),
-        countStyle: 'font-family:ui-monospace,\'SF Mono\',Menlo,monospace;font-weight:600;font-size:11px;color:' +
-          (s.ivCat === c ? 'rgb(12,22,52)' : 'rgb(112,115,124)')
-      })),
-      ivBankNote: '2차 면접 기출 ' + (s.ivBank.length) + '문항 · 「추천 문항」 6개만 답변 언어 음성이 있고, 나머지는 한국어로 읽어 줍니다',
-      recording: s.recording,
-      recIcon: s.recording ? 'IconNormalPauseNamePause' : 'IconNormalMicrophoneNameMicrophoneFillFillTrue',
-      recLabel: s.recording ? '녹음 정지' : '녹음 시작',
-      recBtnStyle: 'display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 22px;border:none;border-radius:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:14px;letter-spacing:0.006em;white-space:nowrap;background:' +
-        (s.recording ? 'rgb(199,32,32)' : 'rgb(0,102,255)') + ';color:rgb(255,255,255)',
-      toggleRec: () => (s.recording ? this.stopRec() : this.startRec()),
-      resetRec: () => this.setState({ transcript: '', interim: '', seconds: 0, feedback: null, fbError: '' }),
-      elapsed: mmss,
-      wave: waveBars,
-      transcript: s.transcript,
-      interim: s.interim,
-      recHint: s.recError || s.fbError ||
-        (s.recording ? '말한 내용이 실시간으로 전사됩니다. 끝나면 녹음을 정지하세요.'
-          : (s.transcript ? '전사 ' + s.transcript.length + '자 · 평가를 눌러 교정을 받아 보세요.'
-            : '녹음을 시작하면 ' + { ja: '일본어', en: '영어', zh: '중국어' }[s.lang] + ' 음성이 전사됩니다.')),
-      gradeLabel: s.grading ? '평가 중' : 'AI 평가 받기',
-      grade: () => this.runGrade(),
-      grading: s.grading ? true : undefined,
-      gradeDisabled: (!s.transcript && !s.interim) || s.grading ? true : undefined,
-
-      hasFeedback: fb ? true : undefined,
-      fbModel: 'Claude Sonnet 4.5 · 내용·표현·발음 교정',
-      scores: fb ? [
-        ['내용 정확성', fb.scores && fb.scores.content],
-        ['발음', fb.scores && fb.scores.pronunciation],
-        ['유창성', fb.scores && fb.scores.fluency],
-        ['답변 구성', fb.scores && fb.scores.structure]
-      ].map((sc) => {
-        const v = Number(sc[1]) || 0;
-        const col = v >= 80 ? 'rgb(0,78,196)' : v >= 60 ? 'rgb(12,22,52)' : 'rgb(196,20,20)';
-        const fillCol = v >= 80 ? 'rgb(0,102,255)' : v >= 60 ? 'rgb(0,102,255)' : 'rgb(199,32,32)';
-        return {
-          label: sc[0],
-          value: v + '점',
-          valueStyle: 'font-weight:700;font-size:24px;letter-spacing:-0.023em;color:' + col,
-          bar: 'height:100%;border-radius:3px;background:' + fillCol + ';width:' + v + '%'
-        };
-      }) : [],
-      corrections: fb && Array.isArray(fb.corrections) ? fb.corrections : [],
-      pronun: fb && Array.isArray(fb.pronunciation) ? fb.pronunciation : [],
-      modelAnswer: fb ? (fb.model || '') : '',
-      practiceCount: s.practice,
-      practiceHint: '최근 7일 8회 · 평균 79점 · 발음 점수가 가장 낮습니다',
+      ...this.ivVals(),
 
       bellSlots: this.iconSlot('IconNormalBellNameBell', 'icon2', 20),
 
